@@ -23,9 +23,11 @@ def grab_results(result_directory):
     oh_result = json.load(open(os.path.join(result_directory,"oh.stats")))
    # pprint(oh_result)
     sc_result = json.load(open(os.path.join(result_directory,"sc.stats")))
+    runs_result = json.load(open(os.path.join(result_directory,"runs.json")))
+    runs_processed = json.load(open(os.path.join(result_directory,"runs_processed.json")))
    # pprint(sc_result)
     #TODO: grab any other result file
-    return {"sc_result":sc_result,"oh_result":oh_result}
+    return {"sc_result":sc_result,"oh_result":oh_result, "runs":runs_result, "runs_processed":runs_processed}
 def process_results(results):
     #TODO do whatever and add outcome(s) to the results file
     print "process me"
