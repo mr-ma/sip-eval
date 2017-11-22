@@ -16,7 +16,7 @@ from pprint import pprint
 from subprocess import Popen, PIPE
 import re
 import numpy as np
-REPEAT_NUMBER=1
+REPEAT_NUMBER=5
 def get_immediate_subdirectories(a_dir):
     return [name for name in os.listdir(a_dir)
             if os.path.isdir(os.path.join(a_dir, name))]
@@ -36,12 +36,14 @@ def grab_results(output):
         print "Can't find cpu"
     #now search for memory
     re1='(memory)'
-    rg = re.compile(re1+re2+re3+re4,re.IGNORECASE|re.DOTALL|re.MULTILINE)
+    re3='(\\d+)'
+    rg = re.compile(re1+re2+re3,re.IGNORECASE|re.DOTALL|re.MULTILINE)
     m = rg.search(output)
     if m:
-        result["memory"]=group(3)
+        result["memory"]=m.group(3)
     else:
         print "Can't find memory"
+	print output
     return result
 def prepare_result_folder(directory):
     directory = os.path.join(directory, "runs")
@@ -55,7 +57,7 @@ def measure_overhead(result_directory,program):
     for i in range(REPEAT_NUMBER):
         #call(["sosylib_measure.sh",program_path])
         print str(i)," trying to run:",program_path
-        process = Popen(["runexec",program_path],stdout=PIPE)
+        process = Popen(["runexec",program_path,"--container"],stdout=PIPE)
         (output,err)=process.communicate()
         exit_code=process.wait()
         if exit_code!=0:
