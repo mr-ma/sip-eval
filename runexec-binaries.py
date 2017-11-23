@@ -16,7 +16,7 @@ from pprint import pprint
 from subprocess import Popen, PIPE
 import re
 import numpy as np
-REPEAT_NUMBER=5
+REPEAT_NUMBER=1
 def get_immediate_subdirectories(a_dir):
     return [name for name in os.listdir(a_dir)
             if os.path.isdir(os.path.join(a_dir, name))]

@@ -37,11 +37,23 @@ do
 		coverage_name=${coverage_dir##*/}
 		output_dir=$binary_path$filename/$coverage_name 
 		mkdir -p $output_dir 
+		#Generate unprotected binary for the baseline 
+		if [ $coverage_name -eq 0 ]; then
+			echo "Handling baseline"
+			llc-3.9 $bitcode -o $output_dir/out.s
+			gcc -c -rdynamic $output_dir/out.s -o $output_dir/out.o -lncurses
+			#make a dummy combination=0 and a dummy attempt=1 just for the sake of complying with the directory structure
+			mkdir -p $output_dir/0/1
+			gcc -g -rdynamic $output_dir/out.o -o $output_dir/0/1/$filename -lncurses
+			rm $output_dir/out.s $output_dir/out.o
+			continue
+		fi
 		for coverage in $coverage_dir/*
 		do
 			combination_file=${coverage##*/}
 			output_dir=$binary_path$filename/$coverage_name/$combination_file
 			mkdir -p $output_dir
+
 			echo "Handling combination file $coverage"
 			echo "Protect $bc with function combination file $coverage"
 			#repeat protection for random network of protection
@@ -100,6 +112,8 @@ do
 				#gcc -g -rdynamic -c rtlib.c -o rtlib.o
 				gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename -lncurses 
 
+				#remove temp files
+				rm $output_dir/out.o $output_dir/out.s $output_dir/response.o $output_dir/guarded.bc   
 				#clang++-3.9 -lncurses -rdynamic -std=c++0x out.bc -o out
 				python /home/sip/self-checksumming/patcher/dump_pipe.py $output_dir/$filename guide.txt patch_guide
 				echo 'Done patching'
