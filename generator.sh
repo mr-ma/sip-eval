@@ -9,7 +9,7 @@ combination_path=/home/sip/eval/combination/
 binary_path=/home/sip/eval/binaries/
 rtlib_path=/home/sip/self-checksumming/rtlib.c
 repeat=3
-rm -r binaries
+#rm -r binaries
 mkdir -p binaries
 
 
