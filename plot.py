@@ -7,8 +7,13 @@ import json
 def read(file_path):
     data = json.load(open(file_path))
     overhead={}
+    program_count=0
+    program_count=len(data)
+    print program_count
+    programs=[]
     for program in data:
         pprint (program.keys())
+        programs.append(program['program'])
         for coverage_result in program['coverage_results']:
             if coverage_result['coverage'] not in overhead:
                 overhead[coverage_result['coverage']]={}
@@ -21,24 +26,44 @@ def read(file_path):
             overhead[coverage_result['coverage']]['cpu_stds'].append(coverage_result['runtime_overhead']['cpu_std'])
             overhead[coverage_result['coverage']]['programs'].append(program['program'])
     pprint(overhead)
-    return overhead
+    return programs,overhead
 
 def autolabel(rects):
     for rect in rects:
         height = rect.get_height()
         ax.text(rect.get_x() + rect.get_width()/2., 1.05*height,'%d' % int(height),ha='center', va='bottom')
 
+def prepare_xtick_labels(coverage_labels, programs):
+    #add program name to the labels
+    coverage_labels = (coverage_labels+(['']*E))*N
+    #Append program name to labels
+    i = 0
+    for lbl in coverage_labels:
+        if lbl=='25':
+            # 2 is index of 25 in the labels, -1 becuase index starts from 0
+            p_index = ((i+(M-2))/(M)-1)
+            coverage_labels[i]='25\n'+programs[p_index]
+        i+=1
+    return coverage_labels
 
-overheads = read('binaries/measurements.json')
+
+   
+
+
+programs,overheads = read('binaries/measurements.json')
+print programs
+program_count=len(programs)
 #exit(1)
 #cpu_means=[]
 #cpu_stds=[]
 coverage_labels=[]
-N = 2 #Number of programs in the dataset len(overheads)
+E = 1 # number of empty gaps between programs
+N = program_count #Number of programs in the dataset len(overheads)
+M = len(overheads)+E #number of different coverages
 fig, ax = plt.subplots()
 width= 0.35
-ind_width=0.00
-ind = np.arange(N)
+#ind_width=0.00
+ind = np.arange(0,N*M*width,width) #Number of bars we need is in total N (programs) times M (coverages)
 rects = []
 coverage_color={}
 coverage_color['0'] = 'c'
@@ -51,26 +76,34 @@ coverage_keys = map(int,coverage_keys)
 coverage_keys.sort()
 coverage_keys = map(str,coverage_keys)
 #keys(1)
+i =0
 for coverage in coverage_keys:
     #cpu_means.append(overhead['cpu_mean'])
     #cpu_stds.append(overhead['cpu_std'])
-    coverage_labels.append(coverage)
+    coverage_labels.append(coverage) 
     ax_color = coverage_color[coverage]
-    ax_ind = ind+ind_width
+
+
+    #ax_ind = ind+ind_width
     pprint (overheads[coverage]['cpu_means'])
     pprint (overheads[coverage]['cpu_stds'])
-    rects1 = ax.bar(ax_ind, overheads[coverage]['cpu_means'], width, color=ax_color, yerr=overheads[coverage]['cpu_stds'])
-    ind_width += width
+    #print "ax_ind",ax_ind
+    print ind[i::M]
+    #print [coverage]*N
+    rects1 = ax.bar(ind[i::M], overheads[coverage]['cpu_means'], width, color=ax_color, yerr=overheads[coverage]['cpu_stds'])#,tick_label=[coverage]*N)
+    i+=1
+    #ind_width += width
     rects.append(rects1)
 ax.set_ylabel('Overhead (s)')
 ax.set_title('Overhead by protection coverage per program')
-print ind, ax_ind+1, width #np.arange(ind, ax_ind+1, width)
-ax.set_xticks(np.arange(10))
-ax.set_xticklabels(coverage_labels)#('0','10','25','50','100'))
+#print ind, ax_ind,ax_ind+1, width #np.arange(ind, ax_ind+1, width)
+print np.arange(np.min(ind),np.max(ind)+1, width)
+ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
+ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs))
 
 #ax.legend((rects1[0]), ('Tetris'))
-for reacts1 in rects:
-    autolabel(rects1)
+#for reacts1 in rects:
+#    autolabel(rects1)
 #autolabel(rects2)
 plt.savefig('myfig')
 
