@@ -34,7 +34,7 @@ overheads = read('binaries/measurements.json')
 #cpu_means=[]
 #cpu_stds=[]
 coverage_labels=[]
-N = 1 #Number of programs in the dataset len(overheads)
+N = 2 #Number of programs in the dataset len(overheads)
 fig, ax = plt.subplots()
 width= 0.35
 ind_width=0.00
@@ -50,6 +50,7 @@ coverage_keys = overheads.keys()
 coverage_keys = map(int,coverage_keys)
 coverage_keys.sort()
 coverage_keys = map(str,coverage_keys)
+#keys(1)
 for coverage in coverage_keys:
     #cpu_means.append(overhead['cpu_mean'])
     #cpu_stds.append(overhead['cpu_std'])
@@ -63,7 +64,8 @@ for coverage in coverage_keys:
     rects.append(rects1)
 ax.set_ylabel('Overhead (s)')
 ax.set_title('Overhead by protection coverage per program')
-ax.set_xticks(np.arange(ind, ax_ind+1, width))
+print ind, ax_ind+1, width #np.arange(ind, ax_ind+1, width)
+ax.set_xticks(np.arange(10))
 ax.set_xticklabels(coverage_labels)#('0','10','25','50','100'))
 
 #ax.legend((rects1[0]), ('Tetris'))
