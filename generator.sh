@@ -59,6 +59,9 @@ do
 			#repeat protection for random network of protection
 			for i in 1 2 3 
 			do
+			recover_attempt=0
+			while true;
+			do
 				output_dir=$binary_path$filename/$coverage_name/$combination_file/$i
 				mkdir -p $output_dir
 				echo "Protect here $i"
@@ -79,12 +82,12 @@ do
 				rm out.bc
 				rm out 
 				echo 'Transform SC & OH'
-				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc   
+				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
 
 				if [ $? -eq 0 ]; then
 					echo 'OK Transform'
 				else
-					echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode  -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc" 
+					echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode  -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc > $output_dir/transform.console" 
 					echo 'FAIL Transform'
 					exit    
 				fi  
@@ -115,23 +118,30 @@ do
 				#remove temp files
 				rm $output_dir/out.o $output_dir/out.s $output_dir/response.o $output_dir/guarded.bc   
 				#clang++-3.9 -lncurses -rdynamic -std=c++0x out.bc -o out
-				python /home/sip/self-checksumming/patcher/dump_pipe.py $output_dir/$filename guide.txt patch_guide
+				python /home/sip/self-checksumming/patcher/dump_pipe.py $output_dir/$filename guide.txt patch_guide >> $output_dir/patcher.console
 				echo 'Done patching'
 
 				#Patch using GDB
-				python $OH_PATH/patcher/patchAsserts.py $output_dir/$filename $output_dir/$filename"tmp"
+				python $OH_PATH/patcher/patchAsserts.py $output_dir/$filename $output_dir/$filename"tmp" >> $output_dir/gdb.console
 				if [ $? -eq 0 ]; then
 					echo 'OK GDB Patch'
+					rm $output_dir/$filename
+					mv $output_dir/$filename"tmp" $output_dir/$filename
+					chmod +x $output_dir/$filename
+					recover_attempt=0
+					break # BREAK the while loop
 				else
 					echo 'FAIL GDB Patch'
-					echo "Check $output_dir for more details"
-					exit    
+					if [ $recover_attempt -eq 3 ]; then
+						echo "Failed to recover for three times" 
+						echo "Check $output_dir for more details"
+						exit 1
+					fi
+					echo "trying to recover from Segmentation fault... $recover_attempt" >> $output_dir/segmentationfault.console
+					recover_attempt=$((recover_attempt+1))   
 				fi 
-				rm $output_dir/$filename
-				mv $output_dir/$filename"tmp" $output_dir/$filename
-
-				chmod +x $output_dir/$filename
-
+			
+			done
 			done
 		done
 	done

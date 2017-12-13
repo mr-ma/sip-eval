@@ -20,19 +20,24 @@ def get_immediate_subdirectories(a_dir):
     return [name for name in os.listdir(a_dir)
             if os.path.isdir(os.path.join(a_dir, name))]
 
-def grab_results(result_directory,protection_stats=True):
+def grab_results(result_directory,binary_name):
     #Baseline does not have protection stats
-    oh_result={}
-    sc_result={}
-    if protection_stats:
-        oh_result = json.load(open(os.path.join(result_directory,"oh.stats")))
-   # pprint(oh_result)
-        sc_result = json.load(open(os.path.join(result_directory,"sc.stats")))
-    runs_result = json.load(open(os.path.join(result_directory,"runs.json")))
-    runs_processed = json.load(open(os.path.join(result_directory,"runs_processed.json")))
-   # pprint(sc_result)
-    #TODO: grab any other result file
-    return {"sc_result":sc_result,"oh_result":oh_result, "runs":runs_result, "runs_processed":runs_processed}
+    plain_result={}
+    clone_result={}
+    extract_result={}
+    #There are reports at function level in stat files, we just need the binary level reports
+    #print os.path.join(result_directory,"dependency.stats")
+    #plain_result = json.load(open(os.path.join(result_directory,"dependency.stats")))
+    #pprint(plain_result)
+    #exit(1)
+#[binary_name]
+    clone_result = json.load(open(os.path.join(result_directory,"clone.stats")))#[binary_name]
+    pprint(clone_result)
+    extract_result = json.load(open(os.path.join(result_directory,"extract.json")))[binary_name]
+    pprint (plain_result)
+    pprint (clone_result)
+    pprint (extract_result)
+    return {"plain_result":plain_result,"clone_result":clone_result, "extract_result":extract_result}
 def process_results(coverage,results):
     #TODO do whatever and add outcome(s) to the results file
     print "process me"
@@ -71,35 +76,15 @@ def process_files(directory):
     program_results=[]
     for program_dir in get_immediate_subdirectories(directory):
 	print 'handling ', program_dir
-        coverage_results=[]
-        for coverage_dir in get_immediate_subdirectories(os.path.join(directory,program_dir)):
-            combination_results =[]
-            for combination_dir in get_immediate_subdirectories(os.path.join(directory,program_dir,coverage_dir)):
-                attempt_results=[]
-                attempt_path = os.path.join(directory,program_dir,coverage_dir,combination_dir);
-                for attempt_dir in get_immediate_subdirectories(attempt_path):
-                    result_path = os.path.join(directory,program_dir,coverage_dir,combination_dir,attempt_dir);
-                    #if baseline no protection stats
-                    results = grab_results(result_path,coverage_dir!="0")
-                    attempt_results.append({"results":results, "attempt":attempt_dir})
-                combination_results.append({"combination":combination_dir,"attempt_results":attempt_results})
-            processed_coverage = process_results(coverage_dir,combination_results)
-            coverage_results.append({"coverage":coverage_dir, "runtime_overhead":processed_coverage,"combination_results":combination_results})
-        program_results.append({"program":program_dir,"coverage_results":coverage_results})
-    output_file = os.path.join(directory, "measurements.json")
+        result_path = os.path.join(directory,program_dir);
+        results = grab_results(result_path,program_dir)
+        program_results.append({"program":program_dir,"coverage_results":results})
+    output_file = os.path.join(directory, "coverage-measurements.json")
     with open(output_file,'wb') as outfile:
         json.dump(program_results,outfile)
- #   pprint(program_results)
-
-#    for filename in os.listdir(directory):
-#	if filename.endswith(".bc"): 
-#	    print(os.path.join(directory, filename))
-#	continue
- #   else:
-#	continue
 
 def main():
-    process_files("binaries/")
+    process_files("coverage/reports")
 
 if __name__=="__main__":
     main()

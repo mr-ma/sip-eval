@@ -10,13 +10,16 @@ do
 	bitcode=$f
 	echo $f
 	filename=${f##*/}
+	output_dir=$COVERAGEPATH/reports/$filename
+	mkdir -p $output_dir 
 	output=$COVERAGEPATH$filename
 	echo "Output will be written to $output"
-	opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -clone-functions -extract-functions -o $output
+	opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -clone-functions -extract-functions -dependency-stats -dependency-stats-file=$output_dir/dependency.stats -clone-stats -clone-stats-file=$output_dir/clone.stats -extraction-stats -extraction-stats-file=$output_dir/extract.stats -o $output
 	if [ $? -eq 0 ]; then
 		echo 'OK Transform'
 	else
 		echo 'FAIL Transform'
+		echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -clone-functions -extract-functions -o $output"
 		exit    
 	fi  
 done

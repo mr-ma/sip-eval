@@ -16,7 +16,7 @@ from pprint import pprint
 from subprocess import Popen, PIPE
 import re
 import numpy as np
-REPEAT_NUMBER=1
+REPEAT_NUMBER=5
 def get_immediate_subdirectories(a_dir):
     return [name for name in os.listdir(a_dir)
             if os.path.isdir(os.path.join(a_dir, name))]
@@ -29,6 +29,7 @@ def grab_results(output):
     re4='([a-z])'   # Any Single Word Character (Not Whitespace) 1
     rg = re.compile(re1+re2+re3+re4,re.IGNORECASE|re.DOTALL|re.MULTILINE)
     m = rg.search(output)
+    exit_code = -1
     result ={}
     if m:
         result["cpu"]=m.group(3)
@@ -44,7 +45,16 @@ def grab_results(output):
     else:
         print "Can't find memory"
 	print output
-    return result
+    re1="(exitcode)"
+    rg = re.compile(re1+re2+re3,re.IGNORECASE|re.DOTALL|re.MULTILINE)
+    m = rg.search(output)
+    print output
+    if m:
+        exit_code=m.group(3)
+    else:
+	print 'can not find exit code'
+	exit(1)
+    return exit_code, result
 def prepare_result_folder(directory):
     directory = os.path.join(directory, "runs")
     if not os.path.exists(directory):
@@ -57,14 +67,21 @@ def measure_overhead(result_directory,program):
     for i in range(REPEAT_NUMBER):
         #call(["sosylib_measure.sh",program_path])
         print str(i)," trying to run:",program_path
-        process = Popen(["runexec",program_path,"--container"],stdout=PIPE)
+	#--container throws a suspicious warning, I'm not sure it the measurements are good
+        process = Popen(["runexec",program_path,'--no-container'],stdout=PIPE)
         (output,err)=process.communicate()
         exit_code=process.wait()
+	print 'exitcode=',exit_code
         if exit_code!=0:
-            print "Something went wrong running ",program_path
+            print "Something went wrong running runexec ",program_path
             exit(1)
             return
-        results.append(grab_results(output)) 
+	program_exit_code,result = grab_results(output)
+	print "program_exit code:",program_exit_code
+	if int(program_exit_code) != 0 :
+		print 'Exit code:',program_exit_code,' faulty program execution!... Check output.log for more info...'
+		exit(1)	
+        results.append(result) 
         #TODO: run any other tool here
     #write results to the directory 
     runs_path=os.path.join(result_directory,'runs.json')
