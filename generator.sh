@@ -8,6 +8,7 @@ bc_files=/home/sip/eval/dataset/*.bc
 combination_path=/home/sip/eval/combination/
 binary_path=/home/sip/eval/binaries/
 rtlib_path=/home/sip/self-checksumming/rtlib.c
+config_path=/home/sip/eval/lib-config/
 repeat=3
 #rm -r binaries
 mkdir -p binaries
@@ -31,6 +32,7 @@ do
 	bitcode=$bc
 	echo $bc
 	filename=${bc##*/}
+	libconfig=$config_path$filename
 	combination_dir=$combination_path$filename/*
 	for coverage_dir in $combination_dir
 	do
@@ -65,14 +67,10 @@ do
 				output_dir=$binary_path$filename/$coverage_name/$combination_file/$i
 				mkdir -p $output_dir
 				echo "Protect here $i"
-				bitcode=$output_dir/"guarded.bc"
-				llvm-link-3.9 $bc $binary_path"rtlib.bc" -o $bitcode
-				if [ $? -eq 0 ]; then
-					echo 'OK Link'
-				else
-					echo 'FAIL Link RTLib'
-					exit    
-				fi  
+
+				bitcode=$bc
+				#$output_dir/"guarded.bc"
+				 
 
 
 				echo 'Remove old files'
@@ -82,15 +80,25 @@ do
 				rm out.bc
 				rm out 
 				echo 'Transform SC & OH'
-				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
+				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -lib-config=$libconfig -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
 
 				if [ $? -eq 0 ]; then
 					echo 'OK Transform'
 				else
-					echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode  -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc > $output_dir/transform.console" 
+					echo !! 
 					echo 'FAIL Transform'
 					exit    
 				fi  
+				
+				
+				#link RTLIB 
+				llvm-link-3.9 $output_dir/out.bc $binary_path"rtlib.bc" -o $output_dir/out.bc
+				if [ $? -eq 0 ]; then
+					echo 'OK Link'
+				else
+					echo 'FAIL Link RTLib'
+					exit    
+				fi
 				# compiling external libraries to bitcodes
 				clang-3.9 $OH_PATH/assertions/response.c -c -fno-use-cxa-atexit -emit-llvm -o $OH_PATH/assertions/response.bc
 				if [ $? -eq 0 ]; then
@@ -100,7 +108,7 @@ do
 					exit    
 				fi  
 
-
+				 
 				echo 'Post patching binary after hash calls'
 				llc-3.9 $output_dir/out.bc -o $output_dir/out.s
 				if [ $? -eq 0 ]; then
