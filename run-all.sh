@@ -8,8 +8,8 @@ sh generator.sh
 sh runexec-binaries.sh
 #extract measured cpu and memory overhead 
 python measure.py
-#plot the extracted overhead data
-python plot.py
+#dump clone and extraction coverage improvement latex table
+python measure-coverage-improvements.py
+#plot the extracted overhead data and dump protection coverage latex table
+python plot-dump.py
 
-#extract stats on protection coverage
-#....

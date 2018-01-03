@@ -21,7 +21,7 @@ def get_immediate_subdirectories(a_dir):
             if os.path.isdir(os.path.join(a_dir, name))]
 
 def grab_results(result_directory,protection_stats=True):
-    #Baseline does not have protection stats
+    #Baseline do not have protection stats
     oh_result={}
     sc_result={}
     if protection_stats:
@@ -32,20 +32,54 @@ def grab_results(result_directory,protection_stats=True):
     runs_processed = json.load(open(os.path.join(result_directory,"runs_processed.json")))
    # pprint(sc_result)
     #TODO: grab any other result file
+    if protection_stats and (not sc_result or  not oh_result):
+        print "Err. sc stats or oh stats are empty ",result_directory 
+        exit(1)
     return {"sc_result":sc_result,"oh_result":oh_result, "runs":runs_result, "runs_processed":runs_processed}
 def process_results(coverage,results):
     #TODO do whatever and add outcome(s) to the results file
     print "process me"
     #pprint(results)
     coverage_cpu_reads = []
-    coverage_memory_reads= []
-        
+    coverage_memory_reads = []
+    number_sensitive_inst = []
+    number_oh_protected_inst = []
+    number_sc_protected_inst = []
+    number_sc_oh_protected_inst = []
     for combination in results:
        for attempt in combination['attempt_results']:
         #collect runs
-            coverage_cpu_reads.extend([d['cpu'] for d in attempt['results']['runs'] if 'cpu' in d])
-            coverage_memory_reads.extend([d['memory'] for d in attempt['results']['runs'] if 'memory' in d])
+        #coverage 0 does not have any SC OH info, it's the baseline
+        if coverage != '0':
+            if 'numberOfSensitiveInstructions' in attempt['results']['sc_result']:
+                number_sensitive_inst.append(attempt['results']['sc_result']['numberOfSensitiveInstructions'])
+            if 'numberOfProtectedInstructions' not in attempt['results']['sc_result']:
+                print coverage,attempt['results']
+                exit(1)
+            number_sc_protected_inst.append(attempt['results']['sc_result']['numberOfProtectedInstructions'])
+            number_oh_protected_inst.append(attempt['results']['oh_result']['numberOfProtectedInstructions'])
+            number_sc_oh_protected_inst.append(attempt['results']['oh_result']['numberOfProtectedGuardInstructions'])
+            
+        coverage_cpu_reads.extend([d['cpu'] for d in attempt['results']['runs'] if 'cpu' in d])
+        coverage_memory_reads.extend([d['memory'] for d in attempt['results']['runs'] if 'memory' in d])
     coverage_result = {}
+    
+    sensitive_inst = np.array(number_sensitive_inst).astype(np.float)
+    coverage_result['sensitive_inst_mean'] = np.mean(sensitive_inst)
+    coverage_result['sensitive_inst_std'] = np.std(sensitive_inst)
+    
+    sc_protected_inst= np.array(number_sc_protected_inst).astype(np.float)
+    coverage_result['sc_protected_mean'] = np.mean(sc_protected_inst)
+    coverage_result['sc_protected_std'] = np.std(sc_protected_inst)
+    
+    oh_protected_inst= np.array(number_oh_protected_inst).astype(np.float)
+    coverage_result['oh_protected_mean'] = np.mean(oh_protected_inst)
+    coverage_result['oh_protected_std'] = np.std(oh_protected_inst)
+    
+    sc_oh_protected_inst= np.array(number_sc_oh_protected_inst).astype(np.float)
+    coverage_result['sc_oh_protected_inst_mean'] = np.mean(sc_oh_protected_inst)
+    coverage_result['sc_oh_protected_inst_std'] = np.std(sc_oh_protected_inst)
+
     coverage_result['cpu_mean'] = np.mean(np.array(coverage_cpu_reads).astype(np.float))
     coverage_result['cpu_std'] = np.std(np.array(coverage_cpu_reads).astype(np.float))
     coverage_result['mem_mean'] = np.mean(np.array(coverage_memory_reads).astype(np.float))

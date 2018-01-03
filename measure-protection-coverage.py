@@ -4,7 +4,6 @@ from pprint import pprint
 import numpy as np
 oh_results = {}
 sc_results = {}
-TEX_OUT_FOLDER='tex'
 BEFORE_CLONE_KEY='input_indep_coverage_before_clonning'
 AFTER_CLONE_KEY='input_indep_coverage_after_clonning'
 CLONE_COVERAGE_KEY='input_indep_function_coverage'
@@ -62,8 +61,8 @@ def process_files(directory):
         results = grab_results(result_path,program_dir)
         program_results.append({"program":program_dir,"coverage_results":results})
     output_file = os.path.join(directory, "improvement-coverage-measurements.json")
-    clone_file = os.path.join(TEX_OUT_FOLDER,"clone_improvement_table.tex")
-    extract_file = os.path.join(TEX_OUT_FOLDER,"extract_improvement_table.tex")
+    clone_file = os.path.join(directory,"clone_improvement_table.tex")
+    extract_file = os.path.join(directory,"extract_improvement_table.tex")
     print 'clone improvement stats'
     clone_latex_table = dump_latex_table(program_results,'before_clone','after_clone')
     with open(clone_file,'wb') as clonefile:

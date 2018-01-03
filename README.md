@@ -1,3 +1,9 @@
+Run the whole experiment and dump data by executing:
+sh run-all.sh
+
+
+
+
 1. Apply clone and extract on programs (in BC format) in the dataset
 2. Create 20 combination (at the most) of 10%, 25%, 50% and 100% of functions
 3. Feed the function lists to the protection tool to generate protected binaries

@@ -4,6 +4,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from pprint import pprint
 import json
+import os
 def read(file_path):
     data = json.load(open(file_path))
     overhead={}
@@ -11,10 +12,13 @@ def read(file_path):
     program_count=len(data)
     print program_count
     programs=[]
+    protection_coverage_table = []
     for program in data:
         pprint (program.keys())
         programs.append(program['program'])
+        program_name = program['program']
         for coverage_result in program['coverage_results']:
+            coverage_name= coverage_result['coverage']
             if coverage_result['coverage'] not in overhead:
                 overhead[coverage_result['coverage']]={}
                 overhead[coverage_result['coverage']]['cpu_means'] = []
@@ -25,8 +29,22 @@ def read(file_path):
             overhead[coverage_result['coverage']]['cpu_means'].append(coverage_result['runtime_overhead']['cpu_mean'])
             overhead[coverage_result['coverage']]['cpu_stds'].append(coverage_result['runtime_overhead']['cpu_std'])
             overhead[coverage_result['coverage']]['programs'].append(program['program'])
+
+
+            pprint(coverage_result['runtime_overhead'])
+            sensitive_inst_mean = coverage_result['runtime_overhead']['sensitive_inst_mean']
+            sensitive_inst_std = coverage_result['runtime_overhead']['sensitive_inst_std']
+            sc_protected_mean = coverage_result['runtime_overhead']['sc_protected_mean']
+            sc_protected_std = coverage_result['runtime_overhead']['sc_protected_std']
+
+            oh_protected_mean = coverage_result['runtime_overhead']['oh_protected_mean']
+            oh_protected_std = coverage_result['runtime_overhead']['oh_protected_std']
+            sc_oh_protected_inst_mean = coverage_result['runtime_overhead']['sc_oh_protected_inst_mean']
+            sc_oh_protected_inst_std = coverage_result['runtime_overhead']['sc_oh_protected_inst_std']
+            protection_coverage_table.append([program_name,coverage_name,sensitive_inst_mean,sensitive_inst_std,sc_protected_mean,sc_protected_std,oh_protected_mean,oh_protected_std,sc_oh_protected_inst_mean, sc_oh_protected_inst_std])
+
     pprint(overhead)
-    return programs,overhead
+    return programs,overhead,protection_coverage_table
 
 def autolabel(rects):
     for rect in rects:
@@ -46,11 +64,21 @@ def prepare_xtick_labels(coverage_labels, programs):
         i+=1
     return coverage_labels
 
-
+def dump_protection_coverage_table(protection_coverage_data):
+    from tabulate import tabulate
+    headers = ['program','coverage','sensitive_inst_mean','sensitive_inst_std','sc_protected_mean','sc_protected_std','oh_protected_mean','oh_protected_std','sc_oh_protected_inst_mean','sc_oh_protected_inst_std']
+    print(tabulate(protection_coverage_data,headers=headers))
+    return tabulate(protection_coverage_data,headers=headers,tablefmt='latex')
    
 
 
-programs,overheads = read('binaries/measurements.json')
+programs,overheads,protection_coverage_table = read('binaries/measurements.json')
+protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
+#dump protection coverage table into tex file
+file_path=os.path.join('tex','protection_coverage_table.tex')
+with open(file_path,'wb') as texfile:
+    texfile.write(protection_coverage_table_content)
+print 'Dumped protection coverage table in latex format: tex/protection_coverage_table.tex'
 print programs
 program_count=len(programs)
 #exit(1)
