@@ -4,7 +4,7 @@ SC_PATH=/home/sip/self-checksumming/build/lib
 OH_PATH=/home/sip/sip-oblivious-hashing
 OH_LIB=$OH_PATH/build/lib
 EVAL_LIB=/home/sip/eval/passes/build/lib
-bc_files=/home/sip/eval/dataset/*.bc
+bc_files=/home/sip/eval/coverage/*.bc
 combination_path=/home/sip/eval/combination/
 binary_path=/home/sip/eval/binaries/
 rtlib_path=/home/sip/self-checksumming/rtlib.c
@@ -80,7 +80,7 @@ do
 				rm out.bc
 				rm out 
 				echo 'Transform SC & OH'
-				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -lib-config=$libconfig -clone-functions -extract-functions -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
+				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -lib-config=$libconfig -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
 
 				if [ $? -eq 0 ]; then
 					echo 'OK Transform'
