@@ -58,7 +58,7 @@ def process_results(coverage,results):
                 exit(1)
             number_sc_protected_inst.append(attempt['results']['sc_result']['numberOfProtectedInstructions'])
             number_oh_protected_inst.append(attempt['results']['oh_result']['numberOfProtectedInstructions'])
-            number_sc_oh_protected_inst.append(attempt['results']['oh_result']['numberOfProtectedGuardInstructions'])
+            number_sc_oh_protected_inst.append(attempt['results']['oh_result']['numberOfImplicitlyProtectedInstructions'])
             
         coverage_cpu_reads.extend([d['cpu'] for d in attempt['results']['runs'] if 'cpu' in d])
         coverage_memory_reads.extend([d['memory'] for d in attempt['results']['runs'] if 'memory' in d])
