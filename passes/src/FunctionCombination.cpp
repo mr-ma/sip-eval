@@ -7,6 +7,7 @@
 #include "llvm/Support/Error.h"
 #include "llvm/Support/raw_ostream.h"
 #include "llvm/Transforms/IPO/PassManagerBuilder.h"
+
 #include <fstream>
 #include <cxxabi.h>
 #include <math.h> 
@@ -60,15 +61,12 @@ std::vector<std::vector<std::string>> generateRandomCombinations(int totalNumber
 }
 void dumpCombinations(std::vector<std::vector<std::string>> combinations){
 	for(int i=0;i<combinations.size();++i){
-		char *fileName=(char*)calloc(50,sizeof(char));
-		strcat(fileName, OutPath.c_str());
-		strcat(fileName, std::to_string(i).c_str());
-		FILE *f=fopen(fileName,"w");
+        std::string fileName = OutPath + std::to_string(i);
+        std::ofstream f(fileName.c_str(), std::ofstream::out);
 		for(int j=0;j<combinations[i].size();++j){
-			fprintf(f,"%s\n",combinations[i][j].c_str());
+            f << combinations[i][j] << "\n";
 		}
-		fclose(f);
-		free(fileName);
+        f.close();
 	}
 }
 char FunctionCombinationPass::ID = 0;
