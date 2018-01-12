@@ -119,11 +119,28 @@ do
 					exit    
 				fi  
 				gcc -c -rdynamic $output_dir/out.s -o $output_dir/out.o -lncurses -pthread
+				if [ $? -eq 0 ]; then
+					echo 'OK gcc -c'
+				else
+					echo 'FAIL gcc -c'
+					exit    
+				fi 
 				# Linking with external libraries
 				gcc -g -rdynamic -c $OH_PATH/assertions/response.c -o $output_dir/response.o
 				#gcc -g -rdynamic -c rtlib.c -o rtlib.o
+				if [ $? -eq 0 ]; then
+					echo 'OK gcc -g'
+				else
+					echo 'FAIL gcc -g'
+					exit    
+				fi 
 				gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename -lncurses -pthread 
-
+				if [ $? -eq 0 ]; then
+					echo 'OK gcc final binary'
+				else
+					echo 'FAIL gcc final binary'
+					exit    
+				fi 
 				#remove temp files
 				rm $output_dir/out.o $output_dir/out.s $output_dir/response.o $output_dir/guarded.bc   
 				#clang++-3.9 -lncurses -rdynamic -std=c++0x out.bc -o out
