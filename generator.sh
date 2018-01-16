@@ -9,6 +9,7 @@ combination_path=/home/sip/eval/combination/
 binary_path=/home/sip/eval/binaries/
 rtlib_path=/home/sip/self-checksumming/rtlib.c
 config_path=/home/sip/eval/lib-config/
+#SKIP_EXISTING binaries when exactly one argument is passed here regardless of its value
 repeat=3
 #rm -r binaries
 mkdir -p binaries
@@ -54,6 +55,14 @@ do
 		do
 			combination_file=${coverage##*/}
 			output_dir=$binary_path$filename/$coverage_name/$combination_file
+			#avoid regenerating if desired
+			if [ $# -eq 1 ]; then
+				if [ -d "$output_dir" ]; then
+					echo "Skipping $output_dir"
+					continue
+				fi
+			fi
+
 			mkdir -p $output_dir
 
 			echo "Handling combination file $coverage"
@@ -197,3 +206,4 @@ do
 	#		fi
 	#	done	
 done
+echo 'Generator is done!'

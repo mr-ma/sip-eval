@@ -74,6 +74,7 @@ def dump_protection_coverage_table(protection_coverage_data):
 
 programs,overheads,protection_coverage_table = read('binaries/measurements.json')
 protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
+pprint (overheads)
 #dump protection coverage table into tex file
 file_path=os.path.join('tex','protection_coverage_table.tex')
 with open(file_path,'wb') as texfile:
