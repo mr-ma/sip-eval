@@ -17,6 +17,7 @@ from subprocess import Popen, PIPE
 import re
 import numpy as np
 REPEAT_NUMBER=5
+RUNSPROCESSED="runs_processed.json"
 def get_immediate_subdirectories(a_dir):
     return [name for name in os.listdir(a_dir)
             if os.path.isdir(os.path.join(a_dir, name))]
@@ -101,7 +102,7 @@ def process_results(result_path,results):
     process_result['mem_mean']=np.mean(mem_reads)
     process_result['mem_std']=np.std(mem_reads)
     pprint(process_result)
-    process_result_path= os.path.join(result_path,"runs_processed.json")
+    process_result_path= os.path.join(result_path,RUNSPROCESSED)
     with open(process_result_path, 'wb') as outfile:
         json.dump(process_result,outfile)
     return process_result
@@ -112,8 +113,10 @@ def process_files(directory):
                 attempt_path = os.path.join(directory,program_dir,coverage_dir,combination_dir);
                 for attempt_dir in get_immediate_subdirectories(attempt_path):
                     result_path = os.path.join(directory,program_dir,coverage_dir,combination_dir,attempt_dir);
-                    #create folder
-                    #prepare_result_folder(result_path)
+		    #if processed file already exists, do not run the program again
+		    processed_runs_file = os.path.join(result_path,RUNSPROCESSED)
+		    if os.path.exists(processed_runs_file):
+			continue
                     results = measure_overhead(result_path,program_dir)
                     process_results(result_path,results)
  #   pprint(program_results)

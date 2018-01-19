@@ -29,6 +29,11 @@ def grab_results(result_directory,protection_stats=True):
    # pprint(oh_result)
         sc_result = json.load(open(os.path.join(result_directory,"sc.stats")))
     runs_result = json.load(open(os.path.join(result_directory,"runs.json")))
+    r_path = os.path.join(result_directory,"runs_processed.json")
+    if not os.path.exists(r_path):
+	print r_path, " not fond"
+	exit(1)
+    print "loading", r_path
     runs_processed = json.load(open(os.path.join(result_directory,"runs_processed.json")))
    # pprint(sc_result)
     #TODO: grab any other result file
