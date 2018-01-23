@@ -56,12 +56,11 @@ def prepare_xtick_labels(coverage_labels, programs):
     coverage_labels = (coverage_labels+(['']*E))*N
     #Append program name to labels
     i = 0
-    for lbl in coverage_labels:
-        if lbl=='25':
-            # 2 is index of 25 in the labels, -1 becuase index starts from 0
-            p_index = ((i+(M-2))/(M)-1)
-            coverage_labels[i]='25\n'+programs[p_index]
-        i+=1
+    for p in programs:
+        # 2 is index of 25 in the labels, -1 becuase index starts from 0
+        coverage_labels[i+2]=p.replace('.bc','').replace('_testapp','').replace('_game','')
+        print i, M
+        i+=M
     return coverage_labels
 
 def dump_protection_coverage_table(protection_coverage_data):
@@ -69,12 +68,35 @@ def dump_protection_coverage_table(protection_coverage_data):
     headers = ['program','coverage','sensitive_inst_mean','sensitive_inst_std','sc_protected_mean','sc_protected_std','oh_protected_mean','oh_protected_std','sc_oh_protected_inst_mean','sc_oh_protected_inst_std']
     print(tabulate(protection_coverage_data,headers=headers))
     return tabulate(protection_coverage_data,headers=headers,tablefmt='latex')
-   
+def overhead_in_percentage(overheads):
+    baseline = overheads['0']
+    for overhead_key in overheads.keys():
+        if overhead_key is '0':
+            continue
+        overheads[overhead_key]['perc_cpu_means'] =[]
+        overheads[overhead_key]['perc_cpu_stds'] =[]
+        i =0
+        scale=[]
+        for cpu_mean in overheads[overhead_key]['cpu_means']:
+            cpu_scale = (cpu_mean - baseline['cpu_means'][i]) / baseline['cpu_means'][i]
+            scale.append(cpu_scale)
+            perc_cpu_mean = (cpu_mean - baseline['cpu_means'][i]) / baseline['cpu_means'][i] *100  
+            overheads[overhead_key]['perc_cpu_means'].append(perc_cpu_mean)
+            i+=1
+        i=0
+        for cpu_std in overheads[overhead_key]['cpu_stds']:
+            perc_cpu_std = scale[i] *cpu_std / overheads[overhead_key]['cpu_means'][i] *100#(cpu_std - baseline['cpu_stds'][i]) / cpu_std *100  
+            overheads[overhead_key]['perc_cpu_stds'].append(perc_cpu_std)
+            i+=1
+    pprint (overheads)
+    return overheads
 
-
+OVERHEAD_IN_PERCENTAGE = True 
 programs,overheads,protection_coverage_table = read('binaries/measurements.json')
 protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
-pprint (overheads)
+#pprint (overheads)
+perc_overheads = overhead_in_percentage(overheads)
+pprint (perc_overheads)
 #dump protection coverage table into tex file
 file_path=os.path.join('tex','protection_coverage_table.tex')
 with open(file_path,'wb') as texfile:
@@ -89,17 +111,29 @@ coverage_labels=[]
 E = 1 # number of empty gaps between programs
 N = program_count #Number of programs in the dataset len(overheads)
 M = len(overheads)+E #number of different coverages
+if OVERHEAD_IN_PERCENTAGE:
+    M=M-1
 fig, ax = plt.subplots()
 width= 0.35
 #ind_width=0.00
 ind = np.arange(0,N*M*width,width) #Number of bars we need is in total N (programs) times M (coverages)
 rects = []
 coverage_color={}
-coverage_color['0'] = 'c'
+if not OVERHEAD_IN_PERCENTAGE:
+    coverage_color['0'] = 'c'
 coverage_color['10'] = 'y'
 coverage_color['50'] = 'm'
 coverage_color['100'] = 'g'
 coverage_color['25'] = 'b'
+
+means_dic_name = 'cpu_means'
+stds_dic_name = 'cpu_stds'
+
+if OVERHEAD_IN_PERCENTAGE:
+    means_dic_name = 'perc_cpu_means'
+    stds_dic_name = 'perc_cpu_stds'
+
+
 coverage_keys = overheads.keys()
 coverage_keys = map(int,coverage_keys)
 coverage_keys.sort()
@@ -109,21 +143,23 @@ i =0
 for coverage in coverage_keys:
     #cpu_means.append(overhead['cpu_mean'])
     #cpu_stds.append(overhead['cpu_std'])
-    coverage_labels.append(coverage) 
+    if coverage is '0' and OVERHEAD_IN_PERCENTAGE:
+        continue
+    coverage_labels.append('') 
     ax_color = coverage_color[coverage]
 
 
     #ax_ind = ind+ind_width
-    pprint (overheads[coverage]['cpu_means'])
-    pprint (overheads[coverage]['cpu_stds'])
+    pprint (overheads[coverage][means_dic_name])
+    pprint (overheads[coverage][stds_dic_name])
     #print "ax_ind",ax_ind
     print ind[i::M]
     #print [coverage]*N
-    rects1 = ax.bar(ind[i::M], overheads[coverage]['cpu_means'], width, color=ax_color, yerr=overheads[coverage]['cpu_stds'])#,tick_label=[coverage]*N)
+    rects1 = ax.bar(ind[i::M], overheads[coverage][means_dic_name], width, color=ax_color, yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
     i+=1
     #ind_width += width
     rects.append(rects1)
-ax.set_ylabel('Overhead (s)')
+ax.set_ylabel('Overhead in % percentage')
 ax.set_title('Overhead by protection coverage per program')
 #print ind, ax_ind,ax_ind+1, width #np.arange(ind, ax_ind+1, width)
 print np.arange(np.min(ind),np.max(ind)+1, width)
@@ -134,34 +170,6 @@ ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs))
 #for reacts1 in rects:
 #    autolabel(rects1)
 #autolabel(rects2)
+plt.legend(loc='upper left')
 plt.savefig('myfig')
 
-
-
-
-exit(1)
-N = 5
-men_means = (20, 35, 30, 35, 27)
-men_std = (2, 3, 4, 1, 2)
-
-ind = np.arange(N)  # the x locations for the groups
-width = 0.35       # the width of the bars
-
-fig, ax = plt.subplots()
-rects1 = ax.bar(ind, men_means, width, color='r', yerr=men_std)
-
-women_means = (25, 32, 34, 20, 25)
-women_std = (3, 5, 2, 3, 3)
-rects2 = ax.bar(ind + width, women_means, width, color='y', yerr=women_std)
-
-# add some text for labels, title and axes ticks
-ax.set_ylabel('Scores')
-ax.set_title('Scores by group and gender')
-ax.set_xticks(ind + width / 2)
-ax.set_xticklabels(('G1', 'G2', 'G3', 'G4', 'G5'))
-
-ax.legend((rects1[0], rects2[0]), ('Men', 'Women'))
-
-autolabel(rects1)
-autolabel(rects2)
-plt.savefig('myfig')
