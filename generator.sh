@@ -9,6 +9,7 @@ combination_path=/home/sip/eval/combination/
 binary_path=/home/sip/eval/binaries/
 rtlib_path=/home/sip/self-checksumming/rtlib.c
 config_path=/home/sip/eval/lib-config/
+link_libraries=/home/sip/eval/link-libraries/
 #SKIP_EXISTING binaries when exactly one argument is passed here regardless of its value
 repeat=3
 #rm -r binaries
@@ -35,6 +36,8 @@ do
 	filename=${bc##*/}
 	libconfig=$config_path$filename
 	combination_dir=$combination_path$filename/*
+	libraries=$(<$link_libraries$filename)
+	echo "Libraries to link with $libraries"
 	for coverage_dir in $combination_dir
 	do
 		coverage_name=${coverage_dir##*/}
@@ -44,10 +47,10 @@ do
 		if [ $coverage_name -eq 0 ]; then
 			echo "Handling baseline"
 			llc-3.9 $bitcode -o $output_dir/out.s
-			gcc -c -rdynamic $output_dir/out.s -o $output_dir/out.o -lncurses -pthread
+			gcc -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
 			#make a dummy combination=0 and a dummy attempt=1 just for the sake of complying with the directory structure
 			mkdir -p $output_dir/0/1
-			gcc -g -rdynamic $output_dir/out.o -o $output_dir/0/1/$filename -lncurses -pthread
+			gcc -g -rdynamic $output_dir/out.o -o $output_dir/0/1/$filename $libraries
 			rm $output_dir/out.s $output_dir/out.o
 			continue
 		fi
@@ -127,7 +130,7 @@ do
 					echo 'FAIL llc'
 					exit    
 				fi  
-				gcc -c -rdynamic $output_dir/out.s -o $output_dir/out.o -lncurses -pthread
+				gcc -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
 				if [ $? -eq 0 ]; then
 					echo 'OK gcc -c'
 				else
@@ -143,7 +146,7 @@ do
 					echo 'FAIL gcc -g'
 					exit    
 				fi 
-				gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename -lncurses -pthread 
+				gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
 				if [ $? -eq 0 ]; then
 					echo 'OK gcc final binary'
 				else
