@@ -11,6 +11,7 @@ rtlib_path=/home/sip/self-checksumming/rtlib.c
 config_path=/home/sip/eval/lib-config/
 link_libraries=/home/sip/eval/link-libraries/
 #SKIP_EXISTING binaries when exactly one argument is passed here regardless of its value
+MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE=30
 repeat=3
 #rm -r binaries
 mkdir -p binaries
@@ -92,7 +93,7 @@ do
 				rm out.bc
 				rm out 
 				echo 'Transform SC & OH'
-				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -use-cache -sc -connectivity=5  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
+				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -use-cache -sc -connectivity=5 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
 
 				echo $output_dir
 				if [ $? -eq 0 ]; then
@@ -150,6 +151,8 @@ do
 				if [ $? -eq 0 ]; then
 					echo 'OK gcc final binary'
 				else
+					echo "$link_libraries$filename"
+					echo "$libraries"
 					echo 'FAIL gcc final binary'
 					exit    
 				fi 

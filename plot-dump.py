@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from pprint import pprint
 import json
 import os
+import matplotlib.ticker as ticker
 def read(file_path):
     data = json.load(open(file_path))
     overhead={}
@@ -165,8 +166,11 @@ ax.set_title('Overhead by protection coverage per program')
 print np.arange(np.min(ind),np.max(ind)+1, width)
 ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
 ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs))
-
 #ax.legend((rects1[0]), ('Tetris'))
+y_ticks = ['0','5','10','20','30','40','50','60','70','80','90','100','150','200','300','400','500','600']
+y_ticks_n = np.array(y_ticks).astype(np.int)
+ax.set_yticks(np.arange(min(np.int(y_ticks_n)), max(np.int(y_ticks_n))+1, 1.0))
+ax.set_ytickslabels(y_ticks)
 #for reacts1 in rects:
 #    autolabel(rects1)
 #autolabel(rects2)
