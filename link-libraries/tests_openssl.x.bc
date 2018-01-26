@@ -1,1 +1,1 @@
-/home/anahitik/SIP/sip-eval/link-libraries/libbitbox.a -lssl -lcrypto
+/home/sip/eval/link-libraries/libbitbox.a -lssl -lcrypto
