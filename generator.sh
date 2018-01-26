@@ -159,7 +159,7 @@ do
 				#remove temp files
 				rm $output_dir/out.o $output_dir/out.s $output_dir/response.o $output_dir/guarded.bc   
 				#clang++-3.9 -lncurses -rdynamic -std=c++0x out.bc -o out
-				python /home/sip/self-checksumming/patcher/dump_pipe.py $output_dir/$filename guide.txt patch_guide >> $output_dir/patcher.console
+				python /home/sip/self-checksumming/patcher/dump_pipe.py $output_dir/$filename guide.txt patch_guide $output_dir/"sc.stats">> $output_dir/patcher.console
 				if [ $? -eq 0 ]; then
 					echo 'Done patching SC'
 				else

@@ -42,7 +42,7 @@ def read(file_path):
             oh_protected_std = coverage_result['runtime_overhead']['oh_protected_std']
             sc_oh_protected_inst_mean = coverage_result['runtime_overhead']['sc_oh_protected_inst_mean']
             sc_oh_protected_inst_std = coverage_result['runtime_overhead']['sc_oh_protected_inst_std']
-            protection_coverage_table.append([program_name,coverage_name,sensitive_inst_mean,sensitive_inst_std,sc_protected_mean,sc_protected_std,oh_protected_mean,oh_protected_std,sc_oh_protected_inst_mean, sc_oh_protected_inst_std])
+            protection_coverage_table.append([program_name,int(coverage_name),sensitive_inst_mean,sensitive_inst_std,sc_protected_mean,sc_protected_std,oh_protected_mean,oh_protected_std,sc_oh_protected_inst_mean, sc_oh_protected_inst_std])
 
     pprint(overhead)
     return programs,overhead,protection_coverage_table
@@ -66,9 +66,11 @@ def prepare_xtick_labels(coverage_labels, programs):
 
 def dump_protection_coverage_table(protection_coverage_data):
     from tabulate import tabulate
+    from operator import itemgetter
+    data = sorted(protection_coverage_data, key=itemgetter(0,1))
     headers = ['program','coverage','sensitive_inst_mean','sensitive_inst_std','sc_protected_mean','sc_protected_std','oh_protected_mean','oh_protected_std','sc_oh_protected_inst_mean','sc_oh_protected_inst_std']
-    print(tabulate(protection_coverage_data,headers=headers))
-    return tabulate(protection_coverage_data,headers=headers,tablefmt='latex')
+    print(tabulate(data,headers=headers))
+    return tabulate(data,headers=headers,tablefmt='latex')
 def overhead_in_percentage(overheads):
     baseline = overheads['0']
     for overhead_key in overheads.keys():
@@ -92,7 +94,7 @@ def overhead_in_percentage(overheads):
     pprint (overheads)
     return overheads
 
-OVERHEAD_IN_PERCENTAGE = True 
+OVERHEAD_IN_PERCENTAGE = False 
 programs,overheads,protection_coverage_table = read('binaries/measurements.json')
 protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
 #pprint (overheads)
@@ -156,6 +158,7 @@ for coverage in coverage_keys:
     #print "ax_ind",ax_ind
     print ind[i::M]
     #print [coverage]*N
+    print "ind",ind[i:M], 'means',overheads[coverage][means_dic_name],'std',overheads[coverage][stds_dic_name]
     rects1 = ax.bar(ind[i::M], overheads[coverage][means_dic_name], width, color=ax_color, yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
     i+=1
     #ind_width += width
@@ -169,8 +172,8 @@ ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs))
 #ax.legend((rects1[0]), ('Tetris'))
 y_ticks = ['0','5','10','20','30','40','50','60','70','80','90','100','150','200','300','400','500','600']
 y_ticks_n = np.array(y_ticks).astype(np.int)
-ax.set_yticks(np.arange(min(np.int(y_ticks_n)), max(np.int(y_ticks_n))+1, 1.0))
-ax.set_ytickslabels(y_ticks)
+#ax.set_yticks(np.arange(min(np.int(y_ticks_n)), max(np.int(y_ticks_n))+1, 1.0))
+#ax.set_ytickslabels(y_ticks)
 #for reacts1 in rects:
 #    autolabel(rects1)
 #autolabel(rects2)
