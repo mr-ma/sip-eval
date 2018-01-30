@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HardwareAccesses>
+    <HardwareReadFunctions>
+        <Function>
+            <name>read_register</name>
+        </Function>
+    </HardwareReadFunctions>
+    <HardwareWriteFunctions>
+        <Function>
+            <name>write_register</name>
+        </Function>
+    </HardwareWriteFunctions>
+</HardwareAccesses>
+
