@@ -10,7 +10,7 @@ INPUT_DEP_STATS_KEY="inputdep_stats"
 INPUT_DEP_COVERAGE_KEY="input_dep_coverage"
 INPUT_INDEP_COVERAGE_KEY="input_indep_coverage"
 INSTR_COVERAGE_KEY="InstrCoverage"
-INSTRUCTIONS_NUMBER_KEY="instructions"
+INSTRUCTIONS_NUMBER_KEY="NumInstrs"
 
 programming_languages={"2048_game.bc":"C", "debug_memcached_testapp.bc":"C", "simple_parser.bc":"C++", "snake.bc":"C",
 "tests_openssl.x.bc":"C", "tests_u2f_standard.x.bc":"C", "tetris.bc":"C"}
@@ -52,12 +52,8 @@ def parse_stats(bitcode_name, dir_name):
     input_dep_coverage[bitcode_name] = input_dep_cov
     input_indep_cov = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_INDEP_COVERAGE_KEY][INSTR_COVERAGE_KEY]
     input_indep_coverage[bitcode_name] = input_indep_cov
-
-def parse_module_data(bitcode_name, dir_name):
-    file_name = os.path.join(dir_name, MODULE_DATA)
-    module_data = json.load(open(file_name))
-    module_name_key = dir_name.replace("dataset_info", "dataset")
-    instructions[bitcode_name] = module_data[module_name_key][INSTRUCTIONS_NUMBER_KEY]
+    instrs = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_INDEP_COVERAGE_KEY][INSTRUCTIONS_NUMBER_KEY]
+    instructions[bitcode_name] = instrs
 
 def get_bitcode_name_from_path(dir_name):
     return os.path.basename(os.path.normpath(dir_name))
@@ -71,8 +67,6 @@ def parse_bitcode_data():
             print('\t%s' % fname)
             if fname == STATS:
                 parse_stats(bitcode_name, dir_name)
-            elif fname == MODULE_DATA:
-                parse_module_data(bitcode_name, dir_name)
     
 def main():
     parse_bitcode_data()

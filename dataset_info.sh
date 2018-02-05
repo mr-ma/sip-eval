@@ -12,14 +12,14 @@ do
 	mkdir -p $output_dir 
     cd $output_dir
 	#opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -mod-size
-    print "opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -input-dep -lib-config=$libconfig -dependency-stats -mod-size"
-	opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -input-dep -lib-config=$libconfig -dependency-stats -mod-size
+    print "opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -input-dep -lib-config=$libconfig -dependency-stats"
+	opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -input-dep -lib-config=$libconfig -dependency-stats
     cd -
 	if [ $? -eq 0 ]; then
 		echo 'OK module size'
 	else
 		echo 'FAIL module size'
-		echo "opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -mod-size"
+		echo "opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -input-dep -lib-config=$libconfig -dependency-stats"
 		exit    
 	fi  
 done
