@@ -17,8 +17,8 @@ programming_languages={"2048_game.bc":"C", "debug_memcached_testapp.bc":"C", "si
 
 #cat 2048_game/2048_game/2048_game.c | sed '/^\s*#/d;/^\s*$/d' | wc -l
 # filter out new lines and comments
-code_lines={"2048_game.bc":301, "debug_memcached_testapp.bc":1701, "simple_parser.bc":46, "snake.bc":400,
-"tests_openssl.x.bc":133, "tests_u2f_standard.x.bc":294, "tetris.bc":305}
+code_lines={"2048_game.bc":301, "debug_memcached_testapp.bc":1975, "simple_parser.bc":2334, "snake.bc":400,
+"tests_openssl.x.bc":22760, "tests_u2f_standard.x.bc":1428, "tetris.bc":305}
 
 instructions={}
 input_dep_coverage={}
