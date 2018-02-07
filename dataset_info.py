@@ -4,14 +4,18 @@ from pprint import pprint
 import numpy as np
 
 INFO_DIR="/home/sip/eval/dataset_info/"
+TEX_OUT_FOLDER='tex'
+#INFO_DIR="/home/anahitik/sip-eval/dataset_info/"
 STATS="stats"
 MODULE_DATA="module_data"
 INPUT_DEP_STATS_KEY="inputdep_stats"
-INPUT_DEP_COVERAGE_KEY="input_dep_coverage"
-INPUT_INDEP_COVERAGE_KEY="input_indep_coverage"
+INPUT_DEP_COVERAGE_KEY="input_dep_function_coverage"
+INPUT_INDEP_COVERAGE_KEY="input_indep_function_coverage"
 INSTR_COVERAGE_KEY="InstrCoverage"
 INSTRUCTIONS_NUMBER_KEY="NumInstrs"
 
+programs = ["tests_u2f_standard.x.bc", "tetris.bc", "2048_game.bc", "snake.bc", "tests_openssl.x.bc",
+"debug_memcached_testapp.bc"]
 programming_languages={"2048_game.bc":"C", "debug_memcached_testapp.bc":"C", "simple_parser.bc":"C++", "snake.bc":"C",
 "tests_openssl.x.bc":"C", "tests_u2f_standard.x.bc":"C", "tetris.bc":"C"}
 
@@ -28,7 +32,7 @@ def dump_latex_table():
     from tabulate import tabulate
     headers = ["program", "programming language", "code lines", "LLVM instructions", "input indep %", "input dep %"]
     data =[] # [["tetris","C","305","38","9"]]
-    for key in programming_languages:
+    for key in programs:
         program = key
         prog_lang = programming_languages[key]
         code_line = code_lines[key]
@@ -39,7 +43,7 @@ def dump_latex_table():
 
     print(tabulate(data, headers=headers))
     latex_table = tabulate(data,headers=headers,tablefmt="latex")
-    table_file = "dataset_info.tex"
+    table_file = os.path.join(TEX_OUT_FOLDER,"dataset_info.tex")
     with open(table_file,'wb') as tablefile:
         tablefile.write(latex_table)
 
