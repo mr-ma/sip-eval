@@ -5,12 +5,12 @@ import numpy as np
 
 INFO_DIR="/home/sip/eval/dataset_info/"
 TEX_OUT_FOLDER='tex'
-#INFO_DIR="/home/anahitik/sip-eval/dataset_info/"
+#INFO_DIR="/home/anahitik/SIP/sip-eval/dataset_info/"
 STATS="stats"
 MODULE_DATA="module_data"
 INPUT_DEP_STATS_KEY="inputdep_stats"
-INPUT_DEP_COVERAGE_KEY="input_dep_function_coverage"
-INPUT_INDEP_COVERAGE_KEY="input_indep_function_coverage"
+INPUT_DEP_COVERAGE_KEY="input_dep_coverage"
+INPUT_INDEP_COVERAGE_KEY="input_indep_coverage"
 INSTR_COVERAGE_KEY="InstrCoverage"
 INSTRUCTIONS_NUMBER_KEY="NumInstrs"
 

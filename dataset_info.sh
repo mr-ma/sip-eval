@@ -13,7 +13,7 @@ do
     cd $output_dir
 	#opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -mod-size
     print "opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -input-dep -lib-config=$libconfig -dependency-stats"
-	opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -input-dep -lib-config=$libconfig -dependency-stats
+	opt -load $INPUT_DEP_PATH/libInputDependency.so $bitcode -strip-debug -unreachableblockelim -input-dep -lib-config=$libconfig -dependency-stats
     cd -
 	if [ $? -eq 0 ]; then
 		echo 'OK module size'
