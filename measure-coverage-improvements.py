@@ -7,11 +7,11 @@ sc_results = {}
 TEX_OUT_FOLDER='tex'
 BEFORE_CLONE_KEY='input_indep_coverage_before_clonning'
 AFTER_CLONE_KEY='input_indep_coverage_after_clonning'
-CLONE_COVERAGE_KEY='input_indep_function_coverage'
+CLONE_COVERAGE_KEY='input_indep_coverage'
 
 BEFORE_EXTRACT_KEY='input_dep_coverage_before_extraction'
 AFTER_EXTRACT_KEY='input_dep_coverage_after_extraction'
-EXTRACT_COVERAGE_KEY='input_dep_function_coverage'
+EXTRACT_COVERAGE_KEY='input_dep_coverage'
 def get_immediate_subdirectories(a_dir):
     return [name for name in os.listdir(a_dir)
             if os.path.isdir(os.path.join(a_dir, name))]

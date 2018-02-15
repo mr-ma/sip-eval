@@ -48,10 +48,10 @@ do
 		if [ $coverage_name -eq 0 ]; then
 			echo "Handling baseline"
 			llc-3.9 $bitcode -o $output_dir/out.s
-			gcc -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
+			g++ -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
 			#make a dummy combination=0 and a dummy attempt=1 just for the sake of complying with the directory structure
 			mkdir -p $output_dir/0/1
-			gcc -g -rdynamic $output_dir/out.o -o $output_dir/0/1/$filename $libraries
+			g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/0/1/$filename $libraries
 			rm $output_dir/out.s $output_dir/out.o
 			continue
 		fi
@@ -147,7 +147,7 @@ do
 					echo 'FAIL gcc -g'
 					exit    
 				fi 
-				gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
+				g++ -std=c++0x -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
 				if [ $? -eq 0 ]; then
 					echo 'OK gcc final binary'
 				else

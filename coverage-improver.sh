@@ -17,7 +17,7 @@ do
 	mkdir -p $output_dir 
 	output=$COVERAGEPATH$filename
 	echo "Output will be written to $output"
-	opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -lib-config=$libconfig -strip-debug -unreachableblockelim -clone-functions -extract-functions -transparent-cache -dependency-stats -dependency-stats-file=$output_dir/dependency.stats -clone-stats -clone-stats-file=$output_dir/clone.stats -extraction-stats -extraction-stats-file=$output_dir/extract.stats -o $output
+	opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -lib-config=$libconfig -strip-debug -unreachableblockelim -clone-functions -extract-functions -transparent-cache -dependency-stats -dependency-stats-file=$output_dir/dependency.stats -clone-stats -clone-stats-file=$output_dir/clone.stats -extraction-stats -extraction-stats-file=$output_dir/extract.stats -globaldce -o $output
 	if [ $? -eq 0 ]; then
 		echo 'OK Transform'
 	else
