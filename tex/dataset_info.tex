@@ -1,12 +1,12 @@
-\begin{tabular}{llrrrr}
+\begin{tabular}{llrrrrr}
 \hline
- program                    & programming language   &   code lines &   LLVM instructions &   input indep \% &   input dep \% \\
+ program                    & programming language   &   code lines &   LLVM instructions &   input indep \% &   input dep \% &   data indep \% \\
 \hline
- tests\_u2f\_standard.x.bc    & C                      &         1428 &                3824 &        0.83682  &       89.5397 \\
- tetris.bc                  & C                      &          305 &                 629 &       18.283    &       37.9968 \\
- 2048\_game.bc               & C                      &          301 &                 749 &        0.934579 &       78.7717 \\
- snake.bc                   & C                      &          400 &                1065 &        1.40845  &       91.2676 \\
- tests\_openssl.x.bc         & C                      &        22760 &               67707 &        0.370715 &       97.1421 \\
- debug\_memcached\_testapp.bc & C                      &         1975 &                5136 &        0.155763 &       98.1503 \\
+ tests\_u2f\_standard.x.bc    & C                      &         1428 &                3824 &        0.83682  &       99.1632 &        23.4048 \\
+ tetris.bc                  & C                      &          305 &                 629 &       18.283    &       81.717  &        41.4944 \\
+ 2048\_game.bc               & C                      &          301 &                 749 &        0.934579 &       99.0654 &        35.9146 \\
+ snake.bc                   & C                      &          400 &                1065 &        1.40845  &       98.5915 &        21.6901 \\
+ tests\_openssl.x.bc         & C                      &        22760 &               67707 &        0.389915 &       99.6101 &        14.8138 \\
+ debug\_memcached\_testapp.bc & C                      &         1975 &                5136 &        0.311526 &       99.6885 &        29.7313 \\
 \hline
 \end{tabular}
