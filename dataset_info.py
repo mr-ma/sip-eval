@@ -24,6 +24,7 @@ SHORT_RANGE_OH_PROTECTED_INSTR_KEY="numberOfShortRangeProtectedInstructions"
 OH_PROTECTED_BLOCKS_KEY="numberOfProtectedBlocks"
 SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY="numberOfShortRangeProtectedBlocks"
 OH_PROTECTED_BLOCK_COVERAGE_KEY="basicBlockCoverage"
+SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
 
 #programs = ["tests_u2f_standard.x.bc", "tetris.bc", "2048_game.bc", "snake.bc", "tests_openssl.x.bc",
 programs = ["tetris.bc", "2048_game.bc", "snake.bc"]
@@ -47,12 +48,13 @@ short_range_oh_protected_instr={}
 oh_protected_blocks={}
 short_range_oh_protected_blocks={}
 oh_protected_block_coverage={}
+sensitive_blocks={}
 
 def dump_latex_table():
     from tabulate import tabulate
     headers = ["program", "prog. lang.", "code lines", "LLVM instrs", "input indep instr", "input indep%", "input dep %", "data indep instr", "data indep %"]
     oh_headers = ["program", "prog. lang.", "code_lines", "LLVM instructions", "oh protected instr", "short oh protected instr",
-                  "oh protected blocks", "short oh protected blocks", "oh protected block %"]
+                  "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %"]
     data =[] # [["tetris","C","305","38","9"]]
     oh_data=[]
     for key in programs:
@@ -67,11 +69,12 @@ def dump_latex_table():
         data_indep = data_indep_instr[key]
         oh_prot_instr = oh_protected_instr[key]
         short_oh_prot_instr = short_range_oh_protected_instr[key]
+        sensitive_blcks = sensitive_blocks[key]
         oh_prot_block = oh_protected_blocks[key]
         short_oh_prot_block = short_range_oh_protected_blocks[key]
         oh_prot_block_cov = oh_protected_block_coverage[key]
         data.append([program, prog_lang, code_line, instrs, input_indep, input_indep_cov, input_dep_cov, data_indep, data_indep_cov])
-        oh_data.append([program, prog_lang, code_line, instrs, oh_prot_instr, short_oh_prot_instr, oh_prot_block, short_oh_prot_block, oh_prot_block_cov])
+        oh_data.append([program, prog_lang, code_line, instrs, oh_prot_instr, short_oh_prot_instr, sensitive_blcks, oh_prot_block, short_oh_prot_block, oh_prot_block_cov])
 
 
     print(tabulate(data, headers=headers))
@@ -88,6 +91,7 @@ data_indep_instr={}
 def parse_stats(bitcode_name, dir_name):
     file_name = os.path.join(dir_name, STATS)
     stats = json.load(open(file_name))
+    #module_name_key = dir_name.replace("dataset_info", "local_dataset")
     module_name_key = dir_name.replace("dataset_info", "dataset")
     input_dep_cov = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_DEP_COVERAGE_KEY][INSTR_COVERAGE_KEY]
     input_dep_coverage[bitcode_name] = input_dep_cov
@@ -108,6 +112,7 @@ def parse_oh_stats(bitcode_name, dir_name):
     oh_protected_blocks[bitcode_name] = stats[OH_PROTECTED_BLOCKS_KEY]
     short_range_oh_protected_blocks[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY]
     oh_protected_block_coverage[bitcode_name] = stats[OH_PROTECTED_BLOCK_COVERAGE_KEY]
+    sensitive_blocks[bitcode_name] = stats[SENSITIVE_BLOCKS_KEY]
 
 def get_bitcode_name_from_path(dir_name):
     return os.path.basename(os.path.normpath(dir_name))

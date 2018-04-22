@@ -1,3 +1,10 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{adjustbox}
+
+\begin{document}
+
 \begin{table}[ht]
 \centering
 \begin{adjustbox}{width=1.3\textwidth}
@@ -16,14 +23,17 @@
 \begin{table}[ht]
 \centering
 \begin{adjustbox}{width=1.3\textwidth}
-\begin{tabular}{llrrrrrrr}
+\begin{tabular}{llrrrrrrrr}
 \hline
- program      & prog. lang.   &   code\_lines &   LLVM instructions &   oh protected instr &   short oh protected instr &   oh protected blocks &   short oh protected blocks &   oh protected block \% \\
+ program      & prog. lang.   &   code\_lines &   LLVM instructions &   oh protected instr &   short oh protected instr &   sensitive blocks &   oh protected blocks &   short oh protected blocks &   oh protected block \% \\
 \hline
- tetris.bc    & C             &          305 &                 630 &                   52 &                         31 &                    12 &                          11 &               21.1009  \\
- 2048\_game.bc & C             &          301 &                 749 &                    7 &                        106 &                     1 &                          30 &               25       \\
- snake.bc     & C             &          400 &                1066 &                   24 &                         11 &                     8 &                           4 &                8.05369 \\
+ tetris.bc    & C             &          305 &                 630 &                   52 &                         31 &                109 &                    12 &                          11 &               21.1009  \\
+ 2048\_game.bc & C             &          301 &                 749 &                    7 &                        106 &                124 &                     1 &                          30 &               25       \\
+ snake.bc     & C             &          400 &                1066 &                   24 &                         11 &                149 &                     8 &                           4 &                8.05369 \\
 \hline
 \end{tabular}
 \end{adjustbox}
 \end{table}
+
+\end{document}
+
