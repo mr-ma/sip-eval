@@ -26,6 +26,12 @@ SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY="numberOfShortRangeProtectedBlocks"
 OH_PROTECTED_BLOCK_COVERAGE_KEY="basicBlockCoverage"
 SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
 
+OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
+OH_FUNCTION_COVERAGE_KEY="functionCoverage"
+OH_SENSITIVE_FUNCTIONS_KEY="numberOfSensitiveFunctions"
+OH_ARG_USING_SKIPPED_BLOCKS="numberOfSkippedArgUsingBlocks"
+OH_SKIPPED_LOOP_BLOCKS="numberOfSkippedLoopBlocks"
+
 #programs = ["tests_u2f_standard.x.bc", "tetris.bc", "2048_game.bc", "snake.bc", "tests_openssl.x.bc",
 programs = ["tetris.bc", "2048_game.bc", "snake.bc"]
 #programming_languages={"2048_game.bc":"C", "debug_memcached_testapp.bc":"C", "simple_parser.bc":"C++", "snake.bc":"C",
@@ -49,12 +55,18 @@ oh_protected_blocks={}
 short_range_oh_protected_blocks={}
 oh_protected_block_coverage={}
 sensitive_blocks={}
+oh_non_hashable_instr={}
+oh_function_coverage={}
+sensitive_functions={}
+arg_using_skipped_blocks={}
+skipped_loop_blocks={}
 
 def dump_latex_table():
     from tabulate import tabulate
     headers = ["program", "prog. lang.", "code lines", "LLVM instrs", "input indep instr", "input indep%", "input dep %", "data indep instr", "data indep %"]
     oh_headers = ["program", "prog. lang.", "code_lines", "LLVM instructions", "oh protected instr", "short oh protected instr",
-                  "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %"]
+                  "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %",
+                  "sensitive func", "protected function %", "non-hashable instr", "arg using blocks", "loop blocks"]
     data =[] # [["tetris","C","305","38","9"]]
     oh_data=[]
     for key in programs:
@@ -73,8 +85,16 @@ def dump_latex_table():
         oh_prot_block = oh_protected_blocks[key]
         short_oh_prot_block = short_range_oh_protected_blocks[key]
         oh_prot_block_cov = oh_protected_block_coverage[key]
+        oh_sensitive_functions = sensitive_functions[key]
+        oh_func_cov = oh_function_coverage[key]
+        oh_non_hashable = oh_non_hashable_instr[key]
+        arg_using_blocks = arg_using_skipped_blocks[key]
+        loop_blocks = skipped_loop_blocks[key]
+
         data.append([program, prog_lang, code_line, instrs, input_indep, input_indep_cov, input_dep_cov, data_indep, data_indep_cov])
-        oh_data.append([program, prog_lang, code_line, instrs, oh_prot_instr, short_oh_prot_instr, sensitive_blcks, oh_prot_block, short_oh_prot_block, oh_prot_block_cov])
+        oh_data.append([program, prog_lang, code_line, instrs, oh_prot_instr, short_oh_prot_instr, sensitive_blcks,
+        oh_prot_block, short_oh_prot_block, oh_prot_block_cov, oh_sensitive_functions, oh_func_cov, oh_non_hashable,
+        arg_using_blocks, loop_blocks])
 
 
     print(tabulate(data, headers=headers))
@@ -91,8 +111,8 @@ data_indep_instr={}
 def parse_stats(bitcode_name, dir_name):
     file_name = os.path.join(dir_name, STATS)
     stats = json.load(open(file_name))
-    #module_name_key = dir_name.replace("dataset_info", "local_dataset")
     module_name_key = dir_name.replace("dataset_info", "dataset")
+    #module_name_key = dir_name.replace("dataset_info", "dataset")
     input_dep_cov = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_DEP_COVERAGE_KEY][INSTR_COVERAGE_KEY]
     input_dep_coverage[bitcode_name] = input_dep_cov
     input_indep_instr[bitcode_name] = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_INDEP_COVERAGE_KEY][INPUT_INDEP_INSTR_KEY]
@@ -113,6 +133,12 @@ def parse_oh_stats(bitcode_name, dir_name):
     short_range_oh_protected_blocks[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY]
     oh_protected_block_coverage[bitcode_name] = stats[OH_PROTECTED_BLOCK_COVERAGE_KEY]
     sensitive_blocks[bitcode_name] = stats[SENSITIVE_BLOCKS_KEY]
+    oh_non_hashable_instr[bitcode_name] = stats[OH_NON_HAHSBALE_INSTR_KEY]
+    oh_function_coverage[bitcode_name] = stats[OH_FUNCTION_COVERAGE_KEY]
+    sensitive_functions[bitcode_name] = stats[OH_SENSITIVE_FUNCTIONS_KEY]
+    arg_using_skipped_blocks[bitcode_name] = stats[OH_ARG_USING_SKIPPED_BLOCKS]
+    skipped_loop_blocks[bitcode_name] = stats[OH_SKIPPED_LOOP_BLOCKS]
+
 
 def get_bitcode_name_from_path(dir_name):
     return os.path.basename(os.path.normpath(dir_name))
