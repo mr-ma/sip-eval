@@ -23,14 +23,12 @@ OH_PROTECTED_INSTR_KEY="numberOfProtectedInstructions"
 SHORT_RANGE_OH_PROTECTED_INSTR_KEY="numberOfShortRangeProtectedInstructions"
 OH_PROTECTED_BLOCKS_KEY="numberOfProtectedBlocks"
 SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY="numberOfShortRangeProtectedBlocks"
-OH_PROTECTED_BLOCK_COVERAGE_KEY="basicBlockCoverage"
 SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
 
 OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
-OH_FUNCTION_COVERAGE_KEY="functionCoverage"
+OH_PROTECTED_FUNCTION_KEY="numberOfProtectedFunctions"
 OH_SENSITIVE_FUNCTIONS_KEY="numberOfSensitiveFunctions"
-OH_ARG_USING_SKIPPED_BLOCKS="numberOfSkippedArgUsingBlocks"
-OH_SKIPPED_LOOP_BLOCKS="numberOfSkippedLoopBlocks"
+OH_SKIPPED_LOOP_BLOCKS="numberOfShortRangeSkippedLoopBlocks"
 
 #programs = ["tests_u2f_standard.x.bc", "tetris.bc", "2048_game.bc", "snake.bc", "tests_openssl.x.bc",
 programs = ["tetris.bc", "2048_game.bc", "snake.bc"]
@@ -57,8 +55,8 @@ oh_protected_block_coverage={}
 sensitive_blocks={}
 oh_non_hashable_instr={}
 oh_function_coverage={}
+oh_protected_functions={}
 sensitive_functions={}
-arg_using_skipped_blocks={}
 skipped_loop_blocks={}
 
 def dump_latex_table():
@@ -66,7 +64,7 @@ def dump_latex_table():
     headers = ["program", "prog. lang.", "code lines", "LLVM instrs", "input indep instr", "input indep%", "input dep %", "data indep instr", "data indep %"]
     oh_headers = ["program", "prog. lang.", "code_lines", "LLVM instructions", "oh protected instr", "short oh protected instr",
                   "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %",
-                  "sensitive func", "protected function %", "non-hashable instr", "arg using blocks", "loop blocks"]
+                  "sensitive func", "protected function %", "non-hashable instr", "loop blocks"]
     data =[] # [["tetris","C","305","38","9"]]
     oh_data=[]
     for key in programs:
@@ -88,13 +86,12 @@ def dump_latex_table():
         oh_sensitive_functions = sensitive_functions[key]
         oh_func_cov = oh_function_coverage[key]
         oh_non_hashable = oh_non_hashable_instr[key]
-        arg_using_blocks = arg_using_skipped_blocks[key]
         loop_blocks = skipped_loop_blocks[key]
 
         data.append([program, prog_lang, code_line, instrs, input_indep, input_indep_cov, input_dep_cov, data_indep, data_indep_cov])
         oh_data.append([program, prog_lang, code_line, instrs, oh_prot_instr, short_oh_prot_instr, sensitive_blcks,
         oh_prot_block, short_oh_prot_block, oh_prot_block_cov, oh_sensitive_functions, oh_func_cov, oh_non_hashable,
-        arg_using_blocks, loop_blocks])
+        loop_blocks])
 
 
     print(tabulate(data, headers=headers))
@@ -131,12 +128,16 @@ def parse_oh_stats(bitcode_name, dir_name):
     short_range_oh_protected_instr[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_INSTR_KEY]
     oh_protected_blocks[bitcode_name] = stats[OH_PROTECTED_BLOCKS_KEY]
     short_range_oh_protected_blocks[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY]
-    oh_protected_block_coverage[bitcode_name] = stats[OH_PROTECTED_BLOCK_COVERAGE_KEY]
     sensitive_blocks[bitcode_name] = stats[SENSITIVE_BLOCKS_KEY]
+
+    protected_blocks = short_range_oh_protected_blocks[bitcode_name] +  oh_protected_blocks[bitcode_name]
+    protected_block_cov = protected_blocks * 100.0 / sensitive_blocks[bitcode_name]
+    oh_protected_block_coverage[bitcode_name] = protected_block_cov
+
     oh_non_hashable_instr[bitcode_name] = stats[OH_NON_HAHSBALE_INSTR_KEY]
-    oh_function_coverage[bitcode_name] = stats[OH_FUNCTION_COVERAGE_KEY]
+    oh_protected_functions[bitcode_name] = stats[OH_PROTECTED_FUNCTION_KEY]
     sensitive_functions[bitcode_name] = stats[OH_SENSITIVE_FUNCTIONS_KEY]
-    arg_using_skipped_blocks[bitcode_name] = stats[OH_ARG_USING_SKIPPED_BLOCKS]
+    oh_function_coverage[bitcode_name] = oh_protected_functions[bitcode_name] * 100.0 / sensitive_functions[bitcode_name]
     skipped_loop_blocks[bitcode_name] = stats[OH_SKIPPED_LOOP_BLOCKS]
 
 
