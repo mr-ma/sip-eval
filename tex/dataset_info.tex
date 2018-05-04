@@ -12,26 +12,45 @@
 \hline
  program      & prog. lang.   &   code lines &   LLVM instrs &   input indep instr &   input indep\% &   input dep \% &   data indep instr &   data indep \% \\
 \hline
- tetris.bc    & C             &          305 &           630 &                 111 &      17.619    &       82.381  &                246 &        39.0476 \\
+ tetris.bc    & C             &          305 &           630 &                 112 &      17.7778   &       82.2222 &                246 &        39.0476 \\
  2048\_game.bc & C             &          301 &           749 &                   7 &       0.934579 &       99.0654 &                269 &        35.9146 \\
  snake.bc     & C             &          400 &          1066 &                  30 &       2.81426  &       97.1857 &                228 &        21.3884 \\
 \hline
 \end{tabular}
+
 \end{adjustbox}
 \end{table}
 
 \begin{table}[ht]
 \centering
 \begin{adjustbox}{width=1.3\textwidth}
-\begin{tabular}{llrrrrrrrrrrrr}
+\begin{tabular}{lrrrrrrr}
 \hline
- program      & prog. lang.   &   code\_lines &   LLVM instructions &   oh protected instr &   short oh protected instr &   sensitive blocks &   oh protected blocks &   short oh protected blocks &   oh protected block \% &   sensitive func &   protected function \% &   non-hashable instr &   loop blocks \\
+ program      &   sensitive blocks &   oh protected blocks &   short oh protected blocks &   oh protected block \% &   non-hashable blocks &   unprotected loop blocks &   unprotected data dep blocks \\
 \hline
- tetris.bc    & C             &          305 &                 630 &                   26 &                         13 &                109 &                    11 &                          10 &               19.2661  &               13 &                69.2308 &                   24 &            65 \\
- 2048\_game.bc & C             &          301 &                 749 &                    4 &                         43 &                124 &                     1 &                          32 &               26.6129  &               17 &                64.7059 &                   28 &            75 \\
- snake.bc     & C             &          400 &                1066 &                    7 &                          7 &                149 &                     6 &                           7 &                8.72483 &               13 &                46.1538 &                   43 &            75 \\
+ tetris.bc    &                109 &                    11 &                          18 &                26.6055 &                    22 &                        57 &                             0 \\
+ 2048\_game.bc &                124 &                     1 &                          43 &                35.4839 &                    21 &                        59 &                             0 \\
+ snake.bc     &                149 &                     6 &                          21 &                18.1208 &                    61 &                        60 &                             0 \\
 \hline
 \end{tabular}
+
+\end{adjustbox}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{width=1.3\textwidth}
+
+\begin{tabular}{lrrrrrr}
+\hline
+ program      &   LLVM instructions &   oh protected instr &   short oh protected instr &   non-hashable instr &   unprotected loop instr &   unprotected arg. reachable instr \\
+\hline
+ tetris.bc    &                 630 &                   26 &                         30 &                   55 &                      271 &                                 84 \\
+ 2048\_game.bc &                 749 &                    4 &                         70 &                   69 &                      291 &                                174 \\
+ snake.bc     &                1066 &                    7 &                         28 &                   64 &                      354 &                                514 \\
+\hline
+\end{tabular}
+
 \end{adjustbox}
 \end{table}
 

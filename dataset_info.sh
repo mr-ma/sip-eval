@@ -1,3 +1,12 @@
+#INPUT_DEP_PATH=/usr/local/lib/
+#UTILS_LIB=/home/anahitik/SIP/self-checksumming/build/lib/libUtils.so
+#DG_PATH=/usr/local/lib/
+#OH_PATH=/home/anahitik/SIP/sip-oblivious-hashing
+#OH_LIB=$OH_PATH/build/lib
+#FILES=/home/anahitik/SIP/sip-eval/local_dataset/*.bc
+#DATAPATH=/home/anahitik/SIP/sip-eval/dataset_info/
+#configs=/home/anahitik/SIP/sip-eval/lib-config
+
 UTILS_LIB=/home/sip/self-checksumming/build/lib/libUtils.so
 DG_PATH=/usr/local/lib/
 OH_PATH=/home/sip/sip-oblivious-hashing

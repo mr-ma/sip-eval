@@ -21,14 +21,20 @@ DATA_INDEP_INSTR_KEY="DataIndepInstrs"
 
 OH_PROTECTED_INSTR_KEY="numberOfProtectedInstructions"
 SHORT_RANGE_OH_PROTECTED_INSTR_KEY="numberOfShortRangeProtectedInstructions"
+OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
+UNPROTECTED_LOOP_INSTRUCTIONS="numberOfUnprotectedLoopInstructions"
+UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS="numberOfUnprotectedArgumentReachableInstructions"
+
+SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
 OH_PROTECTED_BLOCKS_KEY="numberOfProtectedBlocks"
 SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY="numberOfShortRangeProtectedBlocks"
-SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
+NON_HASHABLE_BLOCKS_KEY="numberOfNonHashableBlocks"
+UNPROTECTED_LOOP_BLOCKS="numberOfUnprotectedLoopBlocks"
+UNPROTECTED_DATA_DEPENDENT_BLOCKS="numberOfUnprotectedDataDependentBlocks"
 
-OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
-OH_PROTECTED_FUNCTION_KEY="numberOfProtectedFunctions"
-OH_SENSITIVE_FUNCTIONS_KEY="numberOfSensitiveFunctions"
-OH_SKIPPED_LOOP_BLOCKS="numberOfShortRangeSkippedLoopBlocks"
+#OH_PROTECTED_FUNCTION_KEY="numberOfProtectedFunctions"
+#OH_SENSITIVE_FUNCTIONS_KEY="numberOfSensitiveFunctions"
+#OH_SKIPPED_LOOP_BLOCKS="numberOfShortRangeSkippedLoopBlocks"
 
 #programs = ["tests_u2f_standard.x.bc", "tetris.bc", "2048_game.bc", "snake.bc", "tests_openssl.x.bc",
 programs = ["tetris.bc", "2048_game.bc", "snake.bc"]
@@ -49,24 +55,28 @@ data_indep_instr={}
 
 oh_protected_instr={}
 short_range_oh_protected_instr={}
+oh_non_hashable_instr={}
+unprotected_loop_instr={}
+unprotected_argument_reachable_instr={}
+
+sensitive_blocks={}
 oh_protected_blocks={}
 short_range_oh_protected_blocks={}
 oh_protected_block_coverage={}
-sensitive_blocks={}
-oh_non_hashable_instr={}
-oh_function_coverage={}
-oh_protected_functions={}
-sensitive_functions={}
-skipped_loop_blocks={}
+non_hashable_blocks={}
+unprotected_loop_blocks={}
+unprotected_data_dep_blocks={}
 
 def dump_latex_table():
     from tabulate import tabulate
     headers = ["program", "prog. lang.", "code lines", "LLVM instrs", "input indep instr", "input indep%", "input dep %", "data indep instr", "data indep %"]
-    oh_headers = ["program", "prog. lang.", "code_lines", "LLVM instructions", "oh protected instr", "short oh protected instr",
-                  "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %",
-                  "sensitive func", "protected function %", "non-hashable instr", "loop blocks"]
+    oh_block_coverage_headers = ["program", "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %",
+                  "non-hashable blocks", "unprotected loop blocks", "unprotected data dep blocks"]
+    oh_instruction_coverage_headers = ["program", "LLVM instructions", "oh protected instr", "short oh protected instr",
+                  "non-hashable instr", "unprotected loop instr", "unprotected arg. reachable instr"]
     data =[] # [["tetris","C","305","38","9"]]
-    oh_data=[]
+    oh_instruction_data=[]
+    oh_block_data = []
     for key in programs:
         program = key
         prog_lang = programming_languages[key]
@@ -77,30 +87,36 @@ def dump_latex_table():
         input_dep_cov = input_dep_coverage[key]
         data_indep_cov = data_indep_coverage[key]
         data_indep = data_indep_instr[key]
+
         oh_prot_instr = oh_protected_instr[key]
         short_oh_prot_instr = short_range_oh_protected_instr[key]
+        non_hashable_instr = oh_non_hashable_instr[key]
+        loop_instr = unprotected_loop_instr[key]
+        arg_reach_instr = unprotected_argument_reachable_instr[key]
+
         sensitive_blcks = sensitive_blocks[key]
         oh_prot_block = oh_protected_blocks[key]
         short_oh_prot_block = short_range_oh_protected_blocks[key]
         oh_prot_block_cov = oh_protected_block_coverage[key]
-        oh_sensitive_functions = sensitive_functions[key]
-        oh_func_cov = oh_function_coverage[key]
-        oh_non_hashable = oh_non_hashable_instr[key]
-        loop_blocks = skipped_loop_blocks[key]
+        non_hashable_block = non_hashable_blocks[key]
+        loop_blocks = unprotected_loop_blocks[key]
+        data_dep_blocks = unprotected_data_dep_blocks[key]
 
         data.append([program, prog_lang, code_line, instrs, input_indep, input_indep_cov, input_dep_cov, data_indep, data_indep_cov])
-        oh_data.append([program, prog_lang, code_line, instrs, oh_prot_instr, short_oh_prot_instr, sensitive_blcks,
-        oh_prot_block, short_oh_prot_block, oh_prot_block_cov, oh_sensitive_functions, oh_func_cov, oh_non_hashable,
-        loop_blocks])
+        oh_block_data.append([program,  sensitive_blcks, oh_prot_block, short_oh_prot_block, oh_prot_block_cov, non_hashable_block,
+                loop_blocks, data_dep_blocks])
+        oh_instruction_data.append([program, instrs, oh_prot_instr, short_oh_prot_instr, non_hashable_instr, loop_instr, arg_reach_instr])
 
 
     print(tabulate(data, headers=headers))
     latex_table = tabulate(data,headers=headers,tablefmt="latex")
-    oh_latex_table = tabulate(oh_data, headers=oh_headers,tablefmt="latex")
+    oh_block_latex_table = tabulate(oh_block_data, headers=oh_block_coverage_headers,tablefmt="latex")
+    oh_instr_latex_table = tabulate(oh_instruction_data, headers=oh_instruction_coverage_headers,tablefmt="latex")
     table_file = os.path.join(TEX_OUT_FOLDER,"dataset_info.tex")
     with open(table_file,'wb') as tablefile:
         tablefile.write(latex_table)
-        tablefile.write(oh_latex_table)
+        tablefile.write(oh_block_latex_table)
+        tablefile.write(oh_instr_latex_table)
 
 data_indep_instr={}
 
@@ -108,8 +124,8 @@ data_indep_instr={}
 def parse_stats(bitcode_name, dir_name):
     file_name = os.path.join(dir_name, STATS)
     stats = json.load(open(file_name))
+    #module_name_key = dir_name.replace("dataset_info", "local_dataset")
     module_name_key = dir_name.replace("dataset_info", "dataset")
-    #module_name_key = dir_name.replace("dataset_info", "dataset")
     input_dep_cov = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_DEP_COVERAGE_KEY][INSTR_COVERAGE_KEY]
     input_dep_coverage[bitcode_name] = input_dep_cov
     input_indep_instr[bitcode_name] = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_INDEP_COVERAGE_KEY][INPUT_INDEP_INSTR_KEY]
@@ -126,20 +142,19 @@ def parse_oh_stats(bitcode_name, dir_name):
     stats = json.load(open(file_name))
     oh_protected_instr[bitcode_name] = stats[OH_PROTECTED_INSTR_KEY]
     short_range_oh_protected_instr[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_INSTR_KEY]
+    oh_non_hashable_instr[bitcode_name] = stats[OH_NON_HAHSBALE_INSTR_KEY]
+    unprotected_loop_instr[bitcode_name] = stats[UNPROTECTED_LOOP_INSTRUCTIONS]
+    unprotected_argument_reachable_instr[bitcode_name] = stats[UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS]
+
+    sensitive_blocks[bitcode_name] = stats[SENSITIVE_BLOCKS_KEY]
     oh_protected_blocks[bitcode_name] = stats[OH_PROTECTED_BLOCKS_KEY]
     short_range_oh_protected_blocks[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY]
-    sensitive_blocks[bitcode_name] = stats[SENSITIVE_BLOCKS_KEY]
-
     protected_blocks = short_range_oh_protected_blocks[bitcode_name] +  oh_protected_blocks[bitcode_name]
     protected_block_cov = protected_blocks * 100.0 / sensitive_blocks[bitcode_name]
     oh_protected_block_coverage[bitcode_name] = protected_block_cov
-
-    oh_non_hashable_instr[bitcode_name] = stats[OH_NON_HAHSBALE_INSTR_KEY]
-    oh_protected_functions[bitcode_name] = stats[OH_PROTECTED_FUNCTION_KEY]
-    sensitive_functions[bitcode_name] = stats[OH_SENSITIVE_FUNCTIONS_KEY]
-    oh_function_coverage[bitcode_name] = oh_protected_functions[bitcode_name] * 100.0 / sensitive_functions[bitcode_name]
-    skipped_loop_blocks[bitcode_name] = stats[OH_SKIPPED_LOOP_BLOCKS]
-
+    non_hashable_blocks[bitcode_name] = stats[NON_HASHABLE_BLOCKS_KEY]
+    unprotected_loop_blocks[bitcode_name] = stats[UNPROTECTED_LOOP_BLOCKS]
+    unprotected_data_dep_blocks[bitcode_name] = stats[UNPROTECTED_DATA_DEPENDENT_BLOCKS]
 
 def get_bitcode_name_from_path(dir_name):
     return os.path.basename(os.path.normpath(dir_name))
