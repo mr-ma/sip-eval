@@ -24,6 +24,7 @@ SHORT_RANGE_OH_PROTECTED_INSTR_KEY="numberOfShortRangeProtectedInstructions"
 OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
 UNPROTECTED_LOOP_INSTRUCTIONS="numberOfUnprotectedLoopInstructions"
 UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS="numberOfUnprotectedArgumentReachableInstructions"
+UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS="numberOfDataDependentInstructions"
 
 SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
 OH_PROTECTED_BLOCKS_KEY="numberOfProtectedBlocks"
@@ -58,6 +59,7 @@ short_range_oh_protected_instr={}
 oh_non_hashable_instr={}
 unprotected_loop_instr={}
 unprotected_argument_reachable_instr={}
+unprotected_data_dep_instr={}
 
 sensitive_blocks={}
 oh_protected_blocks={}
@@ -73,7 +75,7 @@ def dump_latex_table():
     oh_block_coverage_headers = ["program", "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %",
                   "non-hashable blocks", "unprotected loop blocks", "unprotected data dep blocks"]
     oh_instruction_coverage_headers = ["program", "LLVM instructions", "oh protected instr", "short oh protected instr",
-                  "non-hashable instr", "unprotected loop instr", "unprotected arg. reachable instr"]
+                  "non-hashable instr", "unprotected loop instr", "unprotected arg. reachable instr", "unprotected data dep. instr"]
     data =[] # [["tetris","C","305","38","9"]]
     oh_instruction_data=[]
     oh_block_data = []
@@ -93,6 +95,7 @@ def dump_latex_table():
         non_hashable_instr = oh_non_hashable_instr[key]
         loop_instr = unprotected_loop_instr[key]
         arg_reach_instr = unprotected_argument_reachable_instr[key]
+        data_dep_inst = unprotected_data_dep_instr[key]
 
         sensitive_blcks = sensitive_blocks[key]
         oh_prot_block = oh_protected_blocks[key]
@@ -105,7 +108,7 @@ def dump_latex_table():
         data.append([program, prog_lang, code_line, instrs, input_indep, input_indep_cov, input_dep_cov, data_indep, data_indep_cov])
         oh_block_data.append([program,  sensitive_blcks, oh_prot_block, short_oh_prot_block, oh_prot_block_cov, non_hashable_block,
                 loop_blocks, data_dep_blocks])
-        oh_instruction_data.append([program, instrs, oh_prot_instr, short_oh_prot_instr, non_hashable_instr, loop_instr, arg_reach_instr])
+        oh_instruction_data.append([program, instrs, oh_prot_instr, short_oh_prot_instr, non_hashable_instr, loop_instr, arg_reach_instr, data_dep_inst])
 
 
     print(tabulate(data, headers=headers))
@@ -145,6 +148,7 @@ def parse_oh_stats(bitcode_name, dir_name):
     oh_non_hashable_instr[bitcode_name] = stats[OH_NON_HAHSBALE_INSTR_KEY]
     unprotected_loop_instr[bitcode_name] = stats[UNPROTECTED_LOOP_INSTRUCTIONS]
     unprotected_argument_reachable_instr[bitcode_name] = stats[UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS]
+    unprotected_data_dep_instr[bitcode_name] = stats[UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS]
 
     sensitive_blocks[bitcode_name] = stats[SENSITIVE_BLOCKS_KEY]
     oh_protected_blocks[bitcode_name] = stats[OH_PROTECTED_BLOCKS_KEY]
