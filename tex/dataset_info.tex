@@ -2,7 +2,7 @@
 \hline
  program      &   LLVM instrs &   input indep instr &   input indep\% &   input dep \% &   data indep instr &   argument dep. data indep instr &   data indep loop dep instr &   data indep \% \\
 \hline
- tetris.bc    &           629 &                 111 &      17.6471   &       82.3529 &                245 &                               24 &                         113 &        38.9507 \\
+ tetris.bc    &           629 &                 107 &      17.0111   &       82.9889 &                245 &                               24 &                         113 &        38.9507 \\
  2048\_game.bc &           749 &                   7 &       0.934579 &       99.0654 &                264 &                               40 &                          51 &        35.247  \\
  snake.bc     &          1065 &                  30 &       2.8169   &       97.1831 &                227 &                              102 &                          37 &        21.3146 \\
 \hline
@@ -10,16 +10,16 @@
 \hline
  program      &   sensitive blocks &   oh protected blocks &   short oh protected blocks &   oh protected block \% &   non-hashable blocks &   unprotected loop blocks &   unprotected data dep blocks \\
 \hline
- tetris.bc    &                108 &                    10 &                          12 &                20.3704 &                    25 &                        61 &                             0 \\
- 2048\_game.bc &                124 &                     1 &                          45 &                37.0968 &                    25 &                        53 &                             0 \\
- snake.bc     &                148 &                     3 &                          21 &                16.2162 &                    64 &                        60 &                             0 \\
+ tetris.bc    &                108 &                    10 &                          15 &                23.1481 &                    22 &                        61 &                             0 \\
+ 2048\_game.bc &                124 &                     1 &                          48 &                39.5161 &                    22 &                        53 &                             0 \\
+ snake.bc     &                148 &                     3 &                          24 &                18.2432 &                    61 &                        60 &                             0 \\
 \hline
 \end{tabular}\begin{tabular}{lrrrrrrr}
 \hline
  program      &   LLVM instructions &   oh protected instr &   short oh protected instr &   non-hashable instr &   unprotected loop instr &   unprotected arg. reachable instr &   unprotected data dep. instr \\
 \hline
- tetris.bc    &                 629 &                   22 &                         18 &                   34 &                      304 &                                 17 &                           214 \\
- 2048\_game.bc &                 749 &                    4 &                         92 &                   53 &                      274 &                                 25 &                           295 \\
- snake.bc     &                1065 &                    4 &                         35 &                   54 &                      354 &                                 47 &                           564 \\
+ tetris.bc    &                 629 &                   22 &                         24 &                   34 &                      304 &                                 17 &                           208 \\
+ 2048\_game.bc &                 749 &                    4 &                         96 &                   53 &                      274 &                                 25 &                           291 \\
+ snake.bc     &                1065 &                    4 &                         40 &                   54 &                      354 &                                 47 &                           559 \\
 \hline
 \end{tabular}
