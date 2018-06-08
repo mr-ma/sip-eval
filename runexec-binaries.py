@@ -18,6 +18,7 @@ import re
 import numpy as np
 REPEAT_NUMBER=5
 RUNSPROCESSED="runs_processed.json"
+CMDLINE_ARGS="cmdline-args"
 def get_immediate_subdirectories(a_dir):
     return [name for name in os.listdir(a_dir)
             if os.path.isdir(os.path.join(a_dir, name))]
@@ -60,16 +61,27 @@ def prepare_result_folder(directory):
     directory = os.path.join(directory, "runs")
     if not os.path.exists(directory):
             os.makedirs(directory)
+def read_args(program):
+    filename = os.path.join(CMDLINE_ARGS,program)
+    if os.path.exists(filename):
+        with open(filename, 'r') as myfile:
+             return myfile.read()
+    return ''
 def measure_overhead(result_directory,program):
     results = []
     global REPEAT_NUMBER
     program_path = os.path.join(result_directory,program)
+    
+    cmd_args = read_args(program).replace('\n','') 
+    print cmd_args
     #TODO run runexec 100 times and calculate avg and std
     for i in range(REPEAT_NUMBER):
         #call(["sosylib_measure.sh",program_path])
         print str(i)," trying to run:",program_path
 	#--container throws a suspicious warning, I'm not sure it the measurements are good
-        process = Popen(["runexec",program_path,'--no-container'],stdout=PIPE)
+        cmd = 'runexec {} {} --container'.format(program_path,cmd_args)
+        print cmd
+        process = Popen(cmd,shell=True,stdout=PIPE)
         (output,err)=process.communicate()
         exit_code=process.wait()
 	print 'exitcode=',exit_code

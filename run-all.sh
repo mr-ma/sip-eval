@@ -3,7 +3,7 @@ sh coverage-improver.sh
 #extract filter fils (i.e. combinations) from the list of available function names
 sh combinator.sh
 #generat prottected binaries
-bash generator.sh
+bash generator.sh fdcontinue
 if [ $? -eq 0 ]; then
 
 	echo 'OK generator'
