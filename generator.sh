@@ -48,12 +48,16 @@ do
 		#Generate unprotected binary for the baseline 
 		if [ $coverage_name -eq 0 ]; then
 			echo "Handling baseline"
+			echo llc-3.9 $bitcode -o $output_dir/out.s
 			llc-3.9 $bitcode -o $output_dir/out.s
+			echo g++ -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
 			g++ -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
 			#make a dummy combination=0 and a dummy attempt=1 just for the sake of complying with the directory structure
 			mkdir -p $output_dir/0/1
+			echo g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/0/1/$filename $libraries
 			g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/0/1/$filename $libraries
 			rm $output_dir/out.s $output_dir/out.o
+			echo "I'm here"
 			continue
 		fi
 		for coverage in $coverage_dir/*
@@ -94,11 +98,12 @@ do
 				rm out.bc
 				rm out 
 				echo 'Transform SC & OH'
-				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -use-cache -sc -connectivity=5 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
+				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -connectivity=5 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
 
 				echo $output_dir
 				if [ $? -eq 0 ]; then
 					echo 'OK Transform'
+					echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -connectivity=5 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/network_file -dump-sc-stat=$output_dir/sc.stats -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/oh.stats -o $output_dir/out.bc >> $output_dir/transform.console"
 				else
 					echo !! 
 					echo 'FAIL Transform'
@@ -172,7 +177,7 @@ do
 				echo 'Starting GDB patcher, this will wait for input when nothing is provided'
 	
 				#Patch using GDB
-				python $OH_PATH/patcher/patchAsserts.py -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console
+				python $OH_PATH/patcher/patchAsserts.py -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console
 				if [ $? -eq 0 ]; then
 					echo 'OK GDB Patch'
 					rm $output_dir/$filename

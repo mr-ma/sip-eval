@@ -93,6 +93,10 @@ def process_results(coverage,results):
     pprint(coverage_result)
     sanity_result = {}
     coverage_cpu_reads = np.array(coverage_cpu_reads).astype(np.float)
+    
+    if len (coverage_cpu_reads) == 0:
+	return False, {}
+    
     sanity_result['min'] = np.min(coverage_cpu_reads)
     sanity_result['max'] = np.max(coverage_cpu_reads)
     sanity_result['median']=np.median(coverage_cpu_reads)
@@ -105,7 +109,7 @@ def process_results(coverage,results):
     pprint(sanity_result)
     #print "Coverage results:", coverage
     #pprint(coverage_result)
-    return coverage_result
+    return True, coverage_result
 def process_files(directory):
     program_results=[]
     for program_dir in get_immediate_subdirectories(directory):
@@ -120,10 +124,16 @@ def process_files(directory):
                     result_path = os.path.join(directory,program_dir,coverage_dir,combination_dir,attempt_dir);
                     #if baseline no protection stats
                     results = grab_results(result_path,coverage_dir!="0")
+                    if len(results['runs_processed']) <= 1:
+			print "No runtime measurement for {}".format(result_path)
+                    else:
+                        print "Found {} run results".format(len(results['runs_processed']))
+                        print results['runs_processed']
                     attempt_results.append({"results":results, "attempt":attempt_dir})
                 combination_results.append({"combination":combination_dir,"attempt_results":attempt_results})
-            processed_coverage = process_results(coverage_dir,combination_results)
-            coverage_results.append({"coverage":coverage_dir, "runtime_overhead":processed_coverage,"combination_results":combination_results})
+            good,processed_coverage = process_results(coverage_dir,combination_results)
+            if good:
+            	coverage_results.append({"coverage":coverage_dir, "runtime_overhead":processed_coverage,"combination_results":combination_results})
         program_results.append({"program":program_dir,"coverage_results":coverage_results})
     output_file = os.path.join(directory, "measurements.json")
     with open(output_file,'wb') as outfile:

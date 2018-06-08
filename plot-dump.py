@@ -5,13 +5,14 @@ import matplotlib.pyplot as plt
 from pprint import pprint
 import json
 import os
+import argparse
 import matplotlib.ticker as ticker
 def read(file_path):
     data = json.load(open(file_path))
     overhead={}
     program_count=0
     program_count=len(data)
-    print program_count
+    print 'len(data)=', program_count
     programs=[]
     protection_coverage_table = []
     for program in data:
@@ -52,7 +53,7 @@ def autolabel(rects):
         height = rect.get_height()
         ax.text(rect.get_x() + rect.get_width()/2., 1.05*height,'%d' % int(height),ha='center', va='bottom')
 
-def prepare_xtick_labels(coverage_labels, programs):
+def prepare_xtick_labels(coverage_labels, programs,E,N,M):
     #add program name to the labels
     coverage_labels = (coverage_labels+(['']*E))*N
     #Append program name to labels
@@ -60,8 +61,8 @@ def prepare_xtick_labels(coverage_labels, programs):
     for p in programs:
         # 2 is index of 25 in the labels, -1 becuase index starts from 0
         coverage_labels[i+2]=p.replace('.bc','').replace('_testapp','').replace('_game','')
-        print i, M
-        i+=M
+        print 'i:{},M:{}'.format(i, M)
+        i+=M+E
     return coverage_labels
 
 def dump_protection_coverage_table(protection_coverage_data):
@@ -94,89 +95,121 @@ def overhead_in_percentage(overheads):
     pprint (overheads)
     return overheads
 
-OVERHEAD_IN_PERCENTAGE = False 
-programs,overheads,protection_coverage_table = read('binaries/measurements.json')
-protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
-#pprint (overheads)
-perc_overheads = overhead_in_percentage(overheads)
-pprint (perc_overheads)
-#dump protection coverage table into tex file
-file_path=os.path.join('tex','protection_coverage_table.tex')
-with open(file_path,'wb') as texfile:
-    texfile.write(protection_coverage_table_content)
-print 'Dumped protection coverage table in latex format: tex/protection_coverage_table.tex'
-print programs
-program_count=len(programs)
-#exit(1)
-#cpu_means=[]
-#cpu_stds=[]
-coverage_labels=[]
-E = 1 # number of empty gaps between programs
-N = program_count #Number of programs in the dataset len(overheads)
-M = len(overheads)+E #number of different coverages
-if OVERHEAD_IN_PERCENTAGE:
-    M=M-1
-fig, ax = plt.subplots()
-width= 0.35
-#ind_width=0.00
-ind = np.arange(0,N*M*width,width) #Number of bars we need is in total N (programs) times M (coverages)
-rects = []
-coverage_color={}
-if not OVERHEAD_IN_PERCENTAGE:
-    coverage_color['0'] = 'c'
-coverage_color['10'] = 'y'
-coverage_color['50'] = 'm'
-coverage_color['100'] = 'g'
-coverage_color['25'] = 'b'
+def main():
+	parser = argparse.ArgumentParser()
+	parser.add_argument('-p',action='store', dest='percentage', help='Display overhead in percentage, default is ms',required=False,type=bool,default=False)
+	parser.add_argument('-n',action='store', dest='name',help='Output filename, default is perfromance-evaluation-[percentage]',required=False, type=str, default=None)
+	parser.add_argument('-w',action='store', dest='width',help='Output filename, default is perfromance-evaluation-[percentage]',required=False, type=float, default=0.35)
 
-means_dic_name = 'cpu_means'
-stds_dic_name = 'cpu_stds'
+	results = parser.parse_args()
 
-if OVERHEAD_IN_PERCENTAGE:
-    means_dic_name = 'perc_cpu_means'
-    stds_dic_name = 'perc_cpu_stds'
+	OVERHEAD_IN_PERCENTAGE = results.percentage 
+	programs,overheads,protection_coverage_table = read('binaries/measurements.json')
+	protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
+	#pprint (overheads)
+	perc_overheads = overhead_in_percentage(overheads)
+	pprint (perc_overheads)
+	#dump protection coverage table into tex file
+	file_path=os.path.join('tex','protection_coverage_table.tex')
+	with open(file_path,'wb') as texfile:
+	    texfile.write(protection_coverage_table_content)
+	print 'Dumped protection coverage table in latex format: tex/protection_coverage_table.tex'
+	print programs
+	program_count=len(programs)
+	#exit(1)
+	#cpu_means=[]
+	#cpu_stds=[]
+	coverage_labels=[]
+	E = 1 # number of empty gaps between programs
+	N = program_count #Number of programs in the dataset len(overheads)
+	M = len(overheads) #number of different coverages
+	if OVERHEAD_IN_PERCENTAGE:
+	    M=M-1
+	fig, ax = plt.subplots()
+	width=results.width
+	#ind_width=0.00
+	print 'program count:', N, ' coverage count:', M
+	ind = np.arange(0,program_count * (M+E) * width,width) #Number of bars we need is in total N (programs) times M (coverages)
+	print 'total columns:',len(ind)
+	#exit(1)
+	rects = []
+	coverage_color={}
+	if not OVERHEAD_IN_PERCENTAGE:
+	    coverage_color['0'] = 'c'
+	coverage_color['10'] = 'y'
+	coverage_color['50'] = 'm'
+	coverage_color['100'] = 'g'
+	coverage_color['25'] = 'b'
 
+	means_dic_name = 'cpu_means'
+	stds_dic_name = 'cpu_stds'
 
-coverage_keys = overheads.keys()
-coverage_keys = map(int,coverage_keys)
-coverage_keys.sort()
-coverage_keys = map(str,coverage_keys)
-#keys(1)
-i =0
-for coverage in coverage_keys:
-    #cpu_means.append(overhead['cpu_mean'])
-    #cpu_stds.append(overhead['cpu_std'])
-    if coverage is '0' and OVERHEAD_IN_PERCENTAGE:
-        continue
-    coverage_labels.append('') 
-    ax_color = coverage_color[coverage]
+	if OVERHEAD_IN_PERCENTAGE:
+	    means_dic_name = 'perc_cpu_means'
+	    stds_dic_name = 'perc_cpu_stds'
 
 
-    #ax_ind = ind+ind_width
-    pprint (overheads[coverage][means_dic_name])
-    pprint (overheads[coverage][stds_dic_name])
-    #print "ax_ind",ax_ind
-    print ind[i::M]
-    #print [coverage]*N
-    print "ind",ind[i:M], 'means',overheads[coverage][means_dic_name],'std',overheads[coverage][stds_dic_name]
-    rects1 = ax.bar(ind[i::M], overheads[coverage][means_dic_name], width, color=ax_color, yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
-    i+=1
-    #ind_width += width
-    rects.append(rects1)
-ax.set_ylabel('Overhead in % percentage')
-ax.set_title('Overhead by protection coverage per program')
-#print ind, ax_ind,ax_ind+1, width #np.arange(ind, ax_ind+1, width)
-print np.arange(np.min(ind),np.max(ind)+1, width)
-ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
-ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs))
-#ax.legend((rects1[0]), ('Tetris'))
-y_ticks = ['0','5','10','20','30','40','50','60','70','80','90','100','150','200','300','400','500','600']
-y_ticks_n = np.array(y_ticks).astype(np.int)
-#ax.set_yticks(np.arange(min(np.int(y_ticks_n)), max(np.int(y_ticks_n))+1, 1.0))
-#ax.set_ytickslabels(y_ticks)
-#for reacts1 in rects:
-#    autolabel(rects1)
-#autolabel(rects2)
-plt.legend(loc='upper left')
-plt.savefig('myfig')
+	coverage_keys = overheads.keys()
+	coverage_keys = map(int,coverage_keys)
+	coverage_keys.sort()
+	coverage_keys = map(str,coverage_keys)
+	#keys(1)
+	i =0
+	for coverage in coverage_keys:
+	    #cpu_means.append(overhead['cpu_mean'])
+	    #cpu_stds.append(overhead['cpu_std'])
+	    if coverage is '0' and OVERHEAD_IN_PERCENTAGE:
+		continue
+	    coverage_labels.append('') 
+	    ax_color = coverage_color[coverage]
+
+
+	    #ax_ind = ind+ind_width
+	    pprint (overheads[coverage][means_dic_name])
+	    pprint (overheads[coverage][stds_dic_name])
+	    #print "ax_ind",ax_ind
+            print ind
+            columns = ind[i:len(ind)-1:M+E]
+	    print columns
+	    #print [coverage]*N
+	    print "ind",len(columns), 'means',len(overheads[coverage][means_dic_name]),'std',len(overheads[coverage][stds_dic_name])
+	    rects1 = ax.bar(columns, overheads[coverage][means_dic_name], width, color=ax_color, yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
+
+	    i+=1
+	    #ind_width += width
+	    rects.append(rects1)
+	ax.set_ylabel('Overhead in % percentage')
+	ax.set_title('Overhead by protection coverage per program')
+	#print ind, ax_ind,ax_ind+1, width #np.arange(ind, ax_ind+1, width)
+	print np.arange(np.min(ind),np.max(ind)+1, width)
+	ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
+	ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs,E,N,M))
+	#ax.legend((rects1[0]), ('Tetris'))
+	y_ticks = ['0','5','10','20','30','40','50','60','70','80','90','100','150','200','300','400','500','600']
+	y_ticks_n = np.array(y_ticks).astype(np.int)
+	#ax.set_yticks(np.arange(min(np.int(y_ticks_n)), max(np.int(y_ticks_n))+1, 1.0))
+	#ax.set_ytickslabels(y_ticks)
+	#for reacts1 in rects:
+	#    autolabel(rects1)
+	#autolabel(rects2)
+	plt.xticks(rotation=90)
+	plt.legend(loc='upper left')
+	plt.subplots_adjust(bottom=0.30)
+	fig_name = 'performance-evaluation'
+	if OVERHEAD_IN_PERCENTAGE:
+		fig_name+='-percentage.png'
+	else:
+		fig_name+='.png'
+
+	if results.name:
+		fig_name=results.name
+	plt.savefig(fig_name)
+	plt.show()
+	print 'showing'
+
+
+if __name__== "__main__":
+	main()
+
+
 
