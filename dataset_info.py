@@ -40,18 +40,8 @@ UNPROTECTED_DATA_DEPENDENT_BLOCKS="numberOfUnprotectedDataDependentBlocks"
 #OH_SENSITIVE_FUNCTIONS_KEY="numberOfSensitiveFunctions"
 #OH_SKIPPED_LOOP_BLOCKS="numberOfShortRangeSkippedLoopBlocks"
 
-#programs = ["tests_u2f_standard.x.bc", "tetris.bc", "2048_game.bc", "snake.bc", "tests_openssl.x.bc",
-programs = ["tetris.bc", "2048_game.bc", "snake.bc"]
-#"debug_memcached_testapp.bc", "tests_openssl.x.bc",
-#"tests_u2f_standard.x.bc", "zopfli-1.0.1.x.bc", "chmod.x.bc", "chroot.x.bc", "who.x.bc"]
-#programming_languages={"2048_game.bc":"C", "debug_memcached_testapp.bc":"C", "snake.bc":"C", "tetris.bc":"C",
-#    "tests_openssl.x.bc":"C", "tests_u2f_standard.x.bc":"C"}
-programming_languages={"2048_game.bc":"C", "snake.bc":"C", "tetris.bc":"C"}
-
-#cat 2048_game/2048_game/2048_game.c | sed '/^\s*#/d;/^\s*$/d' | wc -l
-# filter out new lines and comments
-#code_lines={"2048_game.bc":301, "debug_memcached_testapp.bc":1975, "simple_parser.bc":2334, "snake.bc":400,
-code_lines={"2048_game.bc":301, "snake.bc":400, "tetris.bc":305}
+programs = []
+#code_lines={"2048_game.bc":301, "snake.bc":400, "tetris.bc":305}
 
 instructions={}
 input_dep_coverage={}
@@ -185,6 +175,8 @@ def parse_bitcode_data():
     rootDir = INFO_DIR
     for dir_name, subdirList, fileList in os.walk(rootDir):
         bitcode_name = get_bitcode_name_from_path(dir_name)
+        if fileList:
+            programs.append(bitcode_name)
         print('Found bitcode: %s' % bitcode_name)
         for fname in fileList:
             print('\t%s' % fname)
