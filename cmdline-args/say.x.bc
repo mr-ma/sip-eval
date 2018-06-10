@@ -1,0 +1,1 @@
+-a -q -o small_output.au < rsynth_smallinput.txt

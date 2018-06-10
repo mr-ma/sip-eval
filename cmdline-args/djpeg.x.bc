@@ -1,0 +1,1 @@
+-dct int -ppm -outfile output_small_decode.ppm djpeg_input_small.jpg
