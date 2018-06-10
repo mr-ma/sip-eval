@@ -1,25 +1,88 @@
 \begin{tabular}{lrrrrrrrr}
 \hline
- program      &   LLVM instrs &   input indep instr &   input indep\% &   input dep \% &   data indep instr &   argument dep. data indep instr &   data indep loop dep instr &   data indep \% \\
+ program              &   LLVM instrs &   input indep instr &   input indep\% &   input dep \% &   data indep instr &   argument dep. data indep instr &   data indep loop dep instr &   data indep \% \\
 \hline
- tetris.bc    &           629 &                 107 &      17.0111   &       82.9889 &                245 &                               24 &                         113 &        38.9507 \\
- 2048\_game.bc &           749 &                   7 &       0.934579 &       99.0654 &                264 &                               40 &                          51 &        35.247  \\
- snake.bc     &          1065 &                  30 &       2.8169   &       97.1831 &                227 &                              102 &                          37 &        21.3146 \\
+ rawcaudio.x.bc       &           418 &                   2 &      0.478469  &       99.5215 &                 54 &                               12 &                          41 &       12.9187  \\
+ susan.bc             &         12656 &                  14 &      0.110619  &       99.8894 &                704 &                              442 &                         500 &        5.56258 \\
+ search\_large.x.bc    &           827 &                  84 &     10.1572    &       89.8428 &                219 &                               83 &                          83 &       26.4813  \\
+ crc\_32.bc            &           147 &                   3 &      2.04082   &       97.9592 &                 21 &                                4 &                           5 &       14.2857  \\
+ sha\_driver.bc        &           657 &                   2 &      0.304414  &       99.6956 &                151 &                               33 &                          20 &       22.9833  \\
+ qsort\_large.x.bc     &           147 &                   2 &      1.36054   &       98.6395 &                 16 &                                5 &                           4 &       10.8844  \\
+ bf.x.bc              &          3607 &                   4 &      0.110895  &       99.8891 &                181 &                               73 &                          35 &        5.01802 \\
+ basicmath\_small.x.bc &           532 &                 263 &     49.4361    &       50.5639 &                275 &                              112 &                          20 &       51.6917  \\
+ crc.x.bc             &           147 &                   3 &      2.04082   &       97.9592 &                 21 &                                4 &                           5 &       14.2857  \\
+ sha.bc               &           657 &                   2 &      0.304414  &       99.6956 &                154 &                               36 &                          20 &       23.4399  \\
+ dijkstra\_small.x.bc  &           323 &                  63 &     19.5046    &       80.4954 &                137 &                               21 &                          27 &       42.4149  \\
+ basicmath\_large.x.bc &           643 &                 317 &     49.3002    &       50.6998 &                337 &                              112 &                          28 &       52.4106  \\
+ tetris.bc            &           629 &                 132 &     20.9857    &       79.0143 &                281 &                               25 &                         139 &       44.6741  \\
+ ispell.x.bc          &         13545 &                   6 &      0.0442968 &       99.9557 &               2687 &                              281 &                        1233 &       19.8376  \\
+ qsort\_small.x.bc     &            92 &                   2 &      2.17391   &       97.8261 &                 16 &                                5 &                           4 &       17.3913  \\
+ patricia.x.bc        &          1087 &                   2 &      0.183993  &       99.816  &                132 &                               48 &                          35 &       12.1435  \\
+ fft.x.bc             &           742 &                   2 &      0.269542  &       99.7305 &                137 &                               57 &                          71 &       18.4636  \\
+ rawdaudio.x.bc       &           418 &                   2 &      0.478469  &       99.5215 &                 54 &                               12 &                          41 &       12.9187  \\
+ djpeg.x.bc           &         52708 &                 132 &      0.250436  &       99.7496 &               7366 &                             2010 &                        2600 &       13.9751  \\
+ 2048\_game.bc         &           749 &                   7 &      0.934579  &       99.0654 &                265 &                               34 &                          48 &       35.3805  \\
+ search\_small.x.bc    &           827 &                  84 &     10.1572    &       89.8428 &                219 &                               83 &                          83 &       26.4813  \\
+ snake.bc             &          1065 &                  30 &      2.8169    &       97.1831 &                248 &                              101 &                          41 &       23.2864  \\
+ cjpeg.x.bc           &         54837 &                  85 &      0.155005  &       99.845  &               7373 &                             1833 &                        2603 &       13.4453  \\
+ say.x.bc             &          6859 &                  19 &      0.277008  &       99.723  &               1277 &                              187 &                         445 &       18.6179  \\
 \hline
 \end{tabular}\begin{tabular}{lrrrrrrr}
 \hline
- program      &   sensitive blocks &   oh protected blocks &   short oh protected blocks &   oh protected block \% &   non-hashable blocks &   unprotected loop blocks &   unprotected data dep blocks \\
+ program              &   sensitive blocks &   oh protected blocks &   short oh protected blocks &   oh protected block \% &   non-hashable blocks &   unprotected loop blocks &   unprotected data dep blocks \\
 \hline
- tetris.bc    &                108 &                    10 &                          15 &                23.1481 &                    22 &                        61 &                             0 \\
- 2048\_game.bc &                124 &                     1 &                          48 &                39.5161 &                    22 &                        53 &                             0 \\
- snake.bc     &                148 &                     3 &                          24 &                18.2432 &                    61 &                        60 &                             0 \\
+ rawcaudio.x.bc       &                 63 &                     1 &                           0 &               1.5873   &                     0 &                        36 &                             0 \\
+ susan.bc             &                698 &                     1 &                          24 &               3.58166  &                    20 &                       653 &                             0 \\
+ search\_large.x.bc    &                147 &                    11 &                           0 &               7.48299  &                     6 &                        14 &                             0 \\
+ crc\_32.bc            &                 19 &                     1 &                           2 &              15.7895   &                     2 &                         8 &                             0 \\
+ sha\_driver.bc        &                 56 &                     2 &                          25 &              48.2143   &                     9 &                        20 &                             0 \\
+ qsort\_large.x.bc     &                 19 &                     1 &                           0 &               5.26316  &                     1 &                        13 &                             0 \\
+ bf.x.bc              &                129 &                     1 &                          21 &              17.0543   &                    13 &                        50 &                             0 \\
+ basicmath\_small.x.bc &                 62 &                    38 &                           0 &              61.2903   &                     4 &                        18 &                             0 \\
+ crc.x.bc             &                 19 &                     1 &                           2 &              15.7895   &                     2 &                         8 &                             0 \\
+ sha.bc               &                 56 &                     2 &                          25 &              48.2143   &                     9 &                        20 &                             0 \\
+ dijkstra\_small.x.bc  &                 51 &                    14 &                           0 &              27.451    &                    21 &                        16 &                             0 \\
+ basicmath\_large.x.bc &                 82 &                    46 &                           0 &              56.0976   &                     4 &                        30 &                             0 \\
+ tetris.bc            &                108 &                     9 &                          15 &              22.2222   &                    23 &                        60 &                             0 \\
+ ispell.x.bc          &               2628 &                     1 &                         132 &               5.06088  &                   485 &                      1980 &                             0 \\
+ qsort\_small.x.bc     &                 17 &                     1 &                           0 &               5.88235  &                     1 &                        11 &                             0 \\
+ patricia.x.bc        &                149 &                     1 &                           0 &               0.671141 &                    30 &                        62 &                             0 \\
+ fft.x.bc             &                 87 &                     1 &                           8 &              10.3448   &                    10 &                        61 &                             0 \\
+ rawdaudio.x.bc       &                 63 &                     1 &                           0 &               1.5873   &                     0 &                        32 &                             0 \\
+ djpeg.x.bc           &               5419 &                    12 &                          51 &               1.16258  &                   351 &                       529 &                             0 \\
+ 2048\_game.bc         &                124 &                     1 &                          44 &              36.2903   &                    29 &                        50 &                             0 \\
+ search\_small.x.bc    &                147 &                    10 &                           0 &               6.80272  &                     7 &                        14 &                             0 \\
+ snake.bc             &                148 &                     2 &                          24 &              17.5676   &                    61 &                        60 &                             0 \\
+ cjpeg.x.bc           &               5615 &                     4 &                          14 &               0.32057  &                   300 &                       573 &                             0 \\
+ say.x.bc             &               1026 &                     5 &                          71 &               7.40741  &                   294 &                       597 &                             0 \\
 \hline
 \end{tabular}\begin{tabular}{lrrrrrrr}
 \hline
- program      &   LLVM instructions &   oh protected instr &   short oh protected instr &   non-hashable instr &   unprotected loop instr &   unprotected arg. reachable instr &   unprotected data dep. instr \\
+ program              &   LLVM instructions &   oh protected instr &   short oh protected instr &   non-hashable instr &   unprotected loop instr &   unprotected arg. reachable instr &   unprotected data dep. instr \\
 \hline
- tetris.bc    &                 629 &                   22 &                         24 &                   34 &                      304 &                                 17 &                           208 \\
- 2048\_game.bc &                 749 &                    4 &                         96 &                   53 &                      274 &                                 25 &                           291 \\
- snake.bc     &                1065 &                    4 &                         40 &                   54 &                      354 &                                 47 &                           559 \\
+ rawcaudio.x.bc       &                 418 &                    1 &                          0 &                    1 &                      243 &                                  0 &                             2 \\
+ susan.bc             &               12656 &                   12 &                         40 &                   27 &                    12139 &                                  5 &                           419 \\
+ search\_large.x.bc    &                 827 &                   16 &                          0 &                    8 &                       55 &                                  5 &                            28 \\
+ crc\_32.bc            &                 147 &                    2 &                          3 &                    2 &                       60 &                                  1 &                            29 \\
+ sha\_driver.bc        &                 657 &                    2 &                         64 &                   31 &                      169 &                                 15 &                           375 \\
+ qsort\_large.x.bc     &                 147 &                    2 &                          0 &                    1 &                       98 &                                  0 &                            17 \\
+ bf.x.bc              &                3607 &                    4 &                         45 &                   20 &                      556 &                                  9 &                          1477 \\
+ basicmath\_small.x.bc &                 532 &                  112 &                          0 &                   40 &                       92 &                                106 &                           161 \\
+ crc.x.bc             &                 147 &                    2 &                          3 &                    2 &                       60 &                                  1 &                            29 \\
+ sha.bc               &                 657 &                    2 &                         64 &                   31 &                      169 &                                 15 &                           372 \\
+ dijkstra\_small.x.bc  &                 323 &                   34 &                          0 &                   21 &                       91 &                                 14 &                           129 \\
+ basicmath\_large.x.bc &                 643 &                  155 &                          0 &                   47 &                      148 &                                106 &                           162 \\
+ tetris.bc            &                 629 &                   18 &                         30 &                   28 &                      287 &                                 19 &                           201 \\
+ ispell.x.bc          &               13545 &                    1 &                        138 &                  201 &                     9840 &                                109 &                          2690 \\
+ qsort\_small.x.bc     &                  92 &                    2 &                          0 &                    1 &                       49 &                                  0 &                            14 \\
+ patricia.x.bc        &                1087 &                    2 &                          0 &                   18 &                      474 &                                  4 &                           208 \\
+ fft.x.bc             &                 742 &                    2 &                         10 &                   11 &                      574 &                                  2 &                           102 \\
+ rawdaudio.x.bc       &                 418 &                    1 &                          0 &                    1 &                      198 &                                  0 &                             2 \\
+ djpeg.x.bc           &               52708 &                   24 &                         52 &                  235 &                     3667 &                                319 &                          3518 \\
+ 2048\_game.bc         &                 749 &                    4 &                         96 &                   46 &                      252 &                                 23 &                           311 \\
+ search\_small.x.bc    &                 827 &                   13 &                          0 &                    7 &                       55 &                                  5 &                            28 \\
+ snake.bc             &                1065 &                    3 &                         40 &                   53 &                      354 &                                 57 &                           532 \\
+ cjpeg.x.bc           &               54837 &                    4 &                         20 &                  175 &                     3508 &                                337 &                          2914 \\
+ say.x.bc             &                6859 &                    9 &                         92 &                  146 &                     3567 &                                 75 &                          2236 \\
 \hline
 \end{tabular}
