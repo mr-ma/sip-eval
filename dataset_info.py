@@ -27,6 +27,9 @@ OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
 UNPROTECTED_LOOP_INSTRUCTIONS="numberOfUnprotectedLoopInstructions"
 UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS="numberOfUnprotectedArgumentReachableInstructions"
 UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS="numberOfDataDependentInstructions"
+OTHER_UNPROTECTED_INSTRUCTIONS="numberOfOtherUnprotectedInstructions"
+UNPROTECTED_INSTRUCTIONS_IN_FILTERED_FUNCTIONS="numberOfInstructionsInFilteredFunctions"
+UNPROTECTED_INSTRUCTIONS_IN_FUNCTIONS_WITH_NO_DG="numberOfInstructionsInFunctionsWithNoDG"
 SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
 OH_PROTECTED_BLOCKS_KEY="numberOfProtectedBlocks"
 SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY="numberOfShortRangeProtectedBlocks"
@@ -35,6 +38,7 @@ UNPROTECTED_DATA_DEPENDENT_LOOP_BLOCKS_KEY="numberOfUnprotectedDataDependentLoop
 UNPROTECTED_ARGUMENT_REACHABLE_LOOP_BLOCKS_KEY="numberOfUnprotectedArgumentReachableLoopBlocks"
 UNPROTECTED_GLOBAL_REACHABLE_LOOP_BLOCKS_KEY="numberOfUnprotectedGlobalReachableLoopBlocks"
 UNPROTECTED_DATA_DEPENDENT_BLOCKS="numberOfUnprotectedDataDependentBlocks"
+OH_PROCESSED_INSTR="numberOfOHProcessedInstr"
 
 #OH_PROTECTED_FUNCTION_KEY="numberOfProtectedFunctions"
 #OH_SENSITIVE_FUNCTIONS_KEY="numberOfSensitiveFunctions"
@@ -58,6 +62,9 @@ oh_non_hashable_instr={}
 unprotected_loop_instr={}
 unprotected_argument_reachable_instr={}
 unprotected_data_dep_instr={}
+unprotected_instr={}
+unprotected_filtered_instr={}
+unprotected_instr_in_functions_with_no_dg={}
 
 sensitive_blocks={}
 oh_protected_blocks={}
@@ -68,6 +75,7 @@ unprotected_data_dep_loop_blocks={}
 unprotected_arg_reachable_loop_blocks={}
 unprotected_global_reachable_loop_blocks={}
 unprotected_data_dep_blocks={}
+oh_processed_instrs={}
 
 def dump_latex_table():
     from tabulate import tabulate
@@ -76,7 +84,8 @@ def dump_latex_table():
     oh_block_coverage_headers = ["program", "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %",
                   "non-hashable blocks", "unprotected loop blocks", "unprotected data dep blocks"]
     oh_instruction_coverage_headers = ["program", "LLVM instructions", "oh protected instr", "short oh protected instr",
-                  "non-hashable instr", "unprotected loop instr", "unprotected arg. reachable instr", "unprotected data dep. instr"]
+                  "non-hashable instr", "unprotected loop instr", "unprotected arg. reachable instr", "unprotected data dep. instr",
+                  "unprotected instr", "unprotected instr in filtered functions", "unprotected instr in functions with no dg", "oh processed instr"]
     data =[] # [["tetris","C","305","38","9"]]
     oh_instruction_data=[]
     oh_block_data = []
@@ -93,13 +102,21 @@ def dump_latex_table():
         arg_deps = argument_dep_data_indep_instr[key]
         loop_deps = argument_or_data_dep_loop_instr[key]
 
-
         oh_prot_instr = oh_protected_instr[key]
         short_oh_prot_instr = short_range_oh_protected_instr[key]
         non_hashable_instr = oh_non_hashable_instr[key]
         loop_instr = unprotected_loop_instr[key]
         arg_reach_instr = unprotected_argument_reachable_instr[key]
         data_dep_inst = unprotected_data_dep_instr[key]
+        unprot_instr = unprotected_instr[key]
+        unprot_filtered_instr = unprotected_filtered_instr[key]
+        unprot_no_dg_instr = unprotected_instr_in_functions_with_no_dg[key]
+        oh_processed_instr = oh_processed_instrs[key]
+
+        if instrs > oh_processed_instr:
+            print ("Missing instructions in " + key + "  " + str(instrs - oh_processed_instr))
+        if instrs < oh_processed_instr:
+            print ("More instructions in " + key + "  " + str(oh_processed_instr - instrs))
 
         sensitive_blcks = sensitive_blocks[key]
         oh_prot_block = oh_protected_blocks[key]
@@ -115,10 +132,11 @@ def dump_latex_table():
         data.append([program, instrs, input_indep, input_indep_cov, input_dep_cov, data_indep, arg_deps, loop_deps, data_indep_cov])
         oh_block_data.append([program,  sensitive_blcks, oh_prot_block, short_oh_prot_block, oh_prot_block_cov, non_hashable_block,
                 loop_blocks, data_dep_blocks])
-        oh_instruction_data.append([program, instrs, oh_prot_instr, short_oh_prot_instr, non_hashable_instr, loop_instr, arg_reach_instr, data_dep_inst])
+        oh_instruction_data.append([program, instrs, oh_prot_instr, short_oh_prot_instr, non_hashable_instr, loop_instr,
+        arg_reach_instr, data_dep_inst, unprot_instr, unprot_filtered_instr, unprot_no_dg_instr, oh_processed_instr])
 
 
-    print(tabulate(data, headers=headers))
+    #print(tabulate(data, headers=headers))
     latex_table = tabulate(data,headers=headers,tablefmt="latex")
     oh_block_latex_table = tabulate(oh_block_data, headers=oh_block_coverage_headers,tablefmt="latex")
     oh_instr_latex_table = tabulate(oh_instruction_data, headers=oh_instruction_coverage_headers,tablefmt="latex")
@@ -155,6 +173,10 @@ def parse_oh_stats(bitcode_name, dir_name):
     unprotected_loop_instr[bitcode_name] = stats[UNPROTECTED_LOOP_INSTRUCTIONS]
     unprotected_argument_reachable_instr[bitcode_name] = stats[UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS]
     unprotected_data_dep_instr[bitcode_name] = stats[UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS]
+    unprotected_instr[bitcode_name] = stats[OTHER_UNPROTECTED_INSTRUCTIONS]
+    unprotected_filtered_instr[bitcode_name] = stats[UNPROTECTED_INSTRUCTIONS_IN_FILTERED_FUNCTIONS]
+    unprotected_instr_in_functions_with_no_dg[bitcode_name] = stats[UNPROTECTED_INSTRUCTIONS_IN_FUNCTIONS_WITH_NO_DG]
+    oh_processed_instrs[bitcode_name] = stats[OH_PROCESSED_INSTR]
 
     sensitive_blocks[bitcode_name] = stats[SENSITIVE_BLOCKS_KEY]
     oh_protected_blocks[bitcode_name] = stats[OH_PROTECTED_BLOCKS_KEY]
@@ -179,7 +201,7 @@ def parse_bitcode_data():
             programs.append(bitcode_name)
         print('Found bitcode: %s' % bitcode_name)
         for fname in fileList:
-            print('\t%s' % fname)
+            #print('\t%s' % fname)
             if fname == STATS:
                 parse_stats(bitcode_name, dir_name)
             elif fname == OH_STATS:
@@ -187,10 +209,10 @@ def parse_bitcode_data():
     
 def main():
     parse_bitcode_data()
-    print(instructions)
-    print(input_dep_coverage)
-    print(input_indep_coverage)
-    print(data_indep_coverage)
+    #print(instructions)
+    #print(input_dep_coverage)
+    #print(input_indep_coverage)
+    #print(data_indep_coverage)
     dump_latex_table()
 
 if __name__=="__main__":
