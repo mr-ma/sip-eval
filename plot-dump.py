@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib
-matplotlib.use('Agg')
+#matplotlib.use("gtk")
+#matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from pprint import pprint
 import json
@@ -33,20 +34,33 @@ def read(file_path):
             overhead[coverage_result['coverage']]['programs'].append(program['program'])
 
 
-            pprint(coverage_result['runtime_overhead'])
+            #pprint(coverage_result['runtime_overhead'])
             sensitive_inst_mean = coverage_result['runtime_overhead']['sensitive_inst_mean']
             sensitive_inst_std = coverage_result['runtime_overhead']['sensitive_inst_std']
             sc_protected_mean = coverage_result['runtime_overhead']['sc_protected_mean']
+            if sc_protected_mean == 0:
+                print 'ERR. SC MEAN is ZERO'
+            else:
+                print 'INFO. SC Mean is ', sc_protected_mean
             sc_protected_std = coverage_result['runtime_overhead']['sc_protected_std']
 
             oh_protected_mean = coverage_result['runtime_overhead']['oh_protected_mean']
             oh_protected_std = coverage_result['runtime_overhead']['oh_protected_std']
+
+            sroh_protected_mean = coverage_result['runtime_overhead']['sroh_protected_mean']
+            sroh_protected_std = coverage_result['runtime_overhead']['sroh_protected_std']
+            
             sc_oh_protected_inst_mean = coverage_result['runtime_overhead']['sc_oh_protected_inst_mean']
             sc_oh_protected_inst_std = coverage_result['runtime_overhead']['sc_oh_protected_inst_std']
-            protection_coverage_table.append([program_name,int(coverage_name),sensitive_inst_mean,sensitive_inst_std,sc_protected_mean,sc_protected_std,oh_protected_mean,oh_protected_std,sc_oh_protected_inst_mean, sc_oh_protected_inst_std])
 
-    pprint(overhead)
-    return programs,overhead,protection_coverage_table
+            sc_sroh_protected_inst_mean = coverage_result['runtime_overhead']['sc_sroh_protected_inst_mean']
+            sc_sroh_protected_inst_std = coverage_result['runtime_overhead']['sc_sroh_protected_inst_std']
+
+
+            protection_coverage_table.append([program_name,int(coverage_name),sensitive_inst_mean,sensitive_inst_std,sc_protected_mean,sc_protected_std,oh_protected_mean,oh_protected_std,sc_oh_protected_inst_mean, sc_oh_protected_inst_std, sroh_protected_mean, sroh_protected_std, sc_sroh_protected_inst_mean, sc_sroh_protected_inst_std])
+
+    #pprint(overhead)
+    return overhead['0']['programs'],overhead,protection_coverage_table
 
 def autolabel(rects):
     for rect in rects:
@@ -69,7 +83,8 @@ def dump_protection_coverage_table(protection_coverage_data):
     from tabulate import tabulate
     from operator import itemgetter
     data = sorted(protection_coverage_data, key=itemgetter(0,1))
-    headers = ['program','coverage','sensitive_inst_mean','sensitive_inst_std','sc_protected_mean','sc_protected_std','oh_protected_mean','oh_protected_std','sc_oh_protected_inst_mean','sc_oh_protected_inst_std']
+    headers = ['program','coverage','sensitive_inst_mean','sensitive_inst_std','sc_protected_mean','sc_protected_std','oh_protected_mean','oh_protected_std','sc_oh_protected_mean','sc_oh_protected_std','sroh_protected_mean','sroh_protected_std','sc_sroh_protected_mean','sc_sroh_protected_std']
+#['program','coverage','sensitive_inst_mean','sensitive_inst_std','sc_protected_mean','sc_protected_std','oh_protected_mean','oh_protected_std','sc_oh_protected_inst_mean','sc_oh_protected_inst_std']
     print(tabulate(data,headers=headers))
     return tabulate(data,headers=headers,tablefmt='latex')
 def overhead_in_percentage(overheads):
@@ -89,10 +104,12 @@ def overhead_in_percentage(overheads):
             i+=1
         i=0
         for cpu_std in overheads[overhead_key]['cpu_stds']:
-            perc_cpu_std = scale[i] *cpu_std / overheads[overhead_key]['cpu_means'][i] *100#(cpu_std - baseline['cpu_stds'][i]) / cpu_std *100  
+            perc_cpu_std = 0
+            if overheads[overhead_key]['cpu_means'][i] !=0:
+                perc_cpu_std = scale[i] *cpu_std / overheads[overhead_key]['cpu_means'][i] *100#(cpu_std - baseline['cpu_stds'][i]) / cpu_std *100  
             overheads[overhead_key]['perc_cpu_stds'].append(perc_cpu_std)
             i+=1
-    pprint (overheads)
+    #pprint (overheads)
     return overheads
 
 def main():
@@ -105,17 +122,20 @@ def main():
 
 	OVERHEAD_IN_PERCENTAGE = results.percentage 
 	programs,overheads,protection_coverage_table = read('binaries/measurements.json')
+        print 'OVERHEADS'
+        #pprint(overheads)
+        #exit(1)
 	protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
 	#pprint (overheads)
 	perc_overheads = overhead_in_percentage(overheads)
-	pprint (perc_overheads)
+	#pprint (perc_overheads)
 	#dump protection coverage table into tex file
 	file_path=os.path.join('tex','protection_coverage_table.tex')
 	with open(file_path,'wb') as texfile:
 	    texfile.write(protection_coverage_table_content)
 	print 'Dumped protection coverage table in latex format: tex/protection_coverage_table.tex'
-	print programs
-	program_count=len(programs)
+	print overheads['0']['programs']
+	program_count=len(overheads['0']['programs'])
 	#exit(1)
 	#cpu_means=[]
 	#cpu_stds=[]
@@ -165,14 +185,14 @@ def main():
 
 
 	    #ax_ind = ind+ind_width
-	    pprint (overheads[coverage][means_dic_name])
-	    pprint (overheads[coverage][stds_dic_name])
+	    #pprint (overheads[coverage][means_dic_name])
+	    #pprint (overheads[coverage][stds_dic_name])
 	    #print "ax_ind",ax_ind
             print ind
             columns = ind[i:len(ind)-1:M+E]
 	    print columns
 	    #print [coverage]*N
-	    print "ind",len(columns), 'means',len(overheads[coverage][means_dic_name]),'std',len(overheads[coverage][stds_dic_name])
+	    print coverage," ind",len(columns), 'means',len(overheads[coverage][means_dic_name]),'std',len(overheads[coverage][stds_dic_name])
 	    rects1 = ax.bar(columns, overheads[coverage][means_dic_name], width, color=ax_color, yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
 
 	    i+=1
@@ -181,9 +201,11 @@ def main():
 	ax.set_ylabel('Overhead in % percentage')
 	ax.set_title('Overhead by protection coverage per program')
 	#print ind, ax_ind,ax_ind+1, width #np.arange(ind, ax_ind+1, width)
-	print np.arange(np.min(ind),np.max(ind)+1, width)
+	t= np.arange(np.min(ind),np.max(ind)+1, width)
+        print t
 	ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
 	ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs,E,N,M))
+        ax.set_yscale('log',basey=2)
 	#ax.legend((rects1[0]), ('Tetris'))
 	y_ticks = ['0','5','10','20','30','40','50','60','70','80','90','100','150','200','300','400','500','600']
 	y_ticks_n = np.array(y_ticks).astype(np.int)
@@ -194,6 +216,11 @@ def main():
 	#autolabel(rects2)
 	plt.xticks(rotation=90)
 	plt.legend(loc='upper left')
+        
+        #dt = 0.01
+        #t = np.arange(dt, 20.0, dt)
+        #plt.semilogy(t, np.exp(-t/5.0))
+        #ax.grid()
 	plt.subplots_adjust(bottom=0.30)
 	fig_name = 'performance-evaluation'
 	if OVERHEAD_IN_PERCENTAGE:
@@ -203,6 +230,8 @@ def main():
 
 	if results.name:
 		fig_name=results.name
+
+        plt.ion()
 	plt.savefig(fig_name)
 	plt.show()
 	print 'showing'
