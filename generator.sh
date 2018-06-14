@@ -14,6 +14,7 @@ link_libraries=/home/sip/eval/link-libraries/
 args_path=/home/sip/eval/cmdline-args/
 #SKIP_EXISTING binaries when exactly one argument is passed here regardless of its value
 MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE=30
+patcher_scripts_path=/home/sip/eval/patcher-scripts/
 repeat=3
 #rm -r binaries
 mkdir -p binaries
@@ -41,7 +42,10 @@ do
         cmd_args=$(<$args_path$filename)
 	combination_dir=$combination_path$filename/*
 	libraries=$(<$link_libraries$filename)
-        
+    patcher_args=$(<$patcher_scripts_path$filename)
+    patcher_args_array=($patcher_args)
+    response_file="${patcher_args_array[0]}"
+    gdb_script="${patcher_args_array[1]}"
 	echo "Libraries to link with $libraries"
 	for coverage_dir in $combination_dir
 	do
@@ -148,7 +152,7 @@ do
 					exit    
 				fi 
 				# Linking with external libraries
-				gcc -g -rdynamic -c $OH_PATH/assertions/response.c -o $output_dir/response.o
+				g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
 				#gcc -g -rdynamic -c rtlib.c -o rtlib.o
 				if [ $? -eq 0 ]; then
 					echo 'OK gcc -g'
@@ -180,7 +184,7 @@ do
 				echo 'Starting GDB patcher, this will wait for input when nothing is provided'
 	
 				#Patch using GDB
-				python $OH_PATH/patcher/patchAsserts.py -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console
+				python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console
 				if [ $? -eq 0 ]; then
 					echo 'OK GDB Patch'
 					rm $output_dir/$filename
