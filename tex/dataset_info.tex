@@ -16,7 +16,7 @@
  sha.bc               &           657 &                   2 &      0.304414  &       99.6956 &                154 &                               36 &                          20 &       23.4399  \\
  dijkstra\_small.x.bc  &           323 &                  63 &     19.5046    &       80.4954 &                137 &                               21 &                          27 &       42.4149  \\
  basicmath\_large.x.bc &           643 &                 317 &     49.3002    &       50.6998 &                337 &                              112 &                          28 &       52.4106  \\
- tetris.bc            &           629 &                 132 &     20.9857    &       79.0143 &                281 &                               25 &                         139 &       44.6741  \\
+ tetris.bc            &           629 &                 133 &     21.1447    &       78.8553 &                281 &                               25 &                         139 &       44.6741  \\
  ispell.x.bc          &         13545 &                   6 &      0.0442968 &       99.9557 &               2687 &                              281 &                        1233 &       19.8376  \\
  qsort\_small.x.bc     &            92 &                   2 &      2.17391   &       97.8261 &                 16 &                                5 &                           4 &       17.3913  \\
  patricia.x.bc        &          1087 &                   2 &      0.183993  &       99.816  &                132 &                               48 &                          35 &       12.1435  \\
@@ -27,7 +27,7 @@
  search\_small.x.bc    &           827 &                  84 &     10.1572    &       89.8428 &                219 &                               83 &                          83 &       26.4813  \\
  snake.bc             &          1065 &                  30 &      2.8169    &       97.1831 &                248 &                              101 &                          41 &       23.2864  \\
  cjpeg.x.bc           &         54837 &                  85 &      0.155005  &       99.845  &               7373 &                             1833 &                        2603 &       13.4453  \\
- say.x.bc             &          6859 &                  19 &      0.277008  &       99.723  &               1275 &                              185 &                         445 &       18.5887  \\
+ say.x.bc             &          6859 &                  19 &      0.277008  &       99.723  &               1277 &                              187 &                         445 &       18.6179  \\
 \hline
 \end{tabular}
 \end{adjustbox}
@@ -36,7 +36,6 @@
 \begin{table}[ht]
 \centering
 \begin{adjustbox}{width=1.3\textwidth}
-
 \begin{tabular}{lrrrrrrr}
 \hline
  program              &   sensitive blocks &   oh protected blocks &   short oh protected blocks &   oh protected block \% &   non-hashable blocks &   unprotected loop blocks &   unprotected data dep blocks \\
@@ -65,13 +64,13 @@
  say.x.bc             &                967 &                     5 &                         308 &               32.3681  &                    57 &                       597 &                             0 \\
 \hline
 \end{tabular}
+
 \end{adjustbox}
 \end{table}
 
 \begin{table}[ht]
 \centering
 \begin{adjustbox}{width=1.3\textwidth}
-
 \begin{tabular}{lrrrrrrrrrrr}
 \hline
  program              &   LLVM instructions &   oh protected instr &   short oh protected instr &   non-hashable instr &   unprotected loop instr &   unprotected arg. reachable instr &   unprotected data dep. instr &   unprotected instr &   unprotected instr in filtered functions &   unprotected instr in functions with no dg &   oh processed instr \\
@@ -97,9 +96,8 @@
  search\_small.x.bc    &                 827 &                   64 &                          0 &                   20 &                       55 &                                  0 &                            28 &                   0 &                                         0 &                                         660 &                  827 \\
  snake.bc             &                1065 &                   17 &                         70 &                   55 &                      354 &                                 42 &                           509 &                   4 &                                         0 &                                          13 &                 1065 \\
  cjpeg.x.bc           &               54837 &                   51 &                        198 &                  191 &                     3486 &                                269 &                          2748 &                  12 &                                         0 &                                       47855 &                54837 \\
- say.x.bc             &                6859 &                   12 &                        316 &                  149 &                     3567 &                                 71 &                          2055 &                  10 &                                         0 &                                         389 &                 6859 \\
+ say.x.bc             &                6859 &                   12 &                        316 &                  149 &                     3567 &                                 73 &                          2053 &                  10 &                                         0 &                                         389 &                 6859 \\
 \hline
 \end{tabular}
-
 \end{adjustbox}
 \end{table}
