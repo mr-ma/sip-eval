@@ -101,7 +101,7 @@ do
 				rm out.bc
 				rm out 
 				echo 'Transform SC & OH'
-				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -connectivity=5 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
+				opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -connectivity=1 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
 
 				echo $output_dir
 				if [ $? -eq 0 ]; then
@@ -193,7 +193,7 @@ do
 					if [ $recover_attempt -eq 3 ]; then
 						echo "Failed to recover for three times" 
 						echo "Check $output_dir for more details"
-						exit 1
+						break #exit 1
 					fi
 					echo "trying to recover from Segmentation fault... $recover_attempt" >> $output_dir/segmentationfault.console
 					recover_attempt=$((recover_attempt+1))   

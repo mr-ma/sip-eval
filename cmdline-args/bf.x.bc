@@ -1,1 +1,1 @@
-e bf_input_small.asc output_small.enc 1234567890abcdeffedcba0987654321
+e /home/sip/eval/cmdline-args/bf_input_small.asc output_small.enc 1234567890abcdeffedcba0987654321

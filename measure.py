@@ -28,18 +28,24 @@ def grab_results(result_directory,protection_stats=True):
         oh_result = json.load(open(os.path.join(result_directory,"oh.stats")))
    # pprint(oh_result)
         sc_result = json.load(open(os.path.join(result_directory,"sc.stats")))
-    runs_result = json.load(open(os.path.join(result_directory,"runs.json")))
+    runs_path = os.path.join(result_directory,"runs.json")
+    runs_result = {} 
+    if os.path.exists(runs_path):
+        runs_result = json.load(open(runs_path))
+    else:
+        print runs_path, ' not found'
     r_path = os.path.join(result_directory,"runs_processed.json")
-    if not os.path.exists(r_path):
-	print r_path, " not fond"
-	exit(1)
-    print "loading", r_path
-    runs_processed = json.load(open(os.path.join(result_directory,"runs_processed.json")))
+    runs_processed = {} 
+    if os.path.exists(r_path):
+        print "loading", r_path
+        runs_processed = json.load(open(os.path.join(result_directory,"runs_processed.json")))
    # pprint(sc_result)
     #TODO: grab any other result file
-    if protection_stats and (not sc_result or  not oh_result):
-        print "Err. sc stats or oh stats are empty ",result_directory 
-        exit(1)
+        if protection_stats and (not sc_result or  not oh_result):
+            print "Err. sc stats or oh stats are empty ",result_directory 
+            exit(1)
+    else:
+        print r_path, " not found"
     return {"sc_result":sc_result,"oh_result":oh_result, "runs":runs_result, "runs_processed":runs_processed}
 def process_results(coverage,results):
     #TODO do whatever and add outcome(s) to the results file
@@ -49,8 +55,11 @@ def process_results(coverage,results):
     coverage_memory_reads = []
     number_sensitive_inst = []
     number_oh_protected_inst = []
+    number_sroh_protected_inst = []
     number_sc_protected_inst = []
     number_sc_oh_protected_inst = []
+    number_sc_sroh_protected_inst = []
+    
     for combination in results:
        for attempt in combination['attempt_results']:
         #collect runs
@@ -63,7 +72,9 @@ def process_results(coverage,results):
                 exit(1)
             number_sc_protected_inst.append(attempt['results']['sc_result']['numberOfProtectedInstructions'])
             number_oh_protected_inst.append(attempt['results']['oh_result']['numberOfProtectedInstructions'])
+            number_sroh_protected_inst.append(attempt['results']['oh_result']['numberOfShortRangeProtectedInstructions'])
             number_sc_oh_protected_inst.append(attempt['results']['oh_result']['numberOfImplicitlyProtectedInstructions'])
+            number_sc_sroh_protected_inst.append(attempt['results']['oh_result']['numberOfShortRangeImplicitlyProtectedInstructions'])
             
         coverage_cpu_reads.extend([d['cpu'] for d in attempt['results']['runs'] if 'cpu' in d])
         coverage_memory_reads.extend([d['memory'] for d in attempt['results']['runs'] if 'memory' in d])
@@ -76,6 +87,10 @@ def process_results(coverage,results):
     sc_protected_inst= np.array(number_sc_protected_inst).astype(np.float)
     coverage_result['sc_protected_mean'] = np.mean(sc_protected_inst)
     coverage_result['sc_protected_std'] = np.std(sc_protected_inst)
+    if len(sc_protected_inst)==0:
+        print 'ERR. SC array is ZERO'
+    else:
+        print 'INFO. SC mean for ', coverage, ' is ',coverage_result['sc_protected_mean']
     
     oh_protected_inst= np.array(number_oh_protected_inst).astype(np.float)
     coverage_result['oh_protected_mean'] = np.mean(oh_protected_inst)
@@ -84,18 +99,32 @@ def process_results(coverage,results):
     sc_oh_protected_inst= np.array(number_sc_oh_protected_inst).astype(np.float)
     coverage_result['sc_oh_protected_inst_mean'] = np.mean(sc_oh_protected_inst)
     coverage_result['sc_oh_protected_inst_std'] = np.std(sc_oh_protected_inst)
+    
+    sroh_protected_inst= np.array(number_sroh_protected_inst).astype(np.float)
+    coverage_result['sroh_protected_mean'] = np.mean(sroh_protected_inst)
+    coverage_result['sroh_protected_std'] = np.std(sroh_protected_inst)
+    
+    sc_sroh_protected_inst= np.array(number_sc_sroh_protected_inst).astype(np.float)
+    coverage_result['sc_sroh_protected_inst_mean'] = np.mean(sc_sroh_protected_inst)
+    coverage_result['sc_sroh_protected_inst_std'] = np.std(sc_sroh_protected_inst)
+
 
     coverage_result['cpu_mean'] = np.mean(np.array(coverage_cpu_reads).astype(np.float))
     coverage_result['cpu_std'] = np.std(np.array(coverage_cpu_reads).astype(np.float))
     coverage_result['mem_mean'] = np.mean(np.array(coverage_memory_reads).astype(np.float))
     coverage_result['mem_std'] = np.std(np.array(coverage_memory_reads).astype(np.float))
-    print coverage
-    pprint(coverage_result)
+    #print coverage
+    #pprint(coverage_result)
     sanity_result = {}
     coverage_cpu_reads = np.array(coverage_cpu_reads).astype(np.float)
     
     if len (coverage_cpu_reads) == 0:
-	return False, {}
+        coverage_result['cpu_mean'] = 0 
+        coverage_result['cpu_std'] = 0
+        coverage_result['mem_mean'] = 0
+        coverage_result['mem_std'] = 0
+
+	return False, coverage_result
     
     sanity_result['min'] = np.min(coverage_cpu_reads)
     sanity_result['max'] = np.max(coverage_cpu_reads)
@@ -106,7 +135,7 @@ def process_results(coverage,results):
     sanity_result['percentile_80']=np.percentile(coverage_cpu_reads,80.0)
     sanity_result['percentile_40']=np.percentile(coverage_cpu_reads,40.0)
     sanity_result['percentile_30']=np.percentile(coverage_cpu_reads,30.0)
-    pprint(sanity_result)
+    #pprint(sanity_result)
     #print "Coverage results:", coverage
     #pprint(coverage_result)
     return True, coverage_result
@@ -132,8 +161,10 @@ def process_files(directory):
                     attempt_results.append({"results":results, "attempt":attempt_dir})
                 combination_results.append({"combination":combination_dir,"attempt_results":attempt_results})
             good,processed_coverage = process_results(coverage_dir,combination_results)
-            if good:
-            	coverage_results.append({"coverage":coverage_dir, "runtime_overhead":processed_coverage,"combination_results":combination_results})
+            if not good:
+                print 'ERR. no results for coverage {} of program {}'.format(coverage_dir,program_dir)
+                print 'Adding zero result for the sake of the perfromance plots'
+            coverage_results.append({"coverage":coverage_dir, "runtime_overhead":processed_coverage,"combination_results":combination_results})
         program_results.append({"program":program_dir,"coverage_results":coverage_results})
     output_file = os.path.join(directory, "measurements.json")
     with open(output_file,'wb') as outfile:

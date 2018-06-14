@@ -97,9 +97,12 @@ def overhead_in_percentage(overheads):
         i =0
         scale=[]
         for cpu_mean in overheads[overhead_key]['cpu_means']:
-            cpu_scale = (cpu_mean - baseline['cpu_means'][i]) / baseline['cpu_means'][i]
+            cpu_scale = 0
+            perc_cpu_mean = 0
+            if baseline['cpu_means'][i] != 0:
+                cpu_scale = (cpu_mean - baseline['cpu_means'][i]) / baseline['cpu_means'][i]
+                perc_cpu_mean = (cpu_mean - baseline['cpu_means'][i]) / baseline['cpu_means'][i] *100  
             scale.append(cpu_scale)
-            perc_cpu_mean = (cpu_mean - baseline['cpu_means'][i]) / baseline['cpu_means'][i] *100  
             overheads[overhead_key]['perc_cpu_means'].append(perc_cpu_mean)
             i+=1
         i=0
@@ -155,11 +158,20 @@ def main():
 	rects = []
 	coverage_color={}
 	if not OVERHEAD_IN_PERCENTAGE:
-	    coverage_color['0'] = 'c'
-	coverage_color['10'] = 'y'
-	coverage_color['50'] = 'm'
-	coverage_color['100'] = 'g'
-	coverage_color['25'] = 'b'
+	    coverage_color['0'] = 'w'
+	coverage_color['10'] = '#dce1ea'
+	coverage_color['50'] = '#a4a7ad'
+	coverage_color['100'] = '#83868c'
+	coverage_color['25'] = 'w'
+
+        coverage_hatch={}
+	if not OVERHEAD_IN_PERCENTAGE:
+	    coverage_hatch['0'] = '//'
+	coverage_hatch['10'] = '0'
+	coverage_hatch['50'] = 'x'
+	coverage_hatch['100'] = 'o'
+	coverage_hatch['25'] = "."
+
 
 	means_dic_name = 'cpu_means'
 	stds_dic_name = 'cpu_stds'
@@ -182,6 +194,7 @@ def main():
 		continue
 	    coverage_labels.append('') 
 	    ax_color = coverage_color[coverage]
+            ax_hatch = coverage_hatch[coverage]
 
 
 	    #ax_ind = ind+ind_width
@@ -193,7 +206,7 @@ def main():
 	    print columns
 	    #print [coverage]*N
 	    print coverage," ind",len(columns), 'means',len(overheads[coverage][means_dic_name]),'std',len(overheads[coverage][stds_dic_name])
-	    rects1 = ax.bar(columns, overheads[coverage][means_dic_name], width, color=ax_color, yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
+	    rects1 = ax.bar(columns, overheads[coverage][means_dic_name], width, color=ax_color, edgecolor='black', capsize=4, error_kw={'ecolor':'red'},yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
 
 	    i+=1
 	    #ind_width += width
@@ -214,7 +227,7 @@ def main():
 	#for reacts1 in rects:
 	#    autolabel(rects1)
 	#autolabel(rects2)
-	plt.xticks(rotation=90)
+	plt.xticks(rotation=45)
 	plt.legend(loc='upper left')
         
         #dt = 0.01

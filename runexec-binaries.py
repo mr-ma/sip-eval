@@ -16,7 +16,7 @@ from pprint import pprint
 from subprocess import Popen, PIPE
 import re
 import numpy as np
-REPEAT_NUMBER=5
+REPEAT_NUMBER=25
 RUNSPROCESSED="runs_processed.json"
 CMDLINE_ARGS="cmdline-args"
 def get_immediate_subdirectories(a_dir):
@@ -92,14 +92,18 @@ def measure_overhead(result_directory,program):
 	program_exit_code,result = grab_results(output)
 	print "program_exit code:",program_exit_code
 	if int(program_exit_code) != 0 :
-		print 'Exit code:',program_exit_code,' faulty program execution!... Check output.log for more info...'
-		exit(1)	
-        results.append(result) 
+		print program,' Exit code:',program_exit_code,' faulty program execution!... Check output.log for more info...'
+        elif int(program_exit_code) == 0 or program == 'bf.x.bc':
+            #TODO: bf.x.bc exits with 256 despite the seemingly correct execution
+            results.append(result) 
         #TODO: run any other tool here
     #write results to the directory 
-    runs_path=os.path.join(result_directory,'runs.json')
-    with open(runs_path, 'wb') as outfile:
-        json.dump(results,outfile)
+    if len(results)!=0:
+        runs_path=os.path.join(result_directory,'runs.json')
+        with open(runs_path, 'wb') as outfile:
+            json.dump(results,outfile)
+    else:
+        print 'Failed to run {} and thus no overhead results were captured'.format(program)
     return results
 def process_results(result_path,results):
     #TODO do whatever and add outcome(s) to the results file
