@@ -152,7 +152,11 @@ do
 					exit    
 				fi 
 				# Linking with external libraries
-				g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
+                if [ "$response_file"=="response.c" ]; then
+                    gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
+                else
+                    g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
+                fi
 				#gcc -g -rdynamic -c rtlib.c -o rtlib.o
 				if [ $? -eq 0 ]; then
 					echo 'OK gcc -g'
@@ -160,7 +164,12 @@ do
 					echo 'FAIL gcc -g'
 					exit    
 				fi 
-				g++ -std=c++0x -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
+                if [ "$response_file"=="response.c" ]; then
+                    gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
+                else
+                    g++ -std=c++0x -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
+                fi
+
 				if [ $? -eq 0 ]; then
 					echo 'OK gcc final binary'
 				else
