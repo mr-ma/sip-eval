@@ -1,15 +1,29 @@
 \begin{tabular}{lrrrrrr}
 \hline
- program      &   min input dep &   max input dep &   min oh &   max oh &   min sc &   max sc \\
+ program              &   min input dep &   max input dep &   min oh &   max oh &   min sc &   max sc \\
 \hline
- 2048\_game.bc &          0.0077 &          0.0084 &     4.63 &   4.7207 &    0.022 &   0.0227 \\
+ rawcaudio.x.bc       &          0.007  &          0.0123 &   1.0516 &   1.094  &   0.0125 &   0.0134 \\
+ search\_large.x.bc    &          0.0087 &          0.0119 &   1.7351 &   1.9461 &   0.0245 &   0.0456 \\
+ qsort\_large.x.bc     &          0.0012 &          0.0013 &   0.0966 &   0.1141 &   0.0022 &   0.0024 \\
+ bf.x.bc              &          0.0247 &          0.0256 &   5.9244 &   6.0151 &   0.0306 &   0.0382 \\
+ basicmath\_small.x.bc &          0.0033 &          0.0035 &   1.5879 &   1.6323 &   0.008  &   0.0097 \\
+ crc.x.bc             &          0.0021 &          0.006  &   0.2082 &   0.2518 &   0.0053 &   0.0173 \\
+ sha.bc               &          0.0074 &          0.008  &   6.079  &   6.2706 &   0.0141 &   0.0155 \\
+ dijkstra\_small.x.bc  &          0.0033 &          0.0043 &   1.428  &   1.5404 &   0.0102 &   0.0115 \\
+ basicmath\_large.x.bc &          0.0038 &          0.0042 &   2.029  &   2.0658 &   0.0096 &   0.01   \\
+ tetris.bc            &          0.0053 &          0.0069 &   4.333  &   4.4971 &   0.0194 &   0.0203 \\
+ qsort\_small.x.bc     &          0.0012 &          0.002  &   0.0735 &   0.0782 &   0.0027 &   0.0031 \\
+ patricia.x.bc        &          0.01   &          0.0141 &  13.1685 &  13.3861 &   0.03   &   0.0318 \\
+ fft.x.bc             &          0.0097 &          0.0109 &   5.3514 &   5.5249 &   0.0243 &   0.0255 \\
+ rawdaudio.x.bc       &          0.0066 &          0.0073 &   0.8701 &   0.903  &   0.0116 &   0.0152 \\
+ 2048\_game.bc         &          0.007  &          0.0077 &   4.4886 &   4.6367 &   0.0217 &   0.029  \\
+ search\_small.x.bc    &          0.0083 &          0.0088 &   1.3995 &   1.4397 &   0.0264 &   0.03   \\
+ snake.bc             &          0.0097 &          0.012  &  23.6739 &  25.5132 &   0.0304 &   0.0343 \\
 \hline
-\end{tabular}
-
-\begin{tabular}{rrrrrrrr}
+\end{tabular}\begin{tabular}{rrrrrrrr}
 \hline
-   mean input dep &   mean oh &   mean sc &   mean &   median input dep &   median oh &   median sc &   median \\
+   mean input dep &   mean oh &   mean sc &    mean &   median input dep &   median oh &   median sc &   median \\
 \hline
-       0.00813333 &    4.6736 & 0.0223667 & 4.7041 &             0.0083 &      4.6701 &      0.0224 &   4.7011 \\
+       0.00555412 &   2.97909 & 0.0127318 & 2.99737 &             0.0071 &       2.029 &      0.0155 &    2.043 \\
 \hline
 \end{tabular}

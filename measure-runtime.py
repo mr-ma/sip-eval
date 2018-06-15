@@ -29,7 +29,8 @@ runs=5
 
 def get_time(line):
    times = re.findall('\)(.+?)\(', line) 
-   elapsed_time = times[2]
+   idx = len(times) - 1
+   elapsed_time = times[idx]
    return float(elapsed_time)
 
 
