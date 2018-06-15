@@ -110,7 +110,7 @@ do
 				echo $output_dir
 				if [ $? -eq 0 ]; then
 					echo 'OK Transform'
-					echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -connectivity=5 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/network_file -dump-sc-stat=$output_dir/sc.stats -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/oh.stats -o $output_dir/out.bc >> $output_dir/transform.console"
+					echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -connectivity=1 -maximum-input-independent-percentage=$MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE  -dump-checkers-network=$output_dir/network_file -dump-sc-stat=$output_dir/sc.stats -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/oh.stats -o $output_dir/out.bc >> $output_dir/transform.console"
 				else
 					echo !! 
 					echo 'FAIL Transform'
@@ -152,9 +152,12 @@ do
 					exit    
 				fi 
 				# Linking with external libraries
-                if [ "$response_file"=="response.c" ]; then
+		echo $response_file
+                if [ "$response_file" = "response.c" ]; then
+		    echo 'RUNNING GCC'
                     gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
                 else
+		    echo 'RUNNING G++'
                     g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
                 fi
 				#gcc -g -rdynamic -c rtlib.c -o rtlib.o
@@ -164,7 +167,7 @@ do
 					echo 'FAIL gcc -g'
 					exit    
 				fi 
-                if [ "$response_file"=="response.c" ]; then
+                if [ "$response_file" = "response.c" ]; then
                     gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
                 else
                     g++ -std=c++0x -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
