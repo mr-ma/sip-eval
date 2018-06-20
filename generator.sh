@@ -198,7 +198,7 @@ do
                                 echo $gdb_script
 				#Patch using GDB
 				echo "python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console"
-				python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
+				timeout -k 9 10  python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
 				if [ $? -eq 0 ]; then
 					echo 'OK GDB Patch'
 					rm $output_dir/$filename
@@ -207,8 +207,8 @@ do
 					recover_attempt=0
 					break # BREAK the while loop
 				else
-					echo 'FAIL GDB Patch'
-					if [ $recover_attempt -eq 3 ]; then
+					echo "$? FAIL GDB Patch"
+					if [ $recover_attempt -eq 1 ]; then
 						echo "Failed to recover for three times" 
 						echo "Check $output_dir for more details"
 						break #exit 1

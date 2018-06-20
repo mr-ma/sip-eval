@@ -42,7 +42,7 @@ else
 
  fi  
 #dump clone and extraction coverage improvement latex table
-python measure-coverage-improvements.py
+#python measure-coverage-improvements.py
 #plot the extracted overhead data and dump protection coverage latex table
 python plot-dump.py
 
