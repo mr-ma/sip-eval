@@ -74,7 +74,7 @@ def prepare_xtick_labels(coverage_labels, programs,E,N,M):
     i = 0
     for p in programs:
         # 2 is index of 25 in the labels, -1 becuase index starts from 0
-        coverage_labels[i+2]=p.replace('.bc','').replace('_testapp','').replace('_game','')
+        coverage_labels[i+2]=p.replace('.bc','').replace('.x','').replace('_testapp','').replace('_game','')
         print 'i:{},M:{}'.format(i, M)
         i+=M+E
     return coverage_labels
@@ -195,6 +195,7 @@ def main():
 	    coverage_labels.append('') 
 	    ax_color = coverage_color[coverage]
             ax_hatch = coverage_hatch[coverage]
+            print 'coverage {} mean:{} std: {} median:{}'.format(coverage, np.mean(overheads[coverage][means_dic_name]), np.std(overheads[coverage][means_dic_name]),np.median(overheads[coverage][means_dic_name]))
 
 
 	    #ax_ind = ind+ind_width
@@ -211,14 +212,14 @@ def main():
 	    i+=1
 	    #ind_width += width
 	    rects.append(rects1)
-	ax.set_ylabel('Overhead in % percentage')
-	ax.set_title('Overhead by protection coverage per program')
+	ax.set_ylabel('Overhead in percentage')
+	#ax.set_title('Overhead by protection coverage per program')
 	#print ind, ax_ind,ax_ind+1, width #np.arange(ind, ax_ind+1, width)
 	t= np.arange(np.min(ind),np.max(ind)+1, width)
         print t
 	ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
 	ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs,E,N,M))
-        ax.set_yscale('log',basey=2)
+        #ax.set_yscale('log',basey=2)
 	#ax.legend((rects1[0]), ('Tetris'))
 	y_ticks = ['0','5','10','20','30','40','50','60','70','80','90','100','150','200','300','400','500','600']
 	y_ticks_n = np.array(y_ticks).astype(np.int)
@@ -228,7 +229,7 @@ def main():
 	#    autolabel(rects1)
 	#autolabel(rects2)
 	plt.xticks(rotation=45)
-	plt.legend(loc='upper left')
+	plt.legend(bbox_to_anchor=(0., 1.02, 1., .102),loc='upper right', ncol=4, mode="expand", borderaxespad=0.)
         
         #dt = 0.01
         #t = np.arange(dt, 20.0, dt)

@@ -16,7 +16,8 @@ from pprint import pprint
 from subprocess import Popen, PIPE
 import re
 import numpy as np
-REPEAT_NUMBER=25
+REPEAT_NUMBER=10
+BASE_REPEAT_NUMBER= 100
 RUNSPROCESSED="runs_processed.json"
 CMDLINE_ARGS="cmdline-args"
 def get_immediate_subdirectories(a_dir):
@@ -67,15 +68,14 @@ def read_args(program):
         with open(filename, 'r') as myfile:
              return myfile.read()
     return ''
-def measure_overhead(result_directory,program):
+def measure_overhead(result_directory,program,repeat):
     results = []
-    global REPEAT_NUMBER
     program_path = os.path.join(result_directory,program)
     
     cmd_args = read_args(program).replace('\n','') 
     print cmd_args
     #TODO run runexec 100 times and calculate avg and std
-    for i in range(REPEAT_NUMBER):
+    for i in range(repeat):
         #call(["sosylib_measure.sh",program_path])
         print str(i)," trying to run:",program_path
 	#--container throws a suspicious warning, I'm not sure it the measurements are good
@@ -93,7 +93,9 @@ def measure_overhead(result_directory,program):
 	print "program_exit code:",program_exit_code
 	if int(program_exit_code) != 0 :
 		print program,' Exit code:',program_exit_code,' faulty program execution!... Check output.log for more info...'
-        elif int(program_exit_code) == 0 or program == 'bf.x.bc':
+        if int(program_exit_code) == 0 or program == 'bf.x.bc':
+            if program == 'bf.x.bc':
+                print 'I see bf being added to the results'
             #TODO: bf.x.bc exits with 256 despite the seemingly correct execution
             results.append(result) 
         #TODO: run any other tool here
@@ -133,7 +135,12 @@ def process_files(directory):
 		    processed_runs_file = os.path.join(result_path,RUNSPROCESSED)
 		    if os.path.exists(processed_runs_file):
 			continue
-                    results = measure_overhead(result_path,program_dir)
+                    global REPEAT_NUMBER
+                    global BASE_REPEAT_NUMBER
+                    repeat = REPEAT_NUMBER
+                    if coverage_dir == '0' or coverage_dir=='100':
+                        repeat = BASE_REPEAT_NUMBER
+                    results = measure_overhead(result_path,program_dir, repeat)
                     process_results(result_path,results)
  #   pprint(program_results)
 
