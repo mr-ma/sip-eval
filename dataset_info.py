@@ -109,7 +109,7 @@ def dump_latex_table_for_paper():
     oh_blocks = []
     oh_instrs = []
     for key in programs:
-        program = key
+        program = key[:key.index(".")]
         instrs = instructions[key]
         input_indep_cov = round(input_indep_coverage[key], 2)
         input_dep_cov = round(input_dep_coverage[key], 2)
