@@ -26,6 +26,7 @@ SHORT_RANGE_OH_PROTECTED_INSTR_KEY="numberOfShortRangeProtectedInstructions"
 OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
 UNPROTECTED_LOOP_INSTRUCTIONS="numberOfUnprotectedLoopInstructions"
 UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS="numberOfUnprotectedArgumentReachableInstructions"
+UNPROTECTED_GLOBAL_REACHABLE_INSTRUCTIONS="numberOfUnprotectedGlobalReachableInstructions"
 UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS="numberOfDataDependentInstructions"
 OTHER_UNPROTECTED_INSTRUCTIONS="numberOfOtherUnprotectedInstructions"
 UNPROTECTED_INSTRUCTIONS_IN_FILTERED_FUNCTIONS="numberOfInstructionsInFilteredFunctions"
@@ -38,6 +39,7 @@ UNPROTECTED_DATA_DEPENDENT_LOOP_BLOCKS_KEY="numberOfUnprotectedDataDependentLoop
 UNPROTECTED_ARGUMENT_REACHABLE_LOOP_BLOCKS_KEY="numberOfUnprotectedArgumentReachableLoopBlocks"
 UNPROTECTED_GLOBAL_REACHABLE_LOOP_BLOCKS_KEY="numberOfUnprotectedGlobalReachableLoopBlocks"
 UNPROTECTED_DATA_DEPENDENT_BLOCKS="numberOfUnprotectedDataDependentBlocks"
+UNPROTECTED_BLOCKS_IN_FUNCTIONS_WITH_NO_DG="numberOfBlocksInFunctionsWithNoDG"
 OH_PROCESSED_INSTR="numberOfOHProcessedInstr"
 
 #OH_PROTECTED_FUNCTION_KEY="numberOfProtectedFunctions"
@@ -61,6 +63,7 @@ short_range_oh_protected_instr={}
 oh_non_hashable_instr={}
 unprotected_loop_instr={}
 unprotected_argument_reachable_instr={}
+unprotected_global_reachable_instr={}
 unprotected_data_dep_instr={}
 unprotected_instr={}
 unprotected_filtered_instr={}
@@ -75,7 +78,105 @@ unprotected_data_dep_loop_blocks={}
 unprotected_arg_reachable_loop_blocks={}
 unprotected_global_reachable_loop_blocks={}
 unprotected_data_dep_blocks={}
+unprotected_blocks_in_functions_with_no_dg={}
 oh_processed_instrs={}
+
+def average(numbers):
+    import numpy as np
+    return round(np.average(numbers), 2)
+
+def median(numbers):
+    from numpy import median
+    return round(median(numbers), 2)
+
+def std_deviation(numbers):
+    import numpy as np
+    return round(np.std(numbers), 2)
+
+def dump_latex_table_for_paper():
+    from tabulate import tabulate
+    input_dep_headers = ["Program", "Inst.", "III%", "DDI+CFDI %", "DII %"]
+    oh_block_coverage_headers = ["Program", "Blocks", "SROHB%", "OHB%", "LB", "OH", "SROH", "IAI", "NHB"]
+    oh_instr_coverage_headers = ["Program", "Instructions", "SROHI%", "OHI%", "OH", "SROH", "LI+ARI+GRI", "IAI", "NHI"]
+    improvement_headers = ["Data improved", "Average", "Median", "Standard Deviation"]
+
+    input_dep_data = []
+    oh_block_coverage_data = []
+    oh_instr_coverage_data=[]
+    iiis = []
+    sroh_blocks = []
+    sroh_instrs = []
+    oh_blocks = []
+    oh_instrs = []
+    for key in programs:
+        program = key[:key.index(".")]
+        instrs = instructions[key]
+        input_indep_cov = round(input_indep_coverage[key], 2)
+        input_dep_cov = round(input_dep_coverage[key], 2)
+        data_indep_cov = round(data_indep_coverage[key], 2)
+        input_dep_data.append([program, instrs, input_indep_cov, input_dep_cov, data_indep_cov])
+
+        if input_indep_cov > 0:
+            iiis.append(input_indep_cov)
+
+        sensitive_blcks = sensitive_blocks[key]
+        oh_prot_block = oh_protected_blocks[key]
+        short_oh_prot_block = short_range_oh_protected_blocks[key]
+        oh_prot_block_cov = round((oh_prot_block * 100.0)/ sensitive_blcks, 2)
+        sroh_prot_block_cov = round((short_oh_prot_block * 100.0)/ sensitive_blcks, 2)
+        non_hashable_block = non_hashable_blocks[key]
+        unprotected_blocks_with_no_dg = unprotected_blocks_in_functions_with_no_dg[key]
+        data_dep_loop_blocks = unprotected_data_dep_loop_blocks[key]
+        arg_reachable_loop_blocks = unprotected_arg_reachable_loop_blocks[key]
+        global_reachable_loop_blocks = unprotected_global_reachable_loop_blocks[key]
+        loop_blocks = data_dep_loop_blocks + arg_reachable_loop_blocks + global_reachable_loop_blocks
+        data_dep_blocks = unprotected_data_dep_blocks[key]
+        if sroh_prot_block_cov > 0:
+            sroh_blocks.append(sroh_prot_block_cov)
+        if oh_prot_block_cov > 0:
+            oh_blocks.append(oh_prot_block_cov)
+        oh_block_coverage_data.append([program, sensitive_blcks, sroh_prot_block_cov, oh_prot_block_cov, loop_blocks,
+                oh_prot_block, short_oh_prot_block, unprotected_blocks_with_no_dg, non_hashable_block])
+
+        instrs = oh_processed_instrs[key]
+        sroh_prot_instr = short_range_oh_protected_instr[key]
+        sroh_prot_instr_cov = round((sroh_prot_instr * 100.0) / instrs, 2)
+        oh_prot_instr = oh_protected_instr[key]
+        oh_prot_instr_cov = round((oh_prot_instr * 100.0) / instrs, 2)
+        non_hashable_instr = oh_non_hashable_instr[key]
+        unprot_instr = unprotected_loop_instr[key]
+        + unprotected_argument_reachable_instr[key]
+        + unprotected_global_reachable_instr[key]
+        + unprotected_instr[key]
+        unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
+        if sroh_prot_instr_cov > 0:
+            sroh_instrs.append(sroh_prot_instr_cov)
+        if oh_prot_instr_cov > 0:
+            oh_instrs.append(oh_prot_instr_cov)
+        oh_instr_coverage_data.append([program, instrs, sroh_prot_instr_cov, oh_prot_instr_cov,
+                oh_prot_instr, sroh_prot_instr, unprot_instr, unprotected_instr_with_no_dg, non_hashable_instr])
+
+    input_dep_data.sort(key = lambda x : x[1])
+    oh_block_coverage_data.sort(key = lambda x: x[1])
+    oh_instr_coverage_data.sort(key = lambda x : x[1])
+    improvement_data = []
+    improvement_data.append(["III%", average(iiis), median(iiis), std_deviation(iiis)])
+    improvement_data.append(["SROHB%", average(sroh_blocks), median(sroh_blocks), std_deviation(sroh_blocks)])
+    improvement_data.append(["OHB%", average(oh_blocks), median(oh_blocks), std_deviation(oh_blocks)])
+    improvement_data.append(["SROHI%", average(sroh_instrs), median(sroh_instrs), std_deviation(sroh_instrs)])
+    improvement_data.append(["OHI%", average(oh_instrs), median(oh_instrs), std_deviation(oh_instrs)])
+
+    input_dep_latex_table = tabulate(input_dep_data,headers=input_dep_headers,tablefmt="latex")
+    oh_block_latex_table = tabulate(oh_block_coverage_data, headers=oh_block_coverage_headers,tablefmt="latex")
+    oh_instr_latex_table = tabulate(oh_instr_coverage_data, headers=oh_instr_coverage_headers,tablefmt="latex")
+    improvements_latex_table = tabulate(improvement_data, headers=improvement_headers, tablefmt="latex")
+    table_file = os.path.join(TEX_OUT_FOLDER,"paper_tables.tex")
+    with open(table_file,'wb') as tablefile:
+        tablefile.write(input_dep_latex_table)
+        tablefile.write(oh_block_latex_table)
+        tablefile.write(oh_instr_latex_table)
+        tablefile.write(improvements_latex_table)
+
 
 def dump_latex_table():
     from tabulate import tabulate
@@ -118,6 +219,7 @@ def dump_latex_table():
         if instrs < oh_processed_instr:
             print ("More instructions in " + key + "  " + str(oh_processed_instr - instrs))
 
+
         sensitive_blcks = sensitive_blocks[key]
         oh_prot_block = oh_protected_blocks[key]
         short_oh_prot_block = short_range_oh_protected_blocks[key]
@@ -128,6 +230,14 @@ def dump_latex_table():
         global_reachable_loop_blocks = unprotected_global_reachable_loop_blocks[key]
         loop_blocks = data_dep_loop_blocks + arg_reachable_loop_blocks + global_reachable_loop_blocks
         data_dep_blocks = unprotected_data_dep_blocks[key]
+
+        blocks= oh_prot_block + short_oh_prot_block + non_hashable_block + loop_blocks + data_dep_blocks
+        if blocks > sensitive_blcks:
+            print ("More blocks in " + key + "  " + str(blocks - sensitive_blcks))
+        if blocks < sensitive_blcks:
+            print ("Missing blocks in " + key + "  " + str(sensitive_blcks - blocks))
+
+
 
         data.append([program, instrs, input_indep, input_indep_cov, input_dep_cov, data_indep, arg_deps, loop_deps, data_indep_cov])
         oh_block_data.append([program,  sensitive_blcks, oh_prot_block, short_oh_prot_block, oh_prot_block_cov, non_hashable_block,
@@ -172,6 +282,7 @@ def parse_oh_stats(bitcode_name, dir_name):
     oh_non_hashable_instr[bitcode_name] = stats[OH_NON_HAHSBALE_INSTR_KEY]
     unprotected_loop_instr[bitcode_name] = stats[UNPROTECTED_LOOP_INSTRUCTIONS]
     unprotected_argument_reachable_instr[bitcode_name] = stats[UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS]
+    unprotected_global_reachable_instr[bitcode_name] = stats[UNPROTECTED_GLOBAL_REACHABLE_INSTRUCTIONS]
     unprotected_data_dep_instr[bitcode_name] = stats[UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS]
     unprotected_instr[bitcode_name] = stats[OTHER_UNPROTECTED_INSTRUCTIONS]
     unprotected_filtered_instr[bitcode_name] = stats[UNPROTECTED_INSTRUCTIONS_IN_FILTERED_FUNCTIONS]
@@ -189,6 +300,7 @@ def parse_oh_stats(bitcode_name, dir_name):
     unprotected_arg_reachable_loop_blocks[bitcode_name] = stats[UNPROTECTED_ARGUMENT_REACHABLE_LOOP_BLOCKS_KEY]
     unprotected_global_reachable_loop_blocks[bitcode_name] = stats[UNPROTECTED_GLOBAL_REACHABLE_LOOP_BLOCKS_KEY]
     unprotected_data_dep_blocks[bitcode_name] = stats[UNPROTECTED_DATA_DEPENDENT_BLOCKS]
+    unprotected_blocks_in_functions_with_no_dg[bitcode_name] = stats[UNPROTECTED_BLOCKS_IN_FUNCTIONS_WITH_NO_DG]
 
 def get_bitcode_name_from_path(dir_name):
     return os.path.basename(os.path.normpath(dir_name))
@@ -213,7 +325,8 @@ def main():
     #print(input_dep_coverage)
     #print(input_indep_coverage)
     #print(data_indep_coverage)
-    dump_latex_table()
+    #dump_latex_table()
+    dump_latex_table_for_paper()
 
 if __name__=="__main__":
     main()
