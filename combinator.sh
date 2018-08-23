@@ -24,7 +24,7 @@ do
 		if [ $coverage -ne 0 ]; then
 			echo "handling coverage $coverage"
 			echo "Output will be written to $output"
-			opt-3.9 -load $EVAL_LIB/libEval.so $bitcode -combinator-func -coverage=$coverage -combinations=$num_combination -out-path=$output 
+			opt-6.0 -load $EVAL_LIB/libEval.so $bitcode -combinator-func -coverage=$coverage -combinations=$num_combination -out-path=$output 
 			if [ $? -eq 0 ]; then
 				echo 'OK Transform'
 			else
