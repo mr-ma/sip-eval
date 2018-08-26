@@ -1,0 +1,1 @@
+-fps -c /home/sip/eval/cmdline-args/toast_input_small.au > output_small.encode.gsm

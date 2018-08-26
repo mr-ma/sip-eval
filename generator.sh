@@ -21,7 +21,7 @@ mkdir -p binaries
 
 
 #prepare runtime lib
-clang-3.9 $rtlib_path -c -emit-llvm -o $binary_path"rtlib.bc"
+clang-6.0 $rtlib_path -c -emit-llvm -o $binary_path"rtlib.bc"
 if [ $? -eq 0 ]; then
 	echo 'OK Transform'
 else
@@ -55,8 +55,8 @@ do
 		#Generate unprotected binary for the baseline 
 		if [ $coverage_name -eq 0 ]; then
 			echo "Handling baseline"
-			echo llc-3.9 $bitcode -o $output_dir/out.s
-			llc-3.9 $bitcode -o $output_dir/out.s
+			echo llc-6.0 $bitcode -o $output_dir/out.s
+			llc-6.0 $bitcode -o $output_dir/out.s
 			echo g++ -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
 			g++ -c -rdynamic $output_dir/out.s -o $output_dir/out.o $libraries
 			#make a dummy combination=0 and a dummy attempt=1 just for the sake of complying with the directory structure
@@ -105,12 +105,12 @@ do
 					rm out.bc
 					rm out 
 					echo 'Transform SC & OH'
-					opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -extracted-only -use-other-functions -connectivity=1 -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
+					opt-6.0 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -extracted-only -use-other-functions -connectivity=1 -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console 
 
 					echo $output_dir
 					if [ $? -eq 0 ]; then
 						echo 'OK Transform'
-						echo "opt-3.9 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -extracted-only -use-other-functions -connectivity=1 -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console"
+						echo "opt-6.0 -load $INPUT_DEP_PATH/libInputDependency.so -load $DG_PATH/libLLVMdg.so -load $UTILS_LIB -load $SC_PATH/libSCPass.so -load $OH_LIB/liboblivious-hashing.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -strip-debug -unreachableblockelim -globaldce -use-cache -sc -extracted-only -use-other-functions -connectivity=1 -dump-checkers-network=$output_dir/"network_file" -dump-sc-stat=$output_dir/"sc.stats" -filter-file=$coverage -oh-insert -short-range-oh -num-hash 1 -dump-oh-stat=$output_dir/"oh.stats" -o $output_dir/out.bc >> $output_dir/transform.console"
 					else
 						echo !! 
 						echo 'FAIL Transform'
@@ -119,7 +119,7 @@ do
 
 
 					#link RTLIB 
-					llvm-link-3.9 $output_dir/out.bc $binary_path"rtlib.bc" -o $output_dir/out.bc
+					llvm-link-6.0 $output_dir/out.bc $binary_path"rtlib.bc" -o $output_dir/out.bc
 					if [ $? -eq 0 ]; then
 						echo 'OK Link'
 					else
@@ -127,7 +127,7 @@ do
 						exit    
 					fi
 					# compiling external libraries to bitcodes
-					clang-3.9 $OH_PATH/assertions/response.c -c -fno-use-cxa-atexit -emit-llvm -o $OH_PATH/assertions/response.bc
+					clang-6.0 $OH_PATH/assertions/response.c -c -fno-use-cxa-atexit -emit-llvm -o $OH_PATH/assertions/response.bc
 					if [ $? -eq 0 ]; then
 						echo 'OK '
 					else
@@ -137,7 +137,7 @@ do
 
 
 					echo 'Post patching binary after hash calls'
-					llc-3.9 $output_dir/out.bc -o $output_dir/out.s
+					llc-6.0 $output_dir/out.bc -o $output_dir/out.s
 					if [ $? -eq 0 ]; then
 						echo 'OK Transform'
 					else
@@ -152,12 +152,15 @@ do
 						exit    
 					fi 
 					# Linking with external libraries
+					echo "RESPONSE FILE:" 
 					echo $response_file
 					if [ "$response_file" = "response.c" ]; then
 						echo 'RUNNING GCC'
+						echo gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
 						gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
 					else
 						echo 'RUNNING G++'
+						echo g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
 						g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
 					fi
 					#gcc -g -rdynamic -c rtlib.c -o rtlib.o
@@ -183,7 +186,7 @@ do
 					fi 
 					#remove temp files
 					rm $output_dir/out.o $output_dir/out.s $output_dir/response.o $output_dir/guarded.bc   
-					#clang++-3.9 -lncurses -rdynamic -std=c++0x out.bc -o out
+					#clang++-6.0 -lncurses -rdynamic -std=c++0x out.bc -o out
 					python /home/sip/self-checksumming/patcher/dump_pipe.py $output_dir/$filename guide.txt patch_guide $output_dir/"sc.stats">> $output_dir/patcher.console
 					if [ $? -eq 0 ]; then
 						echo 'Done patching SC'
@@ -198,7 +201,7 @@ do
 					echo $gdb_script
 					#Patch using GDB
 					echo "python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console"
-					timeout -k 9 10  python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
+					python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
 					if [ $? -eq 0 ]; then
 						echo 'OK GDB Patch'
 						rm $output_dir/$filename
@@ -230,7 +233,7 @@ do
 	#		mkdir -p $output
 	#		echo "handling coverage $coverage"
 	#		echo "Output will be written to $output"
-	#		opt-3.9 -load $EVAL_LIB/libEval.so $bitcode -combinator-func -coverage=$coverage -combinations=$num_combination -out-path=$output
+	#		opt-6.0 -load $EVAL_LIB/libEval.so $bitcode -combinator-func -coverage=$coverage -combinations=$num_combination -out-path=$output
 	#		if [ $? -eq 0 ]; then
 	#			echo 'OK Transform'
 	#		else
