@@ -187,7 +187,7 @@ def dump_latex_table_for_paper(with_dg = False):
         table_file_name = "paper_tables.tex"
 
     #table_file = os.path.join(TEX_OUT_FOLDER,"paper_tables.tex")
-    table_file = os.path.join(TEX_OUT_FOLDER,"paper_tables_with_dg.tex")
+    table_file = os.path.join(TEX_OUT_FOLDER, table_file_name)
     with open(table_file,'wb') as tablefile:
         tablefile.write(input_dep_latex_table)
         tablefile.write(oh_block_latex_table)
