@@ -16,6 +16,12 @@ do
 	output_dir=$COVERAGEPATH/reports/$filename
 	mkdir -p $output_dir 
 	output=$COVERAGEPATH$filename
+        if [ $# -eq 1 ]; then
+             if [ -f "$output" ]; then 
+                 echo "skipping $output generation, it already exists"
+                 continue
+             fi
+        fi
 	echo "Output will be written to $output"
 	opt-6.0 -load $INPUT_DEP_PATH/libInputDependency.so -load /usr/local/lib/libLLVMdg.so -load $INPUT_DEP_PATH/libTransforms.so $bitcode -lib-config=$libconfig -strip-debug -unreachableblockelim -extract-functions -transparent-cache -dependency-stats -dependency-stats-file=$output_dir/dependency.stats -extraction-stats -extraction-stats-file=$output_dir/extract.stats -globaldce -o $output
 	if [ $? -eq 0 ]; then
