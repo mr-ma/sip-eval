@@ -1,1 +1,1 @@
--dct int -progressive -opt -outfile output_small_encode.jpeg cjpeg_input_small.ppm
+ -dct int -progressive -opt -outfile output_small_encode.jpeg /home/sip/eval/cmdline-args/cjpeg_input_small.ppm
