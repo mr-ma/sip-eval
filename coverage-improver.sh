@@ -3,7 +3,7 @@ INPUT_DEP_PATH=/usr/local/lib/
 SC_PATH=/home/sip/self-checksumming/build/lib
 OH_PATH=/home/sip/sip-oblivious-hashing
 OH_LIB=$OH_PATH/build/lib
-FILES=/home/sip/eval/dataset/*.bc
+FILES=/home/sip/eval/local_dataset/*.bc
 COVERAGEPATH=/home/sip/eval/coverage/
 configs=/home/sip/eval/lib-config
 for f in $FILES
