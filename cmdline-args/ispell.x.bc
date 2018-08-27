@@ -1,1 +1,1 @@
-i-a -d ispell_americanmed+.hash < ispell_small.txt
+ -a -d /home/sip/eval/cmdline-args/ispell_americanmed+.hash </home/sip/eval/cmdline-args/ispell_small.txt >output_small.txt
