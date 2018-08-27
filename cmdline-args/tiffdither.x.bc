@@ -1,0 +1,1 @@
+ -c g4 /home/sip/eval/cmdline-args/tiff-data_smallbw.tif output_smalldither.tif
