@@ -1,0 +1,1890 @@
+Running input dependency analysis pass
+Processing function sha_init0
+Processing function sha_init
+Processing function sha_stream0
+Processing function sha_update0
+Processing function sha_update1
+Processing function byte_reverse0
+Processing function byte_reverse1
+Processing function byte_reverse2
+Processing function byte_reverse
+Processing function sha_transform0
+Processing function sha_transform1
+Processing function sha_transform
+Processing function sha_update2
+Processing function sha_update
+Processing function sha_final0
+Processing function sha_final1
+Processing function sha_final2
+Processing function sha_final
+Processing function sha_stream1
+Processing function sha_stream
+Processing function sha_print0
+Processing function sha_print
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing sha_print
+Mark Input dependent function sha_print
+Finalizing sha_print0
+Mark Input dependent function sha_print0
+Finalizing sha_stream
+Mark Input dependent function sha_stream
+Finalizing sha_stream1
+Mark Input dependent function sha_stream1
+Finalizing sha_final
+Mark Input dependent function sha_final
+Finalizing sha_final2
+Mark Input dependent function sha_final2
+Finalizing sha_final1
+Mark Input dependent function sha_final1
+Finalizing sha_final0
+Mark Input dependent function sha_final0
+Finalizing sha_update
+Mark Input dependent function sha_update
+Finalizing sha_update2
+Mark Input dependent function sha_update2
+Finalizing sha_transform
+Mark Input dependent function sha_transform
+Finalizing sha_transform1
+Mark Input dependent function sha_transform1
+Finalizing sha_transform0
+Mark Input dependent function sha_transform0
+Finalizing byte_reverse
+Mark Input dependent function byte_reverse
+Finalizing byte_reverse2
+Mark Input dependent function byte_reverse2
+Finalizing byte_reverse1
+Mark Input dependent function byte_reverse1
+Finalizing byte_reverse0
+Mark Input dependent function byte_reverse0
+Finalizing sha_update1
+Mark Input dependent function sha_update1
+Finalizing sha_update0
+Mark Input dependent function sha_update0
+Finalizing sha_stream0
+Mark Input dependent function sha_stream0
+Finalizing sha_init
+Mark Input dependent function sha_init
+Finalizing sha_init0
+Mark Input dependent function sha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/sha.bc/10/0
+here!:byte_reverse0
+here!:sha_final
+here!:sha_print
+here!:sha_print
+got filter function names
+did not find main demangled to main
+did not find fopen demangled to fopen
+did not find printf demangled to printf
+did not find fclose demangled to fclose
+did not find sha_init demangled to sha_init
+did not find sha_update demangled to sha_update
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find byte_reverse demangled to byte_reverse
+did not find sha_transform demangled to sha_transform
+Add filter function sha_final
+FunctionInfo. Adding function:sha_final
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find sha_stream demangled to sha_stream
+did not find fread demangled to fread
+Add filter function sha_print
+FunctionInfo. Adding function:sha_print
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+did not find main2 demangled to main2
+did not find main3 demangled to main3
+did not find sha_init0 demangled to sha_init0
+did not find sha_update0 demangled to sha_update0
+did not find sha_update1 demangled to sha_update1
+did not find sha_update2 demangled to sha_update2
+Add filter function byte_reverse0
+FunctionInfo. Adding function:byte_reverse0
+did not find byte_reverse1 demangled to byte_reverse1
+did not find byte_reverse2 demangled to byte_reverse2
+did not find sha_transform0 demangled to sha_transform0
+did not find sha_transform1 demangled to sha_transform1
+did not find sha_final0 demangled to sha_final0
+did not find sha_final1 demangled to sha_final1
+did not find sha_final2 demangled to sha_final2
+did not find sha_stream0 demangled to sha_stream0
+did not find sha_stream1 demangled to sha_stream1
+did not find sha_print0 demangled to sha_print0
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sha_init other functions, ExtractedOnly mode uses other functions
+Adding sha_update other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse other functions, ExtractedOnly mode uses other functions
+Adding sha_transform other functions, ExtractedOnly mode uses other functions
+Adding sha_final other functions, ExtractedOnly mode uses other functions
+Adding sha_stream other functions, ExtractedOnly mode uses other functions
+Adding sha_print other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding sha_init0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update1 other functions, ExtractedOnly mode uses other functions
+Adding sha_update2 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse0 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse1 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse2 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform0 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final0 other functions, ExtractedOnly mode uses other functions
+Adding sha_final1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final2 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream0 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream1 other functions, ExtractedOnly mode uses other functions
+Adding sha_print0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:27
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+byte_reverse2
+sha_transform1
+sha_transform
+sha_final
+main3
+byte_reverse
+sha_init0
+sha_transform0
+main
+sha_final0
+main2
+sha_update0
+byte_reverse1
+sha_init
+sha_print0
+sha_final1
+main0
+main1
+sha_update2
+sha_update
+sha_stream
+byte_reverse0
+sha_stream1
+sha_stream0
+sha_print
+sha_update1
+sha_final2
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 27 function, while filter count is 3
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 8
+  - operands: []
+No reaching definition for:   %sha_info = alloca %struct.SHA_INFO, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %sha_info.el = alloca %struct.SHA_INFO, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %fin = alloca %struct._IO_FILE*, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %fin.el = alloca %struct._IO_FILE*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for: @stdin = external global %struct._IO_FILE*, align 8 in:   store %struct._IO_FILE* %3, %struct._IO_FILE** %fin.el, !input_dep_instr !5, !data_dep_instr !6, !argument_dep_instr !8, !control_dep_instr !7 off: 0
+No reaching definition for:   %E = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %E.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %D = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %D.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %C = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %C.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %A = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %A.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %B = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %B.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %cp.el = alloca i8*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 3
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:sha_init
+ Skipping function per FilterFunctionPass:sha_update
+ Skipping function per FilterFunctionPass:byte_reverse
+ Skipping function per FilterFunctionPass:sha_transform
+Collecting defining blocks for sha_final
+ Skipping function per FilterFunctionPass:sha_stream
+Collecting defining blocks for sha_print
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:sha_init
+ Skipping function per FilterFunctionPass:sha_update
+ Skipping function per FilterFunctionPass:byte_reverse
+ Skipping function per FilterFunctionPass:sha_transform
+ Processing function:sha_final
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing call instruction..
+Can't handle this operand   %lo_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %hi_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+ Skipping function per FilterFunctionPass:sha_stream
+ Processing function:sha_print
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_print0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+Extract path function for assertion assert_sha_final_path_0
+Extract path function for assertion assert_sha_final_path_1
+Extract path function for assertion assert_sha_final_path_2
+OH stats is requested, dumping stat file...
+Processed instructions number 414
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 30,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 373,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 4,
+    "numberOfOHProcessedInstr": 41,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 5,
+    "numberOfSensitiveFunctions": 2,
+    "numberOfShortRangeAssertCalls": 3,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 4,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 2,
+    "numberOfUnprotectedArgumentReachableInstructions": 5,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 2 function, while filter count is 3
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.5938 seconds (0.6553 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3598 ( 63.2%)   0.0241 ( 98.4%)   0.3839 ( 64.7%)   0.3839 ( 58.6%)  runs input dependency analysis
+   0.2034 ( 35.7%)   0.0000 (  0.1%)   0.2034 ( 34.3%)   0.2034 ( 31.0%)  Instruments bitcode with hashing and logging functions
+   0.0006 (  0.1%)   0.0001 (  0.2%)   0.0006 (  0.1%)   0.0622 (  9.5%)  Include functions in a given file in any transformation
+   0.0017 (  0.3%)   0.0000 (  0.0%)   0.0017 (  0.3%)   0.0017 (  0.3%)  Bitcode Writer
+   0.0011 (  0.2%)   0.0001 (  0.4%)   0.0012 (  0.2%)   0.0012 (  0.2%)  Instruments bitcode with guards
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Module Verifier
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Memory SSA
+   0.0003 (  0.1%)   0.0001 (  0.3%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Dominator Tree Construction
+   0.0003 (  0.1%)   0.0001 (  0.3%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Post-Dominator Tree Construction
+   0.0003 (  0.1%)   0.0000 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Call site information
+   0.0003 (  0.0%)   0.0000 (  0.2%)   0.0003 (  0.1%)   0.0003 (  0.0%)  Natural Loop Information
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.5693 (100.0%)   0.0245 (100.0%)   0.5938 (100.0%)   0.6553 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0016 seconds (0.0016 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0016 (100.0%)   0.0016 (100.0%)   0.0016 (100.0%)  Parse IR
+   0.0016 (100.0%)   0.0016 (100.0%)   0.0016 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function sha_init0
+Processing function sha_init
+Processing function sha_stream0
+Processing function sha_update0
+Processing function sha_update1
+Processing function byte_reverse0
+Processing function byte_reverse1
+Processing function byte_reverse2
+Processing function byte_reverse
+Processing function sha_transform0
+Processing function sha_transform1
+Processing function sha_transform
+Processing function sha_update2
+Processing function sha_update
+Processing function sha_final0
+Processing function sha_final1
+Processing function sha_final2
+Processing function sha_final
+Processing function sha_stream1
+Processing function sha_stream
+Processing function sha_print0
+Processing function sha_print
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing sha_print
+Mark Input dependent function sha_print
+Finalizing sha_print0
+Mark Input dependent function sha_print0
+Finalizing sha_stream
+Mark Input dependent function sha_stream
+Finalizing sha_stream1
+Mark Input dependent function sha_stream1
+Finalizing sha_final
+Mark Input dependent function sha_final
+Finalizing sha_final2
+Mark Input dependent function sha_final2
+Finalizing sha_final1
+Mark Input dependent function sha_final1
+Finalizing sha_final0
+Mark Input dependent function sha_final0
+Finalizing sha_update
+Mark Input dependent function sha_update
+Finalizing sha_update2
+Mark Input dependent function sha_update2
+Finalizing sha_transform
+Mark Input dependent function sha_transform
+Finalizing sha_transform1
+Mark Input dependent function sha_transform1
+Finalizing sha_transform0
+Mark Input dependent function sha_transform0
+Finalizing byte_reverse
+Mark Input dependent function byte_reverse
+Finalizing byte_reverse2
+Mark Input dependent function byte_reverse2
+Finalizing byte_reverse1
+Mark Input dependent function byte_reverse1
+Finalizing byte_reverse0
+Mark Input dependent function byte_reverse0
+Finalizing sha_update1
+Mark Input dependent function sha_update1
+Finalizing sha_update0
+Mark Input dependent function sha_update0
+Finalizing sha_stream0
+Mark Input dependent function sha_stream0
+Finalizing sha_init
+Mark Input dependent function sha_init
+Finalizing sha_init0
+Mark Input dependent function sha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/sha.bc/100/0
+here!:main
+here!:sha_init
+here!:sha_update
+here!:byte_reverse
+here!:sha_transform
+here!:sha_final
+here!:sha_stream
+here!:sha_print
+here!:main0
+here!:main1
+here!:main2
+here!:main3
+here!:sha_init0
+here!:sha_update0
+here!:sha_update1
+here!:sha_update2
+here!:byte_reverse0
+here!:byte_reverse1
+here!:byte_reverse2
+here!:sha_transform0
+here!:sha_transform1
+here!:sha_final0
+here!:sha_final1
+here!:sha_final2
+here!:sha_stream0
+here!:sha_stream1
+here!:sha_print0
+here!:sha_print0
+got filter function names
+Add filter function main
+FunctionInfo. Adding function:main
+did not find fopen demangled to fopen
+did not find printf demangled to printf
+did not find fclose demangled to fclose
+Add filter function sha_init
+FunctionInfo. Adding function:sha_init
+Add filter function sha_update
+FunctionInfo. Adding function:sha_update
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function byte_reverse
+FunctionInfo. Adding function:byte_reverse
+Add filter function sha_transform
+FunctionInfo. Adding function:sha_transform
+Add filter function sha_final
+FunctionInfo. Adding function:sha_final
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+Add filter function sha_stream
+FunctionInfo. Adding function:sha_stream
+did not find fread demangled to fread
+Add filter function sha_print
+FunctionInfo. Adding function:sha_print
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+Add filter function sha_init0
+FunctionInfo. Adding function:sha_init0
+Add filter function sha_update0
+FunctionInfo. Adding function:sha_update0
+Add filter function sha_update1
+FunctionInfo. Adding function:sha_update1
+Add filter function sha_update2
+FunctionInfo. Adding function:sha_update2
+Add filter function byte_reverse0
+FunctionInfo. Adding function:byte_reverse0
+Add filter function byte_reverse1
+FunctionInfo. Adding function:byte_reverse1
+Add filter function byte_reverse2
+FunctionInfo. Adding function:byte_reverse2
+Add filter function sha_transform0
+FunctionInfo. Adding function:sha_transform0
+Add filter function sha_transform1
+FunctionInfo. Adding function:sha_transform1
+Add filter function sha_final0
+FunctionInfo. Adding function:sha_final0
+Add filter function sha_final1
+FunctionInfo. Adding function:sha_final1
+Add filter function sha_final2
+FunctionInfo. Adding function:sha_final2
+Add filter function sha_stream0
+FunctionInfo. Adding function:sha_stream0
+Add filter function sha_stream1
+FunctionInfo. Adding function:sha_stream1
+Add filter function sha_print0
+FunctionInfo. Adding function:sha_print0
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sha_init other functions, ExtractedOnly mode uses other functions
+Adding sha_update other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse other functions, ExtractedOnly mode uses other functions
+Adding sha_transform other functions, ExtractedOnly mode uses other functions
+Adding sha_final other functions, ExtractedOnly mode uses other functions
+Adding sha_stream other functions, ExtractedOnly mode uses other functions
+Adding sha_print other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding sha_init0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update1 other functions, ExtractedOnly mode uses other functions
+Adding sha_update2 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse0 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse1 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse2 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform0 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final0 other functions, ExtractedOnly mode uses other functions
+Adding sha_final1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final2 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream0 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream1 other functions, ExtractedOnly mode uses other functions
+Adding sha_print0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:27
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+byte_reverse2
+sha_transform1
+sha_transform
+sha_final
+main3
+byte_reverse
+sha_init0
+sha_transform0
+main
+sha_final0
+main2
+sha_update0
+byte_reverse1
+sha_init
+sha_print0
+sha_final1
+main0
+main1
+sha_update2
+sha_update
+sha_stream
+byte_reverse0
+sha_stream1
+sha_stream0
+sha_print
+sha_update1
+sha_final2
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 8
+  - operands: []
+No reaching definition for:   %sha_info = alloca %struct.SHA_INFO, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %sha_info.el = alloca %struct.SHA_INFO, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %fin = alloca %struct._IO_FILE*, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %fin.el = alloca %struct._IO_FILE*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for: @stdin = external global %struct._IO_FILE*, align 8 in:   store %struct._IO_FILE* %3, %struct._IO_FILE** %fin.el, !input_dep_instr !5, !data_dep_instr !6, !argument_dep_instr !8, !control_dep_instr !7 off: 0
+No reaching definition for:   %E = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %E.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %D = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %D.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %C = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %C.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %A = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %A.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %B = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %B.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %cp.el = alloca i8*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 27
+Collecting defining blocks for main
+Collecting defining blocks for sha_init
+Collecting defining blocks for sha_update
+Collecting defining blocks for byte_reverse
+Collecting defining blocks for sha_transform
+Collecting defining blocks for sha_final
+Collecting defining blocks for sha_stream
+Collecting defining blocks for sha_print
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end6  
+After path modifications process path
+entry  if.end6  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No short range oh has been applied in the path
+Processing path: entry  if.else  while.cond  while.body  if.then2  
+After path modifications process path
+while.body  if.then2  
+Hash path invariants only
+Invariants are
+  br label %if.end, !data_indep_instr !8, !control_dep_instr !11
+  call void @main1(i8*** %argv.addr), !data_indep_instr !8, !input_dep_block !10, !control_dep_instr !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %argv.addr = alloca i8**, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main1(i8*** %argv.addr), !data_indep_instr !8, !input_dep_block !10, !control_dep_instr !11
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.else  while.cond  while.body  if.end  
+After path modifications process path
+while.body  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.else  while.cond  while.body  if.else4  
+After path modifications process path
+while.body  if.else4  
+Hash path invariants only
+Invariants are
+  br label %if.end, !data_indep_instr !8, !control_dep_instr !11
+  call void @main3(%struct._IO_FILE** %fin), !data_indep_instr !8, !control_dep_instr !11
+  call void @sha_print(%struct.SHA_INFO* %sha_info), !data_indep_instr !8, !control_dep_instr !11
+  call void @main2(%struct.SHA_INFO* %sha_info, %struct._IO_FILE** %fin), !data_indep_instr !8, !input_dep_block !10, !control_dep_instr !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %sha_info = alloca %struct.SHA_INFO, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main2(%struct.SHA_INFO* %sha_info, %struct._IO_FILE** %fin), !data_indep_instr !8, !input_dep_block !10, !control_dep_instr !11
+Can't handle this operand   %fin = alloca %struct._IO_FILE*, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main2(%struct.SHA_INFO* %sha_info, %struct._IO_FILE** %fin), !data_indep_instr !8, !input_dep_block !10, !control_dep_instr !11
+Processing call instruction..
+Can't handle this operand   %sha_info = alloca %struct.SHA_INFO, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @sha_print(%struct.SHA_INFO* %sha_info), !data_indep_instr !8, !control_dep_instr !11
+Processing call instruction..
+Can't handle this operand   %fin = alloca %struct._IO_FILE*, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main3(%struct._IO_FILE** %fin), !data_indep_instr !8, !control_dep_instr !11
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.else  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  if.else  while.end  
+After path modifications process path
+entry  if.else  while.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+ Processing function:sha_init
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_init0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+ Processing function:sha_update
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.end  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_update1(%struct.SHA_INFO** %sha_info.addr, i32* %count.addr), !input_indep_block !3, !input_indep_instr !11, !data_indep_instr !8, !control_dep_instr !6
+Can't handle this operand   %count.addr = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_update1(%struct.SHA_INFO** %sha_info.addr, i32* %count.addr), !input_indep_block !3, !input_indep_instr !11, !data_indep_instr !8, !control_dep_instr !6
+Processing path: entry  if.end  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  if.end  while.end  
+After path modifications process path
+entry  if.end  while.end  
+ Processing function:byte_reverse
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  for.inc  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !input_indep_instr !8, !data_indep_instr !9, !argument_dep_instr !7, !control_dep_instr !6
+  call void @byte_reverse1(i8** %cp), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !argument_dep_instr !7, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse1(i8** %cp), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !argument_dep_instr !7, !control_dep_instr !6
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse0(i8** %cp, i64** %buffer.addr, i32* %count.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %buffer.addr = alloca i64*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse0(i8** %cp, i64** %buffer.addr, i32* %count.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %count.addr = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse0(i8** %cp, i64** %buffer.addr, i32* %count.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+ Processing function:sha_transform
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  for.inc  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  
+Processing path: entry  
+After path modifications process path
+entry  
+Processing path: entry  for.end  for.cond3  for.body5  for.inc21  
+Extended path is 
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  
+After path modifications process path
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  
+Processing call instruction..
+Can't handle this operand   %E = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform0(i64* %E, i64* %D, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %A, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %D = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform0(i64* %E, i64* %D, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %A, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform0(i64* %E, i64* %D, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %A, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %C = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform0(i64* %E, i64* %D, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %A, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %A = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform0(i64* %E, i64* %D, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %A, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %B = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform0(i64* %E, i64* %D, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %A, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  for.cond  for.end  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Processing path: entry  for.end  for.end23  for.cond33  for.body35  for.inc46  
+Extended path is 
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  
+After path modifications process path
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  
+Processing path: entry  for.end  for.cond3  for.end23  
+Extended path is 
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  
+After path modifications process path
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  
+Processing path: entry  for.cond  for.end  for.end23  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  for.end23  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  for.end23  
+Processing path: entry  for.end  for.end23  
+After path modifications process path
+entry  for.end  for.end23  
+Processing path: entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  
+Processing path: entry  for.end  for.end23  for.end48  
+After path modifications process path
+entry  for.end  for.end23  for.end48  
+Processing path: entry  for.cond  for.end  for.end23  for.end48  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  
+Processing path: entry  for.end  for.cond3  for.end23  for.end48  
+Extended path is 
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  
+After path modifications process path
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  
+Processing path: entry  for.end  for.end23  for.cond33  for.end48  
+Extended path is 
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  
+After path modifications process path
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  
+Processing path: entry  for.end  for.end23  for.end48  for.cond49  for.end68  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.body71  for.inc89  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.body71  for.inc89  for.end91  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.body71  for.inc89  for.end91  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  
+Processing path: entry  for.cond  for.end  for.end23  for.end48  for.end68  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  for.end68  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  for.end68  
+Processing path: entry  for.end  for.cond3  for.end23  for.end48  for.end68  
+Extended path is 
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  for.end68  
+After path modifications process path
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  for.end68  
+Processing path: entry  for.end  for.end23  for.cond33  for.end48  for.end68  
+Extended path is 
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  for.end68  
+After path modifications process path
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  for.end68  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  for.end91  for.cond92  for.body94  for.inc109  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.end68  for.end91  for.cond92  for.body94  for.inc109  for.end111  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  for.end91  for.cond92  for.body94  for.inc109  for.end111  
+Processing call instruction..
+Can't handle this operand   %E = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform1(i64* %E, i64* %D, i64* %A, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %D = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform1(i64* %E, i64* %D, i64* %A, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %A = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform1(i64* %E, i64* %D, i64* %A, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform1(i64* %E, i64* %D, i64* %A, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %C = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform1(i64* %E, i64* %D, i64* %A, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %B = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_transform1(i64* %E, i64* %D, i64* %A, %struct.SHA_INFO** %sha_info.addr, i64* %C, i64* %B), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  for.end  for.end23  for.end48  for.cond49  for.end68  for.end91  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  for.end91  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  for.end91  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.end91  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.body71  for.inc89  for.end91  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.body71  for.inc89  for.end91  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  for.end91  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  for.end91  
+Processing path: entry  for.cond  for.end  for.end23  for.end48  for.end68  for.end91  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  for.end68  for.end91  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  for.end68  for.end91  
+Processing path: entry  for.end  for.cond3  for.end23  for.end48  for.end68  for.end91  
+Extended path is 
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  for.end68  for.end91  
+After path modifications process path
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  for.end68  for.end91  
+Processing path: entry  for.end  for.end23  for.cond33  for.end48  for.end68  for.end91  
+Extended path is 
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  for.end68  for.end91  
+After path modifications process path
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  for.end68  for.end91  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  for.end91  for.cond92  for.end111  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.end68  for.end91  for.cond92  for.body94  for.inc109  for.end111  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  for.end91  for.cond92  for.body94  for.inc109  for.end111  
+Processing path: entry  for.end  for.end23  for.end48  for.cond49  for.end68  for.end91  for.end111  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  for.end91  for.end111  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.cond49  for.body51  for.inc66  for.end68  for.end91  for.end111  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.end91  for.end111  
+Extended path is 
+entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.body71  for.inc89  for.end91  for.end111  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  for.cond69  for.body71  for.inc89  for.end91  for.end111  
+Processing path: entry  for.end  for.end23  for.end48  for.end68  for.end91  for.end111  
+After path modifications process path
+entry  for.end  for.end23  for.end48  for.end68  for.end91  for.end111  
+Processing path: entry  for.cond  for.end  for.end23  for.end48  for.end68  for.end91  for.end111  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  for.end68  for.end91  for.end111  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  for.end23  for.end48  for.end68  for.end91  for.end111  
+Processing path: entry  for.end  for.cond3  for.end23  for.end48  for.end68  for.end91  for.end111  
+Extended path is 
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  for.end68  for.end91  for.end111  
+After path modifications process path
+entry  for.end  for.cond3  for.body5  for.inc21  for.end23  for.end48  for.end68  for.end91  for.end111  
+Processing path: entry  for.end  for.end23  for.cond33  for.end48  for.end68  for.end91  for.end111  
+Extended path is 
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  for.end68  for.end91  for.end111  
+After path modifications process path
+entry  for.end  for.end23  for.cond33  for.body35  for.inc46  for.end48  for.end68  for.end91  for.end111  
+ Processing function:sha_final
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing call instruction..
+Can't handle this operand   %lo_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %hi_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+ Processing function:sha_stream
+Short range hashing enabled.
+Processing path: entry  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_stream0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+Processing path: entry  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  while.end  
+After path modifications process path
+entry  while.end  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_stream1(%struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+ Processing function:sha_print
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_print0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+Extract path function for assertion assert_sha_transform_path_0
+Extract path function for assertion assert_sha_transform_path_1
+Extract path function for assertion assert_sha_transform_path_2
+Extract path function for assertion assert_sha_transform_path_3
+Extract path function for assertion assert_sha_transform_path_4
+Extract path function for assertion assert_sha_transform_path_5
+Extract path function for assertion assert_sha_transform_path_6
+Extract path function for assertion assert_sha_transform_path_7
+Extract path function for assertion assert_sha_transform_path_8
+Extract path function for assertion assert_sha_transform_path_9
+Extract path function for assertion assert_sha_transform_path_10
+Extract path function for assertion assert_sha_transform_path_11
+Extract path function for assertion assert_sha_transform_path_12
+Extract path function for assertion assert_sha_transform_path_13
+Extract path function for assertion assert_sha_transform_path_14
+Extract path function for assertion assert_sha_transform_path_15
+Extract path function for assertion assert_sha_transform_path_16
+Extract path function for assertion assert_sha_transform_path_17
+Extract path function for assertion assert_sha_transform_path_18
+Extract path function for assertion assert_sha_transform_path_19
+Extract path function for assertion assert_sha_transform_path_20
+Extract path function for assertion assert_sha_transform_path_21
+Extract path function for assertion assert_sha_transform_path_22
+Extract path function for assertion assert_sha_transform_path_23
+Extract path function for assertion assert_sha_transform_path_24
+Extract path function for assertion assert_sha_transform_path_25
+Extract path function for assertion assert_sha_transform_path_26
+Extract path function for assertion assert_sha_transform_path_27
+Extract path function for assertion assert_sha_transform_path_28
+Extract path function for assertion assert_sha_transform_path_29
+Extract path function for assertion assert_sha_transform_path_30
+Extract path function for assertion assert_sha_transform_path_31
+Extract path function for assertion assert_sha_transform_path_32
+Extract path function for assertion assert_sha_transform_path_33
+Extract path function for assertion assert_main_path_2
+Extract path function for assertion assert_main_path_6
+Extract path function for assertion assert_sha_update_path_0
+Extract path function for assertion assert_sha_update_path_2
+Extract path function for assertion assert_sha_update_path_4
+Extract path function for assertion assert_sha_final_path_0
+Extract path function for assertion assert_sha_final_path_1
+Extract path function for assertion assert_sha_final_path_2
+Extract path function for assertion assert_byte_reverse_path_1
+Extract path function for assertion assert_byte_reverse_path_3
+OH stats is requested, dumping stat file...
+Processed instructions number 413
+{
+    "numberOfAssertCalls": 1,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 249,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 8,
+    "numberOfNonHashableInstructions": 62,
+    "numberOfOHProcessedInstr": 413,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 2,
+    "numberOfProtectedFunctions": 5,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 2,
+    "numberOfSensitiveBlocks": 56,
+    "numberOfSensitiveFunctions": 8,
+    "numberOfShortRangeAssertCalls": 44,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 38,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 58,
+    "numberOfUnprotectedArgumentReachableInstructions": 13,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 2,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 6,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 29
+}
+ERR. processed 8 function, while filter count is 27
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.9533 seconds (1.0149 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.4873 ( 52.1%)   0.0040 ( 21.9%)   0.4913 ( 51.5%)   0.4914 ( 48.4%)  Instruments bitcode with hashing and logging functions
+   0.3903 ( 41.7%)   0.0139 ( 75.8%)   0.4042 ( 42.4%)   0.4042 ( 39.8%)  runs input dependency analysis
+   0.0006 (  0.1%)   0.0000 (  0.1%)   0.0007 (  0.1%)   0.0622 (  6.1%)  Include functions in a given file in any transformation
+   0.0395 (  4.2%)   0.0000 (  0.0%)   0.0395 (  4.1%)   0.0394 (  3.9%)  Memory SSA
+   0.0080 (  0.9%)   0.0000 (  0.0%)   0.0080 (  0.8%)   0.0080 (  0.8%)  Bitcode Writer
+   0.0024 (  0.3%)   0.0000 (  0.0%)   0.0024 (  0.2%)   0.0024 (  0.2%)  Module Verifier
+   0.0022 (  0.2%)   0.0000 (  0.0%)   0.0022 (  0.2%)   0.0023 (  0.2%)  Dominator Tree Construction
+   0.0016 (  0.2%)   0.0000 (  0.0%)   0.0016 (  0.2%)   0.0016 (  0.2%)  Natural Loop Information
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Dominator Tree Construction
+   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Post-Dominator Tree Construction
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Call site information
+   0.0003 (  0.0%)   0.0000 (  0.1%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Natural Loop Information
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Function Alias Analysis Results
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0002 (  1.2%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.9350 (100.0%)   0.0183 (100.0%)   0.9533 (100.0%)   1.0149 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0016 seconds (0.0016 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0016 (100.0%)   0.0016 (100.0%)   0.0016 (100.0%)  Parse IR
+   0.0016 (100.0%)   0.0016 (100.0%)   0.0016 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function sha_init0
+Processing function sha_init
+Processing function sha_stream0
+Processing function sha_update0
+Processing function sha_update1
+Processing function byte_reverse0
+Processing function byte_reverse1
+Processing function byte_reverse2
+Processing function byte_reverse
+Processing function sha_transform0
+Processing function sha_transform1
+Processing function sha_transform
+Processing function sha_update2
+Processing function sha_update
+Processing function sha_final0
+Processing function sha_final1
+Processing function sha_final2
+Processing function sha_final
+Processing function sha_stream1
+Processing function sha_stream
+Processing function sha_print0
+Processing function sha_print
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing sha_print
+Mark Input dependent function sha_print
+Finalizing sha_print0
+Mark Input dependent function sha_print0
+Finalizing sha_stream
+Mark Input dependent function sha_stream
+Finalizing sha_stream1
+Mark Input dependent function sha_stream1
+Finalizing sha_final
+Mark Input dependent function sha_final
+Finalizing sha_final2
+Mark Input dependent function sha_final2
+Finalizing sha_final1
+Mark Input dependent function sha_final1
+Finalizing sha_final0
+Mark Input dependent function sha_final0
+Finalizing sha_update
+Mark Input dependent function sha_update
+Finalizing sha_update2
+Mark Input dependent function sha_update2
+Finalizing sha_transform
+Mark Input dependent function sha_transform
+Finalizing sha_transform1
+Mark Input dependent function sha_transform1
+Finalizing sha_transform0
+Mark Input dependent function sha_transform0
+Finalizing byte_reverse
+Mark Input dependent function byte_reverse
+Finalizing byte_reverse2
+Mark Input dependent function byte_reverse2
+Finalizing byte_reverse1
+Mark Input dependent function byte_reverse1
+Finalizing byte_reverse0
+Mark Input dependent function byte_reverse0
+Finalizing sha_update1
+Mark Input dependent function sha_update1
+Finalizing sha_update0
+Mark Input dependent function sha_update0
+Finalizing sha_stream0
+Mark Input dependent function sha_stream0
+Finalizing sha_init
+Mark Input dependent function sha_init
+Finalizing sha_init0
+Mark Input dependent function sha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/sha.bc/25/0
+here!:byte_reverse0
+here!:sha_final
+here!:sha_print
+here!:sha_update2
+here!:sha_transform0
+here!:sha_transform1
+here!:sha_init
+here!:sha_init
+got filter function names
+did not find main demangled to main
+did not find fopen demangled to fopen
+did not find printf demangled to printf
+did not find fclose demangled to fclose
+Add filter function sha_init
+FunctionInfo. Adding function:sha_init
+did not find sha_update demangled to sha_update
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find byte_reverse demangled to byte_reverse
+did not find sha_transform demangled to sha_transform
+Add filter function sha_final
+FunctionInfo. Adding function:sha_final
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find sha_stream demangled to sha_stream
+did not find fread demangled to fread
+Add filter function sha_print
+FunctionInfo. Adding function:sha_print
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+did not find main2 demangled to main2
+did not find main3 demangled to main3
+did not find sha_init0 demangled to sha_init0
+did not find sha_update0 demangled to sha_update0
+did not find sha_update1 demangled to sha_update1
+Add filter function sha_update2
+FunctionInfo. Adding function:sha_update2
+Add filter function byte_reverse0
+FunctionInfo. Adding function:byte_reverse0
+did not find byte_reverse1 demangled to byte_reverse1
+did not find byte_reverse2 demangled to byte_reverse2
+Add filter function sha_transform0
+FunctionInfo. Adding function:sha_transform0
+Add filter function sha_transform1
+FunctionInfo. Adding function:sha_transform1
+did not find sha_final0 demangled to sha_final0
+did not find sha_final1 demangled to sha_final1
+did not find sha_final2 demangled to sha_final2
+did not find sha_stream0 demangled to sha_stream0
+did not find sha_stream1 demangled to sha_stream1
+did not find sha_print0 demangled to sha_print0
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sha_init other functions, ExtractedOnly mode uses other functions
+Adding sha_update other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse other functions, ExtractedOnly mode uses other functions
+Adding sha_transform other functions, ExtractedOnly mode uses other functions
+Adding sha_final other functions, ExtractedOnly mode uses other functions
+Adding sha_stream other functions, ExtractedOnly mode uses other functions
+Adding sha_print other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding sha_init0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update1 other functions, ExtractedOnly mode uses other functions
+Adding sha_update2 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse0 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse1 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse2 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform0 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final0 other functions, ExtractedOnly mode uses other functions
+Adding sha_final1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final2 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream0 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream1 other functions, ExtractedOnly mode uses other functions
+Adding sha_print0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:27
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+byte_reverse2
+sha_transform1
+sha_transform
+sha_final
+main3
+byte_reverse
+sha_init0
+sha_transform0
+main
+sha_final0
+main2
+sha_update0
+byte_reverse1
+sha_init
+sha_print0
+sha_final1
+main0
+main1
+sha_update2
+sha_update
+sha_stream
+byte_reverse0
+sha_stream1
+sha_stream0
+sha_print
+sha_update1
+sha_final2
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 27 function, while filter count is 7
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 8
+  - operands: []
+No reaching definition for:   %sha_info = alloca %struct.SHA_INFO, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %sha_info.el = alloca %struct.SHA_INFO, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %fin = alloca %struct._IO_FILE*, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %fin.el = alloca %struct._IO_FILE*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for: @stdin = external global %struct._IO_FILE*, align 8 in:   store %struct._IO_FILE* %3, %struct._IO_FILE** %fin.el, !input_dep_instr !5, !data_dep_instr !6, !argument_dep_instr !8, !control_dep_instr !7 off: 0
+No reaching definition for:   %E = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %E.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %D = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %D.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %C = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %C.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %A = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %A.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %B = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %B.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %cp.el = alloca i8*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 7
+ Skipping function per FilterFunctionPass:main
+Collecting defining blocks for sha_init
+ Skipping function per FilterFunctionPass:sha_update
+ Skipping function per FilterFunctionPass:byte_reverse
+ Skipping function per FilterFunctionPass:sha_transform
+Collecting defining blocks for sha_final
+ Skipping function per FilterFunctionPass:sha_stream
+Collecting defining blocks for sha_print
+ Skipping function per FilterFunctionPass:main
+ Processing function:sha_init
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_init0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+ Skipping function per FilterFunctionPass:sha_update
+ Skipping function per FilterFunctionPass:byte_reverse
+ Skipping function per FilterFunctionPass:sha_transform
+ Processing function:sha_final
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing call instruction..
+Can't handle this operand   %lo_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %hi_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+ Skipping function per FilterFunctionPass:sha_stream
+ Processing function:sha_print
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_print0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+Extract path function for assertion assert_sha_final_path_0
+Extract path function for assertion assert_sha_final_path_1
+Extract path function for assertion assert_sha_final_path_2
+OH stats is requested, dumping stat file...
+Processed instructions number 414
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 32,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 369,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 2,
+    "numberOfNonHashableInstructions": 6,
+    "numberOfOHProcessedInstr": 45,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 6,
+    "numberOfSensitiveFunctions": 3,
+    "numberOfShortRangeAssertCalls": 3,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 4,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 2,
+    "numberOfUnprotectedArgumentReachableInstructions": 5,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 3 function, while filter count is 7
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.5978 seconds (0.6593 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3573 ( 62.7%)   0.0275 ( 99.9%)   0.3848 ( 64.4%)   0.3848 ( 58.4%)  runs input dependency analysis
+   0.2062 ( 36.2%)   0.0000 (  0.0%)   0.2062 ( 34.5%)   0.2062 ( 31.3%)  Instruments bitcode with hashing and logging functions
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0623 (  9.4%)  Include functions in a given file in any transformation
+   0.0017 (  0.3%)   0.0000 (  0.0%)   0.0017 (  0.3%)   0.0017 (  0.3%)  Bitcode Writer
+   0.0012 (  0.2%)   0.0000 (  0.0%)   0.0012 (  0.2%)   0.0012 (  0.2%)  Instruments bitcode with guards
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Module Verifier
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Memory SSA
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Call site information
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Post-Dominator Tree Construction
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Dominator Tree Construction
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Natural Loop Information
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.5703 (100.0%)   0.0275 (100.0%)   0.5978 (100.0%)   0.6593 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0019 seconds (0.0019 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0019 (100.0%)   0.0019 (100.0%)   0.0019 (100.0%)  Parse IR
+   0.0019 (100.0%)   0.0019 (100.0%)   0.0019 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function sha_init0
+Processing function sha_init
+Processing function sha_stream0
+Processing function sha_update0
+Processing function sha_update1
+Processing function byte_reverse0
+Processing function byte_reverse1
+Processing function byte_reverse2
+Processing function byte_reverse
+Processing function sha_transform0
+Processing function sha_transform1
+Processing function sha_transform
+Processing function sha_update2
+Processing function sha_update
+Processing function sha_final0
+Processing function sha_final1
+Processing function sha_final2
+Processing function sha_final
+Processing function sha_stream1
+Processing function sha_stream
+Processing function sha_print0
+Processing function sha_print
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing sha_print
+Mark Input dependent function sha_print
+Finalizing sha_print0
+Mark Input dependent function sha_print0
+Finalizing sha_stream
+Mark Input dependent function sha_stream
+Finalizing sha_stream1
+Mark Input dependent function sha_stream1
+Finalizing sha_final
+Mark Input dependent function sha_final
+Finalizing sha_final2
+Mark Input dependent function sha_final2
+Finalizing sha_final1
+Mark Input dependent function sha_final1
+Finalizing sha_final0
+Mark Input dependent function sha_final0
+Finalizing sha_update
+Mark Input dependent function sha_update
+Finalizing sha_update2
+Mark Input dependent function sha_update2
+Finalizing sha_transform
+Mark Input dependent function sha_transform
+Finalizing sha_transform1
+Mark Input dependent function sha_transform1
+Finalizing sha_transform0
+Mark Input dependent function sha_transform0
+Finalizing byte_reverse
+Mark Input dependent function byte_reverse
+Finalizing byte_reverse2
+Mark Input dependent function byte_reverse2
+Finalizing byte_reverse1
+Mark Input dependent function byte_reverse1
+Finalizing byte_reverse0
+Mark Input dependent function byte_reverse0
+Finalizing sha_update1
+Mark Input dependent function sha_update1
+Finalizing sha_update0
+Mark Input dependent function sha_update0
+Finalizing sha_stream0
+Mark Input dependent function sha_stream0
+Finalizing sha_init
+Mark Input dependent function sha_init
+Finalizing sha_init0
+Mark Input dependent function sha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/sha.bc/50/0
+here!:byte_reverse0
+here!:sha_final
+here!:sha_print
+here!:sha_update2
+here!:sha_transform0
+here!:sha_transform1
+here!:sha_init
+here!:sha_stream1
+here!:sha_update
+here!:byte_reverse2
+here!:main0
+here!:sha_init0
+here!:main3
+here!:byte_reverse
+here!:byte_reverse
+got filter function names
+did not find main demangled to main
+did not find fopen demangled to fopen
+did not find printf demangled to printf
+did not find fclose demangled to fclose
+Add filter function sha_init
+FunctionInfo. Adding function:sha_init
+Add filter function sha_update
+FunctionInfo. Adding function:sha_update
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function byte_reverse
+FunctionInfo. Adding function:byte_reverse
+did not find sha_transform demangled to sha_transform
+Add filter function sha_final
+FunctionInfo. Adding function:sha_final
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find sha_stream demangled to sha_stream
+did not find fread demangled to fread
+Add filter function sha_print
+FunctionInfo. Adding function:sha_print
+Add filter function main0
+FunctionInfo. Adding function:main0
+did not find main1 demangled to main1
+did not find main2 demangled to main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+Add filter function sha_init0
+FunctionInfo. Adding function:sha_init0
+did not find sha_update0 demangled to sha_update0
+did not find sha_update1 demangled to sha_update1
+Add filter function sha_update2
+FunctionInfo. Adding function:sha_update2
+Add filter function byte_reverse0
+FunctionInfo. Adding function:byte_reverse0
+did not find byte_reverse1 demangled to byte_reverse1
+Add filter function byte_reverse2
+FunctionInfo. Adding function:byte_reverse2
+Add filter function sha_transform0
+FunctionInfo. Adding function:sha_transform0
+Add filter function sha_transform1
+FunctionInfo. Adding function:sha_transform1
+did not find sha_final0 demangled to sha_final0
+did not find sha_final1 demangled to sha_final1
+did not find sha_final2 demangled to sha_final2
+did not find sha_stream0 demangled to sha_stream0
+Add filter function sha_stream1
+FunctionInfo. Adding function:sha_stream1
+did not find sha_print0 demangled to sha_print0
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sha_init other functions, ExtractedOnly mode uses other functions
+Adding sha_update other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse other functions, ExtractedOnly mode uses other functions
+Adding sha_transform other functions, ExtractedOnly mode uses other functions
+Adding sha_final other functions, ExtractedOnly mode uses other functions
+Adding sha_stream other functions, ExtractedOnly mode uses other functions
+Adding sha_print other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding sha_init0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update0 other functions, ExtractedOnly mode uses other functions
+Adding sha_update1 other functions, ExtractedOnly mode uses other functions
+Adding sha_update2 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse0 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse1 other functions, ExtractedOnly mode uses other functions
+Adding byte_reverse2 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform0 other functions, ExtractedOnly mode uses other functions
+Adding sha_transform1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final0 other functions, ExtractedOnly mode uses other functions
+Adding sha_final1 other functions, ExtractedOnly mode uses other functions
+Adding sha_final2 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream0 other functions, ExtractedOnly mode uses other functions
+Adding sha_stream1 other functions, ExtractedOnly mode uses other functions
+Adding sha_print0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:27
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+byte_reverse2
+sha_transform1
+sha_transform
+sha_final
+main3
+byte_reverse
+sha_init0
+sha_transform0
+main
+sha_final0
+main2
+sha_update0
+byte_reverse1
+sha_init
+sha_print0
+sha_final1
+main0
+main1
+sha_update2
+sha_update
+sha_stream
+byte_reverse0
+sha_stream1
+sha_stream0
+sha_print
+sha_update1
+sha_final2
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 27 function, while filter count is 14
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 8
+  - operands: []
+No reaching definition for:   %sha_info = alloca %struct.SHA_INFO, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %sha_info.el = alloca %struct.SHA_INFO, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %fin = alloca %struct._IO_FILE*, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %fin.el = alloca %struct._IO_FILE*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for: @stdin = external global %struct._IO_FILE*, align 8 in:   store %struct._IO_FILE* %3, %struct._IO_FILE** %fin.el, !input_dep_instr !5, !data_dep_instr !6, !argument_dep_instr !8, !control_dep_instr !7 off: 0
+No reaching definition for:   %E = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %E.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %D = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %D.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %C = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %C.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %A = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %A.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %B = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %B.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %cp.el = alloca i8*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 14
+ Skipping function per FilterFunctionPass:main
+Collecting defining blocks for sha_init
+Collecting defining blocks for sha_update
+Collecting defining blocks for byte_reverse
+ Skipping function per FilterFunctionPass:sha_transform
+Collecting defining blocks for sha_final
+ Skipping function per FilterFunctionPass:sha_stream
+Collecting defining blocks for sha_print
+ Skipping function per FilterFunctionPass:main
+ Processing function:sha_init
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_init0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+ Processing function:sha_update
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.end  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_update1(%struct.SHA_INFO** %sha_info.addr, i32* %count.addr), !input_indep_block !3, !input_indep_instr !11, !data_indep_instr !8, !control_dep_instr !6
+Can't handle this operand   %count.addr = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_update1(%struct.SHA_INFO** %sha_info.addr, i32* %count.addr), !input_indep_block !3, !input_indep_instr !11, !data_indep_instr !8, !control_dep_instr !6
+Processing path: entry  if.end  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  if.end  while.end  
+After path modifications process path
+entry  if.end  while.end  
+ Processing function:byte_reverse
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  for.inc  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !input_indep_instr !8, !data_indep_instr !9, !argument_dep_instr !7, !control_dep_instr !6
+  call void @byte_reverse1(i8** %cp), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !argument_dep_instr !7, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse1(i8** %cp), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !argument_dep_instr !7, !control_dep_instr !6
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %cp = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse0(i8** %cp, i64** %buffer.addr, i32* %count.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %buffer.addr = alloca i64*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse0(i8** %cp, i64** %buffer.addr, i32* %count.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %count.addr = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @byte_reverse0(i8** %cp, i64** %buffer.addr, i32* %count.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+ Skipping function per FilterFunctionPass:sha_transform
+ Processing function:sha_final
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing call instruction..
+Can't handle this operand   %lo_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %hi_bit_count = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_final2(i64* %lo_bit_count, i64* %hi_bit_count, %struct.SHA_INFO** %sha_info.addr), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+ Skipping function per FilterFunctionPass:sha_stream
+ Processing function:sha_print
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+Processing call instruction..
+Can't handle this operand   %sha_info.addr = alloca %struct.SHA_INFO*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sha_print0(%struct.SHA_INFO** %sha_info.addr), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+Extract path function for assertion assert_sha_update_path_0
+Extract path function for assertion assert_sha_update_path_2
+Extract path function for assertion assert_sha_update_path_4
+Extract path function for assertion assert_byte_reverse_path_1
+Extract path function for assertion assert_byte_reverse_path_3
+Extract path function for assertion assert_sha_final_path_0
+Extract path function for assertion assert_sha_final_path_1
+Extract path function for assertion assert_sha_final_path_2
+OH stats is requested, dumping stat file...
+Processed instructions number 414
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 60,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 315,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 3,
+    "numberOfNonHashableInstructions": 14,
+    "numberOfOHProcessedInstr": 99,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 3,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 17,
+    "numberOfSensitiveFunctions": 5,
+    "numberOfShortRangeAssertCalls": 8,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 10,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 5,
+    "numberOfUnprotectedArgumentReachableInstructions": 9,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 2,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 11
+}
+ERR. processed 5 function, while filter count is 14
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.6039 seconds (0.6657 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3655 ( 62.7%)   0.0203 ( 98.9%)   0.3858 ( 63.9%)   0.3861 ( 58.0%)  runs input dependency analysis
+   0.2103 ( 36.0%)   0.0000 (  0.2%)   0.2103 ( 34.8%)   0.2103 ( 31.6%)  Instruments bitcode with hashing and logging functions
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0621 (  9.3%)  Include functions in a given file in any transformation
+   0.0018 (  0.3%)   0.0000 (  0.0%)   0.0018 (  0.3%)   0.0018 (  0.3%)  Bitcode Writer
+   0.0013 (  0.2%)   0.0000 (  0.0%)   0.0013 (  0.2%)   0.0013 (  0.2%)  Memory SSA
+   0.0009 (  0.2%)   0.0001 (  0.3%)   0.0009 (  0.2%)   0.0009 (  0.1%)  Instruments bitcode with guards
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Module Verifier
+   0.0005 (  0.1%)   0.0000 (  0.2%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Post-Dominator Tree Construction
+   0.0004 (  0.1%)   0.0000 (  0.1%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Dominator Tree Construction
+   0.0003 (  0.1%)   0.0000 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.0%)  Natural Loop Information
+   0.0003 (  0.1%)   0.0000 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.0%)  Call site information
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Dominator Tree Construction
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.5833 (100.0%)   0.0206 (100.0%)   0.6039 (100.0%)   0.6657 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0016 seconds (0.0016 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0008 (100.0%)   0.0008 (100.0%)   0.0016 (100.0%)   0.0016 (100.0%)  Parse IR
+   0.0008 (100.0%)   0.0008 (100.0%)   0.0016 (100.0%)   0.0016 (100.0%)  Total
+

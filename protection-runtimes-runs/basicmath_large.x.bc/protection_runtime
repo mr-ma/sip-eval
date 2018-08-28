@@ -1,0 +1,2693 @@
+Running input dependency analysis pass
+Processing function SolveCubic0
+Processing function SolveCubic1
+Processing function SolveCubic
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function usqrt
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main12
+Processing function main13
+Processing function main
+Processing function rad2deg
+Processing function deg2rad
+Finalizing deg2rad
+Finalizing rad2deg
+Finalizing main
+Finalizing main13
+Mark Input dependent function main13
+Finalizing main12
+Mark Input dependent function main12
+Finalizing main11
+Finalizing main10
+Finalizing main9
+Finalizing usqrt
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing SolveCubic
+Mark Input dependent function SolveCubic
+Finalizing SolveCubic1
+Mark Input dependent function SolveCubic1
+Finalizing SolveCubic0
+Mark Input dependent function SolveCubic0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/basicmath_large.x.bc/10/0
+here!:main8
+here!:main6
+here!:main6
+got filter function names
+did not find main demangled to main
+did not find printf demangled to printf
+did not find atan demangled to atan
+did not find puts demangled to puts
+did not find rad2deg demangled to rad2deg
+did not find deg2rad demangled to deg2rad
+did not find SolveCubic demangled to SolveCubic
+did not find sqrt demangled to sqrt
+did not find acos demangled to acos
+did not find cos demangled to cos
+did not find fabs demangled to fabs
+did not find pow demangled to pow
+did not find usqrt demangled to usqrt
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+did not find main2 demangled to main2
+did not find main3 demangled to main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+did not find main7 demangled to main7
+Add filter function main8
+FunctionInfo. Adding function:main8
+did not find main9 demangled to main9
+did not find main10 demangled to main10
+did not find main11 demangled to main11
+did not find main12 demangled to main12
+did not find main13 demangled to main13
+did not find SolveCubic0 demangled to SolveCubic0
+did not find SolveCubic1 demangled to SolveCubic1
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding rad2deg other functions, ExtractedOnly mode uses other functions
+Adding deg2rad other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic other functions, ExtractedOnly mode uses other functions
+Adding usqrt other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Adding main12 other functions, ExtractedOnly mode uses other functions
+Adding main13 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic0 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic1 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:21
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+main13
+SolveCubic1
+usqrt
+main0
+main6
+SolveCubic
+main7
+SolveCubic0
+main
+main11
+main5
+main8
+main12
+rad2deg
+main2
+main9
+main3
+main4
+main10
+deg2rad
+main1
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 21 function, while filter count is 2
+Functions called in loop
+main10
+main9
+main11
+usqrt
+Function call numbers
+main9 -- 0
+main -- 0
+usqrt -- 0
+main11 -- 0
+main10 -- 0
+Insert hash computation
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 296
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 2
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:rad2deg
+ Skipping function per FilterFunctionPass:deg2rad
+ Skipping function per FilterFunctionPass:SolveCubic
+ Skipping function per FilterFunctionPass:usqrt
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:rad2deg
+ Skipping function per FilterFunctionPass:deg2rad
+ Skipping function per FilterFunctionPass:SolveCubic
+ Skipping function per FilterFunctionPass:usqrt
+OH stats is requested, dumping stat file...
+Processed instructions number 501
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 0,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 501,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 0,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 0 function, while filter count is 2
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4423 seconds (0.4424 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3591 ( 81.8%)   0.0033 ( 99.9%)   0.3624 ( 81.9%)   0.3625 ( 81.9%)  runs input dependency analysis
+   0.0745 ( 17.0%)   0.0000 (  0.0%)   0.0745 ( 16.9%)   0.0746 ( 16.9%)  Instruments bitcode with hashing and logging functions
+   0.0013 (  0.3%)   0.0000 (  0.0%)   0.0013 (  0.3%)   0.0013 (  0.3%)  Bitcode Writer
+   0.0010 (  0.2%)   0.0000 (  0.0%)   0.0010 (  0.2%)   0.0010 (  0.2%)  Instruments bitcode with guards
+   0.0007 (  0.2%)   0.0000 (  0.0%)   0.0007 (  0.2%)   0.0007 (  0.2%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Module Verifier
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Dominator Tree Construction
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Include functions in a given file in any transformation
+   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Post-Dominator Tree Construction
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4389 (100.0%)   0.0033 (100.0%)   0.4423 (100.0%)   0.4424 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0022 seconds (0.0022 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0015 (100.0%)   0.0007 (100.0%)   0.0022 (100.0%)   0.0022 (100.0%)  Parse IR
+   0.0015 (100.0%)   0.0007 (100.0%)   0.0022 (100.0%)   0.0022 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function SolveCubic0
+Processing function SolveCubic1
+Processing function SolveCubic
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function usqrt
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main12
+Processing function main13
+Processing function main
+Processing function rad2deg
+Processing function deg2rad
+Finalizing deg2rad
+Finalizing rad2deg
+Finalizing main
+Finalizing main13
+Mark Input dependent function main13
+Finalizing main12
+Mark Input dependent function main12
+Finalizing main11
+Finalizing main10
+Finalizing main9
+Finalizing usqrt
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing SolveCubic
+Mark Input dependent function SolveCubic
+Finalizing SolveCubic1
+Mark Input dependent function SolveCubic1
+Finalizing SolveCubic0
+Mark Input dependent function SolveCubic0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/basicmath_large.x.bc/100/0
+here!:main
+here!:rad2deg
+here!:deg2rad
+here!:SolveCubic
+here!:usqrt
+here!:main0
+here!:main1
+here!:main2
+here!:main3
+here!:main4
+here!:main5
+here!:main6
+here!:main7
+here!:main8
+here!:main9
+here!:main10
+here!:main11
+here!:main12
+here!:main13
+here!:SolveCubic0
+here!:SolveCubic1
+here!:SolveCubic1
+got filter function names
+Add filter function main
+FunctionInfo. Adding function:main
+did not find printf demangled to printf
+did not find atan demangled to atan
+did not find puts demangled to puts
+Add filter function rad2deg
+FunctionInfo. Adding function:rad2deg
+Add filter function deg2rad
+FunctionInfo. Adding function:deg2rad
+Add filter function SolveCubic
+FunctionInfo. Adding function:SolveCubic
+did not find sqrt demangled to sqrt
+did not find acos demangled to acos
+did not find cos demangled to cos
+did not find fabs demangled to fabs
+did not find pow demangled to pow
+Add filter function usqrt
+FunctionInfo. Adding function:usqrt
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+Add filter function main4
+FunctionInfo. Adding function:main4
+Add filter function main5
+FunctionInfo. Adding function:main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+Add filter function main7
+FunctionInfo. Adding function:main7
+Add filter function main8
+FunctionInfo. Adding function:main8
+Add filter function main9
+FunctionInfo. Adding function:main9
+Add filter function main10
+FunctionInfo. Adding function:main10
+Add filter function main11
+FunctionInfo. Adding function:main11
+Add filter function main12
+FunctionInfo. Adding function:main12
+Add filter function main13
+FunctionInfo. Adding function:main13
+Add filter function SolveCubic0
+FunctionInfo. Adding function:SolveCubic0
+Add filter function SolveCubic1
+FunctionInfo. Adding function:SolveCubic1
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding rad2deg other functions, ExtractedOnly mode uses other functions
+Adding deg2rad other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic other functions, ExtractedOnly mode uses other functions
+Adding usqrt other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Adding main12 other functions, ExtractedOnly mode uses other functions
+Adding main13 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic0 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic1 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:21
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+main13
+SolveCubic1
+usqrt
+main0
+main6
+SolveCubic
+main7
+SolveCubic0
+main
+main11
+main5
+main8
+main12
+rad2deg
+main2
+main9
+main3
+main4
+main10
+deg2rad
+main1
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+Functions called in loop
+main10
+main9
+main11
+usqrt
+Function call numbers
+main9 -- 0
+main -- 0
+usqrt -- 0
+main11 -- 0
+main10 -- 0
+Insert hash computation
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 296
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 21
+Collecting defining blocks for main
+Skip. No dependence graph for function rad2deg
+Skip. No dependence graph for function deg2rad
+Collecting defining blocks for SolveCubic
+Collecting defining blocks for usqrt
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  for.inc  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !control_dep_instr !10, !data_indep_instr !9
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %12, double %15, double %18, double %21, i32* %solutions, double* %arraydecay), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %12, double %15, double %18, double %21, i32* %solutions, double* %arraydecay), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.cond6  for.body8  for.inc12  
+After path modifications process path
+for.body8  
+Hash path invariants only
+Invariants are
+  br label %for.inc12, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %38, double %41, double %44, double %47, i32* %solutions, double* %arraydecay4), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay4 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %38, double %41, double %44, double %47, i32* %solutions, double* %arraydecay4), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.cond18  for.body20  for.inc24  
+After path modifications process path
+for.body20  
+Hash path invariants only
+Invariants are
+  br label %for.inc24, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.end  for.cond6  for.end14  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  
+After path modifications process path
+entry  for.end  for.end14  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %64, double %67, double %70, double %73, i32* %solutions, double* %arraydecay16), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay16 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %64, double %67, double %70, double %73, i32* %solutions, double* %arraydecay16), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.body32  for.inc36  
+After path modifications process path
+for.body32  
+Hash path invariants only
+Invariants are
+  br label %for.inc36, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  
+After path modifications process path
+entry  for.end  for.end14  for.end26  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %90, double %93, double %96, double %99, i32* %solutions, double* %arraydecay28), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay28 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %90, double %93, double %96, double %99, i32* %solutions, double* %arraydecay28), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  for.end14  for.end26  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.body44  for.inc48  
+After path modifications process path
+for.body44  
+Hash path invariants only
+Invariants are
+  br label %for.inc48, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %116, double %119, double %122, double %125, i32* %solutions, double* %arraydecay40), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay40 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %116, double %119, double %122, double %125, i32* %solutions, double* %arraydecay40), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.body56  for.inc60  
+After path modifications process path
+for.body56  
+Hash path invariants only
+Invariants are
+  br label %for.inc60, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %142, double %145, double %148, double %151, i32* %solutions, double* %arraydecay52), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay52 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %142, double %145, double %148, double %151, i32* %solutions, double* %arraydecay52), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.body68  for.inc72  
+After path modifications process path
+for.body68  
+Hash path invariants only
+Invariants are
+  br label %for.inc72, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %168, double %171, double %174, double %177, i32* %solutions, double* %arraydecay64), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay64 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %168, double %171, double %174, double %177, i32* %solutions, double* %arraydecay64), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.body80  for.inc84  
+After path modifications process path
+for.body80  
+Hash path invariants only
+Invariants are
+  br label %for.inc84, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %solutions = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %194, double %197, double %200, double %203, i32* %solutions, double* %arraydecay76), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %arraydecay76 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @SolveCubic(double %194, double %197, double %200, double %203, i32* %solutions, double* %arraydecay76), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond102  for.body104  for.inc108  
+After path modifications process path
+for.body104  
+Hash path invariants only
+Invariants are
+  br label %for.inc108, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond97  for.body99  
+After path modifications process path
+for.body99  
+Hash path invariants only
+Invariants are
+  store i32 0, i32* %i, align 4, !control_dep_instr !11, !data_indep_instr !10
+  br label %for.cond102, !control_dep_instr !11, !data_indep_instr !10
+  %call101 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11 x i8]* @.str.1, i32 0, i32 0)), !control_dep_instr !11, !data_dep_instr !7
+  %arraydecay100 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !control_dep_instr !11, !data_dep_instr !7
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond94  for.body96  
+After path modifications process path
+for.body96  
+Hash path invariants only
+Invariants are
+  br label %for.cond97, !control_dep_instr !11, !data_indep_instr !10
+  store double -1.000000e+00, double* %d1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond91  for.body93  
+After path modifications process path
+for.body93  
+Hash path invariants only
+Invariants are
+  br label %for.cond94, !control_dep_instr !11, !data_indep_instr !10
+  store double 5.000000e+00, double* %c1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.body90  
+After path modifications process path
+for.body90  
+Hash path invariants only
+Invariants are
+  br label %for.cond91, !control_dep_instr !11, !data_indep_instr !10
+  store double 1.000000e+01, double* %b1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond102  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond97  for.body99  for.end110  for.inc112  
+After path modifications process path
+for.body99  for.end110  
+Hash path invariants only
+Invariants are
+  br label %for.inc112, !control_dep_instr !11, !data_indep_instr !10
+  %call111 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i32 0, i32 0)), !control_dep_instr !11, !data_dep_instr !7, !input_dep_block !12
+  store i32 0, i32* %i, align 4, !control_dep_instr !11, !data_indep_instr !10
+  br label %for.cond102, !control_dep_instr !11, !data_indep_instr !10
+  %call101 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11 x i8]* @.str.1, i32 0, i32 0)), !control_dep_instr !11, !data_dep_instr !7
+  %arraydecay100 = getelementptr inbounds [3 x double], [3 x double]* %x, i32 0, i32 0, !control_dep_instr !11, !data_dep_instr !7
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond94  for.body96  
+After path modifications process path
+for.body96  
+Hash path invariants only
+Invariants are
+  store double -1.000000e+00, double* %d1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond97, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond91  for.body93  
+After path modifications process path
+for.body93  
+Hash path invariants only
+Invariants are
+  store double 5.000000e+00, double* %c1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond94, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.body90  
+After path modifications process path
+for.body90  
+Hash path invariants only
+Invariants are
+  store double 1.000000e+01, double* %b1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond91, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond97  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond94  for.body96  for.end113  for.inc114  
+After path modifications process path
+for.body96  for.end113  
+Hash path invariants only
+Invariants are
+  br label %for.inc114, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond97, !control_dep_instr !11, !data_indep_instr !10
+  store double -1.000000e+00, double* %d1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond91  for.body93  
+After path modifications process path
+for.body93  
+Hash path invariants only
+Invariants are
+  store double 5.000000e+00, double* %c1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond94, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.body90  
+After path modifications process path
+for.body90  
+Hash path invariants only
+Invariants are
+  store double 1.000000e+01, double* %b1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond91, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond94  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond91  for.body93  for.end115  for.inc116  
+After path modifications process path
+for.body93  for.end115  
+Hash path invariants only
+Invariants are
+  br label %for.inc116, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond94, !control_dep_instr !11, !data_indep_instr !10
+  store double 5.000000e+00, double* %c1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.body90  
+After path modifications process path
+for.body90  
+Hash path invariants only
+Invariants are
+  store double 1.000000e+01, double* %b1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond91, !control_dep_instr !11, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond91  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.body90  for.end118  for.inc119  
+After path modifications process path
+for.body90  for.end118  
+Hash path invariants only
+Invariants are
+  br label %for.inc119, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+  br label %for.cond91, !control_dep_instr !11, !data_indep_instr !10
+  store double 1.000000e+01, double* %b1, align 8, !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %conv = sext i32 %295 to i64, !input_indep_instr !9, !data_indep_instr !10 of the call   call void @usqrt(i64 %conv, %struct.int_sqrt* %q), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %q = alloca %struct.int_sqrt, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @usqrt(i64 %conv, %struct.int_sqrt* %q), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %q = alloca %struct.int_sqrt, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main9(%struct.int_sqrt* %q, i32* %i), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main9(%struct.int_sqrt* %q, i32* %i), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.end121  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %q = alloca %struct.int_sqrt, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @usqrt(i64 %309, %struct.int_sqrt* %q), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %q = alloca %struct.int_sqrt, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main10(%struct.int_sqrt* %q, i64* %l), !input_indep_instr !9, !data_indep_instr !10
+Can't handle this operand   %l = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main10(%struct.int_sqrt* %q, i64* %l), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.end129  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.end121  for.end129  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.body144  for.inc148  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.body144  for.inc148  for.end150  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.body144  for.inc148  for.end150  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %X = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main11(double %321, double* %X), !input_indep_instr !9, !data_indep_instr !10
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.end139  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.end129  for.end139  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  for.end139  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  for.end139  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.end121  for.end129  for.end139  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.cond152  for.body159  for.inc165  
+After path modifications process path
+for.body159  
+Hash path invariants only
+Invariants are
+  br label %for.inc165, !control_dep_instr !11, !data_indep_instr !10
+  call void @main12(double* %X), !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %X = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main12(double* %X), !control_dep_instr !11, !data_indep_instr !10, !input_dep_block !12
+No oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.end150  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.body144  for.inc148  for.end150  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.body144  for.inc148  for.end150  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.end139  for.end150  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  for.end150  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  for.end150  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.end129  for.end139  for.end150  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  for.end139  for.end150  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  for.end139  for.end150  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.end121  for.end129  for.end139  for.end150  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.cond152  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.end150  for.end170  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.body144  for.inc148  for.end150  for.end170  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.cond141  for.body144  for.inc148  for.end150  for.end170  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.end139  for.end150  for.end170  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  for.end150  for.end170  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.cond131  for.body134  for.inc137  for.end139  for.end150  for.end170  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.end129  for.end139  for.end150  for.end170  
+Extended path is 
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.cond123  for.body125  for.inc127  for.end129  for.end139  for.end150  for.end170  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.cond18  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.cond6  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.cond  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path
+entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.cond54  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.cond30  for.end38  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.cond42  for.end50  for.end62  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.cond66  for.end74  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.cond78  for.end86  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Processing path: entry  for.end  for.end14  for.end26  for.end38  for.end50  for.end62  for.end74  for.end86  for.cond88  for.end121  for.end129  for.end139  for.end150  for.end170  
+After path modifications process path is empty
+Skip. No dependence graph for function rad2deg
+Skip. No dependence graph for function deg2rad
+ Processing function:SolveCubic
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+ Processing function:usqrt
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  if.then  
+Extended path is 
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.body  if.end  for.inc  
+Extended path is 
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  
+Extended path is 
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Extract path function for assertion assert_SolveCubic_path_0
+Extract path function for assertion assert_SolveCubic_path_1
+Extract path function for assertion assert_SolveCubic_path_2
+Extract path function for assertion assert_main_path_45
+Extract path function for assertion assert_main_path_46
+Extract path function for assertion assert_main_path_50
+Extract path function for assertion assert_main_path_57
+Extract path function for assertion assert_main_path_59
+Extract path function for assertion assert_main_path_60
+Extract path function for assertion assert_main_path_64
+Extract path function for assertion assert_main_path_71
+Extract path function for assertion assert_main_path_73
+Extract path function for assertion assert_main_path_77
+Extract path function for assertion assert_main_path_84
+Extract path function for assertion assert_main_path_89
+Extract path function for assertion assert_main_path_96
+Extract path function for assertion assert_main_path_107
+OH stats is requested, dumping stat file...
+Processed instructions number 500
+{
+    "numberOfAssertCalls": 51,
+    "numberOfBlocksInFunctionsWithNoDG": 2,
+    "numberOfDataDependentInstructions": 119,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 16,
+    "numberOfNonHashableBlocks": 10,
+    "numberOfNonHashableInstructions": 62,
+    "numberOfOHProcessedInstr": 484,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 1,
+    "numberOfProtectedArguments": 34,
+    "numberOfProtectedBlocks": 30,
+    "numberOfProtectedFunctions": 3,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 139,
+    "numberOfSensitiveBlocks": 80,
+    "numberOfSensitiveFunctions": 3,
+    "numberOfShortRangeAssertCalls": 17,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 12,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 6,
+    "numberOfUnprotectedArgumentReachableInstructions": 66,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 28,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 91
+}
+ERR. processed 3 function, while filter count is 21
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.8106 seconds (0.8105 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3629 ( 45.5%)   0.0000 (  0.0%)   0.3629 ( 44.8%)   0.3629 ( 44.8%)  runs input dependency analysis
+   0.2983 ( 37.4%)   0.0063 ( 48.5%)   0.3046 ( 37.6%)   0.3046 ( 37.6%)  Instruments bitcode with hashing and logging functions
+   0.1095 ( 13.7%)   0.0028 ( 21.8%)   0.1123 ( 13.9%)   0.1122 ( 13.8%)  Memory SSA
+   0.0123 (  1.5%)   0.0004 (  2.9%)   0.0126 (  1.6%)   0.0127 (  1.6%)  Dominator Tree Construction
+   0.0096 (  1.2%)   0.0002 (  1.8%)   0.0098 (  1.2%)   0.0098 (  1.2%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0028 ( 21.6%)   0.0028 (  0.3%)   0.0028 (  0.3%)  Bitcode Writer
+   0.0005 (  0.1%)   0.0004 (  3.3%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Module Verifier
+   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Instruments bitcode with guards
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.1%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Function Alias Analysis Results
+   0.0005 (  0.1%)   0.0000 (  0.1%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Basic Alias Analysis (stateless AA impl)
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Dominator Tree Construction
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Include functions in a given file in any transformation
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Post-Dominator Tree Construction
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Natural Loop Information
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.7977 (100.0%)   0.0129 (100.0%)   0.8106 (100.0%)   0.8105 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0018 seconds (0.0018 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0018 (100.0%)   0.0018 (100.0%)  Parse IR
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0018 (100.0%)   0.0018 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function SolveCubic0
+Processing function SolveCubic1
+Processing function SolveCubic
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function usqrt
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main12
+Processing function main13
+Processing function main
+Processing function rad2deg
+Processing function deg2rad
+Finalizing deg2rad
+Finalizing rad2deg
+Finalizing main
+Finalizing main13
+Mark Input dependent function main13
+Finalizing main12
+Mark Input dependent function main12
+Finalizing main11
+Finalizing main10
+Finalizing main9
+Finalizing usqrt
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing SolveCubic
+Mark Input dependent function SolveCubic
+Finalizing SolveCubic1
+Mark Input dependent function SolveCubic1
+Finalizing SolveCubic0
+Mark Input dependent function SolveCubic0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/basicmath_large.x.bc/25/0
+here!:main8
+here!:main6
+here!:main10
+here!:SolveCubic0
+here!:main7
+here!:main7
+got filter function names
+did not find main demangled to main
+did not find printf demangled to printf
+did not find atan demangled to atan
+did not find puts demangled to puts
+did not find rad2deg demangled to rad2deg
+did not find deg2rad demangled to deg2rad
+did not find SolveCubic demangled to SolveCubic
+did not find sqrt demangled to sqrt
+did not find acos demangled to acos
+did not find cos demangled to cos
+did not find fabs demangled to fabs
+did not find pow demangled to pow
+did not find usqrt demangled to usqrt
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+did not find main2 demangled to main2
+did not find main3 demangled to main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+Add filter function main7
+FunctionInfo. Adding function:main7
+Add filter function main8
+FunctionInfo. Adding function:main8
+did not find main9 demangled to main9
+Add filter function main10
+FunctionInfo. Adding function:main10
+did not find main11 demangled to main11
+did not find main12 demangled to main12
+did not find main13 demangled to main13
+Add filter function SolveCubic0
+FunctionInfo. Adding function:SolveCubic0
+did not find SolveCubic1 demangled to SolveCubic1
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding rad2deg other functions, ExtractedOnly mode uses other functions
+Adding deg2rad other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic other functions, ExtractedOnly mode uses other functions
+Adding usqrt other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Adding main12 other functions, ExtractedOnly mode uses other functions
+Adding main13 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic0 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic1 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:21
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+main13
+SolveCubic1
+usqrt
+main0
+main6
+SolveCubic
+main7
+SolveCubic0
+main
+main11
+main5
+main8
+main12
+rad2deg
+main2
+main9
+main3
+main4
+main10
+deg2rad
+main1
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 21 function, while filter count is 5
+Functions called in loop
+main10
+main9
+main11
+usqrt
+Function call numbers
+main9 -- 0
+main -- 0
+usqrt -- 0
+main11 -- 0
+main10 -- 0
+Insert hash computation
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 296
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 5
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:rad2deg
+ Skipping function per FilterFunctionPass:deg2rad
+ Skipping function per FilterFunctionPass:SolveCubic
+ Skipping function per FilterFunctionPass:usqrt
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:rad2deg
+ Skipping function per FilterFunctionPass:deg2rad
+ Skipping function per FilterFunctionPass:SolveCubic
+ Skipping function per FilterFunctionPass:usqrt
+OH stats is requested, dumping stat file...
+Processed instructions number 501
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 0,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 501,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 0,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 0 function, while filter count is 5
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4391 seconds (0.4391 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3587 ( 83.1%)   0.0006 (  7.6%)   0.3593 ( 81.8%)   0.3593 ( 81.8%)  runs input dependency analysis
+   0.0679 ( 15.7%)   0.0067 ( 87.7%)   0.0746 ( 17.0%)   0.0746 ( 17.0%)  Instruments bitcode with hashing and logging functions
+   0.0014 (  0.3%)   0.0000 (  0.0%)   0.0014 (  0.3%)   0.0014 (  0.3%)  Bitcode Writer
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Instruments bitcode with guards
+   0.0007 (  0.2%)   0.0000 (  0.0%)   0.0007 (  0.2%)   0.0007 (  0.2%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.2%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Module Verifier
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Include functions in a given file in any transformation
+   0.0004 (  0.1%)   0.0000 (  0.2%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Dominator Tree Construction
+   0.0003 (  0.1%)   0.0000 (  0.3%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Post-Dominator Tree Construction
+   0.0002 (  0.0%)   0.0000 (  0.1%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0002 (  2.6%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.4%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.4%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.4%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4315 (100.0%)   0.0076 (100.0%)   0.4391 (100.0%)   0.4391 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0018 seconds (0.0018 wall clock)
+
+   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0018 (100.0%)   0.0018 (100.0%)   0.0018 (100.0%)  Parse IR
+   0.0018 (100.0%)   0.0018 (100.0%)   0.0018 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function SolveCubic0
+Processing function SolveCubic1
+Processing function SolveCubic
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function usqrt
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main12
+Processing function main13
+Processing function main
+Processing function rad2deg
+Processing function deg2rad
+Finalizing deg2rad
+Finalizing rad2deg
+Finalizing main
+Finalizing main13
+Mark Input dependent function main13
+Finalizing main12
+Mark Input dependent function main12
+Finalizing main11
+Finalizing main10
+Finalizing main9
+Finalizing usqrt
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing SolveCubic
+Mark Input dependent function SolveCubic
+Finalizing SolveCubic1
+Mark Input dependent function SolveCubic1
+Finalizing SolveCubic0
+Mark Input dependent function SolveCubic0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/basicmath_large.x.bc/50/0
+here!:main8
+here!:main6
+here!:main10
+here!:SolveCubic0
+here!:main7
+here!:SolveCubic1
+here!:main1
+here!:main12
+here!:main3
+here!:main0
+here!:usqrt
+here!:usqrt
+got filter function names
+did not find main demangled to main
+did not find printf demangled to printf
+did not find atan demangled to atan
+did not find puts demangled to puts
+did not find rad2deg demangled to rad2deg
+did not find deg2rad demangled to deg2rad
+did not find SolveCubic demangled to SolveCubic
+did not find sqrt demangled to sqrt
+did not find acos demangled to acos
+did not find cos demangled to cos
+did not find fabs demangled to fabs
+did not find pow demangled to pow
+Add filter function usqrt
+FunctionInfo. Adding function:usqrt
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+did not find main2 demangled to main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+Add filter function main7
+FunctionInfo. Adding function:main7
+Add filter function main8
+FunctionInfo. Adding function:main8
+did not find main9 demangled to main9
+Add filter function main10
+FunctionInfo. Adding function:main10
+did not find main11 demangled to main11
+Add filter function main12
+FunctionInfo. Adding function:main12
+did not find main13 demangled to main13
+Add filter function SolveCubic0
+FunctionInfo. Adding function:SolveCubic0
+Add filter function SolveCubic1
+FunctionInfo. Adding function:SolveCubic1
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding rad2deg other functions, ExtractedOnly mode uses other functions
+Adding deg2rad other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic other functions, ExtractedOnly mode uses other functions
+Adding usqrt other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Adding main12 other functions, ExtractedOnly mode uses other functions
+Adding main13 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic0 other functions, ExtractedOnly mode uses other functions
+Adding SolveCubic1 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:21
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+main13
+SolveCubic1
+usqrt
+main0
+main6
+SolveCubic
+main7
+SolveCubic0
+main
+main11
+main5
+main8
+main12
+rad2deg
+main2
+main9
+main3
+main4
+main10
+deg2rad
+main1
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 21 function, while filter count is 11
+Functions called in loop
+main10
+main9
+main11
+usqrt
+Function call numbers
+main9 -- 0
+main -- 0
+usqrt -- 0
+main11 -- 0
+main10 -- 0
+Insert hash computation
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 296
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 11
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:rad2deg
+ Skipping function per FilterFunctionPass:deg2rad
+ Skipping function per FilterFunctionPass:SolveCubic
+Collecting defining blocks for usqrt
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:rad2deg
+ Skipping function per FilterFunctionPass:deg2rad
+ Skipping function per FilterFunctionPass:SolveCubic
+ Processing function:usqrt
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  if.then  
+Extended path is 
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.body  if.end  for.inc  
+Extended path is 
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  
+Extended path is 
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.then  if.end  for.inc  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Insert assertion skipped function:usqrt because it is called from a loop!
+Insert assertion skipped function:usqrt because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+OH stats is requested, dumping stat file...
+Processed instructions number 501
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 9,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 446,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 0,
+    "numberOfNonHashableInstructions": 15,
+    "numberOfOHProcessedInstr": 55,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 7,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 31,
+    "numberOfSensitiveBlocks": 7,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 1 function, while filter count is 11
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4500 seconds (0.4501 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3597 ( 80.7%)   0.0041 ( 92.5%)   0.3637 ( 80.8%)   0.3638 ( 80.8%)  runs input dependency analysis
+   0.0789 ( 17.7%)   0.0000 (  0.0%)   0.0789 ( 17.5%)   0.0789 ( 17.5%)  Instruments bitcode with hashing and logging functions
+   0.0018 (  0.4%)   0.0000 (  0.0%)   0.0018 (  0.4%)   0.0018 (  0.4%)  Memory SSA
+   0.0014 (  0.3%)   0.0000 (  0.0%)   0.0014 (  0.3%)   0.0014 (  0.3%)  Bitcode Writer
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Instruments bitcode with guards
+   0.0007 (  0.2%)   0.0000 (  0.0%)   0.0007 (  0.2%)   0.0007 (  0.2%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Module Verifier
+   0.0004 (  0.1%)   0.0000 (  0.2%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Include functions in a given file in any transformation
+   0.0004 (  0.1%)   0.0000 (  0.2%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Dominator Tree Construction
+   0.0003 (  0.1%)   0.0000 (  0.3%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Post-Dominator Tree Construction
+   0.0002 (  0.0%)   0.0000 (  0.2%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0002 (  4.5%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.6%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.9%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.7%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4456 (100.0%)   0.0044 (100.0%)   0.4500 (100.0%)   0.4501 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0021 seconds (0.0021 wall clock)
+
+   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0021 (100.0%)   0.0021 (100.0%)   0.0021 (100.0%)  Parse IR
+   0.0021 (100.0%)   0.0021 (100.0%)   0.0021 (100.0%)  Total
+

@@ -1,0 +1,2477 @@
+Running input dependency analysis pass
+Processing function bmha_init0
+Processing function bmha_init1
+Processing function bmha_init2
+Processing function bmha_init3
+Processing function bmha_init4
+Processing function bmha_init5
+Processing function bmha_init6
+Processing function bmha_init7
+Processing function bmha_init8
+Processing function bmha_init
+Processing function bmha_search0
+Processing function bmha_search1
+Processing function bmha_search2
+Processing function bmha_search
+Processing function bmhi_init0
+Processing function bmhi_init1
+Processing function bmhi_init2
+Processing function bmhi_init3
+Processing function bmhi_init4
+Processing function bmhi_init5
+Processing function bmhi_init6
+Processing function bmhi_init7
+Processing function bmhi_init8
+Processing function bmhi_init
+Processing function bhmi_cleanup0
+Processing function bhmi_cleanup
+Processing function bmhi_search0
+Processing function bmhi_search1
+Processing function bmhi_search2
+Processing function bmhi_search
+Processing function bmh_init0
+Processing function bmh_init1
+Processing function bmh_init2
+Processing function bmh_init3
+Processing function bmh_init4
+Processing function bmh_init5
+Processing function bmh_init6
+Processing function bmh_init
+Processing function bmh_search0
+Processing function bmh_search1
+Processing function bmh_search2
+Processing function bmh_search
+Processing function init_search
+Processing function strsearch0
+Processing function strsearch1
+Processing function strsearch2
+Processing function strsearch
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing strsearch
+Finalizing strsearch2
+Mark Input dependent function strsearch2
+Finalizing strsearch1
+Mark Input dependent function strsearch1
+Finalizing strsearch0
+Mark Input dependent function strsearch0
+Finalizing init_search
+Finalizing bmh_search
+Finalizing bmh_search2
+Mark Input dependent function bmh_search2
+Finalizing bmh_search1
+Mark Input dependent function bmh_search1
+Finalizing bmh_search0
+Mark Input dependent function bmh_search0
+Finalizing bmh_init
+Finalizing bmh_init6
+Mark Input dependent function bmh_init6
+Finalizing bmh_init5
+Mark Input dependent function bmh_init5
+Finalizing bmh_init4
+Mark Input dependent function bmh_init4
+Finalizing bmh_init3
+Mark Input dependent function bmh_init3
+Finalizing bmh_init2
+Mark Input dependent function bmh_init2
+Finalizing bmh_init1
+Mark Input dependent function bmh_init1
+Finalizing bmh_init0
+Mark Input dependent function bmh_init0
+Finalizing bmhi_search
+Finalizing bmhi_search2
+Mark Input dependent function bmhi_search2
+Finalizing bmhi_search1
+Mark Input dependent function bmhi_search1
+Finalizing bmhi_search0
+Mark Input dependent function bmhi_search0
+Finalizing bhmi_cleanup
+Finalizing bhmi_cleanup0
+Mark Input dependent function bhmi_cleanup0
+Finalizing bmhi_init
+Finalizing bmhi_init8
+Mark Input dependent function bmhi_init8
+Finalizing bmhi_init7
+Mark Input dependent function bmhi_init7
+Finalizing bmhi_init6
+Mark Input dependent function bmhi_init6
+Finalizing bmhi_init5
+Mark Input dependent function bmhi_init5
+Finalizing bmhi_init4
+Mark Input dependent function bmhi_init4
+Finalizing bmhi_init3
+Mark Input dependent function bmhi_init3
+Finalizing bmhi_init2
+Mark Input dependent function bmhi_init2
+Finalizing bmhi_init1
+Mark Input dependent function bmhi_init1
+Finalizing bmhi_init0
+Mark Input dependent function bmhi_init0
+Finalizing bmha_search
+Finalizing bmha_search2
+Mark Input dependent function bmha_search2
+Finalizing bmha_search1
+Mark Input dependent function bmha_search1
+Finalizing bmha_search0
+Mark Input dependent function bmha_search0
+Finalizing bmha_init
+Finalizing bmha_init8
+Mark Input dependent function bmha_init8
+Finalizing bmha_init7
+Mark Input dependent function bmha_init7
+Finalizing bmha_init6
+Mark Input dependent function bmha_init6
+Finalizing bmha_init5
+Mark Input dependent function bmha_init5
+Finalizing bmha_init4
+Mark Input dependent function bmha_init4
+Finalizing bmha_init3
+Mark Input dependent function bmha_init3
+Finalizing bmha_init2
+Mark Input dependent function bmha_init2
+Finalizing bmha_init1
+Mark Input dependent function bmha_init1
+Finalizing bmha_init0
+Mark Input dependent function bmha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/search_small.x.bc/10/0
+here!:bmha_init1
+here!:bmhi_init7
+here!:bmha_init5
+here!:bmha_init
+here!:bmhi_init2
+here!:bmhi_init2
+got filter function names
+Add filter function bmha_init
+FunctionInfo. Adding function:bmha_init
+did not find strlen demangled to strlen
+did not find bmha_search demangled to bmha_search
+did not find bmhi_init demangled to bmhi_init
+did not find realloc demangled to realloc
+did not find exit demangled to exit
+did not find bhmi_cleanup demangled to bhmi_cleanup
+did not find atexit demangled to atexit
+did not find toupper demangled to toupper
+did not find tolower demangled to tolower
+did not find free demangled to free
+did not find bmhi_search demangled to bmhi_search
+did not find bmh_init demangled to bmh_init
+did not find bmh_search demangled to bmh_search
+did not find init_search demangled to init_search
+did not find strsearch demangled to strsearch
+did not find strncmp demangled to strncmp
+did not find main demangled to main
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find printf demangled to printf
+did not find putchar demangled to putchar
+did not find bmha_init0 demangled to bmha_init0
+Add filter function bmha_init1
+FunctionInfo. Adding function:bmha_init1
+did not find bmha_init2 demangled to bmha_init2
+did not find bmha_init3 demangled to bmha_init3
+did not find bmha_init4 demangled to bmha_init4
+Add filter function bmha_init5
+FunctionInfo. Adding function:bmha_init5
+did not find bmha_init6 demangled to bmha_init6
+did not find bmha_init7 demangled to bmha_init7
+did not find bmha_init8 demangled to bmha_init8
+did not find bmha_search0 demangled to bmha_search0
+did not find bmha_search1 demangled to bmha_search1
+did not find bmha_search2 demangled to bmha_search2
+did not find bmhi_init0 demangled to bmhi_init0
+did not find bmhi_init1 demangled to bmhi_init1
+Add filter function bmhi_init2
+FunctionInfo. Adding function:bmhi_init2
+did not find bmhi_init3 demangled to bmhi_init3
+did not find bmhi_init4 demangled to bmhi_init4
+did not find bmhi_init5 demangled to bmhi_init5
+did not find bmhi_init6 demangled to bmhi_init6
+Add filter function bmhi_init7
+FunctionInfo. Adding function:bmhi_init7
+did not find bmhi_init8 demangled to bmhi_init8
+did not find bhmi_cleanup0 demangled to bhmi_cleanup0
+did not find bmhi_search0 demangled to bmhi_search0
+did not find bmhi_search1 demangled to bmhi_search1
+did not find bmhi_search2 demangled to bmhi_search2
+did not find bmh_init0 demangled to bmh_init0
+did not find bmh_init1 demangled to bmh_init1
+did not find bmh_init2 demangled to bmh_init2
+did not find bmh_init3 demangled to bmh_init3
+did not find bmh_init4 demangled to bmh_init4
+did not find bmh_init5 demangled to bmh_init5
+did not find bmh_init6 demangled to bmh_init6
+did not find bmh_search0 demangled to bmh_search0
+did not find bmh_search1 demangled to bmh_search1
+did not find bmh_search2 demangled to bmh_search2
+did not find strsearch0 demangled to strsearch0
+did not find strsearch1 demangled to strsearch1
+did not find strsearch2 demangled to strsearch2
+did not find main0 demangled to main0
+Adding bmha_init other functions, ExtractedOnly mode uses other functions
+Adding bmha_search other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search other functions, ExtractedOnly mode uses other functions
+Adding bmh_init other functions, ExtractedOnly mode uses other functions
+Adding bmh_search other functions, ExtractedOnly mode uses other functions
+Adding init_search other functions, ExtractedOnly mode uses other functions
+Adding strsearch other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding bmha_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init8 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init8 other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search2 other functions, ExtractedOnly mode uses other functions
+Adding strsearch0 other functions, ExtractedOnly mode uses other functions
+Adding strsearch1 other functions, ExtractedOnly mode uses other functions
+Adding strsearch2 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+bmha_init8
+bmhi_search2
+bmhi_init5
+strsearch1
+bmha_init1
+bhmi_cleanup
+bmha_init2
+bmha_search0
+bmhi_search1
+bmha_search2
+bmh_init6
+bmha_init3
+bmh_init1
+bmha_search
+bmh_init5
+bmhi_init0
+strsearch
+main
+bmhi_init6
+bmhi_init
+bmh_search
+bmhi_init8
+bmhi_init3
+bmhi_init2
+bmh_init2
+bmhi_search0
+bmh_init0
+bmhi_search
+bmha_init5
+strsearch0
+strsearch2
+bmh_search1
+bmha_init4
+bmh_search2
+bmha_search1
+bmhi_init1
+bmhi_init7
+init_search
+bhmi_cleanup0
+bmh_init4
+bmhi_init4
+bmha_init0
+bmh_search0
+main0
+bmha_init
+bmh_init3
+bmh_init
+bmha_init6
+bmha_init7
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 49 function, while filter count is 5
+Functions called in loop
+strsearch
+init_search
+Function call numbers
+init_search -- 0
+strsearch -- 0
+main -- 0
+Insert hash computation
+No reaching definition for:   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 in:   %retval.el = alloca i8*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 5
+Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_search
+ Skipping function per FilterFunctionPass:bmhi_init
+ Skipping function per FilterFunctionPass:bhmi_cleanup
+ Skipping function per FilterFunctionPass:bmhi_search
+ Skipping function per FilterFunctionPass:bmh_init
+ Skipping function per FilterFunctionPass:bmh_search
+ Skipping function per FilterFunctionPass:init_search
+ Skipping function per FilterFunctionPass:strsearch
+ Skipping function per FilterFunctionPass:main
+Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_search
+ Skipping function per FilterFunctionPass:bmhi_init
+ Skipping function per FilterFunctionPass:bhmi_cleanup
+ Skipping function per FilterFunctionPass:bmhi_search
+ Skipping function per FilterFunctionPass:bmh_init
+ Skipping function per FilterFunctionPass:bmh_search
+ Skipping function per FilterFunctionPass:init_search
+ Skipping function per FilterFunctionPass:strsearch
+ Skipping function per FilterFunctionPass:main
+OH stats is requested, dumping stat file...
+Processed instructions number 623
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 21,
+    "numberOfDataDependentInstructions": 0,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 537,
+    "numberOfInstructionsInFunctionsWithNoDG": 86,
+    "numberOfNonHashableBlocks": 0,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 0 function, while filter count is 5
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4296 seconds (0.4451 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3150 ( 74.7%)   0.0038 ( 47.7%)   0.3187 ( 74.2%)   0.3188 ( 71.6%)  runs input dependency analysis
+   0.0986 ( 23.4%)   0.0040 ( 49.9%)   0.1025 ( 23.9%)   0.1025 ( 23.0%)  Instruments bitcode with hashing and logging functions
+   0.0006 (  0.1%)   0.0000 (  0.2%)   0.0006 (  0.1%)   0.0161 (  3.6%)  Include functions in a given file in any transformation
+   0.0024 (  0.6%)   0.0000 (  0.0%)   0.0024 (  0.6%)   0.0024 (  0.5%)  Bitcode Writer
+   0.0012 (  0.3%)   0.0000 (  0.4%)   0.0012 (  0.3%)   0.0012 (  0.3%)  Instruments bitcode with guards
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Post-Dominator Tree Construction
+   0.0007 (  0.2%)   0.0000 (  0.2%)   0.0007 (  0.2%)   0.0007 (  0.2%)  Module Verifier
+   0.0006 (  0.1%)   0.0000 (  0.2%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Natural Loop Information
+   0.0002 (  0.1%)   0.0001 (  0.7%)   0.0003 (  0.1%)   0.0003 (  0.1%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.3%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0001 (  0.0%)   0.0000 (  0.3%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4216 (100.0%)   0.0080 (100.0%)   0.4296 (100.0%)   0.4451 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0031 seconds (0.0031 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Parse IR
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function bmha_init0
+Processing function bmha_init1
+Processing function bmha_init2
+Processing function bmha_init3
+Processing function bmha_init4
+Processing function bmha_init5
+Processing function bmha_init6
+Processing function bmha_init7
+Processing function bmha_init8
+Processing function bmha_init
+Processing function bmha_search0
+Processing function bmha_search1
+Processing function bmha_search2
+Processing function bmha_search
+Processing function bmhi_init0
+Processing function bmhi_init1
+Processing function bmhi_init2
+Processing function bmhi_init3
+Processing function bmhi_init4
+Processing function bmhi_init5
+Processing function bmhi_init6
+Processing function bmhi_init7
+Processing function bmhi_init8
+Processing function bmhi_init
+Processing function bhmi_cleanup0
+Processing function bhmi_cleanup
+Processing function bmhi_search0
+Processing function bmhi_search1
+Processing function bmhi_search2
+Processing function bmhi_search
+Processing function bmh_init0
+Processing function bmh_init1
+Processing function bmh_init2
+Processing function bmh_init3
+Processing function bmh_init4
+Processing function bmh_init5
+Processing function bmh_init6
+Processing function bmh_init
+Processing function bmh_search0
+Processing function bmh_search1
+Processing function bmh_search2
+Processing function bmh_search
+Processing function init_search
+Processing function strsearch0
+Processing function strsearch1
+Processing function strsearch2
+Processing function strsearch
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing strsearch
+Finalizing strsearch2
+Mark Input dependent function strsearch2
+Finalizing strsearch1
+Mark Input dependent function strsearch1
+Finalizing strsearch0
+Mark Input dependent function strsearch0
+Finalizing init_search
+Finalizing bmh_search
+Finalizing bmh_search2
+Mark Input dependent function bmh_search2
+Finalizing bmh_search1
+Mark Input dependent function bmh_search1
+Finalizing bmh_search0
+Mark Input dependent function bmh_search0
+Finalizing bmh_init
+Finalizing bmh_init6
+Mark Input dependent function bmh_init6
+Finalizing bmh_init5
+Mark Input dependent function bmh_init5
+Finalizing bmh_init4
+Mark Input dependent function bmh_init4
+Finalizing bmh_init3
+Mark Input dependent function bmh_init3
+Finalizing bmh_init2
+Mark Input dependent function bmh_init2
+Finalizing bmh_init1
+Mark Input dependent function bmh_init1
+Finalizing bmh_init0
+Mark Input dependent function bmh_init0
+Finalizing bmhi_search
+Finalizing bmhi_search2
+Mark Input dependent function bmhi_search2
+Finalizing bmhi_search1
+Mark Input dependent function bmhi_search1
+Finalizing bmhi_search0
+Mark Input dependent function bmhi_search0
+Finalizing bhmi_cleanup
+Finalizing bhmi_cleanup0
+Mark Input dependent function bhmi_cleanup0
+Finalizing bmhi_init
+Finalizing bmhi_init8
+Mark Input dependent function bmhi_init8
+Finalizing bmhi_init7
+Mark Input dependent function bmhi_init7
+Finalizing bmhi_init6
+Mark Input dependent function bmhi_init6
+Finalizing bmhi_init5
+Mark Input dependent function bmhi_init5
+Finalizing bmhi_init4
+Mark Input dependent function bmhi_init4
+Finalizing bmhi_init3
+Mark Input dependent function bmhi_init3
+Finalizing bmhi_init2
+Mark Input dependent function bmhi_init2
+Finalizing bmhi_init1
+Mark Input dependent function bmhi_init1
+Finalizing bmhi_init0
+Mark Input dependent function bmhi_init0
+Finalizing bmha_search
+Finalizing bmha_search2
+Mark Input dependent function bmha_search2
+Finalizing bmha_search1
+Mark Input dependent function bmha_search1
+Finalizing bmha_search0
+Mark Input dependent function bmha_search0
+Finalizing bmha_init
+Finalizing bmha_init8
+Mark Input dependent function bmha_init8
+Finalizing bmha_init7
+Mark Input dependent function bmha_init7
+Finalizing bmha_init6
+Mark Input dependent function bmha_init6
+Finalizing bmha_init5
+Mark Input dependent function bmha_init5
+Finalizing bmha_init4
+Mark Input dependent function bmha_init4
+Finalizing bmha_init3
+Mark Input dependent function bmha_init3
+Finalizing bmha_init2
+Mark Input dependent function bmha_init2
+Finalizing bmha_init1
+Mark Input dependent function bmha_init1
+Finalizing bmha_init0
+Mark Input dependent function bmha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/search_small.x.bc/100/0
+here!:bmha_init
+here!:bmha_search
+here!:bmhi_init
+here!:bhmi_cleanup
+here!:bmhi_search
+here!:bmh_init
+here!:bmh_search
+here!:init_search
+here!:strsearch
+here!:main
+here!:bmha_init0
+here!:bmha_init1
+here!:bmha_init2
+here!:bmha_init3
+here!:bmha_init4
+here!:bmha_init5
+here!:bmha_init6
+here!:bmha_init7
+here!:bmha_init8
+here!:bmha_search0
+here!:bmha_search1
+here!:bmha_search2
+here!:bmhi_init0
+here!:bmhi_init1
+here!:bmhi_init2
+here!:bmhi_init3
+here!:bmhi_init4
+here!:bmhi_init5
+here!:bmhi_init6
+here!:bmhi_init7
+here!:bmhi_init8
+here!:bhmi_cleanup0
+here!:bmhi_search0
+here!:bmhi_search1
+here!:bmhi_search2
+here!:bmh_init0
+here!:bmh_init1
+here!:bmh_init2
+here!:bmh_init3
+here!:bmh_init4
+here!:bmh_init5
+here!:bmh_init6
+here!:bmh_search0
+here!:bmh_search1
+here!:bmh_search2
+here!:strsearch0
+here!:strsearch1
+here!:strsearch2
+here!:main0
+here!:main0
+got filter function names
+Add filter function bmha_init
+FunctionInfo. Adding function:bmha_init
+did not find strlen demangled to strlen
+Add filter function bmha_search
+FunctionInfo. Adding function:bmha_search
+Add filter function bmhi_init
+FunctionInfo. Adding function:bmhi_init
+did not find realloc demangled to realloc
+did not find exit demangled to exit
+Add filter function bhmi_cleanup
+FunctionInfo. Adding function:bhmi_cleanup
+did not find atexit demangled to atexit
+did not find toupper demangled to toupper
+did not find tolower demangled to tolower
+did not find free demangled to free
+Add filter function bmhi_search
+FunctionInfo. Adding function:bmhi_search
+Add filter function bmh_init
+FunctionInfo. Adding function:bmh_init
+Add filter function bmh_search
+FunctionInfo. Adding function:bmh_search
+Add filter function init_search
+FunctionInfo. Adding function:init_search
+Add filter function strsearch
+FunctionInfo. Adding function:strsearch
+did not find strncmp demangled to strncmp
+Add filter function main
+FunctionInfo. Adding function:main
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find printf demangled to printf
+did not find putchar demangled to putchar
+Add filter function bmha_init0
+FunctionInfo. Adding function:bmha_init0
+Add filter function bmha_init1
+FunctionInfo. Adding function:bmha_init1
+Add filter function bmha_init2
+FunctionInfo. Adding function:bmha_init2
+Add filter function bmha_init3
+FunctionInfo. Adding function:bmha_init3
+Add filter function bmha_init4
+FunctionInfo. Adding function:bmha_init4
+Add filter function bmha_init5
+FunctionInfo. Adding function:bmha_init5
+Add filter function bmha_init6
+FunctionInfo. Adding function:bmha_init6
+Add filter function bmha_init7
+FunctionInfo. Adding function:bmha_init7
+Add filter function bmha_init8
+FunctionInfo. Adding function:bmha_init8
+Add filter function bmha_search0
+FunctionInfo. Adding function:bmha_search0
+Add filter function bmha_search1
+FunctionInfo. Adding function:bmha_search1
+Add filter function bmha_search2
+FunctionInfo. Adding function:bmha_search2
+Add filter function bmhi_init0
+FunctionInfo. Adding function:bmhi_init0
+Add filter function bmhi_init1
+FunctionInfo. Adding function:bmhi_init1
+Add filter function bmhi_init2
+FunctionInfo. Adding function:bmhi_init2
+Add filter function bmhi_init3
+FunctionInfo. Adding function:bmhi_init3
+Add filter function bmhi_init4
+FunctionInfo. Adding function:bmhi_init4
+Add filter function bmhi_init5
+FunctionInfo. Adding function:bmhi_init5
+Add filter function bmhi_init6
+FunctionInfo. Adding function:bmhi_init6
+Add filter function bmhi_init7
+FunctionInfo. Adding function:bmhi_init7
+Add filter function bmhi_init8
+FunctionInfo. Adding function:bmhi_init8
+Add filter function bhmi_cleanup0
+FunctionInfo. Adding function:bhmi_cleanup0
+Add filter function bmhi_search0
+FunctionInfo. Adding function:bmhi_search0
+Add filter function bmhi_search1
+FunctionInfo. Adding function:bmhi_search1
+Add filter function bmhi_search2
+FunctionInfo. Adding function:bmhi_search2
+Add filter function bmh_init0
+FunctionInfo. Adding function:bmh_init0
+Add filter function bmh_init1
+FunctionInfo. Adding function:bmh_init1
+Add filter function bmh_init2
+FunctionInfo. Adding function:bmh_init2
+Add filter function bmh_init3
+FunctionInfo. Adding function:bmh_init3
+Add filter function bmh_init4
+FunctionInfo. Adding function:bmh_init4
+Add filter function bmh_init5
+FunctionInfo. Adding function:bmh_init5
+Add filter function bmh_init6
+FunctionInfo. Adding function:bmh_init6
+Add filter function bmh_search0
+FunctionInfo. Adding function:bmh_search0
+Add filter function bmh_search1
+FunctionInfo. Adding function:bmh_search1
+Add filter function bmh_search2
+FunctionInfo. Adding function:bmh_search2
+Add filter function strsearch0
+FunctionInfo. Adding function:strsearch0
+Add filter function strsearch1
+FunctionInfo. Adding function:strsearch1
+Add filter function strsearch2
+FunctionInfo. Adding function:strsearch2
+Add filter function main0
+FunctionInfo. Adding function:main0
+Adding bmha_init other functions, ExtractedOnly mode uses other functions
+Adding bmha_search other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search other functions, ExtractedOnly mode uses other functions
+Adding bmh_init other functions, ExtractedOnly mode uses other functions
+Adding bmh_search other functions, ExtractedOnly mode uses other functions
+Adding init_search other functions, ExtractedOnly mode uses other functions
+Adding strsearch other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding bmha_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init8 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init8 other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search2 other functions, ExtractedOnly mode uses other functions
+Adding strsearch0 other functions, ExtractedOnly mode uses other functions
+Adding strsearch1 other functions, ExtractedOnly mode uses other functions
+Adding strsearch2 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+bmha_init8
+bmhi_search2
+bmhi_init5
+strsearch1
+bmha_init1
+bhmi_cleanup
+bmha_init2
+bmha_search0
+bmhi_search1
+bmha_search2
+bmh_init6
+bmha_init3
+bmh_init1
+bmha_search
+bmh_init5
+bmhi_init0
+strsearch
+main
+bmhi_init6
+bmhi_init
+bmh_search
+bmhi_init8
+bmhi_init3
+bmhi_init2
+bmh_init2
+bmhi_search0
+bmh_init0
+bmhi_search
+bmha_init5
+strsearch0
+strsearch2
+bmh_search1
+bmha_init4
+bmh_search2
+bmha_search1
+bmhi_init1
+bmhi_init7
+init_search
+bhmi_cleanup0
+bmh_init4
+bmhi_init4
+bmha_init0
+bmh_search0
+main0
+bmha_init
+bmh_init3
+bmh_init
+bmha_init6
+bmha_init7
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+Functions called in loop
+strsearch
+init_search
+Function call numbers
+init_search -- 0
+strsearch -- 0
+main -- 0
+Insert hash computation
+No reaching definition for:   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 in:   %retval.el = alloca i8*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 49
+Skip. No dependence graph for function bmha_init
+Skip. No dependence graph for function bmha_search
+Skip. No dependence graph for function bmhi_init
+Skip. No dependence graph for function bhmi_cleanup
+Skip. No dependence graph for function bmhi_search
+Skip. No dependence graph for function bmh_init
+Skip. No dependence graph for function bmh_search
+Collecting defining blocks for init_search
+Collecting defining blocks for strsearch
+Collecting defining blocks for main
+Skip. No dependence graph for function bmha_init
+Skip. No dependence graph for function bmha_search
+Skip. No dependence graph for function bmhi_init
+Skip. No dependence graph for function bhmi_cleanup
+Skip. No dependence graph for function bmhi_search
+Skip. No dependence graph for function bmh_init
+Skip. No dependence graph for function bmh_search
+ Processing function:init_search
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  for.inc  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  
+Insert assertion skipped function:init_search because it is called from a loop!
+Non numeric pointers (int and float) are skipped:  %string.addr = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:init_search because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.cond1  for.body3  for.inc7  
+Extended path is 
+entry  for.end  for.cond1  for.body3  for.inc7  for.end9  
+After path modifications process path
+entry  for.end  for.cond1  for.body3  for.inc7  for.end9  
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:@findme = internal global i8* null, align 8 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  for.end9  
+Extended path is 
+entry  for.cond  for.body  for.inc  for.end  for.end9  
+After path modifications process path
+entry  for.cond  for.body  for.inc  for.end  for.end9  
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.cond1  for.end9  
+Extended path is 
+entry  for.end  for.cond1  for.body3  for.inc7  for.end9  
+After path modifications process path
+entry  for.end  for.cond1  for.body3  for.inc7  for.end9  
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.end  for.end9  
+After path modifications process path
+entry  for.end  for.end9  
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+Insert assertion skipped function:init_search because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+ Processing function:strsearch
+Short range hashing enabled.
+Processing path: entry  while.cond  while.body  
+After path modifications process path
+while.body  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Non numeric pointers (int and float) are skipped:  %string.addr = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing path: entry  while.cond1  land.rhs  
+After path modifications process path
+land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !data_indep_instr !9, !control_dep_instr !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.body  
+After path modifications process path
+while.body  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+Processing path: entry  while.cond1  land.end  while.body5  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.body  while.end  if.then  if.then12  
+After path modifications process path
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  while.cond1  land.end  if.then12  
+After path modifications process path is empty
+Processing path: entry  if.then12  
+After path modifications process path
+entry  if.then12  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+No oh has been applied in the path
+Processing path: entry  while.cond  while.body  while.end  if.then  if.else  if.end  
+After path modifications process path
+while.body  while.end  if.else  if.end  
+Hash path invariants only
+Invariants are
+  br label %if.end, !data_indep_instr !9, !control_dep_instr !13
+  br label %if.end13, !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+  call void @strsearch2(i64* %pos), !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+  br label %while.cond1, !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %pos = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch2(i64* %pos), !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.body  while.end  if.end13  
+After path modifications process path
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !data_indep_instr !9, !input_dep_block !12, !control_dep_instr !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  return  
+After path modifications process path is empty
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end14  
+After path modifications process path is empty
+Processing path: entry  while.end14  
+After path modifications process path
+entry  while.end14  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  if.then  
+After path modifications process path
+for.body  if.then  
+Hash path invariants only
+Invariants are
+  br label %if.end, !data_indep_instr !9, !control_dep_instr !12
+  call void @main0(i8** %here), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx2 = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom1, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx4 = getelementptr inbounds [57 x i8*], [57 x i8*]* %search_strings, i64 0, i64 %idxprom3, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx6 = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom5, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx9 = getelementptr inbounds [57 x i8*], [57 x i8*]* %search_strings, i64 0, i64 %idxprom8, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main0(i8** %here), !data_indep_instr !10, !input_dep_block !12, !control_dep_instr !13
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.body  if.end  for.inc  
+After path modifications process path
+for.body  if.end  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11
+  %call13 = call i32 @putchar(i32 10), !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  
+Extended path is 
+entry  for.cond  for.body  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.end  for.inc  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No short range oh has been applied in the path
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Extract path function for assertion assert_strsearch_path_6
+Extract path function for assertion assert_strsearch_path_9
+Extract path function for assertion assert_strsearch_path_12
+OH stats is requested, dumping stat file...
+Processed instructions number 622
+{
+    "numberOfAssertCalls": 3,
+    "numberOfBlocksInFunctionsWithNoDG": 116,
+    "numberOfDataDependentInstructions": 40,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 462,
+    "numberOfNonHashableBlocks": 6,
+    "numberOfNonHashableInstructions": 38,
+    "numberOfOHProcessedInstr": 160,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 3,
+    "numberOfProtectedBlocks": 16,
+    "numberOfProtectedFunctions": 3,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 55,
+    "numberOfSensitiveBlocks": 31,
+    "numberOfSensitiveFunctions": 3,
+    "numberOfShortRangeAssertCalls": 3,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 3,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 6,
+    "numberOfUnprotectedGlobalReachableInstructions": 2,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 25
+}
+ERR. processed 3 function, while filter count is 49
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4888 seconds (0.5504 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3265 ( 67.0%)   0.0000 (  0.0%)   0.3265 ( 66.8%)   0.3266 ( 59.3%)  runs input dependency analysis
+   0.1409 ( 28.9%)   0.0015 ( 99.3%)   0.1424 ( 29.1%)   0.1424 ( 25.9%)  Instruments bitcode with hashing and logging functions
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0624 ( 11.3%)  Include functions in a given file in any transformation
+   0.0090 (  1.9%)   0.0000 (  0.5%)   0.0090 (  1.8%)   0.0090 (  1.6%)  Memory SSA
+   0.0026 (  0.5%)   0.0000 (  0.0%)   0.0026 (  0.5%)   0.0026 (  0.5%)  Bitcode Writer
+   0.0012 (  0.2%)   0.0000 (  0.0%)   0.0012 (  0.2%)   0.0012 (  0.2%)  Instruments bitcode with guards
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.1%)   0.0008 (  0.2%)   0.0009 (  0.2%)  Dominator Tree Construction
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Post-Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.1%)  Module Verifier
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.1%)  Natural Loop Information
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Natural Loop Information
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4873 (100.0%)   0.0015 (100.0%)   0.4888 (100.0%)   0.5504 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0045 seconds (0.0045 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0045 (100.0%)   0.0045 (100.0%)   0.0045 (100.0%)  Parse IR
+   0.0045 (100.0%)   0.0045 (100.0%)   0.0045 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function bmha_init0
+Processing function bmha_init1
+Processing function bmha_init2
+Processing function bmha_init3
+Processing function bmha_init4
+Processing function bmha_init5
+Processing function bmha_init6
+Processing function bmha_init7
+Processing function bmha_init8
+Processing function bmha_init
+Processing function bmha_search0
+Processing function bmha_search1
+Processing function bmha_search2
+Processing function bmha_search
+Processing function bmhi_init0
+Processing function bmhi_init1
+Processing function bmhi_init2
+Processing function bmhi_init3
+Processing function bmhi_init4
+Processing function bmhi_init5
+Processing function bmhi_init6
+Processing function bmhi_init7
+Processing function bmhi_init8
+Processing function bmhi_init
+Processing function bhmi_cleanup0
+Processing function bhmi_cleanup
+Processing function bmhi_search0
+Processing function bmhi_search1
+Processing function bmhi_search2
+Processing function bmhi_search
+Processing function bmh_init0
+Processing function bmh_init1
+Processing function bmh_init2
+Processing function bmh_init3
+Processing function bmh_init4
+Processing function bmh_init5
+Processing function bmh_init6
+Processing function bmh_init
+Processing function bmh_search0
+Processing function bmh_search1
+Processing function bmh_search2
+Processing function bmh_search
+Processing function init_search
+Processing function strsearch0
+Processing function strsearch1
+Processing function strsearch2
+Processing function strsearch
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing strsearch
+Finalizing strsearch2
+Mark Input dependent function strsearch2
+Finalizing strsearch1
+Mark Input dependent function strsearch1
+Finalizing strsearch0
+Mark Input dependent function strsearch0
+Finalizing init_search
+Finalizing bmh_search
+Finalizing bmh_search2
+Mark Input dependent function bmh_search2
+Finalizing bmh_search1
+Mark Input dependent function bmh_search1
+Finalizing bmh_search0
+Mark Input dependent function bmh_search0
+Finalizing bmh_init
+Finalizing bmh_init6
+Mark Input dependent function bmh_init6
+Finalizing bmh_init5
+Mark Input dependent function bmh_init5
+Finalizing bmh_init4
+Mark Input dependent function bmh_init4
+Finalizing bmh_init3
+Mark Input dependent function bmh_init3
+Finalizing bmh_init2
+Mark Input dependent function bmh_init2
+Finalizing bmh_init1
+Mark Input dependent function bmh_init1
+Finalizing bmh_init0
+Mark Input dependent function bmh_init0
+Finalizing bmhi_search
+Finalizing bmhi_search2
+Mark Input dependent function bmhi_search2
+Finalizing bmhi_search1
+Mark Input dependent function bmhi_search1
+Finalizing bmhi_search0
+Mark Input dependent function bmhi_search0
+Finalizing bhmi_cleanup
+Finalizing bhmi_cleanup0
+Mark Input dependent function bhmi_cleanup0
+Finalizing bmhi_init
+Finalizing bmhi_init8
+Mark Input dependent function bmhi_init8
+Finalizing bmhi_init7
+Mark Input dependent function bmhi_init7
+Finalizing bmhi_init6
+Mark Input dependent function bmhi_init6
+Finalizing bmhi_init5
+Mark Input dependent function bmhi_init5
+Finalizing bmhi_init4
+Mark Input dependent function bmhi_init4
+Finalizing bmhi_init3
+Mark Input dependent function bmhi_init3
+Finalizing bmhi_init2
+Mark Input dependent function bmhi_init2
+Finalizing bmhi_init1
+Mark Input dependent function bmhi_init1
+Finalizing bmhi_init0
+Mark Input dependent function bmhi_init0
+Finalizing bmha_search
+Finalizing bmha_search2
+Mark Input dependent function bmha_search2
+Finalizing bmha_search1
+Mark Input dependent function bmha_search1
+Finalizing bmha_search0
+Mark Input dependent function bmha_search0
+Finalizing bmha_init
+Finalizing bmha_init8
+Mark Input dependent function bmha_init8
+Finalizing bmha_init7
+Mark Input dependent function bmha_init7
+Finalizing bmha_init6
+Mark Input dependent function bmha_init6
+Finalizing bmha_init5
+Mark Input dependent function bmha_init5
+Finalizing bmha_init4
+Mark Input dependent function bmha_init4
+Finalizing bmha_init3
+Mark Input dependent function bmha_init3
+Finalizing bmha_init2
+Mark Input dependent function bmha_init2
+Finalizing bmha_init1
+Mark Input dependent function bmha_init1
+Finalizing bmha_init0
+Mark Input dependent function bmha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/search_small.x.bc/25/0
+here!:bmha_init1
+here!:bmhi_init7
+here!:bmha_init5
+here!:bmha_init
+here!:bmhi_init2
+here!:bmh_init3
+here!:strsearch0
+here!:main
+here!:bmha_init3
+here!:strsearch1
+here!:bmh_init2
+here!:bmh_init0
+here!:bmh_init0
+got filter function names
+Add filter function bmha_init
+FunctionInfo. Adding function:bmha_init
+did not find strlen demangled to strlen
+did not find bmha_search demangled to bmha_search
+did not find bmhi_init demangled to bmhi_init
+did not find realloc demangled to realloc
+did not find exit demangled to exit
+did not find bhmi_cleanup demangled to bhmi_cleanup
+did not find atexit demangled to atexit
+did not find toupper demangled to toupper
+did not find tolower demangled to tolower
+did not find free demangled to free
+did not find bmhi_search demangled to bmhi_search
+did not find bmh_init demangled to bmh_init
+did not find bmh_search demangled to bmh_search
+did not find init_search demangled to init_search
+did not find strsearch demangled to strsearch
+did not find strncmp demangled to strncmp
+Add filter function main
+FunctionInfo. Adding function:main
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find printf demangled to printf
+did not find putchar demangled to putchar
+did not find bmha_init0 demangled to bmha_init0
+Add filter function bmha_init1
+FunctionInfo. Adding function:bmha_init1
+did not find bmha_init2 demangled to bmha_init2
+Add filter function bmha_init3
+FunctionInfo. Adding function:bmha_init3
+did not find bmha_init4 demangled to bmha_init4
+Add filter function bmha_init5
+FunctionInfo. Adding function:bmha_init5
+did not find bmha_init6 demangled to bmha_init6
+did not find bmha_init7 demangled to bmha_init7
+did not find bmha_init8 demangled to bmha_init8
+did not find bmha_search0 demangled to bmha_search0
+did not find bmha_search1 demangled to bmha_search1
+did not find bmha_search2 demangled to bmha_search2
+did not find bmhi_init0 demangled to bmhi_init0
+did not find bmhi_init1 demangled to bmhi_init1
+Add filter function bmhi_init2
+FunctionInfo. Adding function:bmhi_init2
+did not find bmhi_init3 demangled to bmhi_init3
+did not find bmhi_init4 demangled to bmhi_init4
+did not find bmhi_init5 demangled to bmhi_init5
+did not find bmhi_init6 demangled to bmhi_init6
+Add filter function bmhi_init7
+FunctionInfo. Adding function:bmhi_init7
+did not find bmhi_init8 demangled to bmhi_init8
+did not find bhmi_cleanup0 demangled to bhmi_cleanup0
+did not find bmhi_search0 demangled to bmhi_search0
+did not find bmhi_search1 demangled to bmhi_search1
+did not find bmhi_search2 demangled to bmhi_search2
+Add filter function bmh_init0
+FunctionInfo. Adding function:bmh_init0
+did not find bmh_init1 demangled to bmh_init1
+Add filter function bmh_init2
+FunctionInfo. Adding function:bmh_init2
+Add filter function bmh_init3
+FunctionInfo. Adding function:bmh_init3
+did not find bmh_init4 demangled to bmh_init4
+did not find bmh_init5 demangled to bmh_init5
+did not find bmh_init6 demangled to bmh_init6
+did not find bmh_search0 demangled to bmh_search0
+did not find bmh_search1 demangled to bmh_search1
+did not find bmh_search2 demangled to bmh_search2
+Add filter function strsearch0
+FunctionInfo. Adding function:strsearch0
+Add filter function strsearch1
+FunctionInfo. Adding function:strsearch1
+did not find strsearch2 demangled to strsearch2
+did not find main0 demangled to main0
+Adding bmha_init other functions, ExtractedOnly mode uses other functions
+Adding bmha_search other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search other functions, ExtractedOnly mode uses other functions
+Adding bmh_init other functions, ExtractedOnly mode uses other functions
+Adding bmh_search other functions, ExtractedOnly mode uses other functions
+Adding init_search other functions, ExtractedOnly mode uses other functions
+Adding strsearch other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding bmha_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init8 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init8 other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search2 other functions, ExtractedOnly mode uses other functions
+Adding strsearch0 other functions, ExtractedOnly mode uses other functions
+Adding strsearch1 other functions, ExtractedOnly mode uses other functions
+Adding strsearch2 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+bmha_init8
+bmhi_search2
+bmhi_init5
+strsearch1
+bmha_init1
+bhmi_cleanup
+bmha_init2
+bmha_search0
+bmhi_search1
+bmha_search2
+bmh_init6
+bmha_init3
+bmh_init1
+bmha_search
+bmh_init5
+bmhi_init0
+strsearch
+main
+bmhi_init6
+bmhi_init
+bmh_search
+bmhi_init8
+bmhi_init3
+bmhi_init2
+bmh_init2
+bmhi_search0
+bmh_init0
+bmhi_search
+bmha_init5
+strsearch0
+strsearch2
+bmh_search1
+bmha_init4
+bmh_search2
+bmha_search1
+bmhi_init1
+bmhi_init7
+init_search
+bhmi_cleanup0
+bmh_init4
+bmhi_init4
+bmha_init0
+bmh_search0
+main0
+bmha_init
+bmh_init3
+bmh_init
+bmha_init6
+bmha_init7
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 49 function, while filter count is 12
+Functions called in loop
+strsearch
+init_search
+Function call numbers
+init_search -- 0
+strsearch -- 0
+main -- 0
+Insert hash computation
+No reaching definition for:   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 in:   %retval.el = alloca i8*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 12
+Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_search
+ Skipping function per FilterFunctionPass:bmhi_init
+ Skipping function per FilterFunctionPass:bhmi_cleanup
+ Skipping function per FilterFunctionPass:bmhi_search
+ Skipping function per FilterFunctionPass:bmh_init
+ Skipping function per FilterFunctionPass:bmh_search
+ Skipping function per FilterFunctionPass:init_search
+ Skipping function per FilterFunctionPass:strsearch
+Collecting defining blocks for main
+Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_search
+ Skipping function per FilterFunctionPass:bmhi_init
+ Skipping function per FilterFunctionPass:bhmi_cleanup
+ Skipping function per FilterFunctionPass:bmhi_search
+ Skipping function per FilterFunctionPass:bmh_init
+ Skipping function per FilterFunctionPass:bmh_search
+ Skipping function per FilterFunctionPass:init_search
+ Skipping function per FilterFunctionPass:strsearch
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  if.then  
+After path modifications process path
+for.body  if.then  
+Hash path invariants only
+Invariants are
+  br label %if.end, !data_indep_instr !9, !control_dep_instr !12
+  call void @main0(i8** %here), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx2 = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom1, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx4 = getelementptr inbounds [57 x i8*], [57 x i8*]* %search_strings, i64 0, i64 %idxprom3, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx6 = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom5, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx9 = getelementptr inbounds [57 x i8*], [57 x i8*]* %search_strings, i64 0, i64 %idxprom8, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main0(i8** %here), !data_indep_instr !10, !input_dep_block !12, !control_dep_instr !13
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.body  if.end  for.inc  
+After path modifications process path
+for.body  if.end  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11
+  %call13 = call i32 @putchar(i32 10), !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  
+Extended path is 
+entry  for.cond  for.body  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.end  for.inc  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No short range oh has been applied in the path
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+OH stats is requested, dumping stat file...
+Processed instructions number 622
+{
+    "numberOfAssertCalls": 3,
+    "numberOfBlocksInFunctionsWithNoDG": 21,
+    "numberOfDataDependentInstructions": 17,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 483,
+    "numberOfInstructionsInFunctionsWithNoDG": 86,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 14,
+    "numberOfOHProcessedInstr": 53,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 1,
+    "numberOfProtectedBlocks": 6,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 22,
+    "numberOfSensitiveBlocks": 7,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 1 function, while filter count is 12
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4453 seconds (0.5094 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3128 ( 71.5%)   0.0040 ( 49.6%)   0.3168 ( 71.1%)   0.3194 ( 62.7%)  runs input dependency analysis
+   0.1125 ( 25.7%)   0.0040 ( 50.0%)   0.1166 ( 26.2%)   0.1166 ( 22.9%)  Instruments bitcode with hashing and logging functions
+   0.0007 (  0.2%)   0.0000 (  0.1%)   0.0007 (  0.2%)   0.0622 ( 12.2%)  Include functions in a given file in any transformation
+   0.0033 (  0.8%)   0.0000 (  0.1%)   0.0034 (  0.8%)   0.0033 (  0.7%)  Memory SSA
+   0.0024 (  0.6%)   0.0000 (  0.0%)   0.0024 (  0.5%)   0.0024 (  0.5%)  Bitcode Writer
+   0.0011 (  0.2%)   0.0000 (  0.2%)   0.0011 (  0.2%)   0.0011 (  0.2%)  Instruments bitcode with guards
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Post-Dominator Tree Construction
+   0.0007 (  0.2%)   0.0000 (  0.0%)   0.0007 (  0.2%)   0.0007 (  0.1%)  Module Verifier
+   0.0006 (  0.1%)   0.0000 (  0.1%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0002 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4373 (100.0%)   0.0081 (100.0%)   0.4453 (100.0%)   0.5094 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0042 seconds (0.0042 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0042 (100.0%)   0.0042 (100.0%)   0.0042 (100.0%)  Parse IR
+   0.0042 (100.0%)   0.0042 (100.0%)   0.0042 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function bmha_init0
+Processing function bmha_init1
+Processing function bmha_init2
+Processing function bmha_init3
+Processing function bmha_init4
+Processing function bmha_init5
+Processing function bmha_init6
+Processing function bmha_init7
+Processing function bmha_init8
+Processing function bmha_init
+Processing function bmha_search0
+Processing function bmha_search1
+Processing function bmha_search2
+Processing function bmha_search
+Processing function bmhi_init0
+Processing function bmhi_init1
+Processing function bmhi_init2
+Processing function bmhi_init3
+Processing function bmhi_init4
+Processing function bmhi_init5
+Processing function bmhi_init6
+Processing function bmhi_init7
+Processing function bmhi_init8
+Processing function bmhi_init
+Processing function bhmi_cleanup0
+Processing function bhmi_cleanup
+Processing function bmhi_search0
+Processing function bmhi_search1
+Processing function bmhi_search2
+Processing function bmhi_search
+Processing function bmh_init0
+Processing function bmh_init1
+Processing function bmh_init2
+Processing function bmh_init3
+Processing function bmh_init4
+Processing function bmh_init5
+Processing function bmh_init6
+Processing function bmh_init
+Processing function bmh_search0
+Processing function bmh_search1
+Processing function bmh_search2
+Processing function bmh_search
+Processing function init_search
+Processing function strsearch0
+Processing function strsearch1
+Processing function strsearch2
+Processing function strsearch
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing strsearch
+Finalizing strsearch2
+Mark Input dependent function strsearch2
+Finalizing strsearch1
+Mark Input dependent function strsearch1
+Finalizing strsearch0
+Mark Input dependent function strsearch0
+Finalizing init_search
+Finalizing bmh_search
+Finalizing bmh_search2
+Mark Input dependent function bmh_search2
+Finalizing bmh_search1
+Mark Input dependent function bmh_search1
+Finalizing bmh_search0
+Mark Input dependent function bmh_search0
+Finalizing bmh_init
+Finalizing bmh_init6
+Mark Input dependent function bmh_init6
+Finalizing bmh_init5
+Mark Input dependent function bmh_init5
+Finalizing bmh_init4
+Mark Input dependent function bmh_init4
+Finalizing bmh_init3
+Mark Input dependent function bmh_init3
+Finalizing bmh_init2
+Mark Input dependent function bmh_init2
+Finalizing bmh_init1
+Mark Input dependent function bmh_init1
+Finalizing bmh_init0
+Mark Input dependent function bmh_init0
+Finalizing bmhi_search
+Finalizing bmhi_search2
+Mark Input dependent function bmhi_search2
+Finalizing bmhi_search1
+Mark Input dependent function bmhi_search1
+Finalizing bmhi_search0
+Mark Input dependent function bmhi_search0
+Finalizing bhmi_cleanup
+Finalizing bhmi_cleanup0
+Mark Input dependent function bhmi_cleanup0
+Finalizing bmhi_init
+Finalizing bmhi_init8
+Mark Input dependent function bmhi_init8
+Finalizing bmhi_init7
+Mark Input dependent function bmhi_init7
+Finalizing bmhi_init6
+Mark Input dependent function bmhi_init6
+Finalizing bmhi_init5
+Mark Input dependent function bmhi_init5
+Finalizing bmhi_init4
+Mark Input dependent function bmhi_init4
+Finalizing bmhi_init3
+Mark Input dependent function bmhi_init3
+Finalizing bmhi_init2
+Mark Input dependent function bmhi_init2
+Finalizing bmhi_init1
+Mark Input dependent function bmhi_init1
+Finalizing bmhi_init0
+Mark Input dependent function bmhi_init0
+Finalizing bmha_search
+Finalizing bmha_search2
+Mark Input dependent function bmha_search2
+Finalizing bmha_search1
+Mark Input dependent function bmha_search1
+Finalizing bmha_search0
+Mark Input dependent function bmha_search0
+Finalizing bmha_init
+Finalizing bmha_init8
+Mark Input dependent function bmha_init8
+Finalizing bmha_init7
+Mark Input dependent function bmha_init7
+Finalizing bmha_init6
+Mark Input dependent function bmha_init6
+Finalizing bmha_init5
+Mark Input dependent function bmha_init5
+Finalizing bmha_init4
+Mark Input dependent function bmha_init4
+Finalizing bmha_init3
+Mark Input dependent function bmha_init3
+Finalizing bmha_init2
+Mark Input dependent function bmha_init2
+Finalizing bmha_init1
+Mark Input dependent function bmha_init1
+Finalizing bmha_init0
+Mark Input dependent function bmha_init0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/search_small.x.bc/50/0
+here!:bmha_init1
+here!:bmhi_init7
+here!:bmha_init5
+here!:bmha_init
+here!:bmhi_init2
+here!:bmh_init3
+here!:strsearch0
+here!:main
+here!:bmha_init3
+here!:strsearch1
+here!:bmh_init2
+here!:bmh_init0
+here!:bhmi_cleanup0
+here!:bmhi_init0
+here!:bmh_init
+here!:bmha_init8
+here!:bmhi_init8
+here!:bmhi_search2
+here!:bmha_search2
+here!:bmhi_search1
+here!:main0
+here!:bmhi_init6
+here!:bmh_init5
+here!:bmh_search1
+here!:bhmi_cleanup
+here!:bhmi_cleanup
+got filter function names
+Add filter function bmha_init
+FunctionInfo. Adding function:bmha_init
+did not find strlen demangled to strlen
+did not find bmha_search demangled to bmha_search
+did not find bmhi_init demangled to bmhi_init
+did not find realloc demangled to realloc
+did not find exit demangled to exit
+Add filter function bhmi_cleanup
+FunctionInfo. Adding function:bhmi_cleanup
+did not find atexit demangled to atexit
+did not find toupper demangled to toupper
+did not find tolower demangled to tolower
+did not find free demangled to free
+did not find bmhi_search demangled to bmhi_search
+Add filter function bmh_init
+FunctionInfo. Adding function:bmh_init
+did not find bmh_search demangled to bmh_search
+did not find init_search demangled to init_search
+did not find strsearch demangled to strsearch
+did not find strncmp demangled to strncmp
+Add filter function main
+FunctionInfo. Adding function:main
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find printf demangled to printf
+did not find putchar demangled to putchar
+did not find bmha_init0 demangled to bmha_init0
+Add filter function bmha_init1
+FunctionInfo. Adding function:bmha_init1
+did not find bmha_init2 demangled to bmha_init2
+Add filter function bmha_init3
+FunctionInfo. Adding function:bmha_init3
+did not find bmha_init4 demangled to bmha_init4
+Add filter function bmha_init5
+FunctionInfo. Adding function:bmha_init5
+did not find bmha_init6 demangled to bmha_init6
+did not find bmha_init7 demangled to bmha_init7
+Add filter function bmha_init8
+FunctionInfo. Adding function:bmha_init8
+did not find bmha_search0 demangled to bmha_search0
+did not find bmha_search1 demangled to bmha_search1
+Add filter function bmha_search2
+FunctionInfo. Adding function:bmha_search2
+Add filter function bmhi_init0
+FunctionInfo. Adding function:bmhi_init0
+did not find bmhi_init1 demangled to bmhi_init1
+Add filter function bmhi_init2
+FunctionInfo. Adding function:bmhi_init2
+did not find bmhi_init3 demangled to bmhi_init3
+did not find bmhi_init4 demangled to bmhi_init4
+did not find bmhi_init5 demangled to bmhi_init5
+Add filter function bmhi_init6
+FunctionInfo. Adding function:bmhi_init6
+Add filter function bmhi_init7
+FunctionInfo. Adding function:bmhi_init7
+Add filter function bmhi_init8
+FunctionInfo. Adding function:bmhi_init8
+Add filter function bhmi_cleanup0
+FunctionInfo. Adding function:bhmi_cleanup0
+did not find bmhi_search0 demangled to bmhi_search0
+Add filter function bmhi_search1
+FunctionInfo. Adding function:bmhi_search1
+Add filter function bmhi_search2
+FunctionInfo. Adding function:bmhi_search2
+Add filter function bmh_init0
+FunctionInfo. Adding function:bmh_init0
+did not find bmh_init1 demangled to bmh_init1
+Add filter function bmh_init2
+FunctionInfo. Adding function:bmh_init2
+Add filter function bmh_init3
+FunctionInfo. Adding function:bmh_init3
+did not find bmh_init4 demangled to bmh_init4
+Add filter function bmh_init5
+FunctionInfo. Adding function:bmh_init5
+did not find bmh_init6 demangled to bmh_init6
+did not find bmh_search0 demangled to bmh_search0
+Add filter function bmh_search1
+FunctionInfo. Adding function:bmh_search1
+did not find bmh_search2 demangled to bmh_search2
+Add filter function strsearch0
+FunctionInfo. Adding function:strsearch0
+Add filter function strsearch1
+FunctionInfo. Adding function:strsearch1
+did not find strsearch2 demangled to strsearch2
+Add filter function main0
+FunctionInfo. Adding function:main0
+Adding bmha_init other functions, ExtractedOnly mode uses other functions
+Adding bmha_search other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search other functions, ExtractedOnly mode uses other functions
+Adding bmh_init other functions, ExtractedOnly mode uses other functions
+Adding bmh_search other functions, ExtractedOnly mode uses other functions
+Adding init_search other functions, ExtractedOnly mode uses other functions
+Adding strsearch other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding bmha_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmha_init8 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmha_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init7 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_init8 other functions, ExtractedOnly mode uses other functions
+Adding bhmi_cleanup0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmhi_search2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init2 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init3 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init4 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init5 other functions, ExtractedOnly mode uses other functions
+Adding bmh_init6 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search0 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search1 other functions, ExtractedOnly mode uses other functions
+Adding bmh_search2 other functions, ExtractedOnly mode uses other functions
+Adding strsearch0 other functions, ExtractedOnly mode uses other functions
+Adding strsearch1 other functions, ExtractedOnly mode uses other functions
+Adding strsearch2 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+bmha_init8
+bmhi_search2
+bmhi_init5
+strsearch1
+bmha_init1
+bhmi_cleanup
+bmha_init2
+bmha_search0
+bmhi_search1
+bmha_search2
+bmh_init6
+bmha_init3
+bmh_init1
+bmha_search
+bmh_init5
+bmhi_init0
+strsearch
+main
+bmhi_init6
+bmhi_init
+bmh_search
+bmhi_init8
+bmhi_init3
+bmhi_init2
+bmh_init2
+bmhi_search0
+bmh_init0
+bmhi_search
+bmha_init5
+strsearch0
+strsearch2
+bmh_search1
+bmha_init4
+bmh_search2
+bmha_search1
+bmhi_init1
+bmhi_init7
+init_search
+bhmi_cleanup0
+bmh_init4
+bmhi_init4
+bmha_init0
+bmh_search0
+main0
+bmha_init
+bmh_init3
+bmh_init
+bmha_init6
+bmha_init7
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 49 function, while filter count is 25
+Functions called in loop
+strsearch
+init_search
+Function call numbers
+init_search -- 0
+strsearch -- 0
+main -- 0
+Insert hash computation
+No reaching definition for:   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 in:   %retval.el = alloca i8*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 25
+Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_search
+ Skipping function per FilterFunctionPass:bmhi_init
+Skip. No dependence graph for function bhmi_cleanup
+ Skipping function per FilterFunctionPass:bmhi_search
+Skip. No dependence graph for function bmh_init
+ Skipping function per FilterFunctionPass:bmh_search
+ Skipping function per FilterFunctionPass:init_search
+ Skipping function per FilterFunctionPass:strsearch
+Collecting defining blocks for main
+Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_search
+ Skipping function per FilterFunctionPass:bmhi_init
+Skip. No dependence graph for function bhmi_cleanup
+ Skipping function per FilterFunctionPass:bmhi_search
+Skip. No dependence graph for function bmh_init
+ Skipping function per FilterFunctionPass:bmh_search
+ Skipping function per FilterFunctionPass:init_search
+ Skipping function per FilterFunctionPass:strsearch
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  for.cond  for.body  if.then  
+After path modifications process path
+for.body  if.then  
+Hash path invariants only
+Invariants are
+  br label %if.end, !data_indep_instr !9, !control_dep_instr !12
+  call void @main0(i8** %here), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx2 = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom1, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx4 = getelementptr inbounds [57 x i8*], [57 x i8*]* %search_strings, i64 0, i64 %idxprom3, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx6 = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom5, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx9 = getelementptr inbounds [57 x i8*], [57 x i8*]* %search_strings, i64 0, i64 %idxprom8, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main0(i8** %here), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.body  if.end  for.inc  
+After path modifications process path
+for.body  if.end  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10
+  %call13 = call i32 @putchar(i32 10), !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  for.cond  for.end  
+Extended path is 
+entry  for.cond  for.body  if.end  for.inc  for.end  
+After path modifications process path
+entry  for.cond  for.body  if.end  for.inc  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %arrayidx = getelementptr inbounds [58 x i8*], [58 x i8*]* %find_strings, i64 0, i64 %idxprom, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No short range oh has been applied in the path
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+OH stats is requested, dumping stat file...
+Processed instructions number 622
+{
+    "numberOfAssertCalls": 1,
+    "numberOfBlocksInFunctionsWithNoDG": 37,
+    "numberOfDataDependentInstructions": 17,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 432,
+    "numberOfInstructionsInFunctionsWithNoDG": 137,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 14,
+    "numberOfOHProcessedInstr": 53,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 1,
+    "numberOfProtectedBlocks": 6,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 22,
+    "numberOfSensitiveBlocks": 7,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 1 function, while filter count is 25
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4466 seconds (0.5093 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3159 ( 71.2%)   0.0026 ( 90.7%)   0.3185 ( 71.3%)   0.3185 ( 62.5%)  runs input dependency analysis
+   0.1155 ( 26.0%)   0.0000 (  0.0%)   0.1155 ( 25.9%)   0.1165 ( 22.9%)  Instruments bitcode with hashing and logging functions
+   0.0009 (  0.2%)   0.0000 (  1.2%)   0.0009 (  0.2%)   0.0625 ( 12.3%)  Include functions in a given file in any transformation
+   0.0032 (  0.7%)   0.0000 (  0.0%)   0.0032 (  0.7%)   0.0033 (  0.7%)  Memory SSA
+   0.0024 (  0.5%)   0.0000 (  0.0%)   0.0024 (  0.5%)   0.0024 (  0.5%)  Bitcode Writer
+   0.0013 (  0.3%)   0.0000 (  1.7%)   0.0014 (  0.3%)   0.0014 (  0.3%)  Instruments bitcode with guards
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Post-Dominator Tree Construction
+   0.0007 (  0.2%)   0.0000 (  0.0%)   0.0007 (  0.2%)   0.0007 (  0.1%)  Module Verifier
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Natural Loop Information
+   0.0006 (  0.1%)   0.0000 (  0.7%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0001 (  3.1%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Dead Global Elimination
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0001 (  2.4%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4438 (100.0%)   0.0028 (100.0%)   0.4466 (100.0%)   0.5093 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0031 seconds (0.0031 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Parse IR
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Total
+
