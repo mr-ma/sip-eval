@@ -1,0 +1,20 @@
+{
+    "allCheckees": [
+        "main2",
+        "main5",
+        "main7"
+    ],
+    "map": {
+        "deg2rad": [
+            "main7"
+        ],
+        "main": [
+            "main2",
+            "main5"
+        ]
+    },
+    "topologicalsort": [
+        "main",
+        "deg2rad"
+    ]
+}

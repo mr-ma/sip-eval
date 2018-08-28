@@ -1,0 +1,18 @@
+{
+    "allCheckees": [
+        "main9",
+        "freeze0"
+    ],
+    "map": {
+        "exit_handler": [
+            "main9"
+        ],
+        "tty_exit": [
+            "freeze0"
+        ]
+    },
+    "topologicalsort": [
+        "exit_handler",
+        "tty_exit"
+    ]
+}

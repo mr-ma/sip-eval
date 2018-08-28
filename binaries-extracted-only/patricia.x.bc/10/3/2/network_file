@@ -1,0 +1,23 @@
+{
+    "allCheckees": [
+        "pat_insert7",
+        "main8",
+        "pat_remove12"
+    ],
+    "map": {
+        "bit": [
+            "pat_insert7"
+        ],
+        "insertR": [
+            "main8"
+        ],
+        "pat_search": [
+            "pat_remove12"
+        ]
+    },
+    "topologicalsort": [
+        "bit",
+        "insertR",
+        "pat_search"
+    ]
+}

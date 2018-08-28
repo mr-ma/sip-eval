@@ -1,0 +1,20 @@
+{
+    "allCheckees": [
+        "bmha_init3",
+        "bmha_init5",
+        "bmha_init0"
+    ],
+    "map": {
+        "bmh_search": [
+            "bmha_init5",
+            "bmha_init0"
+        ],
+        "bmhi_search": [
+            "bmha_init3"
+        ]
+    },
+    "topologicalsort": [
+        "bmhi_search",
+        "bmh_search"
+    ]
+}

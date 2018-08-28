@@ -1,0 +1,20 @@
+{
+    "allCheckees": [
+        "main1",
+        "main2",
+        "main0"
+    ],
+    "map": {
+        "compare": [
+            "main1",
+            "main2"
+        ],
+        "main": [
+            "main0"
+        ]
+    },
+    "topologicalsort": [
+        "compare",
+        "main"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "main3"
+    ],
+    "map": {
+        "main": [
+            "main3"
+        ]
+    },
+    "topologicalsort": [
+        "main"
+    ]
+}

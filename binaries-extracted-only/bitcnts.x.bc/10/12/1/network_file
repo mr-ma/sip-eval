@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "main4"
+    ],
+    "map": {
+        "bfwrite": [
+            "main4"
+        ]
+    },
+    "topologicalsort": [
+        "bfwrite"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "main12"
+    ],
+    "map": {
+        "IsPowerOfTwo": [
+            "main12"
+        ]
+    },
+    "topologicalsort": [
+        "IsPowerOfTwo"
+    ]
+}
