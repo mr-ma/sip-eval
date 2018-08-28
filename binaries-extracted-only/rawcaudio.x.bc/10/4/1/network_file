@@ -1,0 +1,17 @@
+{
+    "allCheckees": [
+        "adpcm_decoder1",
+        "adpcm_coder8",
+        "adpcm_decoder8"
+    ],
+    "map": {
+        "main": [
+            "adpcm_decoder1",
+            "adpcm_coder8",
+            "adpcm_decoder8"
+        ]
+    },
+    "topologicalsort": [
+        "main"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "allCheckees": [
+        "main8",
+        "next_shape0"
+    ],
+    "map": {
+        "exit_handler": [
+            "main8"
+        ],
+        "tty_exit": [
+            "next_shape0"
+        ]
+    },
+    "topologicalsort": [
+        "exit_handler",
+        "tty_exit"
+    ]
+}

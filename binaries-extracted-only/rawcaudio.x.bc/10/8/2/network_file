@@ -1,0 +1,15 @@
+{
+    "allCheckees": [
+        "adpcm_coder6",
+        "adpcm_coder4"
+    ],
+    "map": {
+        "adpcm_coder": [
+            "adpcm_coder6",
+            "adpcm_coder4"
+        ]
+    },
+    "topologicalsort": [
+        "adpcm_coder"
+    ]
+}

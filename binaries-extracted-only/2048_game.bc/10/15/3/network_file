@@ -1,0 +1,20 @@
+{
+    "allCheckees": [
+        "print_game3",
+        "move_down0",
+        "main5"
+    ],
+    "map": {
+        "move_left": [
+            "main5"
+        ],
+        "print_game": [
+            "print_game3",
+            "move_down0"
+        ]
+    },
+    "topologicalsort": [
+        "print_game",
+        "move_left"
+    ]
+}

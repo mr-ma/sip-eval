@@ -1,0 +1,18 @@
+{
+    "allCheckees": [
+        "main1",
+        "btbl_bitcnt0"
+    ],
+    "map": {
+        "bfclose": [
+            "btbl_bitcnt0"
+        ],
+        "bfread": [
+            "main1"
+        ]
+    },
+    "topologicalsort": [
+        "bfread",
+        "bfclose"
+    ]
+}

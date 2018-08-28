@@ -1,0 +1,18 @@
+{
+    "allCheckees": [
+        "enqueue2",
+        "main2"
+    ],
+    "map": {
+        "dequeue": [
+            "main2"
+        ],
+        "print_path": [
+            "enqueue2"
+        ]
+    },
+    "topologicalsort": [
+        "print_path",
+        "dequeue"
+    ]
+}

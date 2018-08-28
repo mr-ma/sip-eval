@@ -1,0 +1,20 @@
+{
+    "allCheckees": [
+        "main9",
+        "main3",
+        "SolveCubic1"
+    ],
+    "map": {
+        "deg2rad": [
+            "SolveCubic1"
+        ],
+        "main": [
+            "main9",
+            "main3"
+        ]
+    },
+    "topologicalsort": [
+        "main",
+        "deg2rad"
+    ]
+}
