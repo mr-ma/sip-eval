@@ -2,11 +2,8 @@ Running input dependency analysis pass
 Processing function compare
 Processing function main0
 Processing function main1
-Processing function main2
 Processing function main
 Finalizing main
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -17,8 +14,7 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/qsort_large.x.bc/10/0
-here!:main1
-here!:main1
+here!:
 got filter function names
 did not find compare demangled to compare
 did not find main demangled to main
@@ -31,22 +27,23 @@ did not find pow demangled to pow
 did not find printf demangled to printf
 did not find qsort demangled to qsort
 did not find main0 demangled to main0
-Add filter function main1
-FunctionInfo. Adding function:main1
-did not find main2 demangled to main2
+did not find main1 demangled to main1
+ERR. filter functions count:1!=detected functions in binary is:0
+Detected functions:
+
+Filter functions:
+	
 Adding compare other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:5
+Sensitive functions:0 other functions:4
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
 compare
-main2
-main1
 main
+main1
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -71,7 +68,6 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 5 function, while filter count is 1
 Functions called in loop
 Function call numbers
 main -- 0
@@ -83,99 +79,155 @@ Warning: Empty PHI
 PSNodeType::PHI with ID 10
   - operands: []
 DEF-USE: no information for: compare
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 1
- Skipping function per FilterFunctionPass:compare
- Skipping function per FilterFunctionPass:main
- Skipping function per FilterFunctionPass:compare
- Skipping function per FilterFunctionPass:main
+Recieved filter functions 0
+Skip. No dependence graph for function compare
+Collecting defining blocks for main
+Skip. No dependence graph for function compare
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.else  while.cond  land.lhs.true  land.lhs.true6  land.rhs  
+After path modifications process path
+land.lhs.true  land.lhs.true6  land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !control_dep_instr !12, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.else  while.cond  land.end  while.body  
+After path modifications process path is empty
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.else  while.end  if.end  for.cond  for.body  for.inc  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !control_dep_instr !12, !data_indep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.else  while.cond  land.end  while.end  if.end  
+After path modifications process path is empty
+Processing path: entry  if.else  while.end  if.end  
+After path modifications process path
+entry  if.else  while.end  if.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.else  while.end  if.end  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  if.else  while.cond  land.end  while.end  if.end  for.end  
+After path modifications process path is empty
+Processing path: entry  if.else  while.end  if.end  for.end  
+After path modifications process path
+entry  if.else  while.end  if.end  for.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Extract path function for assertion assert_main_path_1
+Extract path function for assertion assert_main_path_7
+Extract path function for assertion assert_main_path_10
 OH stats is requested, dumping stat file...
-Processed instructions number 140
+Processed instructions number 143
 {
-    "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 0,
+    "numberOfAssertCalls": 2,
+    "numberOfBlocksInFunctionsWithNoDG": 4,
+    "numberOfDataDependentInstructions": 48,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 140,
-    "numberOfInstructionsInFunctionsWithNoDG": 0,
-    "numberOfNonHashableBlocks": 0,
-    "numberOfNonHashableInstructions": 0,
-    "numberOfOHProcessedInstr": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 28,
+    "numberOfNonHashableBlocks": 4,
+    "numberOfNonHashableInstructions": 4,
+    "numberOfOHProcessedInstr": 115,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
-    "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 1,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 0,
-    "numberOfSensitiveFunctions": 0,
-    "numberOfShortRangeAssertCalls": 0,
+    "numberOfProtectedInstructions": 2,
+    "numberOfSensitiveBlocks": 15,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 3,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedBlocks": 5,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 0,
-    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 6,
+    "numberOfUnprotectedArgumentReachableInstructions": 4,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 5,
     "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 0
+    "numberOfUnprotectedLoopInstructions": 51
 }
-ERR. processed 0 function, while filter count is 1
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 18.2548 seconds (18.3180 wall clock)
+  Total Execution Time: 17.4467 seconds (17.4468 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-  17.7618 ( 99.9%)   0.4791 (100.0%)  18.2409 ( 99.9%)  18.2448 ( 99.6%)  runs input dependency analysis
-   0.0010 (  0.0%)   0.0000 (  0.0%)   0.0011 (  0.0%)   0.0603 (  0.3%)  Instruments bitcode with guards
-   0.0107 (  0.1%)   0.0000 (  0.0%)   0.0107 (  0.1%)   0.0107 (  0.1%)  Instruments bitcode with hashing and logging functions
+  16.9438 ( 99.8%)   0.4735 ( 99.9%)  17.4173 ( 99.8%)  17.4174 ( 99.8%)  runs input dependency analysis
+   0.0194 (  0.1%)   0.0000 (  0.0%)   0.0194 (  0.1%)   0.0194 (  0.1%)  Instruments bitcode with hashing and logging functions
+   0.0034 (  0.0%)   0.0000 (  0.0%)   0.0034 (  0.0%)   0.0033 (  0.0%)  Memory SSA
+   0.0031 (  0.0%)   0.0001 (  0.0%)   0.0031 (  0.0%)   0.0031 (  0.0%)  Instruments bitcode with guards
+   0.0011 (  0.0%)   0.0000 (  0.0%)   0.0011 (  0.0%)   0.0011 (  0.0%)  Call site information
    0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Bitcode Writer
-   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Include functions in a given file in any transformation
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Include functions in a given file in any transformation
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Dominator Tree Construction
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0002 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
    0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Module Verifier
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Post-Dominator Tree Construction
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-  17.7755 (100.0%)   0.4792 (100.0%)  18.2548 (100.0%)  18.3180 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+  16.9728 (100.0%)   0.4739 (100.0%)  17.4467 (100.0%)  17.4468 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0009 seconds (0.0009 wall clock)
+  Total Execution Time: 0.0007 seconds (0.0007 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0006 (100.0%)   0.0003 (100.0%)   0.0009 (100.0%)   0.0009 (100.0%)  Parse IR
-   0.0006 (100.0%)   0.0003 (100.0%)   0.0009 (100.0%)   0.0009 (100.0%)  Total
+   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0007 (100.0%)   0.0007 (100.0%)   0.0007 (100.0%)  Parse IR
+   0.0007 (100.0%)   0.0007 (100.0%)   0.0007 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function compare
 Processing function main0
 Processing function main1
-Processing function main2
 Processing function main
 Finalizing main
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -190,8 +242,7 @@ here!:compare
 here!:main
 here!:main0
 here!:main1
-here!:main2
-here!:main2
+here!:main1
 got filter function names
 Add filter function compare
 FunctionInfo. Adding function:compare
@@ -209,21 +260,17 @@ Add filter function main0
 FunctionInfo. Adding function:main0
 Add filter function main1
 FunctionInfo. Adding function:main1
-Add filter function main2
-FunctionInfo. Adding function:main2
 Adding compare other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:5
+Sensitive functions:0 other functions:4
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
 compare
-main2
-main1
 main
+main1
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -259,12 +306,11 @@ Warning: Empty PHI
 PSNodeType::PHI with ID 10
   - operands: []
 DEF-USE: no information for: compare
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 5
+Recieved filter functions 4
 Skip. No dependence graph for function compare
 Collecting defining blocks for main
 Skip. No dependence graph for function compare
@@ -280,7 +326,7 @@ After path modifications process path
 land.lhs.true  land.lhs.true6  land.rhs  
 Hash path invariants only
 Invariants are
-  br label %land.end, !control_dep_instr !11, !data_indep_instr !8
+  br label %land.end, !control_dep_instr !12, !data_indep_instr !10
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing path: entry  if.else  
@@ -302,7 +348,7 @@ After path modifications process path
 for.body  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !control_dep_instr !11, !data_indep_instr !8
+  br label %for.inc, !control_dep_instr !12, !data_indep_instr !10
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
@@ -326,19 +372,19 @@ Extract path function for assertion assert_main_path_1
 Extract path function for assertion assert_main_path_7
 Extract path function for assertion assert_main_path_10
 OH stats is requested, dumping stat file...
-Processed instructions number 139
+Processed instructions number 143
 {
-    "numberOfAssertCalls": 0,
+    "numberOfAssertCalls": 1,
     "numberOfBlocksInFunctionsWithNoDG": 4,
-    "numberOfDataDependentInstructions": 43,
+    "numberOfDataDependentInstructions": 48,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
     "numberOfInstructionsInFilteredFunctions": 0,
     "numberOfInstructionsInFunctionsWithNoDG": 28,
     "numberOfNonHashableBlocks": 4,
     "numberOfNonHashableInstructions": 4,
-    "numberOfOHProcessedInstr": 111,
-    "numberOfOtherUnprotectedInstructions": 1,
+    "numberOfOHProcessedInstr": 115,
+    "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 1,
@@ -364,55 +410,52 @@ Processed instructions number 139
     "numberOfUnprotectedInputDependentInstructions": 0,
     "numberOfUnprotectedLoopInstructions": 51
 }
-ERR. processed 1 function, while filter count is 5
+ERR. processed 1 function, while filter count is 4
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 18.0684 seconds (18.0684 wall clock)
+  Total Execution Time: 17.5949 seconds (17.5949 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-  17.7290 ( 99.8%)   0.3109 (100.0%)  18.0399 ( 99.8%)  18.0399 ( 99.8%)  runs input dependency analysis
-   0.0217 (  0.1%)   0.0000 (  0.0%)   0.0217 (  0.1%)   0.0217 (  0.1%)  Instruments bitcode with hashing and logging functions
-   0.0032 (  0.0%)   0.0000 (  0.0%)   0.0032 (  0.0%)   0.0032 (  0.0%)  Memory SSA
-   0.0009 (  0.0%)   0.0000 (  0.0%)   0.0009 (  0.0%)   0.0009 (  0.0%)  Instruments bitcode with guards
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Bitcode Writer
+  17.2057 ( 99.8%)   0.3600 (100.0%)  17.5657 ( 99.8%)  17.5657 ( 99.8%)  runs input dependency analysis
+   0.0191 (  0.1%)   0.0000 (  0.0%)   0.0191 (  0.1%)   0.0191 (  0.1%)  Instruments bitcode with hashing and logging functions
+   0.0033 (  0.0%)   0.0000 (  0.0%)   0.0033 (  0.0%)   0.0033 (  0.0%)  Memory SSA
+   0.0032 (  0.0%)   0.0000 (  0.0%)   0.0032 (  0.0%)   0.0032 (  0.0%)  Instruments bitcode with guards
+   0.0011 (  0.0%)   0.0000 (  0.0%)   0.0011 (  0.0%)   0.0011 (  0.0%)  Call site information
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Bitcode Writer
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Include functions in a given file in any transformation
-   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Dominator Tree Construction
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Call site information
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0003 (  0.0%)  Natural Loop Information
-   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0004 (  0.0%)  Dominator Tree Construction
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Natural Loop Information
    0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Module Verifier
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Post-Dominator Tree Construction
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Post-Dominator Tree Construction
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
-  17.7574 (100.0%)   0.3110 (100.0%)  18.0684 (100.0%)  18.0684 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+  17.2348 (100.0%)   0.3600 (100.0%)  17.5949 (100.0%)  17.5949 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0007 seconds (0.0007 wall clock)
+  Total Execution Time: 0.0009 seconds (0.0009 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0004 (100.0%)   0.0002 (100.0%)   0.0007 (100.0%)   0.0007 (100.0%)  Parse IR
-   0.0004 (100.0%)   0.0002 (100.0%)   0.0007 (100.0%)   0.0007 (100.0%)  Total
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0009 (100.0%)  Parse IR
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0009 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function compare
 Processing function main0
 Processing function main1
-Processing function main2
 Processing function main
 Finalizing main
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -423,8 +466,8 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/qsort_large.x.bc/25/0
-here!:main1
-here!:main1
+here!:main0
+here!:main0
 got filter function names
 did not find compare demangled to compare
 did not find main demangled to main
@@ -436,23 +479,20 @@ did not find sqrt demangled to sqrt
 did not find pow demangled to pow
 did not find printf demangled to printf
 did not find qsort demangled to qsort
-did not find main0 demangled to main0
-Add filter function main1
-FunctionInfo. Adding function:main1
-did not find main2 demangled to main2
+Add filter function main0
+FunctionInfo. Adding function:main0
+did not find main1 demangled to main1
 Adding compare other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:5
+Sensitive functions:0 other functions:4
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
 compare
-main2
-main1
 main
+main1
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -477,7 +517,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 5 function, while filter count is 1
+ERR. processed 4 function, while filter count is 1
 Functions called in loop
 Function call numbers
 main -- 0
@@ -489,7 +529,6 @@ Warning: Empty PHI
 PSNodeType::PHI with ID 10
   - operands: []
 DEF-USE: no information for: compare
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
@@ -500,14 +539,14 @@ Recieved filter functions 1
  Skipping function per FilterFunctionPass:compare
  Skipping function per FilterFunctionPass:main
 OH stats is requested, dumping stat file...
-Processed instructions number 140
+Processed instructions number 144
 {
     "numberOfAssertCalls": 0,
     "numberOfBlocksInFunctionsWithNoDG": 0,
     "numberOfDataDependentInstructions": 0,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 140,
+    "numberOfInstructionsInFilteredFunctions": 144,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
     "numberOfNonHashableBlocks": 0,
     "numberOfNonHashableInstructions": 0,
@@ -542,46 +581,43 @@ ERR. processed 0 function, while filter count is 1
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 18.2014 seconds (18.2052 wall clock)
+  Total Execution Time: 18.1182 seconds (18.1182 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-  17.7897 ( 99.9%)   0.3991 (100.0%)  18.1888 ( 99.9%)  18.1926 ( 99.9%)  runs input dependency analysis
-   0.0100 (  0.1%)   0.0000 (  0.0%)   0.0100 (  0.1%)   0.0100 (  0.1%)  Instruments bitcode with hashing and logging functions
-   0.0009 (  0.0%)   0.0000 (  0.0%)   0.0009 (  0.0%)   0.0009 (  0.0%)  Instruments bitcode with guards
-   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Bitcode Writer
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Call site information
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Include functions in a given file in any transformation
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+  17.7178 ( 99.9%)   0.3863 (100.0%)  18.1041 ( 99.9%)  18.1041 ( 99.9%)  runs input dependency analysis
+   0.0085 (  0.0%)   0.0000 (  0.0%)   0.0085 (  0.0%)   0.0085 (  0.0%)  Instruments bitcode with hashing and logging functions
+   0.0031 (  0.0%)   0.0000 (  0.0%)   0.0031 (  0.0%)   0.0031 (  0.0%)  Instruments bitcode with guards
+   0.0011 (  0.0%)   0.0000 (  0.0%)   0.0011 (  0.0%)   0.0011 (  0.0%)  Call site information
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Bitcode Writer
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Include functions in a given file in any transformation
+   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Module Verifier
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Post-Dominator Tree Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
-  17.8023 (100.0%)   0.3991 (100.0%)  18.2014 (100.0%)  18.2052 (100.0%)  Total
+  17.7317 (100.0%)   0.3865 (100.0%)  18.1182 (100.0%)  18.1182 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0012 seconds (0.0012 wall clock)
+  Total Execution Time: 0.0006 seconds (0.0006 wall clock)
 
-   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0012 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Parse IR
-   0.0012 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Total
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0002 (100.0%)   0.0004 (100.0%)   0.0006 (100.0%)   0.0006 (100.0%)  Parse IR
+   0.0002 (100.0%)   0.0004 (100.0%)   0.0006 (100.0%)   0.0006 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function compare
 Processing function main0
 Processing function main1
-Processing function main2
 Processing function main
 Finalizing main
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -592,15 +628,12 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/qsort_large.x.bc/50/0
+here!:main0
 here!:main1
-here!:main
-here!:compare
-here!:compare
+here!:main1
 got filter function names
-Add filter function compare
-FunctionInfo. Adding function:compare
-Add filter function main
-FunctionInfo. Adding function:main
+did not find compare demangled to compare
+did not find main demangled to main
 did not find fprintf demangled to fprintf
 did not find exit demangled to exit
 did not find fopen demangled to fopen
@@ -609,23 +642,21 @@ did not find sqrt demangled to sqrt
 did not find pow demangled to pow
 did not find printf demangled to printf
 did not find qsort demangled to qsort
-did not find main0 demangled to main0
+Add filter function main0
+FunctionInfo. Adding function:main0
 Add filter function main1
 FunctionInfo. Adding function:main1
-did not find main2 demangled to main2
 Adding compare other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:5
+Sensitive functions:0 other functions:4
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
 compare
-main2
-main1
 main
+main1
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -650,7 +681,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 5 function, while filter count is 3
+ERR. processed 4 function, while filter count is 2
 Functions called in loop
 Function call numbers
 main -- 0
@@ -662,148 +693,86 @@ Warning: Empty PHI
 PSNodeType::PHI with ID 10
   - operands: []
 DEF-USE: no information for: compare
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 3
-Skip. No dependence graph for function compare
-Collecting defining blocks for main
-Skip. No dependence graph for function compare
- Processing function:main
-Short range hashing enabled.
-Processing path: entry  if.then  
-After path modifications process path
-entry  if.then  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Processing path: entry  if.else  while.cond  land.lhs.true  land.lhs.true6  land.rhs  
-After path modifications process path
-land.lhs.true  land.lhs.true6  land.rhs  
-Hash path invariants only
-Invariants are
-  br label %land.end, !control_dep_instr !11, !data_indep_instr !8
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Processing path: entry  if.else  
-After path modifications process path
-entry  if.else  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-No oh has been applied in the path
-Processing path: entry  if.else  while.cond  land.end  while.body  
-After path modifications process path is empty
-Processing path: entry  if.else  
-After path modifications process path
-entry  if.else  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-No oh has been applied in the path
-Processing path: entry  if.else  while.end  if.end  for.cond  for.body  for.inc  
-After path modifications process path
-for.body  
-Hash path invariants only
-Invariants are
-  br label %for.inc, !control_dep_instr !11, !data_indep_instr !8
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-No oh has been applied in the path
-Processing path: entry  if.else  while.cond  land.end  while.end  if.end  
-After path modifications process path is empty
-Processing path: entry  if.else  while.end  if.end  
-After path modifications process path
-entry  if.else  while.end  if.end  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Processing path: entry  if.else  while.end  if.end  for.cond  for.end  
-After path modifications process path is empty
-Processing path: entry  if.else  while.cond  land.end  while.end  if.end  for.end  
-After path modifications process path is empty
-Processing path: entry  if.else  while.end  if.end  for.end  
-After path modifications process path
-entry  if.else  while.end  if.end  for.end  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Extract path function for assertion assert_main_path_1
-Extract path function for assertion assert_main_path_7
-Extract path function for assertion assert_main_path_10
+Recieved filter functions 2
+ Skipping function per FilterFunctionPass:compare
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:compare
+ Skipping function per FilterFunctionPass:main
 OH stats is requested, dumping stat file...
-Processed instructions number 139
+Processed instructions number 144
 {
     "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 4,
-    "numberOfDataDependentInstructions": 43,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 0,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 0,
-    "numberOfInstructionsInFunctionsWithNoDG": 28,
-    "numberOfNonHashableBlocks": 4,
-    "numberOfNonHashableInstructions": 4,
-    "numberOfOHProcessedInstr": 111,
-    "numberOfOtherUnprotectedInstructions": 1,
+    "numberOfInstructionsInFilteredFunctions": 144,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 0,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
+    "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
-    "numberOfProtectedBlocks": 1,
-    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 0,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 2,
-    "numberOfSensitiveBlocks": 15,
-    "numberOfSensitiveFunctions": 1,
-    "numberOfShortRangeAssertCalls": 3,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 5,
+    "numberOfShortRangeProtectedBlocks": 0,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 6,
-    "numberOfUnprotectedArgumentReachableInstructions": 4,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 5,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
     "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 51
+    "numberOfUnprotectedLoopInstructions": 0
 }
-ERR. processed 1 function, while filter count is 3
+ERR. processed 0 function, while filter count is 2
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 17.9055 seconds (17.9055 wall clock)
+  Total Execution Time: 17.9561 seconds (17.9566 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-  17.4829 ( 99.9%)   0.3959 ( 97.6%)  17.8789 ( 99.9%)  17.8789 ( 99.9%)  runs input dependency analysis
-   0.0132 (  0.1%)   0.0068 (  1.7%)   0.0200 (  0.1%)   0.0200 (  0.1%)  Instruments bitcode with hashing and logging functions
-   0.0018 (  0.0%)   0.0015 (  0.4%)   0.0032 (  0.0%)   0.0032 (  0.0%)  Memory SSA
-   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Instruments bitcode with guards
-   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Bitcode Writer
-   0.0002 (  0.0%)   0.0001 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Call site information
-   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Natural Loop Information
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Include functions in a given file in any transformation
+  17.5739 ( 99.9%)   0.3679 (100.0%)  17.9419 ( 99.9%)  17.9423 ( 99.9%)  runs input dependency analysis
+   0.0085 (  0.0%)   0.0000 (  0.0%)   0.0086 (  0.0%)   0.0086 (  0.0%)  Instruments bitcode with hashing and logging functions
+   0.0032 (  0.0%)   0.0000 (  0.0%)   0.0032 (  0.0%)   0.0032 (  0.0%)  Instruments bitcode with guards
+   0.0011 (  0.0%)   0.0000 (  0.0%)   0.0011 (  0.0%)   0.0011 (  0.0%)  Call site information
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Bitcode Writer
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Include functions in a given file in any transformation
    0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Module Verifier
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Module Verifier
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Post-Dominator Tree Construction
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-  17.4998 (100.0%)   0.4057 (100.0%)  17.9055 (100.0%)  17.9055 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+  17.5882 (100.0%)   0.3680 (100.0%)  17.9561 (100.0%)  17.9566 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0010 seconds (0.0010 wall clock)
+  Total Execution Time: 0.0007 seconds (0.0007 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0006 (100.0%)   0.0003 (100.0%)   0.0010 (100.0%)   0.0010 (100.0%)  Parse IR
-   0.0006 (100.0%)   0.0003 (100.0%)   0.0010 (100.0%)   0.0010 (100.0%)  Total
+   0.0003 (100.0%)   0.0003 (100.0%)   0.0007 (100.0%)   0.0007 (100.0%)  Parse IR
+   0.0003 (100.0%)   0.0003 (100.0%)   0.0007 (100.0%)   0.0007 (100.0%)  Total
 

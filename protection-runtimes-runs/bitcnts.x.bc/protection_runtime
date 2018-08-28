@@ -18,20 +18,13 @@ Processing function main5
 Processing function main6
 Processing function main7
 Processing function main8
-Processing function main9
 Processing function main
 Processing function bit_shifter0
 Processing function bit_shifter1
 Processing function bit_shifter
-Processing function bfopen0
-Processing function bfopen1
 Processing function bfopen
-Processing function bfread0
 Processing function bfread
-Processing function bfwrite0
-Processing function bfwrite1
 Processing function bfwrite
-Processing function bfclose0
 Processing function bfclose
 Processing function bitstring0
 Processing function bitstring1
@@ -56,29 +49,15 @@ Mark Input dependent function bitstring1
 Finalizing bitstring0
 Mark Input dependent function bitstring0
 Finalizing bfclose
-Finalizing bfclose0
-Mark Input dependent function bfclose0
 Finalizing bfwrite
-Finalizing bfwrite1
-Mark Input dependent function bfwrite1
-Finalizing bfwrite0
-Mark Input dependent function bfwrite0
 Finalizing bfread
-Finalizing bfread0
-Mark Input dependent function bfread0
 Finalizing bfopen
-Finalizing bfopen1
-Mark Input dependent function bfopen1
-Finalizing bfopen0
-Mark Input dependent function bfopen0
 Finalizing bit_shifter
 Finalizing bit_shifter1
 Mark Input dependent function bit_shifter1
 Finalizing bit_shifter0
 Mark Input dependent function bit_shifter0
 Finalizing main
-Finalizing main9
-Mark Input dependent function main9
 Finalizing main8
 Mark Input dependent function main8
 Finalizing main7
@@ -122,17 +101,17 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/bitcnts.x.bc/10/0
-here!:bitcount
-here!:bfopen0
-here!:main0
-here!:bitstring0
-here!:bitstring0
+here!:BW_btbl_bitcount
+here!:bit_count0
+here!:bfopen
+here!:btbl_bitcnt0
+here!:btbl_bitcnt0
 got filter function names
 did not find bit_count demangled to bit_count
-Add filter function bitcount
-FunctionInfo. Adding function:bitcount
+did not find bitcount demangled to bitcount
 did not find ntbl_bitcount demangled to ntbl_bitcount
-did not find BW_btbl_bitcount demangled to BW_btbl_bitcount
+Add filter function BW_btbl_bitcount
+FunctionInfo. Adding function:BW_btbl_bitcount
 did not find AR_btbl_bitcount demangled to AR_btbl_bitcount
 did not find ntbl_bitcnt demangled to ntbl_bitcnt
 did not find btbl_bitcnt demangled to btbl_bitcnt
@@ -145,7 +124,8 @@ did not find clock demangled to clock
 did not find rand demangled to rand
 did not find printf demangled to printf
 did not find bit_shifter demangled to bit_shifter
-did not find bfopen demangled to bfopen
+Add filter function bfopen
+FunctionInfo. Adding function:bfopen
 did not find malloc demangled to malloc
 did not find fopen demangled to fopen
 did not find free demangled to free
@@ -158,11 +138,12 @@ did not find fclose demangled to fclose
 did not find bitstring demangled to bitstring
 did not find bstr_i demangled to bstr_i
 did not find strchr demangled to strchr
-did not find bit_count0 demangled to bit_count0
+Add filter function bit_count0
+FunctionInfo. Adding function:bit_count0
 did not find ntbl_bitcnt0 demangled to ntbl_bitcnt0
-did not find btbl_bitcnt0 demangled to btbl_bitcnt0
-Add filter function main0
-FunctionInfo. Adding function:main0
+Add filter function btbl_bitcnt0
+FunctionInfo. Adding function:btbl_bitcnt0
+did not find main0 demangled to main0
 did not find main1 demangled to main1
 did not find main2 demangled to main2
 did not find main3 demangled to main3
@@ -171,18 +152,9 @@ did not find main5 demangled to main5
 did not find main6 demangled to main6
 did not find main7 demangled to main7
 did not find main8 demangled to main8
-did not find main9 demangled to main9
 did not find bit_shifter0 demangled to bit_shifter0
 did not find bit_shifter1 demangled to bit_shifter1
-Add filter function bfopen0
-FunctionInfo. Adding function:bfopen0
-did not find bfopen1 demangled to bfopen1
-did not find bfread0 demangled to bfread0
-did not find bfwrite0 demangled to bfwrite0
-did not find bfwrite1 demangled to bfwrite1
-did not find bfclose0 demangled to bfclose0
-Add filter function bitstring0
-FunctionInfo. Adding function:bitstring0
+did not find bitstring0 demangled to bitstring0
 did not find bitstring1 demangled to bitstring1
 did not find bitstring2 demangled to bitstring2
 did not find bitstring3 demangled to bitstring3
@@ -215,51 +187,44 @@ Adding main5 other functions, ExtractedOnly mode uses other functions
 Adding main6 other functions, ExtractedOnly mode uses other functions
 Adding main7 other functions, ExtractedOnly mode uses other functions
 Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter0 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter1 other functions, ExtractedOnly mode uses other functions
-Adding bfopen0 other functions, ExtractedOnly mode uses other functions
-Adding bfopen1 other functions, ExtractedOnly mode uses other functions
-Adding bfread0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite1 other functions, ExtractedOnly mode uses other functions
-Adding bfclose0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring1 other functions, ExtractedOnly mode uses other functions
 Adding bitstring2 other functions, ExtractedOnly mode uses other functions
 Adding bitstring3 other functions, ExtractedOnly mode uses other functions
 Adding bitstring4 other functions, ExtractedOnly mode uses other functions
 Adding bstr_i0 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:42
+Sensitive functions:0 other functions:35
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
-bfwrite1
-main9
+bstr_i0
+bit_shifter0
 ntbl_bitcnt
 bfwrite
 BW_btbl_bitcount
 bfclose
 main1
-bfwrite0
+bitstring4
 main3
-bstr_i0
+bfread
 bitstring
 bitstring0
 bitcount
-bitstring4
+main8
 main4
 bit_shifter
 bfopen
-bit_shifter0
+bit_shifter1
 ntbl_bitcount
 btbl_bitcnt
-bfopen0
+bitstring1
 main7
 main6
-bitstring1
-bfread0
-bfclose0
+main
+bitstring3
+main5
 AR_btbl_bitcount
 bit_count0
 bitstring2
@@ -268,13 +233,6 @@ btbl_bitcnt0
 bstr_i
 bit_count
 main2
-main5
-bit_shifter1
-main
-bfopen1
-bitstring3
-main8
-bfread
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -299,7 +257,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 42 function, while filter count is 4
+ERR. processed 35 function, while filter count is 4
 Functions called in loop
 Function call numbers
 main -- 0
@@ -310,61 +268,59 @@ PSNodeType::PHI with ID 63
 Warning: Empty PHI
 PSNodeType::PHI with ID 64
   - operands: []
-No reaching definition for:   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %i.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %iterations = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %iterations.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
 Recieved filter functions 4
  Skipping function per FilterFunctionPass:bit_count
-Collecting defining blocks for bitcount
+ Skipping function per FilterFunctionPass:bitcount
  Skipping function per FilterFunctionPass:ntbl_bitcount
- Skipping function per FilterFunctionPass:BW_btbl_bitcount
+Collecting defining blocks for BW_btbl_bitcount
  Skipping function per FilterFunctionPass:AR_btbl_bitcount
  Skipping function per FilterFunctionPass:ntbl_bitcnt
  Skipping function per FilterFunctionPass:btbl_bitcnt
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:bit_shifter
- Skipping function per FilterFunctionPass:bfopen
+Skip. No dependence graph for function bfopen
  Skipping function per FilterFunctionPass:bfread
  Skipping function per FilterFunctionPass:bfwrite
  Skipping function per FilterFunctionPass:bfclose
  Skipping function per FilterFunctionPass:bitstring
  Skipping function per FilterFunctionPass:bstr_i
  Skipping function per FilterFunctionPass:bit_count
- Processing function:bitcount
+ Skipping function per FilterFunctionPass:bitcount
+ Skipping function per FilterFunctionPass:ntbl_bitcount
+ Processing function:BW_btbl_bitcount
 Short range hashing enabled.
 Processing path: entry  
 After path modifications process path
 entry  
 No oh has been applied in the path
- Skipping function per FilterFunctionPass:ntbl_bitcount
- Skipping function per FilterFunctionPass:BW_btbl_bitcount
  Skipping function per FilterFunctionPass:AR_btbl_bitcount
  Skipping function per FilterFunctionPass:ntbl_bitcnt
  Skipping function per FilterFunctionPass:btbl_bitcnt
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:bit_shifter
- Skipping function per FilterFunctionPass:bfopen
+Skip. No dependence graph for function bfopen
  Skipping function per FilterFunctionPass:bfread
  Skipping function per FilterFunctionPass:bfwrite
  Skipping function per FilterFunctionPass:bfclose
  Skipping function per FilterFunctionPass:bitstring
  Skipping function per FilterFunctionPass:bstr_i
 OH stats is requested, dumping stat file...
-Processed instructions number 504
+Processed instructions number 565
 {
     "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 40,
+    "numberOfBlocksInFunctionsWithNoDG": 6,
+    "numberOfDataDependentInstructions": 38,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 464,
-    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfInstructionsInFilteredFunctions": 486,
+    "numberOfInstructionsInFunctionsWithNoDG": 41,
     "numberOfNonHashableBlocks": 1,
     "numberOfNonHashableInstructions": 0,
-    "numberOfOHProcessedInstr": 40,
+    "numberOfOHProcessedInstr": 38,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
@@ -395,41 +351,41 @@ ERR. processed 1 function, while filter count is 4
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.1657 seconds (0.1657 wall clock)
+  Total Execution Time: 0.1614 seconds (0.1614 wall clock)
 
-   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0849 ( 51.2%)   0.0849 ( 51.2%)   0.0849 ( 51.2%)  runs input dependency analysis
-   0.0746 ( 45.0%)   0.0746 ( 45.0%)   0.0746 ( 45.0%)  Instruments bitcode with hashing and logging functions
-   0.0019 (  1.2%)   0.0019 (  1.2%)   0.0019 (  1.2%)  Bitcode Writer
-   0.0009 (  0.6%)   0.0009 (  0.6%)   0.0009 (  0.6%)  Instruments bitcode with guards
-   0.0006 (  0.4%)   0.0006 (  0.4%)   0.0006 (  0.4%)  Module Verifier
-   0.0005 (  0.3%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Post-Dominator Tree Construction
-   0.0005 (  0.3%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Dominator Tree Construction
-   0.0004 (  0.2%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Include functions in a given file in any transformation
-   0.0004 (  0.2%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Natural Loop Information
-   0.0003 (  0.2%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
-   0.0002 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
-   0.0001 (  0.1%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Memory SSA
-   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
-   0.1657 (100.0%)   0.1657 (100.0%)   0.1657 (100.0%)  Total
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0794 ( 50.5%)   0.0042 ( 99.8%)   0.0836 ( 51.8%)   0.0836 ( 51.8%)  runs input dependency analysis
+   0.0720 ( 45.8%)   0.0000 (  0.0%)   0.0720 ( 44.6%)   0.0720 ( 44.6%)  Instruments bitcode with hashing and logging functions
+   0.0017 (  1.1%)   0.0000 (  0.0%)   0.0017 (  1.0%)   0.0017 (  1.0%)  Bitcode Writer
+   0.0009 (  0.6%)   0.0000 (  0.0%)   0.0009 (  0.6%)   0.0009 (  0.6%)  Instruments bitcode with guards
+   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Module Verifier
+   0.0004 (  0.3%)   0.0000 (  0.1%)   0.0004 (  0.3%)   0.0005 (  0.3%)  Dominator Tree Construction
+   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Include functions in a given file in any transformation
+   0.0005 (  0.3%)   0.0000 (  0.1%)   0.0005 (  0.3%)   0.0004 (  0.3%)  Post-Dominator Tree Construction
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Natural Loop Information
+   0.0002 (  0.2%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Memory SSA
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.1572 (100.0%)   0.0043 (100.0%)   0.1614 (100.0%)   0.1614 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0024 seconds (0.0024 wall clock)
+  Total Execution Time: 0.0023 seconds (0.0023 wall clock)
 
    ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0024 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Parse IR
-   0.0024 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Total
+   0.0023 (100.0%)   0.0023 (100.0%)   0.0023 (100.0%)  Parse IR
+   0.0023 (100.0%)   0.0023 (100.0%)   0.0023 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function bit_count0
@@ -451,20 +407,13 @@ Processing function main5
 Processing function main6
 Processing function main7
 Processing function main8
-Processing function main9
 Processing function main
 Processing function bit_shifter0
 Processing function bit_shifter1
 Processing function bit_shifter
-Processing function bfopen0
-Processing function bfopen1
 Processing function bfopen
-Processing function bfread0
 Processing function bfread
-Processing function bfwrite0
-Processing function bfwrite1
 Processing function bfwrite
-Processing function bfclose0
 Processing function bfclose
 Processing function bitstring0
 Processing function bitstring1
@@ -489,29 +438,15 @@ Mark Input dependent function bitstring1
 Finalizing bitstring0
 Mark Input dependent function bitstring0
 Finalizing bfclose
-Finalizing bfclose0
-Mark Input dependent function bfclose0
 Finalizing bfwrite
-Finalizing bfwrite1
-Mark Input dependent function bfwrite1
-Finalizing bfwrite0
-Mark Input dependent function bfwrite0
 Finalizing bfread
-Finalizing bfread0
-Mark Input dependent function bfread0
 Finalizing bfopen
-Finalizing bfopen1
-Mark Input dependent function bfopen1
-Finalizing bfopen0
-Mark Input dependent function bfopen0
 Finalizing bit_shifter
 Finalizing bit_shifter1
 Mark Input dependent function bit_shifter1
 Finalizing bit_shifter0
 Mark Input dependent function bit_shifter0
 Finalizing main
-Finalizing main9
-Mark Input dependent function main9
 Finalizing main8
 Mark Input dependent function main8
 Finalizing main7
@@ -582,15 +517,8 @@ here!:main5
 here!:main6
 here!:main7
 here!:main8
-here!:main9
 here!:bit_shifter0
 here!:bit_shifter1
-here!:bfopen0
-here!:bfopen1
-here!:bfread0
-here!:bfwrite0
-here!:bfwrite1
-here!:bfclose0
 here!:bitstring0
 here!:bitstring1
 here!:bitstring2
@@ -667,24 +595,10 @@ Add filter function main7
 FunctionInfo. Adding function:main7
 Add filter function main8
 FunctionInfo. Adding function:main8
-Add filter function main9
-FunctionInfo. Adding function:main9
 Add filter function bit_shifter0
 FunctionInfo. Adding function:bit_shifter0
 Add filter function bit_shifter1
 FunctionInfo. Adding function:bit_shifter1
-Add filter function bfopen0
-FunctionInfo. Adding function:bfopen0
-Add filter function bfopen1
-FunctionInfo. Adding function:bfopen1
-Add filter function bfread0
-FunctionInfo. Adding function:bfread0
-Add filter function bfwrite0
-FunctionInfo. Adding function:bfwrite0
-Add filter function bfwrite1
-FunctionInfo. Adding function:bfwrite1
-Add filter function bfclose0
-FunctionInfo. Adding function:bfclose0
 Add filter function bitstring0
 FunctionInfo. Adding function:bitstring0
 Add filter function bitstring1
@@ -724,51 +638,44 @@ Adding main5 other functions, ExtractedOnly mode uses other functions
 Adding main6 other functions, ExtractedOnly mode uses other functions
 Adding main7 other functions, ExtractedOnly mode uses other functions
 Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter0 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter1 other functions, ExtractedOnly mode uses other functions
-Adding bfopen0 other functions, ExtractedOnly mode uses other functions
-Adding bfopen1 other functions, ExtractedOnly mode uses other functions
-Adding bfread0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite1 other functions, ExtractedOnly mode uses other functions
-Adding bfclose0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring1 other functions, ExtractedOnly mode uses other functions
 Adding bitstring2 other functions, ExtractedOnly mode uses other functions
 Adding bitstring3 other functions, ExtractedOnly mode uses other functions
 Adding bitstring4 other functions, ExtractedOnly mode uses other functions
 Adding bstr_i0 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:42
+Sensitive functions:0 other functions:35
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
-bfwrite1
-main9
+bstr_i0
+bit_shifter0
 ntbl_bitcnt
 bfwrite
 BW_btbl_bitcount
 bfclose
 main1
-bfwrite0
+bitstring4
 main3
-bstr_i0
+bfread
 bitstring
 bitstring0
 bitcount
-bitstring4
+main8
 main4
 bit_shifter
 bfopen
-bit_shifter0
+bit_shifter1
 ntbl_bitcount
 btbl_bitcnt
-bfopen0
+bitstring1
 main7
 main6
-bitstring1
-bfread0
-bfclose0
+main
+bitstring3
+main5
 AR_btbl_bitcount
 bit_count0
 bitstring2
@@ -777,13 +684,6 @@ btbl_bitcnt0
 bstr_i
 bit_count
 main2
-main5
-bit_shifter1
-main
-bfopen1
-bitstring3
-main8
-bfread
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -818,13 +718,11 @@ PSNodeType::PHI with ID 63
 Warning: Empty PHI
 PSNodeType::PHI with ID 64
   - operands: []
-No reaching definition for:   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %i.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %iterations = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %iterations.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 42
+Recieved filter functions 35
 Collecting defining blocks for bit_count
 Collecting defining blocks for bitcount
 Collecting defining blocks for ntbl_bitcount
@@ -890,34 +788,34 @@ After path modifications process path
 entry  if.then  
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing path: entry  if.end  for.cond  for.body  
-After path modifications process path
-for.body  
-Hash path invariants only
-Invariants are
-  br label %for.cond6, !control_dep_instr !12, !data_indep_instr !10
-  call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-No oh has been applied in the path
 Processing path: entry  if.end  for.cond6  for.body10  for.inc  
 After path modifications process path
 for.body10  
 Hash path invariants only
 Invariants are
   br label %for.inc, !control_dep_instr !12, !data_indep_instr !10
-  call void @main3(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  call void @main2(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %n, i64* %seed, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+No oh has been applied in the path
+Processing path: entry  if.end  for.cond  for.body  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.cond6, !control_dep_instr !12, !data_indep_instr !10
+  call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 No oh has been applied in the path
 Processing path: entry  if.end  
 After path modifications process path
@@ -925,95 +823,95 @@ entry  if.end
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
+Processing path: entry  if.end  for.cond6  
+After path modifications process path is empty
 Processing path: entry  if.end  for.cond  for.body  for.end  if.then19  
 After path modifications process path
 for.body  for.end  if.then19  
 Hash path invariants only
 Invariants are
   br label %if.end20, !control_dep_instr !12, !data_indep_instr !10
-  call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
   br label %for.cond6, !control_dep_instr !12, !data_indep_instr !10
-  %call15 = call i64 @clock() #5, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
+  %call15 = call i64 @clock() #6, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
   store i64 %call15, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
-  call void @main5(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-  %10 = load i64, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
+  call void @main4(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  %12 = load i64, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing call instruction..
-Can't handle this operand   %cminix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %cmin = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %ct = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  if.end  for.cond6  
-After path modifications process path is empty
+Can't handle this operand   %cminix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main4(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main4(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %cmin = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main4(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %ct = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main4(i32* %cminix, i32* %i, double* %cmin, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing path: entry  if.end  
 After path modifications process path
 entry  if.end  
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
+Processing path: entry  if.end  for.cond6  
+After path modifications process path is empty
 Processing path: entry  if.end  for.cond  for.body  for.end  if.end20  if.then23  
 After path modifications process path
 for.body  for.end  if.end20  if.then23  
 Hash path invariants only
 Invariants are
   br label %if.end24, !control_dep_instr !12, !data_indep_instr !10
-  call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
   br label %for.cond6, !control_dep_instr !12, !data_indep_instr !10
-  %10 = load i64, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
+  %12 = load i64, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
   store i64 %call15, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
-  %call15 = call i64 @clock() #5, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
-  call void @main6(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  %call15 = call i64 @clock() #6, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
+  call void @main5(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing call instruction..
-Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main6(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %cmax = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main6(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %cmaxix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main6(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %ct = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main6(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  if.end  for.cond6  
-After path modifications process path is empty
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %cmax = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %cmaxix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %ct = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(i32* %i, double* %cmax, i32* %cmaxix, double* %ct), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing path: entry  if.end  
 After path modifications process path
 entry  if.end  
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
+Processing path: entry  if.end  for.cond6  
+After path modifications process path is empty
 Processing path: entry  if.end  for.cond  for.body  for.end  if.end20  if.end24  for.inc28  
 After path modifications process path
 for.body  for.end  if.end20  if.end24  
 Hash path invariants only
 Invariants are
   br label %for.inc28, !control_dep_instr !12, !data_indep_instr !10
-  call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
   br label %for.cond6, !control_dep_instr !12, !data_indep_instr !10
-  %10 = load i64, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
+  %12 = load i64, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
   store i64 %call15, i64* %stop, align 8, !control_dep_instr !12, !data_dep_instr !7
-  %call15 = call i64 @clock() #5, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
-  call void @main7(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  %call15 = call i64 @clock() #6, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
+  call void @main6(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %seed = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %j = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %start = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i64* %seed, i64* %j, i64* %n, i64* %start), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing call instruction..
-Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main7(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %ct = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main7(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main7(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  if.end  for.cond6  
-After path modifications process path is empty
+Can't handle this operand   %n = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main6(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %ct = alloca double, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main6(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main6(i64* %n, double* %ct, i32* %i), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing path: entry  if.end  
 After path modifications process path
 entry  if.end  
@@ -1028,8 +926,8 @@ entry  if.end  for.end30
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %cmaxix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main9(i32* %cmaxix, i32* %cminix), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand   %cminix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main9(i32* %cmaxix, i32* %cminix), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %cmaxix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main8(i32* %cmaxix, i32* %cminix), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %cminix = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main8(i32* %cmaxix, i32* %cminix), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
  Processing function:bit_shifter
 Short range hashing enabled.
 Processing path: entry  for.cond  land.rhs  
@@ -1067,30 +965,30 @@ Skip. No dependence graph for function bfwrite
 Skip. No dependence graph for function bfclose
 Skip. No dependence graph for function bitstring
 Skip. No dependence graph for function bstr_i
-Extract path function for assertion assert_main_path_4
-Extract path function for assertion assert_main_path_7
-Extract path function for assertion assert_main_path_10
-Extract path function for assertion assert_main_path_14
-Extract path function for assertion assert_ntbl_bitcnt_path_0
-Extract path function for assertion assert_ntbl_bitcnt_path_1
 Extract path function for assertion assert_bit_shifter_path_1
 Extract path function for assertion assert_bit_shifter_path_3
 Extract path function for assertion assert_bit_shifter_path_5
+Extract path function for assertion assert_main_path_5
+Extract path function for assertion assert_main_path_8
+Extract path function for assertion assert_main_path_11
+Extract path function for assertion assert_main_path_14
 Extract path function for assertion assert_bit_count_path_1
 Extract path function for assertion assert_bit_count_path_2
+Extract path function for assertion assert_ntbl_bitcnt_path_0
+Extract path function for assertion assert_ntbl_bitcnt_path_1
 OH stats is requested, dumping stat file...
-Processed instructions number 503
+Processed instructions number 564
 {
     "numberOfAssertCalls": 2,
     "numberOfBlocksInFunctionsWithNoDG": 34,
-    "numberOfDataDependentInstructions": 260,
+    "numberOfDataDependentInstructions": 266,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
     "numberOfInstructionsInFilteredFunctions": 0,
-    "numberOfInstructionsInFunctionsWithNoDG": 175,
+    "numberOfInstructionsInFunctionsWithNoDG": 230,
     "numberOfNonHashableBlocks": 13,
     "numberOfNonHashableInstructions": 15,
-    "numberOfOHProcessedInstr": 328,
+    "numberOfOHProcessedInstr": 334,
     "numberOfOtherUnprotectedInstructions": 2,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
@@ -1117,45 +1015,45 @@ Processed instructions number 503
     "numberOfUnprotectedInputDependentInstructions": 0,
     "numberOfUnprotectedLoopInstructions": 28
 }
-ERR. processed 8 function, while filter count is 42
+ERR. processed 8 function, while filter count is 35
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.2082 seconds (0.2082 wall clock)
+  Total Execution Time: 0.2086 seconds (0.2087 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.1057 ( 52.8%)   0.0078 ( 96.9%)   0.1135 ( 54.5%)   0.1135 ( 54.5%)  Instruments bitcode with hashing and logging functions
-   0.0832 ( 41.6%)   0.0000 (  0.0%)   0.0832 ( 40.0%)   0.0832 ( 40.0%)  runs input dependency analysis
-   0.0034 (  1.7%)   0.0002 (  2.1%)   0.0035 (  1.7%)   0.0035 (  1.7%)  Memory SSA
-   0.0021 (  1.1%)   0.0000 (  0.0%)   0.0021 (  1.0%)   0.0021 (  1.0%)  Bitcode Writer
-   0.0009 (  0.5%)   0.0000 (  0.0%)   0.0009 (  0.4%)   0.0009 (  0.4%)  Instruments bitcode with guards
-   0.0007 (  0.3%)   0.0000 (  0.5%)   0.0007 (  0.3%)   0.0007 (  0.3%)  Dominator Tree Construction
-   0.0007 (  0.3%)   0.0000 (  0.0%)   0.0007 (  0.3%)   0.0007 (  0.3%)  Module Verifier
-   0.0006 (  0.3%)   0.0000 (  0.4%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Natural Loop Information
-   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Include functions in a given file in any transformation
-   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.2%)   0.0005 (  0.2%)  Post-Dominator Tree Construction
-   0.0005 (  0.2%)   0.0000 (  0.0%)   0.0005 (  0.2%)   0.0005 (  0.2%)  Dominator Tree Construction
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Natural Loop Information
+   0.1088 ( 54.9%)   0.0039 ( 37.5%)   0.1127 ( 54.0%)   0.1128 ( 54.0%)  Instruments bitcode with hashing and logging functions
+   0.0800 ( 40.4%)   0.0041 ( 39.1%)   0.0841 ( 40.3%)   0.0842 ( 40.3%)  runs input dependency analysis
+   0.0039 (  1.9%)   0.0001 (  1.0%)   0.0040 (  1.9%)   0.0039 (  1.9%)  Memory SSA
+   0.0000 (  0.0%)   0.0020 ( 18.9%)   0.0020 (  0.9%)   0.0020 (  0.9%)  Bitcode Writer
+   0.0011 (  0.6%)   0.0000 (  0.0%)   0.0011 (  0.5%)   0.0011 (  0.5%)  Instruments bitcode with guards
+   0.0006 (  0.3%)   0.0000 (  0.2%)   0.0007 (  0.3%)   0.0007 (  0.3%)  Dominator Tree Construction
+   0.0006 (  0.3%)   0.0000 (  0.0%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Include functions in a given file in any transformation
+   0.0006 (  0.3%)   0.0000 (  0.2%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Natural Loop Information
+   0.0003 (  0.2%)   0.0003 (  2.9%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Module Verifier
+   0.0004 (  0.2%)   0.0000 (  0.1%)   0.0004 (  0.2%)   0.0005 (  0.2%)  Dominator Tree Construction
+   0.0004 (  0.2%)   0.0000 (  0.1%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Post-Dominator Tree Construction
    0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
+   0.0003 (  0.1%)   0.0000 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Natural Loop Information
    0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
-   0.0001 (  0.1%)   0.0000 (  0.1%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Function Alias Analysis Results
-   0.0001 (  0.1%)   0.0000 (  0.1%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Basic Alias Analysis (stateless AA impl)
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Function Alias Analysis Results
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.2002 (100.0%)   0.0080 (100.0%)   0.2082 (100.0%)   0.2082 (100.0%)  Total
+   0.1982 (100.0%)   0.0105 (100.0%)   0.2086 (100.0%)   0.2087 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0040 seconds (0.0041 wall clock)
+  Total Execution Time: 0.0031 seconds (0.0031 wall clock)
 
    ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0040 (100.0%)   0.0040 (100.0%)   0.0041 (100.0%)  Parse IR
-   0.0040 (100.0%)   0.0040 (100.0%)   0.0041 (100.0%)  Total
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Parse IR
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function bit_count0
@@ -1177,20 +1075,13 @@ Processing function main5
 Processing function main6
 Processing function main7
 Processing function main8
-Processing function main9
 Processing function main
 Processing function bit_shifter0
 Processing function bit_shifter1
 Processing function bit_shifter
-Processing function bfopen0
-Processing function bfopen1
 Processing function bfopen
-Processing function bfread0
 Processing function bfread
-Processing function bfwrite0
-Processing function bfwrite1
 Processing function bfwrite
-Processing function bfclose0
 Processing function bfclose
 Processing function bitstring0
 Processing function bitstring1
@@ -1215,29 +1106,15 @@ Mark Input dependent function bitstring1
 Finalizing bitstring0
 Mark Input dependent function bitstring0
 Finalizing bfclose
-Finalizing bfclose0
-Mark Input dependent function bfclose0
 Finalizing bfwrite
-Finalizing bfwrite1
-Mark Input dependent function bfwrite1
-Finalizing bfwrite0
-Mark Input dependent function bfwrite0
 Finalizing bfread
-Finalizing bfread0
-Mark Input dependent function bfread0
 Finalizing bfopen
-Finalizing bfopen1
-Mark Input dependent function bfopen1
-Finalizing bfopen0
-Mark Input dependent function bfopen0
 Finalizing bit_shifter
 Finalizing bit_shifter1
 Mark Input dependent function bit_shifter1
 Finalizing bit_shifter0
 Mark Input dependent function bit_shifter0
 Finalizing main
-Finalizing main9
-Mark Input dependent function main9
 Finalizing main8
 Mark Input dependent function main8
 Finalizing main7
@@ -1281,27 +1158,24 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/bitcnts.x.bc/25/0
-here!:bitcount
-here!:bfopen0
-here!:main0
-here!:bitstring0
+here!:BW_btbl_bitcount
+here!:bit_count0
+here!:bfopen
 here!:btbl_bitcnt0
-here!:bitstring3
-here!:ntbl_bitcnt0
-here!:bfwrite0
-here!:bitstring2
-here!:ntbl_bitcnt
-here!:main5
-here!:main5
+here!:bitstring4
+here!:bit_shifter
+here!:bitstring
+here!:bitstring0
+here!:main1
+here!:main1
 got filter function names
 did not find bit_count demangled to bit_count
-Add filter function bitcount
-FunctionInfo. Adding function:bitcount
+did not find bitcount demangled to bitcount
 did not find ntbl_bitcount demangled to ntbl_bitcount
-did not find BW_btbl_bitcount demangled to BW_btbl_bitcount
+Add filter function BW_btbl_bitcount
+FunctionInfo. Adding function:BW_btbl_bitcount
 did not find AR_btbl_bitcount demangled to AR_btbl_bitcount
-Add filter function ntbl_bitcnt
-FunctionInfo. Adding function:ntbl_bitcnt
+did not find ntbl_bitcnt demangled to ntbl_bitcnt
 did not find btbl_bitcnt demangled to btbl_bitcnt
 did not find main demangled to main
 did not find fprintf demangled to fprintf
@@ -1311,8 +1185,10 @@ did not find puts demangled to puts
 did not find clock demangled to clock
 did not find rand demangled to rand
 did not find printf demangled to printf
-did not find bit_shifter demangled to bit_shifter
-did not find bfopen demangled to bfopen
+Add filter function bit_shifter
+FunctionInfo. Adding function:bit_shifter
+Add filter function bfopen
+FunctionInfo. Adding function:bfopen
 did not find malloc demangled to malloc
 did not find fopen demangled to fopen
 did not find free demangled to free
@@ -1322,44 +1198,34 @@ did not find bfwrite demangled to bfwrite
 did not find fputc demangled to fputc
 did not find bfclose demangled to bfclose
 did not find fclose demangled to fclose
-did not find bitstring demangled to bitstring
+Add filter function bitstring
+FunctionInfo. Adding function:bitstring
 did not find bstr_i demangled to bstr_i
 did not find strchr demangled to strchr
-did not find bit_count0 demangled to bit_count0
-Add filter function ntbl_bitcnt0
-FunctionInfo. Adding function:ntbl_bitcnt0
+Add filter function bit_count0
+FunctionInfo. Adding function:bit_count0
+did not find ntbl_bitcnt0 demangled to ntbl_bitcnt0
 Add filter function btbl_bitcnt0
 FunctionInfo. Adding function:btbl_bitcnt0
-Add filter function main0
-FunctionInfo. Adding function:main0
-did not find main1 demangled to main1
+did not find main0 demangled to main0
+Add filter function main1
+FunctionInfo. Adding function:main1
 did not find main2 demangled to main2
 did not find main3 demangled to main3
 did not find main4 demangled to main4
-Add filter function main5
-FunctionInfo. Adding function:main5
+did not find main5 demangled to main5
 did not find main6 demangled to main6
 did not find main7 demangled to main7
 did not find main8 demangled to main8
-did not find main9 demangled to main9
 did not find bit_shifter0 demangled to bit_shifter0
 did not find bit_shifter1 demangled to bit_shifter1
-Add filter function bfopen0
-FunctionInfo. Adding function:bfopen0
-did not find bfopen1 demangled to bfopen1
-did not find bfread0 demangled to bfread0
-Add filter function bfwrite0
-FunctionInfo. Adding function:bfwrite0
-did not find bfwrite1 demangled to bfwrite1
-did not find bfclose0 demangled to bfclose0
 Add filter function bitstring0
 FunctionInfo. Adding function:bitstring0
 did not find bitstring1 demangled to bitstring1
-Add filter function bitstring2
-FunctionInfo. Adding function:bitstring2
-Add filter function bitstring3
-FunctionInfo. Adding function:bitstring3
-did not find bitstring4 demangled to bitstring4
+did not find bitstring2 demangled to bitstring2
+did not find bitstring3 demangled to bitstring3
+Add filter function bitstring4
+FunctionInfo. Adding function:bitstring4
 did not find bstr_i0 demangled to bstr_i0
 Adding bit_count other functions, ExtractedOnly mode uses other functions
 Adding bitcount other functions, ExtractedOnly mode uses other functions
@@ -1388,51 +1254,44 @@ Adding main5 other functions, ExtractedOnly mode uses other functions
 Adding main6 other functions, ExtractedOnly mode uses other functions
 Adding main7 other functions, ExtractedOnly mode uses other functions
 Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter0 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter1 other functions, ExtractedOnly mode uses other functions
-Adding bfopen0 other functions, ExtractedOnly mode uses other functions
-Adding bfopen1 other functions, ExtractedOnly mode uses other functions
-Adding bfread0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite1 other functions, ExtractedOnly mode uses other functions
-Adding bfclose0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring1 other functions, ExtractedOnly mode uses other functions
 Adding bitstring2 other functions, ExtractedOnly mode uses other functions
 Adding bitstring3 other functions, ExtractedOnly mode uses other functions
 Adding bitstring4 other functions, ExtractedOnly mode uses other functions
 Adding bstr_i0 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:42
+Sensitive functions:0 other functions:35
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
-bfwrite1
-main9
+bstr_i0
+bit_shifter0
 ntbl_bitcnt
 bfwrite
 BW_btbl_bitcount
 bfclose
 main1
-bfwrite0
+bitstring4
 main3
-bstr_i0
+bfread
 bitstring
 bitstring0
 bitcount
-bitstring4
+main8
 main4
 bit_shifter
 bfopen
-bit_shifter0
+bit_shifter1
 ntbl_bitcount
 btbl_bitcnt
-bfopen0
+bitstring1
 main7
 main6
-bitstring1
-bfread0
-bfclose0
+main
+bitstring3
+main5
 AR_btbl_bitcount
 bit_count0
 bitstring2
@@ -1441,13 +1300,6 @@ btbl_bitcnt0
 bstr_i
 bit_count
 main2
-main5
-bit_shifter1
-main
-bfopen1
-bitstring3
-main8
-bfread
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -1472,7 +1324,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 42 function, while filter count is 11
+ERR. processed 35 function, while filter count is 9
 Functions called in loop
 Function call numbers
 main -- 0
@@ -1483,69 +1335,91 @@ PSNodeType::PHI with ID 63
 Warning: Empty PHI
 PSNodeType::PHI with ID 64
   - operands: []
-No reaching definition for:   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %i.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %iterations = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %iterations.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 11
+Recieved filter functions 9
  Skipping function per FilterFunctionPass:bit_count
-Collecting defining blocks for bitcount
+ Skipping function per FilterFunctionPass:bitcount
  Skipping function per FilterFunctionPass:ntbl_bitcount
- Skipping function per FilterFunctionPass:BW_btbl_bitcount
+Collecting defining blocks for BW_btbl_bitcount
  Skipping function per FilterFunctionPass:AR_btbl_bitcount
-Collecting defining blocks for ntbl_bitcnt
+ Skipping function per FilterFunctionPass:ntbl_bitcnt
  Skipping function per FilterFunctionPass:btbl_bitcnt
  Skipping function per FilterFunctionPass:main
- Skipping function per FilterFunctionPass:bit_shifter
- Skipping function per FilterFunctionPass:bfopen
+Collecting defining blocks for bit_shifter
+Skip. No dependence graph for function bfopen
  Skipping function per FilterFunctionPass:bfread
  Skipping function per FilterFunctionPass:bfwrite
  Skipping function per FilterFunctionPass:bfclose
- Skipping function per FilterFunctionPass:bitstring
+Skip. No dependence graph for function bitstring
  Skipping function per FilterFunctionPass:bstr_i
  Skipping function per FilterFunctionPass:bit_count
- Processing function:bitcount
+ Skipping function per FilterFunctionPass:bitcount
+ Skipping function per FilterFunctionPass:ntbl_bitcount
+ Processing function:BW_btbl_bitcount
 Short range hashing enabled.
 Processing path: entry  
 After path modifications process path
 entry  
 No oh has been applied in the path
- Skipping function per FilterFunctionPass:ntbl_bitcount
- Skipping function per FilterFunctionPass:BW_btbl_bitcount
  Skipping function per FilterFunctionPass:AR_btbl_bitcount
- Processing function:ntbl_bitcnt
-Short range hashing enabled.
-Processing path: entry  if.then  
-After path modifications process path
-entry  if.then  
-Processing path: entry  if.end  
-After path modifications process path
-entry  if.end  
+ Skipping function per FilterFunctionPass:ntbl_bitcnt
  Skipping function per FilterFunctionPass:btbl_bitcnt
  Skipping function per FilterFunctionPass:main
- Skipping function per FilterFunctionPass:bit_shifter
- Skipping function per FilterFunctionPass:bfopen
+ Processing function:bit_shifter
+Short range hashing enabled.
+Processing path: entry  for.cond  land.rhs  
+After path modifications process path
+land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Processing path: entry  for.cond  land.end  for.body  for.inc  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
+  call void @bit_shifter0(i32* %n, i64* %x.addr), !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11, !input_dep_block !13
+Processing call instruction..
+Can't handle this operand   %n = alloca i32, align 4, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @bit_shifter0(i32* %n, i64* %x.addr), !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11, !input_dep_block !13
+Can't handle this operand   %x.addr = alloca i64, align 8, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @bit_shifter0(i32* %n, i64* %x.addr), !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11, !input_dep_block !13
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Processing path: entry  for.cond  land.end  for.end  
+After path modifications process path is empty
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
+Skip. No dependence graph for function bfopen
  Skipping function per FilterFunctionPass:bfread
  Skipping function per FilterFunctionPass:bfwrite
  Skipping function per FilterFunctionPass:bfclose
- Skipping function per FilterFunctionPass:bitstring
+Skip. No dependence graph for function bitstring
  Skipping function per FilterFunctionPass:bstr_i
-Extract path function for assertion assert_ntbl_bitcnt_path_0
-Extract path function for assertion assert_ntbl_bitcnt_path_1
+Extract path function for assertion assert_bit_shifter_path_1
+Extract path function for assertion assert_bit_shifter_path_3
+Extract path function for assertion assert_bit_shifter_path_5
 OH stats is requested, dumping stat file...
-Processed instructions number 504
+Processed instructions number 565
 {
     "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 56,
+    "numberOfBlocksInFunctionsWithNoDG": 17,
+    "numberOfDataDependentInstructions": 47,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 444,
-    "numberOfInstructionsInFunctionsWithNoDG": 0,
-    "numberOfNonHashableBlocks": 2,
-    "numberOfNonHashableInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 414,
+    "numberOfInstructionsInFunctionsWithNoDG": 91,
+    "numberOfNonHashableBlocks": 4,
+    "numberOfNonHashableInstructions": 4,
     "numberOfOHProcessedInstr": 60,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
@@ -1555,63 +1429,63 @@ Processed instructions number 504
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
     "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 4,
+    "numberOfSensitiveBlocks": 8,
     "numberOfSensitiveFunctions": 2,
-    "numberOfShortRangeAssertCalls": 2,
+    "numberOfShortRangeAssertCalls": 3,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 2,
+    "numberOfShortRangeProtectedBlocks": 1,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
     "numberOfShortRangeProtectedInstructions": 2,
-    "numberOfUnprotectedArgumentReachableInstructions": 2,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 3,
     "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 0
+    "numberOfUnprotectedLoopInstructions": 7
 }
-ERR. processed 2 function, while filter count is 11
+ERR. processed 2 function, while filter count is 9
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.1707 seconds (0.1708 wall clock)
+  Total Execution Time: 0.1677 seconds (0.1676 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0852 ( 51.0%)   0.0001 (  1.9%)   0.0852 ( 49.9%)   0.0853 ( 49.9%)  runs input dependency analysis
-   0.0754 ( 45.1%)   0.0035 ( 94.0%)   0.0789 ( 46.2%)   0.0789 ( 46.2%)  Instruments bitcode with hashing and logging functions
-   0.0019 (  1.1%)   0.0000 (  0.0%)   0.0019 (  1.1%)   0.0019 (  1.1%)  Bitcode Writer
-   0.0009 (  0.6%)   0.0000 (  0.0%)   0.0009 (  0.5%)   0.0009 (  0.5%)  Instruments bitcode with guards
-   0.0006 (  0.4%)   0.0000 (  0.0%)   0.0006 (  0.4%)   0.0006 (  0.3%)  Module Verifier
-   0.0006 (  0.4%)   0.0000 (  0.0%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Post-Dominator Tree Construction
-   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Dominator Tree Construction
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.3%)  Natural Loop Information
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Include functions in a given file in any transformation
+   0.0831 ( 49.6%)   0.0001 ( 88.5%)   0.0832 ( 49.6%)   0.0832 ( 49.6%)  runs input dependency analysis
+   0.0777 ( 46.3%)   0.0000 (  0.0%)   0.0777 ( 46.3%)   0.0777 ( 46.3%)  Instruments bitcode with hashing and logging functions
+   0.0018 (  1.0%)   0.0000 (  0.0%)   0.0018 (  1.0%)   0.0018 (  1.0%)  Bitcode Writer
+   0.0010 (  0.6%)   0.0000 (  0.0%)   0.0010 (  0.6%)   0.0010 (  0.6%)  Instruments bitcode with guards
+   0.0006 (  0.4%)   0.0000 (  0.0%)   0.0006 (  0.4%)   0.0006 (  0.4%)  Memory SSA
+   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Include functions in a given file in any transformation
+   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Module Verifier
+   0.0005 (  0.3%)   0.0000 (  4.9%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Dominator Tree Construction
+   0.0005 (  0.3%)   0.0000 (  3.3%)   0.0005 (  0.3%)   0.0004 (  0.3%)  Post-Dominator Tree Construction
    0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
-   0.0003 (  0.2%)   0.0000 (  0.2%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Memory SSA
-   0.0002 (  0.1%)   0.0001 (  1.6%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0001 (  1.6%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.3%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.3%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0003 (  0.2%)   0.0000 (  3.3%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Natural Loop Information
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Dominator Tree Construction
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.1669 (100.0%)   0.0038 (100.0%)   0.1707 (100.0%)   0.1708 (100.0%)  Total
+   0.1676 (100.0%)   0.0001 (100.0%)   0.1677 (100.0%)   0.1676 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0024 seconds (0.0024 wall clock)
+  Total Execution Time: 0.0032 seconds (0.0032 wall clock)
 
-   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0024 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Parse IR
-   0.0024 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Total
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0032 (100.0%)   0.0032 (100.0%)   0.0032 (100.0%)  Parse IR
+   0.0032 (100.0%)   0.0032 (100.0%)   0.0032 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function bit_count0
@@ -1633,20 +1507,13 @@ Processing function main5
 Processing function main6
 Processing function main7
 Processing function main8
-Processing function main9
 Processing function main
 Processing function bit_shifter0
 Processing function bit_shifter1
 Processing function bit_shifter
-Processing function bfopen0
-Processing function bfopen1
 Processing function bfopen
-Processing function bfread0
 Processing function bfread
-Processing function bfwrite0
-Processing function bfwrite1
 Processing function bfwrite
-Processing function bfclose0
 Processing function bfclose
 Processing function bitstring0
 Processing function bitstring1
@@ -1671,29 +1538,15 @@ Mark Input dependent function bitstring1
 Finalizing bitstring0
 Mark Input dependent function bitstring0
 Finalizing bfclose
-Finalizing bfclose0
-Mark Input dependent function bfclose0
 Finalizing bfwrite
-Finalizing bfwrite1
-Mark Input dependent function bfwrite1
-Finalizing bfwrite0
-Mark Input dependent function bfwrite0
 Finalizing bfread
-Finalizing bfread0
-Mark Input dependent function bfread0
 Finalizing bfopen
-Finalizing bfopen1
-Mark Input dependent function bfopen1
-Finalizing bfopen0
-Mark Input dependent function bfopen0
 Finalizing bit_shifter
 Finalizing bit_shifter1
 Mark Input dependent function bit_shifter1
 Finalizing bit_shifter0
 Mark Input dependent function bit_shifter0
 Finalizing main
-Finalizing main9
-Mark Input dependent function main9
 Finalizing main8
 Mark Input dependent function main8
 Finalizing main7
@@ -1737,36 +1590,34 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/bitcnts.x.bc/50/0
-here!:bitcount
-here!:bfopen0
-here!:main0
-here!:bitstring0
-here!:btbl_bitcnt0
-here!:bitstring3
-here!:ntbl_bitcnt0
-here!:bfwrite0
-here!:bitstring2
-here!:ntbl_bitcnt
-here!:main5
-here!:bfwrite
-here!:main7
-here!:bfopen1
-here!:main9
-here!:bstr_i0
+here!:BW_btbl_bitcount
 here!:bit_count0
-here!:bfread
-here!:bit_shifter0
-here!:bit_count
 here!:bfopen
-here!:bfopen
+here!:btbl_bitcnt0
+here!:bitstring4
+here!:bit_shifter
+here!:bitstring
+here!:bitstring0
+here!:main1
+here!:ntbl_bitcnt0
+here!:ntbl_bitcnt
+here!:bstr_i
+here!:main4
+here!:main3
+here!:AR_btbl_bitcount
+here!:bfclose
+here!:main7
+here!:bitcount
+here!:bitcount
 got filter function names
-Add filter function bit_count
-FunctionInfo. Adding function:bit_count
+did not find bit_count demangled to bit_count
 Add filter function bitcount
 FunctionInfo. Adding function:bitcount
 did not find ntbl_bitcount demangled to ntbl_bitcount
-did not find BW_btbl_bitcount demangled to BW_btbl_bitcount
-did not find AR_btbl_bitcount demangled to AR_btbl_bitcount
+Add filter function BW_btbl_bitcount
+FunctionInfo. Adding function:BW_btbl_bitcount
+Add filter function AR_btbl_bitcount
+FunctionInfo. Adding function:AR_btbl_bitcount
 Add filter function ntbl_bitcnt
 FunctionInfo. Adding function:ntbl_bitcnt
 did not find btbl_bitcnt demangled to btbl_bitcnt
@@ -1778,22 +1629,24 @@ did not find puts demangled to puts
 did not find clock demangled to clock
 did not find rand demangled to rand
 did not find printf demangled to printf
-did not find bit_shifter demangled to bit_shifter
+Add filter function bit_shifter
+FunctionInfo. Adding function:bit_shifter
 Add filter function bfopen
 FunctionInfo. Adding function:bfopen
 did not find malloc demangled to malloc
 did not find fopen demangled to fopen
 did not find free demangled to free
-Add filter function bfread
-FunctionInfo. Adding function:bfread
+did not find bfread demangled to bfread
 did not find fgetc demangled to fgetc
-Add filter function bfwrite
-FunctionInfo. Adding function:bfwrite
+did not find bfwrite demangled to bfwrite
 did not find fputc demangled to fputc
-did not find bfclose demangled to bfclose
+Add filter function bfclose
+FunctionInfo. Adding function:bfclose
 did not find fclose demangled to fclose
-did not find bitstring demangled to bitstring
-did not find bstr_i demangled to bstr_i
+Add filter function bitstring
+FunctionInfo. Adding function:bitstring
+Add filter function bstr_i
+FunctionInfo. Adding function:bstr_i
 did not find strchr demangled to strchr
 Add filter function bit_count0
 FunctionInfo. Adding function:bit_count0
@@ -1801,42 +1654,29 @@ Add filter function ntbl_bitcnt0
 FunctionInfo. Adding function:ntbl_bitcnt0
 Add filter function btbl_bitcnt0
 FunctionInfo. Adding function:btbl_bitcnt0
-Add filter function main0
-FunctionInfo. Adding function:main0
-did not find main1 demangled to main1
+did not find main0 demangled to main0
+Add filter function main1
+FunctionInfo. Adding function:main1
 did not find main2 demangled to main2
-did not find main3 demangled to main3
-did not find main4 demangled to main4
-Add filter function main5
-FunctionInfo. Adding function:main5
+Add filter function main3
+FunctionInfo. Adding function:main3
+Add filter function main4
+FunctionInfo. Adding function:main4
+did not find main5 demangled to main5
 did not find main6 demangled to main6
 Add filter function main7
 FunctionInfo. Adding function:main7
 did not find main8 demangled to main8
-Add filter function main9
-FunctionInfo. Adding function:main9
-Add filter function bit_shifter0
-FunctionInfo. Adding function:bit_shifter0
+did not find bit_shifter0 demangled to bit_shifter0
 did not find bit_shifter1 demangled to bit_shifter1
-Add filter function bfopen0
-FunctionInfo. Adding function:bfopen0
-Add filter function bfopen1
-FunctionInfo. Adding function:bfopen1
-did not find bfread0 demangled to bfread0
-Add filter function bfwrite0
-FunctionInfo. Adding function:bfwrite0
-did not find bfwrite1 demangled to bfwrite1
-did not find bfclose0 demangled to bfclose0
 Add filter function bitstring0
 FunctionInfo. Adding function:bitstring0
 did not find bitstring1 demangled to bitstring1
-Add filter function bitstring2
-FunctionInfo. Adding function:bitstring2
-Add filter function bitstring3
-FunctionInfo. Adding function:bitstring3
-did not find bitstring4 demangled to bitstring4
-Add filter function bstr_i0
-FunctionInfo. Adding function:bstr_i0
+did not find bitstring2 demangled to bitstring2
+did not find bitstring3 demangled to bitstring3
+Add filter function bitstring4
+FunctionInfo. Adding function:bitstring4
+did not find bstr_i0 demangled to bstr_i0
 Adding bit_count other functions, ExtractedOnly mode uses other functions
 Adding bitcount other functions, ExtractedOnly mode uses other functions
 Adding ntbl_bitcount other functions, ExtractedOnly mode uses other functions
@@ -1864,51 +1704,44 @@ Adding main5 other functions, ExtractedOnly mode uses other functions
 Adding main6 other functions, ExtractedOnly mode uses other functions
 Adding main7 other functions, ExtractedOnly mode uses other functions
 Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter0 other functions, ExtractedOnly mode uses other functions
 Adding bit_shifter1 other functions, ExtractedOnly mode uses other functions
-Adding bfopen0 other functions, ExtractedOnly mode uses other functions
-Adding bfopen1 other functions, ExtractedOnly mode uses other functions
-Adding bfread0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite0 other functions, ExtractedOnly mode uses other functions
-Adding bfwrite1 other functions, ExtractedOnly mode uses other functions
-Adding bfclose0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring0 other functions, ExtractedOnly mode uses other functions
 Adding bitstring1 other functions, ExtractedOnly mode uses other functions
 Adding bitstring2 other functions, ExtractedOnly mode uses other functions
 Adding bitstring3 other functions, ExtractedOnly mode uses other functions
 Adding bitstring4 other functions, ExtractedOnly mode uses other functions
 Adding bstr_i0 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:42
+Sensitive functions:0 other functions:35
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
 main0
-bfwrite1
-main9
+bstr_i0
+bit_shifter0
 ntbl_bitcnt
 bfwrite
 BW_btbl_bitcount
 bfclose
 main1
-bfwrite0
+bitstring4
 main3
-bstr_i0
+bfread
 bitstring
 bitstring0
 bitcount
-bitstring4
+main8
 main4
 bit_shifter
 bfopen
-bit_shifter0
+bit_shifter1
 ntbl_bitcount
 btbl_bitcnt
-bfopen0
+bitstring1
 main7
 main6
-bitstring1
-bfread0
-bfclose0
+main
+bitstring3
+main5
 AR_btbl_bitcount
 bit_count0
 bitstring2
@@ -1917,13 +1750,6 @@ btbl_bitcnt0
 bstr_i
 bit_count
 main2
-main5
-bit_shifter1
-main
-bfopen1
-bitstring3
-main8
-bfread
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -1948,7 +1774,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 42 function, while filter count is 21
+ERR. processed 35 function, while filter count is 18
 Functions called in loop
 Function call numbers
 main -- 0
@@ -1959,38 +1785,27 @@ PSNodeType::PHI with ID 63
 Warning: Empty PHI
 PSNodeType::PHI with ID 64
   - operands: []
-No reaching definition for:   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %i.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %iterations = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 in:   %iterations.el = alloca i32, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 21
-Collecting defining blocks for bit_count
+Recieved filter functions 18
+ Skipping function per FilterFunctionPass:bit_count
 Collecting defining blocks for bitcount
  Skipping function per FilterFunctionPass:ntbl_bitcount
- Skipping function per FilterFunctionPass:BW_btbl_bitcount
- Skipping function per FilterFunctionPass:AR_btbl_bitcount
+Collecting defining blocks for BW_btbl_bitcount
+Collecting defining blocks for AR_btbl_bitcount
 Collecting defining blocks for ntbl_bitcnt
  Skipping function per FilterFunctionPass:btbl_bitcnt
  Skipping function per FilterFunctionPass:main
- Skipping function per FilterFunctionPass:bit_shifter
+Collecting defining blocks for bit_shifter
 Skip. No dependence graph for function bfopen
-Skip. No dependence graph for function bfread
-Skip. No dependence graph for function bfwrite
- Skipping function per FilterFunctionPass:bfclose
- Skipping function per FilterFunctionPass:bitstring
- Skipping function per FilterFunctionPass:bstr_i
- Processing function:bit_count
-Short range hashing enabled.
-Processing path: entry  if.then  do.body  do.cond  do.end  
-After path modifications process path is empty
-Processing path: entry  if.then  do.end  
-After path modifications process path
-entry  if.then  do.end  
-Processing path: entry  if.end  
-After path modifications process path
-entry  if.end  
+ Skipping function per FilterFunctionPass:bfread
+ Skipping function per FilterFunctionPass:bfwrite
+Skip. No dependence graph for function bfclose
+Skip. No dependence graph for function bitstring
+Skip. No dependence graph for function bstr_i
+ Skipping function per FilterFunctionPass:bit_count
  Processing function:bitcount
 Short range hashing enabled.
 Processing path: entry  
@@ -1998,8 +1813,18 @@ After path modifications process path
 entry  
 No oh has been applied in the path
  Skipping function per FilterFunctionPass:ntbl_bitcount
- Skipping function per FilterFunctionPass:BW_btbl_bitcount
- Skipping function per FilterFunctionPass:AR_btbl_bitcount
+ Processing function:BW_btbl_bitcount
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+No oh has been applied in the path
+ Processing function:AR_btbl_bitcount
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+No oh has been applied in the path
  Processing function:ntbl_bitcnt
 Short range hashing enabled.
 Processing path: entry  if.then  
@@ -2010,31 +1835,62 @@ After path modifications process path
 entry  if.end  
  Skipping function per FilterFunctionPass:btbl_bitcnt
  Skipping function per FilterFunctionPass:main
- Skipping function per FilterFunctionPass:bit_shifter
+ Processing function:bit_shifter
+Short range hashing enabled.
+Processing path: entry  for.cond  land.rhs  
+After path modifications process path
+land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Processing path: entry  for.cond  land.end  for.body  for.inc  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
+  call void @bit_shifter0(i32* %n, i64* %x.addr), !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11, !input_dep_block !13
+Processing call instruction..
+Can't handle this operand   %n = alloca i32, align 4, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @bit_shifter0(i32* %n, i64* %x.addr), !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11, !input_dep_block !13
+Can't handle this operand   %x.addr = alloca i64, align 8, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @bit_shifter0(i32* %n, i64* %x.addr), !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11, !input_dep_block !13
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Processing path: entry  for.cond  land.end  for.end  
+After path modifications process path is empty
+Processing path: entry  for.end  
+After path modifications process path
+entry  for.end  
 Skip. No dependence graph for function bfopen
-Skip. No dependence graph for function bfread
-Skip. No dependence graph for function bfwrite
- Skipping function per FilterFunctionPass:bfclose
- Skipping function per FilterFunctionPass:bitstring
- Skipping function per FilterFunctionPass:bstr_i
+ Skipping function per FilterFunctionPass:bfread
+ Skipping function per FilterFunctionPass:bfwrite
+Skip. No dependence graph for function bfclose
+Skip. No dependence graph for function bitstring
+Skip. No dependence graph for function bstr_i
+Extract path function for assertion assert_bit_shifter_path_1
+Extract path function for assertion assert_bit_shifter_path_3
+Extract path function for assertion assert_bit_shifter_path_5
 Extract path function for assertion assert_ntbl_bitcnt_path_0
 Extract path function for assertion assert_ntbl_bitcnt_path_1
-Extract path function for assertion assert_bit_count_path_1
-Extract path function for assertion assert_bit_count_path_2
 OH stats is requested, dumping stat file...
-Processed instructions number 504
+Processed instructions number 565
 {
     "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 12,
-    "numberOfDataDependentInstructions": 60,
+    "numberOfBlocksInFunctionsWithNoDG": 25,
+    "numberOfDataDependentInstructions": 151,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 350,
-    "numberOfInstructionsInFunctionsWithNoDG": 74,
-    "numberOfNonHashableBlocks": 3,
-    "numberOfNonHashableInstructions": 0,
-    "numberOfOHProcessedInstr": 80,
-    "numberOfOtherUnprotectedInstructions": 2,
+    "numberOfInstructionsInFilteredFunctions": 271,
+    "numberOfInstructionsInFunctionsWithNoDG": 126,
+    "numberOfNonHashableBlocks": 7,
+    "numberOfNonHashableInstructions": 4,
+    "numberOfOHProcessedInstr": 168,
+    "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 0,
@@ -2042,61 +1898,61 @@ Processed instructions number 504
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
     "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 10,
-    "numberOfSensitiveFunctions": 3,
-    "numberOfShortRangeAssertCalls": 4,
+    "numberOfSensitiveBlocks": 13,
+    "numberOfSensitiveFunctions": 5,
+    "numberOfShortRangeAssertCalls": 5,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 5,
+    "numberOfShortRangeProtectedBlocks": 3,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 5,
-    "numberOfUnprotectedArgumentReachableInstructions": 4,
+    "numberOfShortRangeProtectedInstructions": 4,
+    "numberOfUnprotectedArgumentReachableInstructions": 2,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedDataDependentLoopBlocks": 3,
     "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 9
+    "numberOfUnprotectedLoopInstructions": 7
 }
-ERR. processed 3 function, while filter count is 21
+ERR. processed 5 function, while filter count is 18
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.1735 seconds (0.1735 wall clock)
+  Total Execution Time: 0.1780 seconds (0.1780 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0848 ( 48.9%)   0.0002 ( 84.3%)   0.0850 ( 49.0%)   0.0850 ( 49.0%)  runs input dependency analysis
-   0.0812 ( 46.8%)   0.0000 (  0.0%)   0.0812 ( 46.8%)   0.0812 ( 46.8%)  Instruments bitcode with hashing and logging functions
-   0.0020 (  1.1%)   0.0000 (  0.0%)   0.0020 (  1.1%)   0.0020 (  1.1%)  Bitcode Writer
-   0.0010 (  0.6%)   0.0000 (  0.0%)   0.0010 (  0.6%)   0.0010 (  0.6%)  Instruments bitcode with guards
-   0.0006 (  0.4%)   0.0000 (  0.0%)   0.0006 (  0.4%)   0.0006 (  0.4%)  Module Verifier
-   0.0006 (  0.3%)   0.0000 (  6.6%)   0.0006 (  0.4%)   0.0006 (  0.3%)  Post-Dominator Tree Construction
-   0.0006 (  0.3%)   0.0000 (  5.6%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Dominator Tree Construction
-   0.0006 (  0.3%)   0.0000 (  0.0%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Include functions in a given file in any transformation
-   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Memory SSA
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Call site information
-   0.0003 (  0.2%)   0.0000 (  3.5%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Natural Loop Information
-   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
-   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Dominator Tree Construction
-   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Natural Loop Information
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0819 ( 47.0%)   0.0034 ( 90.5%)   0.0854 ( 48.0%)   0.0854 ( 48.0%)  runs input dependency analysis
+   0.0836 ( 48.0%)   0.0000 (  0.0%)   0.0836 ( 47.0%)   0.0836 ( 47.0%)  Instruments bitcode with hashing and logging functions
+   0.0030 (  1.7%)   0.0000 (  0.0%)   0.0030 (  1.7%)   0.0031 (  1.7%)  Bitcode Writer
+   0.0011 (  0.7%)   0.0000 (  0.0%)   0.0011 (  0.6%)   0.0011 (  0.6%)  Memory SSA
+   0.0009 (  0.5%)   0.0000 (  0.0%)   0.0009 (  0.5%)   0.0009 (  0.5%)  Instruments bitcode with guards
+   0.0007 (  0.4%)   0.0000 (  0.0%)   0.0007 (  0.4%)   0.0007 (  0.4%)  Module Verifier
+   0.0005 (  0.3%)   0.0001 (  2.1%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Post-Dominator Tree Construction
+   0.0005 (  0.3%)   0.0000 (  0.0%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Include functions in a given file in any transformation
+   0.0004 (  0.3%)   0.0001 (  1.5%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Dominator Tree Construction
+   0.0003 (  0.2%)   0.0001 (  1.3%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Natural Loop Information
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0003 (  0.1%)  Dominator Tree Construction
+   0.0001 (  0.1%)   0.0001 (  2.8%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.7%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.6%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.4%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.1733 (100.0%)   0.0003 (100.0%)   0.1735 (100.0%)   0.1735 (100.0%)  Total
+   0.1742 (100.0%)   0.0038 (100.0%)   0.1780 (100.0%)   0.1780 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0024 seconds (0.0024 wall clock)
+  Total Execution Time: 0.0033 seconds (0.0033 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0012 (100.0%)   0.0012 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Parse IR
-   0.0012 (100.0%)   0.0012 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Total
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0033 (100.0%)   0.0033 (100.0%)   0.0033 (100.0%)  Parse IR
+   0.0033 (100.0%)   0.0033 (100.0%)   0.0033 (100.0%)  Total
 

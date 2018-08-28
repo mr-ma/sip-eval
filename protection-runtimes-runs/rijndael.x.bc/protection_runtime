@@ -5,10 +5,6 @@ Processing function set_key2
 Processing function set_key3
 Processing function set_key4
 Processing function set_key5
-Processing function set_key6
-Processing function set_key7
-Processing function set_key8
-Processing function set_key9
 Processing function set_key
 Processing function encrypt
 Processing function decrypt
@@ -30,23 +26,8 @@ Processing function decfile4
 Processing function decfile
 Processing function main0
 Processing function main1
-Processing function main2
-Processing function main3
-Processing function main4
-Processing function main5
-Processing function main6
 Processing function main
 Finalizing main
-Finalizing main6
-Mark Input dependent function main6
-Finalizing main5
-Mark Input dependent function main5
-Finalizing main4
-Mark Input dependent function main4
-Finalizing main3
-Mark Input dependent function main3
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -89,14 +70,6 @@ Finalizing encrypt
 Mark Input dependent function encrypt
 Finalizing set_key
 Mark Input dependent function set_key
-Finalizing set_key9
-Mark Input dependent function set_key9
-Finalizing set_key8
-Mark Input dependent function set_key8
-Finalizing set_key7
-Mark Input dependent function set_key7
-Finalizing set_key6
-Mark Input dependent function set_key6
 Finalizing set_key5
 Mark Input dependent function set_key5
 Finalizing set_key4
@@ -114,19 +87,16 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/rijndael.x.bc/10/0
-here!:encfile
-here!:main2
-here!:fillrand
 here!:decfile1
-here!:decfile1
+here!:main1
+here!:encfile2
+here!:encfile2
 got filter function names
 did not find set_key demangled to set_key
 did not find encrypt demangled to encrypt
 did not find decrypt demangled to decrypt
-Add filter function fillrand
-FunctionInfo. Adding function:fillrand
-Add filter function encfile
-FunctionInfo. Adding function:encfile
+did not find fillrand demangled to fillrand
+did not find encfile demangled to encfile
 did not find fseek demangled to fseek
 did not find fgetpos demangled to fgetpos
 did not find fwrite demangled to fwrite
@@ -144,17 +114,14 @@ did not find set_key2 demangled to set_key2
 did not find set_key3 demangled to set_key3
 did not find set_key4 demangled to set_key4
 did not find set_key5 demangled to set_key5
-did not find set_key6 demangled to set_key6
-did not find set_key7 demangled to set_key7
-did not find set_key8 demangled to set_key8
-did not find set_key9 demangled to set_key9
 did not find fillrand0 demangled to fillrand0
 did not find fillrand1 demangled to fillrand1
 did not find fillrand2 demangled to fillrand2
 did not find fillrand3 demangled to fillrand3
 did not find encfile0 demangled to encfile0
 did not find encfile1 demangled to encfile1
-did not find encfile2 demangled to encfile2
+Add filter function encfile2
+FunctionInfo. Adding function:encfile2
 did not find encfile3 demangled to encfile3
 did not find decfile0 demangled to decfile0
 Add filter function decfile1
@@ -163,13 +130,8 @@ did not find decfile2 demangled to decfile2
 did not find decfile3 demangled to decfile3
 did not find decfile4 demangled to decfile4
 did not find main0 demangled to main0
-did not find main1 demangled to main1
-Add filter function main2
-FunctionInfo. Adding function:main2
-did not find main3 demangled to main3
-did not find main4 demangled to main4
-did not find main5 demangled to main5
-did not find main6 demangled to main6
+Add filter function main1
+FunctionInfo. Adding function:main1
 Adding set_key other functions, ExtractedOnly mode uses other functions
 Adding encrypt other functions, ExtractedOnly mode uses other functions
 Adding decrypt other functions, ExtractedOnly mode uses other functions
@@ -183,10 +145,6 @@ Adding set_key2 other functions, ExtractedOnly mode uses other functions
 Adding set_key3 other functions, ExtractedOnly mode uses other functions
 Adding set_key4 other functions, ExtractedOnly mode uses other functions
 Adding set_key5 other functions, ExtractedOnly mode uses other functions
-Adding set_key6 other functions, ExtractedOnly mode uses other functions
-Adding set_key7 other functions, ExtractedOnly mode uses other functions
-Adding set_key8 other functions, ExtractedOnly mode uses other functions
-Adding set_key9 other functions, ExtractedOnly mode uses other functions
 Adding fillrand0 other functions, ExtractedOnly mode uses other functions
 Adding fillrand1 other functions, ExtractedOnly mode uses other functions
 Adding fillrand2 other functions, ExtractedOnly mode uses other functions
@@ -202,51 +160,37 @@ Adding decfile3 other functions, ExtractedOnly mode uses other functions
 Adding decfile4 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Adding main4 other functions, ExtractedOnly mode uses other functions
-Adding main5 other functions, ExtractedOnly mode uses other functions
-Adding main6 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:37
+Sensitive functions:0 other functions:28
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-fillrand1
-main4
-decfile2
+encfile1
+encfile3
+main1
 decfile
 set_key4
 fillrand
 set_key5
-fillrand2
-main3
-encfile0
+encfile2
+set_key
+decfile0
 set_key3
-set_key6
-main6
+fillrand0
+encfile0
 encrypt
+main0
 decfile1
-encfile1
 set_key1
 set_key2
-decfile3
+fillrand2
 decrypt
 main
-main0
-decfile0
-encfile3
-set_key0
-main2
-main5
-encfile
-set_key8
-main1
-set_key9
-fillrand0
-set_key7
-set_key
 fillrand3
-encfile2
 decfile4
+decfile3
+set_key0
+fillrand1
+decfile2
+encfile
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -271,7 +215,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 37 function, while filter count is 4
+ERR. processed 28 function, while filter count is 3
 Functions called in loop
 Function call numbers
 main -- 0
@@ -282,264 +226,98 @@ PSNodeType::PHI with ID 26
 Warning: Empty PHI
 PSNodeType::PHI with ID 27
   - operands: []
-No reaching definition for:   %15 = alloca [1 x %struct.aes], align 16, !input_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for:   %8 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8 in:   %.el = alloca i8*, !input_dep_instr !8, !control_dep_instr !9, !data_dep_instr !10 off: 0
+No reaching definition for:   %15 = alloca [1 x %struct.aes], align 16, !input_dep_instr !7, !data_dep_instr !8 off: 1040
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 4
+Recieved filter functions 3
  Skipping function per FilterFunctionPass:set_key
  Skipping function per FilterFunctionPass:encrypt
  Skipping function per FilterFunctionPass:decrypt
-Collecting defining blocks for fillrand
-Collecting defining blocks for encfile
+ Skipping function per FilterFunctionPass:fillrand
+ Skipping function per FilterFunctionPass:encfile
  Skipping function per FilterFunctionPass:decfile
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:set_key
  Skipping function per FilterFunctionPass:encrypt
  Skipping function per FilterFunctionPass:decrypt
- Processing function:fillrand
-Short range hashing enabled.
-Processing path:     
-After path modifications process path
-    
-Processing path:           
-After path modifications process path
-    
-Hash path invariants only
-Invariants are
-  br label %21, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand1(), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing call instruction..
-Processing path:     
-After path modifications process path
-    
-Processing path:             
-After path modifications process path
-    
-Hash path invariants only
-Invariants are
-  br label %31, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing call instruction..
-Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !6, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:     
-After path modifications process path
-    
-Processing path:         
-After path modifications process path is empty
-Processing path:       
-After path modifications process path
-      
- Processing function:encfile
-Short range hashing enabled.
-Processing path:         
-After path modifications process path is empty
-Processing path:     
-After path modifications process path
-    
-Processing path:         
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
-No oh has been applied in the path
-Processing path:         
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %62, !control_dep_instr !8, !data_indep_instr !12
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
-Processing path:   
-After path modifications process path
-  
-Processing path:       
-After path modifications process path is empty
-Processing path:             
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %70, !control_dep_instr !8, !data_indep_instr !12
-Processing path:     
-After path modifications process path
-    
-Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile0(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:     
-After path modifications process path is empty
-Processing path:             
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
-Processing path:   
-After path modifications process path
-  
-Processing path:         
-After path modifications process path is empty
-Processing path:       
-After path modifications process path
-      
-Processing call instruction..
-Can't handle this operand   %13 = alloca i64, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile1(i64* %13), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:           
-After path modifications process path is empty
-Processing path:             
-After path modifications process path is empty
-Processing path:         
-After path modifications process path
-        
-Processing path:                 
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %159, !control_dep_instr !8, !data_indep_instr !12
-No oh has been applied in the path
-Processing path:             
-After path modifications process path is empty
-Processing path:             
-After path modifications process path is empty
-Processing path:           
-After path modifications process path
-          
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:               
-After path modifications process path
-              
-Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile3(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:               
-After path modifications process path
-              
-Processing path:           
-After path modifications process path is empty
-Processing path:         
-After path modifications process path
-        
-Processing path:       
-After path modifications process path is empty
-Processing path:     
-After path modifications process path
-    
+ Skipping function per FilterFunctionPass:fillrand
+ Skipping function per FilterFunctionPass:encfile
  Skipping function per FilterFunctionPass:decfile
  Skipping function per FilterFunctionPass:main
-Extract path function for assertion assert_encfile_path_1
-Extract path function for assertion assert_encfile_path_3
-Extract path function for assertion assert_encfile_path_4
-Extract path function for assertion assert_encfile_path_6
-Extract path function for assertion assert_encfile_path_7
-Extract path function for assertion assert_encfile_path_9
-Extract path function for assertion assert_encfile_path_10
-Extract path function for assertion assert_encfile_path_12
-Extract path function for assertion assert_encfile_path_15
-Extract path function for assertion assert_encfile_path_19
-Extract path function for assertion assert_encfile_path_23
-Extract path function for assertion assert_encfile_path_27
-Extract path function for assertion assert_encfile_path_29
-Extract path function for assertion assert_encfile_path_31
-Extract path function for assertion assert_fillrand_path_0
-Extract path function for assertion assert_fillrand_path_1
-Extract path function for assertion assert_fillrand_path_2
-Extract path function for assertion assert_fillrand_path_3
-Extract path function for assertion assert_fillrand_path_4
-Extract path function for assertion assert_fillrand_path_6
 OH stats is requested, dumping stat file...
-Processed instructions number 5218
+Processed instructions number 5328
 {
     "numberOfAssertCalls": 0,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 70,
+    "numberOfDataDependentInstructions": 0,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 5040,
+    "numberOfInstructionsInFilteredFunctions": 5328,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
-    "numberOfNonHashableBlocks": 3,
-    "numberOfNonHashableInstructions": 21,
-    "numberOfOHProcessedInstr": 178,
-    "numberOfOtherUnprotectedInstructions": 2,
-    "numberOfOtherUnprotectedLoopVariantInstructions": 4,
+    "numberOfNonHashableBlocks": 0,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 2,
+    "numberOfProtectedFunctions": 0,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
     "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 35,
-    "numberOfSensitiveFunctions": 2,
-    "numberOfShortRangeAssertCalls": 20,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 20,
+    "numberOfShortRangeProtectedBlocks": 0,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 19,
-    "numberOfUnprotectedArgumentReachableInstructions": 4,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 12,
-    "numberOfUnprotectedGlobalReachableInstructions": 2,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 56
+    "numberOfUnprotectedLoopInstructions": 0
 }
-ERR. processed 2 function, while filter count is 4
+ERR. processed 0 function, while filter count is 3
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.3684 seconds (1.3691 wall clock)
+  Total Execution Time: 1.3592 seconds (1.3592 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.8551 ( 63.5%)   0.0106 ( 47.1%)   0.8657 ( 63.3%)   0.8661 ( 63.3%)  runs input dependency analysis
-   0.4592 ( 34.1%)   0.0080 ( 35.4%)   0.4672 ( 34.1%)   0.4674 ( 34.1%)  Instruments bitcode with hashing and logging functions
-   0.0161 (  1.2%)   0.0000 (  0.0%)   0.0161 (  1.2%)   0.0161 (  1.2%)  Memory SSA
-   0.0052 (  0.4%)   0.0039 ( 17.4%)   0.0091 (  0.7%)   0.0091 (  0.7%)  Bitcode Writer
-   0.0028 (  0.2%)   0.0000 (  0.0%)   0.0028 (  0.2%)   0.0028 (  0.2%)  Module Verifier
-   0.0014 (  0.1%)   0.0000 (  0.0%)   0.0014 (  0.1%)   0.0014 (  0.1%)  Dominator Tree Construction
-   0.0012 (  0.1%)   0.0000 (  0.0%)   0.0012 (  0.1%)   0.0012 (  0.1%)  Instruments bitcode with guards
-   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Natural Loop Information
+   0.9823 ( 72.6%)   0.0028 ( 41.5%)   0.9852 ( 72.5%)   0.9852 ( 72.5%)  runs input dependency analysis
+   0.3564 ( 26.4%)   0.0040 ( 58.3%)   0.3604 ( 26.5%)   0.3604 ( 26.5%)  Instruments bitcode with hashing and logging functions
+   0.0071 (  0.5%)   0.0000 (  0.0%)   0.0071 (  0.5%)   0.0071 (  0.5%)  Bitcode Writer
+   0.0021 (  0.2%)   0.0000 (  0.1%)   0.0021 (  0.2%)   0.0021 (  0.2%)  Module Verifier
+   0.0010 (  0.1%)   0.0000 (  0.0%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Instruments bitcode with guards
    0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
-   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
+   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0005 (  0.0%)  Post-Dominator Tree Construction
    0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Include functions in a given file in any transformation
-   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Call site information
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Natural Loop Information
    0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.3458 (100.0%)   0.0226 (100.0%)   1.3684 (100.0%)   1.3691 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.3523 (100.0%)   0.0068 (100.0%)   1.3592 (100.0%)   1.3592 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0094 seconds (0.0094 wall clock)
+  Total Execution Time: 0.0087 seconds (0.0087 wall clock)
 
    ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0094 (100.0%)   0.0094 (100.0%)   0.0094 (100.0%)  Parse IR
-   0.0094 (100.0%)   0.0094 (100.0%)   0.0094 (100.0%)  Total
+   0.0087 (100.0%)   0.0087 (100.0%)   0.0087 (100.0%)  Parse IR
+   0.0087 (100.0%)   0.0087 (100.0%)   0.0087 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function set_key0
@@ -548,10 +326,6 @@ Processing function set_key2
 Processing function set_key3
 Processing function set_key4
 Processing function set_key5
-Processing function set_key6
-Processing function set_key7
-Processing function set_key8
-Processing function set_key9
 Processing function set_key
 Processing function encrypt
 Processing function decrypt
@@ -573,23 +347,8 @@ Processing function decfile4
 Processing function decfile
 Processing function main0
 Processing function main1
-Processing function main2
-Processing function main3
-Processing function main4
-Processing function main5
-Processing function main6
 Processing function main
 Finalizing main
-Finalizing main6
-Mark Input dependent function main6
-Finalizing main5
-Mark Input dependent function main5
-Finalizing main4
-Mark Input dependent function main4
-Finalizing main3
-Mark Input dependent function main3
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -632,14 +391,6 @@ Finalizing encrypt
 Mark Input dependent function encrypt
 Finalizing set_key
 Mark Input dependent function set_key
-Finalizing set_key9
-Mark Input dependent function set_key9
-Finalizing set_key8
-Mark Input dependent function set_key8
-Finalizing set_key7
-Mark Input dependent function set_key7
-Finalizing set_key6
-Mark Input dependent function set_key6
 Finalizing set_key5
 Mark Input dependent function set_key5
 Finalizing set_key4
@@ -670,10 +421,6 @@ here!:set_key2
 here!:set_key3
 here!:set_key4
 here!:set_key5
-here!:set_key6
-here!:set_key7
-here!:set_key8
-here!:set_key9
 here!:fillrand0
 here!:fillrand1
 here!:fillrand2
@@ -689,12 +436,7 @@ here!:decfile3
 here!:decfile4
 here!:main0
 here!:main1
-here!:main2
-here!:main3
-here!:main4
-here!:main5
-here!:main6
-here!:main6
+here!:main1
 got filter function names
 Add filter function set_key
 FunctionInfo. Adding function:set_key
@@ -731,14 +473,6 @@ Add filter function set_key4
 FunctionInfo. Adding function:set_key4
 Add filter function set_key5
 FunctionInfo. Adding function:set_key5
-Add filter function set_key6
-FunctionInfo. Adding function:set_key6
-Add filter function set_key7
-FunctionInfo. Adding function:set_key7
-Add filter function set_key8
-FunctionInfo. Adding function:set_key8
-Add filter function set_key9
-FunctionInfo. Adding function:set_key9
 Add filter function fillrand0
 FunctionInfo. Adding function:fillrand0
 Add filter function fillrand1
@@ -769,16 +503,6 @@ Add filter function main0
 FunctionInfo. Adding function:main0
 Add filter function main1
 FunctionInfo. Adding function:main1
-Add filter function main2
-FunctionInfo. Adding function:main2
-Add filter function main3
-FunctionInfo. Adding function:main3
-Add filter function main4
-FunctionInfo. Adding function:main4
-Add filter function main5
-FunctionInfo. Adding function:main5
-Add filter function main6
-FunctionInfo. Adding function:main6
 Adding set_key other functions, ExtractedOnly mode uses other functions
 Adding encrypt other functions, ExtractedOnly mode uses other functions
 Adding decrypt other functions, ExtractedOnly mode uses other functions
@@ -792,10 +516,6 @@ Adding set_key2 other functions, ExtractedOnly mode uses other functions
 Adding set_key3 other functions, ExtractedOnly mode uses other functions
 Adding set_key4 other functions, ExtractedOnly mode uses other functions
 Adding set_key5 other functions, ExtractedOnly mode uses other functions
-Adding set_key6 other functions, ExtractedOnly mode uses other functions
-Adding set_key7 other functions, ExtractedOnly mode uses other functions
-Adding set_key8 other functions, ExtractedOnly mode uses other functions
-Adding set_key9 other functions, ExtractedOnly mode uses other functions
 Adding fillrand0 other functions, ExtractedOnly mode uses other functions
 Adding fillrand1 other functions, ExtractedOnly mode uses other functions
 Adding fillrand2 other functions, ExtractedOnly mode uses other functions
@@ -811,51 +531,37 @@ Adding decfile3 other functions, ExtractedOnly mode uses other functions
 Adding decfile4 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Adding main4 other functions, ExtractedOnly mode uses other functions
-Adding main5 other functions, ExtractedOnly mode uses other functions
-Adding main6 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:37
+Sensitive functions:0 other functions:28
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-fillrand1
-main4
-decfile2
+encfile1
+encfile3
+main1
 decfile
 set_key4
 fillrand
 set_key5
-fillrand2
-main3
-encfile0
+encfile2
+set_key
+decfile0
 set_key3
-set_key6
-main6
+fillrand0
+encfile0
 encrypt
+main0
 decfile1
-encfile1
 set_key1
 set_key2
-decfile3
+fillrand2
 decrypt
 main
-main0
-decfile0
-encfile3
-set_key0
-main2
-main5
-encfile
-set_key8
-main1
-set_key9
-fillrand0
-set_key7
-set_key
 fillrand3
-encfile2
 decfile4
+decfile3
+set_key0
+fillrand1
+decfile2
+encfile
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -891,11 +597,10 @@ Warning: Empty PHI
 PSNodeType::PHI with ID 27
   - operands: []
 No reaching definition for:   %15 = alloca [1 x %struct.aes], align 16, !input_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for:   %8 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8 in:   %.el = alloca i8*, !input_dep_instr !8, !control_dep_instr !9, !data_dep_instr !10 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 37
+Recieved filter functions 28
 Collecting defining blocks for set_key
 Collecting defining blocks for encrypt
 Collecting defining blocks for decrypt
@@ -925,26 +630,22 @@ After path modifications process path
   
 Hash path invariants only
 Invariants are
-  br label %219, !control_dep_instr !8, !data_indep_instr !12
-  call void @set_key7(i64** %11, i64** %10), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
+  br label %300, !data_indep_instr !12, !control_dep_instr !9
+  call void @set_key3(i64** %11, i64** %10), !data_indep_instr !12, !input_dep_block !13, !control_dep_instr !9
 Processing call instruction..
-Can't handle this operand   %11 = alloca i64*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @set_key7(i64** %11, i64** %10), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
-Can't handle this operand   %10 = alloca i64*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @set_key7(i64** %11, i64** %10), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
+Can't handle this operand   %11 = alloca i64*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @set_key3(i64** %11, i64** %10), !data_indep_instr !12, !input_dep_block !13, !control_dep_instr !9
+Can't handle this operand   %10 = alloca i64*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @set_key3(i64** %11, i64** %10), !data_indep_instr !12, !input_dep_block !13, !control_dep_instr !9
 Processing path:                 
 After path modifications process path
                 
-Processing call instruction..
-Can't handle this operand   %10 = alloca i64*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @set_key6(i64** %10, i64** %11, %struct.aes** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
-Can't handle this operand   %11 = alloca i64*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @set_key6(i64** %10, i64** %11, %struct.aes** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
-Can't handle this operand   %9 = alloca %struct.aes*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @set_key6(i64** %10, i64** %11, %struct.aes** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
 Processing path:                     
 After path modifications process path is empty
 Processing path:                   
 After path modifications process path
                   
 Processing call instruction..
-Can't handle this operand   %11 = alloca i64*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @set_key9(i64** %11, i64** %10), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
-Can't handle this operand   %10 = alloca i64*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @set_key9(i64** %11, i64** %10), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
+Can't handle this operand   %11 = alloca i64*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @set_key5(i64** %11, i64** %10), !data_indep_instr !12, !input_dep_block !13, !control_dep_instr !9
+Can't handle this operand   %10 = alloca i64*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @set_key5(i64** %11, i64** %10), !data_indep_instr !12, !input_dep_block !13, !control_dep_instr !9
 Processing path:                 
 After path modifications process path
                 
@@ -1019,8 +720,8 @@ After path modifications process path
     
 Hash path invariants only
 Invariants are
-  br label %21, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand1(), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
+  br label %21, !data_indep_instr !12, !control_dep_instr !9, !global_dep_instr !13
+  call void @fillrand1(), !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9, !global_dep_instr !13
 Processing call instruction..
 Processing path:     
 After path modifications process path
@@ -1030,11 +731,11 @@ After path modifications process path
     
 Hash path invariants only
 Invariants are
-  br label %31, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
+  br label %31, !data_indep_instr !12, !control_dep_instr !9
+  call void @fillrand2(i32* %5, i8** %3), !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
 Processing call instruction..
-Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !6, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
+Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
+Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !6, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
 Processing path:     
 After path modifications process path
     
@@ -1055,15 +756,15 @@ After path modifications process path
   
 Hash path invariants only
 Invariants are
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
+  br label %76, !data_indep_instr !12, !control_dep_instr !9
 No oh has been applied in the path
 Processing path:         
 After path modifications process path
   
 Hash path invariants only
 Invariants are
-  br label %62, !control_dep_instr !8, !data_indep_instr !12
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
+  br label %62, !data_indep_instr !12, !control_dep_instr !9
+  store i64 0, i64* %13, align 8, !data_indep_instr !12, !input_dep_block !13, !control_dep_instr !9
 Processing path:   
 After path modifications process path
   
@@ -1074,13 +775,13 @@ After path modifications process path
   
 Hash path invariants only
 Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %70, !control_dep_instr !8, !data_indep_instr !12
+  store i64 0, i64* %13, align 8, !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
+  br label %70, !data_indep_instr !12, !control_dep_instr !9
 Processing path:     
 After path modifications process path
     
 Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile0(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
+Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @encfile0(i8** %9), !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
 Processing path:     
 After path modifications process path is empty
 Processing path:             
@@ -1088,8 +789,8 @@ After path modifications process path
   
 Hash path invariants only
 Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
+  store i64 0, i64* %13, align 8, !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
+  br label %76, !data_indep_instr !12, !control_dep_instr !9
 Processing path:   
 After path modifications process path
   
@@ -1099,7 +800,7 @@ Processing path:
 After path modifications process path
       
 Processing call instruction..
-Can't handle this operand   %13 = alloca i64, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile1(i64* %13), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
+Can't handle this operand   %13 = alloca i64, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @encfile1(i64* %13), !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
 Processing path:             
 After path modifications process path is empty
 Processing path:           
@@ -1107,17 +808,17 @@ After path modifications process path is empty
 Processing path:         
 After path modifications process path
         
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
 Processing path:                 
 After path modifications process path
   
 Hash path invariants only
 Invariants are
-  br label %159, !control_dep_instr !8, !data_indep_instr !12
+  br label %159, !data_indep_instr !12, !control_dep_instr !9
 No oh has been applied in the path
-Processing path:             
-After path modifications process path is empty
-Processing path:             
-After path modifications process path is empty
 Processing path:           
 After path modifications process path
           
@@ -1131,7 +832,7 @@ Processing path:
 After path modifications process path
               
 Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile3(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
+Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @encfile3(i8** %9), !data_indep_instr !12, !input_dep_block !14, !control_dep_instr !9
 Processing path:                 
 After path modifications process path is empty
 Processing path:                 
@@ -1157,7 +858,7 @@ Processing path:
 After path modifications process path
     
 Processing call instruction..
-Can't handle this operand   %10 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @decfile0(i8** %10), !control_dep_instr !8, !data_indep_instr !11, !input_dep_block !12
+Can't handle this operand   %10 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @decfile0(i8** %10), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !9
 Processing path:     
 After path modifications process path
     
@@ -1169,7 +870,7 @@ After path modifications process path
   
 Hash path invariants only
 Invariants are
-  br label %71, !control_dep_instr !8, !data_indep_instr !11
+  br label %71, !data_indep_instr !11, !control_dep_instr !9
 Processing path:       
 After path modifications process path
       
@@ -1181,7 +882,7 @@ Processing path:
 After path modifications process path
                 
 Processing call instruction..
-Can't handle this operand   %11 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @decfile4(i8** %11), !control_dep_instr !8, !data_indep_instr !11, !input_dep_block !12
+Can't handle this operand   %11 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @decfile4(i8** %11), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !9
 Processing path:                   
 After path modifications process path is empty
 Processing path:                   
@@ -1196,34 +897,36 @@ After path modifications process path is empty
 Processing path:               
 After path modifications process path
               
-Processing path:               
-After path modifications process path is empty
 Processing path:             
+After path modifications process path is empty
+Processing path:               
 After path modifications process path is empty
 Processing path:           
 After path modifications process path
           
 Processing call instruction..
-Can't handle this operand   %11 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @decfile2(i8** %11), !control_dep_instr !8, !data_indep_instr !11, !input_dep_block !12
+Can't handle this operand   %11 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 of the call   call void @decfile2(i8** %11), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !9
 Processing path:               
 After path modifications process path
   
 Hash path invariants only
 Invariants are
-  br label %161, !control_dep_instr !8, !data_indep_instr !11
-Processing path:               
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %145, !control_dep_instr !8, !data_indep_instr !11
-  store i32 0, i32* %17, align 4, !control_dep_instr !8, !data_indep_instr !11
-  %142 = getelementptr inbounds [16 x i8], [16 x i8]* %14, i32 0, i32 0, !control_dep_instr !8, !data_dep_instr !9
+  br label %161, !data_indep_instr !11, !control_dep_instr !9
 Processing path:           
 After path modifications process path is empty
+Processing path:               
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %145, !data_indep_instr !11, !control_dep_instr !9
+  store i32 0, i32* %17, align 4, !data_indep_instr !11, !control_dep_instr !9
+  %142 = getelementptr inbounds [16 x i8], [16 x i8]* %14, i32 0, i32 0, !data_dep_instr !8, !control_dep_instr !9
 Processing path:         
 After path modifications process path
         
+Processing path:           
+After path modifications process path is empty
 Processing path:           
 After path modifications process path is empty
 Processing path:                 
@@ -1231,11 +934,9 @@ After path modifications process path
   
 Hash path invariants only
 Invariants are
-  %151 = getelementptr inbounds [16 x i8], [16 x i8]* %14, i32 0, i32 0, !control_dep_instr !8, !data_dep_instr !9
-  store i32 0, i32* %17, align 4, !control_dep_instr !8, !data_indep_instr !11
-  br label %158, !control_dep_instr !8, !data_indep_instr !11
-Processing path:           
-After path modifications process path is empty
+  %151 = getelementptr inbounds [16 x i8], [16 x i8]* %14, i32 0, i32 0, !data_dep_instr !8, !control_dep_instr !9
+  store i32 0, i32* %17, align 4, !data_indep_instr !11, !control_dep_instr !9
+  br label %158, !data_indep_instr !11, !control_dep_instr !9
 Processing path:         
 After path modifications process path
         
@@ -1257,8 +958,6 @@ Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %7 = alloca %struct._IO_FILE*, align 8, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main5(%struct._IO_FILE** %7), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
 No oh has been applied in the path
 Processing path:         
 After path modifications process path
@@ -1269,8 +968,6 @@ Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %6 = alloca %struct._IO_FILE*, align 8, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main6(%struct._IO_FILE** %6), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
 No oh has been applied in the path
 Processing path:         
 After path modifications process path
@@ -1294,7 +991,7 @@ After path modifications process path
   
 Hash path invariants only
 Invariants are
-  br label %63, !control_dep_instr !13, !data_indep_instr !10
+  br label %66, !data_indep_instr !10, !control_dep_instr !14
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
@@ -1303,21 +1000,18 @@ After path modifications process path
       
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %8 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8** %8, i8*** %5), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
-Can't handle this operand   %5 = alloca i8**, align 8, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8** %8, i8*** %5), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
 Processing path:                 
 After path modifications process path
       
 Hash path invariants only
 Invariants are
-  br label %97, !control_dep_instr !13, !data_indep_instr !10
-  call void @main1(i8* %9, i32* %12), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
+  br label %100, !data_indep_instr !10, !control_dep_instr !14
+  call void @main0(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
-Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
+Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
 Processing path:       
 After path modifications process path
       
@@ -1328,7 +1022,7 @@ After path modifications process path
       
 Hash path invariants only
 Invariants are
-  br label %120, !control_dep_instr !13, !data_indep_instr !10
+  br label %123, !data_indep_instr !10, !control_dep_instr !14
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing path:       
@@ -1351,14 +1045,14 @@ After path modifications process path
       
 Hash path invariants only
 Invariants are
-  br label %116, !control_dep_instr !13, !data_indep_instr !10
-  br label %117, !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
-  call void @main2(i8* %9, i32* %12), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
+  br label %119, !data_indep_instr !10, !control_dep_instr !14
+  br label %120, !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+  call void @main1(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main2(i8* %9, i32* %12), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
-Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main2(i8* %9, i32* %12), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
+Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
 Processing path:       
 After path modifications process path
       
@@ -1416,8 +1110,6 @@ After path modifications process path
                     
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %5 = alloca i8**, align 8, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main4(i8*** %5), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
 Processing path:                       
 After path modifications process path is empty
 Processing path:                   
@@ -1425,8 +1117,6 @@ After path modifications process path
                   
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %5 = alloca i8**, align 8, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main3(i8*** %5), !control_dep_instr !13, !data_indep_instr !10, !input_dep_block !14
 Extract path function for assertion assert_main_path_0
 Extract path function for assertion assert_main_path_4
 Extract path function for assertion assert_main_path_6
@@ -1455,24 +1145,10 @@ Extract path function for assertion assert_decfile_path_10
 Extract path function for assertion assert_decfile_path_13
 Extract path function for assertion assert_decfile_path_16
 Extract path function for assertion assert_decfile_path_17
-Extract path function for assertion assert_decfile_path_18
+Extract path function for assertion assert_decfile_path_19
 Extract path function for assertion assert_decfile_path_20
-Extract path function for assertion assert_decfile_path_22
+Extract path function for assertion assert_decfile_path_23
 Extract path function for assertion assert_decfile_path_24
-Extract path function for assertion assert_set_key_path_0
-Extract path function for assertion assert_set_key_path_1
-Extract path function for assertion assert_set_key_path_2
-Extract path function for assertion assert_set_key_path_3
-Extract path function for assertion assert_set_key_path_4
-Extract path function for assertion assert_set_key_path_5
-Extract path function for assertion assert_set_key_path_6
-Extract path function for assertion assert_set_key_path_8
-Extract path function for assertion assert_set_key_path_9
-Extract path function for assertion assert_set_key_path_11
-Extract path function for assertion assert_set_key_path_13
-Extract path function for assertion assert_set_key_path_15
-Extract path function for assertion assert_set_key_path_16
-Extract path function for assertion assert_set_key_path_17
 Extract path function for assertion assert_encfile_path_1
 Extract path function for assertion assert_encfile_path_3
 Extract path function for assertion assert_encfile_path_4
@@ -1487,12 +1163,20 @@ Extract path function for assertion assert_encfile_path_23
 Extract path function for assertion assert_encfile_path_27
 Extract path function for assertion assert_encfile_path_29
 Extract path function for assertion assert_encfile_path_31
-Extract path function for assertion assert_fillrand_path_0
-Extract path function for assertion assert_fillrand_path_1
-Extract path function for assertion assert_fillrand_path_2
-Extract path function for assertion assert_fillrand_path_3
-Extract path function for assertion assert_fillrand_path_4
-Extract path function for assertion assert_fillrand_path_6
+Extract path function for assertion assert_set_key_path_0
+Extract path function for assertion assert_set_key_path_1
+Extract path function for assertion assert_set_key_path_2
+Extract path function for assertion assert_set_key_path_3
+Extract path function for assertion assert_set_key_path_4
+Extract path function for assertion assert_set_key_path_5
+Extract path function for assertion assert_set_key_path_6
+Extract path function for assertion assert_set_key_path_8
+Extract path function for assertion assert_set_key_path_9
+Extract path function for assertion assert_set_key_path_11
+Extract path function for assertion assert_set_key_path_13
+Extract path function for assertion assert_set_key_path_15
+Extract path function for assertion assert_set_key_path_16
+Extract path function for assertion assert_set_key_path_17
 Extract path function for assertion assert_encrypt_path_0
 Extract path function for assertion assert_encrypt_path_1
 Extract path function for assertion assert_encrypt_path_2
@@ -1505,20 +1189,26 @@ Extract path function for assertion assert_decrypt_path_2
 Extract path function for assertion assert_decrypt_path_3
 Extract path function for assertion assert_decrypt_path_4
 Extract path function for assertion assert_decrypt_path_5
+Extract path function for assertion assert_fillrand_path_0
+Extract path function for assertion assert_fillrand_path_1
+Extract path function for assertion assert_fillrand_path_2
+Extract path function for assertion assert_fillrand_path_3
+Extract path function for assertion assert_fillrand_path_4
+Extract path function for assertion assert_fillrand_path_6
 OH stats is requested, dumping stat file...
-Processed instructions number 5217
+Processed instructions number 5327
 {
-    "numberOfAssertCalls": 4,
+    "numberOfAssertCalls": 5,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 4814,
+    "numberOfDataDependentInstructions": 4933,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
     "numberOfInstructionsInFilteredFunctions": 0,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
     "numberOfNonHashableBlocks": 13,
-    "numberOfNonHashableInstructions": 73,
-    "numberOfOHProcessedInstr": 5217,
-    "numberOfOtherUnprotectedInstructions": 12,
+    "numberOfNonHashableInstructions": 67,
+    "numberOfOHProcessedInstr": 5327,
+    "numberOfOtherUnprotectedInstructions": 8,
     "numberOfOtherUnprotectedLoopVariantInstructions": 9,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 2,
@@ -1535,7 +1225,7 @@ Processed instructions number 5217
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
     "numberOfShortRangeProtectedInstructions": 84,
-    "numberOfUnprotectedArgumentReachableInstructions": 42,
+    "numberOfUnprotectedArgumentReachableInstructions": 43,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
     "numberOfUnprotectedDataDependentLoopBlocks": 32,
@@ -1544,45 +1234,45 @@ Processed instructions number 5217
     "numberOfUnprotectedInputDependentInstructions": 0,
     "numberOfUnprotectedLoopInstructions": 174
 }
-ERR. processed 7 function, while filter count is 37
+ERR. processed 7 function, while filter count is 28
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.9978 seconds (1.9982 wall clock)
+  Total Execution Time: 1.9349 seconds (1.9351 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.9151 ( 46.1%)   0.0038 ( 26.7%)   0.9189 ( 46.0%)   0.9191 ( 46.0%)  runs input dependency analysis
-   0.8558 ( 43.1%)   0.0080 ( 56.3%)   0.8638 ( 43.2%)   0.8639 ( 43.2%)  Instruments bitcode with hashing and logging functions
-   0.1824 (  9.2%)   0.0020 ( 13.8%)   0.1843 (  9.2%)   0.1842 (  9.2%)  Memory SSA
-   0.0124 (  0.6%)   0.0000 (  0.0%)   0.0124 (  0.6%)   0.0124 (  0.6%)  Bitcode Writer
-   0.0053 (  0.3%)   0.0002 (  1.2%)   0.0055 (  0.3%)   0.0056 (  0.3%)  Dominator Tree Construction
-   0.0037 (  0.2%)   0.0001 (  0.9%)   0.0038 (  0.2%)   0.0038 (  0.2%)  Natural Loop Information
-   0.0038 (  0.2%)   0.0000 (  0.0%)   0.0038 (  0.2%)   0.0038 (  0.2%)  Module Verifier
-   0.0010 (  0.1%)   0.0000 (  0.0%)   0.0010 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
-   0.0008 (  0.0%)   0.0000 (  0.0%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Post-Dominator Tree Construction
+   0.9259 ( 48.4%)   0.0042 ( 19.5%)   0.9301 ( 48.1%)   0.9302 ( 48.1%)  runs input dependency analysis
+   0.7797 ( 40.8%)   0.0080 ( 37.0%)   0.7877 ( 40.7%)   0.7878 ( 40.7%)  Instruments bitcode with hashing and logging functions
+   0.1873 (  9.8%)   0.0013 (  6.2%)   0.1887 (  9.8%)   0.1886 (  9.7%)  Memory SSA
+   0.0041 (  0.2%)   0.0067 ( 30.8%)   0.0108 (  0.6%)   0.0108 (  0.6%)  Bitcode Writer
+   0.0057 (  0.3%)   0.0001 (  0.7%)   0.0059 (  0.3%)   0.0059 (  0.3%)  Dominator Tree Construction
+   0.0034 (  0.2%)   0.0001 (  0.5%)   0.0036 (  0.2%)   0.0036 (  0.2%)  Natural Loop Information
+   0.0023 (  0.1%)   0.0011 (  5.2%)   0.0034 (  0.2%)   0.0034 (  0.2%)  Module Verifier
+   0.0009 (  0.0%)   0.0000 (  0.0%)   0.0009 (  0.0%)   0.0009 (  0.0%)  Instruments bitcode with guards
+   0.0008 (  0.0%)   0.0000 (  0.1%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Post-Dominator Tree Construction
    0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Include functions in a given file in any transformation
+   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Function Alias Analysis Results
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
-   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Function Alias Analysis Results
-   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Natural Loop Information
-   0.0002 (  0.0%)   0.0001 (  0.5%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
-   0.0001 (  0.0%)   0.0000 (  0.2%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   1.9836 (100.0%)   0.0142 (100.0%)   1.9978 (100.0%)   1.9982 (100.0%)  Total
+   1.9133 (100.0%)   0.0216 (100.0%)   1.9349 (100.0%)   1.9351 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0107 seconds (0.0107 wall clock)
+  Total Execution Time: 0.0076 seconds (0.0076 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0060 (100.0%)   0.0047 (100.0%)   0.0107 (100.0%)   0.0107 (100.0%)  Parse IR
-   0.0060 (100.0%)   0.0047 (100.0%)   0.0107 (100.0%)   0.0107 (100.0%)  Total
+   0.0038 (100.0%)   0.0038 (100.0%)   0.0076 (100.0%)   0.0076 (100.0%)  Parse IR
+   0.0038 (100.0%)   0.0038 (100.0%)   0.0076 (100.0%)   0.0076 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function set_key0
@@ -1591,10 +1281,6 @@ Processing function set_key2
 Processing function set_key3
 Processing function set_key4
 Processing function set_key5
-Processing function set_key6
-Processing function set_key7
-Processing function set_key8
-Processing function set_key9
 Processing function set_key
 Processing function encrypt
 Processing function decrypt
@@ -1616,23 +1302,8 @@ Processing function decfile4
 Processing function decfile
 Processing function main0
 Processing function main1
-Processing function main2
-Processing function main3
-Processing function main4
-Processing function main5
-Processing function main6
 Processing function main
 Finalizing main
-Finalizing main6
-Mark Input dependent function main6
-Finalizing main5
-Mark Input dependent function main5
-Finalizing main4
-Mark Input dependent function main4
-Finalizing main3
-Mark Input dependent function main3
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -1675,14 +1346,6 @@ Finalizing encrypt
 Mark Input dependent function encrypt
 Finalizing set_key
 Mark Input dependent function set_key
-Finalizing set_key9
-Mark Input dependent function set_key9
-Finalizing set_key8
-Mark Input dependent function set_key8
-Finalizing set_key7
-Mark Input dependent function set_key7
-Finalizing set_key6
-Mark Input dependent function set_key6
 Finalizing set_key5
 Mark Input dependent function set_key5
 Finalizing set_key4
@@ -1700,25 +1363,20 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/rijndael.x.bc/25/0
-here!:encfile
-here!:main2
-here!:fillrand
 here!:decfile1
+here!:main1
+here!:encfile2
 here!:fillrand2
-here!:main3
-here!:encrypt
-here!:decfile3
-here!:set_key7
-here!:set_key7
+here!:decfile0
+here!:main
+here!:main0
+here!:main0
 got filter function names
 did not find set_key demangled to set_key
-Add filter function encrypt
-FunctionInfo. Adding function:encrypt
+did not find encrypt demangled to encrypt
 did not find decrypt demangled to decrypt
-Add filter function fillrand
-FunctionInfo. Adding function:fillrand
-Add filter function encfile
-FunctionInfo. Adding function:encfile
+did not find fillrand demangled to fillrand
+did not find encfile demangled to encfile
 did not find fseek demangled to fseek
 did not find fgetpos demangled to fgetpos
 did not find fwrite demangled to fwrite
@@ -1726,7 +1384,8 @@ did not find feof demangled to feof
 did not find fread demangled to fread
 did not find printf demangled to printf
 did not find decfile demangled to decfile
-did not find main demangled to main
+Add filter function main
+FunctionInfo. Adding function:main
 did not find toupper demangled to toupper
 did not find fopen demangled to fopen
 did not find fclose demangled to fclose
@@ -1736,11 +1395,6 @@ did not find set_key2 demangled to set_key2
 did not find set_key3 demangled to set_key3
 did not find set_key4 demangled to set_key4
 did not find set_key5 demangled to set_key5
-did not find set_key6 demangled to set_key6
-Add filter function set_key7
-FunctionInfo. Adding function:set_key7
-did not find set_key8 demangled to set_key8
-did not find set_key9 demangled to set_key9
 did not find fillrand0 demangled to fillrand0
 did not find fillrand1 demangled to fillrand1
 Add filter function fillrand2
@@ -1748,24 +1402,20 @@ FunctionInfo. Adding function:fillrand2
 did not find fillrand3 demangled to fillrand3
 did not find encfile0 demangled to encfile0
 did not find encfile1 demangled to encfile1
-did not find encfile2 demangled to encfile2
+Add filter function encfile2
+FunctionInfo. Adding function:encfile2
 did not find encfile3 demangled to encfile3
-did not find decfile0 demangled to decfile0
+Add filter function decfile0
+FunctionInfo. Adding function:decfile0
 Add filter function decfile1
 FunctionInfo. Adding function:decfile1
 did not find decfile2 demangled to decfile2
-Add filter function decfile3
-FunctionInfo. Adding function:decfile3
+did not find decfile3 demangled to decfile3
 did not find decfile4 demangled to decfile4
-did not find main0 demangled to main0
-did not find main1 demangled to main1
-Add filter function main2
-FunctionInfo. Adding function:main2
-Add filter function main3
-FunctionInfo. Adding function:main3
-did not find main4 demangled to main4
-did not find main5 demangled to main5
-did not find main6 demangled to main6
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
 Adding set_key other functions, ExtractedOnly mode uses other functions
 Adding encrypt other functions, ExtractedOnly mode uses other functions
 Adding decrypt other functions, ExtractedOnly mode uses other functions
@@ -1779,10 +1429,6 @@ Adding set_key2 other functions, ExtractedOnly mode uses other functions
 Adding set_key3 other functions, ExtractedOnly mode uses other functions
 Adding set_key4 other functions, ExtractedOnly mode uses other functions
 Adding set_key5 other functions, ExtractedOnly mode uses other functions
-Adding set_key6 other functions, ExtractedOnly mode uses other functions
-Adding set_key7 other functions, ExtractedOnly mode uses other functions
-Adding set_key8 other functions, ExtractedOnly mode uses other functions
-Adding set_key9 other functions, ExtractedOnly mode uses other functions
 Adding fillrand0 other functions, ExtractedOnly mode uses other functions
 Adding fillrand1 other functions, ExtractedOnly mode uses other functions
 Adding fillrand2 other functions, ExtractedOnly mode uses other functions
@@ -1798,51 +1444,37 @@ Adding decfile3 other functions, ExtractedOnly mode uses other functions
 Adding decfile4 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Adding main4 other functions, ExtractedOnly mode uses other functions
-Adding main5 other functions, ExtractedOnly mode uses other functions
-Adding main6 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:37
+Sensitive functions:0 other functions:28
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-fillrand1
-main4
-decfile2
+encfile1
+encfile3
+main1
 decfile
 set_key4
 fillrand
 set_key5
-fillrand2
-main3
-encfile0
+encfile2
+set_key
+decfile0
 set_key3
-set_key6
-main6
+fillrand0
+encfile0
 encrypt
+main0
 decfile1
-encfile1
 set_key1
 set_key2
-decfile3
+fillrand2
 decrypt
 main
-main0
-decfile0
-encfile3
-set_key0
-main2
-main5
-encfile
-set_key8
-main1
-set_key9
-fillrand0
-set_key7
-set_key
 fillrand3
-encfile2
 decfile4
+decfile3
+set_key0
+fillrand1
+decfile2
+encfile
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -1867,7 +1499,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 37 function, while filter count is 9
+ERR. processed 28 function, while filter count is 7
 Functions called in loop
 Function call numbers
 main -- 0
@@ -1879,288 +1511,296 @@ Warning: Empty PHI
 PSNodeType::PHI with ID 27
   - operands: []
 No reaching definition for:   %15 = alloca [1 x %struct.aes], align 16, !input_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for:   %8 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8 in:   %.el = alloca i8*, !input_dep_instr !8, !control_dep_instr !9, !data_dep_instr !10 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 9
+Recieved filter functions 7
  Skipping function per FilterFunctionPass:set_key
-Collecting defining blocks for encrypt
+ Skipping function per FilterFunctionPass:encrypt
  Skipping function per FilterFunctionPass:decrypt
-Collecting defining blocks for fillrand
-Collecting defining blocks for encfile
+ Skipping function per FilterFunctionPass:fillrand
+ Skipping function per FilterFunctionPass:encfile
  Skipping function per FilterFunctionPass:decfile
- Skipping function per FilterFunctionPass:main
+Collecting defining blocks for main
  Skipping function per FilterFunctionPass:set_key
- Processing function:encrypt
-Short range hashing enabled.
-Processing path:       
-After path modifications process path
-      
-Processing path:       
-After path modifications process path
-      
-Processing path:       
-After path modifications process path
-      
-Processing path:       
-After path modifications process path
-      
-Processing path:     
-After path modifications process path
-    
-Processing path:     
-After path modifications process path
-    
+ Skipping function per FilterFunctionPass:encrypt
  Skipping function per FilterFunctionPass:decrypt
- Processing function:fillrand
+ Skipping function per FilterFunctionPass:fillrand
+ Skipping function per FilterFunctionPass:encfile
+ Skipping function per FilterFunctionPass:decfile
+ Processing function:main
 Short range hashing enabled.
 Processing path:     
 After path modifications process path
     
-Processing path:           
-After path modifications process path
-    
-Hash path invariants only
-Invariants are
-  br label %21, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand1(), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing call instruction..
-Processing path:     
-After path modifications process path
-    
-Processing path:             
-After path modifications process path
-    
-Hash path invariants only
-Invariants are
-  br label %31, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing call instruction..
-Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !6, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:     
-After path modifications process path
-    
-Processing path:         
-After path modifications process path is empty
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Non numeric pointers (int and float) are skipped:  %6 = alloca %struct._IO_FILE*, align 8, !input_dep_instr !7, !data_dep_instr !8 %struct._IO_FILE*
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %7 = alloca %struct._IO_FILE*, align 8, !input_dep_instr !7, !data_dep_instr !8 %struct._IO_FILE*
+Insert assertion skipped because there was no hash update in between!
 Processing path:       
 After path modifications process path
       
- Processing function:encfile
-Short range hashing enabled.
-Processing path:         
-After path modifications process path is empty
-Processing path:     
-After path modifications process path
-    
-Processing path:         
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
 Processing path:         
 After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %62, !control_dep_instr !8, !data_indep_instr !12
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
-Processing path:   
-After path modifications process path
-  
-Processing path:       
-After path modifications process path is empty
-Processing path:             
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %70, !control_dep_instr !8, !data_indep_instr !12
-Processing path:     
-After path modifications process path
-    
-Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile0(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:     
-After path modifications process path is empty
-Processing path:             
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
-Processing path:   
-After path modifications process path
-  
-Processing path:         
-After path modifications process path is empty
-Processing path:       
-After path modifications process path
-      
-Processing call instruction..
-Can't handle this operand   %13 = alloca i64, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile1(i64* %13), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:           
-After path modifications process path is empty
-Processing path:             
-After path modifications process path is empty
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
 Processing path:         
 After path modifications process path
         
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No short range oh has been applied in the path
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:           
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %66, !data_indep_instr !11, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %100, !data_indep_instr !11, !control_dep_instr !14
+  call void @main0(i8* %9, i32* %12), !data_indep_instr !11, !input_dep_block !13, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8* %9, i32* %12), !data_indep_instr !11, !input_dep_block !13, !control_dep_instr !14
+Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8* %9, i32* %12), !data_indep_instr !11, !input_dep_block !13, !control_dep_instr !14
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %123, !data_indep_instr !11, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+    
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                     
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %119, !data_indep_instr !11, !control_dep_instr !14
+  br label %120, !data_indep_instr !11, !input_dep_block !13, !control_dep_instr !14
+  call void @main1(i8* %9, i32* %12), !data_indep_instr !11, !input_dep_block !13, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !data_indep_instr !11, !input_dep_block !13, !control_dep_instr !14
+Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !data_indep_instr !11, !input_dep_block !13, !control_dep_instr !14
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
 Processing path:                 
 After path modifications process path
   
 Hash path invariants only
-Invariants are
-  br label %159, !control_dep_instr !8, !data_indep_instr !12
-No oh has been applied in the path
-Processing path:             
-After path modifications process path is empty
-Processing path:             
+No invariant in the path. Skip path
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:               
 After path modifications process path is empty
 Processing path:           
 After path modifications process path
           
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
 Processing path:                 
 After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:               
+Processing path:             
 After path modifications process path
-              
-Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile3(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:                 
+            
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                           
 After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:               
+Processing path:                       
 After path modifications process path
-              
-Processing path:           
+                      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                           
 After path modifications process path is empty
-Processing path:         
+Processing path:                       
 After path modifications process path
-        
-Processing path:       
+                      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                           
 After path modifications process path is empty
-Processing path:     
+Processing path:                       
 After path modifications process path
-    
- Skipping function per FilterFunctionPass:decfile
- Skipping function per FilterFunctionPass:main
-Extract path function for assertion assert_encfile_path_1
-Extract path function for assertion assert_encfile_path_3
-Extract path function for assertion assert_encfile_path_4
-Extract path function for assertion assert_encfile_path_6
-Extract path function for assertion assert_encfile_path_7
-Extract path function for assertion assert_encfile_path_9
-Extract path function for assertion assert_encfile_path_10
-Extract path function for assertion assert_encfile_path_12
-Extract path function for assertion assert_encfile_path_15
-Extract path function for assertion assert_encfile_path_19
-Extract path function for assertion assert_encfile_path_23
-Extract path function for assertion assert_encfile_path_27
-Extract path function for assertion assert_encfile_path_29
-Extract path function for assertion assert_encfile_path_31
-Extract path function for assertion assert_fillrand_path_0
-Extract path function for assertion assert_fillrand_path_1
-Extract path function for assertion assert_fillrand_path_2
-Extract path function for assertion assert_fillrand_path_3
-Extract path function for assertion assert_fillrand_path_4
-Extract path function for assertion assert_fillrand_path_6
-Extract path function for assertion assert_encrypt_path_0
-Extract path function for assertion assert_encrypt_path_1
-Extract path function for assertion assert_encrypt_path_2
-Extract path function for assertion assert_encrypt_path_3
-Extract path function for assertion assert_encrypt_path_4
-Extract path function for assertion assert_encrypt_path_5
+                      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                         
+After path modifications process path is empty
+Processing path:                     
+After path modifications process path
+                    
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                       
+After path modifications process path is empty
+Processing path:                   
+After path modifications process path
+                  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Extract path function for assertion assert_main_path_0
+Extract path function for assertion assert_main_path_4
+Extract path function for assertion assert_main_path_6
+Extract path function for assertion assert_main_path_7
+Extract path function for assertion assert_main_path_8
+Extract path function for assertion assert_main_path_9
+Extract path function for assertion assert_main_path_10
+Extract path function for assertion assert_main_path_12
+Extract path function for assertion assert_main_path_13
+Extract path function for assertion assert_main_path_14
+Extract path function for assertion assert_main_path_16
+Extract path function for assertion assert_main_path_18
+Extract path function for assertion assert_main_path_20
+Extract path function for assertion assert_main_path_22
+Extract path function for assertion assert_main_path_24
+Extract path function for assertion assert_main_path_26
+Extract path function for assertion assert_main_path_28
+Extract path function for assertion assert_main_path_30
 OH stats is requested, dumping stat file...
-Processed instructions number 5218
+Processed instructions number 5327
 {
-    "numberOfAssertCalls": 0,
+    "numberOfAssertCalls": 4,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 2282,
+    "numberOfDataDependentInstructions": 136,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 2817,
+    "numberOfInstructionsInFilteredFunctions": 5117,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
-    "numberOfNonHashableBlocks": 4,
-    "numberOfNonHashableInstructions": 21,
-    "numberOfOHProcessedInstr": 2401,
-    "numberOfOtherUnprotectedInstructions": 4,
-    "numberOfOtherUnprotectedLoopVariantInstructions": 4,
+    "numberOfNonHashableBlocks": 5,
+    "numberOfNonHashableInstructions": 22,
+    "numberOfOHProcessedInstr": 210,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
-    "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 3,
+    "numberOfProtectedBlocks": 2,
+    "numberOfProtectedFunctions": 1,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 43,
-    "numberOfSensitiveFunctions": 3,
-    "numberOfShortRangeAssertCalls": 26,
+    "numberOfProtectedInstructions": 7,
+    "numberOfSensitiveBlocks": 38,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 18,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 27,
+    "numberOfShortRangeProtectedBlocks": 26,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 21,
-    "numberOfUnprotectedArgumentReachableInstructions": 11,
+    "numberOfShortRangeProtectedInstructions": 27,
+    "numberOfUnprotectedArgumentReachableInstructions": 4,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 12,
-    "numberOfUnprotectedGlobalReachableInstructions": 2,
+    "numberOfUnprotectedDataDependentLoopBlocks": 5,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 56
+    "numberOfUnprotectedLoopInstructions": 14
 }
-ERR. processed 3 function, while filter count is 9
+ERR. processed 1 function, while filter count is 7
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.5636 seconds (1.6935 wall clock)
+  Total Execution Time: 1.6175 seconds (1.6185 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.8634 ( 56.4%)   0.0206 ( 62.1%)   0.8840 ( 56.5%)   0.9478 ( 56.0%)  runs input dependency analysis
-   0.5645 ( 36.9%)   0.0123 ( 37.1%)   0.5769 ( 36.9%)   0.6410 ( 37.9%)  Instruments bitcode with hashing and logging functions
-   0.0823 (  5.4%)   0.0000 (  0.1%)   0.0823 (  5.3%)   0.0823 (  4.9%)  Memory SSA
-   0.0089 (  0.6%)   0.0000 (  0.1%)   0.0089 (  0.6%)   0.0095 (  0.6%)  Bitcode Writer
-   0.0032 (  0.2%)   0.0000 (  0.0%)   0.0032 (  0.2%)   0.0032 (  0.2%)  Module Verifier
-   0.0016 (  0.1%)   0.0000 (  0.0%)   0.0016 (  0.1%)   0.0016 (  0.1%)  Dominator Tree Construction
-   0.0012 (  0.1%)   0.0000 (  0.0%)   0.0012 (  0.1%)   0.0014 (  0.1%)  Instruments bitcode with guards
-   0.0012 (  0.1%)   0.0000 (  0.0%)   0.0012 (  0.1%)   0.0012 (  0.1%)  Natural Loop Information
-   0.0007 (  0.0%)   0.0001 (  0.2%)   0.0008 (  0.1%)   0.0012 (  0.1%)  Post-Dominator Tree Construction
-   0.0009 (  0.1%)   0.0001 (  0.3%)   0.0010 (  0.1%)   0.0011 (  0.1%)  Dominator Tree Construction
-   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0010 (  0.1%)  runs indirect and virtual calls analysis
-   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0007 (  0.0%)  Include functions in a given file in any transformation
-   0.0005 (  0.0%)   0.0000 (  0.1%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   1.0144 ( 63.4%)   0.0121 ( 69.6%)   1.0265 ( 63.5%)   1.0271 ( 63.5%)  runs input dependency analysis
+   0.5438 ( 34.0%)   0.0038 ( 22.2%)   0.5477 ( 33.9%)   0.5482 ( 33.9%)  Instruments bitcode with hashing and logging functions
+   0.0237 (  1.5%)   0.0012 (  7.0%)   0.0250 (  1.5%)   0.0249 (  1.5%)  Memory SSA
+   0.0078 (  0.5%)   0.0000 (  0.0%)   0.0078 (  0.5%)   0.0078 (  0.5%)  Bitcode Writer
+   0.0026 (  0.2%)   0.0000 (  0.1%)   0.0026 (  0.2%)   0.0026 (  0.2%)  Module Verifier
+   0.0018 (  0.1%)   0.0001 (  0.4%)   0.0018 (  0.1%)   0.0019 (  0.1%)  Dominator Tree Construction
+   0.0011 (  0.1%)   0.0001 (  0.3%)   0.0012 (  0.1%)   0.0012 (  0.1%)  Dominator Tree Construction
+   0.0011 (  0.1%)   0.0000 (  0.3%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Natural Loop Information
+   0.0010 (  0.1%)   0.0000 (  0.0%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Instruments bitcode with guards
+   0.0006 (  0.0%)   0.0000 (  0.1%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Post-Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Include functions in a given file in any transformation
+   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Natural Loop Information
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Function Alias Analysis Results
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   1.5304 (100.0%)   0.0332 (100.0%)   1.5636 (100.0%)   1.6935 (100.0%)  Total
+   1.6001 (100.0%)   0.0173 (100.0%)   1.6175 (100.0%)   1.6185 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0100 seconds (0.0183 wall clock)
+  Total Execution Time: 0.0082 seconds (0.0082 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0097 (100.0%)   0.0004 (100.0%)   0.0100 (100.0%)   0.0183 (100.0%)  Parse IR
-   0.0097 (100.0%)   0.0004 (100.0%)   0.0100 (100.0%)   0.0183 (100.0%)  Total
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0082 (100.0%)   0.0082 (100.0%)   0.0082 (100.0%)  Parse IR
+   0.0082 (100.0%)   0.0082 (100.0%)   0.0082 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function set_key0
@@ -2169,10 +1809,6 @@ Processing function set_key2
 Processing function set_key3
 Processing function set_key4
 Processing function set_key5
-Processing function set_key6
-Processing function set_key7
-Processing function set_key8
-Processing function set_key9
 Processing function set_key
 Processing function encrypt
 Processing function decrypt
@@ -2194,23 +1830,8 @@ Processing function decfile4
 Processing function decfile
 Processing function main0
 Processing function main1
-Processing function main2
-Processing function main3
-Processing function main4
-Processing function main5
-Processing function main6
 Processing function main
 Finalizing main
-Finalizing main6
-Mark Input dependent function main6
-Finalizing main5
-Mark Input dependent function main5
-Finalizing main4
-Mark Input dependent function main4
-Finalizing main3
-Mark Input dependent function main3
-Finalizing main2
-Mark Input dependent function main2
 Finalizing main1
 Mark Input dependent function main1
 Finalizing main0
@@ -2253,14 +1874,6 @@ Finalizing encrypt
 Mark Input dependent function encrypt
 Finalizing set_key
 Mark Input dependent function set_key
-Finalizing set_key9
-Mark Input dependent function set_key9
-Finalizing set_key8
-Mark Input dependent function set_key8
-Finalizing set_key7
-Mark Input dependent function set_key7
-Finalizing set_key6
-Mark Input dependent function set_key6
 Finalizing set_key5
 Mark Input dependent function set_key5
 Finalizing set_key4
@@ -2278,36 +1891,28 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/rijndael.x.bc/50/0
-here!:encfile
-here!:main2
-here!:fillrand
 here!:decfile1
+here!:main1
+here!:encfile2
 here!:fillrand2
-here!:main3
+here!:decfile0
+here!:main
+here!:main0
 here!:encrypt
-here!:decfile3
-here!:set_key7
-here!:set_key9
-here!:main5
-here!:fillrand1
-here!:set_key2
 here!:encfile0
-here!:set_key1
 here!:fillrand0
+here!:set_key2
+here!:decfile4
 here!:encfile3
-here!:main6
-here!:decrypt
-here!:decrypt
+here!:encfile1
+here!:encfile1
 got filter function names
 did not find set_key demangled to set_key
 Add filter function encrypt
 FunctionInfo. Adding function:encrypt
-Add filter function decrypt
-FunctionInfo. Adding function:decrypt
-Add filter function fillrand
-FunctionInfo. Adding function:fillrand
-Add filter function encfile
-FunctionInfo. Adding function:encfile
+did not find decrypt demangled to decrypt
+did not find fillrand demangled to fillrand
+did not find encfile demangled to encfile
 did not find fseek demangled to fseek
 did not find fgetpos demangled to fgetpos
 did not find fwrite demangled to fwrite
@@ -2315,55 +1920,44 @@ did not find feof demangled to feof
 did not find fread demangled to fread
 did not find printf demangled to printf
 did not find decfile demangled to decfile
-did not find main demangled to main
+Add filter function main
+FunctionInfo. Adding function:main
 did not find toupper demangled to toupper
 did not find fopen demangled to fopen
 did not find fclose demangled to fclose
 did not find set_key0 demangled to set_key0
-Add filter function set_key1
-FunctionInfo. Adding function:set_key1
+did not find set_key1 demangled to set_key1
 Add filter function set_key2
 FunctionInfo. Adding function:set_key2
 did not find set_key3 demangled to set_key3
 did not find set_key4 demangled to set_key4
 did not find set_key5 demangled to set_key5
-did not find set_key6 demangled to set_key6
-Add filter function set_key7
-FunctionInfo. Adding function:set_key7
-did not find set_key8 demangled to set_key8
-Add filter function set_key9
-FunctionInfo. Adding function:set_key9
 Add filter function fillrand0
 FunctionInfo. Adding function:fillrand0
-Add filter function fillrand1
-FunctionInfo. Adding function:fillrand1
+did not find fillrand1 demangled to fillrand1
 Add filter function fillrand2
 FunctionInfo. Adding function:fillrand2
 did not find fillrand3 demangled to fillrand3
 Add filter function encfile0
 FunctionInfo. Adding function:encfile0
-did not find encfile1 demangled to encfile1
-did not find encfile2 demangled to encfile2
+Add filter function encfile1
+FunctionInfo. Adding function:encfile1
+Add filter function encfile2
+FunctionInfo. Adding function:encfile2
 Add filter function encfile3
 FunctionInfo. Adding function:encfile3
-did not find decfile0 demangled to decfile0
+Add filter function decfile0
+FunctionInfo. Adding function:decfile0
 Add filter function decfile1
 FunctionInfo. Adding function:decfile1
 did not find decfile2 demangled to decfile2
-Add filter function decfile3
-FunctionInfo. Adding function:decfile3
-did not find decfile4 demangled to decfile4
-did not find main0 demangled to main0
-did not find main1 demangled to main1
-Add filter function main2
-FunctionInfo. Adding function:main2
-Add filter function main3
-FunctionInfo. Adding function:main3
-did not find main4 demangled to main4
-Add filter function main5
-FunctionInfo. Adding function:main5
-Add filter function main6
-FunctionInfo. Adding function:main6
+did not find decfile3 demangled to decfile3
+Add filter function decfile4
+FunctionInfo. Adding function:decfile4
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
 Adding set_key other functions, ExtractedOnly mode uses other functions
 Adding encrypt other functions, ExtractedOnly mode uses other functions
 Adding decrypt other functions, ExtractedOnly mode uses other functions
@@ -2377,10 +1971,6 @@ Adding set_key2 other functions, ExtractedOnly mode uses other functions
 Adding set_key3 other functions, ExtractedOnly mode uses other functions
 Adding set_key4 other functions, ExtractedOnly mode uses other functions
 Adding set_key5 other functions, ExtractedOnly mode uses other functions
-Adding set_key6 other functions, ExtractedOnly mode uses other functions
-Adding set_key7 other functions, ExtractedOnly mode uses other functions
-Adding set_key8 other functions, ExtractedOnly mode uses other functions
-Adding set_key9 other functions, ExtractedOnly mode uses other functions
 Adding fillrand0 other functions, ExtractedOnly mode uses other functions
 Adding fillrand1 other functions, ExtractedOnly mode uses other functions
 Adding fillrand2 other functions, ExtractedOnly mode uses other functions
@@ -2396,51 +1986,37 @@ Adding decfile3 other functions, ExtractedOnly mode uses other functions
 Adding decfile4 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Adding main4 other functions, ExtractedOnly mode uses other functions
-Adding main5 other functions, ExtractedOnly mode uses other functions
-Adding main6 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:37
+Sensitive functions:0 other functions:28
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-fillrand1
-main4
-decfile2
+encfile1
+encfile3
+main1
 decfile
 set_key4
 fillrand
 set_key5
-fillrand2
-main3
-encfile0
+encfile2
+set_key
+decfile0
 set_key3
-set_key6
-main6
+fillrand0
+encfile0
 encrypt
+main0
 decfile1
-encfile1
 set_key1
 set_key2
-decfile3
+fillrand2
 decrypt
 main
-main0
-decfile0
-encfile3
-set_key0
-main2
-main5
-encfile
-set_key8
-main1
-set_key9
-fillrand0
-set_key7
-set_key
 fillrand3
-encfile2
 decfile4
+decfile3
+set_key0
+fillrand1
+decfile2
+encfile
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -2465,7 +2041,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 37 function, while filter count is 19
+ERR. processed 28 function, while filter count is 14
 Functions called in loop
 Function call numbers
 main -- 0
@@ -2476,19 +2052,18 @@ PSNodeType::PHI with ID 26
 Warning: Empty PHI
 PSNodeType::PHI with ID 27
   - operands: []
-No reaching definition for:   %15 = alloca [1 x %struct.aes], align 16, !input_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for:   %8 = alloca i8*, align 8, !input_dep_instr !7, !data_dep_instr !8 in:   %.el = alloca i8*, !input_dep_instr !8, !control_dep_instr !9, !data_dep_instr !10 off: 0
+No reaching definition for:   %15 = alloca [1 x %struct.aes], align 16, !input_dep_instr !7, !data_dep_instr !8 off: 1040
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 19
+Recieved filter functions 14
  Skipping function per FilterFunctionPass:set_key
 Collecting defining blocks for encrypt
-Collecting defining blocks for decrypt
-Collecting defining blocks for fillrand
-Collecting defining blocks for encfile
+ Skipping function per FilterFunctionPass:decrypt
+ Skipping function per FilterFunctionPass:fillrand
+ Skipping function per FilterFunctionPass:encfile
  Skipping function per FilterFunctionPass:decfile
- Skipping function per FilterFunctionPass:main
+Collecting defining blocks for main
  Skipping function per FilterFunctionPass:set_key
  Processing function:encrypt
 Short range hashing enabled.
@@ -2510,196 +2085,205 @@ After path modifications process path
 Processing path:     
 After path modifications process path
     
- Processing function:decrypt
-Short range hashing enabled.
-Processing path:       
-After path modifications process path
-      
-Processing path:       
-After path modifications process path
-      
-Processing path:       
-After path modifications process path
-      
-Processing path:       
-After path modifications process path
-      
-Processing path:     
-After path modifications process path
-    
-Processing path:     
-After path modifications process path
-    
- Processing function:fillrand
+ Skipping function per FilterFunctionPass:decrypt
+ Skipping function per FilterFunctionPass:fillrand
+ Skipping function per FilterFunctionPass:encfile
+ Skipping function per FilterFunctionPass:decfile
+ Processing function:main
 Short range hashing enabled.
 Processing path:     
 After path modifications process path
     
-Processing path:           
-After path modifications process path
-    
-Hash path invariants only
-Invariants are
-  br label %21, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand1(), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing call instruction..
-Processing path:     
-After path modifications process path
-    
-Processing path:             
-After path modifications process path
-    
-Hash path invariants only
-Invariants are
-  br label %31, !control_dep_instr !8, !data_indep_instr !12
-  call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing call instruction..
-Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !6, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @fillrand2(i32* %5, i8** %3), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:     
-After path modifications process path
-    
-Processing path:         
-After path modifications process path is empty
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Non numeric pointers (int and float) are skipped:  %6 = alloca %struct._IO_FILE*, align 8, !input_dep_instr !7, !data_dep_instr !8 %struct._IO_FILE*
+Insert assertion skipped because there was no hash update in between!
+Non numeric pointers (int and float) are skipped:  %7 = alloca %struct._IO_FILE*, align 8, !input_dep_instr !7, !data_dep_instr !8 %struct._IO_FILE*
+Insert assertion skipped because there was no hash update in between!
 Processing path:       
 After path modifications process path
       
- Processing function:encfile
-Short range hashing enabled.
-Processing path:         
-After path modifications process path is empty
-Processing path:     
-After path modifications process path
-    
-Processing path:         
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
 Processing path:         
 After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  br label %62, !control_dep_instr !8, !data_indep_instr !12
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !13
-Processing path:   
-After path modifications process path
-  
-Processing path:       
-After path modifications process path is empty
-Processing path:             
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %70, !control_dep_instr !8, !data_indep_instr !12
-Processing path:     
-After path modifications process path
-    
-Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile0(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:     
-After path modifications process path is empty
-Processing path:             
-After path modifications process path
-  
-Hash path invariants only
-Invariants are
-  store i64 0, i64* %13, align 8, !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-  br label %76, !control_dep_instr !8, !data_indep_instr !12
-Processing path:   
-After path modifications process path
-  
-Processing path:         
-After path modifications process path is empty
-Processing path:       
-After path modifications process path
-      
-Processing call instruction..
-Can't handle this operand   %13 = alloca i64, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile1(i64* %13), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:           
-After path modifications process path is empty
-Processing path:             
-After path modifications process path is empty
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
 Processing path:         
 After path modifications process path
         
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No short range oh has been applied in the path
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:           
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %66, !data_indep_instr !10, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %100, !data_indep_instr !10, !control_dep_instr !14
+  call void @main0(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main0(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %123, !data_indep_instr !10, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+    
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                     
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %119, !data_indep_instr !10, !control_dep_instr !14
+  br label %120, !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+  call void @main1(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i8, align 1, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Can't handle this operand   %12 = alloca i32, align 4, !input_dep_instr !7, !data_dep_instr !8 of the call   call void @main1(i8* %9, i32* %12), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !14
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
 Processing path:                 
 After path modifications process path
   
 Hash path invariants only
-Invariants are
-  br label %159, !control_dep_instr !8, !data_indep_instr !12
-No oh has been applied in the path
-Processing path:             
-After path modifications process path is empty
-Processing path:             
+No invariant in the path. Skip path
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:               
 After path modifications process path is empty
 Processing path:           
 After path modifications process path
           
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
 Processing path:                 
 After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:               
+Processing path:             
 After path modifications process path
-              
-Processing call instruction..
-Can't handle this operand   %9 = alloca i8*, align 8, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 of the call   call void @encfile3(i8** %9), !control_dep_instr !8, !data_indep_instr !12, !input_dep_block !14
-Processing path:                 
+            
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                           
 After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:                 
-After path modifications process path is empty
-Processing path:               
+Processing path:                       
 After path modifications process path
-              
-Processing path:           
+                      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                           
 After path modifications process path is empty
-Processing path:         
+Processing path:                       
 After path modifications process path
-        
-Processing path:       
+                      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                           
 After path modifications process path is empty
-Processing path:     
+Processing path:                       
 After path modifications process path
-    
- Skipping function per FilterFunctionPass:decfile
- Skipping function per FilterFunctionPass:main
-Extract path function for assertion assert_encfile_path_1
-Extract path function for assertion assert_encfile_path_3
-Extract path function for assertion assert_encfile_path_4
-Extract path function for assertion assert_encfile_path_6
-Extract path function for assertion assert_encfile_path_7
-Extract path function for assertion assert_encfile_path_9
-Extract path function for assertion assert_encfile_path_10
-Extract path function for assertion assert_encfile_path_12
-Extract path function for assertion assert_encfile_path_15
-Extract path function for assertion assert_encfile_path_19
-Extract path function for assertion assert_encfile_path_23
-Extract path function for assertion assert_encfile_path_27
-Extract path function for assertion assert_encfile_path_29
-Extract path function for assertion assert_encfile_path_31
-Extract path function for assertion assert_fillrand_path_0
-Extract path function for assertion assert_fillrand_path_1
-Extract path function for assertion assert_fillrand_path_2
-Extract path function for assertion assert_fillrand_path_3
-Extract path function for assertion assert_fillrand_path_4
-Extract path function for assertion assert_fillrand_path_6
-Extract path function for assertion assert_decrypt_path_0
-Extract path function for assertion assert_decrypt_path_1
-Extract path function for assertion assert_decrypt_path_2
-Extract path function for assertion assert_decrypt_path_3
-Extract path function for assertion assert_decrypt_path_4
-Extract path function for assertion assert_decrypt_path_5
+                      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                         
+After path modifications process path is empty
+Processing path:                     
+After path modifications process path
+                    
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                       
+After path modifications process path is empty
+Processing path:                   
+After path modifications process path
+                  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Extract path function for assertion assert_main_path_0
+Extract path function for assertion assert_main_path_4
+Extract path function for assertion assert_main_path_6
+Extract path function for assertion assert_main_path_7
+Extract path function for assertion assert_main_path_8
+Extract path function for assertion assert_main_path_9
+Extract path function for assertion assert_main_path_10
+Extract path function for assertion assert_main_path_12
+Extract path function for assertion assert_main_path_13
+Extract path function for assertion assert_main_path_14
+Extract path function for assertion assert_main_path_16
+Extract path function for assertion assert_main_path_18
+Extract path function for assertion assert_main_path_20
+Extract path function for assertion assert_main_path_22
+Extract path function for assertion assert_main_path_24
+Extract path function for assertion assert_main_path_26
+Extract path function for assertion assert_main_path_28
+Extract path function for assertion assert_main_path_30
 Extract path function for assertion assert_encrypt_path_0
 Extract path function for assertion assert_encrypt_path_1
 Extract path function for assertion assert_encrypt_path_2
@@ -2707,81 +2291,81 @@ Extract path function for assertion assert_encrypt_path_3
 Extract path function for assertion assert_encrypt_path_4
 Extract path function for assertion assert_encrypt_path_5
 OH stats is requested, dumping stat file...
-Processed instructions number 5218
+Processed instructions number 5327
 {
-    "numberOfAssertCalls": 0,
+    "numberOfAssertCalls": 2,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 4494,
+    "numberOfDataDependentInstructions": 2348,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 594,
+    "numberOfInstructionsInFilteredFunctions": 2894,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
-    "numberOfNonHashableBlocks": 5,
-    "numberOfNonHashableInstructions": 21,
-    "numberOfOHProcessedInstr": 4624,
-    "numberOfOtherUnprotectedInstructions": 6,
-    "numberOfOtherUnprotectedLoopVariantInstructions": 4,
+    "numberOfNonHashableBlocks": 6,
+    "numberOfNonHashableInstructions": 22,
+    "numberOfOHProcessedInstr": 2433,
+    "numberOfOtherUnprotectedInstructions": 2,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
-    "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 4,
+    "numberOfProtectedBlocks": 2,
+    "numberOfProtectedFunctions": 2,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 51,
-    "numberOfSensitiveFunctions": 4,
-    "numberOfShortRangeAssertCalls": 32,
+    "numberOfProtectedInstructions": 7,
+    "numberOfSensitiveBlocks": 46,
+    "numberOfSensitiveFunctions": 2,
+    "numberOfShortRangeAssertCalls": 24,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 34,
+    "numberOfShortRangeProtectedBlocks": 33,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 23,
-    "numberOfUnprotectedArgumentReachableInstructions": 18,
+    "numberOfShortRangeProtectedInstructions": 29,
+    "numberOfUnprotectedArgumentReachableInstructions": 11,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 12,
-    "numberOfUnprotectedGlobalReachableInstructions": 2,
+    "numberOfUnprotectedDataDependentLoopBlocks": 5,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 56
+    "numberOfUnprotectedLoopInstructions": 14
 }
-ERR. processed 4 function, while filter count is 19
+ERR. processed 2 function, while filter count is 14
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.6437 seconds (1.7052 wall clock)
+  Total Execution Time: 1.7955 seconds (1.7955 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.8241 ( 50.5%)   0.0000 (  0.0%)   0.8241 ( 50.1%)   0.8241 ( 48.3%)  runs input dependency analysis
-   0.6469 ( 39.6%)   0.0077 ( 66.2%)   0.6546 ( 39.8%)   0.6546 ( 38.4%)  Instruments bitcode with hashing and logging functions
-   0.1394 (  8.5%)   0.0039 ( 33.4%)   0.1433 (  8.7%)   0.1432 (  8.4%)  Memory SSA
-   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0624 (  3.7%)  Include functions in a given file in any transformation
-   0.0097 (  0.6%)   0.0000 (  0.0%)   0.0097 (  0.6%)   0.0097 (  0.6%)  Bitcode Writer
-   0.0028 (  0.2%)   0.0000 (  0.0%)   0.0028 (  0.2%)   0.0028 (  0.2%)  Module Verifier
-   0.0020 (  0.1%)   0.0000 (  0.1%)   0.0020 (  0.1%)   0.0021 (  0.1%)  Dominator Tree Construction
-   0.0014 (  0.1%)   0.0000 (  0.0%)   0.0014 (  0.1%)   0.0014 (  0.1%)  Instruments bitcode with guards
-   0.0013 (  0.1%)   0.0000 (  0.1%)   0.0013 (  0.1%)   0.0013 (  0.1%)  Natural Loop Information
-   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0009 (  0.0%)  Dominator Tree Construction
-   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Call site information
+   1.1013 ( 61.5%)   0.0040 ( 99.9%)   1.1053 ( 61.6%)   1.1053 ( 61.6%)  runs input dependency analysis
+   0.5652 ( 31.5%)   0.0000 (  0.0%)   0.5652 ( 31.5%)   0.5652 ( 31.5%)  Instruments bitcode with hashing and logging functions
+   0.1065 (  5.9%)   0.0000 (  0.0%)   0.1065 (  5.9%)   0.1065 (  5.9%)  Memory SSA
+   0.0083 (  0.5%)   0.0000 (  0.0%)   0.0083 (  0.5%)   0.0083 (  0.5%)  Bitcode Writer
+   0.0025 (  0.1%)   0.0000 (  0.0%)   0.0025 (  0.1%)   0.0025 (  0.1%)  Module Verifier
+   0.0020 (  0.1%)   0.0000 (  0.0%)   0.0020 (  0.1%)   0.0020 (  0.1%)  Dominator Tree Construction
+   0.0012 (  0.1%)   0.0000 (  0.0%)   0.0012 (  0.1%)   0.0012 (  0.1%)  Natural Loop Information
+   0.0010 (  0.1%)   0.0000 (  0.0%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Instruments bitcode with guards
+   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Post-Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Include functions in a given file in any transformation
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Natural Loop Information
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Function Alias Analysis Results
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  CallGraph Construction
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.6321 (100.0%)   0.0116 (100.0%)   1.6437 (100.0%)   1.7052 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.7914 (100.0%)   0.0040 (100.0%)   1.7955 (100.0%)   1.7955 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0085 seconds (0.0085 wall clock)
+  Total Execution Time: 0.0080 seconds (0.0080 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0084 (100.0%)   0.0001 (100.0%)   0.0085 (100.0%)   0.0085 (100.0%)  Parse IR
-   0.0084 (100.0%)   0.0001 (100.0%)   0.0085 (100.0%)   0.0085 (100.0%)  Total
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0080 (100.0%)   0.0080 (100.0%)   0.0080 (100.0%)  Parse IR
+   0.0080 (100.0%)   0.0080 (100.0%)   0.0080 (100.0%)  Total
 

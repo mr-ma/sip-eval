@@ -141,15 +141,14 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/search_large.x.bc/10/0
-here!:bmha_init1
-here!:bmhi_init7
-here!:bmha_init5
-here!:bmha_init
-here!:bmhi_init2
-here!:bmhi_init2
+here!:strsearch
+here!:bmha_search1
+here!:strsearch2
+here!:bmh_init0
+here!:bmha_init3
+here!:bmha_init3
 got filter function names
-Add filter function bmha_init
-FunctionInfo. Adding function:bmha_init
+did not find bmha_init demangled to bmha_init
 did not find strlen demangled to strlen
 did not find bmha_search demangled to bmha_search
 did not find bmhi_init demangled to bmhi_init
@@ -164,42 +163,42 @@ did not find bmhi_search demangled to bmhi_search
 did not find bmh_init demangled to bmh_init
 did not find bmh_search demangled to bmh_search
 did not find init_search demangled to init_search
-did not find strsearch demangled to strsearch
+Add filter function strsearch
+FunctionInfo. Adding function:strsearch
 did not find strncmp demangled to strncmp
 did not find main demangled to main
 did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
 did not find printf demangled to printf
 did not find putchar demangled to putchar
 did not find bmha_init0 demangled to bmha_init0
-Add filter function bmha_init1
-FunctionInfo. Adding function:bmha_init1
+did not find bmha_init1 demangled to bmha_init1
 did not find bmha_init2 demangled to bmha_init2
-did not find bmha_init3 demangled to bmha_init3
+Add filter function bmha_init3
+FunctionInfo. Adding function:bmha_init3
 did not find bmha_init4 demangled to bmha_init4
-Add filter function bmha_init5
-FunctionInfo. Adding function:bmha_init5
+did not find bmha_init5 demangled to bmha_init5
 did not find bmha_init6 demangled to bmha_init6
 did not find bmha_init7 demangled to bmha_init7
 did not find bmha_init8 demangled to bmha_init8
 did not find bmha_search0 demangled to bmha_search0
-did not find bmha_search1 demangled to bmha_search1
+Add filter function bmha_search1
+FunctionInfo. Adding function:bmha_search1
 did not find bmha_search2 demangled to bmha_search2
 did not find bmhi_init0 demangled to bmhi_init0
 did not find bmhi_init1 demangled to bmhi_init1
-Add filter function bmhi_init2
-FunctionInfo. Adding function:bmhi_init2
+did not find bmhi_init2 demangled to bmhi_init2
 did not find bmhi_init3 demangled to bmhi_init3
 did not find bmhi_init4 demangled to bmhi_init4
 did not find bmhi_init5 demangled to bmhi_init5
 did not find bmhi_init6 demangled to bmhi_init6
-Add filter function bmhi_init7
-FunctionInfo. Adding function:bmhi_init7
+did not find bmhi_init7 demangled to bmhi_init7
 did not find bmhi_init8 demangled to bmhi_init8
 did not find bhmi_cleanup0 demangled to bhmi_cleanup0
 did not find bmhi_search0 demangled to bmhi_search0
 did not find bmhi_search1 demangled to bmhi_search1
 did not find bmhi_search2 demangled to bmhi_search2
-did not find bmh_init0 demangled to bmh_init0
+Add filter function bmh_init0
+FunctionInfo. Adding function:bmh_init0
 did not find bmh_init1 demangled to bmh_init1
 did not find bmh_init2 demangled to bmh_init2
 did not find bmh_init3 demangled to bmh_init3
@@ -211,7 +210,8 @@ did not find bmh_search1 demangled to bmh_search1
 did not find bmh_search2 demangled to bmh_search2
 did not find strsearch0 demangled to strsearch0
 did not find strsearch1 demangled to strsearch1
-did not find strsearch2 demangled to strsearch2
+Add filter function strsearch2
+FunctionInfo. Adding function:strsearch2
 did not find main0 demangled to main0
 Adding bmha_init other functions, ExtractedOnly mode uses other functions
 Adding bmha_search other functions, ExtractedOnly mode uses other functions
@@ -352,7 +352,7 @@ No tags were supplied to be skipped!
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
 Recieved filter functions 5
-Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_init
  Skipping function per FilterFunctionPass:bmha_search
  Skipping function per FilterFunctionPass:bmhi_init
  Skipping function per FilterFunctionPass:bhmi_cleanup
@@ -360,9 +360,9 @@ Skip. No dependence graph for function bmha_init
  Skipping function per FilterFunctionPass:bmh_init
  Skipping function per FilterFunctionPass:bmh_search
  Skipping function per FilterFunctionPass:init_search
- Skipping function per FilterFunctionPass:strsearch
+Collecting defining blocks for strsearch
  Skipping function per FilterFunctionPass:main
-Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_init
  Skipping function per FilterFunctionPass:bmha_search
  Skipping function per FilterFunctionPass:bmhi_init
  Skipping function per FilterFunctionPass:bhmi_cleanup
@@ -370,81 +370,205 @@ Skip. No dependence graph for function bmha_init
  Skipping function per FilterFunctionPass:bmh_init
  Skipping function per FilterFunctionPass:bmh_search
  Skipping function per FilterFunctionPass:init_search
- Skipping function per FilterFunctionPass:strsearch
+ Processing function:strsearch
+Short range hashing enabled.
+Processing path: entry  while.cond  while.body  
+After path modifications process path
+while.body  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Non numeric pointers (int and float) are skipped:  %string.addr = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 i8*
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing path: entry  while.cond1  land.rhs  
+After path modifications process path
+land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !control_dep_instr !12, !data_indep_instr !10
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.body  
+After path modifications process path
+while.body  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+Processing path: entry  while.cond1  land.end  while.body5  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.body  while.end  if.then  if.then12  
+After path modifications process path
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  while.cond1  land.end  if.then12  
+After path modifications process path is empty
+Processing path: entry  if.then12  
+After path modifications process path
+entry  if.then12  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+No oh has been applied in the path
+Processing path: entry  while.cond  while.body  while.end  if.then  if.else  if.end  
+After path modifications process path
+while.body  while.end  if.else  if.end  
+Hash path invariants only
+Invariants are
+  br label %if.end, !control_dep_instr !12, !data_indep_instr !10
+  br label %if.end13, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  call void @strsearch2(i64* %pos), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %pos = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch2(i64* %pos), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.body  while.end  if.end13  
+After path modifications process path
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  return  
+After path modifications process path is empty
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end14  
+After path modifications process path is empty
+Processing path: entry  while.end14  
+After path modifications process path
+entry  while.end14  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
  Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_strsearch_path_6
+Extract path function for assertion assert_strsearch_path_9
+Extract path function for assertion assert_strsearch_path_12
 OH stats is requested, dumping stat file...
 Processed instructions number 623
 {
     "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 21,
-    "numberOfDataDependentInstructions": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 20,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 537,
-    "numberOfInstructionsInFunctionsWithNoDG": 86,
-    "numberOfNonHashableBlocks": 0,
-    "numberOfNonHashableInstructions": 0,
-    "numberOfOHProcessedInstr": 0,
+    "numberOfInstructionsInFilteredFunctions": 561,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 5,
+    "numberOfNonHashableInstructions": 10,
+    "numberOfOHProcessedInstr": 62,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
-    "numberOfProtectedArguments": 0,
-    "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedArguments": 1,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 1,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 0,
-    "numberOfSensitiveFunctions": 0,
-    "numberOfShortRangeAssertCalls": 0,
+    "numberOfProtectedInstructions": 5,
+    "numberOfSensitiveBlocks": 15,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 3,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedBlocks": 3,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
     "numberOfShortRangeProtectedInstructions": 0,
     "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 0,
-    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 6,
+    "numberOfUnprotectedGlobalReachableInstructions": 2,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 0
+    "numberOfUnprotectedLoopInstructions": 25
 }
-ERR. processed 0 function, while filter count is 5
+ERR. processed 1 function, while filter count is 5
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.7410 seconds (1.8025 wall clock)
+  Total Execution Time: 1.7182 seconds (1.7182 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   1.3723 ( 79.9%)   0.0203 ( 83.8%)   1.3927 ( 80.0%)   1.3927 ( 77.3%)  runs input dependency analysis
-   0.3359 ( 19.6%)   0.0000 (  0.1%)   0.3359 ( 19.3%)   0.3359 ( 18.6%)  Instruments bitcode with hashing and logging functions
-   0.0000 (  0.0%)   0.0009 (  3.9%)   0.0009 (  0.1%)   0.0624 (  3.5%)  Include functions in a given file in any transformation
-   0.0038 (  0.2%)   0.0000 (  0.0%)   0.0038 (  0.2%)   0.0038 (  0.2%)  Bitcode Writer
-   0.0000 (  0.0%)   0.0028 ( 11.5%)   0.0028 (  0.2%)   0.0028 (  0.2%)  Instruments bitcode with guards
-   0.0012 (  0.1%)   0.0001 (  0.6%)   0.0013 (  0.1%)   0.0013 (  0.1%)  Call site information
-   0.0008 (  0.0%)   0.0000 (  0.0%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Module Verifier
-   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
-   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
+   1.3351 ( 78.3%)   0.0125 ( 96.9%)   1.3476 ( 78.4%)   1.3476 ( 78.4%)  runs input dependency analysis
+   0.3550 ( 20.8%)   0.0000 (  0.1%)   0.3550 ( 20.7%)   0.3550 ( 20.7%)  Instruments bitcode with hashing and logging functions
+   0.0039 (  0.2%)   0.0000 (  0.0%)   0.0039 (  0.2%)   0.0039 (  0.2%)  Memory SSA
+   0.0037 (  0.2%)   0.0000 (  0.0%)   0.0037 (  0.2%)   0.0037 (  0.2%)  Bitcode Writer
+   0.0014 (  0.1%)   0.0000 (  0.0%)   0.0014 (  0.1%)   0.0014 (  0.1%)  Instruments bitcode with guards
+   0.0009 (  0.1%)   0.0000 (  0.1%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Include functions in a given file in any transformation
+   0.0007 (  0.0%)   0.0001 (  1.0%)   0.0009 (  0.0%)   0.0009 (  0.1%)  Dominator Tree Construction
+   0.0007 (  0.0%)   0.0001 (  1.0%)   0.0009 (  0.1%)   0.0009 (  0.0%)  Post-Dominator Tree Construction
+   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Module Verifier
+   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Call site information
+   0.0005 (  0.0%)   0.0001 (  0.8%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Natural Loop Information
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Dominator Tree Construction
    0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
    0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Dead Global Elimination
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.7167 (100.0%)   0.0243 (100.0%)   1.7410 (100.0%)   1.8025 (100.0%)  Total
+   1.7053 (100.0%)   0.0129 (100.0%)   1.7182 (100.0%)   1.7182 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0038 seconds (0.0043 wall clock)
+  Total Execution Time: 0.0035 seconds (0.0035 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0038 (100.0%)   0.0001 (100.0%)   0.0038 (100.0%)   0.0043 (100.0%)  Parse IR
-   0.0038 (100.0%)   0.0001 (100.0%)   0.0038 (100.0%)   0.0043 (100.0%)  Total
+   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0035 (100.0%)   0.0035 (100.0%)   0.0035 (100.0%)  Parse IR
+   0.0035 (100.0%)   0.0035 (100.0%)   0.0035 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function bmha_init0
@@ -1168,28 +1292,28 @@ Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx2 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom1, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Non numeric pointers (int and float) are skipped:  %arrayidx2 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom1, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Processing call instruction..
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx4 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom3, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Non numeric pointers (int and float) are skipped:  %arrayidx4 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom3, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx6 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom5, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Non numeric pointers (int and float) are skipped:  %arrayidx6 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom5, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx9 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom8, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Non numeric pointers (int and float) are skipped:  %arrayidx9 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom8, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Processing call instruction..
-Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main0(i8** %here), !control_dep_instr !11, !data_indep_instr !9, !input_dep_block !12
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main0(i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing path: entry  
 After path modifications process path
 entry  
@@ -1202,7 +1326,7 @@ After path modifications process path
 for.body  if.end  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10
+  br label %for.inc, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11
   %call13 = call i32 @putchar(i32 10), !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
@@ -1224,7 +1348,7 @@ Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom, !input_indep_instr !8, !data_indep_instr !9, !global_dep_instr !10 i8*
+Non numeric pointers (int and float) are skipped:  %arrayidx = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
@@ -1251,7 +1375,7 @@ Extract path function for assertion assert_strsearch_path_13
 OH stats is requested, dumping stat file...
 Processed instructions number 622
 {
-    "numberOfAssertCalls": 0,
+    "numberOfAssertCalls": 2,
     "numberOfBlocksInFunctionsWithNoDG": 116,
     "numberOfDataDependentInstructions": 40,
     "numberOfHashVariables": 1,
@@ -1291,41 +1415,41 @@ ERR. processed 3 function, while filter count is 49
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.7318 seconds (1.7934 wall clock)
+  Total Execution Time: 1.6338 seconds (1.6339 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   1.3272 ( 78.4%)   0.0277 ( 72.1%)   1.3549 ( 78.2%)   1.3549 ( 75.6%)  runs input dependency analysis
-   0.3479 ( 20.5%)   0.0079 ( 20.7%)   0.3559 ( 20.6%)   0.3559 ( 19.8%)  Instruments bitcode with hashing and logging functions
-   0.0010 (  0.1%)   0.0000 (  0.1%)   0.0010 (  0.1%)   0.0625 (  3.5%)  Include functions in a given file in any transformation
-   0.0065 (  0.4%)   0.0024 (  6.1%)   0.0089 (  0.5%)   0.0089 (  0.5%)  Memory SSA
-   0.0038 (  0.2%)   0.0000 (  0.0%)   0.0038 (  0.2%)   0.0038 (  0.2%)  Bitcode Writer
-   0.0012 (  0.1%)   0.0000 (  0.0%)   0.0012 (  0.1%)   0.0012 (  0.1%)  Instruments bitcode with guards
-   0.0008 (  0.0%)   0.0000 (  0.1%)   0.0009 (  0.0%)   0.0009 (  0.0%)  Dominator Tree Construction
-   0.0008 (  0.0%)   0.0000 (  0.1%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Module Verifier
-   0.0006 (  0.0%)   0.0001 (  0.4%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
+   1.2616 ( 77.8%)   0.0120 ( 99.9%)   1.2736 ( 78.0%)   1.2736 ( 77.9%)  runs input dependency analysis
+   0.3399 ( 21.0%)   0.0000 (  0.0%)   0.3399 ( 20.8%)   0.3399 ( 20.8%)  Instruments bitcode with hashing and logging functions
+   0.0088 (  0.5%)   0.0000 (  0.0%)   0.0088 (  0.5%)   0.0088 (  0.5%)  Memory SSA
+   0.0037 (  0.2%)   0.0000 (  0.0%)   0.0037 (  0.2%)   0.0037 (  0.2%)  Bitcode Writer
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Include functions in a given file in any transformation
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0008 (  0.0%)   0.0000 (  0.0%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
+   0.0008 (  0.0%)   0.0000 (  0.0%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
+   0.0008 (  0.0%)   0.0000 (  0.0%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Module Verifier
+   0.0008 (  0.0%)   0.0000 (  0.0%)   0.0008 (  0.0%)   0.0007 (  0.0%)  Natural Loop Information
    0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
-   0.0006 (  0.0%)   0.0001 (  0.3%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Natural Loop Information
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Call site information
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Call site information
    0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
    0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Dead Global Elimination
    0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
-   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
-   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.6934 (100.0%)   0.0384 (100.0%)   1.7318 (100.0%)   1.7934 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.6218 (100.0%)   0.0120 (100.0%)   1.6338 (100.0%)   1.6339 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0049 seconds (0.0049 wall clock)
+  Total Execution Time: 0.0047 seconds (0.0047 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0044 (100.0%)   0.0005 (100.0%)   0.0049 (100.0%)   0.0049 (100.0%)  Parse IR
-   0.0044 (100.0%)   0.0005 (100.0%)   0.0049 (100.0%)   0.0049 (100.0%)  Total
+   0.0042 (100.0%)   0.0005 (100.0%)   0.0047 (100.0%)   0.0047 (100.0%)  Parse IR
+   0.0042 (100.0%)   0.0005 (100.0%)   0.0047 (100.0%)   0.0047 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function bmha_init0
@@ -1470,22 +1594,21 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/search_large.x.bc/25/0
-here!:bmha_init1
-here!:bmhi_init7
-here!:bmha_init5
-here!:bmha_init
-here!:bmhi_init2
-here!:bmh_init3
-here!:strsearch0
-here!:main
+here!:strsearch
+here!:bmha_search1
+here!:strsearch2
+here!:bmh_init0
 here!:bmha_init3
+here!:bmha_init2
+here!:bmh_search1
+here!:bmha_init7
+here!:bmha_init6
 here!:strsearch1
-here!:bmh_init2
-here!:bmh_init0
-here!:bmh_init0
+here!:main0
+here!:bmha_init1
+here!:bmha_init1
 got filter function names
-Add filter function bmha_init
-FunctionInfo. Adding function:bmha_init
+did not find bmha_init demangled to bmha_init
 did not find strlen demangled to strlen
 did not find bmha_search demangled to bmha_search
 did not find bmhi_init demangled to bmhi_init
@@ -1500,38 +1623,39 @@ did not find bmhi_search demangled to bmhi_search
 did not find bmh_init demangled to bmh_init
 did not find bmh_search demangled to bmh_search
 did not find init_search demangled to init_search
-did not find strsearch demangled to strsearch
+Add filter function strsearch
+FunctionInfo. Adding function:strsearch
 did not find strncmp demangled to strncmp
-Add filter function main
-FunctionInfo. Adding function:main
+did not find main demangled to main
 did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
 did not find printf demangled to printf
 did not find putchar demangled to putchar
 did not find bmha_init0 demangled to bmha_init0
 Add filter function bmha_init1
 FunctionInfo. Adding function:bmha_init1
-did not find bmha_init2 demangled to bmha_init2
+Add filter function bmha_init2
+FunctionInfo. Adding function:bmha_init2
 Add filter function bmha_init3
 FunctionInfo. Adding function:bmha_init3
 did not find bmha_init4 demangled to bmha_init4
-Add filter function bmha_init5
-FunctionInfo. Adding function:bmha_init5
-did not find bmha_init6 demangled to bmha_init6
-did not find bmha_init7 demangled to bmha_init7
+did not find bmha_init5 demangled to bmha_init5
+Add filter function bmha_init6
+FunctionInfo. Adding function:bmha_init6
+Add filter function bmha_init7
+FunctionInfo. Adding function:bmha_init7
 did not find bmha_init8 demangled to bmha_init8
 did not find bmha_search0 demangled to bmha_search0
-did not find bmha_search1 demangled to bmha_search1
+Add filter function bmha_search1
+FunctionInfo. Adding function:bmha_search1
 did not find bmha_search2 demangled to bmha_search2
 did not find bmhi_init0 demangled to bmhi_init0
 did not find bmhi_init1 demangled to bmhi_init1
-Add filter function bmhi_init2
-FunctionInfo. Adding function:bmhi_init2
+did not find bmhi_init2 demangled to bmhi_init2
 did not find bmhi_init3 demangled to bmhi_init3
 did not find bmhi_init4 demangled to bmhi_init4
 did not find bmhi_init5 demangled to bmhi_init5
 did not find bmhi_init6 demangled to bmhi_init6
-Add filter function bmhi_init7
-FunctionInfo. Adding function:bmhi_init7
+did not find bmhi_init7 demangled to bmhi_init7
 did not find bmhi_init8 demangled to bmhi_init8
 did not find bhmi_cleanup0 demangled to bhmi_cleanup0
 did not find bmhi_search0 demangled to bmhi_search0
@@ -1540,22 +1664,22 @@ did not find bmhi_search2 demangled to bmhi_search2
 Add filter function bmh_init0
 FunctionInfo. Adding function:bmh_init0
 did not find bmh_init1 demangled to bmh_init1
-Add filter function bmh_init2
-FunctionInfo. Adding function:bmh_init2
-Add filter function bmh_init3
-FunctionInfo. Adding function:bmh_init3
+did not find bmh_init2 demangled to bmh_init2
+did not find bmh_init3 demangled to bmh_init3
 did not find bmh_init4 demangled to bmh_init4
 did not find bmh_init5 demangled to bmh_init5
 did not find bmh_init6 demangled to bmh_init6
 did not find bmh_search0 demangled to bmh_search0
-did not find bmh_search1 demangled to bmh_search1
+Add filter function bmh_search1
+FunctionInfo. Adding function:bmh_search1
 did not find bmh_search2 demangled to bmh_search2
-Add filter function strsearch0
-FunctionInfo. Adding function:strsearch0
+did not find strsearch0 demangled to strsearch0
 Add filter function strsearch1
 FunctionInfo. Adding function:strsearch1
-did not find strsearch2 demangled to strsearch2
-did not find main0 demangled to main0
+Add filter function strsearch2
+FunctionInfo. Adding function:strsearch2
+Add filter function main0
+FunctionInfo. Adding function:main0
 Adding bmha_init other functions, ExtractedOnly mode uses other functions
 Adding bmha_search other functions, ExtractedOnly mode uses other functions
 Adding bmhi_init other functions, ExtractedOnly mode uses other functions
@@ -1695,7 +1819,7 @@ No tags were supplied to be skipped!
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
 Recieved filter functions 12
-Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_init
  Skipping function per FilterFunctionPass:bmha_search
  Skipping function per FilterFunctionPass:bmhi_init
  Skipping function per FilterFunctionPass:bhmi_cleanup
@@ -1703,9 +1827,9 @@ Skip. No dependence graph for function bmha_init
  Skipping function per FilterFunctionPass:bmh_init
  Skipping function per FilterFunctionPass:bmh_search
  Skipping function per FilterFunctionPass:init_search
- Skipping function per FilterFunctionPass:strsearch
-Collecting defining blocks for main
-Skip. No dependence graph for function bmha_init
+Collecting defining blocks for strsearch
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:bmha_init
  Skipping function per FilterFunctionPass:bmha_search
  Skipping function per FilterFunctionPass:bmhi_init
  Skipping function per FilterFunctionPass:bhmi_cleanup
@@ -1713,180 +1837,205 @@ Skip. No dependence graph for function bmha_init
  Skipping function per FilterFunctionPass:bmh_init
  Skipping function per FilterFunctionPass:bmh_search
  Skipping function per FilterFunctionPass:init_search
- Skipping function per FilterFunctionPass:strsearch
- Processing function:main
+ Processing function:strsearch
 Short range hashing enabled.
-Processing path: entry  for.cond  for.body  if.then  
+Processing path: entry  while.cond1  land.rhs  
 After path modifications process path
-for.body  if.then  
+land.rhs  
 Hash path invariants only
 Invariants are
-  br label %if.end, !control_dep_instr !11, !data_indep_instr !9
-  call void @main0(i8** %here), !control_dep_instr !11, !data_indep_instr !9, !input_dep_block !12
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Insert assertion skipped because there was no hash update in between!
-Processing call instruction..
+  br label %land.end, !control_dep_instr !12, !data_indep_instr !10
+Insert assertion skipped function:strsearch because it is called from a loop!
+Non numeric pointers (int and float) are skipped:  %string.addr = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx2 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom1, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Processing call instruction..
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx4 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom3, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx6 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom5, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx9 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom8, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Processing call instruction..
-Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main0(i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Processing path: entry  while.cond  while.body  
+After path modifications process path
+while.body  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
 Processing path: entry  
 After path modifications process path
 entry  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped function:strsearch because it is called from a loop!
 No oh has been applied in the path
 No short range oh has been applied in the path
-Processing path: entry  for.cond  for.body  if.end  for.inc  
+Processing path: entry  while.cond1  land.end  while.body5  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  
 After path modifications process path
-for.body  if.end  
+while.body  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11
-  %call13 = call i32 @putchar(i32 10), !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Insert assertion skipped because there was no hash update in between!
-No short range oh has been applied in the path
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
 Processing path: entry  
 After path modifications process path
 entry  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped function:strsearch because it is called from a loop!
 No oh has been applied in the path
 No short range oh has been applied in the path
-Processing path: entry  for.cond  for.end  
-Extended path is 
-entry  for.cond  for.body  if.end  for.inc  for.end  
+Processing path: entry  while.cond1  land.end  if.then12  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  while.end  if.then  if.then12  
 After path modifications process path
-entry  for.cond  for.body  if.end  for.inc  for.end  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-No short range oh has been applied in the path
-Processing path: entry  for.end  
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  if.then12  
 After path modifications process path
-entry  for.end  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
+entry  if.then12  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+No oh has been applied in the path
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  while.end  if.then  if.else  if.end  
+After path modifications process path
+while.body  while.end  if.else  if.end  
+Hash path invariants only
+Invariants are
+  br label %if.end, !control_dep_instr !12, !data_indep_instr !10
+  br label %if.end13, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  call void @strsearch2(i64* %pos), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %pos = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch2(i64* %pos), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
 No oh has been applied in the path
 No short range oh has been applied in the path
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  while.end  if.end13  
+After path modifications process path
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  return  
+After path modifications process path is empty
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end14  
+After path modifications process path is empty
+Processing path: entry  while.end14  
+After path modifications process path
+entry  while.end14  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_strsearch_path_7
+Extract path function for assertion assert_strsearch_path_10
+Extract path function for assertion assert_strsearch_path_13
 OH stats is requested, dumping stat file...
-Processed instructions number 622
+Processed instructions number 623
 {
-    "numberOfAssertCalls": 1,
-    "numberOfBlocksInFunctionsWithNoDG": 21,
-    "numberOfDataDependentInstructions": 17,
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 20,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 483,
-    "numberOfInstructionsInFunctionsWithNoDG": 86,
-    "numberOfNonHashableBlocks": 1,
-    "numberOfNonHashableInstructions": 14,
-    "numberOfOHProcessedInstr": 53,
+    "numberOfInstructionsInFilteredFunctions": 561,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 5,
+    "numberOfNonHashableInstructions": 10,
+    "numberOfOHProcessedInstr": 62,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 1,
-    "numberOfProtectedBlocks": 6,
+    "numberOfProtectedBlocks": 1,
     "numberOfProtectedFunctions": 1,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 22,
-    "numberOfSensitiveBlocks": 7,
+    "numberOfProtectedInstructions": 5,
+    "numberOfSensitiveBlocks": 15,
     "numberOfSensitiveFunctions": 1,
-    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeAssertCalls": 3,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedBlocks": 3,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
     "numberOfShortRangeProtectedInstructions": 0,
     "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 0,
-    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 6,
+    "numberOfUnprotectedGlobalReachableInstructions": 2,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 0
+    "numberOfUnprotectedLoopInstructions": 25
 }
 ERR. processed 1 function, while filter count is 12
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.7534 seconds (1.8150 wall clock)
+  Total Execution Time: 1.6499 seconds (1.6499 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   1.3812 ( 80.2%)   0.0280 ( 87.9%)   1.4092 ( 80.4%)   1.4092 ( 77.6%)  runs input dependency analysis
-   0.3310 ( 19.2%)   0.0000 (  0.0%)   0.3311 ( 18.9%)   0.3311 ( 18.2%)  Instruments bitcode with hashing and logging functions
-   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0622 (  3.4%)  Include functions in a given file in any transformation
-   0.0006 (  0.0%)   0.0031 (  9.8%)   0.0037 (  0.2%)   0.0037 (  0.2%)  Bitcode Writer
-   0.0032 (  0.2%)   0.0000 (  0.0%)   0.0032 (  0.2%)   0.0032 (  0.2%)  Memory SSA
-   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
-   0.0008 (  0.0%)   0.0000 (  0.0%)   0.0008 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
-   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
-   0.0000 (  0.0%)   0.0007 (  2.2%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Module Verifier
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Call site information
+   1.2965 ( 79.4%)   0.0162 ( 98.2%)   1.3127 ( 79.6%)   1.3128 ( 79.6%)  runs input dependency analysis
+   0.3228 ( 19.8%)   0.0000 (  0.1%)   0.3228 ( 19.6%)   0.3228 ( 19.6%)  Instruments bitcode with hashing and logging functions
+   0.0039 (  0.2%)   0.0000 (  0.0%)   0.0039 (  0.2%)   0.0039 (  0.2%)  Memory SSA
+   0.0037 (  0.2%)   0.0000 (  0.0%)   0.0037 (  0.2%)   0.0037 (  0.2%)  Bitcode Writer
+   0.0010 (  0.1%)   0.0000 (  0.1%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Instruments bitcode with guards
+   0.0008 (  0.1%)   0.0000 (  0.1%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Include functions in a given file in any transformation
+   0.0007 (  0.0%)   0.0000 (  0.1%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Dominator Tree Construction
+   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Module Verifier
+   0.0007 (  0.0%)   0.0000 (  0.1%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.1%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Call site information
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.1%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
    0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Dead Global Elimination
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Dominator Tree Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0002 (  0.0%)   0.0001 (  0.4%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Dead Global Elimination
+   0.0001 (  0.0%)   0.0001 (  0.5%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.7216 (100.0%)   0.0319 (100.0%)   1.7534 (100.0%)   1.8150 (100.0%)  Total
+   1.6334 (100.0%)   0.0165 (100.0%)   1.6499 (100.0%)   1.6499 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0050 seconds (0.0050 wall clock)
+  Total Execution Time: 0.0053 seconds (0.0053 wall clock)
 
    ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0050 (100.0%)   0.0050 (100.0%)   0.0050 (100.0%)  Parse IR
-   0.0050 (100.0%)   0.0050 (100.0%)   0.0050 (100.0%)  Total
+   0.0053 (100.0%)   0.0053 (100.0%)   0.0053 (100.0%)  Parse IR
+   0.0053 (100.0%)   0.0053 (100.0%)   0.0053 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function bmha_init0
@@ -2031,38 +2180,38 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/search_large.x.bc/50/0
-here!:bmha_init1
-here!:bmhi_init7
-here!:bmha_init5
-here!:bmha_init
-here!:bmhi_init2
-here!:bmh_init3
-here!:strsearch0
-here!:main
-here!:bmha_init3
-here!:strsearch1
-here!:bmh_init2
+here!:strsearch
+here!:bmha_search1
+here!:strsearch2
 here!:bmh_init0
-here!:bhmi_cleanup0
-here!:bmhi_init0
-here!:bmh_init
-here!:bmha_init8
-here!:bmhi_init8
-here!:bmhi_search2
-here!:bmha_search2
-here!:bmhi_search1
-here!:main0
-here!:bmhi_init6
-here!:bmh_init5
+here!:bmha_init3
+here!:bmha_init2
 here!:bmh_search1
+here!:bmha_init7
+here!:bmha_init6
+here!:strsearch1
+here!:main0
+here!:bmha_init1
+here!:bmh_init5
+here!:bmhi_init
+here!:bmhi_init7
 here!:bhmi_cleanup
-here!:bhmi_cleanup
+here!:bmh_init2
+here!:bmh_init1
+here!:bmhi_search1
+here!:bmhi_init6
+here!:bmh_init3
+here!:bhmi_cleanup0
+here!:bmhi_init2
+here!:bmha_init5
+here!:bmhi_search0
+here!:bmhi_search0
 got filter function names
-Add filter function bmha_init
-FunctionInfo. Adding function:bmha_init
+did not find bmha_init demangled to bmha_init
 did not find strlen demangled to strlen
 did not find bmha_search demangled to bmha_search
-did not find bmhi_init demangled to bmhi_init
+Add filter function bmhi_init
+FunctionInfo. Adding function:bmhi_init
 did not find realloc demangled to realloc
 did not find exit demangled to exit
 Add filter function bhmi_cleanup
@@ -2072,36 +2221,36 @@ did not find toupper demangled to toupper
 did not find tolower demangled to tolower
 did not find free demangled to free
 did not find bmhi_search demangled to bmhi_search
-Add filter function bmh_init
-FunctionInfo. Adding function:bmh_init
+did not find bmh_init demangled to bmh_init
 did not find bmh_search demangled to bmh_search
 did not find init_search demangled to init_search
-did not find strsearch demangled to strsearch
+Add filter function strsearch
+FunctionInfo. Adding function:strsearch
 did not find strncmp demangled to strncmp
-Add filter function main
-FunctionInfo. Adding function:main
+did not find main demangled to main
 did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
 did not find printf demangled to printf
 did not find putchar demangled to putchar
 did not find bmha_init0 demangled to bmha_init0
 Add filter function bmha_init1
 FunctionInfo. Adding function:bmha_init1
-did not find bmha_init2 demangled to bmha_init2
+Add filter function bmha_init2
+FunctionInfo. Adding function:bmha_init2
 Add filter function bmha_init3
 FunctionInfo. Adding function:bmha_init3
 did not find bmha_init4 demangled to bmha_init4
 Add filter function bmha_init5
 FunctionInfo. Adding function:bmha_init5
-did not find bmha_init6 demangled to bmha_init6
-did not find bmha_init7 demangled to bmha_init7
-Add filter function bmha_init8
-FunctionInfo. Adding function:bmha_init8
+Add filter function bmha_init6
+FunctionInfo. Adding function:bmha_init6
+Add filter function bmha_init7
+FunctionInfo. Adding function:bmha_init7
+did not find bmha_init8 demangled to bmha_init8
 did not find bmha_search0 demangled to bmha_search0
-did not find bmha_search1 demangled to bmha_search1
-Add filter function bmha_search2
-FunctionInfo. Adding function:bmha_search2
-Add filter function bmhi_init0
-FunctionInfo. Adding function:bmhi_init0
+Add filter function bmha_search1
+FunctionInfo. Adding function:bmha_search1
+did not find bmha_search2 demangled to bmha_search2
+did not find bmhi_init0 demangled to bmhi_init0
 did not find bmhi_init1 demangled to bmhi_init1
 Add filter function bmhi_init2
 FunctionInfo. Adding function:bmhi_init2
@@ -2112,18 +2261,18 @@ Add filter function bmhi_init6
 FunctionInfo. Adding function:bmhi_init6
 Add filter function bmhi_init7
 FunctionInfo. Adding function:bmhi_init7
-Add filter function bmhi_init8
-FunctionInfo. Adding function:bmhi_init8
+did not find bmhi_init8 demangled to bmhi_init8
 Add filter function bhmi_cleanup0
 FunctionInfo. Adding function:bhmi_cleanup0
-did not find bmhi_search0 demangled to bmhi_search0
+Add filter function bmhi_search0
+FunctionInfo. Adding function:bmhi_search0
 Add filter function bmhi_search1
 FunctionInfo. Adding function:bmhi_search1
-Add filter function bmhi_search2
-FunctionInfo. Adding function:bmhi_search2
+did not find bmhi_search2 demangled to bmhi_search2
 Add filter function bmh_init0
 FunctionInfo. Adding function:bmh_init0
-did not find bmh_init1 demangled to bmh_init1
+Add filter function bmh_init1
+FunctionInfo. Adding function:bmh_init1
 Add filter function bmh_init2
 FunctionInfo. Adding function:bmh_init2
 Add filter function bmh_init3
@@ -2136,11 +2285,11 @@ did not find bmh_search0 demangled to bmh_search0
 Add filter function bmh_search1
 FunctionInfo. Adding function:bmh_search1
 did not find bmh_search2 demangled to bmh_search2
-Add filter function strsearch0
-FunctionInfo. Adding function:strsearch0
+did not find strsearch0 demangled to strsearch0
 Add filter function strsearch1
 FunctionInfo. Adding function:strsearch1
-did not find strsearch2 demangled to strsearch2
+Add filter function strsearch2
+FunctionInfo. Adding function:strsearch2
 Add filter function main0
 FunctionInfo. Adding function:main0
 Adding bmha_init other functions, ExtractedOnly mode uses other functions
@@ -2282,196 +2431,221 @@ No tags were supplied to be skipped!
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
 Recieved filter functions 25
-Skip. No dependence graph for function bmha_init
+ Skipping function per FilterFunctionPass:bmha_init
  Skipping function per FilterFunctionPass:bmha_search
- Skipping function per FilterFunctionPass:bmhi_init
+Skip. No dependence graph for function bmhi_init
 Skip. No dependence graph for function bhmi_cleanup
  Skipping function per FilterFunctionPass:bmhi_search
-Skip. No dependence graph for function bmh_init
+ Skipping function per FilterFunctionPass:bmh_init
  Skipping function per FilterFunctionPass:bmh_search
  Skipping function per FilterFunctionPass:init_search
- Skipping function per FilterFunctionPass:strsearch
-Collecting defining blocks for main
-Skip. No dependence graph for function bmha_init
+Collecting defining blocks for strsearch
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:bmha_init
  Skipping function per FilterFunctionPass:bmha_search
- Skipping function per FilterFunctionPass:bmhi_init
+Skip. No dependence graph for function bmhi_init
 Skip. No dependence graph for function bhmi_cleanup
  Skipping function per FilterFunctionPass:bmhi_search
-Skip. No dependence graph for function bmh_init
+ Skipping function per FilterFunctionPass:bmh_init
  Skipping function per FilterFunctionPass:bmh_search
  Skipping function per FilterFunctionPass:init_search
- Skipping function per FilterFunctionPass:strsearch
- Processing function:main
+ Processing function:strsearch
 Short range hashing enabled.
-Processing path: entry  for.cond  for.body  if.then  
+Processing path: entry  while.cond1  land.rhs  
 After path modifications process path
-for.body  if.then  
+land.rhs  
 Hash path invariants only
 Invariants are
-  br label %if.end, !control_dep_instr !11, !data_indep_instr !9
-  call void @main0(i8** %here), !control_dep_instr !11, !data_indep_instr !9, !input_dep_block !12
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Insert assertion skipped because there was no hash update in between!
-Processing call instruction..
+  br label %land.end, !control_dep_instr !12, !data_indep_instr !10
+Insert assertion skipped function:strsearch because it is called from a loop!
+Non numeric pointers (int and float) are skipped:  %string.addr = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx2 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom1, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Processing call instruction..
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx4 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom3, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx6 = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom5, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx9 = getelementptr inbounds [1332 x i8*], [1332 x i8*]* %search_strings, i64 0, i64 %idxprom8, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Processing call instruction..
-Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main0(i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Processing path: entry  while.cond  while.body  
+After path modifications process path
+while.body  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
 Processing path: entry  
 After path modifications process path
 entry  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped function:strsearch because it is called from a loop!
 No oh has been applied in the path
 No short range oh has been applied in the path
-Processing path: entry  for.cond  for.body  if.end  for.inc  
+Processing path: entry  while.cond1  land.end  while.body5  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  
 After path modifications process path
-for.body  if.end  
+while.body  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11
-  %call13 = call i32 @putchar(i32 10), !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Insert assertion skipped because there was no hash update in between!
-No short range oh has been applied in the path
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
 Processing path: entry  
 After path modifications process path
 entry  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped function:strsearch because it is called from a loop!
 No oh has been applied in the path
 No short range oh has been applied in the path
-Processing path: entry  for.cond  for.end  
-Extended path is 
-entry  for.cond  for.body  if.end  for.inc  for.end  
+Processing path: entry  while.cond1  land.end  if.then12  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  while.end  if.then  if.then12  
 After path modifications process path
-entry  for.cond  for.body  if.end  for.inc  for.end  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Non numeric pointers (int and float) are skipped:  %arrayidx = getelementptr inbounds [1333 x i8*], [1333 x i8*]* %find_strings, i64 0, i64 %idxprom, !input_indep_instr !9, !data_indep_instr !10, !global_dep_instr !11 i8*
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion skipped because there was no hash update in between!
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-No short range oh has been applied in the path
-Processing path: entry  for.end  
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  if.then12  
 After path modifications process path
-entry  for.end  
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
+entry  if.then12  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %retval = alloca i8*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %here = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch1(i8** %retval, i8** %here), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+No oh has been applied in the path
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  while.end  if.then  if.else  if.end  
+After path modifications process path
+while.body  while.end  if.else  if.end  
+Hash path invariants only
+Invariants are
+  br label %if.end, !control_dep_instr !12, !data_indep_instr !10
+  br label %if.end13, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  call void @strsearch2(i64* %pos), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing call instruction..
+Can't handle this operand   %pos = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @strsearch2(i64* %pos), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
 No oh has been applied in the path
 No short range oh has been applied in the path
+Processing path: entry  while.cond1  land.end  
+After path modifications process path is empty
+Processing path: entry  while.cond  while.body  while.end  if.end13  
+After path modifications process path
+while.body  while.end  
+Hash path invariants only
+Invariants are
+  br label %while.cond1, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion skipped function:strsearch because it is called from a loop!
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  return  
+After path modifications process path is empty
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Insert assertion skipped function:strsearch because it is called from a loop!
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end14  
+After path modifications process path is empty
+Processing path: entry  while.end14  
+After path modifications process path
+entry  while.end14  
+Insert assertion skipped function:strsearch because it is called from a loop!
+No oh has been applied in the path
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_strsearch_path_7
+Extract path function for assertion assert_strsearch_path_10
+Extract path function for assertion assert_strsearch_path_13
 OH stats is requested, dumping stat file...
-Processed instructions number 622
+Processed instructions number 623
 {
-    "numberOfAssertCalls": 2,
-    "numberOfBlocksInFunctionsWithNoDG": 37,
-    "numberOfDataDependentInstructions": 17,
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 23,
+    "numberOfDataDependentInstructions": 20,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 432,
-    "numberOfInstructionsInFunctionsWithNoDG": 137,
-    "numberOfNonHashableBlocks": 1,
-    "numberOfNonHashableInstructions": 14,
-    "numberOfOHProcessedInstr": 53,
+    "numberOfInstructionsInFilteredFunctions": 487,
+    "numberOfInstructionsInFunctionsWithNoDG": 74,
+    "numberOfNonHashableBlocks": 5,
+    "numberOfNonHashableInstructions": 10,
+    "numberOfOHProcessedInstr": 62,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 1,
-    "numberOfProtectedBlocks": 6,
+    "numberOfProtectedBlocks": 1,
     "numberOfProtectedFunctions": 1,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 22,
-    "numberOfSensitiveBlocks": 7,
+    "numberOfProtectedInstructions": 5,
+    "numberOfSensitiveBlocks": 15,
     "numberOfSensitiveFunctions": 1,
-    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeAssertCalls": 3,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedBlocks": 3,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
     "numberOfShortRangeProtectedInstructions": 0,
     "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 0,
-    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 6,
+    "numberOfUnprotectedGlobalReachableInstructions": 2,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 0
+    "numberOfUnprotectedLoopInstructions": 25
 }
 ERR. processed 1 function, while filter count is 25
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.7155 seconds (1.7771 wall clock)
+  Total Execution Time: 1.6059 seconds (1.6059 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   1.3480 ( 79.7%)   0.0191 ( 76.7%)   1.3672 ( 79.7%)   1.3672 ( 76.9%)  runs input dependency analysis
-   0.3318 ( 19.6%)   0.0034 ( 13.7%)   0.3352 ( 19.5%)   0.3352 ( 18.9%)  Instruments bitcode with hashing and logging functions
-   0.0007 (  0.0%)   0.0000 (  0.1%)   0.0007 (  0.0%)   0.0623 (  3.5%)  Include functions in a given file in any transformation
+   1.2598 ( 79.5%)   0.0120 ( 55.2%)   1.2718 ( 79.2%)   1.2718 ( 79.2%)  runs input dependency analysis
+   0.3140 ( 19.8%)   0.0055 ( 25.5%)   0.3195 ( 19.9%)   0.3196 ( 19.9%)  Instruments bitcode with hashing and logging functions
+   0.0027 (  0.2%)   0.0011 (  5.2%)   0.0039 (  0.2%)   0.0038 (  0.2%)  Memory SSA
    0.0037 (  0.2%)   0.0000 (  0.0%)   0.0037 (  0.2%)   0.0037 (  0.2%)  Bitcode Writer
-   0.0015 (  0.1%)   0.0017 (  6.8%)   0.0032 (  0.2%)   0.0032 (  0.2%)  Memory SSA
-   0.0010 (  0.1%)   0.0000 (  0.1%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
-   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0008 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0011 (  4.9%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0000 (  0.0%)   0.0008 (  3.9%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Include functions in a given file in any transformation
+   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Module Verifier
+   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Dominator Tree Construction
    0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
-   0.0002 (  0.0%)   0.0005 (  2.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Module Verifier
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Call site information
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Natural Loop Information
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Dead Global Elimination
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
-   0.0001 (  0.0%)   0.0000 (  0.2%)   0.0001 (  0.0%)   0.0002 (  0.0%)  Dominator Tree Construction
-   0.0001 (  0.0%)   0.0000 (  0.2%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0006 (  2.6%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Call site information
+   0.0004 (  0.0%)   0.0002 (  0.8%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   0.0003 (  0.0%)   0.0002 (  0.7%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   0.0002 (  0.0%)   0.0001 (  0.5%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Dead Global Elimination
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.6906 (100.0%)   0.0250 (100.0%)   1.7155 (100.0%)   1.7771 (100.0%)  Total
+   1.5842 (100.0%)   0.0217 (100.0%)   1.6059 (100.0%)   1.6059 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0033 seconds (0.0033 wall clock)
+  Total Execution Time: 0.0047 seconds (0.0047 wall clock)
 
-   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0033 (100.0%)   0.0033 (100.0%)   0.0033 (100.0%)  Parse IR
-   0.0033 (100.0%)   0.0033 (100.0%)   0.0033 (100.0%)  Total
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0041 (100.0%)   0.0006 (100.0%)   0.0047 (100.0%)   0.0047 (100.0%)  Parse IR
+   0.0041 (100.0%)   0.0006 (100.0%)   0.0047 (100.0%)   0.0047 (100.0%)  Total
 

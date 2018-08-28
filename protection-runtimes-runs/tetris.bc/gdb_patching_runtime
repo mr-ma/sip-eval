@@ -1,16 +1,16 @@
 GDB patching time 
-real 3.25
-user 3.01
-sys 0.08
+real 0.56
+user 0.43
+sys 0.07
 GDB patching time 
-real 1.07
-user 0.82
-sys 0.14
+real 1.05
+user 0.76
+sys 0.13
 GDB patching time 
-real 4.19
-user 3.96
-sys 0.11
+real 0.98
+user 0.75
+sys 0.12
 GDB patching time 
-real 3.79
-user 3.60
-sys 0.09
+real 1.02
+user 0.76
+sys 0.15
