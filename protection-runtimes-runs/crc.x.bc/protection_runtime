@@ -1,0 +1,984 @@
+Running input dependency analysis pass
+Processing function updateCRC32
+Processing function crc32file0
+Processing function crc32file1
+Processing function crc32file2
+Processing function crc32file3
+Processing function crc32file
+Processing function crc32buf0
+Processing function crc32buf1
+Processing function crc32buf
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing crc32buf
+Finalizing crc32buf1
+Mark Input dependent function crc32buf1
+Finalizing crc32buf0
+Mark Input dependent function crc32buf0
+Finalizing crc32file
+Mark Input dependent function crc32file
+Finalizing crc32file3
+Mark Input dependent function crc32file3
+Finalizing crc32file2
+Mark Input dependent function crc32file2
+Finalizing crc32file1
+Mark Input dependent function crc32file1
+Finalizing crc32file0
+Mark Input dependent function crc32file0
+Finalizing updateCRC32
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/crc.x.bc/10/0
+here!:main
+here!:main
+got filter function names
+did not find updateCRC32 demangled to updateCRC32
+did not find crc32file demangled to crc32file
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find _IO_getc demangled to _IO_getc
+did not find ferror demangled to ferror
+did not find fclose demangled to fclose
+did not find crc32buf demangled to crc32buf
+Add filter function main
+FunctionInfo. Adding function:main
+did not find printf demangled to printf
+did not find crc32file0 demangled to crc32file0
+did not find crc32file1 demangled to crc32file1
+did not find crc32file2 demangled to crc32file2
+did not find crc32file3 demangled to crc32file3
+did not find crc32buf0 demangled to crc32buf0
+did not find crc32buf1 demangled to crc32buf1
+did not find main0 demangled to main0
+Adding updateCRC32 other functions, ExtractedOnly mode uses other functions
+Adding crc32file other functions, ExtractedOnly mode uses other functions
+Adding crc32buf other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding crc32file0 other functions, ExtractedOnly mode uses other functions
+Adding crc32file1 other functions, ExtractedOnly mode uses other functions
+Adding crc32file2 other functions, ExtractedOnly mode uses other functions
+Adding crc32file3 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf0 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf1 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:11
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+crc32file3
+crc32file2
+crc32file0
+crc32file1
+crc32file
+main
+crc32buf1
+crc32buf
+updateCRC32
+crc32buf0
+main0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 11 function, while filter count is 1
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 6
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 1
+ Skipping function per FilterFunctionPass:updateCRC32
+ Skipping function per FilterFunctionPass:crc32file
+ Skipping function per FilterFunctionPass:crc32buf
+Collecting defining blocks for main
+ Skipping function per FilterFunctionPass:updateCRC32
+ Skipping function per FilterFunctionPass:crc32file
+ Skipping function per FilterFunctionPass:crc32buf
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  while.end  
+After path modifications process path
+entry  while.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+OH stats is requested, dumping stat file...
+Processed instructions number 92
+{
+    "numberOfAssertCalls": 2,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 10,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 72,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 1,
+    "numberOfOHProcessedInstr": 20,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 2,
+    "numberOfSensitiveBlocks": 4,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 7
+}
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0606 seconds (0.0607 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0350 ( 58.4%)   0.0004 ( 56.0%)   0.0354 ( 58.4%)   0.0354 ( 58.3%)  runs input dependency analysis
+   0.0214 ( 35.7%)   0.0000 (  0.0%)   0.0214 ( 35.3%)   0.0214 ( 35.3%)  Instruments bitcode with hashing and logging functions
+   0.0009 (  1.4%)   0.0000 (  0.0%)   0.0009 (  1.4%)   0.0009 (  1.4%)  Instruments bitcode with guards
+   0.0007 (  1.2%)   0.0000 (  0.0%)   0.0007 (  1.2%)   0.0007 (  1.2%)  Bitcode Writer
+   0.0003 (  0.5%)   0.0000 (  2.5%)   0.0003 (  0.5%)   0.0003 (  0.5%)  Dominator Tree Construction
+   0.0003 (  0.5%)   0.0000 (  0.0%)   0.0003 (  0.5%)   0.0003 (  0.5%)  Memory SSA
+   0.0003 (  0.4%)   0.0000 (  0.0%)   0.0003 (  0.4%)   0.0003 (  0.4%)  Call site information
+   0.0003 (  0.4%)   0.0000 (  0.0%)   0.0003 (  0.4%)   0.0003 (  0.4%)  Include functions in a given file in any transformation
+   0.0002 (  0.4%)   0.0000 (  2.6%)   0.0002 (  0.4%)   0.0002 (  0.4%)  Post-Dominator Tree Construction
+   0.0002 (  0.4%)   0.0000 (  0.0%)   0.0002 (  0.3%)   0.0002 (  0.3%)  Module Verifier
+   0.0000 (  0.0%)   0.0002 ( 28.1%)   0.0002 (  0.3%)   0.0002 (  0.3%)  runs indirect and virtual calls analysis
+   0.0002 (  0.3%)   0.0000 (  1.7%)   0.0002 (  0.3%)   0.0002 (  0.3%)  Natural Loop Information
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Dominator Tree Construction
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  2.8%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  3.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  3.4%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0599 (100.0%)   0.0007 (100.0%)   0.0606 (100.0%)   0.0607 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0008 seconds (0.0008 wall clock)
+
+   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0008 (100.0%)   0.0008 (100.0%)   0.0008 (100.0%)  Parse IR
+   0.0008 (100.0%)   0.0008 (100.0%)   0.0008 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function updateCRC32
+Processing function crc32file0
+Processing function crc32file1
+Processing function crc32file2
+Processing function crc32file3
+Processing function crc32file
+Processing function crc32buf0
+Processing function crc32buf1
+Processing function crc32buf
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing crc32buf
+Finalizing crc32buf1
+Mark Input dependent function crc32buf1
+Finalizing crc32buf0
+Mark Input dependent function crc32buf0
+Finalizing crc32file
+Mark Input dependent function crc32file
+Finalizing crc32file3
+Mark Input dependent function crc32file3
+Finalizing crc32file2
+Mark Input dependent function crc32file2
+Finalizing crc32file1
+Mark Input dependent function crc32file1
+Finalizing crc32file0
+Mark Input dependent function crc32file0
+Finalizing updateCRC32
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/crc.x.bc/100/0
+here!:updateCRC32
+here!:crc32file
+here!:crc32buf
+here!:main
+here!:crc32file0
+here!:crc32file1
+here!:crc32file2
+here!:crc32file3
+here!:crc32buf0
+here!:crc32buf1
+here!:main0
+here!:main0
+got filter function names
+Add filter function updateCRC32
+FunctionInfo. Adding function:updateCRC32
+Add filter function crc32file
+FunctionInfo. Adding function:crc32file
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find _IO_getc demangled to _IO_getc
+did not find ferror demangled to ferror
+did not find fclose demangled to fclose
+Add filter function crc32buf
+FunctionInfo. Adding function:crc32buf
+Add filter function main
+FunctionInfo. Adding function:main
+did not find printf demangled to printf
+Add filter function crc32file0
+FunctionInfo. Adding function:crc32file0
+Add filter function crc32file1
+FunctionInfo. Adding function:crc32file1
+Add filter function crc32file2
+FunctionInfo. Adding function:crc32file2
+Add filter function crc32file3
+FunctionInfo. Adding function:crc32file3
+Add filter function crc32buf0
+FunctionInfo. Adding function:crc32buf0
+Add filter function crc32buf1
+FunctionInfo. Adding function:crc32buf1
+Add filter function main0
+FunctionInfo. Adding function:main0
+Adding updateCRC32 other functions, ExtractedOnly mode uses other functions
+Adding crc32file other functions, ExtractedOnly mode uses other functions
+Adding crc32buf other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding crc32file0 other functions, ExtractedOnly mode uses other functions
+Adding crc32file1 other functions, ExtractedOnly mode uses other functions
+Adding crc32file2 other functions, ExtractedOnly mode uses other functions
+Adding crc32file3 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf0 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf1 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:11
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+crc32file3
+crc32file2
+crc32file0
+crc32file1
+crc32file
+main
+crc32buf1
+crc32buf
+updateCRC32
+crc32buf0
+main0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 6
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 11
+Skip. No dependence graph for function updateCRC32
+Collecting defining blocks for crc32file
+Skip. No dependence graph for function crc32buf
+Collecting defining blocks for main
+Skip. No dependence graph for function updateCRC32
+ Processing function:crc32file
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing call instruction..
+Can't handle this operand   %name.addr = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @crc32file0(i8** %name.addr), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !8
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Processing path: entry  if.end  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Processing path: entry  if.end  while.cond  while.end  if.then6  
+After path modifications process path is empty
+Processing path: entry  if.end  while.end  if.then6  
+After path modifications process path
+entry  if.end  while.end  if.then6  
+Processing call instruction..
+Can't handle this operand   %charcnt.addr = alloca i64*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @crc32file2(i64** %charcnt.addr, i8** %name.addr), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !8
+Can't handle this operand   %name.addr = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @crc32file2(i64** %charcnt.addr, i8** %name.addr), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !8
+Processing path: entry  if.end  while.cond  while.end  if.end7  
+After path modifications process path is empty
+Processing path: entry  if.end  while.end  if.end7  
+After path modifications process path
+entry  if.end  while.end  if.end7  
+Processing call instruction..
+Can't handle this operand   %crc.addr = alloca i64*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @crc32file3(i64** %crc.addr, i64* %oldcrc32, %struct._IO_FILE** %fin), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !8
+Can't handle this operand   %oldcrc32 = alloca i64, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @crc32file3(i64** %crc.addr, i64* %oldcrc32, %struct._IO_FILE** %fin), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !8
+Can't handle this operand   %fin = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @crc32file3(i64** %crc.addr, i64* %oldcrc32, %struct._IO_FILE** %fin), !data_indep_instr !11, !input_dep_block !12, !control_dep_instr !8
+Skip. No dependence graph for function crc32buf
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  while.end  
+After path modifications process path
+entry  while.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Extract path function for assertion assert_crc32file_path_0
+Extract path function for assertion assert_crc32file_path_1
+Extract path function for assertion assert_crc32file_path_3
+Extract path function for assertion assert_crc32file_path_5
+Extract path function for assertion assert_crc32file_path_7
+OH stats is requested, dumping stat file...
+Processed instructions number 92
+{
+    "numberOfAssertCalls": 1,
+    "numberOfBlocksInFunctionsWithNoDG": 6,
+    "numberOfDataDependentInstructions": 26,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 32,
+    "numberOfNonHashableBlocks": 2,
+    "numberOfNonHashableInstructions": 8,
+    "numberOfOHProcessedInstr": 60,
+    "numberOfOtherUnprotectedInstructions": 2,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 2,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 2,
+    "numberOfSensitiveBlocks": 13,
+    "numberOfSensitiveFunctions": 2,
+    "numberOfShortRangeAssertCalls": 5,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 6,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 7,
+    "numberOfUnprotectedArgumentReachableInstructions": 1,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 4,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 14
+}
+ERR. processed 2 function, while filter count is 11
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0557 seconds (0.0558 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0274 ( 49.2%)   0.0274 ( 49.2%)   0.0274 ( 49.1%)  Instruments bitcode with hashing and logging functions
+   0.0233 ( 41.8%)   0.0233 ( 41.8%)   0.0233 ( 41.9%)  runs input dependency analysis
+   0.0012 (  2.2%)   0.0012 (  2.2%)   0.0012 (  2.1%)  Memory SSA
+   0.0009 (  1.6%)   0.0009 (  1.6%)   0.0009 (  1.6%)  Instruments bitcode with guards
+   0.0008 (  1.5%)   0.0008 (  1.5%)   0.0008 (  1.5%)  Bitcode Writer
+   0.0003 (  0.6%)   0.0003 (  0.6%)   0.0003 (  0.6%)  Include functions in a given file in any transformation
+   0.0003 (  0.5%)   0.0003 (  0.5%)   0.0003 (  0.5%)  Call site information
+   0.0003 (  0.5%)   0.0003 (  0.5%)   0.0003 (  0.5%)  Module Verifier
+   0.0002 (  0.4%)   0.0002 (  0.4%)   0.0002 (  0.4%)  Dominator Tree Construction
+   0.0002 (  0.3%)   0.0002 (  0.3%)   0.0002 (  0.3%)  Natural Loop Information
+   0.0002 (  0.3%)   0.0002 (  0.3%)   0.0002 (  0.3%)  runs indirect and virtual calls analysis
+   0.0002 (  0.3%)   0.0002 (  0.3%)   0.0002 (  0.3%)  Post-Dominator Tree Construction
+   0.0001 (  0.2%)   0.0001 (  0.2%)   0.0001 (  0.3%)  Dominator Tree Construction
+   0.0001 (  0.2%)   0.0001 (  0.2%)   0.0001 (  0.2%)  Natural Loop Information
+   0.0000 (  0.1%)   0.0000 (  0.1%)   0.0000 (  0.1%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.1%)   0.0000 (  0.1%)   0.0000 (  0.1%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0557 (100.0%)   0.0557 (100.0%)   0.0558 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0009 seconds (0.0009 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0009 (100.0%)  Parse IR
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0009 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function updateCRC32
+Processing function crc32file0
+Processing function crc32file1
+Processing function crc32file2
+Processing function crc32file3
+Processing function crc32file
+Processing function crc32buf0
+Processing function crc32buf1
+Processing function crc32buf
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing crc32buf
+Finalizing crc32buf1
+Mark Input dependent function crc32buf1
+Finalizing crc32buf0
+Mark Input dependent function crc32buf0
+Finalizing crc32file
+Mark Input dependent function crc32file
+Finalizing crc32file3
+Mark Input dependent function crc32file3
+Finalizing crc32file2
+Mark Input dependent function crc32file2
+Finalizing crc32file1
+Mark Input dependent function crc32file1
+Finalizing crc32file0
+Mark Input dependent function crc32file0
+Finalizing updateCRC32
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/crc.x.bc/25/0
+here!:main
+here!:main0
+here!:crc32file0
+here!:crc32file0
+got filter function names
+did not find updateCRC32 demangled to updateCRC32
+did not find crc32file demangled to crc32file
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find _IO_getc demangled to _IO_getc
+did not find ferror demangled to ferror
+did not find fclose demangled to fclose
+did not find crc32buf demangled to crc32buf
+Add filter function main
+FunctionInfo. Adding function:main
+did not find printf demangled to printf
+Add filter function crc32file0
+FunctionInfo. Adding function:crc32file0
+did not find crc32file1 demangled to crc32file1
+did not find crc32file2 demangled to crc32file2
+did not find crc32file3 demangled to crc32file3
+did not find crc32buf0 demangled to crc32buf0
+did not find crc32buf1 demangled to crc32buf1
+Add filter function main0
+FunctionInfo. Adding function:main0
+Adding updateCRC32 other functions, ExtractedOnly mode uses other functions
+Adding crc32file other functions, ExtractedOnly mode uses other functions
+Adding crc32buf other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding crc32file0 other functions, ExtractedOnly mode uses other functions
+Adding crc32file1 other functions, ExtractedOnly mode uses other functions
+Adding crc32file2 other functions, ExtractedOnly mode uses other functions
+Adding crc32file3 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf0 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf1 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:11
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+crc32file3
+crc32file2
+crc32file0
+crc32file1
+crc32file
+main
+crc32buf1
+crc32buf
+updateCRC32
+crc32buf0
+main0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 11 function, while filter count is 3
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 6
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 3
+ Skipping function per FilterFunctionPass:updateCRC32
+ Skipping function per FilterFunctionPass:crc32file
+ Skipping function per FilterFunctionPass:crc32buf
+Collecting defining blocks for main
+ Skipping function per FilterFunctionPass:updateCRC32
+ Skipping function per FilterFunctionPass:crc32file
+ Skipping function per FilterFunctionPass:crc32buf
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  while.end  
+After path modifications process path
+entry  while.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+OH stats is requested, dumping stat file...
+Processed instructions number 92
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 10,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 72,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 1,
+    "numberOfOHProcessedInstr": 20,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 2,
+    "numberOfSensitiveBlocks": 4,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 7
+}
+ERR. processed 1 function, while filter count is 3
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0444 seconds (0.0445 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0227 ( 51.8%)   0.0000 (  0.0%)   0.0227 ( 51.0%)   0.0227 ( 51.1%)  runs input dependency analysis
+   0.0183 ( 41.8%)   0.0000 (  0.0%)   0.0183 ( 41.2%)   0.0183 ( 41.2%)  Instruments bitcode with hashing and logging functions
+   0.0009 (  2.0%)   0.0000 (  0.0%)   0.0009 (  2.0%)   0.0009 (  2.0%)  Instruments bitcode with guards
+   0.0000 (  0.0%)   0.0006 ( 98.9%)   0.0006 (  1.4%)   0.0006 (  1.4%)  Bitcode Writer
+   0.0003 (  0.8%)   0.0000 (  0.0%)   0.0003 (  0.8%)   0.0003 (  0.8%)  Include functions in a given file in any transformation
+   0.0003 (  0.7%)   0.0000 (  0.0%)   0.0003 (  0.6%)   0.0003 (  0.6%)  Call site information
+   0.0003 (  0.6%)   0.0000 (  0.0%)   0.0003 (  0.6%)   0.0003 (  0.6%)  Memory SSA
+   0.0002 (  0.4%)   0.0000 (  1.1%)   0.0002 (  0.4%)   0.0002 (  0.4%)  Module Verifier
+   0.0002 (  0.4%)   0.0000 (  0.0%)   0.0002 (  0.4%)   0.0002 (  0.4%)  runs indirect and virtual calls analysis
+   0.0001 (  0.3%)   0.0000 (  0.0%)   0.0001 (  0.3%)   0.0002 (  0.4%)  Post-Dominator Tree Construction
+   0.0001 (  0.3%)   0.0000 (  0.0%)   0.0001 (  0.3%)   0.0001 (  0.3%)  Dominator Tree Construction
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.2%)   0.0001 (  0.2%)  Natural Loop Information
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.2%)   0.0001 (  0.2%)  Dominator Tree Construction
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Natural Loop Information
+   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.1%)  Marks functions in a given file as assert functions
+   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0438 (100.0%)   0.0006 (100.0%)   0.0444 (100.0%)   0.0445 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0014 seconds (0.0014 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0009 (100.0%)   0.0005 (100.0%)   0.0014 (100.0%)   0.0014 (100.0%)  Parse IR
+   0.0009 (100.0%)   0.0005 (100.0%)   0.0014 (100.0%)   0.0014 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function updateCRC32
+Processing function crc32file0
+Processing function crc32file1
+Processing function crc32file2
+Processing function crc32file3
+Processing function crc32file
+Processing function crc32buf0
+Processing function crc32buf1
+Processing function crc32buf
+Processing function main0
+Processing function main
+Finalizing main
+Finalizing main0
+Mark Input dependent function main0
+Finalizing crc32buf
+Finalizing crc32buf1
+Mark Input dependent function crc32buf1
+Finalizing crc32buf0
+Mark Input dependent function crc32buf0
+Finalizing crc32file
+Mark Input dependent function crc32file
+Finalizing crc32file3
+Mark Input dependent function crc32file3
+Finalizing crc32file2
+Mark Input dependent function crc32file2
+Finalizing crc32file1
+Mark Input dependent function crc32file1
+Finalizing crc32file0
+Mark Input dependent function crc32file0
+Finalizing updateCRC32
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/crc.x.bc/50/0
+here!:main
+here!:main0
+here!:crc32file0
+here!:crc32buf1
+here!:crc32buf
+here!:crc32file2
+here!:crc32file2
+got filter function names
+did not find updateCRC32 demangled to updateCRC32
+did not find crc32file demangled to crc32file
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find _IO_getc demangled to _IO_getc
+did not find ferror demangled to ferror
+did not find fclose demangled to fclose
+Add filter function crc32buf
+FunctionInfo. Adding function:crc32buf
+Add filter function main
+FunctionInfo. Adding function:main
+did not find printf demangled to printf
+Add filter function crc32file0
+FunctionInfo. Adding function:crc32file0
+did not find crc32file1 demangled to crc32file1
+Add filter function crc32file2
+FunctionInfo. Adding function:crc32file2
+did not find crc32file3 demangled to crc32file3
+did not find crc32buf0 demangled to crc32buf0
+Add filter function crc32buf1
+FunctionInfo. Adding function:crc32buf1
+Add filter function main0
+FunctionInfo. Adding function:main0
+Adding updateCRC32 other functions, ExtractedOnly mode uses other functions
+Adding crc32file other functions, ExtractedOnly mode uses other functions
+Adding crc32buf other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding crc32file0 other functions, ExtractedOnly mode uses other functions
+Adding crc32file1 other functions, ExtractedOnly mode uses other functions
+Adding crc32file2 other functions, ExtractedOnly mode uses other functions
+Adding crc32file3 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf0 other functions, ExtractedOnly mode uses other functions
+Adding crc32buf1 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:11
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+crc32file3
+crc32file2
+crc32file0
+crc32file1
+crc32file
+main
+crc32buf1
+crc32buf
+updateCRC32
+crc32buf0
+main0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 11 function, while filter count is 6
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 6
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 7
+  - operands: []
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 6
+ Skipping function per FilterFunctionPass:updateCRC32
+ Skipping function per FilterFunctionPass:crc32file
+Skip. No dependence graph for function crc32buf
+Collecting defining blocks for main
+ Skipping function per FilterFunctionPass:updateCRC32
+ Skipping function per FilterFunctionPass:crc32file
+Skip. No dependence graph for function crc32buf
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  while.cond  while.body  
+After path modifications process path is empty
+Processing path: entry  
+After path modifications process path
+entry  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path: entry  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  while.end  
+After path modifications process path
+entry  while.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+OH stats is requested, dumping stat file...
+Processed instructions number 92
+{
+    "numberOfAssertCalls": 1,
+    "numberOfBlocksInFunctionsWithNoDG": 5,
+    "numberOfDataDependentInstructions": 10,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 55,
+    "numberOfInstructionsInFunctionsWithNoDG": 17,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 1,
+    "numberOfOHProcessedInstr": 20,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 2,
+    "numberOfSensitiveBlocks": 4,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 7
+}
+ERR. processed 1 function, while filter count is 6
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0450 seconds (0.0450 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0172 ( 42.9%)   0.0046 ( 97.4%)   0.0219 ( 48.7%)   0.0219 ( 48.7%)  runs input dependency analysis
+   0.0193 ( 48.0%)   0.0000 (  0.0%)   0.0193 ( 42.9%)   0.0193 ( 42.9%)  Instruments bitcode with hashing and logging functions
+   0.0009 (  2.4%)   0.0000 (  0.0%)   0.0009 (  2.1%)   0.0009 (  2.1%)  Instruments bitcode with guards
+   0.0006 (  1.6%)   0.0000 (  0.0%)   0.0006 (  1.4%)   0.0006 (  1.4%)  Bitcode Writer
+   0.0004 (  0.9%)   0.0000 (  0.0%)   0.0004 (  0.8%)   0.0004 (  0.8%)  Include functions in a given file in any transformation
+   0.0004 (  0.9%)   0.0000 (  0.0%)   0.0004 (  0.8%)   0.0003 (  0.8%)  Call site information
+   0.0004 (  0.9%)   0.0000 (  0.0%)   0.0004 (  0.8%)   0.0003 (  0.8%)  Memory SSA
+   0.0003 (  0.6%)   0.0000 (  0.0%)   0.0003 (  0.6%)   0.0003 (  0.6%)  runs indirect and virtual calls analysis
+   0.0002 (  0.5%)   0.0000 (  0.0%)   0.0002 (  0.4%)   0.0002 (  0.4%)  Module Verifier
+   0.0001 (  0.3%)   0.0000 (  0.9%)   0.0001 (  0.3%)   0.0002 (  0.3%)  Dominator Tree Construction
+   0.0001 (  0.2%)   0.0000 (  1.0%)   0.0001 (  0.3%)   0.0001 (  0.3%)  Post-Dominator Tree Construction
+   0.0001 (  0.1%)   0.0000 (  0.8%)   0.0001 (  0.2%)   0.0001 (  0.2%)  Natural Loop Information
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.2%)   0.0001 (  0.2%)  Dominator Tree Construction
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Natural Loop Information
+   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.1%)  Dead Global Elimination
+   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.1%)  Marks functions in a given file as assert functions
+   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.1%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.1%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0402 (100.0%)   0.0048 (100.0%)   0.0450 (100.0%)   0.0450 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0010 seconds (0.0010 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0010 (100.0%)   0.0010 (100.0%)   0.0010 (100.0%)  Parse IR
+   0.0010 (100.0%)   0.0010 (100.0%)   0.0010 (100.0%)  Total
+

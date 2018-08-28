@@ -1,0 +1,3560 @@
+Running input dependency analysis pass
+Processing function place_tile0
+Processing function place_tile1
+Processing function place_tile2
+Processing function place_tile3
+Processing function place_tile4
+Processing function place_tile
+Processing function print_tile0
+Processing function print_tile1
+Processing function print_tile
+Processing function print_game0
+Processing function print_game1
+Processing function print_game2
+Processing function print_game3
+Processing function print_game
+Processing function combine_left0
+Processing function combine_left
+Processing function deflate_left
+Processing function rotate_clockwise0
+Processing function rotate_clockwise
+Processing function move_left0
+Processing function move_left1
+Processing function move_left
+Processing function move_right0
+Processing function move_right
+Processing function move_up0
+Processing function move_up
+Processing function move_down0
+Processing function move_down
+Processing function lose_game0
+Processing function lose_game
+Processing function init_curses0
+Processing function init_curses
+Processing function max_tile
+Processing function fopen_or_die0
+Processing function fopen_or_die
+Processing function get_input0
+Processing function get_input1
+Processing function get_input2
+Processing function get_input3
+Processing function get_input
+Processing function record0
+Processing function record
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main
+Finalizing main
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing record
+Mark Input dependent function record
+Finalizing record0
+Mark Input dependent function record0
+Finalizing get_input
+Mark Input dependent function get_input
+Finalizing get_input3
+Mark Input dependent function get_input3
+Finalizing get_input2
+Mark Input dependent function get_input2
+Finalizing get_input1
+Mark Input dependent function get_input1
+Finalizing get_input0
+Mark Input dependent function get_input0
+Finalizing fopen_or_die
+Mark Input dependent function fopen_or_die
+Finalizing fopen_or_die0
+Mark Input dependent function fopen_or_die0
+Finalizing max_tile
+Mark Input dependent function max_tile
+Finalizing init_curses
+Mark Input dependent function init_curses
+Finalizing init_curses0
+Mark Input dependent function init_curses0
+Finalizing lose_game
+Mark Input dependent function lose_game
+Finalizing lose_game0
+Mark Input dependent function lose_game0
+Finalizing move_down
+Mark Input dependent function move_down
+Finalizing move_down0
+Mark Input dependent function move_down0
+Finalizing move_up
+Mark Input dependent function move_up
+Finalizing move_up0
+Mark Input dependent function move_up0
+Finalizing move_right
+Mark Input dependent function move_right
+Finalizing move_right0
+Mark Input dependent function move_right0
+Finalizing move_left
+Mark Input dependent function move_left
+Finalizing move_left1
+Mark Input dependent function move_left1
+Finalizing move_left0
+Mark Input dependent function move_left0
+Finalizing rotate_clockwise
+Mark Input dependent function rotate_clockwise
+Finalizing rotate_clockwise0
+Mark Input dependent function rotate_clockwise0
+Finalizing deflate_left
+Mark Input dependent function deflate_left
+Finalizing combine_left
+Mark Input dependent function combine_left
+Finalizing combine_left0
+Mark Input dependent function combine_left0
+Finalizing print_game
+Mark Input dependent function print_game
+Finalizing print_game3
+Mark Input dependent function print_game3
+Finalizing print_game2
+Mark Input dependent function print_game2
+Finalizing print_game1
+Mark Input dependent function print_game1
+Finalizing print_game0
+Mark Input dependent function print_game0
+Finalizing print_tile
+Mark Input dependent function print_tile
+Finalizing print_tile1
+Mark Input dependent function print_tile1
+Finalizing print_tile0
+Mark Input dependent function print_tile0
+Finalizing place_tile
+Mark Input dependent function place_tile
+Finalizing place_tile4
+Mark Input dependent function place_tile4
+Finalizing place_tile3
+Mark Input dependent function place_tile3
+Finalizing place_tile2
+Mark Input dependent function place_tile2
+Finalizing place_tile1
+Mark Input dependent function place_tile1
+Finalizing place_tile0
+Mark Input dependent function place_tile0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/2048_game.bc/10/0
+here!:lose_game0
+here!:move_left
+here!:print_game2
+here!:fopen_or_die
+here!:move_left0
+here!:move_left0
+got filter function names
+did not find place_tile demangled to place_tile
+did not find random demangled to random
+did not find __assert_fail demangled to __assert_fail
+did not find print_tile demangled to print_tile
+did not find wattr_on demangled to wattr_on
+did not find printw demangled to printw
+did not find wattr_off demangled to wattr_off
+did not find print_game demangled to print_game
+did not find wmove demangled to wmove
+did not find wrefresh demangled to wrefresh
+did not find combine_left demangled to combine_left
+did not find deflate_left demangled to deflate_left
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find rotate_clockwise demangled to rotate_clockwise
+Add filter function move_left
+FunctionInfo. Adding function:move_left
+did not find move_right demangled to move_right
+did not find move_up demangled to move_up
+did not find move_down demangled to move_down
+did not find lose_game demangled to lose_game
+did not find init_curses demangled to init_curses
+did not find initscr demangled to initscr
+did not find start_color demangled to start_color
+did not find cbreak demangled to cbreak
+did not find noecho demangled to noecho
+did not find keypad demangled to keypad
+did not find wclear demangled to wclear
+did not find curs_set demangled to curs_set
+did not find use_default_colors demangled to use_default_colors
+did not find init_pair demangled to init_pair
+did not find max_tile demangled to max_tile
+Add filter function fopen_or_die
+FunctionInfo. Adding function:fopen_or_die
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find exit demangled to exit
+did not find get_input demangled to get_input
+did not find getline demangled to getline
+did not find strspn demangled to strspn
+did not find free demangled to free
+did not find usleep demangled to usleep
+did not find wgetch demangled to wgetch
+did not find record demangled to record
+did not find fprintf demangled to fprintf
+did not find main demangled to main
+did not find time demangled to time
+did not find getopt demangled to getopt
+did not find atoi demangled to atoi
+did not find printf demangled to printf
+did not find srandom demangled to srandom
+did not find endwin demangled to endwin
+did not find place_tile0 demangled to place_tile0
+did not find place_tile1 demangled to place_tile1
+did not find place_tile2 demangled to place_tile2
+did not find place_tile3 demangled to place_tile3
+did not find place_tile4 demangled to place_tile4
+did not find print_tile0 demangled to print_tile0
+did not find print_tile1 demangled to print_tile1
+did not find print_game0 demangled to print_game0
+did not find print_game1 demangled to print_game1
+Add filter function print_game2
+FunctionInfo. Adding function:print_game2
+did not find print_game3 demangled to print_game3
+did not find combine_left0 demangled to combine_left0
+did not find rotate_clockwise0 demangled to rotate_clockwise0
+Add filter function move_left0
+FunctionInfo. Adding function:move_left0
+did not find move_left1 demangled to move_left1
+did not find move_right0 demangled to move_right0
+did not find move_up0 demangled to move_up0
+did not find move_down0 demangled to move_down0
+Add filter function lose_game0
+FunctionInfo. Adding function:lose_game0
+did not find init_curses0 demangled to init_curses0
+did not find fopen_or_die0 demangled to fopen_or_die0
+did not find get_input0 demangled to get_input0
+did not find get_input1 demangled to get_input1
+did not find get_input2 demangled to get_input2
+did not find get_input3 demangled to get_input3
+did not find record0 demangled to record0
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+did not find main2 demangled to main2
+did not find main3 demangled to main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+did not find main6 demangled to main6
+did not find main7 demangled to main7
+did not find main8 demangled to main8
+did not find main9 demangled to main9
+Adding place_tile other functions, ExtractedOnly mode uses other functions
+Adding print_tile other functions, ExtractedOnly mode uses other functions
+Adding print_game other functions, ExtractedOnly mode uses other functions
+Adding combine_left other functions, ExtractedOnly mode uses other functions
+Adding deflate_left other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise other functions, ExtractedOnly mode uses other functions
+Adding move_left other functions, ExtractedOnly mode uses other functions
+Adding move_right other functions, ExtractedOnly mode uses other functions
+Adding move_up other functions, ExtractedOnly mode uses other functions
+Adding move_down other functions, ExtractedOnly mode uses other functions
+Adding lose_game other functions, ExtractedOnly mode uses other functions
+Adding init_curses other functions, ExtractedOnly mode uses other functions
+Adding max_tile other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die other functions, ExtractedOnly mode uses other functions
+Adding get_input other functions, ExtractedOnly mode uses other functions
+Adding record other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding place_tile0 other functions, ExtractedOnly mode uses other functions
+Adding place_tile1 other functions, ExtractedOnly mode uses other functions
+Adding place_tile2 other functions, ExtractedOnly mode uses other functions
+Adding place_tile3 other functions, ExtractedOnly mode uses other functions
+Adding place_tile4 other functions, ExtractedOnly mode uses other functions
+Adding print_tile0 other functions, ExtractedOnly mode uses other functions
+Adding print_tile1 other functions, ExtractedOnly mode uses other functions
+Adding print_game0 other functions, ExtractedOnly mode uses other functions
+Adding print_game1 other functions, ExtractedOnly mode uses other functions
+Adding print_game2 other functions, ExtractedOnly mode uses other functions
+Adding print_game3 other functions, ExtractedOnly mode uses other functions
+Adding combine_left0 other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise0 other functions, ExtractedOnly mode uses other functions
+Adding move_left0 other functions, ExtractedOnly mode uses other functions
+Adding move_left1 other functions, ExtractedOnly mode uses other functions
+Adding move_right0 other functions, ExtractedOnly mode uses other functions
+Adding move_up0 other functions, ExtractedOnly mode uses other functions
+Adding move_down0 other functions, ExtractedOnly mode uses other functions
+Adding lose_game0 other functions, ExtractedOnly mode uses other functions
+Adding init_curses0 other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die0 other functions, ExtractedOnly mode uses other functions
+Adding get_input0 other functions, ExtractedOnly mode uses other functions
+Adding get_input1 other functions, ExtractedOnly mode uses other functions
+Adding get_input2 other functions, ExtractedOnly mode uses other functions
+Adding get_input3 other functions, ExtractedOnly mode uses other functions
+Adding record0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:53
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+place_tile1
+move_down0
+print_game3
+main3
+init_curses
+combine_left
+max_tile
+place_tile2
+move_up0
+place_tile4
+get_input3
+fopen_or_die
+init_curses0
+main6
+get_input2
+print_tile0
+move_up
+move_down
+combine_left0
+print_game
+move_left
+move_left0
+main7
+print_game0
+fopen_or_die0
+main9
+lose_game0
+deflate_left
+record
+main2
+main4
+main0
+get_input
+main1
+place_tile3
+print_tile1
+rotate_clockwise0
+move_right
+move_left1
+main8
+print_game2
+lose_game
+record0
+main5
+place_tile
+get_input0
+rotate_clockwise
+main
+place_tile0
+print_tile
+print_game1
+get_input1
+move_right0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 53 function, while filter count is 5
+Functions called in loop
+Function call numbers
+main0 -- 1
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 32
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 33
+  - operands: []
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 297
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No reaching definition for:   %1 = alloca i32, align 4, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stdscr = external global %struct._win_st*, align 8 in:   store i32 %2, i32* %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for:   %7 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el2 = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for:   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32*, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 in:   store i8** %2, i8*** %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for: @optarg = external global i8*, align 8 off: 0
+No reaching definition for:   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 5
+ Skipping function per FilterFunctionPass:place_tile
+ Skipping function per FilterFunctionPass:print_tile
+ Skipping function per FilterFunctionPass:print_game
+ Skipping function per FilterFunctionPass:combine_left
+ Skipping function per FilterFunctionPass:deflate_left
+ Skipping function per FilterFunctionPass:rotate_clockwise
+Collecting defining blocks for move_left
+ Skipping function per FilterFunctionPass:move_right
+ Skipping function per FilterFunctionPass:move_up
+ Skipping function per FilterFunctionPass:move_down
+ Skipping function per FilterFunctionPass:lose_game
+ Skipping function per FilterFunctionPass:init_curses
+ Skipping function per FilterFunctionPass:max_tile
+Collecting defining blocks for fopen_or_die
+ Skipping function per FilterFunctionPass:get_input
+ Skipping function per FilterFunctionPass:record
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:place_tile
+ Skipping function per FilterFunctionPass:print_tile
+ Skipping function per FilterFunctionPass:print_game
+ Skipping function per FilterFunctionPass:combine_left
+ Skipping function per FilterFunctionPass:deflate_left
+ Skipping function per FilterFunctionPass:rotate_clockwise
+ Processing function:move_left
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %9, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+  call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Processing call instruction..
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %3 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+ Skipping function per FilterFunctionPass:move_right
+ Skipping function per FilterFunctionPass:move_up
+ Skipping function per FilterFunctionPass:move_down
+ Skipping function per FilterFunctionPass:lose_game
+ Skipping function per FilterFunctionPass:init_curses
+ Skipping function per FilterFunctionPass:max_tile
+ Processing function:fopen_or_die
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @fopen_or_die0(i8** %3), !control_dep_instr !5, !data_indep_instr !8, !input_dep_block !9
+ Skipping function per FilterFunctionPass:get_input
+ Skipping function per FilterFunctionPass:record
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_fopen_or_die_path_0
+Extract path function for assertion assert_fopen_or_die_path_1
+Extract path function for assertion assert_move_left_path_1
+Extract path function for assertion assert_move_left_path_3
+OH stats is requested, dumping stat file...
+Processed instructions number 505
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 16,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 471,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 7,
+    "numberOfOHProcessedInstr": 34,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 2,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 8,
+    "numberOfSensitiveFunctions": 2,
+    "numberOfShortRangeAssertCalls": 4,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 5,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 4,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 7
+}
+ERR. processed 2 function, while filter count is 5
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.3626 seconds (0.3628 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.1990 ( 55.4%)   0.0000 (  0.0%)   0.1990 ( 54.9%)   0.1990 ( 54.9%)  Instruments bitcode with hashing and logging functions
+   0.1517 ( 42.3%)   0.0035 ( 99.0%)   0.1553 ( 42.8%)   0.1554 ( 42.8%)  runs input dependency analysis
+   0.0020 (  0.6%)   0.0000 (  0.0%)   0.0020 (  0.6%)   0.0020 (  0.6%)  Bitcode Writer
+   0.0010 (  0.3%)   0.0000 (  0.0%)   0.0010 (  0.3%)   0.0010 (  0.3%)  Instruments bitcode with guards
+   0.0009 (  0.2%)   0.0000 (  0.4%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Post-Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.4%)   0.0008 (  0.2%)   0.0009 (  0.2%)  Dominator Tree Construction
+   0.0007 (  0.2%)   0.0000 (  0.0%)   0.0007 (  0.2%)   0.0007 (  0.2%)  Module Verifier
+   0.0006 (  0.2%)   0.0000 (  0.0%)   0.0006 (  0.2%)   0.0006 (  0.2%)  Memory SSA
+   0.0005 (  0.1%)   0.0000 (  0.2%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Include functions in a given file in any transformation
+   0.0004 (  0.1%)   0.0000 (  0.0%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Call site information
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.1%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.3590 (100.0%)   0.0036 (100.0%)   0.3626 (100.0%)   0.3628 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0031 seconds (0.0031 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Parse IR
+   0.0031 (100.0%)   0.0031 (100.0%)   0.0031 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function place_tile0
+Processing function place_tile1
+Processing function place_tile2
+Processing function place_tile3
+Processing function place_tile4
+Processing function place_tile
+Processing function print_tile0
+Processing function print_tile1
+Processing function print_tile
+Processing function print_game0
+Processing function print_game1
+Processing function print_game2
+Processing function print_game3
+Processing function print_game
+Processing function combine_left0
+Processing function combine_left
+Processing function deflate_left
+Processing function rotate_clockwise0
+Processing function rotate_clockwise
+Processing function move_left0
+Processing function move_left1
+Processing function move_left
+Processing function move_right0
+Processing function move_right
+Processing function move_up0
+Processing function move_up
+Processing function move_down0
+Processing function move_down
+Processing function lose_game0
+Processing function lose_game
+Processing function init_curses0
+Processing function init_curses
+Processing function max_tile
+Processing function fopen_or_die0
+Processing function fopen_or_die
+Processing function get_input0
+Processing function get_input1
+Processing function get_input2
+Processing function get_input3
+Processing function get_input
+Processing function record0
+Processing function record
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main
+Finalizing main
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing record
+Mark Input dependent function record
+Finalizing record0
+Mark Input dependent function record0
+Finalizing get_input
+Mark Input dependent function get_input
+Finalizing get_input3
+Mark Input dependent function get_input3
+Finalizing get_input2
+Mark Input dependent function get_input2
+Finalizing get_input1
+Mark Input dependent function get_input1
+Finalizing get_input0
+Mark Input dependent function get_input0
+Finalizing fopen_or_die
+Mark Input dependent function fopen_or_die
+Finalizing fopen_or_die0
+Mark Input dependent function fopen_or_die0
+Finalizing max_tile
+Mark Input dependent function max_tile
+Finalizing init_curses
+Mark Input dependent function init_curses
+Finalizing init_curses0
+Mark Input dependent function init_curses0
+Finalizing lose_game
+Mark Input dependent function lose_game
+Finalizing lose_game0
+Mark Input dependent function lose_game0
+Finalizing move_down
+Mark Input dependent function move_down
+Finalizing move_down0
+Mark Input dependent function move_down0
+Finalizing move_up
+Mark Input dependent function move_up
+Finalizing move_up0
+Mark Input dependent function move_up0
+Finalizing move_right
+Mark Input dependent function move_right
+Finalizing move_right0
+Mark Input dependent function move_right0
+Finalizing move_left
+Mark Input dependent function move_left
+Finalizing move_left1
+Mark Input dependent function move_left1
+Finalizing move_left0
+Mark Input dependent function move_left0
+Finalizing rotate_clockwise
+Mark Input dependent function rotate_clockwise
+Finalizing rotate_clockwise0
+Mark Input dependent function rotate_clockwise0
+Finalizing deflate_left
+Mark Input dependent function deflate_left
+Finalizing combine_left
+Mark Input dependent function combine_left
+Finalizing combine_left0
+Mark Input dependent function combine_left0
+Finalizing print_game
+Mark Input dependent function print_game
+Finalizing print_game3
+Mark Input dependent function print_game3
+Finalizing print_game2
+Mark Input dependent function print_game2
+Finalizing print_game1
+Mark Input dependent function print_game1
+Finalizing print_game0
+Mark Input dependent function print_game0
+Finalizing print_tile
+Mark Input dependent function print_tile
+Finalizing print_tile1
+Mark Input dependent function print_tile1
+Finalizing print_tile0
+Mark Input dependent function print_tile0
+Finalizing place_tile
+Mark Input dependent function place_tile
+Finalizing place_tile4
+Mark Input dependent function place_tile4
+Finalizing place_tile3
+Mark Input dependent function place_tile3
+Finalizing place_tile2
+Mark Input dependent function place_tile2
+Finalizing place_tile1
+Mark Input dependent function place_tile1
+Finalizing place_tile0
+Mark Input dependent function place_tile0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/2048_game.bc/100/0
+here!:place_tile
+here!:print_tile
+here!:print_game
+here!:combine_left
+here!:deflate_left
+here!:rotate_clockwise
+here!:move_left
+here!:move_right
+here!:move_up
+here!:move_down
+here!:lose_game
+here!:init_curses
+here!:max_tile
+here!:fopen_or_die
+here!:get_input
+here!:record
+here!:main
+here!:place_tile0
+here!:place_tile1
+here!:place_tile2
+here!:place_tile3
+here!:place_tile4
+here!:print_tile0
+here!:print_tile1
+here!:print_game0
+here!:print_game1
+here!:print_game2
+here!:print_game3
+here!:combine_left0
+here!:rotate_clockwise0
+here!:move_left0
+here!:move_left1
+here!:move_right0
+here!:move_up0
+here!:move_down0
+here!:lose_game0
+here!:init_curses0
+here!:fopen_or_die0
+here!:get_input0
+here!:get_input1
+here!:get_input2
+here!:get_input3
+here!:record0
+here!:main0
+here!:main1
+here!:main2
+here!:main3
+here!:main4
+here!:main5
+here!:main6
+here!:main7
+here!:main8
+here!:main9
+here!:main9
+got filter function names
+Add filter function place_tile
+FunctionInfo. Adding function:place_tile
+did not find random demangled to random
+did not find __assert_fail demangled to __assert_fail
+Add filter function print_tile
+FunctionInfo. Adding function:print_tile
+did not find wattr_on demangled to wattr_on
+did not find printw demangled to printw
+did not find wattr_off demangled to wattr_off
+Add filter function print_game
+FunctionInfo. Adding function:print_game
+did not find wmove demangled to wmove
+did not find wrefresh demangled to wrefresh
+Add filter function combine_left
+FunctionInfo. Adding function:combine_left
+Add filter function deflate_left
+FunctionInfo. Adding function:deflate_left
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function rotate_clockwise
+FunctionInfo. Adding function:rotate_clockwise
+Add filter function move_left
+FunctionInfo. Adding function:move_left
+Add filter function move_right
+FunctionInfo. Adding function:move_right
+Add filter function move_up
+FunctionInfo. Adding function:move_up
+Add filter function move_down
+FunctionInfo. Adding function:move_down
+Add filter function lose_game
+FunctionInfo. Adding function:lose_game
+Add filter function init_curses
+FunctionInfo. Adding function:init_curses
+did not find initscr demangled to initscr
+did not find start_color demangled to start_color
+did not find cbreak demangled to cbreak
+did not find noecho demangled to noecho
+did not find keypad demangled to keypad
+did not find wclear demangled to wclear
+did not find curs_set demangled to curs_set
+did not find use_default_colors demangled to use_default_colors
+did not find init_pair demangled to init_pair
+Add filter function max_tile
+FunctionInfo. Adding function:max_tile
+Add filter function fopen_or_die
+FunctionInfo. Adding function:fopen_or_die
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find exit demangled to exit
+Add filter function get_input
+FunctionInfo. Adding function:get_input
+did not find getline demangled to getline
+did not find strspn demangled to strspn
+did not find free demangled to free
+did not find usleep demangled to usleep
+did not find wgetch demangled to wgetch
+Add filter function record
+FunctionInfo. Adding function:record
+did not find fprintf demangled to fprintf
+Add filter function main
+FunctionInfo. Adding function:main
+did not find time demangled to time
+did not find getopt demangled to getopt
+did not find atoi demangled to atoi
+did not find printf demangled to printf
+did not find srandom demangled to srandom
+did not find endwin demangled to endwin
+Add filter function place_tile0
+FunctionInfo. Adding function:place_tile0
+Add filter function place_tile1
+FunctionInfo. Adding function:place_tile1
+Add filter function place_tile2
+FunctionInfo. Adding function:place_tile2
+Add filter function place_tile3
+FunctionInfo. Adding function:place_tile3
+Add filter function place_tile4
+FunctionInfo. Adding function:place_tile4
+Add filter function print_tile0
+FunctionInfo. Adding function:print_tile0
+Add filter function print_tile1
+FunctionInfo. Adding function:print_tile1
+Add filter function print_game0
+FunctionInfo. Adding function:print_game0
+Add filter function print_game1
+FunctionInfo. Adding function:print_game1
+Add filter function print_game2
+FunctionInfo. Adding function:print_game2
+Add filter function print_game3
+FunctionInfo. Adding function:print_game3
+Add filter function combine_left0
+FunctionInfo. Adding function:combine_left0
+Add filter function rotate_clockwise0
+FunctionInfo. Adding function:rotate_clockwise0
+Add filter function move_left0
+FunctionInfo. Adding function:move_left0
+Add filter function move_left1
+FunctionInfo. Adding function:move_left1
+Add filter function move_right0
+FunctionInfo. Adding function:move_right0
+Add filter function move_up0
+FunctionInfo. Adding function:move_up0
+Add filter function move_down0
+FunctionInfo. Adding function:move_down0
+Add filter function lose_game0
+FunctionInfo. Adding function:lose_game0
+Add filter function init_curses0
+FunctionInfo. Adding function:init_curses0
+Add filter function fopen_or_die0
+FunctionInfo. Adding function:fopen_or_die0
+Add filter function get_input0
+FunctionInfo. Adding function:get_input0
+Add filter function get_input1
+FunctionInfo. Adding function:get_input1
+Add filter function get_input2
+FunctionInfo. Adding function:get_input2
+Add filter function get_input3
+FunctionInfo. Adding function:get_input3
+Add filter function record0
+FunctionInfo. Adding function:record0
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+Add filter function main4
+FunctionInfo. Adding function:main4
+Add filter function main5
+FunctionInfo. Adding function:main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+Add filter function main7
+FunctionInfo. Adding function:main7
+Add filter function main8
+FunctionInfo. Adding function:main8
+Add filter function main9
+FunctionInfo. Adding function:main9
+Adding place_tile other functions, ExtractedOnly mode uses other functions
+Adding print_tile other functions, ExtractedOnly mode uses other functions
+Adding print_game other functions, ExtractedOnly mode uses other functions
+Adding combine_left other functions, ExtractedOnly mode uses other functions
+Adding deflate_left other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise other functions, ExtractedOnly mode uses other functions
+Adding move_left other functions, ExtractedOnly mode uses other functions
+Adding move_right other functions, ExtractedOnly mode uses other functions
+Adding move_up other functions, ExtractedOnly mode uses other functions
+Adding move_down other functions, ExtractedOnly mode uses other functions
+Adding lose_game other functions, ExtractedOnly mode uses other functions
+Adding init_curses other functions, ExtractedOnly mode uses other functions
+Adding max_tile other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die other functions, ExtractedOnly mode uses other functions
+Adding get_input other functions, ExtractedOnly mode uses other functions
+Adding record other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding place_tile0 other functions, ExtractedOnly mode uses other functions
+Adding place_tile1 other functions, ExtractedOnly mode uses other functions
+Adding place_tile2 other functions, ExtractedOnly mode uses other functions
+Adding place_tile3 other functions, ExtractedOnly mode uses other functions
+Adding place_tile4 other functions, ExtractedOnly mode uses other functions
+Adding print_tile0 other functions, ExtractedOnly mode uses other functions
+Adding print_tile1 other functions, ExtractedOnly mode uses other functions
+Adding print_game0 other functions, ExtractedOnly mode uses other functions
+Adding print_game1 other functions, ExtractedOnly mode uses other functions
+Adding print_game2 other functions, ExtractedOnly mode uses other functions
+Adding print_game3 other functions, ExtractedOnly mode uses other functions
+Adding combine_left0 other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise0 other functions, ExtractedOnly mode uses other functions
+Adding move_left0 other functions, ExtractedOnly mode uses other functions
+Adding move_left1 other functions, ExtractedOnly mode uses other functions
+Adding move_right0 other functions, ExtractedOnly mode uses other functions
+Adding move_up0 other functions, ExtractedOnly mode uses other functions
+Adding move_down0 other functions, ExtractedOnly mode uses other functions
+Adding lose_game0 other functions, ExtractedOnly mode uses other functions
+Adding init_curses0 other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die0 other functions, ExtractedOnly mode uses other functions
+Adding get_input0 other functions, ExtractedOnly mode uses other functions
+Adding get_input1 other functions, ExtractedOnly mode uses other functions
+Adding get_input2 other functions, ExtractedOnly mode uses other functions
+Adding get_input3 other functions, ExtractedOnly mode uses other functions
+Adding record0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:53
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+place_tile1
+move_down0
+print_game3
+main3
+init_curses
+combine_left
+max_tile
+place_tile2
+move_up0
+place_tile4
+get_input3
+fopen_or_die
+init_curses0
+main6
+get_input2
+print_tile0
+move_up
+move_down
+combine_left0
+print_game
+move_left
+move_left0
+main7
+print_game0
+fopen_or_die0
+main9
+lose_game0
+deflate_left
+record
+main2
+main4
+main0
+get_input
+main1
+place_tile3
+print_tile1
+rotate_clockwise0
+move_right
+move_left1
+main8
+print_game2
+lose_game
+record0
+main5
+place_tile
+get_input0
+rotate_clockwise
+main
+place_tile0
+print_tile
+print_game1
+get_input1
+move_right0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+Functions called in loop
+Function call numbers
+main0 -- 1
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 32
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 33
+  - operands: []
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 297
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No reaching definition for:   %1 = alloca i32, align 4, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stdscr = external global %struct._win_st*, align 8 in:   store i32 %2, i32* %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for:   %7 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el2 = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for:   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32*, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 in:   store i8** %2, i8*** %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for: @optarg = external global i8*, align 8 off: 0
+No reaching definition for:   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 53
+Collecting defining blocks for place_tile
+Collecting defining blocks for print_tile
+Collecting defining blocks for print_game
+Collecting defining blocks for combine_left
+Collecting defining blocks for deflate_left
+Collecting defining blocks for rotate_clockwise
+Collecting defining blocks for move_left
+Collecting defining blocks for move_right
+Collecting defining blocks for move_up
+Collecting defining blocks for move_down
+Collecting defining blocks for lose_game
+Collecting defining blocks for init_curses
+Collecting defining blocks for max_tile
+Collecting defining blocks for fopen_or_die
+Collecting defining blocks for get_input
+Collecting defining blocks for record
+Collecting defining blocks for main
+ Processing function:place_tile
+Short range hashing enabled.
+Processing path:         
+Extended path is 
+          
+After path modifications process path
+          
+Processing call instruction..
+Can't handle this operand   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile0(i32** %4, %struct.game** %3), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Can't handle this operand   %3 = alloca %struct.game*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile0(i32** %4, %struct.game** %3), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Processing call instruction..
+Can't handle this operand   %6 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile1(i32* %6, i32** %4, i32* %5), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Can't handle this operand   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile1(i32* %6, i32** %4, i32* %5), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile1(i32* %6, i32** %4, i32* %5), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Processing path:   
+After path modifications process path
+  
+Processing path:               
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %58, !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Processing path:         
+Extended path is 
+            
+After path modifications process path
+            
+Processing call instruction..
+Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile2(i32* %5, i32* %7, i32* %6), !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Can't handle this operand   %7 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile2(i32* %5, i32* %7, i32* %6), !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Can't handle this operand   %6 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile2(i32* %5, i32* %7, i32* %6), !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Processing path:       
+After path modifications process path
+      
+Processing path:               
+After path modifications process path
+  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path:           
+Extended path is 
+              
+After path modifications process path
+              
+Processing call instruction..
+Can't handle this operand   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile3(i32** %4, i32* %5), !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @place_tile3(i32** %4, i32* %5), !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Processing path:         
+After path modifications process path
+        
+Processing path:           
+After path modifications process path is empty
+Processing path:           
+Warning: No exit block for loop. The path may be malformed
+Extended path is 
+              
+After path modifications process path
+              
+Processing path:         
+After path modifications process path
+        
+Processing path:         
+Extended path is 
+            
+After path modifications process path
+            
+Processing path:       
+After path modifications process path
+      
+Processing path:         
+Extended path is 
+            
+After path modifications process path
+            
+Processing path:       
+After path modifications process path
+      
+ Processing function:print_tile
+Short range hashing enabled.
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Processing function:print_game
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %18, !control_dep_instr !5, !data_indep_instr !9
+No oh has been applied in the path
+Processing path:       
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %9, !control_dep_instr !5, !data_indep_instr !9
+  store i32 0, i32* %4, align 4, !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !10
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @print_game0(%struct.game** %2), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Processing path:     
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %30, !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+  br label %17, !control_dep_instr !5, !data_indep_instr !9
+  store i32 0, i32* %4, align 4, !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+ Processing function:combine_left
+Short range hashing enabled.
+Processing path:           
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %31, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+  call void @combine_left0(i32* %6, %struct.game** %3, i32** %4, i32* %5), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Processing call instruction..
+Can't handle this operand   %6 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @combine_left0(i32* %6, %struct.game** %3, i32** %4, i32* %5), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %3 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @combine_left0(i32* %6, %struct.game** %3, i32** %4, i32* %5), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @combine_left0(i32* %6, %struct.game** %3, i32** %4, i32* %5), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %5 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @combine_left0(i32* %6, %struct.game** %3, i32** %4, i32* %5), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Processing path:   
+After path modifications process path
+  
+Processing path:           
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %42, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !11
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+ Processing function:deflate_left
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %40, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+Processing path:   
+After path modifications process path
+  
+Non numeric pointers (int and float) are skipped:  %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 i32*
+Processing path:           
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %52, !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Processing path:   
+After path modifications process path
+  
+Non numeric pointers (int and float) are skipped:  %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 i32*
+Processing path:       
+Extended path is 
+            
+After path modifications process path
+            
+Non numeric pointers (int and float) are skipped:  %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 i32*
+Processing path:     
+After path modifications process path
+    
+Non numeric pointers (int and float) are skipped:  %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 i32*
+ Processing function:rotate_clockwise
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %31, !control_dep_instr !5, !data_indep_instr !9
+No oh has been applied in the path
+Processing path:       
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %16, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+  store i32 0, i32* %5, align 4, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Processing path:   
+After path modifications process path
+  
+Processing path:     
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %43, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !11
+  br label %24, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+  store i32 0, i32* %5, align 4, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !11
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+ Processing function:move_left
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %9, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+  call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Processing call instruction..
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %3 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+ Processing function:move_right
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_right0(%struct.game** %2), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+No oh has been applied in the path
+ Processing function:move_up
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_up0(%struct.game** %2), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+No oh has been applied in the path
+ Processing function:move_down
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_down0(%struct.game** %2), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+No oh has been applied in the path
+ Processing function:lose_game
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+No oh has been applied in the path
+ Processing function:init_curses
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %1 = alloca i32, align 4, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @init_curses0(i32* %1), !control_dep_instr !5, !input_indep_instr !7, !data_indep_instr !8
+ Processing function:max_tile
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %24, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+Processing path:   
+After path modifications process path
+  
+Processing path:           
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Processing path:   
+After path modifications process path
+  
+Processing path:         
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %40, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+Extended path is 
+            
+After path modifications process path
+            
+Processing path:     
+After path modifications process path
+    
+ Processing function:fopen_or_die
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @fopen_or_die0(i8** %3), !control_dep_instr !5, !data_indep_instr !8, !input_dep_block !9
+ Processing function:get_input
+Short range hashing enabled.
+Processing path:       
+After path modifications process path
+      
+Processing path:         
+After path modifications process path
+        
+Processing path:         
+After path modifications process path
+        
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Processing function:record
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Processing function:main
+Short range hashing enabled.
+Processing path:         
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Non numeric pointers (int and float) are skipped:  %6 = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5 i8*
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main0(i64* %9), !input_indep_instr !6, !data_indep_instr !7
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %5 = alloca i8**, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main6(i8*** %5), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !7
+  call void @main1(), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path is empty
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !7
+  call void @main2(), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !7
+  call void @main3(i64* %9), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main3(i64* %9), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !7
+  call void @main4(), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %5 = alloca i8**, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main5(i8*** %5), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+No oh has been applied in the path
+Processing path:         
+After path modifications process path is empty
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path is empty
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path
+              
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path is empty
+Processing path:                   
+After path modifications process path is empty
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path
+              
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path:                   
+After path modifications process path is empty
+Processing path:                     
+After path modifications process path is empty
+Processing path:                   
+After path modifications process path is empty
+Processing path:                 
+After path modifications process path
+                
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:               
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+          
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path is empty
+Processing path:             
+After path modifications process path
+            
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path is empty
+Processing path:             
+After path modifications process path
+            
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %100, !control_dep_instr !10, !data_indep_instr !7
+  call void @main7(i32* %11, %struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+  %96 = getelementptr inbounds %struct.game, %struct.game* %7, i32 0, i32 0, !control_dep_instr !10, !data_dep_instr !5
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %11 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main7(i32* %11, %struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main7(i32* %11, %struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  %101 = getelementptr inbounds %struct.game, %struct.game* %7, i32 0, i32 0, !control_dep_instr !10, !data_dep_instr !5
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %104, !control_dep_instr !10, !data_indep_instr !7
+  call void @move_left(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_left(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %109, !control_dep_instr !10, !data_indep_instr !7
+  call void @move_down(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_down(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %114, !control_dep_instr !10, !data_indep_instr !7
+  call void @move_up(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_up(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %119, !control_dep_instr !10, !data_indep_instr !7
+  call void @move_right(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_right(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+          
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:             
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %113, !control_dep_instr !10, !data_indep_instr !7
+  call void @print_game(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @print_game(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !7, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Extract path function for assertion assert_get_input_path_0
+Extract path function for assertion assert_get_input_path_1
+Extract path function for assertion assert_get_input_path_2
+Extract path function for assertion assert_get_input_path_3
+Extract path function for assertion assert_get_input_path_4
+Extract path function for assertion assert_fopen_or_die_path_0
+Extract path function for assertion assert_fopen_or_die_path_1
+Extract path function for assertion assert_max_tile_path_0
+Extract path function for assertion assert_max_tile_path_1
+Extract path function for assertion assert_max_tile_path_2
+Extract path function for assertion assert_max_tile_path_3
+Extract path function for assertion assert_max_tile_path_4
+Extract path function for assertion assert_max_tile_path_5
+Extract path function for assertion assert_max_tile_path_6
+Extract path function for assertion assert_max_tile_path_7
+Extract path function for assertion assert_init_curses_path_0
+Extract path function for assertion assert_record_path_0
+Extract path function for assertion assert_record_path_1
+Extract path function for assertion assert_combine_left_path_0
+Extract path function for assertion assert_combine_left_path_1
+Extract path function for assertion assert_combine_left_path_2
+Extract path function for assertion assert_combine_left_path_3
+Extract path function for assertion assert_combine_left_path_5
+Extract path function for assertion assert_print_game_path_1
+Extract path function for assertion assert_print_game_path_2
+Extract path function for assertion assert_print_game_path_4
+Extract path function for assertion assert_print_game_path_5
+Extract path function for assertion assert_print_game_path_7
+Extract path function for assertion assert_deflate_left_path_0
+Extract path function for assertion assert_deflate_left_path_1
+Extract path function for assertion assert_deflate_left_path_2
+Extract path function for assertion assert_deflate_left_path_3
+Extract path function for assertion assert_deflate_left_path_4
+Extract path function for assertion assert_deflate_left_path_5
+Extract path function for assertion assert_main_path_15
+Extract path function for assertion assert_main_path_18
+Extract path function for assertion assert_main_path_22
+Extract path function for assertion assert_main_path_26
+Extract path function for assertion assert_main_path_29
+Extract path function for assertion assert_main_path_32
+Extract path function for assertion assert_main_path_35
+Extract path function for assertion assert_main_path_36
+Extract path function for assertion assert_main_path_38
+Extract path function for assertion assert_main_path_39
+Extract path function for assertion assert_main_path_41
+Extract path function for assertion assert_main_path_44
+Extract path function for assertion assert_main_path_47
+Extract path function for assertion assert_main_path_50
+Extract path function for assertion assert_main_path_53
+Extract path function for assertion assert_main_path_56
+Extract path function for assertion assert_main_path_59
+Extract path function for assertion assert_main_path_61
+Extract path function for assertion assert_print_tile_path_0
+Extract path function for assertion assert_print_tile_path_1
+Extract path function for assertion assert_print_tile_path_2
+Extract path function for assertion assert_print_tile_path_3
+Extract path function for assertion assert_move_left_path_1
+Extract path function for assertion assert_move_left_path_3
+Extract path function for assertion assert_place_tile_path_0
+Extract path function for assertion assert_place_tile_path_1
+Extract path function for assertion assert_place_tile_path_2
+Extract path function for assertion assert_place_tile_path_3
+Extract path function for assertion assert_place_tile_path_4
+Extract path function for assertion assert_place_tile_path_6
+Extract path function for assertion assert_place_tile_path_7
+Extract path function for assertion assert_place_tile_path_9
+Extract path function for assertion assert_place_tile_path_10
+Extract path function for assertion assert_place_tile_path_11
+Extract path function for assertion assert_place_tile_path_12
+Extract path function for assertion assert_place_tile_path_13
+Extract path function for assertion assert_place_tile_path_14
+Extract path function for assertion assert_rotate_clockwise_path_1
+Extract path function for assertion assert_rotate_clockwise_path_2
+Extract path function for assertion assert_rotate_clockwise_path_4
+Extract path function for assertion assert_rotate_clockwise_path_5
+Extract path function for assertion assert_rotate_clockwise_path_7
+OH stats is requested, dumping stat file...
+Processed instructions number 504
+{
+    "numberOfAssertCalls": 1,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 191,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 24,
+    "numberOfNonHashableInstructions": 101,
+    "numberOfOHProcessedInstr": 504,
+    "numberOfOtherUnprotectedInstructions": 4,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 20,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 13,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 4,
+    "numberOfSensitiveBlocks": 124,
+    "numberOfSensitiveFunctions": 17,
+    "numberOfShortRangeAssertCalls": 76,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 75,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 74,
+    "numberOfUnprotectedArgumentReachableInstructions": 13,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 24,
+    "numberOfUnprotectedGlobalReachableInstructions": 17,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 80
+}
+ERR. processed 17 function, while filter count is 53
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.6119 seconds (0.6119 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3782 ( 63.1%)   0.0121 ( 97.1%)   0.3902 ( 63.8%)   0.3902 ( 63.8%)  Instruments bitcode with hashing and logging functions
+   0.1713 ( 28.6%)   0.0000 (  0.0%)   0.1713 ( 28.0%)   0.1713 ( 28.0%)  runs input dependency analysis
+   0.0287 (  4.8%)   0.0002 (  1.7%)   0.0289 (  4.7%)   0.0288 (  4.7%)  Memory SSA
+   0.0054 (  0.9%)   0.0000 (  0.0%)   0.0054 (  0.9%)   0.0054 (  0.9%)  Bitcode Writer
+   0.0044 (  0.7%)   0.0001 (  0.5%)   0.0044 (  0.7%)   0.0045 (  0.7%)  Dominator Tree Construction
+   0.0037 (  0.6%)   0.0000 (  0.4%)   0.0038 (  0.6%)   0.0037 (  0.6%)  Natural Loop Information
+   0.0019 (  0.3%)   0.0000 (  0.0%)   0.0019 (  0.3%)   0.0019 (  0.3%)  Module Verifier
+   0.0010 (  0.2%)   0.0000 (  0.0%)   0.0010 (  0.2%)   0.0010 (  0.2%)  Instruments bitcode with guards
+   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0010 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Include functions in a given file in any transformation
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.1%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Function Alias Analysis Results
+   0.0005 (  0.1%)   0.0000 (  0.1%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Basic Alias Analysis (stateless AA impl)
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.5995 (100.0%)   0.0124 (100.0%)   0.6119 (100.0%)   0.6119 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0020 seconds (0.0020 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0020 (100.0%)   0.0020 (100.0%)   0.0020 (100.0%)  Parse IR
+   0.0020 (100.0%)   0.0020 (100.0%)   0.0020 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function place_tile0
+Processing function place_tile1
+Processing function place_tile2
+Processing function place_tile3
+Processing function place_tile4
+Processing function place_tile
+Processing function print_tile0
+Processing function print_tile1
+Processing function print_tile
+Processing function print_game0
+Processing function print_game1
+Processing function print_game2
+Processing function print_game3
+Processing function print_game
+Processing function combine_left0
+Processing function combine_left
+Processing function deflate_left
+Processing function rotate_clockwise0
+Processing function rotate_clockwise
+Processing function move_left0
+Processing function move_left1
+Processing function move_left
+Processing function move_right0
+Processing function move_right
+Processing function move_up0
+Processing function move_up
+Processing function move_down0
+Processing function move_down
+Processing function lose_game0
+Processing function lose_game
+Processing function init_curses0
+Processing function init_curses
+Processing function max_tile
+Processing function fopen_or_die0
+Processing function fopen_or_die
+Processing function get_input0
+Processing function get_input1
+Processing function get_input2
+Processing function get_input3
+Processing function get_input
+Processing function record0
+Processing function record
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main
+Finalizing main
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing record
+Mark Input dependent function record
+Finalizing record0
+Mark Input dependent function record0
+Finalizing get_input
+Mark Input dependent function get_input
+Finalizing get_input3
+Mark Input dependent function get_input3
+Finalizing get_input2
+Mark Input dependent function get_input2
+Finalizing get_input1
+Mark Input dependent function get_input1
+Finalizing get_input0
+Mark Input dependent function get_input0
+Finalizing fopen_or_die
+Mark Input dependent function fopen_or_die
+Finalizing fopen_or_die0
+Mark Input dependent function fopen_or_die0
+Finalizing max_tile
+Mark Input dependent function max_tile
+Finalizing init_curses
+Mark Input dependent function init_curses
+Finalizing init_curses0
+Mark Input dependent function init_curses0
+Finalizing lose_game
+Mark Input dependent function lose_game
+Finalizing lose_game0
+Mark Input dependent function lose_game0
+Finalizing move_down
+Mark Input dependent function move_down
+Finalizing move_down0
+Mark Input dependent function move_down0
+Finalizing move_up
+Mark Input dependent function move_up
+Finalizing move_up0
+Mark Input dependent function move_up0
+Finalizing move_right
+Mark Input dependent function move_right
+Finalizing move_right0
+Mark Input dependent function move_right0
+Finalizing move_left
+Mark Input dependent function move_left
+Finalizing move_left1
+Mark Input dependent function move_left1
+Finalizing move_left0
+Mark Input dependent function move_left0
+Finalizing rotate_clockwise
+Mark Input dependent function rotate_clockwise
+Finalizing rotate_clockwise0
+Mark Input dependent function rotate_clockwise0
+Finalizing deflate_left
+Mark Input dependent function deflate_left
+Finalizing combine_left
+Mark Input dependent function combine_left
+Finalizing combine_left0
+Mark Input dependent function combine_left0
+Finalizing print_game
+Mark Input dependent function print_game
+Finalizing print_game3
+Mark Input dependent function print_game3
+Finalizing print_game2
+Mark Input dependent function print_game2
+Finalizing print_game1
+Mark Input dependent function print_game1
+Finalizing print_game0
+Mark Input dependent function print_game0
+Finalizing print_tile
+Mark Input dependent function print_tile
+Finalizing print_tile1
+Mark Input dependent function print_tile1
+Finalizing print_tile0
+Mark Input dependent function print_tile0
+Finalizing place_tile
+Mark Input dependent function place_tile
+Finalizing place_tile4
+Mark Input dependent function place_tile4
+Finalizing place_tile3
+Mark Input dependent function place_tile3
+Finalizing place_tile2
+Mark Input dependent function place_tile2
+Finalizing place_tile1
+Mark Input dependent function place_tile1
+Finalizing place_tile0
+Mark Input dependent function place_tile0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/2048_game.bc/25/0
+here!:lose_game0
+here!:move_left
+here!:print_game2
+here!:fopen_or_die
+here!:move_left0
+here!:place_tile0
+here!:rotate_clockwise0
+here!:print_game0
+here!:get_input3
+here!:get_input0
+here!:main3
+here!:combine_left0
+here!:main2
+here!:main2
+got filter function names
+did not find place_tile demangled to place_tile
+did not find random demangled to random
+did not find __assert_fail demangled to __assert_fail
+did not find print_tile demangled to print_tile
+did not find wattr_on demangled to wattr_on
+did not find printw demangled to printw
+did not find wattr_off demangled to wattr_off
+did not find print_game demangled to print_game
+did not find wmove demangled to wmove
+did not find wrefresh demangled to wrefresh
+did not find combine_left demangled to combine_left
+did not find deflate_left demangled to deflate_left
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find rotate_clockwise demangled to rotate_clockwise
+Add filter function move_left
+FunctionInfo. Adding function:move_left
+did not find move_right demangled to move_right
+did not find move_up demangled to move_up
+did not find move_down demangled to move_down
+did not find lose_game demangled to lose_game
+did not find init_curses demangled to init_curses
+did not find initscr demangled to initscr
+did not find start_color demangled to start_color
+did not find cbreak demangled to cbreak
+did not find noecho demangled to noecho
+did not find keypad demangled to keypad
+did not find wclear demangled to wclear
+did not find curs_set demangled to curs_set
+did not find use_default_colors demangled to use_default_colors
+did not find init_pair demangled to init_pair
+did not find max_tile demangled to max_tile
+Add filter function fopen_or_die
+FunctionInfo. Adding function:fopen_or_die
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find exit demangled to exit
+did not find get_input demangled to get_input
+did not find getline demangled to getline
+did not find strspn demangled to strspn
+did not find free demangled to free
+did not find usleep demangled to usleep
+did not find wgetch demangled to wgetch
+did not find record demangled to record
+did not find fprintf demangled to fprintf
+did not find main demangled to main
+did not find time demangled to time
+did not find getopt demangled to getopt
+did not find atoi demangled to atoi
+did not find printf demangled to printf
+did not find srandom demangled to srandom
+did not find endwin demangled to endwin
+Add filter function place_tile0
+FunctionInfo. Adding function:place_tile0
+did not find place_tile1 demangled to place_tile1
+did not find place_tile2 demangled to place_tile2
+did not find place_tile3 demangled to place_tile3
+did not find place_tile4 demangled to place_tile4
+did not find print_tile0 demangled to print_tile0
+did not find print_tile1 demangled to print_tile1
+Add filter function print_game0
+FunctionInfo. Adding function:print_game0
+did not find print_game1 demangled to print_game1
+Add filter function print_game2
+FunctionInfo. Adding function:print_game2
+did not find print_game3 demangled to print_game3
+Add filter function combine_left0
+FunctionInfo. Adding function:combine_left0
+Add filter function rotate_clockwise0
+FunctionInfo. Adding function:rotate_clockwise0
+Add filter function move_left0
+FunctionInfo. Adding function:move_left0
+did not find move_left1 demangled to move_left1
+did not find move_right0 demangled to move_right0
+did not find move_up0 demangled to move_up0
+did not find move_down0 demangled to move_down0
+Add filter function lose_game0
+FunctionInfo. Adding function:lose_game0
+did not find init_curses0 demangled to init_curses0
+did not find fopen_or_die0 demangled to fopen_or_die0
+Add filter function get_input0
+FunctionInfo. Adding function:get_input0
+did not find get_input1 demangled to get_input1
+did not find get_input2 demangled to get_input2
+Add filter function get_input3
+FunctionInfo. Adding function:get_input3
+did not find record0 demangled to record0
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+did not find main6 demangled to main6
+did not find main7 demangled to main7
+did not find main8 demangled to main8
+did not find main9 demangled to main9
+Adding place_tile other functions, ExtractedOnly mode uses other functions
+Adding print_tile other functions, ExtractedOnly mode uses other functions
+Adding print_game other functions, ExtractedOnly mode uses other functions
+Adding combine_left other functions, ExtractedOnly mode uses other functions
+Adding deflate_left other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise other functions, ExtractedOnly mode uses other functions
+Adding move_left other functions, ExtractedOnly mode uses other functions
+Adding move_right other functions, ExtractedOnly mode uses other functions
+Adding move_up other functions, ExtractedOnly mode uses other functions
+Adding move_down other functions, ExtractedOnly mode uses other functions
+Adding lose_game other functions, ExtractedOnly mode uses other functions
+Adding init_curses other functions, ExtractedOnly mode uses other functions
+Adding max_tile other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die other functions, ExtractedOnly mode uses other functions
+Adding get_input other functions, ExtractedOnly mode uses other functions
+Adding record other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding place_tile0 other functions, ExtractedOnly mode uses other functions
+Adding place_tile1 other functions, ExtractedOnly mode uses other functions
+Adding place_tile2 other functions, ExtractedOnly mode uses other functions
+Adding place_tile3 other functions, ExtractedOnly mode uses other functions
+Adding place_tile4 other functions, ExtractedOnly mode uses other functions
+Adding print_tile0 other functions, ExtractedOnly mode uses other functions
+Adding print_tile1 other functions, ExtractedOnly mode uses other functions
+Adding print_game0 other functions, ExtractedOnly mode uses other functions
+Adding print_game1 other functions, ExtractedOnly mode uses other functions
+Adding print_game2 other functions, ExtractedOnly mode uses other functions
+Adding print_game3 other functions, ExtractedOnly mode uses other functions
+Adding combine_left0 other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise0 other functions, ExtractedOnly mode uses other functions
+Adding move_left0 other functions, ExtractedOnly mode uses other functions
+Adding move_left1 other functions, ExtractedOnly mode uses other functions
+Adding move_right0 other functions, ExtractedOnly mode uses other functions
+Adding move_up0 other functions, ExtractedOnly mode uses other functions
+Adding move_down0 other functions, ExtractedOnly mode uses other functions
+Adding lose_game0 other functions, ExtractedOnly mode uses other functions
+Adding init_curses0 other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die0 other functions, ExtractedOnly mode uses other functions
+Adding get_input0 other functions, ExtractedOnly mode uses other functions
+Adding get_input1 other functions, ExtractedOnly mode uses other functions
+Adding get_input2 other functions, ExtractedOnly mode uses other functions
+Adding get_input3 other functions, ExtractedOnly mode uses other functions
+Adding record0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:53
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+place_tile1
+move_down0
+print_game3
+main3
+init_curses
+combine_left
+max_tile
+place_tile2
+move_up0
+place_tile4
+get_input3
+fopen_or_die
+init_curses0
+main6
+get_input2
+print_tile0
+move_up
+move_down
+combine_left0
+print_game
+move_left
+move_left0
+main7
+print_game0
+fopen_or_die0
+main9
+lose_game0
+deflate_left
+record
+main2
+main4
+main0
+get_input
+main1
+place_tile3
+print_tile1
+rotate_clockwise0
+move_right
+move_left1
+main8
+print_game2
+lose_game
+record0
+main5
+place_tile
+get_input0
+rotate_clockwise
+main
+place_tile0
+print_tile
+print_game1
+get_input1
+move_right0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 53 function, while filter count is 13
+Functions called in loop
+Function call numbers
+main0 -- 1
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 32
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 33
+  - operands: []
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 297
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No reaching definition for:   %1 = alloca i32, align 4, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stdscr = external global %struct._win_st*, align 8 in:   store i32 %2, i32* %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for:   %7 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el2 = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for:   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32*, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 in:   store i8** %2, i8*** %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for: @optarg = external global i8*, align 8 in:   store i64 %2, i64* %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for:   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 13
+ Skipping function per FilterFunctionPass:place_tile
+ Skipping function per FilterFunctionPass:print_tile
+ Skipping function per FilterFunctionPass:print_game
+ Skipping function per FilterFunctionPass:combine_left
+ Skipping function per FilterFunctionPass:deflate_left
+ Skipping function per FilterFunctionPass:rotate_clockwise
+Collecting defining blocks for move_left
+ Skipping function per FilterFunctionPass:move_right
+ Skipping function per FilterFunctionPass:move_up
+ Skipping function per FilterFunctionPass:move_down
+ Skipping function per FilterFunctionPass:lose_game
+ Skipping function per FilterFunctionPass:init_curses
+ Skipping function per FilterFunctionPass:max_tile
+Collecting defining blocks for fopen_or_die
+ Skipping function per FilterFunctionPass:get_input
+ Skipping function per FilterFunctionPass:record
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:place_tile
+ Skipping function per FilterFunctionPass:print_tile
+ Skipping function per FilterFunctionPass:print_game
+ Skipping function per FilterFunctionPass:combine_left
+ Skipping function per FilterFunctionPass:deflate_left
+ Skipping function per FilterFunctionPass:rotate_clockwise
+ Processing function:move_left
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %9, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+  call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Processing call instruction..
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %3 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+ Skipping function per FilterFunctionPass:move_right
+ Skipping function per FilterFunctionPass:move_up
+ Skipping function per FilterFunctionPass:move_down
+ Skipping function per FilterFunctionPass:lose_game
+ Skipping function per FilterFunctionPass:init_curses
+ Skipping function per FilterFunctionPass:max_tile
+ Processing function:fopen_or_die
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @fopen_or_die0(i8** %3), !control_dep_instr !5, !data_indep_instr !8, !input_dep_block !9
+ Skipping function per FilterFunctionPass:get_input
+ Skipping function per FilterFunctionPass:record
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_fopen_or_die_path_0
+Extract path function for assertion assert_fopen_or_die_path_1
+Extract path function for assertion assert_move_left_path_1
+Extract path function for assertion assert_move_left_path_3
+OH stats is requested, dumping stat file...
+Processed instructions number 505
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 16,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 471,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 7,
+    "numberOfOHProcessedInstr": 34,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 2,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 8,
+    "numberOfSensitiveFunctions": 2,
+    "numberOfShortRangeAssertCalls": 4,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 5,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 4,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 7
+}
+ERR. processed 2 function, while filter count is 13
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4090 seconds (0.4107 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.2177 ( 54.2%)   0.0027 ( 36.7%)   0.2204 ( 53.9%)   0.2204 ( 53.7%)  Instruments bitcode with hashing and logging functions
+   0.1767 ( 44.0%)   0.0034 ( 46.5%)   0.1800 ( 44.0%)   0.1818 ( 44.3%)  runs input dependency analysis
+   0.0019 (  0.5%)   0.0003 (  4.2%)   0.0022 (  0.5%)   0.0022 (  0.5%)  Bitcode Writer
+   0.0010 (  0.3%)   0.0000 (  0.0%)   0.0010 (  0.3%)   0.0010 (  0.3%)  Instruments bitcode with guards
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Post-Dominator Tree Construction
+   0.0000 (  0.0%)   0.0008 ( 10.4%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Module Verifier
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Include functions in a given file in any transformation
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Call site information
+   0.0004 (  0.1%)   0.0001 (  1.3%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Memory SSA
+   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.3%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.2%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.2%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4017 (100.0%)   0.0072 (100.0%)   0.4090 (100.0%)   0.4107 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0019 seconds (0.0019 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0019 (100.0%)   0.0019 (100.0%)  Parse IR
+   0.0009 (100.0%)   0.0009 (100.0%)   0.0019 (100.0%)   0.0019 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function place_tile0
+Processing function place_tile1
+Processing function place_tile2
+Processing function place_tile3
+Processing function place_tile4
+Processing function place_tile
+Processing function print_tile0
+Processing function print_tile1
+Processing function print_tile
+Processing function print_game0
+Processing function print_game1
+Processing function print_game2
+Processing function print_game3
+Processing function print_game
+Processing function combine_left0
+Processing function combine_left
+Processing function deflate_left
+Processing function rotate_clockwise0
+Processing function rotate_clockwise
+Processing function move_left0
+Processing function move_left1
+Processing function move_left
+Processing function move_right0
+Processing function move_right
+Processing function move_up0
+Processing function move_up
+Processing function move_down0
+Processing function move_down
+Processing function lose_game0
+Processing function lose_game
+Processing function init_curses0
+Processing function init_curses
+Processing function max_tile
+Processing function fopen_or_die0
+Processing function fopen_or_die
+Processing function get_input0
+Processing function get_input1
+Processing function get_input2
+Processing function get_input3
+Processing function get_input
+Processing function record0
+Processing function record
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main
+Finalizing main
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing record
+Mark Input dependent function record
+Finalizing record0
+Mark Input dependent function record0
+Finalizing get_input
+Mark Input dependent function get_input
+Finalizing get_input3
+Mark Input dependent function get_input3
+Finalizing get_input2
+Mark Input dependent function get_input2
+Finalizing get_input1
+Mark Input dependent function get_input1
+Finalizing get_input0
+Mark Input dependent function get_input0
+Finalizing fopen_or_die
+Mark Input dependent function fopen_or_die
+Finalizing fopen_or_die0
+Mark Input dependent function fopen_or_die0
+Finalizing max_tile
+Mark Input dependent function max_tile
+Finalizing init_curses
+Mark Input dependent function init_curses
+Finalizing init_curses0
+Mark Input dependent function init_curses0
+Finalizing lose_game
+Mark Input dependent function lose_game
+Finalizing lose_game0
+Mark Input dependent function lose_game0
+Finalizing move_down
+Mark Input dependent function move_down
+Finalizing move_down0
+Mark Input dependent function move_down0
+Finalizing move_up
+Mark Input dependent function move_up
+Finalizing move_up0
+Mark Input dependent function move_up0
+Finalizing move_right
+Mark Input dependent function move_right
+Finalizing move_right0
+Mark Input dependent function move_right0
+Finalizing move_left
+Mark Input dependent function move_left
+Finalizing move_left1
+Mark Input dependent function move_left1
+Finalizing move_left0
+Mark Input dependent function move_left0
+Finalizing rotate_clockwise
+Mark Input dependent function rotate_clockwise
+Finalizing rotate_clockwise0
+Mark Input dependent function rotate_clockwise0
+Finalizing deflate_left
+Mark Input dependent function deflate_left
+Finalizing combine_left
+Mark Input dependent function combine_left
+Finalizing combine_left0
+Mark Input dependent function combine_left0
+Finalizing print_game
+Mark Input dependent function print_game
+Finalizing print_game3
+Mark Input dependent function print_game3
+Finalizing print_game2
+Mark Input dependent function print_game2
+Finalizing print_game1
+Mark Input dependent function print_game1
+Finalizing print_game0
+Mark Input dependent function print_game0
+Finalizing print_tile
+Mark Input dependent function print_tile
+Finalizing print_tile1
+Mark Input dependent function print_tile1
+Finalizing print_tile0
+Mark Input dependent function print_tile0
+Finalizing place_tile
+Mark Input dependent function place_tile
+Finalizing place_tile4
+Mark Input dependent function place_tile4
+Finalizing place_tile3
+Mark Input dependent function place_tile3
+Finalizing place_tile2
+Mark Input dependent function place_tile2
+Finalizing place_tile1
+Mark Input dependent function place_tile1
+Finalizing place_tile0
+Mark Input dependent function place_tile0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/2048_game.bc/50/0
+here!:lose_game0
+here!:move_left
+here!:print_game2
+here!:fopen_or_die
+here!:move_left0
+here!:place_tile0
+here!:rotate_clockwise0
+here!:print_game0
+here!:get_input3
+here!:get_input0
+here!:main3
+here!:combine_left0
+here!:main2
+here!:move_up0
+here!:print_game
+here!:record
+here!:main1
+here!:init_curses
+here!:lose_game
+here!:print_tile0
+here!:init_curses0
+here!:move_left1
+here!:move_up
+here!:record0
+here!:get_input2
+here!:main
+here!:move_right0
+here!:move_right0
+got filter function names
+did not find place_tile demangled to place_tile
+did not find random demangled to random
+did not find __assert_fail demangled to __assert_fail
+did not find print_tile demangled to print_tile
+did not find wattr_on demangled to wattr_on
+did not find printw demangled to printw
+did not find wattr_off demangled to wattr_off
+Add filter function print_game
+FunctionInfo. Adding function:print_game
+did not find wmove demangled to wmove
+did not find wrefresh demangled to wrefresh
+did not find combine_left demangled to combine_left
+did not find deflate_left demangled to deflate_left
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find rotate_clockwise demangled to rotate_clockwise
+Add filter function move_left
+FunctionInfo. Adding function:move_left
+did not find move_right demangled to move_right
+Add filter function move_up
+FunctionInfo. Adding function:move_up
+did not find move_down demangled to move_down
+Add filter function lose_game
+FunctionInfo. Adding function:lose_game
+Add filter function init_curses
+FunctionInfo. Adding function:init_curses
+did not find initscr demangled to initscr
+did not find start_color demangled to start_color
+did not find cbreak demangled to cbreak
+did not find noecho demangled to noecho
+did not find keypad demangled to keypad
+did not find wclear demangled to wclear
+did not find curs_set demangled to curs_set
+did not find use_default_colors demangled to use_default_colors
+did not find init_pair demangled to init_pair
+did not find max_tile demangled to max_tile
+Add filter function fopen_or_die
+FunctionInfo. Adding function:fopen_or_die
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find exit demangled to exit
+did not find get_input demangled to get_input
+did not find getline demangled to getline
+did not find strspn demangled to strspn
+did not find free demangled to free
+did not find usleep demangled to usleep
+did not find wgetch demangled to wgetch
+Add filter function record
+FunctionInfo. Adding function:record
+did not find fprintf demangled to fprintf
+Add filter function main
+FunctionInfo. Adding function:main
+did not find time demangled to time
+did not find getopt demangled to getopt
+did not find atoi demangled to atoi
+did not find printf demangled to printf
+did not find srandom demangled to srandom
+did not find endwin demangled to endwin
+Add filter function place_tile0
+FunctionInfo. Adding function:place_tile0
+did not find place_tile1 demangled to place_tile1
+did not find place_tile2 demangled to place_tile2
+did not find place_tile3 demangled to place_tile3
+did not find place_tile4 demangled to place_tile4
+Add filter function print_tile0
+FunctionInfo. Adding function:print_tile0
+did not find print_tile1 demangled to print_tile1
+Add filter function print_game0
+FunctionInfo. Adding function:print_game0
+did not find print_game1 demangled to print_game1
+Add filter function print_game2
+FunctionInfo. Adding function:print_game2
+did not find print_game3 demangled to print_game3
+Add filter function combine_left0
+FunctionInfo. Adding function:combine_left0
+Add filter function rotate_clockwise0
+FunctionInfo. Adding function:rotate_clockwise0
+Add filter function move_left0
+FunctionInfo. Adding function:move_left0
+Add filter function move_left1
+FunctionInfo. Adding function:move_left1
+Add filter function move_right0
+FunctionInfo. Adding function:move_right0
+Add filter function move_up0
+FunctionInfo. Adding function:move_up0
+did not find move_down0 demangled to move_down0
+Add filter function lose_game0
+FunctionInfo. Adding function:lose_game0
+Add filter function init_curses0
+FunctionInfo. Adding function:init_curses0
+did not find fopen_or_die0 demangled to fopen_or_die0
+Add filter function get_input0
+FunctionInfo. Adding function:get_input0
+did not find get_input1 demangled to get_input1
+Add filter function get_input2
+FunctionInfo. Adding function:get_input2
+Add filter function get_input3
+FunctionInfo. Adding function:get_input3
+Add filter function record0
+FunctionInfo. Adding function:record0
+did not find main0 demangled to main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+did not find main6 demangled to main6
+did not find main7 demangled to main7
+did not find main8 demangled to main8
+did not find main9 demangled to main9
+Adding place_tile other functions, ExtractedOnly mode uses other functions
+Adding print_tile other functions, ExtractedOnly mode uses other functions
+Adding print_game other functions, ExtractedOnly mode uses other functions
+Adding combine_left other functions, ExtractedOnly mode uses other functions
+Adding deflate_left other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise other functions, ExtractedOnly mode uses other functions
+Adding move_left other functions, ExtractedOnly mode uses other functions
+Adding move_right other functions, ExtractedOnly mode uses other functions
+Adding move_up other functions, ExtractedOnly mode uses other functions
+Adding move_down other functions, ExtractedOnly mode uses other functions
+Adding lose_game other functions, ExtractedOnly mode uses other functions
+Adding init_curses other functions, ExtractedOnly mode uses other functions
+Adding max_tile other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die other functions, ExtractedOnly mode uses other functions
+Adding get_input other functions, ExtractedOnly mode uses other functions
+Adding record other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding place_tile0 other functions, ExtractedOnly mode uses other functions
+Adding place_tile1 other functions, ExtractedOnly mode uses other functions
+Adding place_tile2 other functions, ExtractedOnly mode uses other functions
+Adding place_tile3 other functions, ExtractedOnly mode uses other functions
+Adding place_tile4 other functions, ExtractedOnly mode uses other functions
+Adding print_tile0 other functions, ExtractedOnly mode uses other functions
+Adding print_tile1 other functions, ExtractedOnly mode uses other functions
+Adding print_game0 other functions, ExtractedOnly mode uses other functions
+Adding print_game1 other functions, ExtractedOnly mode uses other functions
+Adding print_game2 other functions, ExtractedOnly mode uses other functions
+Adding print_game3 other functions, ExtractedOnly mode uses other functions
+Adding combine_left0 other functions, ExtractedOnly mode uses other functions
+Adding rotate_clockwise0 other functions, ExtractedOnly mode uses other functions
+Adding move_left0 other functions, ExtractedOnly mode uses other functions
+Adding move_left1 other functions, ExtractedOnly mode uses other functions
+Adding move_right0 other functions, ExtractedOnly mode uses other functions
+Adding move_up0 other functions, ExtractedOnly mode uses other functions
+Adding move_down0 other functions, ExtractedOnly mode uses other functions
+Adding lose_game0 other functions, ExtractedOnly mode uses other functions
+Adding init_curses0 other functions, ExtractedOnly mode uses other functions
+Adding fopen_or_die0 other functions, ExtractedOnly mode uses other functions
+Adding get_input0 other functions, ExtractedOnly mode uses other functions
+Adding get_input1 other functions, ExtractedOnly mode uses other functions
+Adding get_input2 other functions, ExtractedOnly mode uses other functions
+Adding get_input3 other functions, ExtractedOnly mode uses other functions
+Adding record0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:53
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+place_tile1
+move_down0
+print_game3
+main3
+init_curses
+combine_left
+max_tile
+place_tile2
+move_up0
+place_tile4
+get_input3
+fopen_or_die
+init_curses0
+main6
+get_input2
+print_tile0
+move_up
+move_down
+combine_left0
+print_game
+move_left
+move_left0
+main7
+print_game0
+fopen_or_die0
+main9
+lose_game0
+deflate_left
+record
+main2
+main4
+main0
+get_input
+main1
+place_tile3
+print_tile1
+rotate_clockwise0
+move_right
+move_left1
+main8
+print_game2
+lose_game
+record0
+main5
+place_tile
+get_input0
+rotate_clockwise
+main
+place_tile0
+print_tile
+print_game1
+get_input1
+move_right0
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 53 function, while filter count is 27
+Functions called in loop
+Function call numbers
+main0 -- 1
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 32
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 33
+  - operands: []
+Warning: PHI Node contains duplicated operand
+PSNodeType::PHI with ID 297
+  - operands: [0 PSNodeType::UNKNOWN_MEM, 0 PSNodeType::UNKNOWN_MEM]
+No reaching definition for:   %1 = alloca i32, align 4, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stdscr = external global %struct._win_st*, align 8 in:   store i32 %2, i32* %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for:   %7 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el2 = alloca i32, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for:   %4 = alloca i32*, align 8, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 in:   %.el = alloca i32*, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7 off: 0
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 in:   store i8** %2, i8*** %.el, !input_dep_instr !5, !control_dep_instr !6, !data_dep_instr !7, !argument_dep_instr !8 off: 0
+No reaching definition for: @optarg = external global i8*, align 8 off: 0
+No reaching definition for:   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 in:   %.el = alloca i64, !input_dep_instr !5, !data_dep_instr !6 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 27
+ Skipping function per FilterFunctionPass:place_tile
+ Skipping function per FilterFunctionPass:print_tile
+Collecting defining blocks for print_game
+ Skipping function per FilterFunctionPass:combine_left
+ Skipping function per FilterFunctionPass:deflate_left
+ Skipping function per FilterFunctionPass:rotate_clockwise
+Collecting defining blocks for move_left
+ Skipping function per FilterFunctionPass:move_right
+Collecting defining blocks for move_up
+ Skipping function per FilterFunctionPass:move_down
+Collecting defining blocks for lose_game
+Collecting defining blocks for init_curses
+ Skipping function per FilterFunctionPass:max_tile
+Collecting defining blocks for fopen_or_die
+ Skipping function per FilterFunctionPass:get_input
+Collecting defining blocks for record
+Collecting defining blocks for main
+ Skipping function per FilterFunctionPass:place_tile
+ Skipping function per FilterFunctionPass:print_tile
+ Processing function:print_game
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %18, !control_dep_instr !5, !data_indep_instr !9
+No oh has been applied in the path
+Processing path:       
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %9, !control_dep_instr !5, !data_indep_instr !9
+  store i32 0, i32* %4, align 4, !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !10
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @print_game0(%struct.game** %2), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Processing path:     
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %30, !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+  br label %17, !control_dep_instr !5, !data_indep_instr !9
+  store i32 0, i32* %4, align 4, !control_dep_instr !5, !data_indep_instr !9, !input_dep_block !11
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+ Skipping function per FilterFunctionPass:combine_left
+ Skipping function per FilterFunctionPass:deflate_left
+ Skipping function per FilterFunctionPass:rotate_clockwise
+ Processing function:move_left
+Short range hashing enabled.
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %9, !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9
+  call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Processing call instruction..
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+Can't handle this operand   %3 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left0(i32* %4, %struct.game** %2, i32* %3), !control_dep_instr !5, !argument_dep_instr !7, !data_indep_instr !9, !input_dep_block !10
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_left1(%struct.game** %2, i32* %4), !input_indep_block !3, !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+ Skipping function per FilterFunctionPass:move_right
+ Processing function:move_up
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.game*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @move_up0(%struct.game** %2), !control_dep_instr !5, !input_indep_instr !8, !data_indep_instr !9
+No oh has been applied in the path
+ Skipping function per FilterFunctionPass:move_down
+ Processing function:lose_game
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+No oh has been applied in the path
+ Processing function:init_curses
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %1 = alloca i32, align 4, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @init_curses0(i32* %1), !control_dep_instr !5, !input_indep_instr !7, !data_indep_instr !8
+ Skipping function per FilterFunctionPass:max_tile
+ Processing function:fopen_or_die
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %3 = alloca i8*, align 8, !input_indep_block !3, !input_dep_instr !4, !control_dep_instr !5, !data_dep_instr !6 of the call   call void @fopen_or_die0(i8** %3), !control_dep_instr !5, !data_indep_instr !8, !input_dep_block !9
+ Skipping function per FilterFunctionPass:get_input
+ Processing function:record
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Processing function:main
+Short range hashing enabled.
+Processing path:         
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Non numeric pointers (int and float) are skipped:  %6 = alloca i8*, align 8, !input_dep_instr !4, !data_dep_instr !5 i8*
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main0(i64* %9), !input_indep_instr !7, !data_indep_instr !8
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Can't handle this operand   %5 = alloca i8**, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main6(i8*** %5), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !8
+  call void @main1(), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path is empty
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !8
+  call void @main2(), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !8
+  call void @main3(i64* %9), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %9 = alloca i64, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main3(i64* %9), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %35, !control_dep_instr !10, !data_indep_instr !8
+  call void @main4(), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+No oh has been applied in the path
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:         
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %5 = alloca i8**, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main5(i8*** %5), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+No oh has been applied in the path
+Processing path:         
+After path modifications process path is empty
+Processing path:       
+After path modifications process path
+      
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path is empty
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path
+              
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path is empty
+Processing path:                   
+After path modifications process path is empty
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path
+              
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path:                   
+After path modifications process path is empty
+Processing path:                     
+After path modifications process path is empty
+Processing path:                   
+After path modifications process path is empty
+Processing path:                 
+After path modifications process path
+                
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:               
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+          
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path is empty
+Processing path:             
+After path modifications process path
+            
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path is empty
+Processing path:               
+After path modifications process path is empty
+Processing path:             
+After path modifications process path
+            
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %100, !control_dep_instr !10, !data_indep_instr !8
+  call void @main7(i32* %11, %struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+  %96 = getelementptr inbounds %struct.game, %struct.game* %7, i32 0, i32 0, !control_dep_instr !10, !data_dep_instr !5
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %11 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main7(i32* %11, %struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @main7(i32* %11, %struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                   
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  %101 = getelementptr inbounds %struct.game, %struct.game* %7, i32 0, i32 0, !control_dep_instr !10, !data_dep_instr !5
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %104, !control_dep_instr !10, !data_indep_instr !8
+  call void @move_left(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_left(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %109, !control_dep_instr !10, !data_indep_instr !8
+  call void @move_down(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_down(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %114, !control_dep_instr !10, !data_indep_instr !8
+  call void @move_up(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_up(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %119, !control_dep_instr !10, !data_indep_instr !8
+  call void @move_right(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @move_right(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:                 
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+          
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:             
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %113, !control_dep_instr !10, !data_indep_instr !8
+  call void @print_game(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %7 = alloca %struct.game, align 8, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @print_game(%struct.game* %7), !control_dep_instr !10, !data_indep_instr !8, !input_dep_block !11
+No oh has been applied in the path
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Extract path function for assertion assert_main_path_15
+Extract path function for assertion assert_main_path_18
+Extract path function for assertion assert_main_path_22
+Extract path function for assertion assert_main_path_26
+Extract path function for assertion assert_main_path_29
+Extract path function for assertion assert_main_path_32
+Extract path function for assertion assert_main_path_35
+Extract path function for assertion assert_main_path_36
+Extract path function for assertion assert_main_path_38
+Extract path function for assertion assert_main_path_39
+Extract path function for assertion assert_main_path_41
+Extract path function for assertion assert_main_path_44
+Extract path function for assertion assert_main_path_47
+Extract path function for assertion assert_main_path_50
+Extract path function for assertion assert_main_path_53
+Extract path function for assertion assert_main_path_56
+Extract path function for assertion assert_main_path_59
+Extract path function for assertion assert_main_path_61
+Extract path function for assertion assert_record_path_0
+Extract path function for assertion assert_record_path_1
+Extract path function for assertion assert_init_curses_path_0
+Extract path function for assertion assert_print_game_path_1
+Extract path function for assertion assert_print_game_path_2
+Extract path function for assertion assert_print_game_path_4
+Extract path function for assertion assert_print_game_path_5
+Extract path function for assertion assert_print_game_path_7
+Extract path function for assertion assert_fopen_or_die_path_0
+Extract path function for assertion assert_fopen_or_die_path_1
+Extract path function for assertion assert_move_left_path_1
+Extract path function for assertion assert_move_left_path_3
+OH stats is requested, dumping stat file...
+Processed instructions number 504
+{
+    "numberOfAssertCalls": 2,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 66,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 284,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 16,
+    "numberOfNonHashableInstructions": 60,
+    "numberOfOHProcessedInstr": 220,
+    "numberOfOtherUnprotectedInstructions": 2,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 4,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 6,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 4,
+    "numberOfSensitiveBlocks": 61,
+    "numberOfSensitiveFunctions": 8,
+    "numberOfShortRangeAssertCalls": 30,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 29,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 24,
+    "numberOfUnprotectedArgumentReachableInstructions": 6,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 15,
+    "numberOfUnprotectedGlobalReachableInstructions": 5,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 49
+}
+ERR. processed 8 function, while filter count is 27
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4796 seconds (0.4796 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.2754 ( 59.3%)   0.0110 ( 73.3%)   0.2864 ( 59.7%)   0.2864 ( 59.7%)  Instruments bitcode with hashing and logging functions
+   0.1575 ( 33.9%)   0.0002 (  1.2%)   0.1577 ( 32.9%)   0.1577 ( 32.9%)  runs input dependency analysis
+   0.0164 (  3.5%)   0.0029 ( 19.2%)   0.0193 (  4.0%)   0.0192 (  4.0%)  Memory SSA
+   0.0029 (  0.6%)   0.0005 (  3.1%)   0.0034 (  0.7%)   0.0034 (  0.7%)  Dominator Tree Construction
+   0.0034 (  0.7%)   0.0000 (  0.0%)   0.0034 (  0.7%)   0.0034 (  0.7%)  Bitcode Writer
+   0.0023 (  0.5%)   0.0004 (  2.7%)   0.0027 (  0.6%)   0.0027 (  0.6%)  Natural Loop Information
+   0.0012 (  0.3%)   0.0000 (  0.0%)   0.0012 (  0.2%)   0.0012 (  0.2%)  Module Verifier
+   0.0011 (  0.2%)   0.0000 (  0.0%)   0.0011 (  0.2%)   0.0011 (  0.2%)  Instruments bitcode with guards
+   0.0008 (  0.2%)   0.0000 (  0.1%)   0.0008 (  0.2%)   0.0009 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.1%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Post-Dominator Tree Construction
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Include functions in a given file in any transformation
+   0.0005 (  0.1%)   0.0000 (  0.1%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Call site information
+   0.0002 (  0.1%)   0.0000 (  0.2%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Function Alias Analysis Results
+   0.0002 (  0.1%)   0.0000 (  0.2%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Basic Alias Analysis (stateless AA impl)
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.4645 (100.0%)   0.0150 (100.0%)   0.4796 (100.0%)   0.4796 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0019 seconds (0.0019 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0019 (100.0%)   0.0019 (100.0%)   0.0019 (100.0%)  Parse IR
+   0.0019 (100.0%)   0.0019 (100.0%)   0.0019 (100.0%)  Total
+

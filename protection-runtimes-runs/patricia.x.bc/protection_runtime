@@ -1,0 +1,2808 @@
+Running input dependency analysis pass
+Processing function pat_insert0
+Processing function bit
+Processing function pat_insert1
+Processing function pat_insert2
+Processing function pat_insert3
+Processing function pat_insert4
+Processing function pat_insert5
+Processing function pat_insert6
+Processing function pat_insert7
+Processing function pat_insert8
+Processing function pat_insert9
+Processing function pat_insert10
+Processing function insertR2
+Processing function insertR1
+Processing function insertR0
+Processing function insertR
+Processing function pat_insert11
+Processing function pat_insert12
+Processing function pat_insert13
+Processing function pat_insert
+Processing function pat_remove0
+Processing function pat_remove1
+Processing function pat_remove2
+Processing function pat_remove3
+Processing function pat_remove4
+Processing function pat_remove5
+Processing function pat_remove6
+Processing function pat_remove7
+Processing function pat_remove8
+Processing function pat_remove9
+Processing function pat_remove10
+Processing function pat_remove11
+Processing function pat_remove12
+Processing function pat_remove
+Processing function pat_search0
+Processing function pat_search
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main
+Finalizing main
+Finalizing main11
+Mark Input dependent function main11
+Finalizing main10
+Mark Input dependent function main10
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing pat_search
+Mark Input dependent function pat_search
+Finalizing pat_search0
+Mark Input dependent function pat_search0
+Finalizing pat_remove
+Finalizing pat_remove12
+Mark Input dependent function pat_remove12
+Finalizing pat_remove11
+Mark Input dependent function pat_remove11
+Finalizing pat_remove10
+Mark Input dependent function pat_remove10
+Finalizing pat_remove9
+Mark Input dependent function pat_remove9
+Finalizing pat_remove8
+Mark Input dependent function pat_remove8
+Finalizing pat_remove7
+Mark Input dependent function pat_remove7
+Finalizing pat_remove6
+Mark Input dependent function pat_remove6
+Finalizing pat_remove5
+Mark Input dependent function pat_remove5
+Finalizing pat_remove4
+Mark Input dependent function pat_remove4
+Finalizing pat_remove3
+Mark Input dependent function pat_remove3
+Finalizing pat_remove2
+Mark Input dependent function pat_remove2
+Finalizing pat_remove1
+Mark Input dependent function pat_remove1
+Finalizing pat_remove0
+Mark Input dependent function pat_remove0
+Finalizing pat_insert
+Mark Input dependent function pat_insert
+Finalizing pat_insert13
+Mark Input dependent function pat_insert13
+Finalizing pat_insert12
+Mark Input dependent function pat_insert12
+Finalizing pat_insert11
+Mark Input dependent function pat_insert11
+Finalizing insertR
+Mark Input dependent function insertR
+Finalizing insertR0
+Mark Input dependent function insertR0
+Finalizing insertR1
+Mark Input dependent function insertR1
+Finalizing insertR2
+Mark Input dependent function insertR2
+Finalizing pat_insert10
+Mark Input dependent function pat_insert10
+Finalizing pat_insert9
+Mark Input dependent function pat_insert9
+Finalizing pat_insert8
+Mark Input dependent function pat_insert8
+Finalizing pat_insert7
+Mark Input dependent function pat_insert7
+Finalizing pat_insert6
+Mark Input dependent function pat_insert6
+Finalizing pat_insert5
+Mark Input dependent function pat_insert5
+Finalizing pat_insert4
+Mark Input dependent function pat_insert4
+Finalizing pat_insert3
+Mark Input dependent function pat_insert3
+Finalizing pat_insert2
+Mark Input dependent function pat_insert2
+Finalizing pat_insert1
+Mark Input dependent function pat_insert1
+Finalizing bit
+Mark Input dependent function bit
+Finalizing pat_insert0
+Mark Input dependent function pat_insert0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/patricia.x.bc/10/0
+here!:insertR2
+here!:pat_remove3
+here!:pat_insert4
+here!:main2
+here!:main6
+here!:main6
+got filter function names
+did not find pat_insert demangled to pat_insert
+did not find bit demangled to bit
+did not find free demangled to free
+did not find malloc demangled to malloc
+did not find bcopy demangled to bcopy
+did not find insertR demangled to insertR
+did not find pat_remove demangled to pat_remove
+did not find pat_search demangled to pat_search
+did not find main demangled to main
+did not find printf demangled to printf
+did not find exit demangled to exit
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find fgets demangled to fgets
+did not find __isoc99_sscanf demangled to __isoc99_sscanf
+did not find htonl demangled to htonl
+did not find fprintf demangled to fprintf
+did not find pat_insert0 demangled to pat_insert0
+did not find pat_insert1 demangled to pat_insert1
+did not find pat_insert2 demangled to pat_insert2
+did not find pat_insert3 demangled to pat_insert3
+Add filter function pat_insert4
+FunctionInfo. Adding function:pat_insert4
+did not find pat_insert5 demangled to pat_insert5
+did not find pat_insert6 demangled to pat_insert6
+did not find pat_insert7 demangled to pat_insert7
+did not find pat_insert8 demangled to pat_insert8
+did not find pat_insert9 demangled to pat_insert9
+did not find pat_insert10 demangled to pat_insert10
+did not find pat_insert11 demangled to pat_insert11
+did not find pat_insert12 demangled to pat_insert12
+did not find pat_insert13 demangled to pat_insert13
+did not find insertR0 demangled to insertR0
+did not find insertR1 demangled to insertR1
+Add filter function insertR2
+FunctionInfo. Adding function:insertR2
+did not find pat_remove0 demangled to pat_remove0
+did not find pat_remove1 demangled to pat_remove1
+did not find pat_remove2 demangled to pat_remove2
+Add filter function pat_remove3
+FunctionInfo. Adding function:pat_remove3
+did not find pat_remove4 demangled to pat_remove4
+did not find pat_remove5 demangled to pat_remove5
+did not find pat_remove6 demangled to pat_remove6
+did not find pat_remove7 demangled to pat_remove7
+did not find pat_remove8 demangled to pat_remove8
+did not find pat_remove9 demangled to pat_remove9
+did not find pat_remove10 demangled to pat_remove10
+did not find pat_remove11 demangled to pat_remove11
+did not find pat_remove12 demangled to pat_remove12
+did not find pat_search0 demangled to pat_search0
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+did not find main3 demangled to main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+did not find main7 demangled to main7
+did not find main8 demangled to main8
+did not find main9 demangled to main9
+did not find main10 demangled to main10
+did not find main11 demangled to main11
+Adding pat_insert other functions, ExtractedOnly mode uses other functions
+Adding bit other functions, ExtractedOnly mode uses other functions
+Adding insertR other functions, ExtractedOnly mode uses other functions
+Adding pat_remove other functions, ExtractedOnly mode uses other functions
+Adding pat_search other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding pat_insert0 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert1 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert2 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert3 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert4 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert5 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert6 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert7 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert8 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert9 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert10 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert11 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert12 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert13 other functions, ExtractedOnly mode uses other functions
+Adding insertR0 other functions, ExtractedOnly mode uses other functions
+Adding insertR1 other functions, ExtractedOnly mode uses other functions
+Adding insertR2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove0 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove1 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove3 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove4 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove5 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove6 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove7 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove8 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove9 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove10 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove11 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove12 other functions, ExtractedOnly mode uses other functions
+Adding pat_search0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+pat_insert12
+pat_remove11
+pat_remove4
+main9
+pat_insert5
+pat_remove
+pat_insert6
+pat_insert13
+pat_remove10
+insertR1
+main4
+pat_insert7
+pat_search0
+bit
+main3
+insertR2
+pat_insert2
+pat_insert3
+pat_remove5
+insertR
+pat_insert0
+pat_remove7
+pat_remove2
+pat_remove1
+main0
+pat_remove9
+pat_remove12
+pat_search
+pat_insert9
+main8
+main10
+main6
+pat_insert8
+main7
+insertR0
+pat_remove0
+pat_remove6
+pat_insert1
+pat_remove8
+main2
+pat_remove3
+pat_insert4
+main5
+main11
+pat_insert
+main1
+main
+pat_insert10
+pat_insert11
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 49 function, while filter count is 5
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 14
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 15
+  - operands: []
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %pm.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %buf.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %copied = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %copied.el = alloca i32, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 5
+ Skipping function per FilterFunctionPass:pat_insert
+ Skipping function per FilterFunctionPass:bit
+ Skipping function per FilterFunctionPass:insertR
+ Skipping function per FilterFunctionPass:pat_remove
+ Skipping function per FilterFunctionPass:pat_search
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:pat_insert
+ Skipping function per FilterFunctionPass:bit
+ Skipping function per FilterFunctionPass:insertR
+ Skipping function per FilterFunctionPass:pat_remove
+ Skipping function per FilterFunctionPass:pat_search
+ Skipping function per FilterFunctionPass:main
+OH stats is requested, dumping stat file...
+Processed instructions number 839
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfDataDependentInstructions": 0,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 839,
+    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfNonHashableBlocks": 0,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 0 function, while filter count is 5
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 1.0668 seconds (1.0679 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.6557 ( 61.7%)   0.0000 (  0.0%)   0.6557 ( 61.5%)   0.6564 ( 61.5%)  Instruments bitcode with hashing and logging functions
+   0.3980 ( 37.5%)   0.0040 ( 99.7%)   0.4020 ( 37.7%)   0.4023 ( 37.7%)  runs input dependency analysis
+   0.0029 (  0.3%)   0.0000 (  0.0%)   0.0029 (  0.3%)   0.0029 (  0.3%)  Bitcode Writer
+   0.0015 (  0.1%)   0.0000 (  0.0%)   0.0015 (  0.1%)   0.0015 (  0.1%)  Module Verifier
+   0.0012 (  0.1%)   0.0000 (  0.0%)   0.0012 (  0.1%)   0.0012 (  0.1%)  Instruments bitcode with guards
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
+   0.0008 (  0.1%)   0.0000 (  0.1%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   0.0004 (  0.0%)   0.0000 (  0.2%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Include functions in a given file in any transformation
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.0628 (100.0%)   0.0040 (100.0%)   1.0668 (100.0%)   1.0679 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0041 seconds (0.0041 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0041 (100.0%)   0.0000 (100.0%)   0.0041 (100.0%)   0.0041 (100.0%)  Parse IR
+   0.0041 (100.0%)   0.0000 (100.0%)   0.0041 (100.0%)   0.0041 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function pat_insert0
+Processing function bit
+Processing function pat_insert1
+Processing function pat_insert2
+Processing function pat_insert3
+Processing function pat_insert4
+Processing function pat_insert5
+Processing function pat_insert6
+Processing function pat_insert7
+Processing function pat_insert8
+Processing function pat_insert9
+Processing function pat_insert10
+Processing function insertR2
+Processing function insertR1
+Processing function insertR0
+Processing function insertR
+Processing function pat_insert11
+Processing function pat_insert12
+Processing function pat_insert13
+Processing function pat_insert
+Processing function pat_remove0
+Processing function pat_remove1
+Processing function pat_remove2
+Processing function pat_remove3
+Processing function pat_remove4
+Processing function pat_remove5
+Processing function pat_remove6
+Processing function pat_remove7
+Processing function pat_remove8
+Processing function pat_remove9
+Processing function pat_remove10
+Processing function pat_remove11
+Processing function pat_remove12
+Processing function pat_remove
+Processing function pat_search0
+Processing function pat_search
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main
+Finalizing main
+Finalizing main11
+Mark Input dependent function main11
+Finalizing main10
+Mark Input dependent function main10
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing pat_search
+Mark Input dependent function pat_search
+Finalizing pat_search0
+Mark Input dependent function pat_search0
+Finalizing pat_remove
+Finalizing pat_remove12
+Mark Input dependent function pat_remove12
+Finalizing pat_remove11
+Mark Input dependent function pat_remove11
+Finalizing pat_remove10
+Mark Input dependent function pat_remove10
+Finalizing pat_remove9
+Mark Input dependent function pat_remove9
+Finalizing pat_remove8
+Mark Input dependent function pat_remove8
+Finalizing pat_remove7
+Mark Input dependent function pat_remove7
+Finalizing pat_remove6
+Mark Input dependent function pat_remove6
+Finalizing pat_remove5
+Mark Input dependent function pat_remove5
+Finalizing pat_remove4
+Mark Input dependent function pat_remove4
+Finalizing pat_remove3
+Mark Input dependent function pat_remove3
+Finalizing pat_remove2
+Mark Input dependent function pat_remove2
+Finalizing pat_remove1
+Mark Input dependent function pat_remove1
+Finalizing pat_remove0
+Mark Input dependent function pat_remove0
+Finalizing pat_insert
+Mark Input dependent function pat_insert
+Finalizing pat_insert13
+Mark Input dependent function pat_insert13
+Finalizing pat_insert12
+Mark Input dependent function pat_insert12
+Finalizing pat_insert11
+Mark Input dependent function pat_insert11
+Finalizing insertR
+Mark Input dependent function insertR
+Finalizing insertR0
+Mark Input dependent function insertR0
+Finalizing insertR1
+Mark Input dependent function insertR1
+Finalizing insertR2
+Mark Input dependent function insertR2
+Finalizing pat_insert10
+Mark Input dependent function pat_insert10
+Finalizing pat_insert9
+Mark Input dependent function pat_insert9
+Finalizing pat_insert8
+Mark Input dependent function pat_insert8
+Finalizing pat_insert7
+Mark Input dependent function pat_insert7
+Finalizing pat_insert6
+Mark Input dependent function pat_insert6
+Finalizing pat_insert5
+Mark Input dependent function pat_insert5
+Finalizing pat_insert4
+Mark Input dependent function pat_insert4
+Finalizing pat_insert3
+Mark Input dependent function pat_insert3
+Finalizing pat_insert2
+Mark Input dependent function pat_insert2
+Finalizing pat_insert1
+Mark Input dependent function pat_insert1
+Finalizing bit
+Mark Input dependent function bit
+Finalizing pat_insert0
+Mark Input dependent function pat_insert0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/patricia.x.bc/100/0
+here!:pat_insert
+here!:bit
+here!:insertR
+here!:pat_remove
+here!:pat_search
+here!:main
+here!:pat_insert0
+here!:pat_insert1
+here!:pat_insert2
+here!:pat_insert3
+here!:pat_insert4
+here!:pat_insert5
+here!:pat_insert6
+here!:pat_insert7
+here!:pat_insert8
+here!:pat_insert9
+here!:pat_insert10
+here!:pat_insert11
+here!:pat_insert12
+here!:pat_insert13
+here!:insertR0
+here!:insertR1
+here!:insertR2
+here!:pat_remove0
+here!:pat_remove1
+here!:pat_remove2
+here!:pat_remove3
+here!:pat_remove4
+here!:pat_remove5
+here!:pat_remove6
+here!:pat_remove7
+here!:pat_remove8
+here!:pat_remove9
+here!:pat_remove10
+here!:pat_remove11
+here!:pat_remove12
+here!:pat_search0
+here!:main0
+here!:main1
+here!:main2
+here!:main3
+here!:main4
+here!:main5
+here!:main6
+here!:main7
+here!:main8
+here!:main9
+here!:main10
+here!:main11
+here!:main11
+got filter function names
+Add filter function pat_insert
+FunctionInfo. Adding function:pat_insert
+Add filter function bit
+FunctionInfo. Adding function:bit
+did not find free demangled to free
+did not find malloc demangled to malloc
+did not find bcopy demangled to bcopy
+Add filter function insertR
+FunctionInfo. Adding function:insertR
+Add filter function pat_remove
+FunctionInfo. Adding function:pat_remove
+Add filter function pat_search
+FunctionInfo. Adding function:pat_search
+Add filter function main
+FunctionInfo. Adding function:main
+did not find printf demangled to printf
+did not find exit demangled to exit
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find fgets demangled to fgets
+did not find __isoc99_sscanf demangled to __isoc99_sscanf
+did not find htonl demangled to htonl
+did not find fprintf demangled to fprintf
+Add filter function pat_insert0
+FunctionInfo. Adding function:pat_insert0
+Add filter function pat_insert1
+FunctionInfo. Adding function:pat_insert1
+Add filter function pat_insert2
+FunctionInfo. Adding function:pat_insert2
+Add filter function pat_insert3
+FunctionInfo. Adding function:pat_insert3
+Add filter function pat_insert4
+FunctionInfo. Adding function:pat_insert4
+Add filter function pat_insert5
+FunctionInfo. Adding function:pat_insert5
+Add filter function pat_insert6
+FunctionInfo. Adding function:pat_insert6
+Add filter function pat_insert7
+FunctionInfo. Adding function:pat_insert7
+Add filter function pat_insert8
+FunctionInfo. Adding function:pat_insert8
+Add filter function pat_insert9
+FunctionInfo. Adding function:pat_insert9
+Add filter function pat_insert10
+FunctionInfo. Adding function:pat_insert10
+Add filter function pat_insert11
+FunctionInfo. Adding function:pat_insert11
+Add filter function pat_insert12
+FunctionInfo. Adding function:pat_insert12
+Add filter function pat_insert13
+FunctionInfo. Adding function:pat_insert13
+Add filter function insertR0
+FunctionInfo. Adding function:insertR0
+Add filter function insertR1
+FunctionInfo. Adding function:insertR1
+Add filter function insertR2
+FunctionInfo. Adding function:insertR2
+Add filter function pat_remove0
+FunctionInfo. Adding function:pat_remove0
+Add filter function pat_remove1
+FunctionInfo. Adding function:pat_remove1
+Add filter function pat_remove2
+FunctionInfo. Adding function:pat_remove2
+Add filter function pat_remove3
+FunctionInfo. Adding function:pat_remove3
+Add filter function pat_remove4
+FunctionInfo. Adding function:pat_remove4
+Add filter function pat_remove5
+FunctionInfo. Adding function:pat_remove5
+Add filter function pat_remove6
+FunctionInfo. Adding function:pat_remove6
+Add filter function pat_remove7
+FunctionInfo. Adding function:pat_remove7
+Add filter function pat_remove8
+FunctionInfo. Adding function:pat_remove8
+Add filter function pat_remove9
+FunctionInfo. Adding function:pat_remove9
+Add filter function pat_remove10
+FunctionInfo. Adding function:pat_remove10
+Add filter function pat_remove11
+FunctionInfo. Adding function:pat_remove11
+Add filter function pat_remove12
+FunctionInfo. Adding function:pat_remove12
+Add filter function pat_search0
+FunctionInfo. Adding function:pat_search0
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+Add filter function main4
+FunctionInfo. Adding function:main4
+Add filter function main5
+FunctionInfo. Adding function:main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+Add filter function main7
+FunctionInfo. Adding function:main7
+Add filter function main8
+FunctionInfo. Adding function:main8
+Add filter function main9
+FunctionInfo. Adding function:main9
+Add filter function main10
+FunctionInfo. Adding function:main10
+Add filter function main11
+FunctionInfo. Adding function:main11
+Adding pat_insert other functions, ExtractedOnly mode uses other functions
+Adding bit other functions, ExtractedOnly mode uses other functions
+Adding insertR other functions, ExtractedOnly mode uses other functions
+Adding pat_remove other functions, ExtractedOnly mode uses other functions
+Adding pat_search other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding pat_insert0 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert1 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert2 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert3 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert4 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert5 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert6 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert7 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert8 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert9 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert10 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert11 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert12 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert13 other functions, ExtractedOnly mode uses other functions
+Adding insertR0 other functions, ExtractedOnly mode uses other functions
+Adding insertR1 other functions, ExtractedOnly mode uses other functions
+Adding insertR2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove0 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove1 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove3 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove4 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove5 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove6 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove7 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove8 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove9 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove10 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove11 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove12 other functions, ExtractedOnly mode uses other functions
+Adding pat_search0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+pat_insert12
+pat_remove11
+pat_remove4
+main9
+pat_insert5
+pat_remove
+pat_insert6
+pat_insert13
+pat_remove10
+insertR1
+main4
+pat_insert7
+pat_search0
+bit
+main3
+insertR2
+pat_insert2
+pat_insert3
+pat_remove5
+insertR
+pat_insert0
+pat_remove7
+pat_remove2
+pat_remove1
+main0
+pat_remove9
+pat_remove12
+pat_search
+pat_insert9
+main8
+main10
+main6
+pat_insert8
+main7
+insertR0
+pat_remove0
+pat_remove6
+pat_insert1
+pat_remove8
+main2
+pat_remove3
+pat_insert4
+main5
+main11
+pat_insert
+main1
+main
+pat_insert10
+pat_insert11
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 14
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 15
+  - operands: []
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %pm.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %buf.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %copied = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %copied.el = alloca i32, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 49
+Collecting defining blocks for pat_insert
+Collecting defining blocks for bit
+Collecting defining blocks for insertR
+Skip. No dependence graph for function pat_remove
+Collecting defining blocks for pat_search
+Collecting defining blocks for main
+ Processing function:pat_insert
+Short range hashing enabled.
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.true  
+After path modifications process path
+cond.true  
+Hash path invariants only
+Invariants are
+  br label %cond.end, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.body  if.then26  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  if.then26  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  if.then26  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  if.then26  
+Processing call instruction..
+Can't handle this operand   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.body  if.end33  for.inc  
+After path modifications process path
+if.end33  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.body43  if.then52  
+After path modifications process path
+for.body43  if.then52  
+Hash path invariants only
+Invariants are
+  br label %if.end58, !data_indep_instr !11, !control_dep_instr !8
+  call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing call instruction..
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+Processing call instruction..
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %copied = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.body43  if.end58  for.inc59  
+After path modifications process path
+for.body43  if.end58  
+Hash path invariants only
+Invariants are
+  br label %for.inc59, !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.body43  if.else  
+After path modifications process path
+for.body43  if.else  
+Hash path invariants only
+Invariants are
+  store i32 1, i32* %copied, align 4, !data_indep_instr !11, !control_dep_instr !8
+  br label %if.end58, !data_indep_instr !11, !control_dep_instr !8
+  call void @pat_insert5(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing call instruction..
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert5(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert5(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.end60  if.end64  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  for.end60  if.end64  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  for.end60  if.end64  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.end64  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.end64  
+Processing call instruction..
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert8(%struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Non numeric pointers (int and float) are skipped:  %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing call instruction..
+Can't handle this operand   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert9(%struct.ptree** %retval, %struct.ptree_mask** %buf, %struct.ptree** %t), !data_indep_instr !11, !control_dep_instr !8
+Can't handle this operand   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert9(%struct.ptree** %retval, %struct.ptree_mask** %buf, %struct.ptree** %t), !data_indep_instr !11, !control_dep_instr !8
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert9(%struct.ptree** %retval, %struct.ptree_mask** %buf, %struct.ptree** %t), !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.end60  if.then62  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  for.end60  if.then62  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  for.end60  if.then62  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.then62  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.then62  
+Processing call instruction..
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert7(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert7(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.rhs  
+After path modifications process path
+land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.body80  for.inc81  
+After path modifications process path
+for.body80  
+Hash path invariants only
+Invariants are
+  br label %for.inc81, !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.end83  if.then89  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  for.end83  if.then89  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.then89  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.then89  
+Processing call instruction..
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert11(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert11(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %head.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert11(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.end83  if.end97  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  for.end83  if.end97  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.end97  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.end97  
+Processing call instruction..
+Can't handle this operand   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert13(%struct.ptree** %retval, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert13(%struct.ptree** %retval, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.end83  if.else93  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  for.end83  if.else93  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.else93  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.else93  
+Processing call instruction..
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert12(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert12(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %head.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert12(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.false  
+After path modifications process path
+cond.false  
+Hash path invariants only
+Invariants are
+  br label %cond.end, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+ Processing function:bit
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+No oh has been applied in the path
+ Processing function:insertR
+Short range hashing enabled.
+Processing path: entry  if.then  cond.true  
+After path modifications process path
+entry  if.then  cond.true  
+Processing path: entry  if.then  cond.end  cond.true13  
+After path modifications process path
+entry  if.then  cond.end  cond.true13  
+Processing path: entry  if.then  cond.end  cond.end15  
+After path modifications process path
+entry  if.then  cond.end  cond.end15  
+Processing path: entry  if.then  cond.end  cond.false14  
+After path modifications process path
+entry  if.then  cond.end  cond.false14  
+Processing path: entry  if.then  cond.false  
+After path modifications process path
+entry  if.then  cond.false  
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Processing path: entry  lor.lhs.false  if.end  if.then22  
+After path modifications process path
+entry  lor.lhs.false  if.end  if.then22  
+Processing path: entry  lor.lhs.false  if.end  if.end29  
+After path modifications process path
+entry  lor.lhs.false  if.end  if.end29  
+Processing path: entry  lor.lhs.false  if.end  if.else  
+After path modifications process path
+entry  lor.lhs.false  if.end  if.else  
+Skip. No dependence graph for function pat_remove
+ Processing function:pat_search
+Short range hashing enabled.
+Processing path: entry  if.end  do.body  if.then1  
+After path modifications process path
+if.then1  
+Hash path invariants only
+Invariants are
+  br label %if.end2, !data_indep_instr !11, !argument_dep_instr !9, !control_dep_instr !8
+  call void @pat_search0(%struct.ptree** %p, %struct.ptree** %t), !data_indep_instr !11, !argument_dep_instr !9, !input_dep_block !12, !control_dep_instr !8
+Processing call instruction..
+Can't handle this operand   %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_search0(%struct.ptree** %p, %struct.ptree** %t), !data_indep_instr !11, !argument_dep_instr !9, !input_dep_block !12, !control_dep_instr !8
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_search0(%struct.ptree** %p, %struct.ptree** %t), !data_indep_instr !11, !argument_dep_instr !9, !input_dep_block !12, !control_dep_instr !8
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing path: entry  if.end  do.body  if.end2  cond.true  
+After path modifications process path
+if.end2  cond.true  
+Hash path invariants only
+Invariants are
+  br label %cond.end, !data_indep_instr !11, !argument_dep_instr !9, !control_dep_instr !8
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing path: entry  if.end  do.body  if.end2  cond.end  do.cond  do.end  cond.true16  
+After path modifications process path
+if.end2  cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !argument_dep_instr !9, !control_dep_instr !8
+Processing path: entry  if.end  do.end  cond.true16  
+After path modifications process path
+entry  if.end  do.end  cond.true16  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing path: entry  if.end  do.body  if.end2  cond.end  do.cond  do.end  cond.end18  
+After path modifications process path
+if.end2  cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !argument_dep_instr !9, !control_dep_instr !8
+Processing path: entry  if.end  do.end  cond.end18  
+After path modifications process path
+entry  if.end  do.end  cond.end18  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing path: entry  if.end  do.body  if.end2  cond.end  do.cond  do.end  cond.false17  
+After path modifications process path
+if.end2  cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !argument_dep_instr !9, !control_dep_instr !8
+Processing path: entry  if.end  do.end  cond.false17  
+After path modifications process path
+entry  if.end  do.end  cond.false17  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing path: entry  if.end  do.body  if.end2  cond.false  
+After path modifications process path
+if.end2  cond.false  
+Hash path invariants only
+Invariants are
+  br label %cond.end, !data_indep_instr !11, !argument_dep_instr !9, !control_dep_instr !8
+Processing path: entry  if.end  
+After path modifications process path
+entry  if.end  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Non numeric pointers (int and float) are skipped:  %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.then4  
+After path modifications process path
+entry  if.end  if.then4  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %argv.addr = alloca i8**, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(i8*** %argv.addr), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.body  if.end31  if.end37  if.end45  if.then59  
+After path modifications process path
+if.end45  if.then59  
+Hash path invariants only
+Invariants are
+  br label %if.end65, !data_indep_instr !9, !control_dep_instr !12
+  %s_addr = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr55 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr51 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  call void @main9(%struct.in_addr* %addr, float* %time), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %addr = alloca %struct.in_addr, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main9(%struct.in_addr* %addr, float* %time), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Can't handle this operand   %time = alloca float, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main9(%struct.in_addr* %addr, float* %time), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %phead = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main5(%struct.ptree** %phead), !data_indep_instr !9, !control_dep_instr !12
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.body  if.end31  if.end37  if.end45  if.end65  if.end69  
+After path modifications process path
+if.end45  
+Hash path invariants only
+Invariants are
+  %s_addr = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr55 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr51 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.body  if.end31  if.end37  if.end45  if.end65  if.then67  
+After path modifications process path
+if.end45  
+Hash path invariants only
+Invariants are
+  %s_addr = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr55 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr51 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then67  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then67  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.body  if.end31  if.end37  if.end45  if.else  
+After path modifications process path
+if.end45  if.else  
+Hash path invariants only
+Invariants are
+  br label %if.end65, !data_indep_instr !9, !control_dep_instr !12
+  %s_addr51 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr55 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  %s_addr = getelementptr inbounds %struct.in_addr, %struct.in_addr* %addr, i32 0, i32 0, !data_dep_instr !7, !control_dep_instr !12
+  call void @main10(%struct.ptree** %phead, %struct.ptree** %p), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %phead = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main10(%struct.ptree** %phead, %struct.ptree** %p), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Can't handle this operand   %p = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main10(%struct.ptree** %phead, %struct.ptree** %p), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.body  if.end31  if.end37  if.then44  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then44  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then44  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.body  if.end31  if.then36  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then36  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then36  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.body  if.then30  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then30  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  if.then30  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.end22  while.end  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.end22  while.end  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end7  if.end10  if.end15  if.then21  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.end15  if.then21  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end7  if.end10  if.then14  
+After path modifications process path
+entry  if.end  if.end7  if.end10  if.then14  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end7  if.then9  
+After path modifications process path
+entry  if.end  if.end7  if.then9  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Extract path function for assertion assert_main_path_1
+Extract path function for assertion assert_main_path_2
+Extract path function for assertion assert_main_path_3
+Extract path function for assertion assert_main_path_4
+Extract path function for assertion assert_main_path_5
+Extract path function for assertion assert_main_path_6
+Extract path function for assertion assert_main_path_7
+Extract path function for assertion assert_main_path_8
+Extract path function for assertion assert_main_path_9
+Extract path function for assertion assert_main_path_11
+Extract path function for assertion assert_main_path_13
+Extract path function for assertion assert_main_path_15
+Extract path function for assertion assert_main_path_17
+Extract path function for assertion assert_main_path_18
+Extract path function for assertion assert_main_path_19
+Extract path function for assertion assert_main_path_20
+Extract path function for assertion assert_pat_insert_path_0
+Extract path function for assertion assert_pat_insert_path_1
+Extract path function for assertion assert_pat_insert_path_3
+Extract path function for assertion assert_pat_insert_path_4
+Extract path function for assertion assert_pat_insert_path_5
+Extract path function for assertion assert_pat_insert_path_6
+Extract path function for assertion assert_pat_insert_path_7
+Extract path function for assertion assert_pat_insert_path_8
+Extract path function for assertion assert_pat_insert_path_10
+Extract path function for assertion assert_pat_insert_path_11
+Extract path function for assertion assert_pat_insert_path_12
+Extract path function for assertion assert_pat_insert_path_14
+Extract path function for assertion assert_pat_insert_path_15
+Extract path function for assertion assert_pat_insert_path_16
+Extract path function for assertion assert_pat_insert_path_18
+Extract path function for assertion assert_pat_insert_path_19
+Extract path function for assertion assert_pat_insert_path_22
+Extract path function for assertion assert_pat_insert_path_23
+Extract path function for assertion assert_pat_insert_path_26
+Extract path function for assertion assert_pat_insert_path_27
+Extract path function for assertion assert_pat_insert_path_28
+Extract path function for assertion assert_pat_insert_path_29
+Extract path function for assertion assert_pat_insert_path_30
+Extract path function for assertion assert_pat_insert_path_31
+Extract path function for assertion assert_pat_insert_path_32
+Extract path function for assertion assert_pat_insert_path_33
+Extract path function for assertion assert_pat_insert_path_35
+Extract path function for assertion assert_pat_insert_path_36
+Extract path function for assertion assert_pat_insert_path_38
+Extract path function for assertion assert_pat_insert_path_39
+Extract path function for assertion assert_pat_insert_path_41
+Extract path function for assertion assert_pat_insert_path_42
+Extract path function for assertion assert_pat_insert_path_43
+Extract path function for assertion assert_pat_insert_path_44
+Extract path function for assertion assert_pat_insert_path_45
+Extract path function for assertion assert_pat_insert_path_46
+Extract path function for assertion assert_insertR_path_0
+Extract path function for assertion assert_insertR_path_1
+Extract path function for assertion assert_insertR_path_2
+Extract path function for assertion assert_insertR_path_3
+Extract path function for assertion assert_insertR_path_4
+Extract path function for assertion assert_insertR_path_5
+Extract path function for assertion assert_insertR_path_6
+Extract path function for assertion assert_insertR_path_7
+Extract path function for assertion assert_insertR_path_8
+Extract path function for assertion assert_pat_search_path_0
+Extract path function for assertion assert_pat_search_path_1
+Extract path function for assertion assert_pat_search_path_2
+Extract path function for assertion assert_pat_search_path_3
+Extract path function for assertion assert_pat_search_path_4
+Extract path function for assertion assert_pat_search_path_5
+Extract path function for assertion assert_pat_search_path_6
+Extract path function for assertion assert_pat_search_path_7
+Extract path function for assertion assert_pat_search_path_8
+Extract path function for assertion assert_pat_search_path_9
+Extract path function for assertion assert_pat_search_path_10
+Extract path function for assertion assert_pat_search_path_11
+Extract path function for assertion assert_pat_search_path_12
+Extract path function for assertion assert_pat_search_path_13
+OH stats is requested, dumping stat file...
+Processed instructions number 838
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 56,
+    "numberOfDataDependentInstructions": 270,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 306,
+    "numberOfNonHashableBlocks": 5,
+    "numberOfNonHashableInstructions": 61,
+    "numberOfOHProcessedInstr": 532,
+    "numberOfOtherUnprotectedInstructions": 3,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 1,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 4,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 2,
+    "numberOfSensitiveBlocks": 93,
+    "numberOfSensitiveFunctions": 5,
+    "numberOfShortRangeAssertCalls": 75,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 69,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 43,
+    "numberOfUnprotectedArgumentReachableInstructions": 20,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 18,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 132
+}
+ERR. processed 5 function, while filter count is 49
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 1.3949 seconds (1.4092 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.9150 ( 67.1%)   0.0162 ( 53.3%)   0.9312 ( 66.8%)   0.9412 ( 66.8%)  Instruments bitcode with hashing and logging functions
+   0.3898 ( 28.6%)   0.0079 ( 26.1%)   0.3977 ( 28.5%)   0.4014 ( 28.5%)  runs input dependency analysis
+   0.0422 (  3.1%)   0.0018 (  6.0%)   0.0440 (  3.2%)   0.0444 (  3.2%)  Memory SSA
+   0.0031 (  0.2%)   0.0033 ( 11.0%)   0.0065 (  0.5%)   0.0065 (  0.5%)  Bitcode Writer
+   0.0042 (  0.3%)   0.0003 (  0.9%)   0.0044 (  0.3%)   0.0046 (  0.3%)  Dominator Tree Construction
+   0.0031 (  0.2%)   0.0002 (  0.5%)   0.0032 (  0.2%)   0.0033 (  0.2%)  Natural Loop Information
+   0.0019 (  0.1%)   0.0005 (  1.7%)   0.0024 (  0.2%)   0.0024 (  0.2%)  Module Verifier
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0007 (  0.1%)   0.0000 (  0.1%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
+   0.0007 (  0.1%)   0.0000 (  0.1%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Include functions in a given file in any transformation
+   0.0007 (  0.0%)   0.0000 (  0.1%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Dominator Tree Construction
+   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Natural Loop Information
+   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Function Alias Analysis Results
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
+   0.0004 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.3646 (100.0%)   0.0303 (100.0%)   1.3949 (100.0%)   1.4092 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0050 seconds (0.0051 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0047 (100.0%)   0.0002 (100.0%)   0.0050 (100.0%)   0.0051 (100.0%)  Parse IR
+   0.0047 (100.0%)   0.0002 (100.0%)   0.0050 (100.0%)   0.0051 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function pat_insert0
+Processing function bit
+Processing function pat_insert1
+Processing function pat_insert2
+Processing function pat_insert3
+Processing function pat_insert4
+Processing function pat_insert5
+Processing function pat_insert6
+Processing function pat_insert7
+Processing function pat_insert8
+Processing function pat_insert9
+Processing function pat_insert10
+Processing function insertR2
+Processing function insertR1
+Processing function insertR0
+Processing function insertR
+Processing function pat_insert11
+Processing function pat_insert12
+Processing function pat_insert13
+Processing function pat_insert
+Processing function pat_remove0
+Processing function pat_remove1
+Processing function pat_remove2
+Processing function pat_remove3
+Processing function pat_remove4
+Processing function pat_remove5
+Processing function pat_remove6
+Processing function pat_remove7
+Processing function pat_remove8
+Processing function pat_remove9
+Processing function pat_remove10
+Processing function pat_remove11
+Processing function pat_remove12
+Processing function pat_remove
+Processing function pat_search0
+Processing function pat_search
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main
+Finalizing main
+Finalizing main11
+Mark Input dependent function main11
+Finalizing main10
+Mark Input dependent function main10
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing pat_search
+Mark Input dependent function pat_search
+Finalizing pat_search0
+Mark Input dependent function pat_search0
+Finalizing pat_remove
+Finalizing pat_remove12
+Mark Input dependent function pat_remove12
+Finalizing pat_remove11
+Mark Input dependent function pat_remove11
+Finalizing pat_remove10
+Mark Input dependent function pat_remove10
+Finalizing pat_remove9
+Mark Input dependent function pat_remove9
+Finalizing pat_remove8
+Mark Input dependent function pat_remove8
+Finalizing pat_remove7
+Mark Input dependent function pat_remove7
+Finalizing pat_remove6
+Mark Input dependent function pat_remove6
+Finalizing pat_remove5
+Mark Input dependent function pat_remove5
+Finalizing pat_remove4
+Mark Input dependent function pat_remove4
+Finalizing pat_remove3
+Mark Input dependent function pat_remove3
+Finalizing pat_remove2
+Mark Input dependent function pat_remove2
+Finalizing pat_remove1
+Mark Input dependent function pat_remove1
+Finalizing pat_remove0
+Mark Input dependent function pat_remove0
+Finalizing pat_insert
+Mark Input dependent function pat_insert
+Finalizing pat_insert13
+Mark Input dependent function pat_insert13
+Finalizing pat_insert12
+Mark Input dependent function pat_insert12
+Finalizing pat_insert11
+Mark Input dependent function pat_insert11
+Finalizing insertR
+Mark Input dependent function insertR
+Finalizing insertR0
+Mark Input dependent function insertR0
+Finalizing insertR1
+Mark Input dependent function insertR1
+Finalizing insertR2
+Mark Input dependent function insertR2
+Finalizing pat_insert10
+Mark Input dependent function pat_insert10
+Finalizing pat_insert9
+Mark Input dependent function pat_insert9
+Finalizing pat_insert8
+Mark Input dependent function pat_insert8
+Finalizing pat_insert7
+Mark Input dependent function pat_insert7
+Finalizing pat_insert6
+Mark Input dependent function pat_insert6
+Finalizing pat_insert5
+Mark Input dependent function pat_insert5
+Finalizing pat_insert4
+Mark Input dependent function pat_insert4
+Finalizing pat_insert3
+Mark Input dependent function pat_insert3
+Finalizing pat_insert2
+Mark Input dependent function pat_insert2
+Finalizing pat_insert1
+Mark Input dependent function pat_insert1
+Finalizing bit
+Mark Input dependent function bit
+Finalizing pat_insert0
+Mark Input dependent function pat_insert0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/patricia.x.bc/25/0
+here!:insertR2
+here!:pat_remove3
+here!:pat_insert4
+here!:main2
+here!:main6
+here!:pat_remove5
+here!:pat_insert8
+here!:pat_remove0
+here!:bit
+here!:pat_remove9
+here!:pat_remove
+here!:pat_remove10
+here!:pat_remove10
+got filter function names
+did not find pat_insert demangled to pat_insert
+Add filter function bit
+FunctionInfo. Adding function:bit
+did not find free demangled to free
+did not find malloc demangled to malloc
+did not find bcopy demangled to bcopy
+did not find insertR demangled to insertR
+Add filter function pat_remove
+FunctionInfo. Adding function:pat_remove
+did not find pat_search demangled to pat_search
+did not find main demangled to main
+did not find printf demangled to printf
+did not find exit demangled to exit
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find fgets demangled to fgets
+did not find __isoc99_sscanf demangled to __isoc99_sscanf
+did not find htonl demangled to htonl
+did not find fprintf demangled to fprintf
+did not find pat_insert0 demangled to pat_insert0
+did not find pat_insert1 demangled to pat_insert1
+did not find pat_insert2 demangled to pat_insert2
+did not find pat_insert3 demangled to pat_insert3
+Add filter function pat_insert4
+FunctionInfo. Adding function:pat_insert4
+did not find pat_insert5 demangled to pat_insert5
+did not find pat_insert6 demangled to pat_insert6
+did not find pat_insert7 demangled to pat_insert7
+Add filter function pat_insert8
+FunctionInfo. Adding function:pat_insert8
+did not find pat_insert9 demangled to pat_insert9
+did not find pat_insert10 demangled to pat_insert10
+did not find pat_insert11 demangled to pat_insert11
+did not find pat_insert12 demangled to pat_insert12
+did not find pat_insert13 demangled to pat_insert13
+did not find insertR0 demangled to insertR0
+did not find insertR1 demangled to insertR1
+Add filter function insertR2
+FunctionInfo. Adding function:insertR2
+Add filter function pat_remove0
+FunctionInfo. Adding function:pat_remove0
+did not find pat_remove1 demangled to pat_remove1
+did not find pat_remove2 demangled to pat_remove2
+Add filter function pat_remove3
+FunctionInfo. Adding function:pat_remove3
+did not find pat_remove4 demangled to pat_remove4
+Add filter function pat_remove5
+FunctionInfo. Adding function:pat_remove5
+did not find pat_remove6 demangled to pat_remove6
+did not find pat_remove7 demangled to pat_remove7
+did not find pat_remove8 demangled to pat_remove8
+Add filter function pat_remove9
+FunctionInfo. Adding function:pat_remove9
+Add filter function pat_remove10
+FunctionInfo. Adding function:pat_remove10
+did not find pat_remove11 demangled to pat_remove11
+did not find pat_remove12 demangled to pat_remove12
+did not find pat_search0 demangled to pat_search0
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+did not find main3 demangled to main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+did not find main7 demangled to main7
+did not find main8 demangled to main8
+did not find main9 demangled to main9
+did not find main10 demangled to main10
+did not find main11 demangled to main11
+Adding pat_insert other functions, ExtractedOnly mode uses other functions
+Adding bit other functions, ExtractedOnly mode uses other functions
+Adding insertR other functions, ExtractedOnly mode uses other functions
+Adding pat_remove other functions, ExtractedOnly mode uses other functions
+Adding pat_search other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding pat_insert0 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert1 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert2 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert3 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert4 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert5 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert6 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert7 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert8 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert9 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert10 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert11 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert12 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert13 other functions, ExtractedOnly mode uses other functions
+Adding insertR0 other functions, ExtractedOnly mode uses other functions
+Adding insertR1 other functions, ExtractedOnly mode uses other functions
+Adding insertR2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove0 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove1 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove3 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove4 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove5 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove6 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove7 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove8 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove9 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove10 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove11 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove12 other functions, ExtractedOnly mode uses other functions
+Adding pat_search0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+pat_insert12
+pat_remove11
+pat_remove4
+main9
+pat_insert5
+pat_remove
+pat_insert6
+pat_insert13
+pat_remove10
+insertR1
+main4
+pat_insert7
+pat_search0
+bit
+main3
+insertR2
+pat_insert2
+pat_insert3
+pat_remove5
+insertR
+pat_insert0
+pat_remove7
+pat_remove2
+pat_remove1
+main0
+pat_remove9
+pat_remove12
+pat_search
+pat_insert9
+main8
+main10
+main6
+pat_insert8
+main7
+insertR0
+pat_remove0
+pat_remove6
+pat_insert1
+pat_remove8
+main2
+pat_remove3
+pat_insert4
+main5
+main11
+pat_insert
+main1
+main
+pat_insert10
+pat_insert11
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 49 function, while filter count is 12
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 14
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 15
+  - operands: []
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %pm.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %buf.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %copied = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %copied.el = alloca i32, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 12
+ Skipping function per FilterFunctionPass:pat_insert
+Collecting defining blocks for bit
+ Skipping function per FilterFunctionPass:insertR
+Skip. No dependence graph for function pat_remove
+ Skipping function per FilterFunctionPass:pat_search
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:pat_insert
+ Processing function:bit
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+No oh has been applied in the path
+ Skipping function per FilterFunctionPass:insertR
+Skip. No dependence graph for function pat_remove
+ Skipping function per FilterFunctionPass:pat_search
+ Skipping function per FilterFunctionPass:main
+OH stats is requested, dumping stat file...
+Processed instructions number 839
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 56,
+    "numberOfDataDependentInstructions": 11,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 522,
+    "numberOfInstructionsInFunctionsWithNoDG": 306,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 11,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 1,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 0,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 0,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 0,
+    "numberOfUnprotectedArgumentReachableInstructions": 0,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 1 function, while filter count is 12
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 1.0953 seconds (1.0961 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.6681 ( 61.0%)   0.6681 ( 61.0%)   0.6686 ( 61.0%)  Instruments bitcode with hashing and logging functions
+   0.4163 ( 38.0%)   0.4163 ( 38.0%)   0.4165 ( 38.0%)  runs input dependency analysis
+   0.0049 (  0.4%)   0.0049 (  0.4%)   0.0049 (  0.4%)  Bitcode Writer
+   0.0012 (  0.1%)   0.0012 (  0.1%)   0.0012 (  0.1%)  Instruments bitcode with guards
+   0.0010 (  0.1%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Module Verifier
+   0.0007 (  0.1%)   0.0007 (  0.1%)   0.0008 (  0.1%)  Dominator Tree Construction
+   0.0007 (  0.1%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Post-Dominator Tree Construction
+   0.0007 (  0.1%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Include functions in a given file in any transformation
+   0.0005 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   0.0004 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
+   0.0002 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Memory SSA
+   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   1.0953 (100.0%)   1.0953 (100.0%)   1.0961 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0037 seconds (0.0037 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0037 (100.0%)   0.0037 (100.0%)   0.0037 (100.0%)  Parse IR
+   0.0037 (100.0%)   0.0037 (100.0%)   0.0037 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function pat_insert0
+Processing function bit
+Processing function pat_insert1
+Processing function pat_insert2
+Processing function pat_insert3
+Processing function pat_insert4
+Processing function pat_insert5
+Processing function pat_insert6
+Processing function pat_insert7
+Processing function pat_insert8
+Processing function pat_insert9
+Processing function pat_insert10
+Processing function insertR2
+Processing function insertR1
+Processing function insertR0
+Processing function insertR
+Processing function pat_insert11
+Processing function pat_insert12
+Processing function pat_insert13
+Processing function pat_insert
+Processing function pat_remove0
+Processing function pat_remove1
+Processing function pat_remove2
+Processing function pat_remove3
+Processing function pat_remove4
+Processing function pat_remove5
+Processing function pat_remove6
+Processing function pat_remove7
+Processing function pat_remove8
+Processing function pat_remove9
+Processing function pat_remove10
+Processing function pat_remove11
+Processing function pat_remove12
+Processing function pat_remove
+Processing function pat_search0
+Processing function pat_search
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function main8
+Processing function main9
+Processing function main10
+Processing function main11
+Processing function main
+Finalizing main
+Finalizing main11
+Mark Input dependent function main11
+Finalizing main10
+Mark Input dependent function main10
+Finalizing main9
+Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finalizing pat_search
+Mark Input dependent function pat_search
+Finalizing pat_search0
+Mark Input dependent function pat_search0
+Finalizing pat_remove
+Finalizing pat_remove12
+Mark Input dependent function pat_remove12
+Finalizing pat_remove11
+Mark Input dependent function pat_remove11
+Finalizing pat_remove10
+Mark Input dependent function pat_remove10
+Finalizing pat_remove9
+Mark Input dependent function pat_remove9
+Finalizing pat_remove8
+Mark Input dependent function pat_remove8
+Finalizing pat_remove7
+Mark Input dependent function pat_remove7
+Finalizing pat_remove6
+Mark Input dependent function pat_remove6
+Finalizing pat_remove5
+Mark Input dependent function pat_remove5
+Finalizing pat_remove4
+Mark Input dependent function pat_remove4
+Finalizing pat_remove3
+Mark Input dependent function pat_remove3
+Finalizing pat_remove2
+Mark Input dependent function pat_remove2
+Finalizing pat_remove1
+Mark Input dependent function pat_remove1
+Finalizing pat_remove0
+Mark Input dependent function pat_remove0
+Finalizing pat_insert
+Mark Input dependent function pat_insert
+Finalizing pat_insert13
+Mark Input dependent function pat_insert13
+Finalizing pat_insert12
+Mark Input dependent function pat_insert12
+Finalizing pat_insert11
+Mark Input dependent function pat_insert11
+Finalizing insertR
+Mark Input dependent function insertR
+Finalizing insertR0
+Mark Input dependent function insertR0
+Finalizing insertR1
+Mark Input dependent function insertR1
+Finalizing insertR2
+Mark Input dependent function insertR2
+Finalizing pat_insert10
+Mark Input dependent function pat_insert10
+Finalizing pat_insert9
+Mark Input dependent function pat_insert9
+Finalizing pat_insert8
+Mark Input dependent function pat_insert8
+Finalizing pat_insert7
+Mark Input dependent function pat_insert7
+Finalizing pat_insert6
+Mark Input dependent function pat_insert6
+Finalizing pat_insert5
+Mark Input dependent function pat_insert5
+Finalizing pat_insert4
+Mark Input dependent function pat_insert4
+Finalizing pat_insert3
+Mark Input dependent function pat_insert3
+Finalizing pat_insert2
+Mark Input dependent function pat_insert2
+Finalizing pat_insert1
+Mark Input dependent function pat_insert1
+Finalizing bit
+Mark Input dependent function bit
+Finalizing pat_insert0
+Mark Input dependent function pat_insert0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/patricia.x.bc/50/0
+here!:insertR2
+here!:pat_remove3
+here!:pat_insert4
+here!:main2
+here!:main6
+here!:pat_remove5
+here!:pat_insert8
+here!:pat_remove0
+here!:bit
+here!:pat_remove9
+here!:pat_remove
+here!:pat_remove10
+here!:pat_remove2
+here!:pat_insert
+here!:main4
+here!:main5
+here!:pat_insert2
+here!:pat_insert1
+here!:pat_insert11
+here!:pat_remove7
+here!:main9
+here!:pat_remove8
+here!:pat_remove12
+here!:pat_insert7
+here!:insertR0
+here!:insertR0
+got filter function names
+Add filter function pat_insert
+FunctionInfo. Adding function:pat_insert
+Add filter function bit
+FunctionInfo. Adding function:bit
+did not find free demangled to free
+did not find malloc demangled to malloc
+did not find bcopy demangled to bcopy
+did not find insertR demangled to insertR
+Add filter function pat_remove
+FunctionInfo. Adding function:pat_remove
+did not find pat_search demangled to pat_search
+did not find main demangled to main
+did not find printf demangled to printf
+did not find exit demangled to exit
+did not find fopen demangled to fopen
+did not find perror demangled to perror
+did not find llvm.memset.p0i8.i64 demangled to llvm.memset.p0i8.i64
+did not find fgets demangled to fgets
+did not find __isoc99_sscanf demangled to __isoc99_sscanf
+did not find htonl demangled to htonl
+did not find fprintf demangled to fprintf
+did not find pat_insert0 demangled to pat_insert0
+Add filter function pat_insert1
+FunctionInfo. Adding function:pat_insert1
+Add filter function pat_insert2
+FunctionInfo. Adding function:pat_insert2
+did not find pat_insert3 demangled to pat_insert3
+Add filter function pat_insert4
+FunctionInfo. Adding function:pat_insert4
+did not find pat_insert5 demangled to pat_insert5
+did not find pat_insert6 demangled to pat_insert6
+Add filter function pat_insert7
+FunctionInfo. Adding function:pat_insert7
+Add filter function pat_insert8
+FunctionInfo. Adding function:pat_insert8
+did not find pat_insert9 demangled to pat_insert9
+did not find pat_insert10 demangled to pat_insert10
+Add filter function pat_insert11
+FunctionInfo. Adding function:pat_insert11
+did not find pat_insert12 demangled to pat_insert12
+did not find pat_insert13 demangled to pat_insert13
+Add filter function insertR0
+FunctionInfo. Adding function:insertR0
+did not find insertR1 demangled to insertR1
+Add filter function insertR2
+FunctionInfo. Adding function:insertR2
+Add filter function pat_remove0
+FunctionInfo. Adding function:pat_remove0
+did not find pat_remove1 demangled to pat_remove1
+Add filter function pat_remove2
+FunctionInfo. Adding function:pat_remove2
+Add filter function pat_remove3
+FunctionInfo. Adding function:pat_remove3
+did not find pat_remove4 demangled to pat_remove4
+Add filter function pat_remove5
+FunctionInfo. Adding function:pat_remove5
+did not find pat_remove6 demangled to pat_remove6
+Add filter function pat_remove7
+FunctionInfo. Adding function:pat_remove7
+Add filter function pat_remove8
+FunctionInfo. Adding function:pat_remove8
+Add filter function pat_remove9
+FunctionInfo. Adding function:pat_remove9
+Add filter function pat_remove10
+FunctionInfo. Adding function:pat_remove10
+did not find pat_remove11 demangled to pat_remove11
+Add filter function pat_remove12
+FunctionInfo. Adding function:pat_remove12
+did not find pat_search0 demangled to pat_search0
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+did not find main3 demangled to main3
+Add filter function main4
+FunctionInfo. Adding function:main4
+Add filter function main5
+FunctionInfo. Adding function:main5
+Add filter function main6
+FunctionInfo. Adding function:main6
+did not find main7 demangled to main7
+did not find main8 demangled to main8
+Add filter function main9
+FunctionInfo. Adding function:main9
+did not find main10 demangled to main10
+did not find main11 demangled to main11
+Adding pat_insert other functions, ExtractedOnly mode uses other functions
+Adding bit other functions, ExtractedOnly mode uses other functions
+Adding insertR other functions, ExtractedOnly mode uses other functions
+Adding pat_remove other functions, ExtractedOnly mode uses other functions
+Adding pat_search other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding pat_insert0 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert1 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert2 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert3 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert4 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert5 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert6 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert7 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert8 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert9 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert10 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert11 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert12 other functions, ExtractedOnly mode uses other functions
+Adding pat_insert13 other functions, ExtractedOnly mode uses other functions
+Adding insertR0 other functions, ExtractedOnly mode uses other functions
+Adding insertR1 other functions, ExtractedOnly mode uses other functions
+Adding insertR2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove0 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove1 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove2 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove3 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove4 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove5 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove6 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove7 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove8 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove9 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove10 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove11 other functions, ExtractedOnly mode uses other functions
+Adding pat_remove12 other functions, ExtractedOnly mode uses other functions
+Adding pat_search0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding main9 other functions, ExtractedOnly mode uses other functions
+Adding main10 other functions, ExtractedOnly mode uses other functions
+Adding main11 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:49
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+pat_insert12
+pat_remove11
+pat_remove4
+main9
+pat_insert5
+pat_remove
+pat_insert6
+pat_insert13
+pat_remove10
+insertR1
+main4
+pat_insert7
+pat_search0
+bit
+main3
+insertR2
+pat_insert2
+pat_insert3
+pat_remove5
+insertR
+pat_insert0
+pat_remove7
+pat_remove2
+pat_remove1
+main0
+pat_remove9
+pat_remove12
+pat_search
+pat_insert9
+main8
+main10
+main6
+pat_insert8
+main7
+insertR0
+pat_remove0
+pat_remove6
+pat_insert1
+pat_remove8
+main2
+pat_remove3
+pat_insert4
+main5
+main11
+pat_insert
+main1
+main
+pat_insert10
+pat_insert11
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 49 function, while filter count is 25
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 14
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 15
+  - operands: []
+No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %retval.el = alloca %struct.ptree*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %pm.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %buf.el = alloca %struct.ptree_mask*, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No reaching definition for:   %copied = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 in:   %copied.el = alloca i32, !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 25
+Collecting defining blocks for pat_insert
+Collecting defining blocks for bit
+ Skipping function per FilterFunctionPass:insertR
+Skip. No dependence graph for function pat_remove
+ Skipping function per FilterFunctionPass:pat_search
+ Skipping function per FilterFunctionPass:main
+ Processing function:pat_insert
+Short range hashing enabled.
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.true  
+After path modifications process path
+cond.true  
+Hash path invariants only
+Invariants are
+  br label %cond.end, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.body  if.then26  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  if.then26  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  if.then26  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  if.then26  
+Processing call instruction..
+Can't handle this operand   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert1(%struct.ptree** %retval, %struct.ptree** %t, i32* %i, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.body  if.end33  for.inc  
+After path modifications process path
+if.end33  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.body43  if.then52  
+After path modifications process path
+for.body43  if.then52  
+Hash path invariants only
+Invariants are
+  br label %if.end58, !data_indep_instr !11, !control_dep_instr !8
+  call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing call instruction..
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert4(%struct.ptree_mask** %pm, i32* %i, %struct.ptree** %t), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+Processing call instruction..
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %copied = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert3(%struct.ptree** %t, %struct.ptree_mask** %pm, %struct.ptree_mask** %buf, i32* %copied, i32* %i), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.body43  if.end58  for.inc59  
+After path modifications process path
+for.body43  if.end58  
+Hash path invariants only
+Invariants are
+  br label %for.inc59, !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.body43  if.else  
+After path modifications process path
+for.body43  if.else  
+Hash path invariants only
+Invariants are
+  store i32 1, i32* %copied, align 4, !data_indep_instr !11, !control_dep_instr !8
+  br label %if.end58, !data_indep_instr !11, !control_dep_instr !8
+  call void @pat_insert5(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing call instruction..
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert5(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert5(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.end60  if.end64  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  for.end60  if.end64  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  for.end60  if.end64  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.end64  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.end64  
+Processing call instruction..
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert8(%struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Non numeric pointers (int and float) are skipped:  %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 %struct.ptree*
+Processing call instruction..
+Can't handle this operand   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert9(%struct.ptree** %retval, %struct.ptree_mask** %buf, %struct.ptree** %t), !data_indep_instr !11, !control_dep_instr !8
+Can't handle this operand   %buf = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert9(%struct.ptree** %retval, %struct.ptree_mask** %buf, %struct.ptree** %t), !data_indep_instr !11, !control_dep_instr !8
+Can't handle this operand   %t = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert9(%struct.ptree** %retval, %struct.ptree_mask** %buf, %struct.ptree** %t), !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.cond38  for.end60  if.then62  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.cond  for.end  for.end60  if.then62  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.then16  for.end  for.end60  if.then62  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.then62  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.then16  for.end  for.end60  if.then62  
+Processing call instruction..
+Can't handle this operand   %pm = alloca %struct.ptree_mask*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert7(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert7(%struct.ptree_mask** %pm, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.rhs  
+After path modifications process path
+land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.body80  for.inc81  
+After path modifications process path
+for.body80  
+Hash path invariants only
+Invariants are
+  br label %for.inc81, !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.end83  if.then89  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  for.end83  if.then89  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.then89  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.then89  
+Processing call instruction..
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert11(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert11(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %head.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert11(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.end83  if.end97  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  for.end83  if.end97  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.end97  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.end97  
+Processing call instruction..
+Can't handle this operand   %retval = alloca %struct.ptree*, align 8, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert13(%struct.ptree** %retval, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert13(%struct.ptree** %retval, %struct.ptree** %n.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.cond71  land.end  for.end83  if.else93  
+After path modifications process path is empty
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.end  do.cond  do.end  if.end70  for.end83  if.else93  
+After path modifications process path
+cond.end  
+Hash path invariants only
+Invariants are
+  br label %do.cond, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.else93  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  do.end  if.end70  for.end83  if.else93  
+Processing call instruction..
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert12(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %n.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert12(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Can't handle this operand   %head.addr = alloca %struct.ptree*, align 8, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @pat_insert12(i32* %i, %struct.ptree** %n.addr, %struct.ptree** %head.addr), !data_indep_instr !11, !input_dep_block !10, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  do.body  cond.false  
+After path modifications process path
+cond.false  
+Hash path invariants only
+Invariants are
+  br label %cond.end, !data_indep_instr !11, !control_dep_instr !8
+Processing path: entry  lor.lhs.false  lor.lhs.false2  if.end  
+After path modifications process path
+entry  lor.lhs.false  lor.lhs.false2  if.end  
+Processing path: entry  return  
+After path modifications process path
+entry  return  
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+ Processing function:bit
+Short range hashing enabled.
+Processing path: entry  
+After path modifications process path
+entry  
+No oh has been applied in the path
+ Skipping function per FilterFunctionPass:insertR
+Skip. No dependence graph for function pat_remove
+ Skipping function per FilterFunctionPass:pat_search
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_pat_insert_path_0
+Extract path function for assertion assert_pat_insert_path_1
+Extract path function for assertion assert_pat_insert_path_3
+Extract path function for assertion assert_pat_insert_path_4
+Extract path function for assertion assert_pat_insert_path_5
+Extract path function for assertion assert_pat_insert_path_6
+Extract path function for assertion assert_pat_insert_path_7
+Extract path function for assertion assert_pat_insert_path_8
+Extract path function for assertion assert_pat_insert_path_10
+Extract path function for assertion assert_pat_insert_path_11
+Extract path function for assertion assert_pat_insert_path_12
+Extract path function for assertion assert_pat_insert_path_14
+Extract path function for assertion assert_pat_insert_path_15
+Extract path function for assertion assert_pat_insert_path_16
+Extract path function for assertion assert_pat_insert_path_18
+Extract path function for assertion assert_pat_insert_path_19
+Extract path function for assertion assert_pat_insert_path_22
+Extract path function for assertion assert_pat_insert_path_23
+Extract path function for assertion assert_pat_insert_path_26
+Extract path function for assertion assert_pat_insert_path_27
+Extract path function for assertion assert_pat_insert_path_28
+Extract path function for assertion assert_pat_insert_path_29
+Extract path function for assertion assert_pat_insert_path_30
+Extract path function for assertion assert_pat_insert_path_31
+Extract path function for assertion assert_pat_insert_path_32
+Extract path function for assertion assert_pat_insert_path_33
+Extract path function for assertion assert_pat_insert_path_35
+Extract path function for assertion assert_pat_insert_path_36
+Extract path function for assertion assert_pat_insert_path_38
+Extract path function for assertion assert_pat_insert_path_39
+Extract path function for assertion assert_pat_insert_path_41
+Extract path function for assertion assert_pat_insert_path_42
+Extract path function for assertion assert_pat_insert_path_43
+Extract path function for assertion assert_pat_insert_path_44
+Extract path function for assertion assert_pat_insert_path_45
+Extract path function for assertion assert_pat_insert_path_46
+OH stats is requested, dumping stat file...
+Processed instructions number 839
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 56,
+    "numberOfDataDependentInstructions": 75,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 346,
+    "numberOfInstructionsInFunctionsWithNoDG": 306,
+    "numberOfNonHashableBlocks": 2,
+    "numberOfNonHashableInstructions": 29,
+    "numberOfOHProcessedInstr": 187,
+    "numberOfOtherUnprotectedInstructions": 0,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 39,
+    "numberOfSensitiveFunctions": 2,
+    "numberOfShortRangeAssertCalls": 36,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 27,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 17,
+    "numberOfUnprotectedArgumentReachableInstructions": 4,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 10,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 62
+}
+ERR. processed 2 function, while filter count is 25
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 1.1839 seconds (1.1840 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.7087 ( 61.2%)   0.0240 ( 92.7%)   0.7327 ( 61.9%)   0.7327 ( 61.9%)  Instruments bitcode with hashing and logging functions
+   0.4126 ( 35.6%)   0.0000 (  0.0%)   0.4126 ( 34.9%)   0.4127 ( 34.9%)  runs input dependency analysis
+   0.0214 (  1.8%)   0.0015 (  6.0%)   0.0229 (  1.9%)   0.0229 (  1.9%)  Memory SSA
+   0.0049 (  0.4%)   0.0000 (  0.0%)   0.0049 (  0.4%)   0.0049 (  0.4%)  Bitcode Writer
+   0.0025 (  0.2%)   0.0002 (  0.7%)   0.0027 (  0.2%)   0.0027 (  0.2%)  Dominator Tree Construction
+   0.0017 (  0.2%)   0.0001 (  0.5%)   0.0019 (  0.2%)   0.0019 (  0.2%)  Natural Loop Information
+   0.0016 (  0.1%)   0.0000 (  0.1%)   0.0016 (  0.1%)   0.0016 (  0.1%)  Module Verifier
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0008 (  0.1%)  Dominator Tree Construction
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Post-Dominator Tree Construction
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Include functions in a given file in any transformation
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Natural Loop Information
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Function Alias Analysis Results
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.1580 (100.0%)   0.0259 (100.0%)   1.1839 (100.0%)   1.1840 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0051 seconds (0.0051 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0051 (100.0%)   0.0051 (100.0%)   0.0051 (100.0%)  Parse IR
+   0.0051 (100.0%)   0.0051 (100.0%)   0.0051 (100.0%)  Total
+

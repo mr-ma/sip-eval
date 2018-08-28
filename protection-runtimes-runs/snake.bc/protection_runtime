@@ -1,0 +1,3830 @@
+Running input dependency analysis pass
+Processing function sigsetup0
+Processing function sigsetup1
+Processing function sigsetup
+Processing function sig_handler0
+Processing function sig_handler
+Processing function alarm_handler0
+Processing function alarm_handler
+Processing function show_score0
+Processing function show_score
+Processing function draw_line0
+Processing function draw_line
+Processing function setup_level0
+Processing function setup_level1
+Processing function setup_level2
+Processing function setup_level3
+Processing function setup_level4
+Processing function setup_level5
+Processing function setup_level6
+Processing function setup_level7
+Processing function setup_level8
+Processing function setup_level9
+Processing function setup_level10
+Processing function setup_level11
+Processing function setup_level12
+Processing function setup_level
+Processing function move0
+Processing function move1
+Processing function move2
+Processing function move3
+Processing function move4
+Processing function move5
+Processing function move6
+Processing function move7
+Processing function move8
+Processing function move9
+Processing function move10
+Processing function move11
+Processing function move12
+Processing function move13
+Processing function move14
+Processing function move15
+Processing function move16
+Processing function move17
+Processing function move18
+Processing function move19
+Processing function move20
+Processing function move
+Processing function collide_walls
+Processing function collide_object
+Processing function collide_self0
+Processing function collide_self1
+Processing function collide_self
+Processing function collision
+Processing function eat_gold0
+Processing function eat_gold
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing eat_gold
+Mark Input dependent function eat_gold
+Finalizing eat_gold0
+Mark Input dependent function eat_gold0
+Finalizing collision
+Mark Input dependent function collision
+Finalizing collide_self
+Mark Input dependent function collide_self
+Finalizing collide_self1
+Mark Input dependent function collide_self1
+Finalizing collide_self0
+Mark Input dependent function collide_self0
+Finalizing collide_object
+Mark Input dependent function collide_object
+Finalizing collide_walls
+Mark Input dependent function collide_walls
+Finalizing move
+Mark Input dependent function move
+Finalizing move20
+Mark Input dependent function move20
+Finalizing move19
+Mark Input dependent function move19
+Finalizing move18
+Mark Input dependent function move18
+Finalizing move17
+Mark Input dependent function move17
+Finalizing move16
+Mark Input dependent function move16
+Finalizing move15
+Mark Input dependent function move15
+Finalizing move14
+Mark Input dependent function move14
+Finalizing move13
+Mark Input dependent function move13
+Finalizing move12
+Mark Input dependent function move12
+Finalizing move11
+Mark Input dependent function move11
+Finalizing move10
+Mark Input dependent function move10
+Finalizing move9
+Mark Input dependent function move9
+Finalizing move8
+Mark Input dependent function move8
+Finalizing move7
+Mark Input dependent function move7
+Finalizing move6
+Mark Input dependent function move6
+Finalizing move5
+Mark Input dependent function move5
+Finalizing move4
+Mark Input dependent function move4
+Finalizing move3
+Mark Input dependent function move3
+Finalizing move2
+Mark Input dependent function move2
+Finalizing move1
+Mark Input dependent function move1
+Finalizing move0
+Mark Input dependent function move0
+Finalizing setup_level
+Mark Input dependent function setup_level
+Finalizing setup_level12
+Mark Input dependent function setup_level12
+Finalizing setup_level11
+Mark Input dependent function setup_level11
+Finalizing setup_level10
+Mark Input dependent function setup_level10
+Finalizing setup_level9
+Mark Input dependent function setup_level9
+Finalizing setup_level8
+Mark Input dependent function setup_level8
+Finalizing setup_level7
+Mark Input dependent function setup_level7
+Finalizing setup_level6
+Mark Input dependent function setup_level6
+Finalizing setup_level5
+Mark Input dependent function setup_level5
+Finalizing setup_level4
+Mark Input dependent function setup_level4
+Finalizing setup_level3
+Mark Input dependent function setup_level3
+Finalizing setup_level2
+Mark Input dependent function setup_level2
+Finalizing setup_level1
+Mark Input dependent function setup_level1
+Finalizing setup_level0
+Mark Input dependent function setup_level0
+Finalizing draw_line
+Mark Input dependent function draw_line
+Finalizing draw_line0
+Mark Input dependent function draw_line0
+Finalizing show_score
+Mark Input dependent function show_score
+Finalizing show_score0
+Mark Input dependent function show_score0
+Finalizing alarm_handler
+Finalizing alarm_handler0
+Finalizing sig_handler
+Finalizing sig_handler0
+Mark Input dependent function sig_handler0
+Finalizing sigsetup
+Finalizing sigsetup1
+Finalizing sigsetup0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/snake.bc/10/0
+here!:sig_handler
+here!:move3
+here!:sigsetup0
+here!:move1
+here!:collide_walls
+here!:move6
+here!:move6
+got filter function names
+did not find sigsetup demangled to sigsetup
+did not find sigemptyset demangled to sigemptyset
+did not find sigaction demangled to sigaction
+Add filter function sig_handler
+FunctionInfo. Adding function:sig_handler
+did not find puts demangled to puts
+did not find exit demangled to exit
+did not find system demangled to system
+did not find alarm_handler demangled to alarm_handler
+did not find setitimer demangled to setitimer
+did not find show_score demangled to show_score
+did not find printf demangled to printf
+did not find draw_line demangled to draw_line
+did not find setup_level demangled to setup_level
+did not find rand demangled to rand
+did not find move demangled to move
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function collide_walls
+FunctionInfo. Adding function:collide_walls
+did not find collide_object demangled to collide_object
+did not find collide_self demangled to collide_self
+did not find collision demangled to collision
+did not find eat_gold demangled to eat_gold
+did not find main demangled to main
+did not find getchar demangled to getchar
+Add filter function sigsetup0
+FunctionInfo. Adding function:sigsetup0
+did not find sigsetup1 demangled to sigsetup1
+did not find sig_handler0 demangled to sig_handler0
+did not find alarm_handler0 demangled to alarm_handler0
+did not find show_score0 demangled to show_score0
+did not find draw_line0 demangled to draw_line0
+did not find setup_level0 demangled to setup_level0
+did not find setup_level1 demangled to setup_level1
+did not find setup_level2 demangled to setup_level2
+did not find setup_level3 demangled to setup_level3
+did not find setup_level4 demangled to setup_level4
+did not find setup_level5 demangled to setup_level5
+did not find setup_level6 demangled to setup_level6
+did not find setup_level7 demangled to setup_level7
+did not find setup_level8 demangled to setup_level8
+did not find setup_level9 demangled to setup_level9
+did not find setup_level10 demangled to setup_level10
+did not find setup_level11 demangled to setup_level11
+did not find setup_level12 demangled to setup_level12
+did not find move0 demangled to move0
+Add filter function move1
+FunctionInfo. Adding function:move1
+did not find move2 demangled to move2
+Add filter function move3
+FunctionInfo. Adding function:move3
+did not find move4 demangled to move4
+did not find move5 demangled to move5
+Add filter function move6
+FunctionInfo. Adding function:move6
+did not find move7 demangled to move7
+did not find move8 demangled to move8
+did not find move9 demangled to move9
+did not find move10 demangled to move10
+did not find move11 demangled to move11
+did not find move12 demangled to move12
+did not find move13 demangled to move13
+did not find move14 demangled to move14
+did not find move15 demangled to move15
+did not find move16 demangled to move16
+did not find move17 demangled to move17
+did not find move18 demangled to move18
+did not find move19 demangled to move19
+did not find move20 demangled to move20
+did not find collide_self0 demangled to collide_self0
+did not find collide_self1 demangled to collide_self1
+did not find eat_gold0 demangled to eat_gold0
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+did not find main2 demangled to main2
+did not find main3 demangled to main3
+Adding sigsetup other functions, ExtractedOnly mode uses other functions
+Adding sig_handler other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler other functions, ExtractedOnly mode uses other functions
+Adding show_score other functions, ExtractedOnly mode uses other functions
+Adding draw_line other functions, ExtractedOnly mode uses other functions
+Adding setup_level other functions, ExtractedOnly mode uses other functions
+Adding move other functions, ExtractedOnly mode uses other functions
+Adding collide_walls other functions, ExtractedOnly mode uses other functions
+Adding collide_object other functions, ExtractedOnly mode uses other functions
+Adding collide_self other functions, ExtractedOnly mode uses other functions
+Adding collision other functions, ExtractedOnly mode uses other functions
+Adding eat_gold other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sigsetup0 other functions, ExtractedOnly mode uses other functions
+Adding sigsetup1 other functions, ExtractedOnly mode uses other functions
+Adding sig_handler0 other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler0 other functions, ExtractedOnly mode uses other functions
+Adding show_score0 other functions, ExtractedOnly mode uses other functions
+Adding draw_line0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level1 other functions, ExtractedOnly mode uses other functions
+Adding setup_level2 other functions, ExtractedOnly mode uses other functions
+Adding setup_level3 other functions, ExtractedOnly mode uses other functions
+Adding setup_level4 other functions, ExtractedOnly mode uses other functions
+Adding setup_level5 other functions, ExtractedOnly mode uses other functions
+Adding setup_level6 other functions, ExtractedOnly mode uses other functions
+Adding setup_level7 other functions, ExtractedOnly mode uses other functions
+Adding setup_level8 other functions, ExtractedOnly mode uses other functions
+Adding setup_level9 other functions, ExtractedOnly mode uses other functions
+Adding setup_level10 other functions, ExtractedOnly mode uses other functions
+Adding setup_level11 other functions, ExtractedOnly mode uses other functions
+Adding setup_level12 other functions, ExtractedOnly mode uses other functions
+Adding move0 other functions, ExtractedOnly mode uses other functions
+Adding move1 other functions, ExtractedOnly mode uses other functions
+Adding move2 other functions, ExtractedOnly mode uses other functions
+Adding move3 other functions, ExtractedOnly mode uses other functions
+Adding move4 other functions, ExtractedOnly mode uses other functions
+Adding move5 other functions, ExtractedOnly mode uses other functions
+Adding move6 other functions, ExtractedOnly mode uses other functions
+Adding move7 other functions, ExtractedOnly mode uses other functions
+Adding move8 other functions, ExtractedOnly mode uses other functions
+Adding move9 other functions, ExtractedOnly mode uses other functions
+Adding move10 other functions, ExtractedOnly mode uses other functions
+Adding move11 other functions, ExtractedOnly mode uses other functions
+Adding move12 other functions, ExtractedOnly mode uses other functions
+Adding move13 other functions, ExtractedOnly mode uses other functions
+Adding move14 other functions, ExtractedOnly mode uses other functions
+Adding move15 other functions, ExtractedOnly mode uses other functions
+Adding move16 other functions, ExtractedOnly mode uses other functions
+Adding move17 other functions, ExtractedOnly mode uses other functions
+Adding move18 other functions, ExtractedOnly mode uses other functions
+Adding move19 other functions, ExtractedOnly mode uses other functions
+Adding move20 other functions, ExtractedOnly mode uses other functions
+Adding collide_self0 other functions, ExtractedOnly mode uses other functions
+Adding collide_self1 other functions, ExtractedOnly mode uses other functions
+Adding eat_gold0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:60
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+draw_line0
+move2
+setup_level8
+move14
+eat_gold
+show_score
+main
+setup_level0
+move1
+main0
+move9
+sigsetup0
+collide_self0
+move17
+move8
+collide_self1
+collide_object
+collide_self
+setup_level9
+alarm_handler
+eat_gold0
+setup_level11
+move18
+setup_level5
+move5
+move20
+move3
+draw_line
+main1
+move13
+move15
+move11
+sigsetup1
+move12
+setup_level1
+setup_level4
+setup_level10
+collide_walls
+setup_level12
+move19
+setup_level7
+collision
+move10
+move16
+sigsetup
+move6
+setup_level
+alarm_handler0
+show_score0
+sig_handler
+setup_level6
+move7
+main2
+move4
+main3
+move
+setup_level2
+sig_handler0
+move0
+setup_level3
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 60 function, while filter count is 6
+Functions called in loop
+Function call numbers
+sigsetup1 -- 4
+sigsetup0 -- 4
+main3 -- 1
+main -- 0
+alarm_handler0 -- 1
+alarm_handler -- 1
+main0 -- 1
+sigsetup -- 4
+Insert hash computation
+No reaching definition for:   %5 = alloca %struct.snake_segment_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %.el = alloca %struct.snake_segment_t*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 6
+ Skipping function per FilterFunctionPass:sigsetup
+Skip. No dependence graph for function sig_handler
+ Skipping function per FilterFunctionPass:alarm_handler
+ Skipping function per FilterFunctionPass:show_score
+ Skipping function per FilterFunctionPass:draw_line
+ Skipping function per FilterFunctionPass:setup_level
+ Skipping function per FilterFunctionPass:move
+Collecting defining blocks for collide_walls
+ Skipping function per FilterFunctionPass:collide_object
+ Skipping function per FilterFunctionPass:collide_self
+ Skipping function per FilterFunctionPass:collision
+ Skipping function per FilterFunctionPass:eat_gold
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:sigsetup
+Skip. No dependence graph for function sig_handler
+ Skipping function per FilterFunctionPass:alarm_handler
+ Skipping function per FilterFunctionPass:show_score
+ Skipping function per FilterFunctionPass:draw_line
+ Skipping function per FilterFunctionPass:setup_level
+ Skipping function per FilterFunctionPass:move
+ Processing function:collide_walls
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing path:           
+After path modifications process path
+          
+ Skipping function per FilterFunctionPass:collide_object
+ Skipping function per FilterFunctionPass:collide_self
+ Skipping function per FilterFunctionPass:collision
+ Skipping function per FilterFunctionPass:eat_gold
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_collide_walls_path_0
+Extract path function for assertion assert_collide_walls_path_1
+Extract path function for assertion assert_collide_walls_path_2
+OH stats is requested, dumping stat file...
+Processed instructions number 674
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 1,
+    "numberOfDataDependentInstructions": 25,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 631,
+    "numberOfInstructionsInFunctionsWithNoDG": 4,
+    "numberOfNonHashableBlocks": 1,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 39,
+    "numberOfOtherUnprotectedInstructions": 2,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 7,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 3,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 6,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 8,
+    "numberOfUnprotectedArgumentReachableInstructions": 4,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 0
+}
+ERR. processed 1 function, while filter count is 6
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.5028 seconds (0.5645 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.2827 ( 58.1%)   0.0002 (  1.2%)   0.2829 ( 56.3%)   0.2830 ( 50.1%)  runs input dependency analysis
+   0.1948 ( 40.0%)   0.0159 ( 97.9%)   0.2107 ( 41.9%)   0.2107 ( 37.3%)  Instruments bitcode with hashing and logging functions
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0622 ( 11.0%)  Include functions in a given file in any transformation
+   0.0026 (  0.5%)   0.0000 (  0.0%)   0.0026 (  0.5%)   0.0026 (  0.5%)  Bitcode Writer
+   0.0011 (  0.2%)   0.0000 (  0.0%)   0.0011 (  0.2%)   0.0011 (  0.2%)  Instruments bitcode with guards
+   0.0009 (  0.2%)   0.0000 (  0.0%)   0.0009 (  0.2%)   0.0009 (  0.2%)  Module Verifier
+   0.0008 (  0.2%)   0.0000 (  0.1%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Dominator Tree Construction
+   0.0008 (  0.2%)   0.0000 (  0.0%)   0.0008 (  0.2%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0004 (  0.1%)   0.0000 (  0.1%)   0.0004 (  0.1%)   0.0004 (  0.1%)  Memory SSA
+   0.0002 (  0.0%)   0.0001 (  0.4%)   0.0003 (  0.1%)   0.0003 (  0.1%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dominator Tree Construction
+   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
+   0.4866 (100.0%)   0.0163 (100.0%)   0.5028 (100.0%)   0.5645 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0025 seconds (0.0025 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0025 (100.0%)   0.0025 (100.0%)   0.0025 (100.0%)  Parse IR
+   0.0025 (100.0%)   0.0025 (100.0%)   0.0025 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function sigsetup0
+Processing function sigsetup1
+Processing function sigsetup
+Processing function sig_handler0
+Processing function sig_handler
+Processing function alarm_handler0
+Processing function alarm_handler
+Processing function show_score0
+Processing function show_score
+Processing function draw_line0
+Processing function draw_line
+Processing function setup_level0
+Processing function setup_level1
+Processing function setup_level2
+Processing function setup_level3
+Processing function setup_level4
+Processing function setup_level5
+Processing function setup_level6
+Processing function setup_level7
+Processing function setup_level8
+Processing function setup_level9
+Processing function setup_level10
+Processing function setup_level11
+Processing function setup_level12
+Processing function setup_level
+Processing function move0
+Processing function move1
+Processing function move2
+Processing function move3
+Processing function move4
+Processing function move5
+Processing function move6
+Processing function move7
+Processing function move8
+Processing function move9
+Processing function move10
+Processing function move11
+Processing function move12
+Processing function move13
+Processing function move14
+Processing function move15
+Processing function move16
+Processing function move17
+Processing function move18
+Processing function move19
+Processing function move20
+Processing function move
+Processing function collide_walls
+Processing function collide_object
+Processing function collide_self0
+Processing function collide_self1
+Processing function collide_self
+Processing function collision
+Processing function eat_gold0
+Processing function eat_gold
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing eat_gold
+Mark Input dependent function eat_gold
+Finalizing eat_gold0
+Mark Input dependent function eat_gold0
+Finalizing collision
+Mark Input dependent function collision
+Finalizing collide_self
+Mark Input dependent function collide_self
+Finalizing collide_self1
+Mark Input dependent function collide_self1
+Finalizing collide_self0
+Mark Input dependent function collide_self0
+Finalizing collide_object
+Mark Input dependent function collide_object
+Finalizing collide_walls
+Mark Input dependent function collide_walls
+Finalizing move
+Mark Input dependent function move
+Finalizing move20
+Mark Input dependent function move20
+Finalizing move19
+Mark Input dependent function move19
+Finalizing move18
+Mark Input dependent function move18
+Finalizing move17
+Mark Input dependent function move17
+Finalizing move16
+Mark Input dependent function move16
+Finalizing move15
+Mark Input dependent function move15
+Finalizing move14
+Mark Input dependent function move14
+Finalizing move13
+Mark Input dependent function move13
+Finalizing move12
+Mark Input dependent function move12
+Finalizing move11
+Mark Input dependent function move11
+Finalizing move10
+Mark Input dependent function move10
+Finalizing move9
+Mark Input dependent function move9
+Finalizing move8
+Mark Input dependent function move8
+Finalizing move7
+Mark Input dependent function move7
+Finalizing move6
+Mark Input dependent function move6
+Finalizing move5
+Mark Input dependent function move5
+Finalizing move4
+Mark Input dependent function move4
+Finalizing move3
+Mark Input dependent function move3
+Finalizing move2
+Mark Input dependent function move2
+Finalizing move1
+Mark Input dependent function move1
+Finalizing move0
+Mark Input dependent function move0
+Finalizing setup_level
+Mark Input dependent function setup_level
+Finalizing setup_level12
+Mark Input dependent function setup_level12
+Finalizing setup_level11
+Mark Input dependent function setup_level11
+Finalizing setup_level10
+Mark Input dependent function setup_level10
+Finalizing setup_level9
+Mark Input dependent function setup_level9
+Finalizing setup_level8
+Mark Input dependent function setup_level8
+Finalizing setup_level7
+Mark Input dependent function setup_level7
+Finalizing setup_level6
+Mark Input dependent function setup_level6
+Finalizing setup_level5
+Mark Input dependent function setup_level5
+Finalizing setup_level4
+Mark Input dependent function setup_level4
+Finalizing setup_level3
+Mark Input dependent function setup_level3
+Finalizing setup_level2
+Mark Input dependent function setup_level2
+Finalizing setup_level1
+Mark Input dependent function setup_level1
+Finalizing setup_level0
+Mark Input dependent function setup_level0
+Finalizing draw_line
+Mark Input dependent function draw_line
+Finalizing draw_line0
+Mark Input dependent function draw_line0
+Finalizing show_score
+Mark Input dependent function show_score
+Finalizing show_score0
+Mark Input dependent function show_score0
+Finalizing alarm_handler
+Finalizing alarm_handler0
+Finalizing sig_handler
+Finalizing sig_handler0
+Mark Input dependent function sig_handler0
+Finalizing sigsetup
+Finalizing sigsetup1
+Finalizing sigsetup0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/snake.bc/100/0
+here!:sigsetup
+here!:sig_handler
+here!:alarm_handler
+here!:show_score
+here!:draw_line
+here!:setup_level
+here!:move
+here!:collide_walls
+here!:collide_object
+here!:collide_self
+here!:collision
+here!:eat_gold
+here!:main
+here!:sigsetup0
+here!:sigsetup1
+here!:sig_handler0
+here!:alarm_handler0
+here!:show_score0
+here!:draw_line0
+here!:setup_level0
+here!:setup_level1
+here!:setup_level2
+here!:setup_level3
+here!:setup_level4
+here!:setup_level5
+here!:setup_level6
+here!:setup_level7
+here!:setup_level8
+here!:setup_level9
+here!:setup_level10
+here!:setup_level11
+here!:setup_level12
+here!:move0
+here!:move1
+here!:move2
+here!:move3
+here!:move4
+here!:move5
+here!:move6
+here!:move7
+here!:move8
+here!:move9
+here!:move10
+here!:move11
+here!:move12
+here!:move13
+here!:move14
+here!:move15
+here!:move16
+here!:move17
+here!:move18
+here!:move19
+here!:move20
+here!:collide_self0
+here!:collide_self1
+here!:eat_gold0
+here!:main0
+here!:main1
+here!:main2
+here!:main3
+here!:main3
+got filter function names
+Add filter function sigsetup
+FunctionInfo. Adding function:sigsetup
+did not find sigemptyset demangled to sigemptyset
+did not find sigaction demangled to sigaction
+Add filter function sig_handler
+FunctionInfo. Adding function:sig_handler
+did not find puts demangled to puts
+did not find exit demangled to exit
+did not find system demangled to system
+Add filter function alarm_handler
+FunctionInfo. Adding function:alarm_handler
+did not find setitimer demangled to setitimer
+Add filter function show_score
+FunctionInfo. Adding function:show_score
+did not find printf demangled to printf
+Add filter function draw_line
+FunctionInfo. Adding function:draw_line
+Add filter function setup_level
+FunctionInfo. Adding function:setup_level
+did not find rand demangled to rand
+Add filter function move
+FunctionInfo. Adding function:move
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function collide_walls
+FunctionInfo. Adding function:collide_walls
+Add filter function collide_object
+FunctionInfo. Adding function:collide_object
+Add filter function collide_self
+FunctionInfo. Adding function:collide_self
+Add filter function collision
+FunctionInfo. Adding function:collision
+Add filter function eat_gold
+FunctionInfo. Adding function:eat_gold
+Add filter function main
+FunctionInfo. Adding function:main
+did not find getchar demangled to getchar
+Add filter function sigsetup0
+FunctionInfo. Adding function:sigsetup0
+Add filter function sigsetup1
+FunctionInfo. Adding function:sigsetup1
+Add filter function sig_handler0
+FunctionInfo. Adding function:sig_handler0
+Add filter function alarm_handler0
+FunctionInfo. Adding function:alarm_handler0
+Add filter function show_score0
+FunctionInfo. Adding function:show_score0
+Add filter function draw_line0
+FunctionInfo. Adding function:draw_line0
+Add filter function setup_level0
+FunctionInfo. Adding function:setup_level0
+Add filter function setup_level1
+FunctionInfo. Adding function:setup_level1
+Add filter function setup_level2
+FunctionInfo. Adding function:setup_level2
+Add filter function setup_level3
+FunctionInfo. Adding function:setup_level3
+Add filter function setup_level4
+FunctionInfo. Adding function:setup_level4
+Add filter function setup_level5
+FunctionInfo. Adding function:setup_level5
+Add filter function setup_level6
+FunctionInfo. Adding function:setup_level6
+Add filter function setup_level7
+FunctionInfo. Adding function:setup_level7
+Add filter function setup_level8
+FunctionInfo. Adding function:setup_level8
+Add filter function setup_level9
+FunctionInfo. Adding function:setup_level9
+Add filter function setup_level10
+FunctionInfo. Adding function:setup_level10
+Add filter function setup_level11
+FunctionInfo. Adding function:setup_level11
+Add filter function setup_level12
+FunctionInfo. Adding function:setup_level12
+Add filter function move0
+FunctionInfo. Adding function:move0
+Add filter function move1
+FunctionInfo. Adding function:move1
+Add filter function move2
+FunctionInfo. Adding function:move2
+Add filter function move3
+FunctionInfo. Adding function:move3
+Add filter function move4
+FunctionInfo. Adding function:move4
+Add filter function move5
+FunctionInfo. Adding function:move5
+Add filter function move6
+FunctionInfo. Adding function:move6
+Add filter function move7
+FunctionInfo. Adding function:move7
+Add filter function move8
+FunctionInfo. Adding function:move8
+Add filter function move9
+FunctionInfo. Adding function:move9
+Add filter function move10
+FunctionInfo. Adding function:move10
+Add filter function move11
+FunctionInfo. Adding function:move11
+Add filter function move12
+FunctionInfo. Adding function:move12
+Add filter function move13
+FunctionInfo. Adding function:move13
+Add filter function move14
+FunctionInfo. Adding function:move14
+Add filter function move15
+FunctionInfo. Adding function:move15
+Add filter function move16
+FunctionInfo. Adding function:move16
+Add filter function move17
+FunctionInfo. Adding function:move17
+Add filter function move18
+FunctionInfo. Adding function:move18
+Add filter function move19
+FunctionInfo. Adding function:move19
+Add filter function move20
+FunctionInfo. Adding function:move20
+Add filter function collide_self0
+FunctionInfo. Adding function:collide_self0
+Add filter function collide_self1
+FunctionInfo. Adding function:collide_self1
+Add filter function eat_gold0
+FunctionInfo. Adding function:eat_gold0
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+Adding sigsetup other functions, ExtractedOnly mode uses other functions
+Adding sig_handler other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler other functions, ExtractedOnly mode uses other functions
+Adding show_score other functions, ExtractedOnly mode uses other functions
+Adding draw_line other functions, ExtractedOnly mode uses other functions
+Adding setup_level other functions, ExtractedOnly mode uses other functions
+Adding move other functions, ExtractedOnly mode uses other functions
+Adding collide_walls other functions, ExtractedOnly mode uses other functions
+Adding collide_object other functions, ExtractedOnly mode uses other functions
+Adding collide_self other functions, ExtractedOnly mode uses other functions
+Adding collision other functions, ExtractedOnly mode uses other functions
+Adding eat_gold other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sigsetup0 other functions, ExtractedOnly mode uses other functions
+Adding sigsetup1 other functions, ExtractedOnly mode uses other functions
+Adding sig_handler0 other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler0 other functions, ExtractedOnly mode uses other functions
+Adding show_score0 other functions, ExtractedOnly mode uses other functions
+Adding draw_line0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level1 other functions, ExtractedOnly mode uses other functions
+Adding setup_level2 other functions, ExtractedOnly mode uses other functions
+Adding setup_level3 other functions, ExtractedOnly mode uses other functions
+Adding setup_level4 other functions, ExtractedOnly mode uses other functions
+Adding setup_level5 other functions, ExtractedOnly mode uses other functions
+Adding setup_level6 other functions, ExtractedOnly mode uses other functions
+Adding setup_level7 other functions, ExtractedOnly mode uses other functions
+Adding setup_level8 other functions, ExtractedOnly mode uses other functions
+Adding setup_level9 other functions, ExtractedOnly mode uses other functions
+Adding setup_level10 other functions, ExtractedOnly mode uses other functions
+Adding setup_level11 other functions, ExtractedOnly mode uses other functions
+Adding setup_level12 other functions, ExtractedOnly mode uses other functions
+Adding move0 other functions, ExtractedOnly mode uses other functions
+Adding move1 other functions, ExtractedOnly mode uses other functions
+Adding move2 other functions, ExtractedOnly mode uses other functions
+Adding move3 other functions, ExtractedOnly mode uses other functions
+Adding move4 other functions, ExtractedOnly mode uses other functions
+Adding move5 other functions, ExtractedOnly mode uses other functions
+Adding move6 other functions, ExtractedOnly mode uses other functions
+Adding move7 other functions, ExtractedOnly mode uses other functions
+Adding move8 other functions, ExtractedOnly mode uses other functions
+Adding move9 other functions, ExtractedOnly mode uses other functions
+Adding move10 other functions, ExtractedOnly mode uses other functions
+Adding move11 other functions, ExtractedOnly mode uses other functions
+Adding move12 other functions, ExtractedOnly mode uses other functions
+Adding move13 other functions, ExtractedOnly mode uses other functions
+Adding move14 other functions, ExtractedOnly mode uses other functions
+Adding move15 other functions, ExtractedOnly mode uses other functions
+Adding move16 other functions, ExtractedOnly mode uses other functions
+Adding move17 other functions, ExtractedOnly mode uses other functions
+Adding move18 other functions, ExtractedOnly mode uses other functions
+Adding move19 other functions, ExtractedOnly mode uses other functions
+Adding move20 other functions, ExtractedOnly mode uses other functions
+Adding collide_self0 other functions, ExtractedOnly mode uses other functions
+Adding collide_self1 other functions, ExtractedOnly mode uses other functions
+Adding eat_gold0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:60
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+draw_line0
+move2
+setup_level8
+move14
+eat_gold
+show_score
+main
+setup_level0
+move1
+main0
+move9
+sigsetup0
+collide_self0
+move17
+move8
+collide_self1
+collide_object
+collide_self
+setup_level9
+alarm_handler
+eat_gold0
+setup_level11
+move18
+setup_level5
+move5
+move20
+move3
+draw_line
+main1
+move13
+move15
+move11
+sigsetup1
+move12
+setup_level1
+setup_level4
+setup_level10
+collide_walls
+setup_level12
+move19
+setup_level7
+collision
+move10
+move16
+sigsetup
+move6
+setup_level
+alarm_handler0
+show_score0
+sig_handler
+setup_level6
+move7
+main2
+move4
+main3
+move
+setup_level2
+sig_handler0
+move0
+setup_level3
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+Functions called in loop
+Function call numbers
+sigsetup1 -- 4
+sigsetup0 -- 4
+main3 -- 1
+main -- 0
+alarm_handler0 -- 1
+alarm_handler -- 1
+main0 -- 1
+sigsetup -- 4
+Insert hash computation
+No reaching definition for:   %5 = alloca %struct.snake_segment_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %.el = alloca %struct.snake_segment_t*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 60
+Collecting defining blocks for sigsetup
+Skip. No dependence graph for function sig_handler
+Collecting defining blocks for alarm_handler
+Collecting defining blocks for show_score
+Collecting defining blocks for draw_line
+Collecting defining blocks for setup_level
+Collecting defining blocks for move
+Collecting defining blocks for collide_walls
+Collecting defining blocks for collide_object
+Collecting defining blocks for collide_self
+Collecting defining blocks for collision
+Collecting defining blocks for eat_gold
+Collecting defining blocks for main
+ Processing function:sigsetup
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:sigsetup callsites detected =4
+Insert assertion skipped function:sigsetup because it has more than one call site, see #24.!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:sigsetup callsites detected =4
+Insert assertion skipped function:sigsetup because it has more than one call site, see #24.!
+Processing call instruction..
+Can't handle this operand   %5 = alloca %struct.sigaction, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sigsetup0(%struct.sigaction* %5), !input_indep_block !3, !input_indep_instr !7, !data_indep_instr !8, !control_dep_instr !6, !argument_dep_instr !9
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:sigsetup callsites detected =4
+Insert assertion skipped function:sigsetup because it has more than one call site, see #24.!
+Insert assertion evaluating function:sigsetup callsites detected =4
+Insert assertion skipped function:sigsetup because it has more than one call site, see #24.!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:sigsetup callsites detected =4
+Insert assertion skipped function:sigsetup because it has more than one call site, see #24.!
+Insert assertion evaluating function:sigsetup callsites detected =4
+Insert assertion skipped function:sigsetup because it has more than one call site, see #24.!
+Processing call instruction..
+Can't handle this operand   %5 = alloca %struct.sigaction, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @sigsetup1(%struct.sigaction* %5), !input_indep_block !3, !input_indep_instr !7, !data_indep_instr !8, !control_dep_instr !6, !argument_dep_instr !9
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Skip. No dependence graph for function sig_handler
+ Processing function:alarm_handler
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No oh has been applied in the path
+No short range oh has been applied in the path
+ Processing function:show_score
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @show_score0(%struct.screen_t** %2), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+ Processing function:draw_line
+Short range hashing enabled.
+Processing path:         
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing call instruction..
+Can't handle this operand   %3 = alloca i32, align 4, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @draw_line0(i32* %3, i32* %4), !input_indep_instr !7, !data_indep_instr !8, !control_dep_instr !6
+Can't handle this operand   %4 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @draw_line0(i32* %3, i32* %4), !input_indep_instr !7, !data_indep_instr !8, !control_dep_instr !6
+Processing path:   
+After path modifications process path
+  
+Processing path:           
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing path:   
+After path modifications process path
+  
+Processing path:           
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing path:     
+After path modifications process path
+    
+ Processing function:setup_level
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing call instruction..
+Can't handle this operand   %5 = alloca %struct.snake_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %6 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %72 = sext i32 %70 to i64, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6 of the call   call void @setup_level3(i64 %72, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level3(i64 %72, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level3(i64 %72, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:           
+Extended path is 
+            
+After path modifications process path
+            
+Processing path:     
+After path modifications process path
+    
+Processing path:             
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:       
+Extended path is 
+            
+After path modifications process path
+            
+Processing path:     
+After path modifications process path
+    
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:               
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %198, !data_indep_instr !9, !control_dep_instr !6
+  call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %177, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %9 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:       
+After path modifications process path
+      
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:                 
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %239, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %214, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:       
+After path modifications process path
+      
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:               
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %276, !data_indep_instr !9, !control_dep_instr !6
+  br label %251, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %9 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:       
+After path modifications process path
+      
+Processing path:               
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %321, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Processing path:                 
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %373, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Processing path:               
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %407, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Processing path:                 
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing call instruction..
+***Handling a call instruction***
+***Handling a call instruction***
+Processing call instruction..
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level9(i32* %8), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %504 = sext i32 %502 to i64, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing call instruction..
+***Handling a call instruction***
+***Handling a call instruction***
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level12(%struct.screen_t** %4), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:           
+After path modifications process path
+          
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+Extended path is 
+                        
+After path modifications process path
+                        
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing path:                   
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:           
+After path modifications process path
+          
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+Extended path is 
+                        
+After path modifications process path
+                        
+Processing path:             
+After path modifications process path is empty
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:             
+After path modifications process path
+            
+Processing path:               
+After path modifications process path is empty
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:               
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Processing path:       
+After path modifications process path
+      
+ Processing function:move
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:       
+After path modifications process path
+      
+Processing path:             
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %107, !data_indep_instr !8, !control_dep_instr !6, !argument_dep_instr !7
+  call void @move17(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.snake_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move17(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Can't handle this operand   %7 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move17(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:       
+After path modifications process path
+      
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.snake_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move16(%struct.snake_t** %4), !input_indep_block !3, !input_indep_instr !11, !data_indep_instr !8, !control_dep_instr !6
+Processing path:           
+After path modifications process path is empty
+Processing path:               
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %125, !data_indep_instr !8, !control_dep_instr !6, !argument_dep_instr !7
+  call void @move19(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.snake_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move19(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Can't handle this operand   %7 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move19(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:         
+After path modifications process path
+        
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+          
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:         
+After path modifications process path
+        
+Processing path:         
+After path modifications process path
+        
+Processing path:           
+After path modifications process path
+          
+Processing path:           
+After path modifications process path
+          
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:             
+After path modifications process path
+            
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:               
+After path modifications process path
+              
+ Processing function:collide_walls
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing path:           
+After path modifications process path
+          
+ Processing function:collide_object
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Processing function:collide_self
+Short range hashing enabled.
+Processing path:           
+After path modifications process path
+  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path:     
+After path modifications process path
+    
+Processing call instruction..
+Can't handle this operand   %5 = alloca %struct.snake_segment_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @collide_self0(%struct.snake_segment_t** %5, %struct.snake_t** %3), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %3 = alloca %struct.snake_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @collide_self0(%struct.snake_segment_t** %5, %struct.snake_t** %3), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:           
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %43, !data_indep_instr !9, !input_dep_block !10, !control_dep_instr !6
+Processing path:   
+After path modifications process path
+  
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+Processing path:       
+After path modifications process path is empty
+Processing path:     
+After path modifications process path
+    
+ Processing function:collision
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:       
+After path modifications process path
+      
+ Processing function:eat_gold
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Processing function:main
+Short range hashing enabled.
+Processing path:     
+After path modifications process path is empty
+Processing path:       
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %39, !data_indep_instr !7, !control_dep_instr !9
+  %20 = getelementptr inbounds [7 x i8], [7 x i8]* %5, i64 0, i64 6, !data_dep_instr !5, !input_dep_block !8, !control_dep_instr !9
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Processing call instruction..
+***Handling a call instruction***
+Insert assertion skipped because there was no hash update in between!
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:     
+After path modifications process path is empty
+Processing path:       
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %42, !data_indep_instr !7, !control_dep_instr !10
+  call void @main1(), !data_indep_instr !7, !control_dep_instr !10
+  call void @show_score(%struct.screen_t* %4), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.screen_t, align 4, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @show_score(%struct.screen_t* %4), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Processing call instruction..
+No oh has been applied in the path
+Processing path:         
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %51, !data_indep_instr !7, !control_dep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:       
+After path modifications process path is empty
+Processing path:             
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %57, !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+  call void @show_score(%struct.screen_t* %4), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+  call void @main1(), !data_indep_instr !7, !control_dep_instr !10
+  br label %42, !data_indep_instr !7, !control_dep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.screen_t, align 4, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @show_score(%struct.screen_t* %4), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Processing call instruction..
+No oh has been applied in the path
+Processing path:           
+After path modifications process path
+  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path:           
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %32, !data_indep_instr !7, !control_dep_instr !10
+  call void @show_score(%struct.screen_t* %4), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.screen_t, align 4, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @show_score(%struct.screen_t* %4), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Processing path:     
+After path modifications process path is empty
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:           
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %33, !data_indep_instr !7, !control_dep_instr !10
+  call void @setup_level(%struct.screen_t* %4, %struct.snake_t* %3, i32 0), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.screen_t, align 4, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @setup_level(%struct.screen_t* %4, %struct.snake_t* %3, i32 0), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Can't handle this operand   %3 = alloca %struct.snake_t, align 4, !input_dep_instr !4, !data_dep_instr !5 of the call   call void @setup_level(%struct.screen_t* %4, %struct.snake_t* %3, i32 0), !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+***Handling a call instruction***
+Processing path:     
+After path modifications process path is empty
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Processing path:             
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %42, !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+  br label %41, !data_indep_instr !7, !input_dep_block !9, !control_dep_instr !10
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path:     
+After path modifications process path is empty
+Processing path:   
+After path modifications process path
+  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+No short range oh has been applied in the path
+Extract path function for assertion assert_eat_gold_path_0
+Extract path function for assertion assert_eat_gold_path_1
+Extract path function for assertion assert_draw_line_path_0
+Extract path function for assertion assert_draw_line_path_1
+Extract path function for assertion assert_draw_line_path_2
+Extract path function for assertion assert_draw_line_path_3
+Extract path function for assertion assert_draw_line_path_4
+Extract path function for assertion assert_draw_line_path_5
+Extract path function for assertion assert_draw_line_path_6
+Extract path function for assertion assert_draw_line_path_7
+Extract path function for assertion assert_collide_self_path_1
+Extract path function for assertion assert_collide_self_path_2
+Extract path function for assertion assert_collide_self_path_3
+Extract path function for assertion assert_collide_self_path_5
+Extract path function for assertion assert_collide_self_path_7
+Extract path function for assertion assert_collide_walls_path_0
+Extract path function for assertion assert_collide_walls_path_1
+Extract path function for assertion assert_collide_walls_path_2
+Extract path function for assertion assert_setup_level_path_0
+Extract path function for assertion assert_setup_level_path_1
+Extract path function for assertion assert_setup_level_path_2
+Extract path function for assertion assert_setup_level_path_3
+Extract path function for assertion assert_setup_level_path_4
+Extract path function for assertion assert_setup_level_path_5
+Extract path function for assertion assert_setup_level_path_6
+Extract path function for assertion assert_setup_level_path_8
+Extract path function for assertion assert_setup_level_path_9
+Extract path function for assertion assert_setup_level_path_10
+Extract path function for assertion assert_setup_level_path_12
+Extract path function for assertion assert_setup_level_path_13
+Extract path function for assertion assert_setup_level_path_14
+Extract path function for assertion assert_setup_level_path_16
+Extract path function for assertion assert_setup_level_path_17
+Extract path function for assertion assert_setup_level_path_18
+Extract path function for assertion assert_setup_level_path_19
+Extract path function for assertion assert_setup_level_path_20
+Extract path function for assertion assert_setup_level_path_22
+Extract path function for assertion assert_setup_level_path_23
+Extract path function for assertion assert_setup_level_path_24
+Extract path function for assertion assert_setup_level_path_26
+Extract path function for assertion assert_setup_level_path_27
+Extract path function for assertion assert_setup_level_path_28
+Extract path function for assertion assert_setup_level_path_30
+Extract path function for assertion assert_setup_level_path_31
+Extract path function for assertion assert_setup_level_path_32
+Extract path function for assertion assert_setup_level_path_33
+Extract path function for assertion assert_setup_level_path_35
+Extract path function for assertion assert_setup_level_path_37
+Extract path function for assertion assert_setup_level_path_38
+Extract path function for assertion assert_setup_level_path_39
+Extract path function for assertion assert_setup_level_path_41
+Extract path function for assertion assert_setup_level_path_43
+Extract path function for assertion assert_setup_level_path_44
+Extract path function for assertion assert_setup_level_path_46
+Extract path function for assertion assert_setup_level_path_48
+Extract path function for assertion assert_setup_level_path_49
+Extract path function for assertion assert_main_path_5
+Extract path function for assertion assert_main_path_11
+Extract path function for assertion assert_main_path_14
+Extract path function for assertion assert_main_path_17
+Extract path function for assertion assert_collide_object_path_0
+Extract path function for assertion assert_collide_object_path_1
+Extract path function for assertion assert_collide_object_path_2
+Extract path function for assertion assert_move_path_0
+Extract path function for assertion assert_move_path_1
+Extract path function for assertion assert_move_path_2
+Extract path function for assertion assert_move_path_3
+Extract path function for assertion assert_move_path_5
+Extract path function for assertion assert_move_path_6
+Extract path function for assertion assert_move_path_9
+Extract path function for assertion assert_move_path_10
+Extract path function for assertion assert_move_path_11
+Extract path function for assertion assert_move_path_12
+Extract path function for assertion assert_move_path_13
+Extract path function for assertion assert_move_path_14
+Extract path function for assertion assert_move_path_15
+Extract path function for assertion assert_move_path_16
+Extract path function for assertion assert_move_path_17
+Extract path function for assertion assert_move_path_18
+Extract path function for assertion assert_move_path_19
+Extract path function for assertion assert_move_path_20
+Extract path function for assertion assert_move_path_21
+Extract path function for assertion assert_move_path_22
+Extract path function for assertion assert_move_path_23
+Extract path function for assertion assert_move_path_24
+Extract path function for assertion assert_move_path_25
+Extract path function for assertion assert_move_path_26
+Extract path function for assertion assert_move_path_27
+Extract path function for assertion assert_move_path_28
+Extract path function for assertion assert_move_path_29
+Extract path function for assertion assert_move_path_30
+Extract path function for assertion assert_move_path_31
+Extract path function for assertion assert_move_path_32
+Extract path function for assertion assert_move_path_33
+Extract path function for assertion assert_collision_path_0
+Extract path function for assertion assert_collision_path_1
+OH stats is requested, dumping stat file...
+Processed instructions number 673
+{
+    "numberOfAssertCalls": 3,
+    "numberOfBlocksInFunctionsWithNoDG": 1,
+    "numberOfDataDependentInstructions": 310,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 0,
+    "numberOfInstructionsInFunctionsWithNoDG": 4,
+    "numberOfNonHashableBlocks": 11,
+    "numberOfNonHashableInstructions": 86,
+    "numberOfOHProcessedInstr": 669,
+    "numberOfOtherUnprotectedInstructions": 6,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 2,
+    "numberOfProtectedArguments": 1,
+    "numberOfProtectedBlocks": 8,
+    "numberOfProtectedFunctions": 11,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 12,
+    "numberOfSensitiveBlocks": 147,
+    "numberOfSensitiveFunctions": 12,
+    "numberOfShortRangeAssertCalls": 96,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 5,
+    "numberOfShortRangeProtectedBlocks": 109,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 90,
+    "numberOfUnprotectedArgumentReachableInstructions": 72,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 19,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 91
+}
+ERR. processed 12 function, while filter count is 60
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.9174 seconds (0.9789 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.5512 ( 60.6%)   0.0040 ( 51.3%)   0.5551 ( 60.5%)   0.5551 ( 56.7%)  Instruments bitcode with hashing and logging functions
+   0.2786 ( 30.6%)   0.0026 ( 33.6%)   0.2812 ( 30.7%)   0.2813 ( 28.7%)  runs input dependency analysis
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0624 (  6.4%)  Include functions in a given file in any transformation
+   0.0498 (  5.5%)   0.0010 ( 12.5%)   0.0508 (  5.5%)   0.0507 (  5.2%)  Memory SSA
+   0.0102 (  1.1%)   0.0000 (  0.0%)   0.0102 (  1.1%)   0.0102 (  1.0%)  Bitcode Writer
+   0.0059 (  0.6%)   0.0001 (  1.2%)   0.0060 (  0.7%)   0.0061 (  0.6%)  Dominator Tree Construction
+   0.0042 (  0.5%)   0.0001 (  0.9%)   0.0043 (  0.5%)   0.0043 (  0.4%)  Natural Loop Information
+   0.0035 (  0.4%)   0.0000 (  0.0%)   0.0035 (  0.4%)   0.0035 (  0.4%)  Module Verifier
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
+   0.0006 (  0.1%)   0.0000 (  0.1%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0005 (  0.1%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0005 (  0.1%)   0.0000 (  0.1%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Function Alias Analysis Results
+   0.0005 (  0.1%)   0.0000 (  0.1%)   0.0005 (  0.1%)   0.0005 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.9097 (100.0%)   0.0077 (100.0%)   0.9174 (100.0%)   0.9789 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0038 seconds (0.0038 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0038 (100.0%)   0.0038 (100.0%)   0.0038 (100.0%)  Parse IR
+   0.0038 (100.0%)   0.0038 (100.0%)   0.0038 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function sigsetup0
+Processing function sigsetup1
+Processing function sigsetup
+Processing function sig_handler0
+Processing function sig_handler
+Processing function alarm_handler0
+Processing function alarm_handler
+Processing function show_score0
+Processing function show_score
+Processing function draw_line0
+Processing function draw_line
+Processing function setup_level0
+Processing function setup_level1
+Processing function setup_level2
+Processing function setup_level3
+Processing function setup_level4
+Processing function setup_level5
+Processing function setup_level6
+Processing function setup_level7
+Processing function setup_level8
+Processing function setup_level9
+Processing function setup_level10
+Processing function setup_level11
+Processing function setup_level12
+Processing function setup_level
+Processing function move0
+Processing function move1
+Processing function move2
+Processing function move3
+Processing function move4
+Processing function move5
+Processing function move6
+Processing function move7
+Processing function move8
+Processing function move9
+Processing function move10
+Processing function move11
+Processing function move12
+Processing function move13
+Processing function move14
+Processing function move15
+Processing function move16
+Processing function move17
+Processing function move18
+Processing function move19
+Processing function move20
+Processing function move
+Processing function collide_walls
+Processing function collide_object
+Processing function collide_self0
+Processing function collide_self1
+Processing function collide_self
+Processing function collision
+Processing function eat_gold0
+Processing function eat_gold
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing eat_gold
+Mark Input dependent function eat_gold
+Finalizing eat_gold0
+Mark Input dependent function eat_gold0
+Finalizing collision
+Mark Input dependent function collision
+Finalizing collide_self
+Mark Input dependent function collide_self
+Finalizing collide_self1
+Mark Input dependent function collide_self1
+Finalizing collide_self0
+Mark Input dependent function collide_self0
+Finalizing collide_object
+Mark Input dependent function collide_object
+Finalizing collide_walls
+Mark Input dependent function collide_walls
+Finalizing move
+Mark Input dependent function move
+Finalizing move20
+Mark Input dependent function move20
+Finalizing move19
+Mark Input dependent function move19
+Finalizing move18
+Mark Input dependent function move18
+Finalizing move17
+Mark Input dependent function move17
+Finalizing move16
+Mark Input dependent function move16
+Finalizing move15
+Mark Input dependent function move15
+Finalizing move14
+Mark Input dependent function move14
+Finalizing move13
+Mark Input dependent function move13
+Finalizing move12
+Mark Input dependent function move12
+Finalizing move11
+Mark Input dependent function move11
+Finalizing move10
+Mark Input dependent function move10
+Finalizing move9
+Mark Input dependent function move9
+Finalizing move8
+Mark Input dependent function move8
+Finalizing move7
+Mark Input dependent function move7
+Finalizing move6
+Mark Input dependent function move6
+Finalizing move5
+Mark Input dependent function move5
+Finalizing move4
+Mark Input dependent function move4
+Finalizing move3
+Mark Input dependent function move3
+Finalizing move2
+Mark Input dependent function move2
+Finalizing move1
+Mark Input dependent function move1
+Finalizing move0
+Mark Input dependent function move0
+Finalizing setup_level
+Mark Input dependent function setup_level
+Finalizing setup_level12
+Mark Input dependent function setup_level12
+Finalizing setup_level11
+Mark Input dependent function setup_level11
+Finalizing setup_level10
+Mark Input dependent function setup_level10
+Finalizing setup_level9
+Mark Input dependent function setup_level9
+Finalizing setup_level8
+Mark Input dependent function setup_level8
+Finalizing setup_level7
+Mark Input dependent function setup_level7
+Finalizing setup_level6
+Mark Input dependent function setup_level6
+Finalizing setup_level5
+Mark Input dependent function setup_level5
+Finalizing setup_level4
+Mark Input dependent function setup_level4
+Finalizing setup_level3
+Mark Input dependent function setup_level3
+Finalizing setup_level2
+Mark Input dependent function setup_level2
+Finalizing setup_level1
+Mark Input dependent function setup_level1
+Finalizing setup_level0
+Mark Input dependent function setup_level0
+Finalizing draw_line
+Mark Input dependent function draw_line
+Finalizing draw_line0
+Mark Input dependent function draw_line0
+Finalizing show_score
+Mark Input dependent function show_score
+Finalizing show_score0
+Mark Input dependent function show_score0
+Finalizing alarm_handler
+Finalizing alarm_handler0
+Finalizing sig_handler
+Finalizing sig_handler0
+Mark Input dependent function sig_handler0
+Finalizing sigsetup
+Finalizing sigsetup1
+Finalizing sigsetup0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/snake.bc/25/0
+here!:sig_handler
+here!:move3
+here!:sigsetup0
+here!:move1
+here!:collide_walls
+here!:move6
+here!:eat_gold0
+here!:setup_level0
+here!:main0
+here!:setup_level5
+here!:alarm_handler0
+here!:move16
+here!:setup_level
+here!:eat_gold
+here!:main1
+here!:main1
+got filter function names
+did not find sigsetup demangled to sigsetup
+did not find sigemptyset demangled to sigemptyset
+did not find sigaction demangled to sigaction
+Add filter function sig_handler
+FunctionInfo. Adding function:sig_handler
+did not find puts demangled to puts
+did not find exit demangled to exit
+did not find system demangled to system
+did not find alarm_handler demangled to alarm_handler
+did not find setitimer demangled to setitimer
+did not find show_score demangled to show_score
+did not find printf demangled to printf
+did not find draw_line demangled to draw_line
+Add filter function setup_level
+FunctionInfo. Adding function:setup_level
+did not find rand demangled to rand
+did not find move demangled to move
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function collide_walls
+FunctionInfo. Adding function:collide_walls
+did not find collide_object demangled to collide_object
+did not find collide_self demangled to collide_self
+did not find collision demangled to collision
+Add filter function eat_gold
+FunctionInfo. Adding function:eat_gold
+did not find main demangled to main
+did not find getchar demangled to getchar
+Add filter function sigsetup0
+FunctionInfo. Adding function:sigsetup0
+did not find sigsetup1 demangled to sigsetup1
+did not find sig_handler0 demangled to sig_handler0
+Add filter function alarm_handler0
+FunctionInfo. Adding function:alarm_handler0
+did not find show_score0 demangled to show_score0
+did not find draw_line0 demangled to draw_line0
+Add filter function setup_level0
+FunctionInfo. Adding function:setup_level0
+did not find setup_level1 demangled to setup_level1
+did not find setup_level2 demangled to setup_level2
+did not find setup_level3 demangled to setup_level3
+did not find setup_level4 demangled to setup_level4
+Add filter function setup_level5
+FunctionInfo. Adding function:setup_level5
+did not find setup_level6 demangled to setup_level6
+did not find setup_level7 demangled to setup_level7
+did not find setup_level8 demangled to setup_level8
+did not find setup_level9 demangled to setup_level9
+did not find setup_level10 demangled to setup_level10
+did not find setup_level11 demangled to setup_level11
+did not find setup_level12 demangled to setup_level12
+did not find move0 demangled to move0
+Add filter function move1
+FunctionInfo. Adding function:move1
+did not find move2 demangled to move2
+Add filter function move3
+FunctionInfo. Adding function:move3
+did not find move4 demangled to move4
+did not find move5 demangled to move5
+Add filter function move6
+FunctionInfo. Adding function:move6
+did not find move7 demangled to move7
+did not find move8 demangled to move8
+did not find move9 demangled to move9
+did not find move10 demangled to move10
+did not find move11 demangled to move11
+did not find move12 demangled to move12
+did not find move13 demangled to move13
+did not find move14 demangled to move14
+did not find move15 demangled to move15
+Add filter function move16
+FunctionInfo. Adding function:move16
+did not find move17 demangled to move17
+did not find move18 demangled to move18
+did not find move19 demangled to move19
+did not find move20 demangled to move20
+did not find collide_self0 demangled to collide_self0
+did not find collide_self1 demangled to collide_self1
+Add filter function eat_gold0
+FunctionInfo. Adding function:eat_gold0
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+did not find main2 demangled to main2
+did not find main3 demangled to main3
+Adding sigsetup other functions, ExtractedOnly mode uses other functions
+Adding sig_handler other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler other functions, ExtractedOnly mode uses other functions
+Adding show_score other functions, ExtractedOnly mode uses other functions
+Adding draw_line other functions, ExtractedOnly mode uses other functions
+Adding setup_level other functions, ExtractedOnly mode uses other functions
+Adding move other functions, ExtractedOnly mode uses other functions
+Adding collide_walls other functions, ExtractedOnly mode uses other functions
+Adding collide_object other functions, ExtractedOnly mode uses other functions
+Adding collide_self other functions, ExtractedOnly mode uses other functions
+Adding collision other functions, ExtractedOnly mode uses other functions
+Adding eat_gold other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sigsetup0 other functions, ExtractedOnly mode uses other functions
+Adding sigsetup1 other functions, ExtractedOnly mode uses other functions
+Adding sig_handler0 other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler0 other functions, ExtractedOnly mode uses other functions
+Adding show_score0 other functions, ExtractedOnly mode uses other functions
+Adding draw_line0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level1 other functions, ExtractedOnly mode uses other functions
+Adding setup_level2 other functions, ExtractedOnly mode uses other functions
+Adding setup_level3 other functions, ExtractedOnly mode uses other functions
+Adding setup_level4 other functions, ExtractedOnly mode uses other functions
+Adding setup_level5 other functions, ExtractedOnly mode uses other functions
+Adding setup_level6 other functions, ExtractedOnly mode uses other functions
+Adding setup_level7 other functions, ExtractedOnly mode uses other functions
+Adding setup_level8 other functions, ExtractedOnly mode uses other functions
+Adding setup_level9 other functions, ExtractedOnly mode uses other functions
+Adding setup_level10 other functions, ExtractedOnly mode uses other functions
+Adding setup_level11 other functions, ExtractedOnly mode uses other functions
+Adding setup_level12 other functions, ExtractedOnly mode uses other functions
+Adding move0 other functions, ExtractedOnly mode uses other functions
+Adding move1 other functions, ExtractedOnly mode uses other functions
+Adding move2 other functions, ExtractedOnly mode uses other functions
+Adding move3 other functions, ExtractedOnly mode uses other functions
+Adding move4 other functions, ExtractedOnly mode uses other functions
+Adding move5 other functions, ExtractedOnly mode uses other functions
+Adding move6 other functions, ExtractedOnly mode uses other functions
+Adding move7 other functions, ExtractedOnly mode uses other functions
+Adding move8 other functions, ExtractedOnly mode uses other functions
+Adding move9 other functions, ExtractedOnly mode uses other functions
+Adding move10 other functions, ExtractedOnly mode uses other functions
+Adding move11 other functions, ExtractedOnly mode uses other functions
+Adding move12 other functions, ExtractedOnly mode uses other functions
+Adding move13 other functions, ExtractedOnly mode uses other functions
+Adding move14 other functions, ExtractedOnly mode uses other functions
+Adding move15 other functions, ExtractedOnly mode uses other functions
+Adding move16 other functions, ExtractedOnly mode uses other functions
+Adding move17 other functions, ExtractedOnly mode uses other functions
+Adding move18 other functions, ExtractedOnly mode uses other functions
+Adding move19 other functions, ExtractedOnly mode uses other functions
+Adding move20 other functions, ExtractedOnly mode uses other functions
+Adding collide_self0 other functions, ExtractedOnly mode uses other functions
+Adding collide_self1 other functions, ExtractedOnly mode uses other functions
+Adding eat_gold0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:60
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+draw_line0
+move2
+setup_level8
+move14
+eat_gold
+show_score
+main
+setup_level0
+move1
+main0
+move9
+sigsetup0
+collide_self0
+move17
+move8
+collide_self1
+collide_object
+collide_self
+setup_level9
+alarm_handler
+eat_gold0
+setup_level11
+move18
+setup_level5
+move5
+move20
+move3
+draw_line
+main1
+move13
+move15
+move11
+sigsetup1
+move12
+setup_level1
+setup_level4
+setup_level10
+collide_walls
+setup_level12
+move19
+setup_level7
+collision
+move10
+move16
+sigsetup
+move6
+setup_level
+alarm_handler0
+show_score0
+sig_handler
+setup_level6
+move7
+main2
+move4
+main3
+move
+setup_level2
+sig_handler0
+move0
+setup_level3
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 60 function, while filter count is 15
+Functions called in loop
+Function call numbers
+sigsetup1 -- 4
+sigsetup0 -- 4
+main3 -- 1
+main -- 0
+alarm_handler0 -- 1
+alarm_handler -- 1
+main0 -- 1
+sigsetup -- 4
+Insert hash computation
+No reaching definition for:   %5 = alloca %struct.snake_segment_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %.el = alloca %struct.snake_segment_t*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 15
+ Skipping function per FilterFunctionPass:sigsetup
+Skip. No dependence graph for function sig_handler
+ Skipping function per FilterFunctionPass:alarm_handler
+ Skipping function per FilterFunctionPass:show_score
+ Skipping function per FilterFunctionPass:draw_line
+Collecting defining blocks for setup_level
+ Skipping function per FilterFunctionPass:move
+Collecting defining blocks for collide_walls
+ Skipping function per FilterFunctionPass:collide_object
+ Skipping function per FilterFunctionPass:collide_self
+ Skipping function per FilterFunctionPass:collision
+Collecting defining blocks for eat_gold
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:sigsetup
+Skip. No dependence graph for function sig_handler
+ Skipping function per FilterFunctionPass:alarm_handler
+ Skipping function per FilterFunctionPass:show_score
+ Skipping function per FilterFunctionPass:draw_line
+ Processing function:setup_level
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:           
+Extended path is 
+            
+After path modifications process path
+            
+Processing call instruction..
+Can't handle this operand   %5 = alloca %struct.snake_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %6 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing call instruction..
+Can't handle this operand   %74 = sext i32 %72 to i64, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6 of the call   call void @setup_level3(i64 %74, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level3(i64 %74, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level3(i64 %74, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:     
+After path modifications process path
+    
+Processing path:       
+Extended path is 
+            
+After path modifications process path
+            
+Processing path:             
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:     
+After path modifications process path
+    
+Processing path:               
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %169, !data_indep_instr !9, !control_dep_instr !6
+  call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %148, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %9 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:       
+After path modifications process path
+      
+Processing path:                 
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %210, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %185, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:       
+After path modifications process path
+      
+Processing path:               
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %247, !data_indep_instr !9, !control_dep_instr !6
+  br label %222, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %9 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:       
+After path modifications process path
+      
+Processing path:               
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %321, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+After path modifications process path is empty
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:         
+After path modifications process path
+        
+Processing path:                 
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %373, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+After path modifications process path is empty
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:         
+After path modifications process path
+        
+Processing path:               
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %407, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+After path modifications process path is empty
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:         
+After path modifications process path
+        
+Processing path:                 
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing call instruction..
+***Handling a call instruction***
+***Handling a call instruction***
+Processing call instruction..
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level9(i32* %8), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %504 = sext i32 %502 to i64, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing call instruction..
+***Handling a call instruction***
+***Handling a call instruction***
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level12(%struct.screen_t** %4), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:           
+After path modifications process path
+          
+Processing path:             
+Extended path is 
+                        
+After path modifications process path
+                        
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing path:                   
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:           
+After path modifications process path
+          
+Processing path:             
+Extended path is 
+                        
+After path modifications process path
+                        
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:             
+After path modifications process path
+            
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:               
+After path modifications process path is empty
+Processing path:               
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Processing path:       
+After path modifications process path
+      
+ Skipping function per FilterFunctionPass:move
+ Processing function:collide_walls
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing path:           
+After path modifications process path
+          
+ Skipping function per FilterFunctionPass:collide_object
+ Skipping function per FilterFunctionPass:collide_self
+ Skipping function per FilterFunctionPass:collision
+ Processing function:eat_gold
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_collide_walls_path_0
+Extract path function for assertion assert_collide_walls_path_1
+Extract path function for assertion assert_collide_walls_path_2
+Extract path function for assertion assert_eat_gold_path_0
+Extract path function for assertion assert_eat_gold_path_1
+Extract path function for assertion assert_setup_level_path_0
+Extract path function for assertion assert_setup_level_path_1
+Extract path function for assertion assert_setup_level_path_2
+Extract path function for assertion assert_setup_level_path_3
+Extract path function for assertion assert_setup_level_path_4
+Extract path function for assertion assert_setup_level_path_5
+Extract path function for assertion assert_setup_level_path_6
+Extract path function for assertion assert_setup_level_path_7
+Extract path function for assertion assert_setup_level_path_9
+Extract path function for assertion assert_setup_level_path_10
+Extract path function for assertion assert_setup_level_path_11
+Extract path function for assertion assert_setup_level_path_13
+Extract path function for assertion assert_setup_level_path_14
+Extract path function for assertion assert_setup_level_path_15
+Extract path function for assertion assert_setup_level_path_17
+Extract path function for assertion assert_setup_level_path_18
+Extract path function for assertion assert_setup_level_path_19
+Extract path function for assertion assert_setup_level_path_21
+Extract path function for assertion assert_setup_level_path_22
+Extract path function for assertion assert_setup_level_path_23
+Extract path function for assertion assert_setup_level_path_25
+Extract path function for assertion assert_setup_level_path_26
+Extract path function for assertion assert_setup_level_path_27
+Extract path function for assertion assert_setup_level_path_29
+Extract path function for assertion assert_setup_level_path_30
+Extract path function for assertion assert_setup_level_path_31
+Extract path function for assertion assert_setup_level_path_32
+Extract path function for assertion assert_setup_level_path_33
+Extract path function for assertion assert_setup_level_path_34
+Extract path function for assertion assert_setup_level_path_37
+Extract path function for assertion assert_setup_level_path_38
+Extract path function for assertion assert_setup_level_path_39
+Extract path function for assertion assert_setup_level_path_40
+Extract path function for assertion assert_setup_level_path_43
+Extract path function for assertion assert_setup_level_path_44
+Extract path function for assertion assert_setup_level_path_45
+Extract path function for assertion assert_setup_level_path_48
+Extract path function for assertion assert_setup_level_path_49
+OH stats is requested, dumping stat file...
+Processed instructions number 674
+{
+    "numberOfAssertCalls": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 1,
+    "numberOfDataDependentInstructions": 151,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 385,
+    "numberOfInstructionsInFunctionsWithNoDG": 4,
+    "numberOfNonHashableBlocks": 2,
+    "numberOfNonHashableInstructions": 36,
+    "numberOfOHProcessedInstr": 285,
+    "numberOfOtherUnprotectedInstructions": 2,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 1,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 0,
+    "numberOfProtectedFunctions": 3,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveBlocks": 50,
+    "numberOfSensitiveFunctions": 3,
+    "numberOfShortRangeAssertCalls": 43,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 4,
+    "numberOfShortRangeProtectedBlocks": 42,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 50,
+    "numberOfUnprotectedArgumentReachableInstructions": 14,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 6,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 31
+}
+ERR. processed 3 function, while filter count is 15
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.7646 seconds (0.8262 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.4228 ( 57.1%)   0.0062 ( 25.8%)   0.4290 ( 56.1%)   0.4290 ( 51.9%)  Instruments bitcode with hashing and logging functions
+   0.2680 ( 36.2%)   0.0152 ( 63.1%)   0.2831 ( 37.0%)   0.2831 ( 34.3%)  runs input dependency analysis
+   0.0006 (  0.1%)   0.0001 (  0.2%)   0.0007 (  0.1%)   0.0622 (  7.5%)  Include functions in a given file in any transformation
+   0.0318 (  4.3%)   0.0001 (  0.4%)   0.0319 (  4.2%)   0.0319 (  3.9%)  Memory SSA
+   0.0070 (  1.0%)   0.0000 (  0.0%)   0.0070 (  0.9%)   0.0070 (  0.9%)  Bitcode Writer
+   0.0033 (  0.4%)   0.0000 (  0.1%)   0.0033 (  0.4%)   0.0033 (  0.4%)  Dominator Tree Construction
+   0.0024 (  0.3%)   0.0000 (  0.0%)   0.0024 (  0.3%)   0.0024 (  0.3%)  Module Verifier
+   0.0023 (  0.3%)   0.0000 (  0.0%)   0.0023 (  0.3%)   0.0023 (  0.3%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0011 (  4.7%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0007 (  0.1%)   0.0002 (  0.6%)   0.0008 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
+   0.0006 (  0.1%)   0.0002 (  0.7%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Post-Dominator Tree Construction
+   0.0000 (  0.0%)   0.0006 (  2.6%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0004 (  0.1%)   0.0001 (  0.5%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0001 (  0.5%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Function Alias Analysis Results
+   0.0001 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.7406 (100.0%)   0.0240 (100.0%)   0.7646 (100.0%)   0.8262 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0024 seconds (0.0024 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0024 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Parse IR
+   0.0024 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function sigsetup0
+Processing function sigsetup1
+Processing function sigsetup
+Processing function sig_handler0
+Processing function sig_handler
+Processing function alarm_handler0
+Processing function alarm_handler
+Processing function show_score0
+Processing function show_score
+Processing function draw_line0
+Processing function draw_line
+Processing function setup_level0
+Processing function setup_level1
+Processing function setup_level2
+Processing function setup_level3
+Processing function setup_level4
+Processing function setup_level5
+Processing function setup_level6
+Processing function setup_level7
+Processing function setup_level8
+Processing function setup_level9
+Processing function setup_level10
+Processing function setup_level11
+Processing function setup_level12
+Processing function setup_level
+Processing function move0
+Processing function move1
+Processing function move2
+Processing function move3
+Processing function move4
+Processing function move5
+Processing function move6
+Processing function move7
+Processing function move8
+Processing function move9
+Processing function move10
+Processing function move11
+Processing function move12
+Processing function move13
+Processing function move14
+Processing function move15
+Processing function move16
+Processing function move17
+Processing function move18
+Processing function move19
+Processing function move20
+Processing function move
+Processing function collide_walls
+Processing function collide_object
+Processing function collide_self0
+Processing function collide_self1
+Processing function collide_self
+Processing function collision
+Processing function eat_gold0
+Processing function eat_gold
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main
+Finalizing main
+Finalizing main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Finalizing eat_gold
+Mark Input dependent function eat_gold
+Finalizing eat_gold0
+Mark Input dependent function eat_gold0
+Finalizing collision
+Mark Input dependent function collision
+Finalizing collide_self
+Mark Input dependent function collide_self
+Finalizing collide_self1
+Mark Input dependent function collide_self1
+Finalizing collide_self0
+Mark Input dependent function collide_self0
+Finalizing collide_object
+Mark Input dependent function collide_object
+Finalizing collide_walls
+Mark Input dependent function collide_walls
+Finalizing move
+Mark Input dependent function move
+Finalizing move20
+Mark Input dependent function move20
+Finalizing move19
+Mark Input dependent function move19
+Finalizing move18
+Mark Input dependent function move18
+Finalizing move17
+Mark Input dependent function move17
+Finalizing move16
+Mark Input dependent function move16
+Finalizing move15
+Mark Input dependent function move15
+Finalizing move14
+Mark Input dependent function move14
+Finalizing move13
+Mark Input dependent function move13
+Finalizing move12
+Mark Input dependent function move12
+Finalizing move11
+Mark Input dependent function move11
+Finalizing move10
+Mark Input dependent function move10
+Finalizing move9
+Mark Input dependent function move9
+Finalizing move8
+Mark Input dependent function move8
+Finalizing move7
+Mark Input dependent function move7
+Finalizing move6
+Mark Input dependent function move6
+Finalizing move5
+Mark Input dependent function move5
+Finalizing move4
+Mark Input dependent function move4
+Finalizing move3
+Mark Input dependent function move3
+Finalizing move2
+Mark Input dependent function move2
+Finalizing move1
+Mark Input dependent function move1
+Finalizing move0
+Mark Input dependent function move0
+Finalizing setup_level
+Mark Input dependent function setup_level
+Finalizing setup_level12
+Mark Input dependent function setup_level12
+Finalizing setup_level11
+Mark Input dependent function setup_level11
+Finalizing setup_level10
+Mark Input dependent function setup_level10
+Finalizing setup_level9
+Mark Input dependent function setup_level9
+Finalizing setup_level8
+Mark Input dependent function setup_level8
+Finalizing setup_level7
+Mark Input dependent function setup_level7
+Finalizing setup_level6
+Mark Input dependent function setup_level6
+Finalizing setup_level5
+Mark Input dependent function setup_level5
+Finalizing setup_level4
+Mark Input dependent function setup_level4
+Finalizing setup_level3
+Mark Input dependent function setup_level3
+Finalizing setup_level2
+Mark Input dependent function setup_level2
+Finalizing setup_level1
+Mark Input dependent function setup_level1
+Finalizing setup_level0
+Mark Input dependent function setup_level0
+Finalizing draw_line
+Mark Input dependent function draw_line
+Finalizing draw_line0
+Mark Input dependent function draw_line0
+Finalizing show_score
+Mark Input dependent function show_score
+Finalizing show_score0
+Mark Input dependent function show_score0
+Finalizing alarm_handler
+Finalizing alarm_handler0
+Finalizing sig_handler
+Finalizing sig_handler0
+Mark Input dependent function sig_handler0
+Finalizing sigsetup
+Finalizing sigsetup1
+Finalizing sigsetup0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/snake.bc/50/0
+here!:sig_handler
+here!:move3
+here!:sigsetup0
+here!:move1
+here!:collide_walls
+here!:move6
+here!:eat_gold0
+here!:setup_level0
+here!:main0
+here!:setup_level5
+here!:alarm_handler0
+here!:move16
+here!:setup_level
+here!:eat_gold
+here!:main1
+here!:show_score
+here!:move10
+here!:main3
+here!:collision
+here!:move
+here!:sig_handler0
+here!:draw_line0
+here!:main2
+here!:setup_level12
+here!:setup_level4
+here!:show_score0
+here!:alarm_handler
+here!:setup_level10
+here!:move11
+here!:move5
+here!:move5
+got filter function names
+did not find sigsetup demangled to sigsetup
+did not find sigemptyset demangled to sigemptyset
+did not find sigaction demangled to sigaction
+Add filter function sig_handler
+FunctionInfo. Adding function:sig_handler
+did not find puts demangled to puts
+did not find exit demangled to exit
+did not find system demangled to system
+Add filter function alarm_handler
+FunctionInfo. Adding function:alarm_handler
+did not find setitimer demangled to setitimer
+Add filter function show_score
+FunctionInfo. Adding function:show_score
+did not find printf demangled to printf
+did not find draw_line demangled to draw_line
+Add filter function setup_level
+FunctionInfo. Adding function:setup_level
+did not find rand demangled to rand
+Add filter function move
+FunctionInfo. Adding function:move
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+Add filter function collide_walls
+FunctionInfo. Adding function:collide_walls
+did not find collide_object demangled to collide_object
+did not find collide_self demangled to collide_self
+Add filter function collision
+FunctionInfo. Adding function:collision
+Add filter function eat_gold
+FunctionInfo. Adding function:eat_gold
+did not find main demangled to main
+did not find getchar demangled to getchar
+Add filter function sigsetup0
+FunctionInfo. Adding function:sigsetup0
+did not find sigsetup1 demangled to sigsetup1
+Add filter function sig_handler0
+FunctionInfo. Adding function:sig_handler0
+Add filter function alarm_handler0
+FunctionInfo. Adding function:alarm_handler0
+Add filter function show_score0
+FunctionInfo. Adding function:show_score0
+Add filter function draw_line0
+FunctionInfo. Adding function:draw_line0
+Add filter function setup_level0
+FunctionInfo. Adding function:setup_level0
+did not find setup_level1 demangled to setup_level1
+did not find setup_level2 demangled to setup_level2
+did not find setup_level3 demangled to setup_level3
+Add filter function setup_level4
+FunctionInfo. Adding function:setup_level4
+Add filter function setup_level5
+FunctionInfo. Adding function:setup_level5
+did not find setup_level6 demangled to setup_level6
+did not find setup_level7 demangled to setup_level7
+did not find setup_level8 demangled to setup_level8
+did not find setup_level9 demangled to setup_level9
+Add filter function setup_level10
+FunctionInfo. Adding function:setup_level10
+did not find setup_level11 demangled to setup_level11
+Add filter function setup_level12
+FunctionInfo. Adding function:setup_level12
+did not find move0 demangled to move0
+Add filter function move1
+FunctionInfo. Adding function:move1
+did not find move2 demangled to move2
+Add filter function move3
+FunctionInfo. Adding function:move3
+did not find move4 demangled to move4
+Add filter function move5
+FunctionInfo. Adding function:move5
+Add filter function move6
+FunctionInfo. Adding function:move6
+did not find move7 demangled to move7
+did not find move8 demangled to move8
+did not find move9 demangled to move9
+Add filter function move10
+FunctionInfo. Adding function:move10
+Add filter function move11
+FunctionInfo. Adding function:move11
+did not find move12 demangled to move12
+did not find move13 demangled to move13
+did not find move14 demangled to move14
+did not find move15 demangled to move15
+Add filter function move16
+FunctionInfo. Adding function:move16
+did not find move17 demangled to move17
+did not find move18 demangled to move18
+did not find move19 demangled to move19
+did not find move20 demangled to move20
+did not find collide_self0 demangled to collide_self0
+did not find collide_self1 demangled to collide_self1
+Add filter function eat_gold0
+FunctionInfo. Adding function:eat_gold0
+Add filter function main0
+FunctionInfo. Adding function:main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+Add filter function main3
+FunctionInfo. Adding function:main3
+Adding sigsetup other functions, ExtractedOnly mode uses other functions
+Adding sig_handler other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler other functions, ExtractedOnly mode uses other functions
+Adding show_score other functions, ExtractedOnly mode uses other functions
+Adding draw_line other functions, ExtractedOnly mode uses other functions
+Adding setup_level other functions, ExtractedOnly mode uses other functions
+Adding move other functions, ExtractedOnly mode uses other functions
+Adding collide_walls other functions, ExtractedOnly mode uses other functions
+Adding collide_object other functions, ExtractedOnly mode uses other functions
+Adding collide_self other functions, ExtractedOnly mode uses other functions
+Adding collision other functions, ExtractedOnly mode uses other functions
+Adding eat_gold other functions, ExtractedOnly mode uses other functions
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding sigsetup0 other functions, ExtractedOnly mode uses other functions
+Adding sigsetup1 other functions, ExtractedOnly mode uses other functions
+Adding sig_handler0 other functions, ExtractedOnly mode uses other functions
+Adding alarm_handler0 other functions, ExtractedOnly mode uses other functions
+Adding show_score0 other functions, ExtractedOnly mode uses other functions
+Adding draw_line0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level0 other functions, ExtractedOnly mode uses other functions
+Adding setup_level1 other functions, ExtractedOnly mode uses other functions
+Adding setup_level2 other functions, ExtractedOnly mode uses other functions
+Adding setup_level3 other functions, ExtractedOnly mode uses other functions
+Adding setup_level4 other functions, ExtractedOnly mode uses other functions
+Adding setup_level5 other functions, ExtractedOnly mode uses other functions
+Adding setup_level6 other functions, ExtractedOnly mode uses other functions
+Adding setup_level7 other functions, ExtractedOnly mode uses other functions
+Adding setup_level8 other functions, ExtractedOnly mode uses other functions
+Adding setup_level9 other functions, ExtractedOnly mode uses other functions
+Adding setup_level10 other functions, ExtractedOnly mode uses other functions
+Adding setup_level11 other functions, ExtractedOnly mode uses other functions
+Adding setup_level12 other functions, ExtractedOnly mode uses other functions
+Adding move0 other functions, ExtractedOnly mode uses other functions
+Adding move1 other functions, ExtractedOnly mode uses other functions
+Adding move2 other functions, ExtractedOnly mode uses other functions
+Adding move3 other functions, ExtractedOnly mode uses other functions
+Adding move4 other functions, ExtractedOnly mode uses other functions
+Adding move5 other functions, ExtractedOnly mode uses other functions
+Adding move6 other functions, ExtractedOnly mode uses other functions
+Adding move7 other functions, ExtractedOnly mode uses other functions
+Adding move8 other functions, ExtractedOnly mode uses other functions
+Adding move9 other functions, ExtractedOnly mode uses other functions
+Adding move10 other functions, ExtractedOnly mode uses other functions
+Adding move11 other functions, ExtractedOnly mode uses other functions
+Adding move12 other functions, ExtractedOnly mode uses other functions
+Adding move13 other functions, ExtractedOnly mode uses other functions
+Adding move14 other functions, ExtractedOnly mode uses other functions
+Adding move15 other functions, ExtractedOnly mode uses other functions
+Adding move16 other functions, ExtractedOnly mode uses other functions
+Adding move17 other functions, ExtractedOnly mode uses other functions
+Adding move18 other functions, ExtractedOnly mode uses other functions
+Adding move19 other functions, ExtractedOnly mode uses other functions
+Adding move20 other functions, ExtractedOnly mode uses other functions
+Adding collide_self0 other functions, ExtractedOnly mode uses other functions
+Adding collide_self1 other functions, ExtractedOnly mode uses other functions
+Adding eat_gold0 other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:60
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+draw_line0
+move2
+setup_level8
+move14
+eat_gold
+show_score
+main
+setup_level0
+move1
+main0
+move9
+sigsetup0
+collide_self0
+move17
+move8
+collide_self1
+collide_object
+collide_self
+setup_level9
+alarm_handler
+eat_gold0
+setup_level11
+move18
+setup_level5
+move5
+move20
+move3
+draw_line
+main1
+move13
+move15
+move11
+sigsetup1
+move12
+setup_level1
+setup_level4
+setup_level10
+collide_walls
+setup_level12
+move19
+setup_level7
+collision
+move10
+move16
+sigsetup
+move6
+setup_level
+alarm_handler0
+show_score0
+sig_handler
+setup_level6
+move7
+main2
+move4
+main3
+move
+setup_level2
+sig_handler0
+move0
+setup_level3
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 60 function, while filter count is 30
+Functions called in loop
+Function call numbers
+sigsetup1 -- 4
+sigsetup0 -- 4
+main3 -- 1
+main -- 0
+alarm_handler0 -- 1
+alarm_handler -- 1
+main0 -- 1
+sigsetup -- 4
+Insert hash computation
+No reaching definition for:   %5 = alloca %struct.snake_segment_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 in:   %.el = alloca %struct.snake_segment_t*, !input_dep_instr !5, !data_dep_instr !6, !control_dep_instr !7 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 30
+ Skipping function per FilterFunctionPass:sigsetup
+Skip. No dependence graph for function sig_handler
+Collecting defining blocks for alarm_handler
+Collecting defining blocks for show_score
+ Skipping function per FilterFunctionPass:draw_line
+Collecting defining blocks for setup_level
+Collecting defining blocks for move
+Collecting defining blocks for collide_walls
+ Skipping function per FilterFunctionPass:collide_object
+ Skipping function per FilterFunctionPass:collide_self
+Collecting defining blocks for collision
+Collecting defining blocks for eat_gold
+ Skipping function per FilterFunctionPass:main
+ Skipping function per FilterFunctionPass:sigsetup
+Skip. No dependence graph for function sig_handler
+ Processing function:alarm_handler
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Processing call instruction..
+Insert assertion skipped because there was no hash update in between!
+Insert assertion skipped because there was no hash update in between!
+No short range oh has been applied in the path
+Processing path:     
+After path modifications process path
+    
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Insert assertion evaluating function:alarm_handler callsites detected =1
+Insert assertion included function:alarm_handler because it is not in the skip  assert list!
+Insert assertion skipped because there was no hash update in between!
+No oh has been applied in the path
+No short range oh has been applied in the path
+ Processing function:show_score
+Short range hashing enabled.
+Processing path:   
+After path modifications process path
+  
+Processing call instruction..
+Can't handle this operand   %2 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @show_score0(%struct.screen_t** %2), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+No oh has been applied in the path
+ Skipping function per FilterFunctionPass:draw_line
+ Processing function:setup_level
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:           
+Extended path is 
+            
+After path modifications process path
+            
+Processing call instruction..
+Can't handle this operand   %5 = alloca %struct.snake_t*, align 8, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %6 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level2(%struct.snake_t** %5, i32* %6, %struct.screen_t** %4), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing call instruction..
+Can't handle this operand   %74 = sext i32 %72 to i64, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6 of the call   call void @setup_level3(i64 %74, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level3(i64 %74, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level3(i64 %74, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:     
+After path modifications process path
+    
+Processing path:       
+Extended path is 
+            
+After path modifications process path
+            
+Processing path:             
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:     
+After path modifications process path
+    
+Processing path:               
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %169, !data_indep_instr !9, !control_dep_instr !6
+  call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %148, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %9 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level5(i32* %8, %struct.screen_t** %4, i32* %9), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:       
+After path modifications process path
+      
+Processing path:                 
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  br label %210, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %185, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:       
+After path modifications process path
+      
+Processing path:               
+After path modifications process path
+      
+Hash path invariants only
+Invariants are
+  call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+  br label %247, !data_indep_instr !9, !control_dep_instr !6
+  br label %222, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %9 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level6(i32* %8, i32* %9, %struct.screen_t** %4), !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !6
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+Extended path is 
+                    
+After path modifications process path
+                    
+Processing path:       
+After path modifications process path
+      
+Processing path:               
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %321, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+After path modifications process path is empty
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:         
+After path modifications process path
+        
+Processing path:                 
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %373, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+After path modifications process path is empty
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:         
+After path modifications process path
+        
+Processing path:               
+After path modifications process path
+    
+Hash path invariants only
+Invariants are
+  br label %407, !data_indep_instr !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+After path modifications process path is empty
+Processing path:           
+Extended path is 
+                      
+After path modifications process path
+                      
+Processing path:         
+After path modifications process path
+        
+Processing path:                 
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing call instruction..
+***Handling a call instruction***
+***Handling a call instruction***
+Processing call instruction..
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing call instruction..
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level9(i32* %8), !input_indep_block !3, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing call instruction..
+Can't handle this operand   %504 = sext i32 %502 to i64, !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Can't handle this operand   %8 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level10(i64 %504, %struct.screen_t** %4, i32* %8), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing call instruction..
+***Handling a call instruction***
+***Handling a call instruction***
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.screen_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @setup_level12(%struct.screen_t** %4), !input_indep_instr !8, !data_indep_instr !9, !control_dep_instr !6
+Processing path:           
+After path modifications process path
+          
+Processing path:             
+Extended path is 
+                        
+After path modifications process path
+                        
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+Extended path is 
+                  
+After path modifications process path
+                  
+Processing path:                   
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:           
+After path modifications process path
+          
+Processing path:             
+Extended path is 
+                        
+After path modifications process path
+                        
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:             
+After path modifications process path
+            
+Processing path:               
+Extended path is 
+                          
+After path modifications process path
+                          
+Processing path:               
+After path modifications process path is empty
+Processing path:               
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Processing path:       
+After path modifications process path
+      
+ Processing function:move
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:       
+After path modifications process path
+      
+Processing path:             
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %107, !data_indep_instr !8, !control_dep_instr !6, !argument_dep_instr !7
+  call void @move17(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.snake_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move17(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Can't handle this operand   %7 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move17(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:       
+After path modifications process path
+      
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.snake_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move16(%struct.snake_t** %4), !input_indep_block !3, !input_indep_instr !11, !data_indep_instr !8, !control_dep_instr !6
+Processing path:               
+After path modifications process path
+  
+Hash path invariants only
+Invariants are
+  br label %125, !data_indep_instr !8, !control_dep_instr !6, !argument_dep_instr !7
+  call void @move19(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing call instruction..
+Can't handle this operand   %4 = alloca %struct.snake_t*, align 8, !input_indep_block !3, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move19(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Can't handle this operand   %7 = alloca i32, align 4, !input_dep_instr !4, !data_dep_instr !5, !control_dep_instr !6 of the call   call void @move19(%struct.snake_t** %4, i32* %7), !data_indep_instr !8, !input_dep_block !9, !control_dep_instr !6, !argument_dep_instr !7
+Processing path:           
+After path modifications process path is empty
+Processing path:         
+After path modifications process path
+        
+Processing path:             
+After path modifications process path is empty
+Processing path:             
+After path modifications process path is empty
+Processing path:           
+After path modifications process path
+          
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:       
+After path modifications process path
+      
+Processing path:         
+After path modifications process path
+        
+Processing path:         
+After path modifications process path
+        
+Processing path:           
+After path modifications process path
+          
+Processing path:           
+After path modifications process path
+          
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:               
+After path modifications process path
+              
+Processing path:             
+After path modifications process path
+            
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:                 
+After path modifications process path
+                
+Processing path:               
+After path modifications process path
+              
+ Processing function:collide_walls
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+Processing path:           
+After path modifications process path
+          
+ Skipping function per FilterFunctionPass:collide_object
+ Skipping function per FilterFunctionPass:collide_self
+ Processing function:collision
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:       
+After path modifications process path
+      
+ Processing function:eat_gold
+Short range hashing enabled.
+Processing path:     
+After path modifications process path
+    
+Processing path:     
+After path modifications process path
+    
+ Skipping function per FilterFunctionPass:main
+Extract path function for assertion assert_collision_path_0
+Extract path function for assertion assert_collision_path_1
+Extract path function for assertion assert_eat_gold_path_0
+Extract path function for assertion assert_eat_gold_path_1
+Extract path function for assertion assert_collide_walls_path_0
+Extract path function for assertion assert_collide_walls_path_1
+Extract path function for assertion assert_collide_walls_path_2
+Extract path function for assertion assert_setup_level_path_0
+Extract path function for assertion assert_setup_level_path_1
+Extract path function for assertion assert_setup_level_path_2
+Extract path function for assertion assert_setup_level_path_3
+Extract path function for assertion assert_setup_level_path_4
+Extract path function for assertion assert_setup_level_path_5
+Extract path function for assertion assert_setup_level_path_6
+Extract path function for assertion assert_setup_level_path_7
+Extract path function for assertion assert_setup_level_path_9
+Extract path function for assertion assert_setup_level_path_10
+Extract path function for assertion assert_setup_level_path_11
+Extract path function for assertion assert_setup_level_path_13
+Extract path function for assertion assert_setup_level_path_14
+Extract path function for assertion assert_setup_level_path_15
+Extract path function for assertion assert_setup_level_path_17
+Extract path function for assertion assert_setup_level_path_18
+Extract path function for assertion assert_setup_level_path_19
+Extract path function for assertion assert_setup_level_path_21
+Extract path function for assertion assert_setup_level_path_22
+Extract path function for assertion assert_setup_level_path_23
+Extract path function for assertion assert_setup_level_path_25
+Extract path function for assertion assert_setup_level_path_26
+Extract path function for assertion assert_setup_level_path_27
+Extract path function for assertion assert_setup_level_path_29
+Extract path function for assertion assert_setup_level_path_30
+Extract path function for assertion assert_setup_level_path_31
+Extract path function for assertion assert_setup_level_path_32
+Extract path function for assertion assert_setup_level_path_33
+Extract path function for assertion assert_setup_level_path_34
+Extract path function for assertion assert_setup_level_path_37
+Extract path function for assertion assert_setup_level_path_38
+Extract path function for assertion assert_setup_level_path_39
+Extract path function for assertion assert_setup_level_path_40
+Extract path function for assertion assert_setup_level_path_43
+Extract path function for assertion assert_setup_level_path_44
+Extract path function for assertion assert_setup_level_path_45
+Extract path function for assertion assert_setup_level_path_48
+Extract path function for assertion assert_setup_level_path_49
+Extract path function for assertion assert_move_path_0
+Extract path function for assertion assert_move_path_1
+Extract path function for assertion assert_move_path_2
+Extract path function for assertion assert_move_path_3
+Extract path function for assertion assert_move_path_4
+Extract path function for assertion assert_move_path_6
+Extract path function for assertion assert_move_path_9
+Extract path function for assertion assert_move_path_10
+Extract path function for assertion assert_move_path_11
+Extract path function for assertion assert_move_path_12
+Extract path function for assertion assert_move_path_13
+Extract path function for assertion assert_move_path_14
+Extract path function for assertion assert_move_path_15
+Extract path function for assertion assert_move_path_16
+Extract path function for assertion assert_move_path_17
+Extract path function for assertion assert_move_path_18
+Extract path function for assertion assert_move_path_19
+Extract path function for assertion assert_move_path_20
+Extract path function for assertion assert_move_path_21
+Extract path function for assertion assert_move_path_22
+Extract path function for assertion assert_move_path_23
+Extract path function for assertion assert_move_path_24
+Extract path function for assertion assert_move_path_25
+Extract path function for assertion assert_move_path_26
+Extract path function for assertion assert_move_path_27
+Extract path function for assertion assert_move_path_28
+Extract path function for assertion assert_move_path_29
+Extract path function for assertion assert_move_path_30
+Extract path function for assertion assert_move_path_31
+Extract path function for assertion assert_move_path_32
+Extract path function for assertion assert_move_path_33
+OH stats is requested, dumping stat file...
+Processed instructions number 674
+{
+    "numberOfAssertCalls": 3,
+    "numberOfBlocksInFunctionsWithNoDG": 1,
+    "numberOfDataDependentInstructions": 221,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 213,
+    "numberOfInstructionsInFunctionsWithNoDG": 4,
+    "numberOfNonHashableBlocks": 6,
+    "numberOfNonHashableInstructions": 51,
+    "numberOfOHProcessedInstr": 457,
+    "numberOfOtherUnprotectedInstructions": 2,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 1,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 2,
+    "numberOfProtectedFunctions": 6,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 4,
+    "numberOfSensitiveBlocks": 102,
+    "numberOfSensitiveFunctions": 7,
+    "numberOfShortRangeAssertCalls": 76,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 4,
+    "numberOfShortRangeProtectedBlocks": 84,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 68,
+    "numberOfUnprotectedArgumentReachableInstructions": 63,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 10,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 47
+}
+ERR. processed 7 function, while filter count is 30
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.8626 seconds (0.8628 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.4937 ( 58.5%)   0.0115 ( 60.7%)   0.5052 ( 58.6%)   0.5052 ( 58.6%)  Instruments bitcode with hashing and logging functions
+   0.2832 ( 33.6%)   0.0002 (  0.8%)   0.2833 ( 32.8%)   0.2833 ( 32.8%)  runs input dependency analysis
+   0.0423 (  5.0%)   0.0028 ( 14.6%)   0.0450 (  5.2%)   0.0449 (  5.2%)  Memory SSA
+   0.0074 (  0.9%)   0.0040 ( 21.0%)   0.0114 (  1.3%)   0.0114 (  1.3%)  Bitcode Writer
+   0.0050 (  0.6%)   0.0003 (  1.6%)   0.0053 (  0.6%)   0.0054 (  0.6%)  Dominator Tree Construction
+   0.0033 (  0.4%)   0.0002 (  1.2%)   0.0036 (  0.4%)   0.0036 (  0.4%)  Natural Loop Information
+   0.0030 (  0.4%)   0.0000 (  0.0%)   0.0030 (  0.4%)   0.0030 (  0.4%)  Module Verifier
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0009 (  0.1%)  Include functions in a given file in any transformation
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Dominator Tree Construction
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0007 (  0.1%)  Post-Dominator Tree Construction
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Call site information
+   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0005 (  0.1%)  Natural Loop Information
+   0.0003 (  0.0%)   0.0000 (  0.1%)   0.0003 (  0.0%)   0.0004 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0003 (  0.0%)   0.0000 (  0.1%)   0.0004 (  0.0%)   0.0003 (  0.0%)  Function Alias Analysis Results
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.8436 (100.0%)   0.0190 (100.0%)   0.8626 (100.0%)   0.8628 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0024 seconds (0.0024 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0012 (100.0%)   0.0012 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Parse IR
+   0.0012 (100.0%)   0.0012 (100.0%)   0.0024 (100.0%)   0.0024 (100.0%)  Total
+
