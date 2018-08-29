@@ -1,1 +1,1 @@
- "< /home/sip/eval/cmdline-args/rawcaudio_small.pcm >" output_small.adpcm
+ < /home/sip/eval/cmdline-args/rawcaudio_small.pcm > output_small.adpcm

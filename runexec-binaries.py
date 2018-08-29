@@ -17,8 +17,8 @@ from subprocess import Popen, PIPE
 import re
 import numpy as np
 import sys
-REPEAT_NUMBER=10
-BASE_REPEAT_NUMBER= 25
+REPEAT_NUMBER=1
+BASE_REPEAT_NUMBER= 2
 RUNSPROCESSED="runs_processed.json"
 CMDLINE_ARGS="cmdline-args"
 def get_immediate_subdirectories(a_dir):
@@ -82,19 +82,27 @@ def measure_overhead(result_directory,program,repeat):
         #exit(1)
         return  
     cmd_args = read_args(program).replace('\n','') 
-    cmd_args = cmd_args.replace('<','\<').replace('>','/>')
+    #cmd_args = cmd_args.replace('<','\<').replace('>','/>')
     print cmd_args
     #TODO run runexec 100 times and calculate avg and std
     for i in range(repeat):
+        cmd=''
         #TODO: find a better way to pass args to toast, Dirty hack to get toast working
         if program == 'toast.x.bc':
             output_file = 'cmdline-args/toast_input_small.au.gsm'
             if os.path.isfile(output_file):
                 os.remove(output_file)
-        #call(["sosylib_measure.sh",program_path])
         print str(i)," trying to run:",program_path
+        if program == "rawdaudio.x.bc" or program == "rawcaudio.x.bc":
+            cmd_file = open("cmd.sh", 'w')
+            cmd_file.write(program_path)
+            cmd_file.write(cmd_args)
+            cmd_file.close()
+            cmd = 'runexec --container -- sh {}'.format(cmd_file.name)
+        else:
+            cmd = 'runexec  --container -- {} {}'.format(program_path,cmd_args)
+        #call(["sosylib_measure.sh",program_path])
 	#--container throws a suspicious warning, I'm not sure it the measurements are good
-        cmd = 'runexec  --container -- {} {}'.format(program_path,cmd_args)
         #cmd = 'runexec {} {} --container'.format(program_path,cmd_args)
         print cmd
         process = Popen(cmd,shell=True,stdout=PIPE)
