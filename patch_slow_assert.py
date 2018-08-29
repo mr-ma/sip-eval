@@ -20,6 +20,17 @@ def get_function_info(file_name, function_name):
         exit(1)
 def patch_block(file_name,address, size):
     nop_list = []
+    for i in range(size -1):
+        nop_list.append(0x90)
+    nop_bytes = struct.pack('B'*len(nop_list),*nop_list)
+    print "Noping {} bytes @ {}".format(len(nop_bytes),hex(address))
+    with open(file_name, 'r+b') as f:
+        mm = mmap.mmap(f.fileno(), 0)
+        mm.seek(address,os.SEEK_SET)
+        mm.write(nop_bytes)
+
+def patch_block2(file_name,address, size):
+    nop_list = []
     condition_length = 24
     start_pos = 8
     for i in range(24):
