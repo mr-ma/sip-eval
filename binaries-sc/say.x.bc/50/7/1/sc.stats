@@ -1,0 +1,10 @@
+{
+    "avgConnectivity": 1.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 1368,
+    "numberOfGuards": 152,
+    "numberOfProtectedFunctions": 152,
+    "numberOfProtectedInstructions": 3515,
+    "numberOfSensitiveInstructions": 3515,
+    "stdConnectivity": 0.0
+}

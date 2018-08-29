@@ -1,0 +1,20 @@
+{
+    "allCheckees": [
+        "crc32file0",
+        "crc32buf0",
+        "crc32file3"
+    ],
+    "map": {
+        "main": [
+            "crc32file3"
+        ],
+        "updateCRC32": [
+            "crc32file0",
+            "crc32buf0"
+        ]
+    },
+    "topologicalsort": [
+        "updateCRC32",
+        "main"
+    ]
+}

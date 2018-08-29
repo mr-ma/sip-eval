@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "SolveCubic0"
+    ],
+    "map": {
+        "rad2deg": [
+            "SolveCubic0"
+        ]
+    },
+    "topologicalsort": [
+        "rad2deg"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "allCheckees": [
+        "main2",
+        "bstr_i0",
+        "main6"
+    ],
+    "map": {
+        "bfread": [
+            "main6"
+        ],
+        "btbl_bitcnt": [
+            "bstr_i0"
+        ],
+        "main": [
+            "main2"
+        ]
+    },
+    "topologicalsort": [
+        "main",
+        "btbl_bitcnt",
+        "bfread"
+    ]
+}
