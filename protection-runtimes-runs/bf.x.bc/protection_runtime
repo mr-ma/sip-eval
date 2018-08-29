@@ -4,7 +4,6 @@ Processing function main1
 Processing function main2
 Processing function main3
 Processing function main4
-Processing function main5
 Processing function BF_set_key0
 Processing function BF_set_key1
 Processing function BF_set_key2
@@ -15,20 +14,17 @@ Processing function BF_encrypt0
 Processing function BF_encrypt1
 Processing function BF_encrypt2
 Processing function BF_encrypt
-Processing function BF_set_key6
 Processing function BF_set_key
+Processing function main5
 Processing function main6
 Processing function main7
-Processing function main8
 Processing function BF_cfb64_encrypt0
 Processing function BF_cfb64_encrypt1
 Processing function BF_cfb64_encrypt2
 Processing function BF_cfb64_encrypt
-Processing function main9
-Processing function main10
+Processing function main8
 Processing function main
 Processing function BF_options
-Processing function BF_ecb_encrypt0
 Processing function BF_ecb_encrypt
 Processing function BF_cbc_encrypt0
 Processing function BF_cbc_encrypt1
@@ -110,14 +106,10 @@ Mark Input dependent function BF_cbc_encrypt1
 Finalizing BF_cbc_encrypt0
 Mark Input dependent function BF_cbc_encrypt0
 Finalizing BF_ecb_encrypt
-Finalizing BF_ecb_encrypt0
-Mark Input dependent function BF_ecb_encrypt0
 Finalizing BF_options
 Finalizing main
-Finalizing main10
-Mark Input dependent function main10
-Finalizing main9
-Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
 Finalizing BF_cfb64_encrypt
 Mark Input dependent function BF_cfb64_encrypt
 Finalizing BF_cfb64_encrypt2
@@ -126,16 +118,14 @@ Finalizing BF_cfb64_encrypt1
 Mark Input dependent function BF_cfb64_encrypt1
 Finalizing BF_cfb64_encrypt0
 Mark Input dependent function BF_cfb64_encrypt0
-Finalizing main8
-Mark Input dependent function main8
 Finalizing main7
 Mark Input dependent function main7
 Finalizing main6
 Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
 Finalizing BF_set_key
 Mark Input dependent function BF_set_key
-Finalizing BF_set_key6
-Mark Input dependent function BF_set_key6
 Finalizing BF_encrypt
 Mark Input dependent function BF_encrypt
 Finalizing BF_encrypt2
@@ -156,8 +146,6 @@ Finalizing BF_set_key1
 Mark Input dependent function BF_set_key1
 Finalizing BF_set_key0
 Mark Input dependent function BF_set_key0
-Finalizing main5
-Mark Input dependent function main5
 Finalizing main4
 Mark Input dependent function main4
 Finalizing main3
@@ -173,13 +161,12 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/bf.x.bc/10/0
-here!:BF_set_key0
-here!:BF_cbc_encrypt6
+here!:main7
+here!:BF_cbc_encrypt0
+here!:BF_set_key4
 here!:BF_set_key5
-here!:BF_cbc_encrypt12
-here!:BF_ecb_encrypt0
-here!:BF_cbc_encrypt7
-here!:BF_cbc_encrypt7
+here!:BF_ecb_encrypt
+here!:BF_ecb_encrypt
 got filter function names
 did not find main demangled to main
 did not find printf demangled to printf
@@ -194,7 +181,8 @@ did not find BF_set_key demangled to BF_set_key
 did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
 did not find BF_encrypt demangled to BF_encrypt
 did not find BF_options demangled to BF_options
-did not find BF_ecb_encrypt demangled to BF_ecb_encrypt
+Add filter function BF_ecb_encrypt
+FunctionInfo. Adding function:BF_ecb_encrypt
 did not find BF_cbc_encrypt demangled to BF_cbc_encrypt
 did not find BF_cfb64_encrypt demangled to BF_cfb64_encrypt
 did not find BF_ofb64_encrypt demangled to BF_ofb64_encrypt
@@ -205,40 +193,34 @@ did not find main3 demangled to main3
 did not find main4 demangled to main4
 did not find main5 demangled to main5
 did not find main6 demangled to main6
-did not find main7 demangled to main7
+Add filter function main7
+FunctionInfo. Adding function:main7
 did not find main8 demangled to main8
-did not find main9 demangled to main9
-did not find main10 demangled to main10
-Add filter function BF_set_key0
-FunctionInfo. Adding function:BF_set_key0
+did not find BF_set_key0 demangled to BF_set_key0
 did not find BF_set_key1 demangled to BF_set_key1
 did not find BF_set_key2 demangled to BF_set_key2
 did not find BF_set_key3 demangled to BF_set_key3
-did not find BF_set_key4 demangled to BF_set_key4
+Add filter function BF_set_key4
+FunctionInfo. Adding function:BF_set_key4
 Add filter function BF_set_key5
 FunctionInfo. Adding function:BF_set_key5
-did not find BF_set_key6 demangled to BF_set_key6
 did not find BF_encrypt0 demangled to BF_encrypt0
 did not find BF_encrypt1 demangled to BF_encrypt1
 did not find BF_encrypt2 demangled to BF_encrypt2
-Add filter function BF_ecb_encrypt0
-FunctionInfo. Adding function:BF_ecb_encrypt0
-did not find BF_cbc_encrypt0 demangled to BF_cbc_encrypt0
+Add filter function BF_cbc_encrypt0
+FunctionInfo. Adding function:BF_cbc_encrypt0
 did not find BF_cbc_encrypt1 demangled to BF_cbc_encrypt1
 did not find BF_cbc_encrypt2 demangled to BF_cbc_encrypt2
 did not find BF_cbc_encrypt3 demangled to BF_cbc_encrypt3
 did not find BF_cbc_encrypt4 demangled to BF_cbc_encrypt4
 did not find BF_cbc_encrypt5 demangled to BF_cbc_encrypt5
-Add filter function BF_cbc_encrypt6
-FunctionInfo. Adding function:BF_cbc_encrypt6
-Add filter function BF_cbc_encrypt7
-FunctionInfo. Adding function:BF_cbc_encrypt7
+did not find BF_cbc_encrypt6 demangled to BF_cbc_encrypt6
+did not find BF_cbc_encrypt7 demangled to BF_cbc_encrypt7
 did not find BF_cbc_encrypt8 demangled to BF_cbc_encrypt8
 did not find BF_cbc_encrypt9 demangled to BF_cbc_encrypt9
 did not find BF_cbc_encrypt10 demangled to BF_cbc_encrypt10
 did not find BF_cbc_encrypt11 demangled to BF_cbc_encrypt11
-Add filter function BF_cbc_encrypt12
-FunctionInfo. Adding function:BF_cbc_encrypt12
+did not find BF_cbc_encrypt12 demangled to BF_cbc_encrypt12
 did not find BF_cbc_encrypt13 demangled to BF_cbc_encrypt13
 did not find BF_cbc_encrypt14 demangled to BF_cbc_encrypt14
 did not find BF_cbc_encrypt15 demangled to BF_cbc_encrypt15
@@ -271,19 +253,15 @@ Adding main5 other functions, ExtractedOnly mode uses other functions
 Adding main6 other functions, ExtractedOnly mode uses other functions
 Adding main7 other functions, ExtractedOnly mode uses other functions
 Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
-Adding main10 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key0 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key1 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key2 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key3 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key4 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key5 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key6 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt1 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt2 other functions, ExtractedOnly mode uses other functions
-Adding BF_ecb_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt1 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt2 other functions, ExtractedOnly mode uses other functions
@@ -312,67 +290,63 @@ Adding BF_cfb64_encrypt1 other functions, ExtractedOnly mode uses other function
 Adding BF_cfb64_encrypt2 other functions, ExtractedOnly mode uses other functions
 Adding BF_ofb64_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_ofb64_encrypt1 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:58
+Sensitive functions:0 other functions:54
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-main10
-BF_cbc_encrypt4
-BF_encrypt1
-BF_cbc_encrypt16
+BF_set_key1
+BF_cbc_encrypt8
+BF_cbc_encrypt1
+BF_cbc_encrypt20
 main3
 BF_options
 main4
-BF_set_key0
-BF_cbc_encrypt3
-BF_ofb64_encrypt0
-BF_cbc_encrypt11
+BF_set_key2
+BF_cbc_encrypt7
+BF_set_key4
+BF_cbc_encrypt15
 main5
+BF_ofb64_encrypt1
 BF_cfb64_encrypt0
-BF_cbc_encrypt19
-BF_cbc_encrypt10
-BF_cfb64_encrypt1
+BF_cbc_encrypt14
+BF_set_key5
 main0
 main1
-BF_encrypt2
+BF_cbc_encrypt2
 BF_encrypt
+BF_cfb64_encrypt
+BF_cbc_encrypt4
+BF_cfb64_encrypt1
+BF_encrypt1
+BF_cbc_encrypt11
+BF_ofb64_encrypt0
+BF_cbc_encrypt9
+BF_ecb_encrypt
+main7
+BF_cbc_encrypt19
+BF_cbc_encrypt21
+BF_cbc_encrypt17
+main6
+BF_cbc_encrypt18
+BF_set_key3
+BF_encrypt0
+BF_cbc_encrypt3
+BF_ofb64_encrypt
+BF_cbc_encrypt5
 BF_cfb64_encrypt2
 BF_cbc_encrypt0
-BF_cbc_encrypt20
-BF_set_key5
-BF_cbc_encrypt7
-BF_cbc_encrypt22
-BF_cbc_encrypt5
-BF_ecb_encrypt
-BF_ofb64_encrypt1
-BF_cbc_encrypt15
-BF_cbc_encrypt17
-BF_cbc_encrypt13
-main6
-BF_cbc_encrypt14
-BF_set_key1
-BF_set_key4
-BF_ecb_encrypt0
-BF_ofb64_encrypt
-BF_cbc_encrypt1
-BF_cbc_encrypt21
-BF_encrypt0
 main2
-BF_cbc_encrypt12
-BF_cbc_encrypt18
+BF_cbc_encrypt16
+BF_cbc_encrypt22
 main
-BF_cbc_encrypt8
+BF_cbc_encrypt12
 BF_cbc_encrypt
 main8
-main9
+BF_set_key0
 BF_set_key
-BF_set_key6
-BF_cbc_encrypt9
-BF_cbc_encrypt2
+BF_encrypt2
+BF_cbc_encrypt13
 BF_cbc_encrypt6
-BF_set_key3
-BF_cfb64_encrypt
-BF_set_key2
-main7
+BF_cbc_encrypt10
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -397,7 +371,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 58 function, while filter count is 6
+ERR. processed 54 function, while filter count is 5
 Functions called in loop
 Function call numbers
 main -- 0
@@ -410,16 +384,15 @@ PSNodeType::PHI with ID 16
   - operands: []
 No reaching definition for:   %end = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %end.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for:   %d = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %d.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %cp.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 6
+Recieved filter functions 5
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:BF_set_key
  Skipping function per FilterFunctionPass:BF_encrypt
  Skipping function per FilterFunctionPass:BF_options
- Skipping function per FilterFunctionPass:BF_ecb_encrypt
+Skip. No dependence graph for function BF_ecb_encrypt
  Skipping function per FilterFunctionPass:BF_cbc_encrypt
  Skipping function per FilterFunctionPass:BF_cfb64_encrypt
  Skipping function per FilterFunctionPass:BF_ofb64_encrypt
@@ -427,20 +400,20 @@ Recieved filter functions 6
  Skipping function per FilterFunctionPass:BF_set_key
  Skipping function per FilterFunctionPass:BF_encrypt
  Skipping function per FilterFunctionPass:BF_options
- Skipping function per FilterFunctionPass:BF_ecb_encrypt
+Skip. No dependence graph for function BF_ecb_encrypt
  Skipping function per FilterFunctionPass:BF_cbc_encrypt
  Skipping function per FilterFunctionPass:BF_cfb64_encrypt
  Skipping function per FilterFunctionPass:BF_ofb64_encrypt
 OH stats is requested, dumping stat file...
-Processed instructions number 1716
+Processed instructions number 1874
 {
     "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 0,
+    "numberOfBlocksInFunctionsWithNoDG": 1,
     "numberOfDataDependentInstructions": 0,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 1716,
-    "numberOfInstructionsInFunctionsWithNoDG": 0,
+    "numberOfInstructionsInFilteredFunctions": 1714,
+    "numberOfInstructionsInFunctionsWithNoDG": 160,
     "numberOfNonHashableBlocks": 0,
     "numberOfNonHashableInstructions": 0,
     "numberOfOHProcessedInstr": 0,
@@ -470,40 +443,40 @@ Processed instructions number 1716
     "numberOfUnprotectedInputDependentInstructions": 0,
     "numberOfUnprotectedLoopInstructions": 0
 }
-ERR. processed 0 function, while filter count is 6
+ERR. processed 0 function, while filter count is 5
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.1735 seconds (1.1735 wall clock)
+  Total Execution Time: 1.1302 seconds (1.1302 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.9148 ( 78.7%)   0.0036 ( 31.1%)   0.9184 ( 78.3%)   0.9184 ( 78.3%)  runs input dependency analysis
-   0.2361 ( 20.3%)   0.0056 ( 47.7%)   0.2416 ( 20.6%)   0.2416 ( 20.6%)  Instruments bitcode with hashing and logging functions
-   0.0064 (  0.6%)   0.0000 (  0.0%)   0.0064 (  0.5%)   0.0064 (  0.5%)  Bitcode Writer
-   0.0017 (  0.1%)   0.0000 (  0.1%)   0.0017 (  0.1%)   0.0017 (  0.1%)  Module Verifier
-   0.0000 (  0.0%)   0.0013 ( 11.3%)   0.0013 (  0.1%)   0.0013 (  0.1%)  Instruments bitcode with guards
-   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
-   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Post-Dominator Tree Construction
-   0.0000 (  0.0%)   0.0007 (  5.8%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Include functions in a given file in any transformation
-   0.0006 (  0.1%)   0.0000 (  0.0%)   0.0006 (  0.1%)   0.0006 (  0.1%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0004 (  3.5%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.3%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.8792 ( 78.4%)   0.0086 ( 95.0%)   0.8878 ( 78.5%)   0.8878 ( 78.5%)  runs input dependency analysis
+   0.2302 ( 20.5%)   0.0000 (  0.0%)   0.2302 ( 20.4%)   0.2302 ( 20.4%)  Instruments bitcode with hashing and logging functions
+   0.0055 (  0.5%)   0.0000 (  0.0%)   0.0055 (  0.5%)   0.0055 (  0.5%)  Bitcode Writer
+   0.0016 (  0.1%)   0.0000 (  0.0%)   0.0016 (  0.1%)   0.0016 (  0.1%)  Module Verifier
+   0.0013 (  0.1%)   0.0000 (  0.0%)   0.0013 (  0.1%)   0.0013 (  0.1%)  Instruments bitcode with guards
+   0.0010 (  0.1%)   0.0000 (  0.3%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Dominator Tree Construction
+   0.0007 (  0.1%)   0.0000 (  0.2%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Post-Dominator Tree Construction
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Include functions in a given file in any transformation
+   0.0005 (  0.0%)   0.0000 (  0.1%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
+   0.0000 (  0.0%)   0.0002 (  2.6%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
+   0.0000 (  0.0%)   0.0001 (  1.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.3%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.5%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   1.1618 (100.0%)   0.0117 (100.0%)   1.1735 (100.0%)   1.1735 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.1212 (100.0%)   0.0090 (100.0%)   1.1302 (100.0%)   1.1302 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0063 seconds (0.0063 wall clock)
+  Total Execution Time: 0.0061 seconds (0.0061 wall clock)
 
    ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0063 (100.0%)   0.0063 (100.0%)   0.0063 (100.0%)  Parse IR
-   0.0063 (100.0%)   0.0063 (100.0%)   0.0063 (100.0%)  Total
+   0.0061 (100.0%)   0.0061 (100.0%)   0.0061 (100.0%)  Parse IR
+   0.0061 (100.0%)   0.0061 (100.0%)   0.0061 (100.0%)  Total
 
 Running input dependency analysis pass
 Processing function main0
@@ -511,7 +484,6 @@ Processing function main1
 Processing function main2
 Processing function main3
 Processing function main4
-Processing function main5
 Processing function BF_set_key0
 Processing function BF_set_key1
 Processing function BF_set_key2
@@ -522,20 +494,17 @@ Processing function BF_encrypt0
 Processing function BF_encrypt1
 Processing function BF_encrypt2
 Processing function BF_encrypt
-Processing function BF_set_key6
 Processing function BF_set_key
+Processing function main5
 Processing function main6
 Processing function main7
-Processing function main8
 Processing function BF_cfb64_encrypt0
 Processing function BF_cfb64_encrypt1
 Processing function BF_cfb64_encrypt2
 Processing function BF_cfb64_encrypt
-Processing function main9
-Processing function main10
+Processing function main8
 Processing function main
 Processing function BF_options
-Processing function BF_ecb_encrypt0
 Processing function BF_ecb_encrypt
 Processing function BF_cbc_encrypt0
 Processing function BF_cbc_encrypt1
@@ -617,14 +586,10 @@ Mark Input dependent function BF_cbc_encrypt1
 Finalizing BF_cbc_encrypt0
 Mark Input dependent function BF_cbc_encrypt0
 Finalizing BF_ecb_encrypt
-Finalizing BF_ecb_encrypt0
-Mark Input dependent function BF_ecb_encrypt0
 Finalizing BF_options
 Finalizing main
-Finalizing main10
-Mark Input dependent function main10
-Finalizing main9
-Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
 Finalizing BF_cfb64_encrypt
 Mark Input dependent function BF_cfb64_encrypt
 Finalizing BF_cfb64_encrypt2
@@ -633,16 +598,14 @@ Finalizing BF_cfb64_encrypt1
 Mark Input dependent function BF_cfb64_encrypt1
 Finalizing BF_cfb64_encrypt0
 Mark Input dependent function BF_cfb64_encrypt0
-Finalizing main8
-Mark Input dependent function main8
 Finalizing main7
 Mark Input dependent function main7
 Finalizing main6
 Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
 Finalizing BF_set_key
 Mark Input dependent function BF_set_key
-Finalizing BF_set_key6
-Mark Input dependent function BF_set_key6
 Finalizing BF_encrypt
 Mark Input dependent function BF_encrypt
 Finalizing BF_encrypt2
@@ -663,8 +626,6 @@ Finalizing BF_set_key1
 Mark Input dependent function BF_set_key1
 Finalizing BF_set_key0
 Mark Input dependent function BF_set_key0
-Finalizing main5
-Mark Input dependent function main5
 Finalizing main4
 Mark Input dependent function main4
 Finalizing main3
@@ -697,19 +658,15 @@ here!:main5
 here!:main6
 here!:main7
 here!:main8
-here!:main9
-here!:main10
 here!:BF_set_key0
 here!:BF_set_key1
 here!:BF_set_key2
 here!:BF_set_key3
 here!:BF_set_key4
 here!:BF_set_key5
-here!:BF_set_key6
 here!:BF_encrypt0
 here!:BF_encrypt1
 here!:BF_encrypt2
-here!:BF_ecb_encrypt0
 here!:BF_cbc_encrypt0
 here!:BF_cbc_encrypt1
 here!:BF_cbc_encrypt2
@@ -783,10 +740,6 @@ Add filter function main7
 FunctionInfo. Adding function:main7
 Add filter function main8
 FunctionInfo. Adding function:main8
-Add filter function main9
-FunctionInfo. Adding function:main9
-Add filter function main10
-FunctionInfo. Adding function:main10
 Add filter function BF_set_key0
 FunctionInfo. Adding function:BF_set_key0
 Add filter function BF_set_key1
@@ -799,16 +752,12 @@ Add filter function BF_set_key4
 FunctionInfo. Adding function:BF_set_key4
 Add filter function BF_set_key5
 FunctionInfo. Adding function:BF_set_key5
-Add filter function BF_set_key6
-FunctionInfo. Adding function:BF_set_key6
 Add filter function BF_encrypt0
 FunctionInfo. Adding function:BF_encrypt0
 Add filter function BF_encrypt1
 FunctionInfo. Adding function:BF_encrypt1
 Add filter function BF_encrypt2
 FunctionInfo. Adding function:BF_encrypt2
-Add filter function BF_ecb_encrypt0
-FunctionInfo. Adding function:BF_ecb_encrypt0
 Add filter function BF_cbc_encrypt0
 FunctionInfo. Adding function:BF_cbc_encrypt0
 Add filter function BF_cbc_encrypt1
@@ -882,19 +831,15 @@ Adding main5 other functions, ExtractedOnly mode uses other functions
 Adding main6 other functions, ExtractedOnly mode uses other functions
 Adding main7 other functions, ExtractedOnly mode uses other functions
 Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
-Adding main10 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key0 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key1 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key2 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key3 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key4 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key5 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key6 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt1 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt2 other functions, ExtractedOnly mode uses other functions
-Adding BF_ecb_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt1 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt2 other functions, ExtractedOnly mode uses other functions
@@ -923,67 +868,63 @@ Adding BF_cfb64_encrypt1 other functions, ExtractedOnly mode uses other function
 Adding BF_cfb64_encrypt2 other functions, ExtractedOnly mode uses other functions
 Adding BF_ofb64_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_ofb64_encrypt1 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:58
+Sensitive functions:0 other functions:54
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-main10
-BF_cbc_encrypt4
-BF_encrypt1
-BF_cbc_encrypt16
+BF_set_key1
+BF_cbc_encrypt8
+BF_cbc_encrypt1
+BF_cbc_encrypt20
 main3
 BF_options
 main4
-BF_set_key0
-BF_cbc_encrypt3
-BF_ofb64_encrypt0
-BF_cbc_encrypt11
+BF_set_key2
+BF_cbc_encrypt7
+BF_set_key4
+BF_cbc_encrypt15
 main5
+BF_ofb64_encrypt1
 BF_cfb64_encrypt0
-BF_cbc_encrypt19
-BF_cbc_encrypt10
-BF_cfb64_encrypt1
+BF_cbc_encrypt14
+BF_set_key5
 main0
 main1
-BF_encrypt2
+BF_cbc_encrypt2
 BF_encrypt
+BF_cfb64_encrypt
+BF_cbc_encrypt4
+BF_cfb64_encrypt1
+BF_encrypt1
+BF_cbc_encrypt11
+BF_ofb64_encrypt0
+BF_cbc_encrypt9
+BF_ecb_encrypt
+main7
+BF_cbc_encrypt19
+BF_cbc_encrypt21
+BF_cbc_encrypt17
+main6
+BF_cbc_encrypt18
+BF_set_key3
+BF_encrypt0
+BF_cbc_encrypt3
+BF_ofb64_encrypt
+BF_cbc_encrypt5
 BF_cfb64_encrypt2
 BF_cbc_encrypt0
-BF_cbc_encrypt20
-BF_set_key5
-BF_cbc_encrypt7
-BF_cbc_encrypt22
-BF_cbc_encrypt5
-BF_ecb_encrypt
-BF_ofb64_encrypt1
-BF_cbc_encrypt15
-BF_cbc_encrypt17
-BF_cbc_encrypt13
-main6
-BF_cbc_encrypt14
-BF_set_key1
-BF_set_key4
-BF_ecb_encrypt0
-BF_ofb64_encrypt
-BF_cbc_encrypt1
-BF_cbc_encrypt21
-BF_encrypt0
 main2
-BF_cbc_encrypt12
-BF_cbc_encrypt18
+BF_cbc_encrypt16
+BF_cbc_encrypt22
 main
-BF_cbc_encrypt8
+BF_cbc_encrypt12
 BF_cbc_encrypt
 main8
-main9
+BF_set_key0
 BF_set_key
-BF_set_key6
-BF_cbc_encrypt9
-BF_cbc_encrypt2
+BF_encrypt2
+BF_cbc_encrypt13
 BF_cbc_encrypt6
-BF_set_key3
-BF_cfb64_encrypt
-BF_set_key2
-main7
+BF_cbc_encrypt10
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -1020,11 +961,10 @@ PSNodeType::PHI with ID 16
   - operands: []
 No reaching definition for:   %end = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %end.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for:   %d = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %d.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %cp.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 58
+Recieved filter functions 54
 Collecting defining blocks for main
 Collecting defining blocks for BF_set_key
 Collecting defining blocks for BF_encrypt
@@ -1050,7 +990,7 @@ After path modifications process path
 land.rhs  
 Hash path invariants only
 Invariants are
-  br label %land.end, !control_dep_instr !12, !data_indep_instr !9
+  br label %land.end, !control_dep_instr !12, !data_indep_instr !10
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
@@ -1064,13 +1004,13 @@ After path modifications process path
 while.body  land.lhs.true  if.then35  
 Hash path invariants only
 Invariants are
-  br label %if.end54, !control_dep_instr !12, !data_indep_instr !9
-  call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+  br label %if.end54, !control_dep_instr !12, !data_indep_instr !10
+  call void @main2(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %ch = alloca i8, align 1, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
-Can't handle this operand   %by = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Can't handle this operand   %ch = alloca i8, align 1, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %by = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing path: entry  if.end  if.end21  
 After path modifications process path
 entry  if.end  if.end21  
@@ -1081,7 +1021,7 @@ After path modifications process path
 while.body  if.end54  if.then56  
 Hash path invariants only
 Invariants are
-  br label %if.end61, !control_dep_instr !12, !data_indep_instr !9
+  br label %if.end61, !control_dep_instr !12, !data_indep_instr !10
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing path: entry  if.end  if.end21  
@@ -1104,14 +1044,14 @@ After path modifications process path
 while.body  if.then45  if.end53  
 Hash path invariants only
 Invariants are
-  br label %if.end54, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
-  br label %if.end53, !control_dep_instr !12, !data_indep_instr !9
-  call void @main4(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+  br label %if.end54, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %if.end53, !control_dep_instr !12, !data_indep_instr !10
+  call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %ch = alloca i8, align 1, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main4(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
-Can't handle this operand   %by = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main4(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Can't handle this operand   %ch = alloca i8, align 1, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %by = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Processing path: entry  if.end  if.end21  
 After path modifications process path
 entry  if.end  if.end21  
@@ -1152,18 +1092,18 @@ entry  if.end  if.end21  while.end  if.end65  if.end72  if.then77
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  while.body91  
-After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  
 After path modifications process path
 while.body83  
 Hash path invariants only
 Invariants are
-  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
 Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  while.body91  
 After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
 After path modifications process path
@@ -1175,76 +1115,76 @@ After path modifications process path
 for.body  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !control_dep_instr !12, !data_indep_instr !9
+  br label %for.inc, !control_dep_instr !12, !data_indep_instr !10
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
+After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
 After path modifications process path
 entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
-After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  while.end97  
 After path modifications process path
 while.body83  while.end97  
 Hash path invariants only
 Invariants are
-  br label %for.cond, !control_dep_instr !12, !data_indep_instr !9
-  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !9
-  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+  br label %for.cond, !control_dep_instr !12, !data_indep_instr !10
+  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !10
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
   %arraydecay98 = getelementptr inbounds [40 x i8], [40 x i8]* %indata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
   %arraydecay101 = getelementptr inbounds [8 x i8], [8 x i8]* %ivec, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
   %arraydecay99 = getelementptr inbounds [40 x i8], [40 x i8]* %outdata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  for.cond  
+After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  
 After path modifications process path is empty
-Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  for.cond  
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
 After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
 After path modifications process path
 entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
-After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  while.end97  for.end  
 After path modifications process path
 while.body83  while.end97  
 Hash path invariants only
 Invariants are
-  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !9
+  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !10
   %arraydecay101 = getelementptr inbounds [8 x i8], [8 x i8]* %ivec, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
   %arraydecay99 = getelementptr inbounds [40 x i8], [40 x i8]* %outdata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
   %arraydecay98 = getelementptr inbounds [40 x i8], [40 x i8]* %indata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
-  br label %for.cond, !control_dep_instr !12, !data_indep_instr !9
-  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+  br label %for.cond, !control_dep_instr !12, !data_indep_instr !10
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  
+After path modifications process path
+while.body83  
+Hash path invariants only
+Invariants are
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
 After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.rhs87  
 After path modifications process path
 land.rhs87  
 Hash path invariants only
 Invariants are
-  br label %land.end90, !control_dep_instr !12, !data_indep_instr !9
+  br label %land.end90, !control_dep_instr !12, !data_indep_instr !10
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
-Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  
-After path modifications process path
-while.body83  
-Hash path invariants only
-Invariants are
-  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
-Insert assertion evaluating function:main callsites detected =0
-Insert assertion included function:main because it is not in the skip  assert list!
-No oh has been applied in the path
-Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
-After path modifications process path is empty
 Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
 After path modifications process path
 entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
@@ -1259,9 +1199,6 @@ After path modifications process path
 entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.end109  
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %fp2 = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main10(%struct._IO_FILE** %fp2, %struct._IO_FILE** %fp), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
-Can't handle this operand   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main10(%struct._IO_FILE** %fp2, %struct._IO_FILE** %fp), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
 Processing path: entry  if.end  lor.lhs.false  if.else  if.then17  if.end20  
 After path modifications process path
 entry  if.end  lor.lhs.false  if.else  if.then17  if.end20  
@@ -1348,17 +1285,17 @@ Can't handle this operand   %ri = alloca i64, align 8, !input_dep_instr !6, !con
 Processing path: entry  if.end  
 After path modifications process path
 entry  if.end  
+Processing path: entry  if.end  for.cond  for.end  
+After path modifications process path is empty
 Processing path: entry  if.end  for.end  for.cond32  for.body35  for.inc43  
 After path modifications process path
 for.body35  
 Hash path invariants only
 Invariants are
   br label %for.inc43, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
-  %arrayidx40 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8, !global_dep_instr !12
-  %arrayidx37 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8, !global_dep_instr !12
-  %arraydecay36 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i32 0, i32 0, !control_dep_instr !7, !data_dep_instr !8, !input_dep_block !13, !global_dep_instr !12
-Processing path: entry  if.end  for.cond  for.end  
-After path modifications process path is empty
+  %arrayidx40 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arrayidx37 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arraydecay36 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i32 0, i32 0, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9, !input_dep_block !13
 Processing path: entry  if.end  for.end  
 After path modifications process path
 entry  if.end  for.end  
@@ -1368,24 +1305,21 @@ for.body50
 Hash path invariants only
 Invariants are
   br label %for.inc59, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
-  %arrayidx55 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8, !global_dep_instr !12
-  %arrayidx52 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8, !global_dep_instr !12
-  %arraydecay51 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i32 0, i32 0, !control_dep_instr !7, !data_dep_instr !8, !input_dep_block !13, !global_dep_instr !12
-Processing path: entry  if.end  for.end  for.cond32  for.end45  
-After path modifications process path is empty
+  %arrayidx55 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arrayidx52 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arraydecay51 = getelementptr inbounds [2 x i64], [2 x i64]* %in, i32 0, i32 0, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9, !input_dep_block !13
 Processing path: entry  if.end  for.cond  for.end  for.end45  
+After path modifications process path is empty
+Processing path: entry  if.end  for.end  for.cond32  for.end45  
 After path modifications process path is empty
 Processing path: entry  if.end  for.end  for.end45  
 After path modifications process path
 entry  if.end  for.end  for.end45  
-Processing call instruction..
-Can't handle this operand   %p = alloca i64*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @BF_set_key6(i64** %p, %struct.bf_key_st** %key.addr), !input_indep_block !5, !control_dep_instr !7, !input_indep_instr !10, !data_indep_instr !11
-Can't handle this operand   %key.addr = alloca %struct.bf_key_st*, align 8, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @BF_set_key6(i64** %p, %struct.bf_key_st** %key.addr), !input_indep_block !5, !control_dep_instr !7, !input_indep_instr !10, !data_indep_instr !11
 Processing path: entry  if.end  for.end  for.end45  for.cond47  for.end61  
 After path modifications process path is empty
-Processing path: entry  if.end  for.end  for.cond32  for.end45  for.end61  
-After path modifications process path is empty
 Processing path: entry  if.end  for.cond  for.end  for.end45  for.end61  
+After path modifications process path is empty
+Processing path: entry  if.end  for.end  for.cond32  for.end45  for.end61  
 After path modifications process path is empty
 Processing path: entry  if.end  for.end  for.end45  for.end61  
 After path modifications process path
@@ -1494,7 +1428,7 @@ Extract path function for assertion assert_BF_set_key_path_7
 Extract path function for assertion assert_BF_set_key_path_8
 Extract path function for assertion assert_BF_set_key_path_9
 Extract path function for assertion assert_BF_set_key_path_10
-Extract path function for assertion assert_BF_set_key_path_11
+Extract path function for assertion assert_BF_set_key_path_12
 Extract path function for assertion assert_BF_set_key_path_13
 Extract path function for assertion assert_BF_set_key_path_14
 Extract path function for assertion assert_BF_set_key_path_17
@@ -1513,27 +1447,27 @@ Extract path function for assertion assert_main_path_15
 Extract path function for assertion assert_main_path_17
 Extract path function for assertion assert_main_path_19
 Extract path function for assertion assert_main_path_23
-Extract path function for assertion assert_main_path_25
 Extract path function for assertion assert_main_path_27
-Extract path function for assertion assert_main_path_30
+Extract path function for assertion assert_main_path_28
 Extract path function for assertion assert_main_path_32
+Extract path function for assertion assert_main_path_33
 Extract path function for assertion assert_main_path_37
 Extract path function for assertion assert_main_path_40
 Extract path function for assertion assert_main_path_41
 Extract path function for assertion assert_main_path_42
 OH stats is requested, dumping stat file...
-Processed instructions number 1715
+Processed instructions number 1873
 {
-    "numberOfAssertCalls": 1,
+    "numberOfAssertCalls": 2,
     "numberOfBlocksInFunctionsWithNoDG": 44,
-    "numberOfDataDependentInstructions": 552,
+    "numberOfDataDependentInstructions": 565,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
     "numberOfInstructionsInFilteredFunctions": 0,
-    "numberOfInstructionsInFunctionsWithNoDG": 952,
+    "numberOfInstructionsInFunctionsWithNoDG": 1100,
     "numberOfNonHashableBlocks": 5,
-    "numberOfNonHashableInstructions": 46,
-    "numberOfOHProcessedInstr": 763,
+    "numberOfNonHashableInstructions": 44,
+    "numberOfOHProcessedInstr": 773,
     "numberOfOtherUnprotectedInstructions": 1,
     "numberOfOtherUnprotectedLoopVariantInstructions": 5,
     "numberOfProtectedArguments": 0,
@@ -1551,7 +1485,7 @@ Processed instructions number 1715
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
     "numberOfShortRangeProtectedInstructions": 52,
-    "numberOfUnprotectedArgumentReachableInstructions": 22,
+    "numberOfUnprotectedArgumentReachableInstructions": 21,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
     "numberOfUnprotectedDataDependentLoopBlocks": 22,
@@ -1560,36 +1494,36 @@ Processed instructions number 1715
     "numberOfUnprotectedInputDependentInstructions": 0,
     "numberOfUnprotectedLoopInstructions": 78
 }
-ERR. processed 4 function, while filter count is 58
+ERR. processed 4 function, while filter count is 54
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.4360 seconds (1.4360 wall clock)
+  Total Execution Time: 1.4557 seconds (1.4562 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.9095 ( 63.7%)   0.0040 ( 50.1%)   0.9135 ( 63.6%)   0.9135 ( 63.6%)  runs input dependency analysis
-   0.4538 ( 31.8%)   0.0040 ( 49.8%)   0.4578 ( 31.9%)   0.4578 ( 31.9%)  Instruments bitcode with hashing and logging functions
-   0.0407 (  2.8%)   0.0000 (  0.1%)   0.0407 (  2.8%)   0.0406 (  2.8%)  Memory SSA
-   0.0093 (  0.6%)   0.0000 (  0.0%)   0.0093 (  0.6%)   0.0093 (  0.6%)  Bitcode Writer
-   0.0037 (  0.3%)   0.0000 (  0.0%)   0.0037 (  0.3%)   0.0037 (  0.3%)  Dominator Tree Construction
-   0.0030 (  0.2%)   0.0000 (  0.0%)   0.0030 (  0.2%)   0.0029 (  0.2%)  Natural Loop Information
-   0.0028 (  0.2%)   0.0000 (  0.0%)   0.0028 (  0.2%)   0.0027 (  0.2%)  Module Verifier
-   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
-   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Dominator Tree Construction
-   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
-   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Include functions in a given file in any transformation
-   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   0.9132 ( 63.7%)   0.0000 (  0.0%)   0.9132 ( 62.7%)   0.9135 ( 62.7%)  runs input dependency analysis
+   0.4411 ( 30.8%)   0.0200 ( 86.8%)   0.4611 ( 31.7%)   0.4613 ( 31.7%)  Instruments bitcode with hashing and logging functions
+   0.0528 (  3.7%)   0.0028 ( 12.0%)   0.0556 (  3.8%)   0.0555 (  3.8%)  Memory SSA
+   0.0100 (  0.7%)   0.0000 (  0.0%)   0.0100 (  0.7%)   0.0100 (  0.7%)  Bitcode Writer
+   0.0038 (  0.3%)   0.0001 (  0.6%)   0.0039 (  0.3%)   0.0040 (  0.3%)  Dominator Tree Construction
+   0.0035 (  0.2%)   0.0000 (  0.0%)   0.0035 (  0.2%)   0.0035 (  0.2%)  Module Verifier
+   0.0029 (  0.2%)   0.0001 (  0.5%)   0.0030 (  0.2%)   0.0030 (  0.2%)  Natural Loop Information
+   0.0010 (  0.1%)   0.0000 (  0.0%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Instruments bitcode with guards
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
+   0.0007 (  0.1%)   0.0000 (  0.0%)   0.0007 (  0.1%)   0.0007 (  0.0%)  Post-Dominator Tree Construction
+   0.0007 (  0.0%)   0.0000 (  0.0%)   0.0007 (  0.0%)   0.0007 (  0.0%)  Include functions in a given file in any transformation
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0004 (  0.0%)  Natural Loop Information
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Function Alias Analysis Results
+   0.0003 (  0.0%)   0.0000 (  0.1%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Function Alias Analysis Results
+   0.0003 (  0.0%)   0.0000 (  0.1%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
-   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.4280 (100.0%)   0.0080 (100.0%)   1.4360 (100.0%)   1.4360 (100.0%)  Total
+   1.4326 (100.0%)   0.0231 (100.0%)   1.4557 (100.0%)   1.4562 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
@@ -1606,7 +1540,6 @@ Processing function main1
 Processing function main2
 Processing function main3
 Processing function main4
-Processing function main5
 Processing function BF_set_key0
 Processing function BF_set_key1
 Processing function BF_set_key2
@@ -1617,20 +1550,17 @@ Processing function BF_encrypt0
 Processing function BF_encrypt1
 Processing function BF_encrypt2
 Processing function BF_encrypt
-Processing function BF_set_key6
 Processing function BF_set_key
+Processing function main5
 Processing function main6
 Processing function main7
-Processing function main8
 Processing function BF_cfb64_encrypt0
 Processing function BF_cfb64_encrypt1
 Processing function BF_cfb64_encrypt2
 Processing function BF_cfb64_encrypt
-Processing function main9
-Processing function main10
+Processing function main8
 Processing function main
 Processing function BF_options
-Processing function BF_ecb_encrypt0
 Processing function BF_ecb_encrypt
 Processing function BF_cbc_encrypt0
 Processing function BF_cbc_encrypt1
@@ -1712,14 +1642,10 @@ Mark Input dependent function BF_cbc_encrypt1
 Finalizing BF_cbc_encrypt0
 Mark Input dependent function BF_cbc_encrypt0
 Finalizing BF_ecb_encrypt
-Finalizing BF_ecb_encrypt0
-Mark Input dependent function BF_ecb_encrypt0
 Finalizing BF_options
 Finalizing main
-Finalizing main10
-Mark Input dependent function main10
-Finalizing main9
-Mark Input dependent function main9
+Finalizing main8
+Mark Input dependent function main8
 Finalizing BF_cfb64_encrypt
 Mark Input dependent function BF_cfb64_encrypt
 Finalizing BF_cfb64_encrypt2
@@ -1728,16 +1654,14 @@ Finalizing BF_cfb64_encrypt1
 Mark Input dependent function BF_cfb64_encrypt1
 Finalizing BF_cfb64_encrypt0
 Mark Input dependent function BF_cfb64_encrypt0
-Finalizing main8
-Mark Input dependent function main8
 Finalizing main7
 Mark Input dependent function main7
 Finalizing main6
 Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
 Finalizing BF_set_key
 Mark Input dependent function BF_set_key
-Finalizing BF_set_key6
-Mark Input dependent function BF_set_key6
 Finalizing BF_encrypt
 Mark Input dependent function BF_encrypt
 Finalizing BF_encrypt2
@@ -1758,8 +1682,6 @@ Finalizing BF_set_key1
 Mark Input dependent function BF_set_key1
 Finalizing BF_set_key0
 Mark Input dependent function BF_set_key0
-Finalizing main5
-Mark Input dependent function main5
 Finalizing main4
 Mark Input dependent function main4
 Finalizing main3
@@ -1775,22 +1697,21 @@ Finished input dependency analysis
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/bf.x.bc/25/0
-here!:BF_set_key0
-here!:BF_cbc_encrypt6
+here!:main7
+here!:BF_cbc_encrypt0
+here!:BF_set_key4
 here!:BF_set_key5
-here!:BF_cbc_encrypt12
-here!:BF_ecb_encrypt0
-here!:BF_cbc_encrypt7
-here!:main10
-here!:BF_cbc_encrypt11
+here!:BF_ecb_encrypt
+here!:BF_cfb64_encrypt
+here!:BF_cbc_encrypt15
 here!:BF_cbc_encrypt20
+here!:BF_cbc_encrypt8
+here!:BF_encrypt0
 here!:BF_ofb64_encrypt
-here!:main1
-here!:main3
-here!:BF_cbc_encrypt
-here!:BF_cbc_encrypt17
-here!:main7
-here!:main7
+here!:BF_set_key0
+here!:BF_cbc_encrypt1
+here!:BF_cbc_encrypt18
+here!:BF_cbc_encrypt18
 got filter function names
 did not find main demangled to main
 did not find printf demangled to printf
@@ -1805,65 +1726,60 @@ did not find BF_set_key demangled to BF_set_key
 did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
 did not find BF_encrypt demangled to BF_encrypt
 did not find BF_options demangled to BF_options
-did not find BF_ecb_encrypt demangled to BF_ecb_encrypt
-Add filter function BF_cbc_encrypt
-FunctionInfo. Adding function:BF_cbc_encrypt
-did not find BF_cfb64_encrypt demangled to BF_cfb64_encrypt
+Add filter function BF_ecb_encrypt
+FunctionInfo. Adding function:BF_ecb_encrypt
+did not find BF_cbc_encrypt demangled to BF_cbc_encrypt
+Add filter function BF_cfb64_encrypt
+FunctionInfo. Adding function:BF_cfb64_encrypt
 Add filter function BF_ofb64_encrypt
 FunctionInfo. Adding function:BF_ofb64_encrypt
 did not find main0 demangled to main0
-Add filter function main1
-FunctionInfo. Adding function:main1
+did not find main1 demangled to main1
 did not find main2 demangled to main2
-Add filter function main3
-FunctionInfo. Adding function:main3
+did not find main3 demangled to main3
 did not find main4 demangled to main4
 did not find main5 demangled to main5
 did not find main6 demangled to main6
 Add filter function main7
 FunctionInfo. Adding function:main7
 did not find main8 demangled to main8
-did not find main9 demangled to main9
-Add filter function main10
-FunctionInfo. Adding function:main10
 Add filter function BF_set_key0
 FunctionInfo. Adding function:BF_set_key0
 did not find BF_set_key1 demangled to BF_set_key1
 did not find BF_set_key2 demangled to BF_set_key2
 did not find BF_set_key3 demangled to BF_set_key3
-did not find BF_set_key4 demangled to BF_set_key4
+Add filter function BF_set_key4
+FunctionInfo. Adding function:BF_set_key4
 Add filter function BF_set_key5
 FunctionInfo. Adding function:BF_set_key5
-did not find BF_set_key6 demangled to BF_set_key6
-did not find BF_encrypt0 demangled to BF_encrypt0
+Add filter function BF_encrypt0
+FunctionInfo. Adding function:BF_encrypt0
 did not find BF_encrypt1 demangled to BF_encrypt1
 did not find BF_encrypt2 demangled to BF_encrypt2
-Add filter function BF_ecb_encrypt0
-FunctionInfo. Adding function:BF_ecb_encrypt0
-did not find BF_cbc_encrypt0 demangled to BF_cbc_encrypt0
-did not find BF_cbc_encrypt1 demangled to BF_cbc_encrypt1
+Add filter function BF_cbc_encrypt0
+FunctionInfo. Adding function:BF_cbc_encrypt0
+Add filter function BF_cbc_encrypt1
+FunctionInfo. Adding function:BF_cbc_encrypt1
 did not find BF_cbc_encrypt2 demangled to BF_cbc_encrypt2
 did not find BF_cbc_encrypt3 demangled to BF_cbc_encrypt3
 did not find BF_cbc_encrypt4 demangled to BF_cbc_encrypt4
 did not find BF_cbc_encrypt5 demangled to BF_cbc_encrypt5
-Add filter function BF_cbc_encrypt6
-FunctionInfo. Adding function:BF_cbc_encrypt6
-Add filter function BF_cbc_encrypt7
-FunctionInfo. Adding function:BF_cbc_encrypt7
-did not find BF_cbc_encrypt8 demangled to BF_cbc_encrypt8
+did not find BF_cbc_encrypt6 demangled to BF_cbc_encrypt6
+did not find BF_cbc_encrypt7 demangled to BF_cbc_encrypt7
+Add filter function BF_cbc_encrypt8
+FunctionInfo. Adding function:BF_cbc_encrypt8
 did not find BF_cbc_encrypt9 demangled to BF_cbc_encrypt9
 did not find BF_cbc_encrypt10 demangled to BF_cbc_encrypt10
-Add filter function BF_cbc_encrypt11
-FunctionInfo. Adding function:BF_cbc_encrypt11
-Add filter function BF_cbc_encrypt12
-FunctionInfo. Adding function:BF_cbc_encrypt12
+did not find BF_cbc_encrypt11 demangled to BF_cbc_encrypt11
+did not find BF_cbc_encrypt12 demangled to BF_cbc_encrypt12
 did not find BF_cbc_encrypt13 demangled to BF_cbc_encrypt13
 did not find BF_cbc_encrypt14 demangled to BF_cbc_encrypt14
-did not find BF_cbc_encrypt15 demangled to BF_cbc_encrypt15
+Add filter function BF_cbc_encrypt15
+FunctionInfo. Adding function:BF_cbc_encrypt15
 did not find BF_cbc_encrypt16 demangled to BF_cbc_encrypt16
-Add filter function BF_cbc_encrypt17
-FunctionInfo. Adding function:BF_cbc_encrypt17
-did not find BF_cbc_encrypt18 demangled to BF_cbc_encrypt18
+did not find BF_cbc_encrypt17 demangled to BF_cbc_encrypt17
+Add filter function BF_cbc_encrypt18
+FunctionInfo. Adding function:BF_cbc_encrypt18
 did not find BF_cbc_encrypt19 demangled to BF_cbc_encrypt19
 Add filter function BF_cbc_encrypt20
 FunctionInfo. Adding function:BF_cbc_encrypt20
@@ -1891,19 +1807,15 @@ Adding main5 other functions, ExtractedOnly mode uses other functions
 Adding main6 other functions, ExtractedOnly mode uses other functions
 Adding main7 other functions, ExtractedOnly mode uses other functions
 Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
-Adding main10 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key0 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key1 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key2 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key3 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key4 other functions, ExtractedOnly mode uses other functions
 Adding BF_set_key5 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key6 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt1 other functions, ExtractedOnly mode uses other functions
 Adding BF_encrypt2 other functions, ExtractedOnly mode uses other functions
-Adding BF_ecb_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt1 other functions, ExtractedOnly mode uses other functions
 Adding BF_cbc_encrypt2 other functions, ExtractedOnly mode uses other functions
@@ -1932,67 +1844,63 @@ Adding BF_cfb64_encrypt1 other functions, ExtractedOnly mode uses other function
 Adding BF_cfb64_encrypt2 other functions, ExtractedOnly mode uses other functions
 Adding BF_ofb64_encrypt0 other functions, ExtractedOnly mode uses other functions
 Adding BF_ofb64_encrypt1 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:58
+Sensitive functions:0 other functions:54
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-main10
-BF_cbc_encrypt4
-BF_encrypt1
-BF_cbc_encrypt16
+BF_set_key1
+BF_cbc_encrypt8
+BF_cbc_encrypt1
+BF_cbc_encrypt20
 main3
 BF_options
 main4
-BF_set_key0
-BF_cbc_encrypt3
-BF_ofb64_encrypt0
-BF_cbc_encrypt11
+BF_set_key2
+BF_cbc_encrypt7
+BF_set_key4
+BF_cbc_encrypt15
 main5
+BF_ofb64_encrypt1
 BF_cfb64_encrypt0
-BF_cbc_encrypt19
-BF_cbc_encrypt10
-BF_cfb64_encrypt1
+BF_cbc_encrypt14
+BF_set_key5
 main0
 main1
-BF_encrypt2
+BF_cbc_encrypt2
 BF_encrypt
+BF_cfb64_encrypt
+BF_cbc_encrypt4
+BF_cfb64_encrypt1
+BF_encrypt1
+BF_cbc_encrypt11
+BF_ofb64_encrypt0
+BF_cbc_encrypt9
+BF_ecb_encrypt
+main7
+BF_cbc_encrypt19
+BF_cbc_encrypt21
+BF_cbc_encrypt17
+main6
+BF_cbc_encrypt18
+BF_set_key3
+BF_encrypt0
+BF_cbc_encrypt3
+BF_ofb64_encrypt
+BF_cbc_encrypt5
 BF_cfb64_encrypt2
 BF_cbc_encrypt0
-BF_cbc_encrypt20
-BF_set_key5
-BF_cbc_encrypt7
-BF_cbc_encrypt22
-BF_cbc_encrypt5
-BF_ecb_encrypt
-BF_ofb64_encrypt1
-BF_cbc_encrypt15
-BF_cbc_encrypt17
-BF_cbc_encrypt13
-main6
-BF_cbc_encrypt14
-BF_set_key1
-BF_set_key4
-BF_ecb_encrypt0
-BF_ofb64_encrypt
-BF_cbc_encrypt1
-BF_cbc_encrypt21
-BF_encrypt0
 main2
-BF_cbc_encrypt12
-BF_cbc_encrypt18
+BF_cbc_encrypt16
+BF_cbc_encrypt22
 main
-BF_cbc_encrypt8
+BF_cbc_encrypt12
 BF_cbc_encrypt
 main8
-main9
+BF_set_key0
 BF_set_key
-BF_set_key6
-BF_cbc_encrypt9
-BF_cbc_encrypt2
+BF_encrypt2
+BF_cbc_encrypt13
 BF_cbc_encrypt6
-BF_set_key3
-BF_cfb64_encrypt
-BF_set_key2
-main7
+BF_cbc_encrypt10
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -2017,7 +1925,7 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 58 function, while filter count is 15
+ERR. processed 54 function, while filter count is 14
 Functions called in loop
 Function call numbers
 main -- 0
@@ -2030,592 +1938,24 @@ PSNodeType::PHI with ID 16
   - operands: []
 No reaching definition for:   %end = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %end.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for:   %d = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %d.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %cp.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 15
+Recieved filter functions 14
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:BF_set_key
  Skipping function per FilterFunctionPass:BF_encrypt
  Skipping function per FilterFunctionPass:BF_options
- Skipping function per FilterFunctionPass:BF_ecb_encrypt
-Skip. No dependence graph for function BF_cbc_encrypt
- Skipping function per FilterFunctionPass:BF_cfb64_encrypt
-Skip. No dependence graph for function BF_ofb64_encrypt
- Skipping function per FilterFunctionPass:main
- Skipping function per FilterFunctionPass:BF_set_key
- Skipping function per FilterFunctionPass:BF_encrypt
- Skipping function per FilterFunctionPass:BF_options
- Skipping function per FilterFunctionPass:BF_ecb_encrypt
-Skip. No dependence graph for function BF_cbc_encrypt
- Skipping function per FilterFunctionPass:BF_cfb64_encrypt
-Skip. No dependence graph for function BF_ofb64_encrypt
-OH stats is requested, dumping stat file...
-Processed instructions number 1716
-{
-    "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 42,
-    "numberOfDataDependentInstructions": 0,
-    "numberOfHashVariables": 1,
-    "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 777,
-    "numberOfInstructionsInFunctionsWithNoDG": 939,
-    "numberOfNonHashableBlocks": 0,
-    "numberOfNonHashableInstructions": 0,
-    "numberOfOHProcessedInstr": 0,
-    "numberOfOtherUnprotectedInstructions": 0,
-    "numberOfOtherUnprotectedLoopVariantInstructions": 0,
-    "numberOfProtectedArguments": 0,
-    "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 0,
-    "numberOfProtectedGuardArguments": 0,
-    "numberOfProtectedGuardInstructions": 0,
-    "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 0,
-    "numberOfSensitiveFunctions": 0,
-    "numberOfShortRangeAssertCalls": 0,
-    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
-    "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 0,
-    "numberOfShortRangeProtectedGuardArguments": 0,
-    "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 0,
-    "numberOfUnprotectedArgumentReachableInstructions": 0,
-    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
-    "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 0,
-    "numberOfUnprotectedGlobalReachableInstructions": 0,
-    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
-    "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 0
-}
-ERR. processed 0 function, while filter count is 15
-===-------------------------------------------------------------------------===
-                      ... Pass execution timing report ...
-===-------------------------------------------------------------------------===
-  Total Execution Time: 1.1551 seconds (1.1551 wall clock)
-
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.9010 ( 78.2%)   0.0025 ( 98.8%)   0.9035 ( 78.2%)   0.9035 ( 78.2%)  runs input dependency analysis
-   0.2394 ( 20.8%)   0.0000 (  0.0%)   0.2394 ( 20.7%)   0.2394 ( 20.7%)  Instruments bitcode with hashing and logging functions
-   0.0058 (  0.5%)   0.0000 (  0.0%)   0.0058 (  0.5%)   0.0058 (  0.5%)  Bitcode Writer
-   0.0017 (  0.1%)   0.0000 (  0.0%)   0.0017 (  0.1%)   0.0017 (  0.1%)  Module Verifier
-   0.0010 (  0.1%)   0.0000 (  0.7%)   0.0011 (  0.1%)   0.0010 (  0.1%)  Instruments bitcode with guards
-   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
-   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
-   0.0006 (  0.0%)   0.0000 (  0.1%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Include functions in a given file in any transformation
-   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
-   0.0004 (  0.0%)   0.0000 (  0.3%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
-   0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.1525 (100.0%)   0.0025 (100.0%)   1.1551 (100.0%)   1.1551 (100.0%)  Total
-
-===-------------------------------------------------------------------------===
-                                LLVM IR Parsing
-===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0080 seconds (0.0080 wall clock)
-
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0045 (100.0%)   0.0035 (100.0%)   0.0080 (100.0%)   0.0080 (100.0%)  Parse IR
-   0.0045 (100.0%)   0.0035 (100.0%)   0.0080 (100.0%)   0.0080 (100.0%)  Total
-
-Running input dependency analysis pass
-Processing function main0
-Processing function main1
-Processing function main2
-Processing function main3
-Processing function main4
-Processing function main5
-Processing function BF_set_key0
-Processing function BF_set_key1
-Processing function BF_set_key2
-Processing function BF_set_key3
-Processing function BF_set_key4
-Processing function BF_set_key5
-Processing function BF_encrypt0
-Processing function BF_encrypt1
-Processing function BF_encrypt2
-Processing function BF_encrypt
-Processing function BF_set_key6
-Processing function BF_set_key
-Processing function main6
-Processing function main7
-Processing function main8
-Processing function BF_cfb64_encrypt0
-Processing function BF_cfb64_encrypt1
-Processing function BF_cfb64_encrypt2
-Processing function BF_cfb64_encrypt
-Processing function main9
-Processing function main10
-Processing function main
-Processing function BF_options
-Processing function BF_ecb_encrypt0
-Processing function BF_ecb_encrypt
-Processing function BF_cbc_encrypt0
-Processing function BF_cbc_encrypt1
-Processing function BF_cbc_encrypt2
-Processing function BF_cbc_encrypt3
-Processing function BF_cbc_encrypt4
-Processing function BF_cbc_encrypt5
-Processing function BF_cbc_encrypt6
-Processing function BF_cbc_encrypt7
-Processing function BF_cbc_encrypt8
-Processing function BF_cbc_encrypt9
-Processing function BF_cbc_encrypt10
-Processing function BF_cbc_encrypt11
-Processing function BF_cbc_encrypt12
-Processing function BF_cbc_encrypt13
-Processing function BF_cbc_encrypt14
-Processing function BF_cbc_encrypt15
-Processing function BF_cbc_encrypt16
-Processing function BF_cbc_encrypt17
-Processing function BF_cbc_encrypt18
-Processing function BF_cbc_encrypt19
-Processing function BF_cbc_encrypt20
-Processing function BF_cbc_encrypt21
-Processing function BF_cbc_encrypt22
-Processing function BF_cbc_encrypt
-Processing function BF_ofb64_encrypt0
-Processing function BF_ofb64_encrypt1
-Processing function BF_ofb64_encrypt
-Finalizing BF_ofb64_encrypt
-Finalizing BF_ofb64_encrypt1
-Mark Input dependent function BF_ofb64_encrypt1
-Finalizing BF_ofb64_encrypt0
-Mark Input dependent function BF_ofb64_encrypt0
-Finalizing BF_cbc_encrypt
-Finalizing BF_cbc_encrypt22
-Mark Input dependent function BF_cbc_encrypt22
-Finalizing BF_cbc_encrypt21
-Mark Input dependent function BF_cbc_encrypt21
-Finalizing BF_cbc_encrypt20
-Mark Input dependent function BF_cbc_encrypt20
-Finalizing BF_cbc_encrypt19
-Mark Input dependent function BF_cbc_encrypt19
-Finalizing BF_cbc_encrypt18
-Mark Input dependent function BF_cbc_encrypt18
-Finalizing BF_cbc_encrypt17
-Mark Input dependent function BF_cbc_encrypt17
-Finalizing BF_cbc_encrypt16
-Mark Input dependent function BF_cbc_encrypt16
-Finalizing BF_cbc_encrypt15
-Mark Input dependent function BF_cbc_encrypt15
-Finalizing BF_cbc_encrypt14
-Mark Input dependent function BF_cbc_encrypt14
-Finalizing BF_cbc_encrypt13
-Mark Input dependent function BF_cbc_encrypt13
-Finalizing BF_cbc_encrypt12
-Mark Input dependent function BF_cbc_encrypt12
-Finalizing BF_cbc_encrypt11
-Mark Input dependent function BF_cbc_encrypt11
-Finalizing BF_cbc_encrypt10
-Mark Input dependent function BF_cbc_encrypt10
-Finalizing BF_cbc_encrypt9
-Mark Input dependent function BF_cbc_encrypt9
-Finalizing BF_cbc_encrypt8
-Mark Input dependent function BF_cbc_encrypt8
-Finalizing BF_cbc_encrypt7
-Mark Input dependent function BF_cbc_encrypt7
-Finalizing BF_cbc_encrypt6
-Mark Input dependent function BF_cbc_encrypt6
-Finalizing BF_cbc_encrypt5
-Mark Input dependent function BF_cbc_encrypt5
-Finalizing BF_cbc_encrypt4
-Mark Input dependent function BF_cbc_encrypt4
-Finalizing BF_cbc_encrypt3
-Mark Input dependent function BF_cbc_encrypt3
-Finalizing BF_cbc_encrypt2
-Mark Input dependent function BF_cbc_encrypt2
-Finalizing BF_cbc_encrypt1
-Mark Input dependent function BF_cbc_encrypt1
-Finalizing BF_cbc_encrypt0
-Mark Input dependent function BF_cbc_encrypt0
-Finalizing BF_ecb_encrypt
-Finalizing BF_ecb_encrypt0
-Mark Input dependent function BF_ecb_encrypt0
-Finalizing BF_options
-Finalizing main
-Finalizing main10
-Mark Input dependent function main10
-Finalizing main9
-Mark Input dependent function main9
-Finalizing BF_cfb64_encrypt
-Mark Input dependent function BF_cfb64_encrypt
-Finalizing BF_cfb64_encrypt2
-Mark Input dependent function BF_cfb64_encrypt2
-Finalizing BF_cfb64_encrypt1
-Mark Input dependent function BF_cfb64_encrypt1
-Finalizing BF_cfb64_encrypt0
-Mark Input dependent function BF_cfb64_encrypt0
-Finalizing main8
-Mark Input dependent function main8
-Finalizing main7
-Mark Input dependent function main7
-Finalizing main6
-Mark Input dependent function main6
-Finalizing BF_set_key
-Mark Input dependent function BF_set_key
-Finalizing BF_set_key6
-Mark Input dependent function BF_set_key6
-Finalizing BF_encrypt
-Mark Input dependent function BF_encrypt
-Finalizing BF_encrypt2
-Mark Input dependent function BF_encrypt2
-Finalizing BF_encrypt1
-Mark Input dependent function BF_encrypt1
-Finalizing BF_encrypt0
-Mark Input dependent function BF_encrypt0
-Finalizing BF_set_key5
-Mark Input dependent function BF_set_key5
-Finalizing BF_set_key4
-Mark Input dependent function BF_set_key4
-Finalizing BF_set_key3
-Mark Input dependent function BF_set_key3
-Finalizing BF_set_key2
-Mark Input dependent function BF_set_key2
-Finalizing BF_set_key1
-Mark Input dependent function BF_set_key1
-Finalizing BF_set_key0
-Mark Input dependent function BF_set_key0
-Finalizing main5
-Mark Input dependent function main5
-Finalizing main4
-Mark Input dependent function main4
-Finalizing main3
-Mark Input dependent function main3
-Finalizing main2
-Mark Input dependent function main2
-Finalizing main1
-Mark Input dependent function main1
-Finalizing main0
-Mark Input dependent function main0
-Finished input dependency analysis
-
-In  mark function pass 
-In  filter function pass 
-Filter file:/home/anahitik/SIP/sip-eval/combination/bf.x.bc/50/0
-here!:BF_set_key0
-here!:BF_cbc_encrypt6
-here!:BF_set_key5
-here!:BF_cbc_encrypt12
-here!:BF_ecb_encrypt0
-here!:BF_cbc_encrypt7
-here!:main10
-here!:BF_cbc_encrypt11
-here!:BF_cbc_encrypt20
-here!:BF_ofb64_encrypt
-here!:main1
-here!:main3
-here!:BF_cbc_encrypt
-here!:BF_cbc_encrypt17
-here!:main7
-here!:BF_cbc_encrypt3
-here!:BF_cbc_encrypt22
-here!:BF_ofb64_encrypt0
-here!:BF_cbc_encrypt10
-here!:BF_cbc_encrypt1
-here!:BF_cfb64_encrypt
-here!:BF_encrypt2
-here!:BF_cbc_encrypt4
-here!:BF_encrypt0
-here!:main4
-here!:BF_set_key4
-here!:BF_encrypt
-here!:BF_cbc_encrypt0
-here!:BF_ofb64_encrypt1
-here!:BF_ofb64_encrypt1
-got filter function names
-did not find main demangled to main
-did not find printf demangled to printf
-did not find exit demangled to exit
-did not find toupper demangled to toupper
-did not find fopen demangled to fopen
-did not find feof demangled to feof
-did not find _IO_getc demangled to _IO_getc
-did not find fputc demangled to fputc
-did not find close demangled to close
-did not find BF_set_key demangled to BF_set_key
-did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
-Add filter function BF_encrypt
-FunctionInfo. Adding function:BF_encrypt
-did not find BF_options demangled to BF_options
-did not find BF_ecb_encrypt demangled to BF_ecb_encrypt
-Add filter function BF_cbc_encrypt
-FunctionInfo. Adding function:BF_cbc_encrypt
-Add filter function BF_cfb64_encrypt
-FunctionInfo. Adding function:BF_cfb64_encrypt
-Add filter function BF_ofb64_encrypt
-FunctionInfo. Adding function:BF_ofb64_encrypt
-did not find main0 demangled to main0
-Add filter function main1
-FunctionInfo. Adding function:main1
-did not find main2 demangled to main2
-Add filter function main3
-FunctionInfo. Adding function:main3
-Add filter function main4
-FunctionInfo. Adding function:main4
-did not find main5 demangled to main5
-did not find main6 demangled to main6
-Add filter function main7
-FunctionInfo. Adding function:main7
-did not find main8 demangled to main8
-did not find main9 demangled to main9
-Add filter function main10
-FunctionInfo. Adding function:main10
-Add filter function BF_set_key0
-FunctionInfo. Adding function:BF_set_key0
-did not find BF_set_key1 demangled to BF_set_key1
-did not find BF_set_key2 demangled to BF_set_key2
-did not find BF_set_key3 demangled to BF_set_key3
-Add filter function BF_set_key4
-FunctionInfo. Adding function:BF_set_key4
-Add filter function BF_set_key5
-FunctionInfo. Adding function:BF_set_key5
-did not find BF_set_key6 demangled to BF_set_key6
-Add filter function BF_encrypt0
-FunctionInfo. Adding function:BF_encrypt0
-did not find BF_encrypt1 demangled to BF_encrypt1
-Add filter function BF_encrypt2
-FunctionInfo. Adding function:BF_encrypt2
-Add filter function BF_ecb_encrypt0
-FunctionInfo. Adding function:BF_ecb_encrypt0
-Add filter function BF_cbc_encrypt0
-FunctionInfo. Adding function:BF_cbc_encrypt0
-Add filter function BF_cbc_encrypt1
-FunctionInfo. Adding function:BF_cbc_encrypt1
-did not find BF_cbc_encrypt2 demangled to BF_cbc_encrypt2
-Add filter function BF_cbc_encrypt3
-FunctionInfo. Adding function:BF_cbc_encrypt3
-Add filter function BF_cbc_encrypt4
-FunctionInfo. Adding function:BF_cbc_encrypt4
-did not find BF_cbc_encrypt5 demangled to BF_cbc_encrypt5
-Add filter function BF_cbc_encrypt6
-FunctionInfo. Adding function:BF_cbc_encrypt6
-Add filter function BF_cbc_encrypt7
-FunctionInfo. Adding function:BF_cbc_encrypt7
-did not find BF_cbc_encrypt8 demangled to BF_cbc_encrypt8
-did not find BF_cbc_encrypt9 demangled to BF_cbc_encrypt9
-Add filter function BF_cbc_encrypt10
-FunctionInfo. Adding function:BF_cbc_encrypt10
-Add filter function BF_cbc_encrypt11
-FunctionInfo. Adding function:BF_cbc_encrypt11
-Add filter function BF_cbc_encrypt12
-FunctionInfo. Adding function:BF_cbc_encrypt12
-did not find BF_cbc_encrypt13 demangled to BF_cbc_encrypt13
-did not find BF_cbc_encrypt14 demangled to BF_cbc_encrypt14
-did not find BF_cbc_encrypt15 demangled to BF_cbc_encrypt15
-did not find BF_cbc_encrypt16 demangled to BF_cbc_encrypt16
-Add filter function BF_cbc_encrypt17
-FunctionInfo. Adding function:BF_cbc_encrypt17
-did not find BF_cbc_encrypt18 demangled to BF_cbc_encrypt18
-did not find BF_cbc_encrypt19 demangled to BF_cbc_encrypt19
-Add filter function BF_cbc_encrypt20
-FunctionInfo. Adding function:BF_cbc_encrypt20
-did not find BF_cbc_encrypt21 demangled to BF_cbc_encrypt21
-Add filter function BF_cbc_encrypt22
-FunctionInfo. Adding function:BF_cbc_encrypt22
-did not find BF_cfb64_encrypt0 demangled to BF_cfb64_encrypt0
-did not find BF_cfb64_encrypt1 demangled to BF_cfb64_encrypt1
-did not find BF_cfb64_encrypt2 demangled to BF_cfb64_encrypt2
-Add filter function BF_ofb64_encrypt0
-FunctionInfo. Adding function:BF_ofb64_encrypt0
-Add filter function BF_ofb64_encrypt1
-FunctionInfo. Adding function:BF_ofb64_encrypt1
-Adding main other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key other functions, ExtractedOnly mode uses other functions
-Adding BF_encrypt other functions, ExtractedOnly mode uses other functions
-Adding BF_options other functions, ExtractedOnly mode uses other functions
-Adding BF_ecb_encrypt other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt other functions, ExtractedOnly mode uses other functions
-Adding BF_cfb64_encrypt other functions, ExtractedOnly mode uses other functions
-Adding BF_ofb64_encrypt other functions, ExtractedOnly mode uses other functions
-Adding main0 other functions, ExtractedOnly mode uses other functions
-Adding main1 other functions, ExtractedOnly mode uses other functions
-Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Adding main4 other functions, ExtractedOnly mode uses other functions
-Adding main5 other functions, ExtractedOnly mode uses other functions
-Adding main6 other functions, ExtractedOnly mode uses other functions
-Adding main7 other functions, ExtractedOnly mode uses other functions
-Adding main8 other functions, ExtractedOnly mode uses other functions
-Adding main9 other functions, ExtractedOnly mode uses other functions
-Adding main10 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key0 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key1 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key2 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key3 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key4 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key5 other functions, ExtractedOnly mode uses other functions
-Adding BF_set_key6 other functions, ExtractedOnly mode uses other functions
-Adding BF_encrypt0 other functions, ExtractedOnly mode uses other functions
-Adding BF_encrypt1 other functions, ExtractedOnly mode uses other functions
-Adding BF_encrypt2 other functions, ExtractedOnly mode uses other functions
-Adding BF_ecb_encrypt0 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt0 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt1 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt2 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt3 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt4 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt5 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt6 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt7 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt8 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt9 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt10 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt11 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt12 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt13 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt14 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt15 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt16 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt17 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt18 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt19 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt20 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt21 other functions, ExtractedOnly mode uses other functions
-Adding BF_cbc_encrypt22 other functions, ExtractedOnly mode uses other functions
-Adding BF_cfb64_encrypt0 other functions, ExtractedOnly mode uses other functions
-Adding BF_cfb64_encrypt1 other functions, ExtractedOnly mode uses other functions
-Adding BF_cfb64_encrypt2 other functions, ExtractedOnly mode uses other functions
-Adding BF_ofb64_encrypt0 other functions, ExtractedOnly mode uses other functions
-Adding BF_ofb64_encrypt1 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:58
-DesiredConnectivity is :1
-Other functions to be fed to the network of checkers
-main10
-BF_cbc_encrypt4
-BF_encrypt1
-BF_cbc_encrypt16
-main3
-BF_options
-main4
-BF_set_key0
-BF_cbc_encrypt3
-BF_ofb64_encrypt0
-BF_cbc_encrypt11
-main5
-BF_cfb64_encrypt0
-BF_cbc_encrypt19
-BF_cbc_encrypt10
-BF_cfb64_encrypt1
-main0
-main1
-BF_encrypt2
-BF_encrypt
-BF_cfb64_encrypt2
-BF_cbc_encrypt0
-BF_cbc_encrypt20
-BF_set_key5
-BF_cbc_encrypt7
-BF_cbc_encrypt22
-BF_cbc_encrypt5
-BF_ecb_encrypt
-BF_ofb64_encrypt1
-BF_cbc_encrypt15
-BF_cbc_encrypt17
-BF_cbc_encrypt13
-main6
-BF_cbc_encrypt14
-BF_set_key1
-BF_set_key4
-BF_ecb_encrypt0
-BF_ofb64_encrypt
-BF_cbc_encrypt1
-BF_cbc_encrypt21
-BF_encrypt0
-main2
-BF_cbc_encrypt12
-BF_cbc_encrypt18
-main
-BF_cbc_encrypt8
-BF_cbc_encrypt
-main8
-main9
-BF_set_key
-BF_set_key6
-BF_cbc_encrypt9
-BF_cbc_encrypt2
-BF_cbc_encrypt6
-BF_set_key3
-BF_cfb64_encrypt
-BF_set_key2
-main7
-***
-Sensitive functions to be fed to the network of checkers
-***
-Sensitive functions only checked:0
-DAGCheckersNetwork::getReverseTopologicalSort freed visited
-Constructed the network of checkers!
-Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
-Dumping checkers network info
-{
-    "allCheckees": [],
-    "topologicalsort": []
-}
-SC stats is requested, dumping stat file...
-{
-    "avgConnectivity": -nan.0,
-    "desiredConnectivity": 1,
-    "numberOfGuardInstructions": 0,
-    "numberOfGuards": 0,
-    "numberOfProtectedFunctions": 0,
-    "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveInstructions": 0,
-    "stdConnectivity": -nan.0
-}
-Recieved marked functions 0
-ERR. processed 58 function, while filter count is 29
-Functions called in loop
-Function call numbers
-main -- 0
-Insert hash computation
-Warning: Empty PHI
-PSNodeType::PHI with ID 15
-  - operands: []
-Warning: Empty PHI
-PSNodeType::PHI with ID 16
-  - operands: []
-No reaching definition for:   %end = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %end.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %d = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %d.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No reaching definition for:   %cp = alloca i8*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %cp.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
-No tags were supplied to be skipped! 
-'guard' metadata was found in the input bitcode
-Recieved marked functions 0
-Recieved filter functions 29
- Skipping function per FilterFunctionPass:main
- Skipping function per FilterFunctionPass:BF_set_key
-Collecting defining blocks for BF_encrypt
- Skipping function per FilterFunctionPass:BF_options
- Skipping function per FilterFunctionPass:BF_ecb_encrypt
-Skip. No dependence graph for function BF_cbc_encrypt
+Skip. No dependence graph for function BF_ecb_encrypt
+ Skipping function per FilterFunctionPass:BF_cbc_encrypt
 Collecting defining blocks for BF_cfb64_encrypt
 Skip. No dependence graph for function BF_ofb64_encrypt
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:BF_set_key
- Processing function:BF_encrypt
-Short range hashing enabled.
-Processing path: entry  if.then  
-After path modifications process path
-entry  if.then  
-Processing path: entry  if.end  
-After path modifications process path
-entry  if.end  
-Processing call instruction..
-Can't handle this operand   %r = alloca i64, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @BF_encrypt2(i64* %r, i64** %data.addr, i64* %l), !input_indep_block !5, !control_dep_instr !7, !input_indep_instr !13, !data_indep_instr !10
-Can't handle this operand   %data.addr = alloca i64*, align 8, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @BF_encrypt2(i64* %r, i64** %data.addr, i64* %l), !input_indep_block !5, !control_dep_instr !7, !input_indep_instr !13, !data_indep_instr !10
-Can't handle this operand   %l = alloca i64, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @BF_encrypt2(i64* %r, i64** %data.addr, i64* %l), !input_indep_block !5, !control_dep_instr !7, !input_indep_instr !13, !data_indep_instr !10
-Processing path: entry  if.else  
-After path modifications process path
-entry  if.else  
+ Skipping function per FilterFunctionPass:BF_encrypt
  Skipping function per FilterFunctionPass:BF_options
- Skipping function per FilterFunctionPass:BF_ecb_encrypt
-Skip. No dependence graph for function BF_cbc_encrypt
+Skip. No dependence graph for function BF_ecb_encrypt
+ Skipping function per FilterFunctionPass:BF_cbc_encrypt
  Processing function:BF_cfb64_encrypt
 Short range hashing enabled.
 Processing path: entry  if.then  while.cond  while.body  if.then2  
@@ -2688,40 +2028,37 @@ Extract path function for assertion assert_BF_cfb64_encrypt_path_7
 Extract path function for assertion assert_BF_cfb64_encrypt_path_8
 Extract path function for assertion assert_BF_cfb64_encrypt_path_10
 Extract path function for assertion assert_BF_cfb64_encrypt_path_12
-Extract path function for assertion assert_BF_encrypt_path_0
-Extract path function for assertion assert_BF_encrypt_path_1
-Extract path function for assertion assert_BF_encrypt_path_2
 OH stats is requested, dumping stat file...
-Processed instructions number 1716
+Processed instructions number 1874
 {
     "numberOfAssertCalls": 0,
-    "numberOfBlocksInFunctionsWithNoDG": 42,
-    "numberOfDataDependentInstructions": 352,
+    "numberOfBlocksInFunctionsWithNoDG": 9,
+    "numberOfDataDependentInstructions": 325,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 378,
-    "numberOfInstructionsInFunctionsWithNoDG": 939,
+    "numberOfInstructionsInFilteredFunctions": 998,
+    "numberOfInstructionsInFunctionsWithNoDG": 512,
     "numberOfNonHashableBlocks": 0,
-    "numberOfNonHashableInstructions": 6,
-    "numberOfOHProcessedInstr": 399,
+    "numberOfNonHashableInstructions": 4,
+    "numberOfOHProcessedInstr": 364,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 2,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 2,
+    "numberOfProtectedFunctions": 1,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
     "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 18,
-    "numberOfSensitiveFunctions": 2,
-    "numberOfShortRangeAssertCalls": 12,
+    "numberOfSensitiveBlocks": 14,
+    "numberOfSensitiveFunctions": 1,
+    "numberOfShortRangeAssertCalls": 9,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 14,
+    "numberOfShortRangeProtectedBlocks": 10,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 15,
-    "numberOfUnprotectedArgumentReachableInstructions": 10,
+    "numberOfShortRangeProtectedInstructions": 13,
+    "numberOfUnprotectedArgumentReachableInstructions": 6,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
     "numberOfUnprotectedDataDependentLoopBlocks": 4,
@@ -2730,43 +2067,899 @@ Processed instructions number 1716
     "numberOfUnprotectedInputDependentInstructions": 0,
     "numberOfUnprotectedLoopInstructions": 14
 }
-ERR. processed 2 function, while filter count is 29
+ERR. processed 1 function, while filter count is 14
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 1.2055 seconds (1.2057 wall clock)
+  Total Execution Time: 1.1971 seconds (1.1972 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.8828 ( 73.4%)   0.0000 (  1.0%)   0.8829 ( 73.2%)   0.8829 ( 73.2%)  runs input dependency analysis
-   0.2951 ( 24.6%)   0.0035 ( 98.7%)   0.2986 ( 24.8%)   0.2987 ( 24.8%)  Instruments bitcode with hashing and logging functions
-   0.0105 (  0.9%)   0.0000 (  0.1%)   0.0105 (  0.9%)   0.0105 (  0.9%)  Memory SSA
-   0.0064 (  0.5%)   0.0000 (  0.0%)   0.0064 (  0.5%)   0.0064 (  0.5%)  Bitcode Writer
-   0.0018 (  0.1%)   0.0000 (  0.0%)   0.0018 (  0.1%)   0.0018 (  0.1%)  Module Verifier
-   0.0010 (  0.1%)   0.0000 (  0.0%)   0.0010 (  0.1%)   0.0010 (  0.1%)  Instruments bitcode with guards
-   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Dominator Tree Construction
-   0.0008 (  0.1%)   0.0000 (  0.1%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
-   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Include functions in a given file in any transformation
-   0.0005 (  0.0%)   0.0000 (  0.1%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
-   0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0005 (  0.0%)  Dominator Tree Construction
+   0.8937 ( 75.4%)   0.0080 ( 66.6%)   0.9017 ( 75.3%)   0.9017 ( 75.3%)  runs input dependency analysis
+   0.2679 ( 22.6%)   0.0040 ( 33.3%)   0.2719 ( 22.7%)   0.2719 ( 22.7%)  Instruments bitcode with hashing and logging functions
+   0.0101 (  0.8%)   0.0000 (  0.1%)   0.0101 (  0.8%)   0.0101 (  0.8%)  Memory SSA
+   0.0059 (  0.5%)   0.0000 (  0.0%)   0.0059 (  0.5%)   0.0059 (  0.5%)  Bitcode Writer
+   0.0017 (  0.1%)   0.0000 (  0.0%)   0.0017 (  0.1%)   0.0017 (  0.1%)  Module Verifier
+   0.0011 (  0.1%)   0.0000 (  0.0%)   0.0011 (  0.1%)   0.0011 (  0.1%)  Instruments bitcode with guards
+   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0010 (  0.1%)  Dominator Tree Construction
+   0.0009 (  0.1%)   0.0000 (  0.0%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Post-Dominator Tree Construction
+   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Include functions in a given file in any transformation
+   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0005 (  0.0%)  Natural Loop Information
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Dominator Tree Construction
    0.0004 (  0.0%)   0.0000 (  0.0%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
    0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  Natural Loop Information
    0.0002 (  0.0%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  runs indirect and virtual calls analysis
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
-   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
    0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   1.2020 (100.0%)   0.0035 (100.0%)   1.2055 (100.0%)   1.2057 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.1851 (100.0%)   0.0120 (100.0%)   1.1971 (100.0%)   1.1972 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0061 seconds (0.0061 wall clock)
+  Total Execution Time: 0.0066 seconds (0.0066 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0066 (100.0%)   0.0066 (100.0%)   0.0066 (100.0%)  Parse IR
+   0.0066 (100.0%)   0.0066 (100.0%)   0.0066 (100.0%)  Total
+
+Running input dependency analysis pass
+Processing function main0
+Processing function main1
+Processing function main2
+Processing function main3
+Processing function main4
+Processing function BF_set_key0
+Processing function BF_set_key1
+Processing function BF_set_key2
+Processing function BF_set_key3
+Processing function BF_set_key4
+Processing function BF_set_key5
+Processing function BF_encrypt0
+Processing function BF_encrypt1
+Processing function BF_encrypt2
+Processing function BF_encrypt
+Processing function BF_set_key
+Processing function main5
+Processing function main6
+Processing function main7
+Processing function BF_cfb64_encrypt0
+Processing function BF_cfb64_encrypt1
+Processing function BF_cfb64_encrypt2
+Processing function BF_cfb64_encrypt
+Processing function main8
+Processing function main
+Processing function BF_options
+Processing function BF_ecb_encrypt
+Processing function BF_cbc_encrypt0
+Processing function BF_cbc_encrypt1
+Processing function BF_cbc_encrypt2
+Processing function BF_cbc_encrypt3
+Processing function BF_cbc_encrypt4
+Processing function BF_cbc_encrypt5
+Processing function BF_cbc_encrypt6
+Processing function BF_cbc_encrypt7
+Processing function BF_cbc_encrypt8
+Processing function BF_cbc_encrypt9
+Processing function BF_cbc_encrypt10
+Processing function BF_cbc_encrypt11
+Processing function BF_cbc_encrypt12
+Processing function BF_cbc_encrypt13
+Processing function BF_cbc_encrypt14
+Processing function BF_cbc_encrypt15
+Processing function BF_cbc_encrypt16
+Processing function BF_cbc_encrypt17
+Processing function BF_cbc_encrypt18
+Processing function BF_cbc_encrypt19
+Processing function BF_cbc_encrypt20
+Processing function BF_cbc_encrypt21
+Processing function BF_cbc_encrypt22
+Processing function BF_cbc_encrypt
+Processing function BF_ofb64_encrypt0
+Processing function BF_ofb64_encrypt1
+Processing function BF_ofb64_encrypt
+Finalizing BF_ofb64_encrypt
+Finalizing BF_ofb64_encrypt1
+Mark Input dependent function BF_ofb64_encrypt1
+Finalizing BF_ofb64_encrypt0
+Mark Input dependent function BF_ofb64_encrypt0
+Finalizing BF_cbc_encrypt
+Finalizing BF_cbc_encrypt22
+Mark Input dependent function BF_cbc_encrypt22
+Finalizing BF_cbc_encrypt21
+Mark Input dependent function BF_cbc_encrypt21
+Finalizing BF_cbc_encrypt20
+Mark Input dependent function BF_cbc_encrypt20
+Finalizing BF_cbc_encrypt19
+Mark Input dependent function BF_cbc_encrypt19
+Finalizing BF_cbc_encrypt18
+Mark Input dependent function BF_cbc_encrypt18
+Finalizing BF_cbc_encrypt17
+Mark Input dependent function BF_cbc_encrypt17
+Finalizing BF_cbc_encrypt16
+Mark Input dependent function BF_cbc_encrypt16
+Finalizing BF_cbc_encrypt15
+Mark Input dependent function BF_cbc_encrypt15
+Finalizing BF_cbc_encrypt14
+Mark Input dependent function BF_cbc_encrypt14
+Finalizing BF_cbc_encrypt13
+Mark Input dependent function BF_cbc_encrypt13
+Finalizing BF_cbc_encrypt12
+Mark Input dependent function BF_cbc_encrypt12
+Finalizing BF_cbc_encrypt11
+Mark Input dependent function BF_cbc_encrypt11
+Finalizing BF_cbc_encrypt10
+Mark Input dependent function BF_cbc_encrypt10
+Finalizing BF_cbc_encrypt9
+Mark Input dependent function BF_cbc_encrypt9
+Finalizing BF_cbc_encrypt8
+Mark Input dependent function BF_cbc_encrypt8
+Finalizing BF_cbc_encrypt7
+Mark Input dependent function BF_cbc_encrypt7
+Finalizing BF_cbc_encrypt6
+Mark Input dependent function BF_cbc_encrypt6
+Finalizing BF_cbc_encrypt5
+Mark Input dependent function BF_cbc_encrypt5
+Finalizing BF_cbc_encrypt4
+Mark Input dependent function BF_cbc_encrypt4
+Finalizing BF_cbc_encrypt3
+Mark Input dependent function BF_cbc_encrypt3
+Finalizing BF_cbc_encrypt2
+Mark Input dependent function BF_cbc_encrypt2
+Finalizing BF_cbc_encrypt1
+Mark Input dependent function BF_cbc_encrypt1
+Finalizing BF_cbc_encrypt0
+Mark Input dependent function BF_cbc_encrypt0
+Finalizing BF_ecb_encrypt
+Finalizing BF_options
+Finalizing main
+Finalizing main8
+Mark Input dependent function main8
+Finalizing BF_cfb64_encrypt
+Mark Input dependent function BF_cfb64_encrypt
+Finalizing BF_cfb64_encrypt2
+Mark Input dependent function BF_cfb64_encrypt2
+Finalizing BF_cfb64_encrypt1
+Mark Input dependent function BF_cfb64_encrypt1
+Finalizing BF_cfb64_encrypt0
+Mark Input dependent function BF_cfb64_encrypt0
+Finalizing main7
+Mark Input dependent function main7
+Finalizing main6
+Mark Input dependent function main6
+Finalizing main5
+Mark Input dependent function main5
+Finalizing BF_set_key
+Mark Input dependent function BF_set_key
+Finalizing BF_encrypt
+Mark Input dependent function BF_encrypt
+Finalizing BF_encrypt2
+Mark Input dependent function BF_encrypt2
+Finalizing BF_encrypt1
+Mark Input dependent function BF_encrypt1
+Finalizing BF_encrypt0
+Mark Input dependent function BF_encrypt0
+Finalizing BF_set_key5
+Mark Input dependent function BF_set_key5
+Finalizing BF_set_key4
+Mark Input dependent function BF_set_key4
+Finalizing BF_set_key3
+Mark Input dependent function BF_set_key3
+Finalizing BF_set_key2
+Mark Input dependent function BF_set_key2
+Finalizing BF_set_key1
+Mark Input dependent function BF_set_key1
+Finalizing BF_set_key0
+Mark Input dependent function BF_set_key0
+Finalizing main4
+Mark Input dependent function main4
+Finalizing main3
+Mark Input dependent function main3
+Finalizing main2
+Mark Input dependent function main2
+Finalizing main1
+Mark Input dependent function main1
+Finalizing main0
+Mark Input dependent function main0
+Finished input dependency analysis
+
+In  mark function pass 
+In  filter function pass 
+Filter file:/home/anahitik/SIP/sip-eval/combination/bf.x.bc/50/0
+here!:main7
+here!:BF_cbc_encrypt0
+here!:BF_set_key4
+here!:BF_set_key5
+here!:BF_ecb_encrypt
+here!:BF_cfb64_encrypt
+here!:BF_cbc_encrypt15
+here!:BF_cbc_encrypt20
+here!:BF_cbc_encrypt8
+here!:BF_encrypt0
+here!:BF_ofb64_encrypt
+here!:BF_set_key0
+here!:BF_cbc_encrypt1
+here!:BF_cbc_encrypt18
+here!:BF_cfb64_encrypt0
+here!:BF_cbc_encrypt7
+here!:BF_cfb64_encrypt1
+here!:BF_cbc_encrypt11
+here!:main
+here!:BF_set_key3
+here!:BF_options
+here!:BF_cbc_encrypt21
+here!:BF_cbc_encrypt22
+here!:main1
+here!:BF_cbc_encrypt13
+here!:BF_encrypt1
+here!:main2
+here!:main2
+got filter function names
+Add filter function main
+FunctionInfo. Adding function:main
+did not find printf demangled to printf
+did not find exit demangled to exit
+did not find toupper demangled to toupper
+did not find fopen demangled to fopen
+did not find feof demangled to feof
+did not find _IO_getc demangled to _IO_getc
+did not find fputc demangled to fputc
+did not find close demangled to close
+did not find BF_set_key demangled to BF_set_key
+did not find llvm.memcpy.p0i8.p0i8.i64 demangled to llvm.memcpy.p0i8.p0i8.i64
+did not find BF_encrypt demangled to BF_encrypt
+Add filter function BF_options
+FunctionInfo. Adding function:BF_options
+Add filter function BF_ecb_encrypt
+FunctionInfo. Adding function:BF_ecb_encrypt
+did not find BF_cbc_encrypt demangled to BF_cbc_encrypt
+Add filter function BF_cfb64_encrypt
+FunctionInfo. Adding function:BF_cfb64_encrypt
+Add filter function BF_ofb64_encrypt
+FunctionInfo. Adding function:BF_ofb64_encrypt
+did not find main0 demangled to main0
+Add filter function main1
+FunctionInfo. Adding function:main1
+Add filter function main2
+FunctionInfo. Adding function:main2
+did not find main3 demangled to main3
+did not find main4 demangled to main4
+did not find main5 demangled to main5
+did not find main6 demangled to main6
+Add filter function main7
+FunctionInfo. Adding function:main7
+did not find main8 demangled to main8
+Add filter function BF_set_key0
+FunctionInfo. Adding function:BF_set_key0
+did not find BF_set_key1 demangled to BF_set_key1
+did not find BF_set_key2 demangled to BF_set_key2
+Add filter function BF_set_key3
+FunctionInfo. Adding function:BF_set_key3
+Add filter function BF_set_key4
+FunctionInfo. Adding function:BF_set_key4
+Add filter function BF_set_key5
+FunctionInfo. Adding function:BF_set_key5
+Add filter function BF_encrypt0
+FunctionInfo. Adding function:BF_encrypt0
+Add filter function BF_encrypt1
+FunctionInfo. Adding function:BF_encrypt1
+did not find BF_encrypt2 demangled to BF_encrypt2
+Add filter function BF_cbc_encrypt0
+FunctionInfo. Adding function:BF_cbc_encrypt0
+Add filter function BF_cbc_encrypt1
+FunctionInfo. Adding function:BF_cbc_encrypt1
+did not find BF_cbc_encrypt2 demangled to BF_cbc_encrypt2
+did not find BF_cbc_encrypt3 demangled to BF_cbc_encrypt3
+did not find BF_cbc_encrypt4 demangled to BF_cbc_encrypt4
+did not find BF_cbc_encrypt5 demangled to BF_cbc_encrypt5
+did not find BF_cbc_encrypt6 demangled to BF_cbc_encrypt6
+Add filter function BF_cbc_encrypt7
+FunctionInfo. Adding function:BF_cbc_encrypt7
+Add filter function BF_cbc_encrypt8
+FunctionInfo. Adding function:BF_cbc_encrypt8
+did not find BF_cbc_encrypt9 demangled to BF_cbc_encrypt9
+did not find BF_cbc_encrypt10 demangled to BF_cbc_encrypt10
+Add filter function BF_cbc_encrypt11
+FunctionInfo. Adding function:BF_cbc_encrypt11
+did not find BF_cbc_encrypt12 demangled to BF_cbc_encrypt12
+Add filter function BF_cbc_encrypt13
+FunctionInfo. Adding function:BF_cbc_encrypt13
+did not find BF_cbc_encrypt14 demangled to BF_cbc_encrypt14
+Add filter function BF_cbc_encrypt15
+FunctionInfo. Adding function:BF_cbc_encrypt15
+did not find BF_cbc_encrypt16 demangled to BF_cbc_encrypt16
+did not find BF_cbc_encrypt17 demangled to BF_cbc_encrypt17
+Add filter function BF_cbc_encrypt18
+FunctionInfo. Adding function:BF_cbc_encrypt18
+did not find BF_cbc_encrypt19 demangled to BF_cbc_encrypt19
+Add filter function BF_cbc_encrypt20
+FunctionInfo. Adding function:BF_cbc_encrypt20
+Add filter function BF_cbc_encrypt21
+FunctionInfo. Adding function:BF_cbc_encrypt21
+Add filter function BF_cbc_encrypt22
+FunctionInfo. Adding function:BF_cbc_encrypt22
+Add filter function BF_cfb64_encrypt0
+FunctionInfo. Adding function:BF_cfb64_encrypt0
+Add filter function BF_cfb64_encrypt1
+FunctionInfo. Adding function:BF_cfb64_encrypt1
+did not find BF_cfb64_encrypt2 demangled to BF_cfb64_encrypt2
+did not find BF_ofb64_encrypt0 demangled to BF_ofb64_encrypt0
+did not find BF_ofb64_encrypt1 demangled to BF_ofb64_encrypt1
+Adding main other functions, ExtractedOnly mode uses other functions
+Adding BF_set_key other functions, ExtractedOnly mode uses other functions
+Adding BF_encrypt other functions, ExtractedOnly mode uses other functions
+Adding BF_options other functions, ExtractedOnly mode uses other functions
+Adding BF_ecb_encrypt other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt other functions, ExtractedOnly mode uses other functions
+Adding BF_cfb64_encrypt other functions, ExtractedOnly mode uses other functions
+Adding BF_ofb64_encrypt other functions, ExtractedOnly mode uses other functions
+Adding main0 other functions, ExtractedOnly mode uses other functions
+Adding main1 other functions, ExtractedOnly mode uses other functions
+Adding main2 other functions, ExtractedOnly mode uses other functions
+Adding main3 other functions, ExtractedOnly mode uses other functions
+Adding main4 other functions, ExtractedOnly mode uses other functions
+Adding main5 other functions, ExtractedOnly mode uses other functions
+Adding main6 other functions, ExtractedOnly mode uses other functions
+Adding main7 other functions, ExtractedOnly mode uses other functions
+Adding main8 other functions, ExtractedOnly mode uses other functions
+Adding BF_set_key0 other functions, ExtractedOnly mode uses other functions
+Adding BF_set_key1 other functions, ExtractedOnly mode uses other functions
+Adding BF_set_key2 other functions, ExtractedOnly mode uses other functions
+Adding BF_set_key3 other functions, ExtractedOnly mode uses other functions
+Adding BF_set_key4 other functions, ExtractedOnly mode uses other functions
+Adding BF_set_key5 other functions, ExtractedOnly mode uses other functions
+Adding BF_encrypt0 other functions, ExtractedOnly mode uses other functions
+Adding BF_encrypt1 other functions, ExtractedOnly mode uses other functions
+Adding BF_encrypt2 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt0 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt1 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt2 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt3 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt4 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt5 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt6 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt7 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt8 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt9 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt10 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt11 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt12 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt13 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt14 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt15 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt16 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt17 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt18 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt19 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt20 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt21 other functions, ExtractedOnly mode uses other functions
+Adding BF_cbc_encrypt22 other functions, ExtractedOnly mode uses other functions
+Adding BF_cfb64_encrypt0 other functions, ExtractedOnly mode uses other functions
+Adding BF_cfb64_encrypt1 other functions, ExtractedOnly mode uses other functions
+Adding BF_cfb64_encrypt2 other functions, ExtractedOnly mode uses other functions
+Adding BF_ofb64_encrypt0 other functions, ExtractedOnly mode uses other functions
+Adding BF_ofb64_encrypt1 other functions, ExtractedOnly mode uses other functions
+Sensitive functions:0 other functions:54
+DesiredConnectivity is :1
+Other functions to be fed to the network of checkers
+BF_set_key1
+BF_cbc_encrypt8
+BF_cbc_encrypt1
+BF_cbc_encrypt20
+main3
+BF_options
+main4
+BF_set_key2
+BF_cbc_encrypt7
+BF_set_key4
+BF_cbc_encrypt15
+main5
+BF_ofb64_encrypt1
+BF_cfb64_encrypt0
+BF_cbc_encrypt14
+BF_set_key5
+main0
+main1
+BF_cbc_encrypt2
+BF_encrypt
+BF_cfb64_encrypt
+BF_cbc_encrypt4
+BF_cfb64_encrypt1
+BF_encrypt1
+BF_cbc_encrypt11
+BF_ofb64_encrypt0
+BF_cbc_encrypt9
+BF_ecb_encrypt
+main7
+BF_cbc_encrypt19
+BF_cbc_encrypt21
+BF_cbc_encrypt17
+main6
+BF_cbc_encrypt18
+BF_set_key3
+BF_encrypt0
+BF_cbc_encrypt3
+BF_ofb64_encrypt
+BF_cbc_encrypt5
+BF_cfb64_encrypt2
+BF_cbc_encrypt0
+main2
+BF_cbc_encrypt16
+BF_cbc_encrypt22
+main
+BF_cbc_encrypt12
+BF_cbc_encrypt
+main8
+BF_set_key0
+BF_set_key
+BF_encrypt2
+BF_cbc_encrypt13
+BF_cbc_encrypt6
+BF_cbc_encrypt10
+***
+Sensitive functions to be fed to the network of checkers
+***
+Sensitive functions only checked:0
+DAGCheckersNetwork::getReverseTopologicalSort freed visited
+Constructed the network of checkers!
+Sensitive functions are never checkers as SensitiveOnlyChecked is set to:0
+Dumping checkers network info
+{
+    "allCheckees": [],
+    "topologicalsort": []
+}
+SC stats is requested, dumping stat file...
+{
+    "avgConnectivity": -nan.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 0,
+    "numberOfGuards": 0,
+    "numberOfProtectedFunctions": 0,
+    "numberOfProtectedInstructions": 0,
+    "numberOfSensitiveInstructions": 0,
+    "stdConnectivity": -nan.0
+}
+Recieved marked functions 0
+ERR. processed 54 function, while filter count is 27
+Functions called in loop
+Function call numbers
+main -- 0
+Insert hash computation
+Warning: Empty PHI
+PSNodeType::PHI with ID 15
+  - operands: []
+Warning: Empty PHI
+PSNodeType::PHI with ID 16
+  - operands: []
+No reaching definition for:   %end = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %end.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
+No reaching definition for:   %d = alloca i8*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 in:   %d.el = alloca i8*, !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
+No tags were supplied to be skipped! 
+'guard' metadata was found in the input bitcode
+Recieved marked functions 0
+Recieved filter functions 27
+Collecting defining blocks for main
+ Skipping function per FilterFunctionPass:BF_set_key
+ Skipping function per FilterFunctionPass:BF_encrypt
+Skip. No dependence graph for function BF_options
+Skip. No dependence graph for function BF_ecb_encrypt
+ Skipping function per FilterFunctionPass:BF_cbc_encrypt
+Collecting defining blocks for BF_cfb64_encrypt
+Skip. No dependence graph for function BF_ofb64_encrypt
+ Processing function:main
+Short range hashing enabled.
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.then7  
+After path modifications process path
+entry  if.end  if.then7  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.rhs  
+After path modifications process path
+land.rhs  
+Hash path invariants only
+Invariants are
+  br label %land.end, !control_dep_instr !12, !data_indep_instr !9
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.end  if.end21  
+After path modifications process path
+entry  if.end  if.end21  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.body  land.lhs.true  if.then35  
+After path modifications process path
+while.body  land.lhs.true  if.then35  
+Hash path invariants only
+Invariants are
+  br label %if.end54, !control_dep_instr !12, !data_indep_instr !9
+  call void @main2(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %ch = alloca i8, align 1, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Can't handle this operand   %by = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Processing path: entry  if.end  if.end21  
+After path modifications process path
+entry  if.end  if.end21  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.body  if.end54  if.then56  
+After path modifications process path
+while.body  if.end54  if.then56  
+Hash path invariants only
+Invariants are
+  br label %if.end61, !control_dep_instr !12, !data_indep_instr !9
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  
+After path modifications process path
+entry  if.end  if.end21  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.body  if.end54  if.end61  
+After path modifications process path
+while.body  if.end54  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path: entry  if.end  if.end21  
+After path modifications process path
+entry  if.end  if.end21  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.body  if.else37  land.lhs.true41  if.then45  if.end53  
+After path modifications process path
+while.body  if.then45  if.end53  
+Hash path invariants only
+Invariants are
+  br label %if.end54, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+  br label %if.end53, !control_dep_instr !12, !data_indep_instr !9
+  call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Can't handle this operand   %ch = alloca i8, align 1, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Can't handle this operand   %by = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i8* %ch, i32* %by), !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Processing path: entry  if.end  if.end21  
+After path modifications process path
+entry  if.end  if.end21  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.body  if.else37  if.else51  
+After path modifications process path
+while.body  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path: entry  if.end  if.end21  if.else51  
+After path modifications process path
+entry  if.end  if.end21  if.else51  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.then63  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.then63  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.then63  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.then70  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.then70  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.end65  if.then70  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.then77  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.then77  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.end65  if.end72  if.then77  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing call instruction..
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  while.body91  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  
+After path modifications process path
+while.body83  
+Hash path invariants only
+Invariants are
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  for.cond  for.body  for.inc  
+After path modifications process path
+for.body  
+Hash path invariants only
+Invariants are
+  br label %for.inc, !control_dep_instr !12, !data_indep_instr !9
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  while.end97  
+After path modifications process path
+while.body83  while.end97  
+Hash path invariants only
+Invariants are
+  br label %for.cond, !control_dep_instr !12, !data_indep_instr !9
+  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !9
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+  %arraydecay98 = getelementptr inbounds [40 x i8], [40 x i8]* %indata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
+  %arraydecay101 = getelementptr inbounds [8 x i8], [8 x i8]* %ivec, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
+  %arraydecay99 = getelementptr inbounds [40 x i8], [40 x i8]* %outdata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  for.cond  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  while.end97  for.end  
+After path modifications process path
+while.body83  while.end97  
+Hash path invariants only
+Invariants are
+  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !9
+  %arraydecay101 = getelementptr inbounds [8 x i8], [8 x i8]* %ivec, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
+  %arraydecay99 = getelementptr inbounds [40 x i8], [40 x i8]* %outdata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7
+  %arraydecay98 = getelementptr inbounds [40 x i8], [40 x i8]* %indata, i32 0, i32 0, !control_dep_instr !12, !data_dep_instr !7, !input_dep_block !13
+  br label %for.cond, !control_dep_instr !12, !data_indep_instr !9
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.end90  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond84  land.rhs87  
+After path modifications process path
+land.rhs87  
+Hash path invariants only
+Invariants are
+  br label %land.end90, !control_dep_instr !12, !data_indep_instr !9
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.body83  
+After path modifications process path
+while.body83  
+Hash path invariants only
+Invariants are
+  br label %while.cond84, !control_dep_instr !12, !data_indep_instr !9, !input_dep_block !13
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+No oh has been applied in the path
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  if.end21  while.cond  land.end  while.end  if.end65  if.end72  if.end79  while.end109  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.cond80  while.end109  
+After path modifications process path is empty
+Processing path: entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.end109  
+After path modifications process path
+entry  if.end  if.end21  while.end  if.end65  if.end72  if.end79  while.end109  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  lor.lhs.false  if.else  if.then17  if.end20  
+After path modifications process path
+entry  if.end  lor.lhs.false  if.else  if.then17  if.end20  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+Processing path: entry  if.end  lor.lhs.false  if.else  lor.lhs.false12  if.else18  
+After path modifications process path
+entry  if.end  lor.lhs.false  if.else  lor.lhs.false12  if.else18  
+Insert assertion evaluating function:main callsites detected =0
+Insert assertion included function:main because it is not in the skip  assert list!
+ Skipping function per FilterFunctionPass:BF_set_key
+ Skipping function per FilterFunctionPass:BF_encrypt
+Skip. No dependence graph for function BF_options
+Skip. No dependence graph for function BF_ecb_encrypt
+ Skipping function per FilterFunctionPass:BF_cbc_encrypt
+ Processing function:BF_cfb64_encrypt
+Short range hashing enabled.
+Processing path: entry  if.then  while.cond  while.body  if.then2  
+After path modifications process path
+while.body  if.then2  
+Hash path invariants only
+Invariants are
+  br label %if.end, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
+  %arrayidx42 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arrayidx = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8
+  %arraydecay = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i32 0, i32 0, !control_dep_instr !7, !data_dep_instr !8
+  %arrayidx27 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8
+  %arrayidx28 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.then  while.cond  while.body  if.end  
+After path modifications process path
+while.body  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path: entry  if.then  
+After path modifications process path
+entry  if.then  
+Processing path: entry  if.then  while.cond  while.end  
+After path modifications process path is empty
+Processing path: entry  if.then  while.end  
+After path modifications process path
+entry  if.then  while.end  
+Processing path: entry  if.end151  
+After path modifications process path
+entry  if.end151  
+Processing call instruction..
+Can't handle this operand   %num.addr = alloca i32*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @BF_cfb64_encrypt2(i32** %num.addr, i32* %n), !control_dep_instr !7, !input_indep_instr !10, !data_indep_instr !11
+Can't handle this operand   %n = alloca i32, align 4, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @BF_cfb64_encrypt2(i32** %num.addr, i32* %n), !control_dep_instr !7, !input_indep_instr !10, !data_indep_instr !11
+Processing path: entry  if.else  while.cond67  while.body70  if.then73  
+After path modifications process path
+while.body70  if.then73  
+Hash path invariants only
+Invariants are
+  br label %if.end137, !control_dep_instr !7, !argument_dep_instr !9, !data_indep_instr !11
+  %arrayidx121 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arrayidx88 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arraydecay104 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i32 0, i32 0, !control_dep_instr !7, !data_dep_instr !8
+  %arrayidx103 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 1, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+  %arrayidx105 = getelementptr inbounds [2 x i64], [2 x i64]* %ti, i64 0, i64 0, !control_dep_instr !7, !data_dep_instr !8, !argument_dep_instr !9
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+Processing path: entry  if.else  while.cond67  while.body70  if.end137  
+After path modifications process path
+while.body70  
+Hash path invariants only
+No invariant in the path. Skip path
+Processing path: entry  if.else  
+After path modifications process path
+entry  if.else  
+Processing path: entry  if.else  while.cond67  while.end150  
+After path modifications process path is empty
+Processing path: entry  if.else  while.end150  
+After path modifications process path
+entry  if.else  while.end150  
+Skip. No dependence graph for function BF_ofb64_encrypt
+Extract path function for assertion assert_BF_cfb64_encrypt_path_0
+Extract path function for assertion assert_BF_cfb64_encrypt_path_1
+Extract path function for assertion assert_BF_cfb64_encrypt_path_3
+Extract path function for assertion assert_BF_cfb64_encrypt_path_5
+Extract path function for assertion assert_BF_cfb64_encrypt_path_6
+Extract path function for assertion assert_BF_cfb64_encrypt_path_7
+Extract path function for assertion assert_BF_cfb64_encrypt_path_8
+Extract path function for assertion assert_BF_cfb64_encrypt_path_10
+Extract path function for assertion assert_BF_cfb64_encrypt_path_12
+Extract path function for assertion assert_main_path_1
+Extract path function for assertion assert_main_path_3
+Extract path function for assertion assert_main_path_4
+Extract path function for assertion assert_main_path_5
+Extract path function for assertion assert_main_path_6
+Extract path function for assertion assert_main_path_7
+Extract path function for assertion assert_main_path_9
+Extract path function for assertion assert_main_path_10
+Extract path function for assertion assert_main_path_11
+Extract path function for assertion assert_main_path_13
+Extract path function for assertion assert_main_path_15
+Extract path function for assertion assert_main_path_17
+Extract path function for assertion assert_main_path_19
+Extract path function for assertion assert_main_path_23
+Extract path function for assertion assert_main_path_25
+Extract path function for assertion assert_main_path_26
+Extract path function for assertion assert_main_path_30
+Extract path function for assertion assert_main_path_31
+Extract path function for assertion assert_main_path_37
+Extract path function for assertion assert_main_path_40
+Extract path function for assertion assert_main_path_41
+Extract path function for assertion assert_main_path_42
+OH stats is requested, dumping stat file...
+Processed instructions number 1873
+{
+    "numberOfAssertCalls": 2,
+    "numberOfBlocksInFunctionsWithNoDG": 10,
+    "numberOfDataDependentInstructions": 433,
+    "numberOfHashVariables": 1,
+    "numberOfImplicitlyProtectedInstructions": 0,
+    "numberOfInstructionsInFilteredFunctions": 786,
+    "numberOfInstructionsInFunctionsWithNoDG": 513,
+    "numberOfNonHashableBlocks": 5,
+    "numberOfNonHashableInstructions": 25,
+    "numberOfOHProcessedInstr": 574,
+    "numberOfOtherUnprotectedInstructions": 1,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 3,
+    "numberOfProtectedArguments": 0,
+    "numberOfProtectedBlocks": 1,
+    "numberOfProtectedFunctions": 2,
+    "numberOfProtectedGuardArguments": 0,
+    "numberOfProtectedGuardInstructions": 0,
+    "numberOfProtectedInstructions": 4,
+    "numberOfSensitiveBlocks": 58,
+    "numberOfSensitiveFunctions": 2,
+    "numberOfShortRangeAssertCalls": 31,
+    "numberOfShortRangeImplicitlyProtectedInstructions": 0,
+    "numberOfShortRangeProtectedArguments": 0,
+    "numberOfShortRangeProtectedBlocks": 36,
+    "numberOfShortRangeProtectedGuardArguments": 0,
+    "numberOfShortRangeProtectedGuardInstructions": 0,
+    "numberOfShortRangeProtectedInstructions": 35,
+    "numberOfUnprotectedArgumentReachableInstructions": 16,
+    "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
+    "numberOfUnprotectedDataDependentBlocks": 0,
+    "numberOfUnprotectedDataDependentLoopBlocks": 16,
+    "numberOfUnprotectedGlobalReachableInstructions": 0,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
+    "numberOfUnprotectedInputDependentInstructions": 0,
+    "numberOfUnprotectedLoopInstructions": 57
+}
+ERR. processed 2 function, while filter count is 27
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 1.3445 seconds (1.3446 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0053 (100.0%)   0.0008 (100.0%)   0.0061 (100.0%)   0.0061 (100.0%)  Parse IR
-   0.0053 (100.0%)   0.0008 (100.0%)   0.0061 (100.0%)   0.0061 (100.0%)  Total
+   0.9003 ( 68.1%)   0.0035 ( 15.8%)   0.9038 ( 67.2%)   0.9038 ( 67.2%)  runs input dependency analysis
+   0.3656 ( 27.7%)   0.0133 ( 59.6%)   0.3790 ( 28.2%)   0.3789 ( 28.2%)  Instruments bitcode with hashing and logging functions
+   0.0373 (  2.8%)   0.0023 ( 10.4%)   0.0396 (  2.9%)   0.0395 (  2.9%)  Memory SSA
+   0.0089 (  0.7%)   0.0000 (  0.0%)   0.0089 (  0.7%)   0.0089 (  0.7%)  Bitcode Writer
+   0.0026 (  0.2%)   0.0002 (  1.0%)   0.0028 (  0.2%)   0.0029 (  0.2%)  Dominator Tree Construction
+   0.0025 (  0.2%)   0.0000 (  0.0%)   0.0025 (  0.2%)   0.0025 (  0.2%)  Module Verifier
+   0.0020 (  0.1%)   0.0002 (  0.7%)   0.0021 (  0.2%)   0.0021 (  0.2%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0013 (  6.0%)   0.0013 (  0.1%)   0.0013 (  0.1%)  Instruments bitcode with guards
+   0.0000 (  0.0%)   0.0009 (  4.2%)   0.0009 (  0.1%)   0.0009 (  0.1%)  Include functions in a given file in any transformation
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0009 (  0.1%)  Dominator Tree Construction
+   0.0008 (  0.1%)   0.0000 (  0.0%)   0.0008 (  0.1%)   0.0008 (  0.1%)  Post-Dominator Tree Construction
+   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0004 (  1.8%)   0.0004 (  0.0%)   0.0004 (  0.0%)  Call site information
+   0.0003 (  0.0%)   0.0000 (  0.0%)   0.0003 (  0.0%)   0.0003 (  0.0%)  runs indirect and virtual calls analysis
+   0.0002 (  0.0%)   0.0000 (  0.1%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Function Alias Analysis Results
+   0.0002 (  0.0%)   0.0000 (  0.1%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   1.3222 (100.0%)   0.0223 (100.0%)   1.3445 (100.0%)   1.3446 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0090 seconds (0.0090 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0090 (100.0%)   0.0090 (100.0%)   0.0090 (100.0%)  Parse IR
+   0.0090 (100.0%)   0.0090 (100.0%)   0.0090 (100.0%)  Total
 

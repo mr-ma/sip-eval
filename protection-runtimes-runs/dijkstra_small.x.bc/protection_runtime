@@ -1,14 +1,9 @@
 Running input dependency analysis pass
-Processing function print_path1
 Processing function print_path0
 Processing function print_path
 Processing function enqueue0
 Processing function enqueue1
-Processing function enqueue2
-Processing function enqueue3
-Processing function enqueue4
 Processing function enqueue
-Processing function dequeue0
 Processing function dequeue
 Processing function qcount
 Processing function dijkstra0
@@ -18,14 +13,12 @@ Processing function dijkstra
 Processing function main0
 Processing function main1
 Processing function main2
-Processing function main3
 Processing function main
 Finalizing main
-Finalizing main3
-Mark Input dependent function main3
 Finalizing main2
 Mark Input dependent function main2
 Finalizing main1
+Mark Input dependent function main1
 Finalizing main0
 Mark Input dependent function main0
 Finalizing dijkstra
@@ -40,40 +33,31 @@ Finalizing qcount
 Mark Input dependent function qcount
 Finalizing dequeue
 Mark Input dependent function dequeue
-Finalizing dequeue0
-Mark Input dependent function dequeue0
 Finalizing enqueue
 Mark Input dependent function enqueue
-Finalizing enqueue4
-Mark Input dependent function enqueue4
-Finalizing enqueue3
-Mark Input dependent function enqueue3
-Finalizing enqueue2
-Mark Input dependent function enqueue2
 Finalizing enqueue1
 Mark Input dependent function enqueue1
 Finalizing enqueue0
 Mark Input dependent function enqueue0
 Finalizing print_path
 Mark Input dependent function print_path
+Function call info finalization.
+    Function argument depends on global for which no input dep info is known. Global is: @.str = private unnamed_addr constant [4 x i8] c" %d\00", align 1
 Finalizing print_path0
 Mark Input dependent function print_path0
-Finalizing print_path1
-Mark Input dependent function print_path1
 Finished input dependency analysis
 
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/dijkstra_small.x.bc/10/0
-here!:enqueue
 here!:enqueue1
-here!:enqueue1
+here!:dijkstra0
+here!:dijkstra0
 got filter function names
 did not find print_path demangled to print_path
 did not find printf demangled to printf
 did not find fflush demangled to fflush
-Add filter function enqueue
-FunctionInfo. Adding function:enqueue
+did not find enqueue demangled to enqueue
 did not find malloc demangled to malloc
 did not find fprintf demangled to fprintf
 did not find exit demangled to exit
@@ -85,21 +69,16 @@ did not find main demangled to main
 did not find fopen demangled to fopen
 did not find __isoc99_fscanf demangled to __isoc99_fscanf
 did not find print_path0 demangled to print_path0
-did not find print_path1 demangled to print_path1
 did not find enqueue0 demangled to enqueue0
 Add filter function enqueue1
 FunctionInfo. Adding function:enqueue1
-did not find enqueue2 demangled to enqueue2
-did not find enqueue3 demangled to enqueue3
-did not find enqueue4 demangled to enqueue4
-did not find dequeue0 demangled to dequeue0
-did not find dijkstra0 demangled to dijkstra0
+Add filter function dijkstra0
+FunctionInfo. Adding function:dijkstra0
 did not find dijkstra1 demangled to dijkstra1
 did not find dijkstra2 demangled to dijkstra2
 did not find main0 demangled to main0
 did not find main1 demangled to main1
 did not find main2 demangled to main2
-did not find main3 demangled to main3
 Adding print_path other functions, ExtractedOnly mode uses other functions
 Adding enqueue other functions, ExtractedOnly mode uses other functions
 Adding dequeue other functions, ExtractedOnly mode uses other functions
@@ -107,44 +86,32 @@ Adding qcount other functions, ExtractedOnly mode uses other functions
 Adding dijkstra other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding print_path0 other functions, ExtractedOnly mode uses other functions
-Adding print_path1 other functions, ExtractedOnly mode uses other functions
 Adding enqueue0 other functions, ExtractedOnly mode uses other functions
 Adding enqueue1 other functions, ExtractedOnly mode uses other functions
-Adding enqueue2 other functions, ExtractedOnly mode uses other functions
-Adding enqueue3 other functions, ExtractedOnly mode uses other functions
-Adding enqueue4 other functions, ExtractedOnly mode uses other functions
-Adding dequeue0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra1 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra2 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
 Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:21
+Sensitive functions:0 other functions:15
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-main1
-main3
+main2
+print_path0
 dijkstra
 main
-enqueue3
-qcount
-enqueue4
-main2
-print_path
 dijkstra2
-enqueue2
-dequeue0
+qcount
 main0
-enqueue
-print_path1
-dijkstra0
-enqueue0
+dequeue
+print_path
 enqueue1
 dijkstra1
-dequeue
-print_path0
+main1
+dijkstra0
+enqueue
+enqueue0
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -169,10 +136,9 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 21 function, while filter count is 2
+ERR. processed 15 function, while filter count is 2
 Functions called in loop
 Function call numbers
-main1 -- 1
 main -- 0
 Insert hash computation
 Warning: Empty PHI
@@ -181,152 +147,105 @@ PSNodeType::PHI with ID 25
 Warning: Empty PHI
 PSNodeType::PHI with ID 26
   - operands: []
-No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !data_dep_instr !8 off: 0
+No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 off: 0
+No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
 Recieved filter functions 2
  Skipping function per FilterFunctionPass:print_path
-Collecting defining blocks for enqueue
+ Skipping function per FilterFunctionPass:enqueue
  Skipping function per FilterFunctionPass:dequeue
  Skipping function per FilterFunctionPass:qcount
  Skipping function per FilterFunctionPass:dijkstra
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:print_path
- Processing function:enqueue
-Short range hashing enabled.
-Processing path: entry  if.end  if.else  while.cond  while.body  
-After path modifications process path is empty
-Processing path: entry  if.end  if.else  
-After path modifications process path
-entry  if.end  if.else  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %10, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing path: entry  if.end  if.else  while.cond  while.end  
-After path modifications process path is empty
-Processing path: entry  if.end  if.else  while.end  
-After path modifications process path
-entry  if.end  if.else  while.end  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %11, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qLast = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Processing path: entry  if.end  if.end11  
-After path modifications process path
-entry  if.end  if.end11  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %12, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Processing path: entry  if.end  if.then6  
-After path modifications process path
-entry  if.end  if.then6  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %13, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue1(%struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Processing path: entry  if.then  
-After path modifications process path
-entry  if.then  
-Processing call instruction..
+ Skipping function per FilterFunctionPass:enqueue
  Skipping function per FilterFunctionPass:dequeue
  Skipping function per FilterFunctionPass:qcount
  Skipping function per FilterFunctionPass:dijkstra
  Skipping function per FilterFunctionPass:main
-Extract path function for assertion assert_enqueue_path_1
-Extract path function for assertion assert_enqueue_path_3
-Extract path function for assertion assert_enqueue_path_4
-Extract path function for assertion assert_enqueue_path_5
-Extract path function for assertion assert_enqueue_path_6
 OH stats is requested, dumping stat file...
-Processed instructions number 240
+Processed instructions number 281
 {
     "numberOfAssertCalls": 0,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 29,
+    "numberOfDataDependentInstructions": 0,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 190,
+    "numberOfInstructionsInFilteredFunctions": 281,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
     "numberOfNonHashableBlocks": 0,
-    "numberOfNonHashableInstructions": 10,
-    "numberOfOHProcessedInstr": 50,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedFunctions": 0,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
     "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 9,
-    "numberOfSensitiveFunctions": 1,
-    "numberOfShortRangeAssertCalls": 5,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 7,
+    "numberOfShortRangeProtectedBlocks": 0,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 4,
+    "numberOfShortRangeProtectedInstructions": 0,
     "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
     "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 7
+    "numberOfUnprotectedLoopInstructions": 0
 }
-ERR. processed 1 function, while filter count is 2
+ERR. processed 0 function, while filter count is 2
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.1995 seconds (0.1995 wall clock)
+  Total Execution Time: 0.1471 seconds (0.1472 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.1104 ( 55.4%)   0.0002 ( 47.3%)   0.1106 ( 55.4%)   0.1106 ( 55.4%)  runs input dependency analysis
-   0.0830 ( 41.7%)   0.0000 (  0.0%)   0.0830 ( 41.6%)   0.0830 ( 41.6%)  Instruments bitcode with hashing and logging functions
-   0.0011 (  0.6%)   0.0000 (  0.0%)   0.0011 (  0.6%)   0.0011 (  0.6%)  Memory SSA
-   0.0011 (  0.6%)   0.0000 (  0.0%)   0.0011 (  0.6%)   0.0011 (  0.6%)  Bitcode Writer
-   0.0009 (  0.5%)   0.0000 (  0.0%)   0.0009 (  0.5%)   0.0009 (  0.5%)  Instruments bitcode with guards
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Call site information
-   0.0003 (  0.2%)   0.0000 (  1.7%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Dominator Tree Construction
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Module Verifier
-   0.0003 (  0.2%)   0.0000 (  2.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Post-Dominator Tree Construction
+   0.0952 ( 65.4%)   0.0011 ( 76.0%)   0.0963 ( 65.5%)   0.0963 ( 65.5%)  runs input dependency analysis
+   0.0473 ( 32.5%)   0.0000 (  0.0%)   0.0473 ( 32.1%)   0.0473 ( 32.1%)  Instruments bitcode with hashing and logging functions
+   0.0009 (  0.6%)   0.0000 (  0.0%)   0.0009 (  0.6%)   0.0009 (  0.6%)  Instruments bitcode with guards
+   0.0008 (  0.6%)   0.0000 (  0.0%)   0.0008 (  0.6%)   0.0008 (  0.6%)  Bitcode Writer
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
    0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Include functions in a given file in any transformation
-   0.0001 (  0.1%)   0.0001 ( 31.2%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
-   0.0002 (  0.1%)   0.0000 (  1.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
-   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0002 (  0.1%)  Dominator Tree Construction
-   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  7.4%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  6.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  3.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0002 (  0.2%)   0.0000 (  2.7%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Post-Dominator Tree Construction
+   0.0002 (  0.1%)   0.0000 (  2.5%)   0.0002 (  0.1%)   0.0002 (  0.2%)  Dominator Tree Construction
+   0.0002 (  0.2%)   0.0000 (  0.0%)   0.0002 (  0.2%)   0.0002 (  0.2%)  Module Verifier
+   0.0002 (  0.1%)   0.0000 (  1.4%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
+   0.0000 (  0.0%)   0.0002 ( 12.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
+   0.0000 (  0.0%)   0.0000 (  2.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  1.9%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  1.3%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.1991 (100.0%)   0.0003 (100.0%)   0.1995 (100.0%)   0.1995 (100.0%)  Total
+   0.1456 (100.0%)   0.0015 (100.0%)   0.1471 (100.0%)   0.1472 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
   Total Execution Time: 0.0012 seconds (0.0012 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0006 (100.0%)   0.0006 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Parse IR
-   0.0006 (100.0%)   0.0006 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Total
+   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0012 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Parse IR
+   0.0012 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Total
 
 Running input dependency analysis pass
-Processing function print_path1
 Processing function print_path0
 Processing function print_path
 Processing function enqueue0
 Processing function enqueue1
-Processing function enqueue2
-Processing function enqueue3
-Processing function enqueue4
 Processing function enqueue
-Processing function dequeue0
 Processing function dequeue
 Processing function qcount
 Processing function dijkstra0
@@ -336,14 +255,12 @@ Processing function dijkstra
 Processing function main0
 Processing function main1
 Processing function main2
-Processing function main3
 Processing function main
 Finalizing main
-Finalizing main3
-Mark Input dependent function main3
 Finalizing main2
 Mark Input dependent function main2
 Finalizing main1
+Mark Input dependent function main1
 Finalizing main0
 Mark Input dependent function main0
 Finalizing dijkstra
@@ -358,26 +275,18 @@ Finalizing qcount
 Mark Input dependent function qcount
 Finalizing dequeue
 Mark Input dependent function dequeue
-Finalizing dequeue0
-Mark Input dependent function dequeue0
 Finalizing enqueue
 Mark Input dependent function enqueue
-Finalizing enqueue4
-Mark Input dependent function enqueue4
-Finalizing enqueue3
-Mark Input dependent function enqueue3
-Finalizing enqueue2
-Mark Input dependent function enqueue2
 Finalizing enqueue1
 Mark Input dependent function enqueue1
 Finalizing enqueue0
 Mark Input dependent function enqueue0
 Finalizing print_path
 Mark Input dependent function print_path
+Function call info finalization.
+    Function argument depends on global for which no input dep info is known. Global is: @.str = private unnamed_addr constant [4 x i8] c" %d\00", align 1
 Finalizing print_path0
 Mark Input dependent function print_path0
-Finalizing print_path1
-Mark Input dependent function print_path1
 Finished input dependency analysis
 
 In  mark function pass 
@@ -390,21 +299,15 @@ here!:qcount
 here!:dijkstra
 here!:main
 here!:print_path0
-here!:print_path1
 here!:enqueue0
 here!:enqueue1
-here!:enqueue2
-here!:enqueue3
-here!:enqueue4
-here!:dequeue0
 here!:dijkstra0
 here!:dijkstra1
 here!:dijkstra2
 here!:main0
 here!:main1
 here!:main2
-here!:main3
-here!:main3
+here!:main2
 got filter function names
 Add filter function print_path
 FunctionInfo. Adding function:print_path
@@ -428,20 +331,10 @@ did not find fopen demangled to fopen
 did not find __isoc99_fscanf demangled to __isoc99_fscanf
 Add filter function print_path0
 FunctionInfo. Adding function:print_path0
-Add filter function print_path1
-FunctionInfo. Adding function:print_path1
 Add filter function enqueue0
 FunctionInfo. Adding function:enqueue0
 Add filter function enqueue1
 FunctionInfo. Adding function:enqueue1
-Add filter function enqueue2
-FunctionInfo. Adding function:enqueue2
-Add filter function enqueue3
-FunctionInfo. Adding function:enqueue3
-Add filter function enqueue4
-FunctionInfo. Adding function:enqueue4
-Add filter function dequeue0
-FunctionInfo. Adding function:dequeue0
 Add filter function dijkstra0
 FunctionInfo. Adding function:dijkstra0
 Add filter function dijkstra1
@@ -454,8 +347,6 @@ Add filter function main1
 FunctionInfo. Adding function:main1
 Add filter function main2
 FunctionInfo. Adding function:main2
-Add filter function main3
-FunctionInfo. Adding function:main3
 Adding print_path other functions, ExtractedOnly mode uses other functions
 Adding enqueue other functions, ExtractedOnly mode uses other functions
 Adding dequeue other functions, ExtractedOnly mode uses other functions
@@ -463,44 +354,32 @@ Adding qcount other functions, ExtractedOnly mode uses other functions
 Adding dijkstra other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding print_path0 other functions, ExtractedOnly mode uses other functions
-Adding print_path1 other functions, ExtractedOnly mode uses other functions
 Adding enqueue0 other functions, ExtractedOnly mode uses other functions
 Adding enqueue1 other functions, ExtractedOnly mode uses other functions
-Adding enqueue2 other functions, ExtractedOnly mode uses other functions
-Adding enqueue3 other functions, ExtractedOnly mode uses other functions
-Adding enqueue4 other functions, ExtractedOnly mode uses other functions
-Adding dequeue0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra1 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra2 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
 Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:21
+Sensitive functions:0 other functions:15
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-main1
-main3
+main2
+print_path0
 dijkstra
 main
-enqueue3
-qcount
-enqueue4
-main2
-print_path
 dijkstra2
-enqueue2
-dequeue0
+qcount
 main0
-enqueue
-print_path1
-dijkstra0
-enqueue0
+dequeue
+print_path
 enqueue1
 dijkstra1
-dequeue
-print_path0
+main1
+dijkstra0
+enqueue
+enqueue0
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -527,7 +406,6 @@ SC stats is requested, dumping stat file...
 Recieved marked functions 0
 Functions called in loop
 Function call numbers
-main1 -- 1
 main -- 0
 Insert hash computation
 Warning: Empty PHI
@@ -536,14 +414,13 @@ PSNodeType::PHI with ID 25
 Warning: Empty PHI
 PSNodeType::PHI with ID 26
   - operands: []
-No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !data_dep_instr !8 off: 0
+No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 off: 0
+No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 21
+Recieved filter functions 15
 Collecting defining blocks for print_path
 Collecting defining blocks for enqueue
 Collecting defining blocks for dequeue
@@ -559,7 +436,7 @@ Processing path: entry  if.end
 After path modifications process path
 entry  if.end  
 Processing call instruction..
-Can't handle this operand   %chNode.addr = alloca i32, align 4, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @print_path1(i32* %chNode.addr), !input_indep_block !5, !control_dep_instr !7, !input_indep_instr !13, !data_indep_instr !10
+Can't handle this operand   %chNode.addr = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @print_path0(i32* %chNode.addr), !input_indep_block !5, !input_indep_instr !13, !data_indep_instr !11, !control_dep_instr !8
  Processing function:enqueue
 Short range hashing enabled.
 Processing path: entry  if.end  if.else  while.cond  while.body  
@@ -567,27 +444,18 @@ After path modifications process path is empty
 Processing path: entry  if.end  if.else  
 After path modifications process path
 entry  if.end  if.else  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %10, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
 Processing path: entry  if.end  if.else  while.cond  while.end  
 After path modifications process path is empty
 Processing path: entry  if.end  if.else  while.end  
 After path modifications process path
 entry  if.end  if.else  while.end  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %11, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qLast = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
 Processing path: entry  if.end  if.end11  
 After path modifications process path
 entry  if.end  if.end11  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %12, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
 Processing call instruction..
 Processing path: entry  if.end  if.then6  
 After path modifications process path
 entry  if.end  if.then6  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %13, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue1(%struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
 Processing path: entry  if.then  
 After path modifications process path
 entry  if.then  
@@ -613,7 +481,7 @@ After path modifications process path
 for.body  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !input_dep_instr !6, !control_dep_instr !7, !global_dep_instr !12, !data_indep_instr !10
+  br label %for.inc, !input_dep_instr !6, !data_indep_instr !10, !control_dep_instr !8, !global_dep_instr !12
 No oh has been applied in the path
 Processing path: entry  
 After path modifications process path
@@ -634,21 +502,21 @@ After path modifications process path
 for.body14  if.then20  if.then29  
 Hash path invariants only
 Invariants are
-  br label %if.end, !control_dep_instr !7, !data_indep_instr !10
-  call void @dijkstra0(), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+  br label %if.end, !data_indep_instr !10, !control_dep_instr !8
+  call void @dijkstra0(), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
 Processing call instruction..
 Processing path: entry  for.end  if.else  while.cond  while.body  
 After path modifications process path
 while.body  
 Hash path invariants only
 Invariants are
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+  br label %for.cond12, !data_indep_instr !10, !control_dep_instr !8
+  store i32 0, i32* @i, align 4, !data_indep_instr !10, !control_dep_instr !8
+  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
 Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
 Processing path: entry  for.cond  for.end  if.else  
 After path modifications process path is empty
 Processing path: entry  for.end  if.else  
@@ -659,19 +527,19 @@ After path modifications process path
 for.body14  if.then20  if.end  
 Hash path invariants only
 Invariants are
-  br label %if.end38, !control_dep_instr !7, !global_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %if.end38, !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8, !global_dep_instr !12
 Processing path: entry  for.end  if.else  while.cond  while.body  
 After path modifications process path
 while.body  
 Hash path invariants only
 Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
+  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+  store i32 0, i32* @i, align 4, !data_indep_instr !10, !control_dep_instr !8
+  br label %for.cond12, !data_indep_instr !10, !control_dep_instr !8
 Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
 Processing path: entry  for.cond  for.end  if.else  
 After path modifications process path is empty
 Processing path: entry  for.end  if.else  
@@ -687,13 +555,13 @@ After path modifications process path
 while.body  
 Hash path invariants only
 Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
+  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+  store i32 0, i32* @i, align 4, !data_indep_instr !10, !control_dep_instr !8
+  br label %for.cond12, !data_indep_instr !10, !control_dep_instr !8
 Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
 Processing path: entry  for.cond  for.end  if.else  
 After path modifications process path is empty
 Processing path: entry  for.end  if.else  
@@ -704,19 +572,19 @@ After path modifications process path
 for.body14  if.end38  
 Hash path invariants only
 Invariants are
-  br label %for.inc39, !control_dep_instr !7, !global_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %for.inc39, !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8, !global_dep_instr !12
 Processing path: entry  for.end  if.else  while.cond  while.body  
 After path modifications process path
 while.body  
 Hash path invariants only
 Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
+  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+  store i32 0, i32* @i, align 4, !data_indep_instr !10, !control_dep_instr !8
+  br label %for.cond12, !data_indep_instr !10, !control_dep_instr !8
 Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
 Processing path: entry  for.cond  for.end  if.else  
 After path modifications process path is empty
 Processing path: entry  for.end  if.else  
@@ -729,13 +597,13 @@ After path modifications process path
 while.body  
 Hash path invariants only
 Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
+  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+  store i32 0, i32* @i, align 4, !data_indep_instr !10, !control_dep_instr !8
+  br label %for.cond12, !data_indep_instr !10, !control_dep_instr !8
 Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
+Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
 Processing path: entry  for.cond  for.end  if.else  
 After path modifications process path is empty
 Processing path: entry  for.end  if.else  
@@ -749,7 +617,7 @@ Processing path: entry  for.end  if.else  while.end
 After path modifications process path
 entry  for.end  if.else  while.end  
 Processing call instruction..
-Can't handle this operand   %chEnd.addr = alloca i32, align 4, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @dijkstra2(i32* %chEnd.addr), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+Can't handle this operand   %chEnd.addr = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 of the call   call void @dijkstra2(i32* %chEnd.addr), !data_indep_instr !10, !input_dep_block !13, !control_dep_instr !8
  Processing function:main
 Short range hashing enabled.
 Processing path: entry  if.then  
@@ -762,7 +630,7 @@ After path modifications process path
 for.body6  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !control_dep_instr !12, !data_indep_instr !10
+  br label %for.inc, !data_indep_instr !9, !control_dep_instr !12
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
@@ -771,8 +639,8 @@ After path modifications process path
 for.body  
 Hash path invariants only
 Invariants are
-  br label %for.cond4, !control_dep_instr !12, !data_indep_instr !10
-  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %for.cond4, !data_indep_instr !9, !control_dep_instr !12
+  store i32 0, i32* %j, align 4, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing path: entry  if.end  
@@ -782,10 +650,6 @@ Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(%struct._IO_FILE** %fp, i8*** %argv.addr), !input_indep_block !5, !input_indep_instr !9, !data_indep_instr !10
-Can't handle this operand   %argv.addr = alloca i8**, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(%struct._IO_FILE** %fp, i8*** %argv.addr), !input_indep_block !5, !input_indep_instr !9, !data_indep_instr !10
-Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 No short range oh has been applied in the path
 Processing path: entry  if.end  for.cond4  
@@ -795,9 +659,9 @@ After path modifications process path
 for.body  for.end  
 Hash path invariants only
 Invariants are
-  br label %for.inc11, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-  br label %for.cond4, !control_dep_instr !12, !data_indep_instr !10
-  store i32 0, i32* %j, align 4, !control_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
+  br label %for.inc11, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
+  br label %for.cond4, !data_indep_instr !9, !control_dep_instr !12
+  store i32 0, i32* %j, align 4, !data_indep_instr !9, !input_dep_block !11, !control_dep_instr !12
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing path: entry  if.end  
@@ -814,13 +678,13 @@ After path modifications process path
 for.body16  
 Hash path invariants only
 Invariants are
-  br label %for.inc18, !control_dep_instr !12, !data_indep_instr !10
-  call void @main3(i32* %j, i32* %i), !control_dep_instr !12, !data_indep_instr !10
+  br label %for.inc18, !data_indep_instr !9, !control_dep_instr !12
+  call void @main2(i32* %j, i32* %i), !data_indep_instr !9, !control_dep_instr !12
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %j = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i32* %j, i32* %i), !control_dep_instr !12, !data_indep_instr !10
-Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i32* %j, i32* %i), !control_dep_instr !12, !data_indep_instr !10
+Can't handle this operand   %j = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i32* %j, i32* %i), !data_indep_instr !9, !control_dep_instr !12
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i32* %j, i32* %i), !data_indep_instr !9, !control_dep_instr !12
 No oh has been applied in the path
 Processing path: entry  if.end  for.cond  for.end13  
 After path modifications process path is empty
@@ -881,18 +745,18 @@ Extract path function for assertion assert_enqueue_path_6
 Extract path function for assertion assert_dequeue_path_0
 Extract path function for assertion assert_dequeue_path_1
 OH stats is requested, dumping stat file...
-Processed instructions number 239
+Processed instructions number 280
 {
-    "numberOfAssertCalls": 3,
+    "numberOfAssertCalls": 1,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 97,
+    "numberOfDataDependentInstructions": 138,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
     "numberOfInstructionsInFilteredFunctions": 0,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
     "numberOfNonHashableBlocks": 8,
-    "numberOfNonHashableInstructions": 32,
-    "numberOfOHProcessedInstr": 239,
+    "numberOfNonHashableInstructions": 28,
+    "numberOfOHProcessedInstr": 280,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 13,
     "numberOfProtectedArguments": 0,
@@ -914,62 +778,57 @@ Processed instructions number 239
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
     "numberOfUnprotectedDataDependentLoopBlocks": 13,
-    "numberOfUnprotectedGlobalReachableInstructions": 6,
+    "numberOfUnprotectedGlobalReachableInstructions": 7,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 2,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 57
+    "numberOfUnprotectedLoopInstructions": 60
 }
-ERR. processed 6 function, while filter count is 21
+ERR. processed 6 function, while filter count is 15
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.2631 seconds (0.2630 wall clock)
+  Total Execution Time: 0.2180 seconds (0.2179 wall clock)
 
-   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.1302 ( 49.5%)   0.1302 ( 49.5%)   0.1302 ( 49.5%)  Instruments bitcode with hashing and logging functions
-   0.1139 ( 43.3%)   0.1139 ( 43.3%)   0.1139 ( 43.3%)  runs input dependency analysis
-   0.0098 (  3.7%)   0.0098 (  3.7%)   0.0098 (  3.7%)  Memory SSA
-   0.0021 (  0.8%)   0.0021 (  0.8%)   0.0021 (  0.8%)  Bitcode Writer
-   0.0014 (  0.5%)   0.0014 (  0.5%)   0.0014 (  0.5%)  Dominator Tree Construction
-   0.0012 (  0.5%)   0.0012 (  0.5%)   0.0012 (  0.5%)  Natural Loop Information
-   0.0010 (  0.4%)   0.0010 (  0.4%)   0.0010 (  0.4%)  Instruments bitcode with guards
-   0.0006 (  0.2%)   0.0006 (  0.2%)   0.0006 (  0.2%)  Include functions in a given file in any transformation
-   0.0006 (  0.2%)   0.0006 (  0.2%)   0.0006 (  0.2%)  Module Verifier
-   0.0005 (  0.2%)   0.0005 (  0.2%)   0.0005 (  0.2%)  Call site information
-   0.0003 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.1%)  runs indirect and virtual calls analysis
-   0.0003 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Post-Dominator Tree Construction
-   0.0003 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Dominator Tree Construction
-   0.0003 (  0.1%)   0.0003 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
-   0.0002 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Function Alias Analysis Results
-   0.0002 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Basic Alias Analysis (stateless AA impl)
-   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
-   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.2631 (100.0%)   0.2631 (100.0%)   0.2630 (100.0%)  Total
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0933 ( 44.5%)   0.0081 ( 96.3%)   0.1014 ( 46.5%)   0.1014 ( 46.5%)  Instruments bitcode with hashing and logging functions
+   0.0972 ( 46.4%)   0.0000 (  0.0%)   0.0972 ( 44.6%)   0.0972 ( 44.6%)  runs input dependency analysis
+   0.0105 (  5.0%)   0.0003 (  3.2%)   0.0108 (  4.9%)   0.0107 (  4.9%)  Memory SSA
+   0.0016 (  0.8%)   0.0000 (  0.0%)   0.0016 (  0.8%)   0.0016 (  0.8%)  Bitcode Writer
+   0.0015 (  0.7%)   0.0000 (  0.1%)   0.0015 (  0.7%)   0.0015 (  0.7%)  Dominator Tree Construction
+   0.0013 (  0.6%)   0.0000 (  0.3%)   0.0013 (  0.6%)   0.0013 (  0.6%)  Natural Loop Information
+   0.0011 (  0.5%)   0.0000 (  0.0%)   0.0011 (  0.5%)   0.0011 (  0.5%)  Instruments bitcode with guards
+   0.0006 (  0.3%)   0.0000 (  0.0%)   0.0006 (  0.3%)   0.0006 (  0.3%)  Module Verifier
+   0.0005 (  0.2%)   0.0000 (  0.0%)   0.0005 (  0.2%)   0.0005 (  0.2%)  Include functions in a given file in any transformation
+   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  runs indirect and virtual calls analysis
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
+   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Post-Dominator Tree Construction
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Dominator Tree Construction
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Function Alias Analysis Results
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Basic Alias Analysis (stateless AA impl)
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.2096 (100.0%)   0.0084 (100.0%)   0.2180 (100.0%)   0.2179 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0014 seconds (0.0014 wall clock)
+  Total Execution Time: 0.0011 seconds (0.0011 wall clock)
 
    ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0014 (100.0%)   0.0014 (100.0%)   0.0014 (100.0%)  Parse IR
-   0.0014 (100.0%)   0.0014 (100.0%)   0.0014 (100.0%)  Total
+   0.0011 (100.0%)   0.0011 (100.0%)   0.0011 (100.0%)  Parse IR
+   0.0011 (100.0%)   0.0011 (100.0%)   0.0011 (100.0%)  Total
 
 Running input dependency analysis pass
-Processing function print_path1
 Processing function print_path0
 Processing function print_path
 Processing function enqueue0
 Processing function enqueue1
-Processing function enqueue2
-Processing function enqueue3
-Processing function enqueue4
 Processing function enqueue
-Processing function dequeue0
 Processing function dequeue
 Processing function qcount
 Processing function dijkstra0
@@ -979,14 +838,12 @@ Processing function dijkstra
 Processing function main0
 Processing function main1
 Processing function main2
-Processing function main3
 Processing function main
 Finalizing main
-Finalizing main3
-Mark Input dependent function main3
 Finalizing main2
 Mark Input dependent function main2
 Finalizing main1
+Mark Input dependent function main1
 Finalizing main0
 Mark Input dependent function main0
 Finalizing dijkstra
@@ -1001,43 +858,33 @@ Finalizing qcount
 Mark Input dependent function qcount
 Finalizing dequeue
 Mark Input dependent function dequeue
-Finalizing dequeue0
-Mark Input dependent function dequeue0
 Finalizing enqueue
 Mark Input dependent function enqueue
-Finalizing enqueue4
-Mark Input dependent function enqueue4
-Finalizing enqueue3
-Mark Input dependent function enqueue3
-Finalizing enqueue2
-Mark Input dependent function enqueue2
 Finalizing enqueue1
 Mark Input dependent function enqueue1
 Finalizing enqueue0
 Mark Input dependent function enqueue0
 Finalizing print_path
 Mark Input dependent function print_path
+Function call info finalization.
+    Function argument depends on global for which no input dep info is known. Global is: @.str = private unnamed_addr constant [4 x i8] c" %d\00", align 1
 Finalizing print_path0
 Mark Input dependent function print_path0
-Finalizing print_path1
-Mark Input dependent function print_path1
 Finished input dependency analysis
 
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/dijkstra_small.x.bc/25/0
-here!:enqueue
 here!:enqueue1
-here!:main1
-here!:dijkstra1
-here!:main0
-here!:main0
+here!:dijkstra0
+here!:main2
+here!:dijkstra2
+here!:dijkstra2
 got filter function names
 did not find print_path demangled to print_path
 did not find printf demangled to printf
 did not find fflush demangled to fflush
-Add filter function enqueue
-FunctionInfo. Adding function:enqueue
+did not find enqueue demangled to enqueue
 did not find malloc demangled to malloc
 did not find fprintf demangled to fprintf
 did not find exit demangled to exit
@@ -1049,24 +896,18 @@ did not find main demangled to main
 did not find fopen demangled to fopen
 did not find __isoc99_fscanf demangled to __isoc99_fscanf
 did not find print_path0 demangled to print_path0
-did not find print_path1 demangled to print_path1
 did not find enqueue0 demangled to enqueue0
 Add filter function enqueue1
 FunctionInfo. Adding function:enqueue1
-did not find enqueue2 demangled to enqueue2
-did not find enqueue3 demangled to enqueue3
-did not find enqueue4 demangled to enqueue4
-did not find dequeue0 demangled to dequeue0
-did not find dijkstra0 demangled to dijkstra0
-Add filter function dijkstra1
-FunctionInfo. Adding function:dijkstra1
-did not find dijkstra2 demangled to dijkstra2
-Add filter function main0
-FunctionInfo. Adding function:main0
-Add filter function main1
-FunctionInfo. Adding function:main1
-did not find main2 demangled to main2
-did not find main3 demangled to main3
+Add filter function dijkstra0
+FunctionInfo. Adding function:dijkstra0
+did not find dijkstra1 demangled to dijkstra1
+Add filter function dijkstra2
+FunctionInfo. Adding function:dijkstra2
+did not find main0 demangled to main0
+did not find main1 demangled to main1
+Add filter function main2
+FunctionInfo. Adding function:main2
 Adding print_path other functions, ExtractedOnly mode uses other functions
 Adding enqueue other functions, ExtractedOnly mode uses other functions
 Adding dequeue other functions, ExtractedOnly mode uses other functions
@@ -1074,44 +915,32 @@ Adding qcount other functions, ExtractedOnly mode uses other functions
 Adding dijkstra other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding print_path0 other functions, ExtractedOnly mode uses other functions
-Adding print_path1 other functions, ExtractedOnly mode uses other functions
 Adding enqueue0 other functions, ExtractedOnly mode uses other functions
 Adding enqueue1 other functions, ExtractedOnly mode uses other functions
-Adding enqueue2 other functions, ExtractedOnly mode uses other functions
-Adding enqueue3 other functions, ExtractedOnly mode uses other functions
-Adding enqueue4 other functions, ExtractedOnly mode uses other functions
-Adding dequeue0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra1 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra2 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
 Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:21
+Sensitive functions:0 other functions:15
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-main1
-main3
+main2
+print_path0
 dijkstra
 main
-enqueue3
-qcount
-enqueue4
-main2
-print_path
 dijkstra2
-enqueue2
-dequeue0
+qcount
 main0
-enqueue
-print_path1
-dijkstra0
-enqueue0
+dequeue
+print_path
 enqueue1
 dijkstra1
-dequeue
-print_path0
+main1
+dijkstra0
+enqueue
+enqueue0
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -1136,10 +965,9 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 21 function, while filter count is 5
+ERR. processed 15 function, while filter count is 4
 Functions called in loop
 Function call numbers
-main1 -- 1
 main -- 0
 Insert hash computation
 Warning: Empty PHI
@@ -1148,152 +976,105 @@ PSNodeType::PHI with ID 25
 Warning: Empty PHI
 PSNodeType::PHI with ID 26
   - operands: []
-No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
+No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 off: 0
+No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !data_dep_instr !8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 5
+Recieved filter functions 4
  Skipping function per FilterFunctionPass:print_path
-Collecting defining blocks for enqueue
+ Skipping function per FilterFunctionPass:enqueue
  Skipping function per FilterFunctionPass:dequeue
  Skipping function per FilterFunctionPass:qcount
  Skipping function per FilterFunctionPass:dijkstra
  Skipping function per FilterFunctionPass:main
  Skipping function per FilterFunctionPass:print_path
- Processing function:enqueue
-Short range hashing enabled.
-Processing path: entry  if.end  if.else  while.cond  while.body  
-After path modifications process path is empty
-Processing path: entry  if.end  if.else  
-After path modifications process path
-entry  if.end  if.else  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %10, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing path: entry  if.end  if.else  while.cond  while.end  
-After path modifications process path is empty
-Processing path: entry  if.end  if.else  while.end  
-After path modifications process path
-entry  if.end  if.else  while.end  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %11, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qLast = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Processing path: entry  if.end  if.end11  
-After path modifications process path
-entry  if.end  if.end11  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %12, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Processing path: entry  if.end  if.then6  
-After path modifications process path
-entry  if.end  if.then6  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %13, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue1(%struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Processing path: entry  if.then  
-After path modifications process path
-entry  if.then  
-Processing call instruction..
+ Skipping function per FilterFunctionPass:enqueue
  Skipping function per FilterFunctionPass:dequeue
  Skipping function per FilterFunctionPass:qcount
  Skipping function per FilterFunctionPass:dijkstra
  Skipping function per FilterFunctionPass:main
-Extract path function for assertion assert_enqueue_path_1
-Extract path function for assertion assert_enqueue_path_3
-Extract path function for assertion assert_enqueue_path_4
-Extract path function for assertion assert_enqueue_path_5
-Extract path function for assertion assert_enqueue_path_6
 OH stats is requested, dumping stat file...
-Processed instructions number 240
+Processed instructions number 281
 {
     "numberOfAssertCalls": 0,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 29,
+    "numberOfDataDependentInstructions": 0,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 190,
+    "numberOfInstructionsInFilteredFunctions": 281,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
     "numberOfNonHashableBlocks": 0,
-    "numberOfNonHashableInstructions": 10,
-    "numberOfOHProcessedInstr": 50,
+    "numberOfNonHashableInstructions": 0,
+    "numberOfOHProcessedInstr": 0,
     "numberOfOtherUnprotectedInstructions": 0,
     "numberOfOtherUnprotectedLoopVariantInstructions": 0,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 0,
-    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedFunctions": 0,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
     "numberOfProtectedInstructions": 0,
-    "numberOfSensitiveBlocks": 9,
-    "numberOfSensitiveFunctions": 1,
-    "numberOfShortRangeAssertCalls": 5,
+    "numberOfSensitiveBlocks": 0,
+    "numberOfSensitiveFunctions": 0,
+    "numberOfShortRangeAssertCalls": 0,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 7,
+    "numberOfShortRangeProtectedBlocks": 0,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 4,
+    "numberOfShortRangeProtectedInstructions": 0,
     "numberOfUnprotectedArgumentReachableInstructions": 0,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 2,
+    "numberOfUnprotectedDataDependentLoopBlocks": 0,
     "numberOfUnprotectedGlobalReachableInstructions": 0,
     "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 7
+    "numberOfUnprotectedLoopInstructions": 0
 }
-ERR. processed 1 function, while filter count is 5
+ERR. processed 0 function, while filter count is 4
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.2017 seconds (0.2018 wall clock)
+  Total Execution Time: 0.1491 seconds (0.1491 wall clock)
 
-   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.1115 ( 56.3%)   0.0000 (  0.0%)   0.1115 ( 55.2%)   0.1115 ( 55.2%)  runs input dependency analysis
-   0.0804 ( 40.6%)   0.0037 ( 96.8%)   0.0841 ( 41.7%)   0.0841 ( 41.7%)  Instruments bitcode with hashing and logging functions
-   0.0012 (  0.6%)   0.0000 (  0.0%)   0.0012 (  0.6%)   0.0012 (  0.6%)  Instruments bitcode with guards
-   0.0011 (  0.6%)   0.0000 (  0.0%)   0.0011 (  0.5%)   0.0011 (  0.5%)  Bitcode Writer
-   0.0011 (  0.5%)   0.0000 (  0.1%)   0.0011 (  0.5%)   0.0010 (  0.5%)  Memory SSA
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Call site information
-   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Include functions in a given file in any transformation
-   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Module Verifier
-   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Dominator Tree Construction
-   0.0002 (  0.1%)   0.0001 (  2.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  runs indirect and virtual calls analysis
-   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Post-Dominator Tree Construction
-   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
-   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Dominator Tree Construction
-   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0000 (  0.4%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.4%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Function Alias Analysis Results
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Basic Alias Analysis (stateless AA impl)
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.1979 (100.0%)   0.0038 (100.0%)   0.2017 (100.0%)   0.2018 (100.0%)  Total
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0969 ( 65.0%)   0.0969 ( 65.0%)   0.0970 ( 65.0%)  runs input dependency analysis
+   0.0486 ( 32.6%)   0.0486 ( 32.6%)   0.0486 ( 32.6%)  Instruments bitcode with hashing and logging functions
+   0.0008 (  0.6%)   0.0008 (  0.6%)   0.0008 (  0.6%)  Bitcode Writer
+   0.0008 (  0.5%)   0.0008 (  0.5%)   0.0008 (  0.5%)  Instruments bitcode with guards
+   0.0003 (  0.2%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
+   0.0003 (  0.2%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Include functions in a given file in any transformation
+   0.0003 (  0.2%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Module Verifier
+   0.0003 (  0.2%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Post-Dominator Tree Construction
+   0.0002 (  0.2%)   0.0002 (  0.2%)   0.0003 (  0.2%)  Dominator Tree Construction
+   0.0002 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
+   0.0002 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.1491 (100.0%)   0.1491 (100.0%)   0.1491 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0020 seconds (0.0020 wall clock)
+  Total Execution Time: 0.0010 seconds (0.0010 wall clock)
 
    ---User Time---   --User+System--   ---Wall Time---  --- Name ---
-   0.0020 (100.0%)   0.0020 (100.0%)   0.0020 (100.0%)  Parse IR
-   0.0020 (100.0%)   0.0020 (100.0%)   0.0020 (100.0%)  Total
+   0.0010 (100.0%)   0.0010 (100.0%)   0.0010 (100.0%)  Parse IR
+   0.0010 (100.0%)   0.0010 (100.0%)   0.0010 (100.0%)  Total
 
 Running input dependency analysis pass
-Processing function print_path1
 Processing function print_path0
 Processing function print_path
 Processing function enqueue0
 Processing function enqueue1
-Processing function enqueue2
-Processing function enqueue3
-Processing function enqueue4
 Processing function enqueue
-Processing function dequeue0
 Processing function dequeue
 Processing function qcount
 Processing function dijkstra0
@@ -1303,14 +1084,12 @@ Processing function dijkstra
 Processing function main0
 Processing function main1
 Processing function main2
-Processing function main3
 Processing function main
 Finalizing main
-Finalizing main3
-Mark Input dependent function main3
 Finalizing main2
 Mark Input dependent function main2
 Finalizing main1
+Mark Input dependent function main1
 Finalizing main0
 Mark Input dependent function main0
 Finalizing dijkstra
@@ -1325,43 +1104,32 @@ Finalizing qcount
 Mark Input dependent function qcount
 Finalizing dequeue
 Mark Input dependent function dequeue
-Finalizing dequeue0
-Mark Input dependent function dequeue0
 Finalizing enqueue
 Mark Input dependent function enqueue
-Finalizing enqueue4
-Mark Input dependent function enqueue4
-Finalizing enqueue3
-Mark Input dependent function enqueue3
-Finalizing enqueue2
-Mark Input dependent function enqueue2
 Finalizing enqueue1
 Mark Input dependent function enqueue1
 Finalizing enqueue0
 Mark Input dependent function enqueue0
 Finalizing print_path
 Mark Input dependent function print_path
+Function call info finalization.
+    Function argument depends on global for which no input dep info is known. Global is: @.str = private unnamed_addr constant [4 x i8] c" %d\00", align 1
 Finalizing print_path0
 Mark Input dependent function print_path0
-Finalizing print_path1
-Mark Input dependent function print_path1
 Finished input dependency analysis
 
 In  mark function pass 
 In  filter function pass 
 Filter file:/home/anahitik/SIP/sip-eval/combination/dijkstra_small.x.bc/50/0
-here!:enqueue
 here!:enqueue1
-here!:main1
-here!:dijkstra1
-here!:main0
+here!:dijkstra0
+here!:main2
 here!:dijkstra2
-here!:enqueue4
-here!:main
+here!:main1
+here!:enqueue
 here!:dequeue
-here!:enqueue3
-here!:dijkstra
-here!:dijkstra
+here!:main
+here!:main
 got filter function names
 did not find print_path demangled to print_path
 did not find printf demangled to printf
@@ -1375,34 +1143,25 @@ Add filter function dequeue
 FunctionInfo. Adding function:dequeue
 did not find free demangled to free
 did not find qcount demangled to qcount
-Add filter function dijkstra
-FunctionInfo. Adding function:dijkstra
+did not find dijkstra demangled to dijkstra
 Add filter function main
 FunctionInfo. Adding function:main
 did not find fopen demangled to fopen
 did not find __isoc99_fscanf demangled to __isoc99_fscanf
 did not find print_path0 demangled to print_path0
-did not find print_path1 demangled to print_path1
 did not find enqueue0 demangled to enqueue0
 Add filter function enqueue1
 FunctionInfo. Adding function:enqueue1
-did not find enqueue2 demangled to enqueue2
-Add filter function enqueue3
-FunctionInfo. Adding function:enqueue3
-Add filter function enqueue4
-FunctionInfo. Adding function:enqueue4
-did not find dequeue0 demangled to dequeue0
-did not find dijkstra0 demangled to dijkstra0
-Add filter function dijkstra1
-FunctionInfo. Adding function:dijkstra1
+Add filter function dijkstra0
+FunctionInfo. Adding function:dijkstra0
+did not find dijkstra1 demangled to dijkstra1
 Add filter function dijkstra2
 FunctionInfo. Adding function:dijkstra2
-Add filter function main0
-FunctionInfo. Adding function:main0
+did not find main0 demangled to main0
 Add filter function main1
 FunctionInfo. Adding function:main1
-did not find main2 demangled to main2
-did not find main3 demangled to main3
+Add filter function main2
+FunctionInfo. Adding function:main2
 Adding print_path other functions, ExtractedOnly mode uses other functions
 Adding enqueue other functions, ExtractedOnly mode uses other functions
 Adding dequeue other functions, ExtractedOnly mode uses other functions
@@ -1410,44 +1169,32 @@ Adding qcount other functions, ExtractedOnly mode uses other functions
 Adding dijkstra other functions, ExtractedOnly mode uses other functions
 Adding main other functions, ExtractedOnly mode uses other functions
 Adding print_path0 other functions, ExtractedOnly mode uses other functions
-Adding print_path1 other functions, ExtractedOnly mode uses other functions
 Adding enqueue0 other functions, ExtractedOnly mode uses other functions
 Adding enqueue1 other functions, ExtractedOnly mode uses other functions
-Adding enqueue2 other functions, ExtractedOnly mode uses other functions
-Adding enqueue3 other functions, ExtractedOnly mode uses other functions
-Adding enqueue4 other functions, ExtractedOnly mode uses other functions
-Adding dequeue0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra0 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra1 other functions, ExtractedOnly mode uses other functions
 Adding dijkstra2 other functions, ExtractedOnly mode uses other functions
 Adding main0 other functions, ExtractedOnly mode uses other functions
 Adding main1 other functions, ExtractedOnly mode uses other functions
 Adding main2 other functions, ExtractedOnly mode uses other functions
-Adding main3 other functions, ExtractedOnly mode uses other functions
-Sensitive functions:0 other functions:21
+Sensitive functions:0 other functions:15
 DesiredConnectivity is :1
 Other functions to be fed to the network of checkers
-main1
-main3
+main2
+print_path0
 dijkstra
 main
-enqueue3
-qcount
-enqueue4
-main2
-print_path
 dijkstra2
-enqueue2
-dequeue0
+qcount
 main0
-enqueue
-print_path1
-dijkstra0
-enqueue0
+dequeue
+print_path
 enqueue1
 dijkstra1
-dequeue
-print_path0
+main1
+dijkstra0
+enqueue
+enqueue0
 ***
 Sensitive functions to be fed to the network of checkers
 ***
@@ -1472,10 +1219,9 @@ SC stats is requested, dumping stat file...
     "stdConnectivity": -nan.0
 }
 Recieved marked functions 0
-ERR. processed 21 function, while filter count is 11
+ERR. processed 15 function, while filter count is 8
 Functions called in loop
 Function call numbers
-main1 -- 1
 main -- 0
 Insert hash computation
 Warning: Empty PHI
@@ -1484,19 +1230,18 @@ PSNodeType::PHI with ID 25
 Warning: Empty PHI
 PSNodeType::PHI with ID 26
   - operands: []
-No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 off: 0
-No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !control_dep_instr !8, !data_dep_instr !9 off: 0
+No reaching definition for:   %retval = alloca i32, align 4, !input_indep_block !5, !input_dep_instr !6, !data_dep_instr !7, !control_dep_instr !8 off: 0
+No reaching definition for: @stdout = external global %struct._IO_FILE*, align 8 in:   %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %2), !input_dep_instr !7, !data_dep_instr !8, !control_dep_instr !9 off: 0
 No reaching definition for: @stderr = external global %struct._IO_FILE*, align 8 off: 0
-No reaching definition for:   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 in:   %fp.el = alloca %struct._IO_FILE*, !input_dep_instr !7, !data_dep_instr !8 off: 0
 No tags were supplied to be skipped! 
 'guard' metadata was found in the input bitcode
 Recieved marked functions 0
-Recieved filter functions 11
+Recieved filter functions 8
  Skipping function per FilterFunctionPass:print_path
 Collecting defining blocks for enqueue
 Collecting defining blocks for dequeue
  Skipping function per FilterFunctionPass:qcount
-Collecting defining blocks for dijkstra
+ Skipping function per FilterFunctionPass:dijkstra
 Collecting defining blocks for main
  Skipping function per FilterFunctionPass:print_path
  Processing function:enqueue
@@ -1506,27 +1251,18 @@ After path modifications process path is empty
 Processing path: entry  if.end  if.else  
 After path modifications process path
 entry  if.end  if.else  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %10, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
 Processing path: entry  if.end  if.else  while.cond  while.end  
 After path modifications process path is empty
 Processing path: entry  if.end  if.else  while.end  
 After path modifications process path
 entry  if.end  if.else  while.end  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %11, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qLast = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue3(%struct._QITEM** %qLast, %struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
 Processing path: entry  if.end  if.end11  
 After path modifications process path
 entry  if.end  if.end11  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %12, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
 Processing call instruction..
 Processing path: entry  if.end  if.then6  
 After path modifications process path
 entry  if.end  if.then6  
-Non numeric pointers (int and float) are skipped:  %qNext = getelementptr inbounds %struct._QITEM, %struct._QITEM* %13, i32 0, i32 3, !control_dep_instr !7, !data_dep_instr !8 %struct._QITEM*
-Processing call instruction..
-Can't handle this operand   %qNew = alloca %struct._QITEM*, align 8, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @enqueue1(%struct._QITEM** %qNew), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !11
 Processing path: entry  if.then  
 After path modifications process path
 entry  if.then  
@@ -1540,150 +1276,7 @@ Processing path: entry  if.end
 After path modifications process path
 entry  if.end  
  Skipping function per FilterFunctionPass:qcount
- Processing function:dijkstra
-Short range hashing enabled.
-Processing path: entry  for.cond  for.body  for.inc  
-After path modifications process path
-for.body  
-Hash path invariants only
-Invariants are
-  br label %for.inc, !input_dep_instr !6, !control_dep_instr !7, !global_dep_instr !12, !data_indep_instr !10
-No oh has been applied in the path
-Processing path: entry  
-After path modifications process path
-entry  
-No oh has been applied in the path
-Processing path: entry  for.cond  for.end  if.then  
-After path modifications process path is empty
-Processing path: entry  for.end  if.then  
-After path modifications process path
-entry  for.end  if.then  
-Processing path: entry  for.cond  for.end  if.end48  
-After path modifications process path is empty
-Processing path: entry  for.end  if.end48  
-After path modifications process path
-entry  for.end  if.end48  
-Processing path: entry  for.end  if.else  for.cond12  for.body14  if.then20  if.then29  
-After path modifications process path
-for.body14  if.then20  if.then29  
-Hash path invariants only
-Invariants are
-  br label %if.end, !control_dep_instr !7, !data_indep_instr !10
-  call void @dijkstra0(), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Processing call instruction..
-Processing path: entry  for.end  if.else  while.cond  while.body  
-After path modifications process path
-while.body  
-Hash path invariants only
-Invariants are
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  for.cond  for.end  if.else  
-After path modifications process path is empty
-Processing path: entry  for.end  if.else  
-After path modifications process path
-entry  for.end  if.else  
-Processing path: entry  for.end  if.else  for.cond12  for.body14  if.then20  if.end  
-After path modifications process path
-for.body14  if.then20  if.end  
-Hash path invariants only
-Invariants are
-  br label %if.end38, !control_dep_instr !7, !global_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  for.end  if.else  while.cond  while.body  
-After path modifications process path
-while.body  
-Hash path invariants only
-Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
-Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  for.cond  for.end  if.else  
-After path modifications process path is empty
-Processing path: entry  for.end  if.else  
-After path modifications process path
-entry  for.end  if.else  
-Processing path: entry  for.end  if.else  for.cond12  for.body14  if.then20  lor.lhs.false  
-After path modifications process path
-for.body14  if.then20  lor.lhs.false  
-Hash path invariants only
-No invariant in the path. Skip path
-Processing path: entry  for.end  if.else  while.cond  while.body  
-After path modifications process path
-while.body  
-Hash path invariants only
-Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
-Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  for.cond  for.end  if.else  
-After path modifications process path is empty
-Processing path: entry  for.end  if.else  
-After path modifications process path
-entry  for.end  if.else  
-Processing path: entry  for.end  if.else  for.cond12  for.body14  if.end38  for.inc39  
-After path modifications process path
-for.body14  if.end38  
-Hash path invariants only
-Invariants are
-  br label %for.inc39, !control_dep_instr !7, !global_dep_instr !12, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  for.end  if.else  while.cond  while.body  
-After path modifications process path
-while.body  
-Hash path invariants only
-Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
-Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  for.cond  for.end  if.else  
-After path modifications process path is empty
-Processing path: entry  for.end  if.else  
-After path modifications process path
-entry  for.end  if.else  
-Processing path: entry  for.end  if.else  for.cond12  
-After path modifications process path is empty
-Processing path: entry  for.end  if.else  while.cond  while.body  for.end41  
-After path modifications process path
-while.body  
-Hash path invariants only
-Invariants are
-  call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-  store i32 0, i32* @i, align 4, !control_dep_instr !7, !data_indep_instr !10
-  br label %for.cond12, !control_dep_instr !7, !data_indep_instr !10
-Processing call instruction..
-Can't handle this operand @iNode = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iDist = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Can't handle this operand @iPrev = common global i32 0, align 4 of the call   call void @dequeue(i32* @iNode, i32* @iDist, i32* @iPrev), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
-Processing path: entry  for.cond  for.end  if.else  
-After path modifications process path is empty
-Processing path: entry  for.end  if.else  
-After path modifications process path
-entry  for.end  if.else  
-Processing path: entry  for.end  if.else  while.cond  while.end  
-After path modifications process path is empty
-Processing path: entry  for.cond  for.end  if.else  while.end  
-After path modifications process path is empty
-Processing path: entry  for.end  if.else  while.end  
-After path modifications process path
-entry  for.end  if.else  while.end  
-Processing call instruction..
-Can't handle this operand   %chEnd.addr = alloca i32, align 4, !input_dep_instr !6, !control_dep_instr !7, !data_dep_instr !8 of the call   call void @dijkstra2(i32* %chEnd.addr), !control_dep_instr !7, !data_indep_instr !10, !input_dep_block !13
+ Skipping function per FilterFunctionPass:dijkstra
  Processing function:main
 Short range hashing enabled.
 Processing path: entry  if.then  
@@ -1696,7 +1289,7 @@ After path modifications process path
 for.body6  
 Hash path invariants only
 Invariants are
-  br label %for.inc, !control_dep_instr !11, !data_indep_instr !9
+  br label %for.inc, !data_indep_instr !10, !control_dep_instr !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 No oh has been applied in the path
@@ -1705,8 +1298,8 @@ After path modifications process path
 for.body  
 Hash path invariants only
 Invariants are
-  br label %for.cond4, !control_dep_instr !11, !data_indep_instr !9
-  store i32 0, i32* %j, align 4, !control_dep_instr !11, !data_indep_instr !9, !input_dep_block !12
+  br label %for.cond4, !data_indep_instr !10, !control_dep_instr !13
+  store i32 0, i32* %j, align 4, !data_indep_instr !10, !input_dep_block !12, !control_dep_instr !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing path: entry  if.end  
@@ -1716,10 +1309,6 @@ Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
-Processing call instruction..
-Can't handle this operand   %fp = alloca %struct._IO_FILE*, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(%struct._IO_FILE** %fp, i8*** %argv.addr), !input_indep_block !5, !input_indep_instr !8, !data_indep_instr !9
-Can't handle this operand   %argv.addr = alloca i8**, align 8, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main1(%struct._IO_FILE** %fp, i8*** %argv.addr), !input_indep_block !5, !input_indep_instr !8, !data_indep_instr !9
-Insert assertion skipped because there was no hash update in between!
 Insert assertion skipped because there was no hash update in between!
 No short range oh has been applied in the path
 Processing path: entry  if.end  for.cond4  
@@ -1729,9 +1318,9 @@ After path modifications process path
 for.body  for.end  
 Hash path invariants only
 Invariants are
-  br label %for.inc11, !control_dep_instr !11, !data_indep_instr !9, !input_dep_block !12
-  br label %for.cond4, !control_dep_instr !11, !data_indep_instr !9
-  store i32 0, i32* %j, align 4, !control_dep_instr !11, !data_indep_instr !9, !input_dep_block !12
+  br label %for.inc11, !data_indep_instr !10, !input_dep_block !12, !control_dep_instr !13
+  br label %for.cond4, !data_indep_instr !10, !control_dep_instr !13
+  store i32 0, i32* %j, align 4, !data_indep_instr !10, !input_dep_block !12, !control_dep_instr !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing path: entry  if.end  
@@ -1748,13 +1337,13 @@ After path modifications process path
 for.body16  
 Hash path invariants only
 Invariants are
-  br label %for.inc18, !control_dep_instr !11, !data_indep_instr !9
-  call void @main3(i32* %j, i32* %i), !control_dep_instr !11, !data_indep_instr !9
+  br label %for.inc18, !data_indep_instr !10, !control_dep_instr !13
+  call void @main2(i32* %j, i32* %i), !data_indep_instr !10, !control_dep_instr !13
 Insert assertion evaluating function:main callsites detected =0
 Insert assertion included function:main because it is not in the skip  assert list!
 Processing call instruction..
-Can't handle this operand   %j = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i32* %j, i32* %i), !control_dep_instr !11, !data_indep_instr !9
-Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main3(i32* %j, i32* %i), !control_dep_instr !11, !data_indep_instr !9
+Can't handle this operand   %j = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i32* %j, i32* %i), !data_indep_instr !10, !control_dep_instr !13
+Can't handle this operand   %i = alloca i32, align 4, !input_dep_instr !6, !data_dep_instr !7 of the call   call void @main2(i32* %j, i32* %i), !data_indep_instr !10, !control_dep_instr !13
 No oh has been applied in the path
 Processing path: entry  if.end  for.cond  for.end13  
 After path modifications process path is empty
@@ -1787,22 +1376,6 @@ Insert assertion included function:main because it is not in the skip  assert li
 Insert assertion skipped because there was no hash update in between!
 No oh has been applied in the path
 No short range oh has been applied in the path
-Extract path function for assertion assert_dijkstra_path_3
-Extract path function for assertion assert_dijkstra_path_5
-Extract path function for assertion assert_dijkstra_path_6
-Extract path function for assertion assert_dijkstra_path_7
-Extract path function for assertion assert_dijkstra_path_9
-Extract path function for assertion assert_dijkstra_path_10
-Extract path function for assertion assert_dijkstra_path_11
-Extract path function for assertion assert_dijkstra_path_13
-Extract path function for assertion assert_dijkstra_path_15
-Extract path function for assertion assert_dijkstra_path_17
-Extract path function for assertion assert_dijkstra_path_18
-Extract path function for assertion assert_dijkstra_path_19
-Extract path function for assertion assert_dijkstra_path_21
-Extract path function for assertion assert_dijkstra_path_23
-Extract path function for assertion assert_dijkstra_path_25
-Extract path function for assertion assert_dijkstra_path_28
 Extract path function for assertion assert_main_path_2
 Extract path function for assertion assert_main_path_5
 Extract path function for assertion assert_dequeue_path_0
@@ -1813,81 +1386,81 @@ Extract path function for assertion assert_enqueue_path_4
 Extract path function for assertion assert_enqueue_path_5
 Extract path function for assertion assert_enqueue_path_6
 OH stats is requested, dumping stat file...
-Processed instructions number 239
+Processed instructions number 280
 {
     "numberOfAssertCalls": 2,
     "numberOfBlocksInFunctionsWithNoDG": 0,
-    "numberOfDataDependentInstructions": 85,
+    "numberOfDataDependentInstructions": 94,
     "numberOfHashVariables": 1,
     "numberOfImplicitlyProtectedInstructions": 0,
-    "numberOfInstructionsInFilteredFunctions": 18,
+    "numberOfInstructionsInFilteredFunctions": 119,
     "numberOfInstructionsInFunctionsWithNoDG": 0,
-    "numberOfNonHashableBlocks": 7,
-    "numberOfNonHashableInstructions": 30,
-    "numberOfOHProcessedInstr": 221,
+    "numberOfNonHashableBlocks": 4,
+    "numberOfNonHashableInstructions": 16,
+    "numberOfOHProcessedInstr": 161,
     "numberOfOtherUnprotectedInstructions": 0,
-    "numberOfOtherUnprotectedLoopVariantInstructions": 13,
+    "numberOfOtherUnprotectedLoopVariantInstructions": 1,
     "numberOfProtectedArguments": 0,
     "numberOfProtectedBlocks": 3,
-    "numberOfProtectedFunctions": 4,
+    "numberOfProtectedFunctions": 3,
     "numberOfProtectedGuardArguments": 0,
     "numberOfProtectedGuardInstructions": 0,
     "numberOfProtectedInstructions": 4,
-    "numberOfSensitiveBlocks": 47,
-    "numberOfSensitiveFunctions": 4,
-    "numberOfShortRangeAssertCalls": 25,
+    "numberOfSensitiveBlocks": 27,
+    "numberOfSensitiveFunctions": 3,
+    "numberOfShortRangeAssertCalls": 9,
     "numberOfShortRangeImplicitlyProtectedInstructions": 0,
     "numberOfShortRangeProtectedArguments": 0,
-    "numberOfShortRangeProtectedBlocks": 22,
+    "numberOfShortRangeProtectedBlocks": 12,
     "numberOfShortRangeProtectedGuardArguments": 0,
     "numberOfShortRangeProtectedGuardInstructions": 0,
-    "numberOfShortRangeProtectedInstructions": 12,
-    "numberOfUnprotectedArgumentReachableInstructions": 14,
+    "numberOfShortRangeProtectedInstructions": 7,
+    "numberOfUnprotectedArgumentReachableInstructions": 2,
     "numberOfUnprotectedArgumentReachableLoopBlocks": 0,
     "numberOfUnprotectedDataDependentBlocks": 0,
-    "numberOfUnprotectedDataDependentLoopBlocks": 13,
-    "numberOfUnprotectedGlobalReachableInstructions": 6,
-    "numberOfUnprotectedGlobalReachableLoopBlocks": 2,
+    "numberOfUnprotectedDataDependentLoopBlocks": 8,
+    "numberOfUnprotectedGlobalReachableInstructions": 3,
+    "numberOfUnprotectedGlobalReachableLoopBlocks": 0,
     "numberOfUnprotectedInputDependentInstructions": 0,
-    "numberOfUnprotectedLoopInstructions": 57
+    "numberOfUnprotectedLoopInstructions": 34
 }
-ERR. processed 4 function, while filter count is 11
+ERR. processed 3 function, while filter count is 8
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.2622 seconds (0.2623 wall clock)
+  Total Execution Time: 0.1712 seconds (0.1712 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.1209 ( 48.3%)   0.0083 ( 70.3%)   0.1292 ( 49.3%)   0.1292 ( 49.3%)  Instruments bitcode with hashing and logging functions
-   0.1144 ( 45.7%)   0.0000 (  0.0%)   0.1144 ( 43.6%)   0.1144 ( 43.6%)  runs input dependency analysis
-   0.0087 (  3.5%)   0.0011 (  9.3%)   0.0099 (  3.8%)   0.0098 (  3.7%)  Memory SSA
-   0.0019 (  0.7%)   0.0000 (  0.0%)   0.0019 (  0.7%)   0.0019 (  0.7%)  Bitcode Writer
-   0.0012 (  0.5%)   0.0001 (  1.1%)   0.0013 (  0.5%)   0.0014 (  0.5%)  Dominator Tree Construction
-   0.0011 (  0.5%)   0.0001 (  1.0%)   0.0012 (  0.5%)   0.0012 (  0.5%)  Natural Loop Information
-   0.0000 (  0.0%)   0.0012 ( 10.5%)   0.0012 (  0.5%)   0.0012 (  0.5%)  Instruments bitcode with guards
-   0.0006 (  0.2%)   0.0000 (  0.0%)   0.0006 (  0.2%)   0.0006 (  0.2%)  Module Verifier
-   0.0000 (  0.0%)   0.0004 (  3.7%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Include functions in a given file in any transformation
-   0.0000 (  0.0%)   0.0004 (  3.4%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Call site information
-   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Dominator Tree Construction
-   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Post-Dominator Tree Construction
-   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
+   0.0962 ( 57.3%)   0.0000 (  0.0%)   0.0962 ( 56.2%)   0.0962 ( 56.2%)  runs input dependency analysis
+   0.0628 ( 37.4%)   0.0033 ( 99.2%)   0.0661 ( 38.6%)   0.0661 ( 38.6%)  Instruments bitcode with hashing and logging functions
+   0.0036 (  2.1%)   0.0000 (  0.6%)   0.0036 (  2.1%)   0.0036 (  2.1%)  Memory SSA
+   0.0010 (  0.6%)   0.0000 (  0.0%)   0.0010 (  0.6%)   0.0010 (  0.6%)  Bitcode Writer
+   0.0010 (  0.6%)   0.0000 (  0.0%)   0.0010 (  0.6%)   0.0010 (  0.6%)  Instruments bitcode with guards
+   0.0005 (  0.3%)   0.0000 (  0.1%)   0.0005 (  0.3%)   0.0005 (  0.3%)  Dominator Tree Construction
+   0.0004 (  0.3%)   0.0000 (  0.1%)   0.0004 (  0.3%)   0.0004 (  0.3%)  Natural Loop Information
+   0.0004 (  0.2%)   0.0000 (  0.0%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Module Verifier
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Include functions in a given file in any transformation
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Call site information
+   0.0003 (  0.2%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0002 (  0.1%)  Post-Dominator Tree Construction
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Dominator Tree Construction
    0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  runs indirect and virtual calls analysis
-   0.0002 (  0.1%)   0.0000 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Function Alias Analysis Results
-   0.0002 (  0.1%)   0.0000 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Basic Alias Analysis (stateless AA impl)
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Natural Loop Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Function Alias Analysis Results
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Basic Alias Analysis (stateless AA impl)
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dead Global Elimination
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
-   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  CallGraph Construction
-   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
-   0.0000 (  0.0%)   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
-   0.2504 (100.0%)   0.0118 (100.0%)   0.2622 (100.0%)   0.2623 (100.0%)  Total
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Marks functions in a given file as assert functions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Remove unreachable blocks from the CFG
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Dominator Tree Construction
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Natural Loop Information
+   0.1678 (100.0%)   0.0033 (100.0%)   0.1712 (100.0%)   0.1712 (100.0%)  Total
 
 ===-------------------------------------------------------------------------===
                                 LLVM IR Parsing
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 0.0014 seconds (0.0014 wall clock)
+  Total Execution Time: 0.0012 seconds (0.0012 wall clock)
 
    ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
-   0.0007 (100.0%)   0.0007 (100.0%)   0.0014 (100.0%)   0.0014 (100.0%)  Parse IR
-   0.0007 (100.0%)   0.0007 (100.0%)   0.0014 (100.0%)   0.0014 (100.0%)  Total
+   0.0004 (100.0%)   0.0008 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Parse IR
+   0.0004 (100.0%)   0.0008 (100.0%)   0.0012 (100.0%)   0.0012 (100.0%)  Total
 
