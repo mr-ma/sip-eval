@@ -16,8 +16,9 @@ from pprint import pprint
 from subprocess import Popen, PIPE
 import re
 import numpy as np
+import sys
 REPEAT_NUMBER=10
-BASE_REPEAT_NUMBER= 100
+BASE_REPEAT_NUMBER= 25
 RUNSPROCESSED="runs_processed.json"
 CMDLINE_ARGS="cmdline-args"
 def get_immediate_subdirectories(a_dir):
@@ -63,6 +64,11 @@ def prepare_result_folder(directory):
     if not os.path.exists(directory):
             os.makedirs(directory)
 def read_args(program):
+    filename = os.path.join(CMDLINE_ARGS,program+'.runexec')
+    if os.path.exists(filename):
+        with open(filename, 'r') as myfile:
+             return myfile.read()
+
     filename = os.path.join(CMDLINE_ARGS,program)
     if os.path.exists(filename):
         with open(filename, 'r') as myfile:
@@ -71,11 +77,20 @@ def read_args(program):
 def measure_overhead(result_directory,program,repeat):
     results = []
     program_path = os.path.join(result_directory,program)
-    
+    if not os.path.exists(program_path):
+        print "Found a folder without a binary in it"
+        #exit(1)
+        return  
     cmd_args = read_args(program).replace('\n','') 
+    cmd_args = cmd_args.replace('<','\<').replace('>','/>')
     print cmd_args
     #TODO run runexec 100 times and calculate avg and std
     for i in range(repeat):
+        #TODO: find a better way to pass args to toast, Dirty hack to get toast working
+        if program == 'toast.x.bc':
+            output_file = 'cmdline-args/toast_input_small.au.gsm'
+            if os.path.isfile(output_file):
+                os.remove(output_file)
         #call(["sosylib_measure.sh",program_path])
         print str(i)," trying to run:",program_path
 	#--container throws a suspicious warning, I'm not sure it the measurements are good
@@ -87,14 +102,14 @@ def measure_overhead(result_directory,program,repeat):
 	print 'exitcode=',exit_code
         if exit_code!=0:
             print "Something went wrong running runexec ",program_path
-            exit(1)
+            #exit(1)
             return
 	program_exit_code,result = grab_results(output)
 	print "program_exit code:",program_exit_code
 	if int(program_exit_code) != 0 :
 		print program,' Exit code:',program_exit_code,' faulty program execution!... Check output.log for more info...'
-        if int(program_exit_code) == 0 or program == 'bf.x.bc':
-            if program == 'bf.x.bc':
+        if int(program_exit_code) == 0 or program == 'bf.x.bc' or program == 'patricia.x.bc':
+            if program == 'bf.x.bc' or program == 'patricia.x.bc':
                 print 'I see bf being added to the results'
             #TODO: bf.x.bc exits with 256 despite the seemingly correct execution
             results.append(result) 
@@ -109,6 +124,8 @@ def measure_overhead(result_directory,program,repeat):
     return results
 def process_results(result_path,results):
     #TODO do whatever and add outcome(s) to the results file
+    if results is None:
+         return
     print "process me", len(results)
     cpu_reads = [float(d['cpu']) for d in results if 'cpu' in d]
     mem_reads= [float(d['memory']) for d in results if 'memory' in d]
@@ -152,7 +169,11 @@ def process_files(directory):
 #	continue
 
 def main():
-    process_files("binaries/")
+    binaries_path = "binaries/"
+    if len(sys.argv)>1:
+        binaries_path = sys.argv[1]
+    print binaries_path
+    process_files(binaries_path)
 
 if __name__=="__main__":
     main()
