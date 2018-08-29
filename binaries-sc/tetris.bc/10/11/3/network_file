@@ -1,0 +1,23 @@
+{
+    "allCheckees": [
+        "next_shape1",
+        "main15",
+        "main12"
+    ],
+    "map": {
+        "exit_handler": [
+            "next_shape1"
+        ],
+        "freeze": [
+            "main12"
+        ],
+        "tty_init": [
+            "main15"
+        ]
+    },
+    "topologicalsort": [
+        "exit_handler",
+        "tty_init",
+        "freeze"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "sha_init0"
+    ],
+    "map": {
+        "sha_init": [
+            "sha_init0"
+        ]
+    },
+    "topologicalsort": [
+        "sha_init"
+    ]
+}

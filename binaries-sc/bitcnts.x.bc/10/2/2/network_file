@@ -1,0 +1,18 @@
+{
+    "allCheckees": [
+        "main4",
+        "bit_count0"
+    ],
+    "map": {
+        "bfclose": [
+            "bit_count0"
+        ],
+        "bfread": [
+            "main4"
+        ]
+    },
+    "topologicalsort": [
+        "bfread",
+        "bfclose"
+    ]
+}

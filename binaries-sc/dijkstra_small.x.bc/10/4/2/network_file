@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "dequeue0"
+    ],
+    "map": {
+        "enqueue": [
+            "dequeue0"
+        ]
+    },
+    "topologicalsort": [
+        "enqueue"
+    ]
+}

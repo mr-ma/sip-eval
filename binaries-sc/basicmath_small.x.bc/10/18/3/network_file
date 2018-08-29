@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "main3"
+    ],
+    "map": {
+        "rad2deg": [
+            "main3"
+        ]
+    },
+    "topologicalsort": [
+        "rad2deg"
+    ]
+}

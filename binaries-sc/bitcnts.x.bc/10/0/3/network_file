@@ -1,0 +1,18 @@
+{
+    "allCheckees": [
+        "main5",
+        "main1"
+    ],
+    "map": {
+        "bfclose": [
+            "main1"
+        ],
+        "bfread": [
+            "main5"
+        ]
+    },
+    "topologicalsort": [
+        "bfread",
+        "bfclose"
+    ]
+}

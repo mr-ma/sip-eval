@@ -1,0 +1,23 @@
+{
+    "allCheckees": [
+        "enqueue0",
+        "main3",
+        "main0"
+    ],
+    "map": {
+        "dequeue": [
+            "main3"
+        ],
+        "dijkstra": [
+            "main0"
+        ],
+        "enqueue": [
+            "enqueue0"
+        ]
+    },
+    "topologicalsort": [
+        "enqueue",
+        "dequeue",
+        "dijkstra"
+    ]
+}

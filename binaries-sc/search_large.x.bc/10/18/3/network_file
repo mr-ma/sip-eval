@@ -1,0 +1,25 @@
+{
+    "allCheckees": [
+        "bmha_search2",
+        "bmhi_init3",
+        "bmha_init7",
+        "bmhi_init8"
+    ],
+    "map": {
+        "bmh_search": [
+            "bmhi_init3",
+            "bmha_init7"
+        ],
+        "bmhi_init": [
+            "bmha_search2"
+        ],
+        "main": [
+            "bmhi_init8"
+        ]
+    },
+    "topologicalsort": [
+        "bmhi_init",
+        "bmh_search",
+        "main"
+    ]
+}

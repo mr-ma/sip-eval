@@ -1,0 +1,13 @@
+{
+    "allCheckees": [
+        "bitstring2"
+    ],
+    "map": {
+        "bfwrite": [
+            "bitstring2"
+        ]
+    },
+    "topologicalsort": [
+        "bfwrite"
+    ]
+}

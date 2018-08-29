@@ -1,0 +1,23 @@
+{
+    "allCheckees": [
+        "SolveCubic1"
+    ],
+    "map": {
+        "rad2deg": [
+            "SolveCubic1"
+        ]
+    },
+    "topologicalsort": [
+        "rad2deg"
+    ]
+}
+{
+    "avgConnectivity": 1.0,
+    "desiredConnectivity": 1,
+    "numberOfGuardInstructions": 9,
+    "numberOfGuards": 1,
+    "numberOfProtectedFunctions": 1,
+    "numberOfProtectedInstructions": 79,
+    "numberOfSensitiveInstructions": 79,
+    "stdConnectivity": 0.0
+}

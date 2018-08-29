@@ -1,0 +1,18 @@
+{
+    "allCheckees": [
+        "main3",
+        "main0"
+    ],
+    "map": {
+        "sha_transform": [
+            "main0"
+        ],
+        "sha_update": [
+            "main3"
+        ]
+    },
+    "topologicalsort": [
+        "sha_update",
+        "sha_transform"
+    ]
+}
