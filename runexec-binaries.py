@@ -94,7 +94,8 @@ def measure_overhead(result_directory,program,repeat):
         #call(["sosylib_measure.sh",program_path])
         print str(i)," trying to run:",program_path
 	#--container throws a suspicious warning, I'm not sure it the measurements are good
-        cmd = 'runexec {} {} --container'.format(program_path,cmd_args)
+        cmd = 'runexec  --container -- {} {}'.format(program_path,cmd_args)
+        #cmd = 'runexec {} {} --container'.format(program_path,cmd_args)
         print cmd
         process = Popen(cmd,shell=True,stdout=PIPE)
         (output,err)=process.communicate()
