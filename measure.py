@@ -12,6 +12,7 @@
 #	
 import os
 import json
+import sys
 from pprint import pprint
 import numpy as np
 oh_results = {}
@@ -47,7 +48,7 @@ def grab_results(result_directory,protection_stats=True):
     else:
         print r_path, " not found"
     return {"sc_result":sc_result,"oh_result":oh_result, "runs":runs_result, "runs_processed":runs_processed}
-def process_results(coverage,results):
+def process_results(coverage,results,protection_stats):
     #TODO do whatever and add outcome(s) to the results file
     print "process me"
     #pprint(results)
@@ -64,7 +65,7 @@ def process_results(coverage,results):
        for attempt in combination['attempt_results']:
         #collect runs
         #coverage 0 does not have any SC OH info, it's the baseline
-        if coverage != '0':
+        if coverage != '0' and protection_stats:
             if 'numberOfSensitiveInstructions' in attempt['results']['sc_result']:
                 number_sensitive_inst.append(attempt['results']['sc_result']['numberOfSensitiveInstructions'])
             if 'numberOfProtectedInstructions' not in attempt['results']['sc_result']:
@@ -108,7 +109,9 @@ def process_results(coverage,results):
     coverage_result['sc_sroh_protected_inst_mean'] = np.mean(sc_sroh_protected_inst)
     coverage_result['sc_sroh_protected_inst_std'] = np.std(sc_sroh_protected_inst)
 
-
+    #print coverage_cpu_reads
+    #print sorted(coverage_cpu_reads)[:5]
+    coverage_cpu_reads = sorted(coverage_cpu_reads)[:5]
     coverage_result['cpu_mean'] = np.mean(np.array(coverage_cpu_reads).astype(np.float))
     coverage_result['cpu_std'] = np.std(np.array(coverage_cpu_reads).astype(np.float))
     coverage_result['mem_mean'] = np.mean(np.array(coverage_memory_reads).astype(np.float))
@@ -139,7 +142,7 @@ def process_results(coverage,results):
     #print "Coverage results:", coverage
     #pprint(coverage_result)
     return True, coverage_result
-def process_files(directory):
+def process_files(directory, protection_stats):
     program_results=[]
     for program_dir in get_immediate_subdirectories(directory):
 	print 'handling ', program_dir
@@ -152,7 +155,7 @@ def process_files(directory):
                 for attempt_dir in get_immediate_subdirectories(attempt_path):
                     result_path = os.path.join(directory,program_dir,coverage_dir,combination_dir,attempt_dir);
                     #if baseline no protection stats
-                    results = grab_results(result_path,coverage_dir!="0")
+                    results = grab_results(result_path,coverage_dir!="0" and protection_stats)
                     if len(results['runs_processed']) <= 1:
 			print "No runtime measurement for {}".format(result_path)
                     else:
@@ -160,13 +163,15 @@ def process_files(directory):
                         print results['runs_processed']
                     attempt_results.append({"results":results, "attempt":attempt_dir})
                 combination_results.append({"combination":combination_dir,"attempt_results":attempt_results})
-            good,processed_coverage = process_results(coverage_dir,combination_results)
+            good,processed_coverage = process_results(coverage_dir,combination_results,protection_stats)
             if not good:
                 print 'ERR. no results for coverage {} of program {}'.format(coverage_dir,program_dir)
                 print 'Adding zero result for the sake of the perfromance plots'
             coverage_results.append({"coverage":coverage_dir, "runtime_overhead":processed_coverage,"combination_results":combination_results})
+           # coverage_results = sorted(coverage_results, key=lambda x: np.mean(x['runtime_overhead']['cpu_mean']))[:5]
         program_results.append({"program":program_dir,"coverage_results":coverage_results})
     output_file = os.path.join(directory, "measurements.json")
+    print output_file
     with open(output_file,'wb') as outfile:
         json.dump(program_results,outfile)
  #   pprint(program_results)
@@ -179,7 +184,12 @@ def process_files(directory):
 #	continue
 
 def main():
-    process_files("binaries/")
+    binaries_path = "binaries/"
+    if len(sys.argv)>1:
+        binaries_path = sys.argv[1]
+    print binaries_path
+
+    process_files(binaries_path,False)
 
 if __name__=="__main__":
     main()

@@ -17,8 +17,8 @@ from subprocess import Popen, PIPE
 import re
 import numpy as np
 import sys
-REPEAT_NUMBER=1
-BASE_REPEAT_NUMBER= 2
+REPEAT_NUMBER=3
+BASE_REPEAT_NUMBER= 10
 RUNSPROCESSED="runs_processed.json"
 CMDLINE_ARGS="cmdline-args"
 def get_immediate_subdirectories(a_dir):

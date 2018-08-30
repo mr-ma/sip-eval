@@ -15,6 +15,7 @@ def read(file_path):
     program_count=len(data)
     print 'len(data)=', program_count
     programs=[]
+    data = sorted(data, key=lambda x: x['program'])
     protection_coverage_table = []
     for program in data:
         pprint (program.keys())
@@ -119,24 +120,25 @@ def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-p',action='store', dest='percentage', help='Display overhead in percentage, default is ms',required=False,type=bool,default=False)
 	parser.add_argument('-n',action='store', dest='name',help='Output filename, default is perfromance-evaluation-[percentage]',required=False, type=str, default=None)
+	parser.add_argument('-m',action='store', dest='measuresfile',help='measures file',required=False, type=str, default='binaries/measurements.json')
 	parser.add_argument('-w',action='store', dest='width',help='Output filename, default is perfromance-evaluation-[percentage]',required=False, type=float, default=0.35)
 
 	results = parser.parse_args()
 
 	OVERHEAD_IN_PERCENTAGE = results.percentage 
-	programs,overheads,protection_coverage_table = read('binaries/measurements.json')
+	programs,overheads,protection_coverage_table = read(results.measuresfile)
         print 'OVERHEADS'
         #pprint(overheads)
         #exit(1)
-	protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
+	#protection_coverage_table_content = dump_protection_coverage_table(protection_coverage_table)
 	#pprint (overheads)
 	perc_overheads = overhead_in_percentage(overheads)
 	#pprint (perc_overheads)
 	#dump protection coverage table into tex file
-	file_path=os.path.join('tex','protection_coverage_table.tex')
-	with open(file_path,'wb') as texfile:
-	    texfile.write(protection_coverage_table_content)
-	print 'Dumped protection coverage table in latex format: tex/protection_coverage_table.tex'
+	#file_path=os.path.join('tex','protection_coverage_table.tex')
+	#with open(file_path,'wb') as texfile:
+	#    texfile.write(protection_coverage_table_content)
+	#print 'Dumped protection coverage table in latex format: tex/protection_coverage_table.tex'
 	print overheads['0']['programs']
 	program_count=len(overheads['0']['programs'])
 	#exit(1)
@@ -196,6 +198,7 @@ def main():
 	    ax_color = coverage_color[coverage]
             ax_hatch = coverage_hatch[coverage]
             print 'coverage {} mean:{} std: {} median:{}'.format(coverage, np.mean(overheads[coverage][means_dic_name]), np.std(overheads[coverage][means_dic_name]),np.median(overheads[coverage][means_dic_name]))
+            pprint(zip(programs, overheads[coverage][means_dic_name])) 
 
 
 	    #ax_ind = ind+ind_width
@@ -219,7 +222,7 @@ def main():
         print t
 	ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
 	ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs,E,N,M))
-        #ax.set_yscale('log',basey=2)
+        ax.set_yscale('log',basey=2)
 	#ax.legend((rects1[0]), ('Tetris'))
 	y_ticks = ['0','5','10','20','30','40','50','60','70','80','90','100','150','200','300','400','500','600']
 	y_ticks_n = np.array(y_ticks).astype(np.int)
@@ -228,7 +231,7 @@ def main():
 	#for reacts1 in rects:
 	#    autolabel(rects1)
 	#autolabel(rects2)
-	plt.xticks(rotation=45)
+	plt.xticks(rotation=90)
 	plt.legend(bbox_to_anchor=(0., 1.02, 1., .102),loc='upper right', ncol=4, mode="expand", borderaxespad=0.)
         
         #dt = 0.01
