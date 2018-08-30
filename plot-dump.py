@@ -21,6 +21,8 @@ def read(file_path):
         pprint (program.keys())
         programs.append(program['program'])
         program_name = program['program']
+   #     if program_name not in ['tetris.bc','search_large.x.bc','search_small.x.bc']:
+    #        continue
         for coverage_result in program['coverage_results']:
             coverage_name= coverage_result['coverage']
             if coverage_result['coverage'] not in overhead:
@@ -75,8 +77,8 @@ def prepare_xtick_labels(coverage_labels, programs,E,N,M):
     i = 0
     for p in programs:
         # 2 is index of 25 in the labels, -1 becuase index starts from 0
-        coverage_labels[i+2]=p.replace('.bc','').replace('.x','').replace('_testapp','').replace('_game','')
-        print 'i:{},M:{}'.format(i, M)
+        coverage_labels[i+2]=p.replace('.bc','').replace('.x','').replace('_testapp','').replace('_game','').replace('_large','-l').replace('_small','-s').replace('raw','').replace('search','srch').replace('sort','srt').replace('basicmath','bm').replace('dijkstra','dkstra')
+        #print 'i:{},M:{}'.format(i, M)
         i+=M+E
     return coverage_labels
 
@@ -205,11 +207,11 @@ def main():
 	    #pprint (overheads[coverage][means_dic_name])
 	    #pprint (overheads[coverage][stds_dic_name])
 	    #print "ax_ind",ax_ind
-            print ind
+            #print ind
             columns = ind[i:len(ind)-1:M+E]
-	    print columns
+	    #print columns
 	    #print [coverage]*N
-	    print coverage," ind",len(columns), 'means',len(overheads[coverage][means_dic_name]),'std',len(overheads[coverage][stds_dic_name])
+	    #print coverage," ind",len(columns), 'means',len(overheads[coverage][means_dic_name]),'std',len(overheads[coverage][stds_dic_name])
 	    rects1 = ax.bar(columns, overheads[coverage][means_dic_name], width, color=ax_color, edgecolor='black', capsize=4, error_kw={'ecolor':'red'},yerr=overheads[coverage][stds_dic_name],label=coverage+'%')#,tick_label=[coverage]*N)
 
 	    i+=1
@@ -219,7 +221,7 @@ def main():
 	#ax.set_title('Overhead by protection coverage per program')
 	#print ind, ax_ind,ax_ind+1, width #np.arange(ind, ax_ind+1, width)
 	t= np.arange(np.min(ind),np.max(ind)+1, width)
-        print t
+        #print t
 	ax.set_xticks(np.arange(np.min(ind),np.max(ind)+1, width))
 	ax.set_xticklabels(prepare_xtick_labels(coverage_labels,programs,E,N,M))
         ax.set_yscale('log',basey=2)
@@ -231,7 +233,7 @@ def main():
 	#for reacts1 in rects:
 	#    autolabel(rects1)
 	#autolabel(rects2)
-	plt.xticks(rotation=90)
+	plt.xticks(rotation=60)
 	plt.legend(bbox_to_anchor=(0., 1.02, 1., .102),loc='upper right', ncol=4, mode="expand", borderaxespad=0.)
         
         #dt = 0.01
@@ -241,15 +243,16 @@ def main():
 	plt.subplots_adjust(bottom=0.30)
 	fig_name = 'performance-evaluation'
 	if OVERHEAD_IN_PERCENTAGE:
-		fig_name+='-percentage.png'
+		fig_name+='-percentage.pdf'
 	else:
-		fig_name+='.png'
+		fig_name+='.pdf'
 
 	if results.name:
 		fig_name=results.name
 
         plt.ion()
-	plt.savefig(fig_name)
+        fig.set_size_inches(8.7,4.0)
+        fig.savefig(fig_name,bbox_inches='tight')
 	plt.show()
 	print 'showing'
 
