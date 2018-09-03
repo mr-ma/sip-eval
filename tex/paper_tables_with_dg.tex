@@ -3,195 +3,205 @@
  Program         &   Inst. &   III\% &   DDI+CFDI \% &   DII \% \\
 \hline
  qsort\_small     &      92 &   2.17 &        97.83 &   17.39 \\
-\hline
+ \hline
  qsort\_large     &     147 &   1.36 &        98.64 &   10.88 \\
-\hline
+ \hline
  crc             &     147 &   2.04 &        97.96 &   14.29 \\
-\hline
+ \hline
  dijkstra\_small  &     323 &  19.5  &        80.5  &   42.41 \\
-\hline
+ \hline
  dijkstra\_large  &     323 &  19.5  &        80.5  &   42.41 \\
-\hline
+ \hline
  rawcaudio       &     418 &   0.48 &        99.52 &   12.92 \\
-\hline
+ \hline
  rawdaudio       &     418 &   0.48 &        99.52 &   12.92 \\
-\hline
+ \hline
  basicmath\_small &     532 &  49.44 &        50.56 &   51.69 \\
-\hline
- tetris          &     629 &  19.08 &        80.92 &   44.67 \\
-\hline
+ \hline
+ tetris          &     629 &  20.67 &        79.33 &   44.67 \\
+ \hline
  basicmath\_large &     643 &  49.3  &        50.7  &   52.41 \\
-\hline
+ \hline
  sha             &     657 &   0.3  &        99.7  &   23.44 \\
-\hline
+ \hline
  bitcnts         &     664 &   0.45 &        99.55 &    9.94 \\
-\hline
+ \hline
  fft             &     742 &   0.27 &        99.73 &   18.46 \\
-\hline
- 2048            &     749 &   0.93 &        99.07 &   35.38 \\
-\hline
+ \hline
+ 2048\_game       &     749 &   0.93 &        99.07 &   35.38 \\
+ \hline
  search\_large    &     827 &  10.16 &        89.84 &   26.48 \\
-\hline
+ \hline
  search\_small    &     827 &  10.16 &        89.84 &   26.48 \\
-\hline
+ \hline
  snake           &    1065 &   2.82 &        97.18 &   23.29 \\
-\hline
+ \hline
  patricia        &    1087 &   0.18 &        99.82 &   12.14 \\
-\hline
+ \hline
  bf              &    3607 &   0.11 &        99.89 &    5.02 \\
-\hline
+ \hline
  rijndael        &    5866 &   0.15 &        99.85 &    3.87 \\
-\hline
+ \hline
  say             &    6859 &   0.26 &        99.74 &   18.62 \\
-\hline
+ \hline
  susan           &   12656 &   0.11 &        99.89 &    5.56 \\
-\hline
- ispell          &   13545 &   0.04 &        99.96 &   19.83 \\
-\hline
+ \hline
+ ispell          &   13545 &   0.04 &        99.96 &   19.82 \\
+ \hline
  toast           &   13930 &   0.03 &        99.97 &   11.39 \\
-\hline
+ \hline
  djpeg           &   52708 &   0.25 &        99.75 &   14    \\
-\hline
+ \hline
  tiffdither      &   53162 &   0.08 &        99.92 &   13.71 \\
-\hline
+ \hline
  tiff2bw         &   53463 &   0.08 &        99.92 &   13.66 \\
-\hline
+ \hline
  cjpeg           &   54837 &   0.16 &        99.84 &   13.45 \\
-\hline
+ \hline
  tiffmedian      &   55708 &   0.08 &        99.92 &   13.6  \\
 \hline
-\end{tabular}\begin{tabular}{l|r|r|r|r|r|r|rr}
+\end{tabular}
+
+\begin{tabular}{l|r|r|r|r|r|r|r|r}
 \hline
  Program         &   Blocks &   SROHB\% &   OHB\% &   LB &   OH &   SROH &   IAI &   NHB \\
 \hline
  qsort\_small     &       17 &    11.76 &   5.88 &    5 &    2 &      2 &     4 &     5 \\
-\hline
+ \hline
  qsort\_large     &       19 &    26.32 &   5.26 &    5 &    2 &      6 &     4 &     4 \\
-\hline
+ \hline
  crc             &       19 &    31.58 &   5.26 &    4 &    2 &      7 &     6 &     2 \\
-\hline
- dijkstra\_small  &       51 &    37.25 &  41.18 &    7 &   56 &     11 &     0 &     4 \\
-\hline
- dijkstra\_large  &       51 &    37.25 &  41.18 &    7 &   56 &     11 &     0 &     4 \\
-\hline
+ \hline
+ dijkstra\_small  &       51 &    35.29 &  41.18 &    7 &   56 &     10 &     0 &     5 \\
+ \hline
+ dijkstra\_large  &       51 &    35.29 &  41.18 &    7 &   56 &     10 &     0 &     5 \\
+ \hline
  sha             &       56 &    67.86 &   3.57 &    8 &    2 &     58 &     0 &     8 \\
-\hline
+ \hline
  basicmath\_small &       62 &     0    &  67.74 &   12 &  176 &      0 &     2 &     6 \\
-\hline
- rawcaudio       &       63 &    44.44 &   1.59 &    5 &    1 &     29 &    26 &     3 \\
-\hline
+ \hline
+ rawcaudio       &       63 &    44.44 &   1.59 &    5 &    1 &     28 &    26 &     3 \\
+ \hline
  rawdaudio       &       63 &    38.1  &   1.59 &    5 &    1 &     23 &    30 &     3 \\
-\hline
- bitcnts         &       69 &    17.39 &   1.45 &    9 &    3 &     13 &    34 &    13 \\
-\hline
+ \hline
+ bitcnts         &       69 &    15.94 &   1.45 &    9 &    3 &     11 &    34 &    14 \\
+ \hline
  basicmath\_large &       82 &     0    &  60.98 &   20 &  222 &      0 &     2 &    10 \\
-\hline
- fft             &       87 &    52.87 &   1.15 &   24 &    2 &     29 &     7 &     9 \\
-\hline
- tetris          &      108 &    53.7  &  12.04 &   19 &   33 &     65 &     1 &    17 \\
-\hline
- 2048            &      124 &    72.58 &   0.81 &   12 &    4 &    116 &     0 &    21 \\
-\hline
+ \hline
+ fft             &       87 &    52.87 &   1.15 &   24 &    2 &     27 &     7 &     9 \\
+ \hline
+ tetris          &      108 &    53.7  &  12.04 &   19 &   33 &     63 &     1 &    17 \\
+ \hline
+ 2048\_game       &      124 &    72.58 &   0.81 &   12 &    4 &    115 &     0 &    21 \\
+ \hline
  bf              &      129 &    48.84 &   0.78 &   16 &    4 &     74 &    44 &     5 \\
-\hline
- rijndael        &      147 &    68.03 &   1.36 &   32 &    7 &     85 &     0 &    13 \\
-\hline
+ \hline
+ rijndael        &      147 &    68.03 &   1.36 &   32 &    7 &     84 &     0 &    13 \\
+ \hline
  search\_large    &      147 &     2.04 &  10.88 &    6 &   55 &      0 &   116 &     6 \\
-\hline
+ \hline
  search\_small    &      147 &     2.04 &  10.88 &    6 &   55 &      0 &   116 &     6 \\
-\hline
+ \hline
  snake           &      148 &    73.65 &   5.41 &   19 &   14 &     92 &     1 &    11 \\
-\hline
+ \hline
  patricia        &      149 &    46.31 &   0.67 &   18 &    2 &     42 &    56 &     5 \\
+ \hline
+ susan           &      698 &    77.22 &   0.14 &  104 &   12 &    588 &     0 &    54 \\
+ \hline
+ say             &     1026 &    67.06 &   0.49 &  159 &   12 &    591 &    59 &   115 \\
+ \hline
+ toast           &     1342 &    74.52 &   0.07 &  128 &    1 &    845 &    88 &   125 \\
+ \hline
+ ispell          &     2628 &    74.39 &   0.04 &  501 &    2 &   1588 &    30 &   141 \\
+ \hline
+ djpeg           &     5419 &    12.88 &   0.5  &  135 &   66 &    531 &  4478 &    81 \\
+ \hline
+ cjpeg           &     5615 &    11.75 &   0.28 &  138 &   43 &    519 &  4730 &    71 \\
+ \hline
+ tiffdither      &     6855 &    30.14 &   0.04 &  170 &    8 &   1499 &  4455 &   161 \\
+ \hline
+ tiff2bw         &     6882 &    29.83 &   0.04 &  187 &    5 &   1491 &  4454 &   185 \\
+ \hline
+ tiffmedian      &     7184 &    31.68 &   0.04 &  280 &    6 &   1619 &  4455 &   170 \\
 \hline
- susan           &      698 &    80.37 &   0.14 &  104 &   12 &    682 &     0 &    32 \\
+\end{tabular}
+
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r}
 \hline
- say             &     1026 &    67.06 &   0.49 &  159 &   12 &    595 &    59 &   115 \\
+ Program         &   Instructions &   SROHI\% &   OHI\% &   OH &   SROH &   SROH DDI &   LI+ARI+GRI &   CDF &   IAI &   NHI \\
 \hline
- toast           &     1342 &    75.19 &   0.07 &  128 &    1 &    853 &    88 &   116 \\
+ qsort\_small     &             69 &     2.9  &   2.9  &    2 &      2 &          0 &            6 &     0 &     2 &     4 \\
+ \hline
+ crc             &            103 &     6.8  &   1.94 &    2 &      7 &          4 &            5 &     2 &     4 &     5 \\
+ \hline
+ qsort\_large     &            121 &     4.96 &   1.65 &    2 &      6 &          4 &            6 &     0 &     2 &     4 \\
+ \hline
+ rawdaudio       &            227 &    10.13 &   0.44 &    1 &     23 &         18 &            8 &     0 &    25 &    15 \\
+ \hline
+ rawcaudio       &            268 &    10.45 &   0.37 &    1 &     28 &         22 &           10 &     0 &    21 &    16 \\
+ \hline
+ search\_large    &            292 &     0    &  18.84 &   55 &      0 &          0 &            4 &     0 &   125 &    35 \\
+ \hline
+ search\_small    &            292 &     0    &  18.84 &   55 &      0 &          0 &            4 &     0 &   125 &    35 \\
+ \hline
+ dijkstra\_small  &            323 &     3.1  &  17.34 &   56 &     10 &         10 &           44 &     0 &     0 &    37 \\
+ \hline
+ dijkstra\_large  &            323 &     3.1  &  17.34 &   56 &     10 &         10 &           44 &     0 &     0 &    37 \\
+ \hline
+ bitcnts         &            427 &     2.58 &   0.7  &    3 &     11 &          8 &           23 &     2 &    32 &     3 \\
+ \hline
+ basicmath\_small &            516 &     0    &  34.11 &  176 &      0 &          0 &            6 &     0 &     0 &    93 \\
+ \hline
+ tetris          &            624 &    10.1  &   5.29 &   33 &     63 &         24 &          136 &     3 &     1 &    69 \\
+ \hline
+ basicmath\_large &            627 &     0    &  35.41 &  222 &      0 &          0 &           10 &     0 &     0 &   105 \\
+ \hline
+ sha             &            657 &     8.83 &   0.3  &    2 &     58 &          6 &           52 &     0 &     0 &    48 \\
+ \hline
+ fft             &            711 &     3.8  &   0.28 &    2 &     27 &         18 &          104 &     2 &     5 &    15 \\
+ \hline
+ 2048\_game       &            749 &    15.35 &   0.53 &    4 &    115 &         34 &           80 &     6 &     0 &    94 \\
+ \hline
+ patricia        &            756 &     5.56 &   0.26 &    2 &     42 &         40 &           58 &     3 &    48 &    19 \\
+ \hline
+ snake           &           1053 &     8.74 &   1.33 &   14 &     92 &         36 &          110 &     6 &     1 &    61 \\
+ \hline
+ bf              &           2178 &     3.4  &   0.18 &    4 &     74 &         34 &           41 &     1 &    60 &    35 \\
+ \hline
+ rijndael        &           5866 &     1.43 &   0.12 &    7 &     84 &         52 &          127 &     8 &     0 &    53 \\
+ \hline
+ say             &           6534 &     9.04 &   0.18 &   12 &    591 &        450 &          683 &    11 &    64 &   366 \\
+ \hline
+ toast           &          10256 &     8.24 &   0.01 &    1 &    845 &        594 &          875 &    74 &    68 &   317 \\
+ \hline
+ susan           &          12656 &     4.65 &   0.09 &   12 &    588 &        498 &          502 &     0 &     0 &   100 \\
+ \hline
+ cjpeg           &          12949 &     4.01 &   0.33 &   43 &    519 &        366 &          761 &    22 &  5967 &   427 \\
+ \hline
+ ispell          &          13348 &    11.9  &   0.01 &    2 &   1588 &       1328 &         1368 &    54 &    20 &   981 \\
+ \hline
+ djpeg           &          13710 &     3.87 &   0.48 &   66 &    531 &        384 &          778 &    17 &  5910 &   463 \\
+ \hline
+ tiffdither      &          21055 &     7.12 &   0.04 &    8 &   1499 &       1246 &         1651 &    98 &  4650 &   629 \\
+ \hline
+ tiff2bw         &          21362 &     6.98 &   0.02 &    5 &   1491 &       1240 &         1657 &   100 &  4650 &   639 \\
+ \hline
+ tiffmedian      &          23601 &     6.86 &   0.03 &    6 &   1619 &       1340 &         1771 &    98 &  4650 &   774 \\
 \hline
- ispell          &     2628 &    74.39 &   0.04 &  501 &    2 &   1626 &    30 &   141 \\
-\hline
- djpeg           &     5419 &    12.88 &   0.5  &  137 &   66 &    536 &  4478 &    79 \\
-\hline
- cjpeg           &     5615 &    11.79 &   0.28 &  138 &   43 &    525 &  4730 &    69 \\
-\hline
- tiffdither      &     6855 &    30.14 &   0.04 &  170 &    8 &   1504 &  4455 &   161 \\
-\hline
- tiff2bw         &     6882 &    29.83 &   0.04 &  187 &    5 &   1494 &  4454 &   185 \\
-\hline
- tiffmedian      &     7184 &    31.68 &   0.04 &  280 &    6 &   1624 &  4455 &   170 \\
-\hline
-\end{tabular}\begin{tabular}{l|r|r|r|r|r|r|r|r}
-\hline
- Program         &   Instructions &   SROHI\% &   OHI\% &   OH &   SROH &   LI+ARI+GRI &   IAI &   NHI \\
-\hline
- qsort\_small     &             92 &     2.17 &   2.17 &    2 &      2 &           22 &    25 &     4 \\
-\hline
- qsort\_large     &            147 &     4.08 &   1.36 &    2 &      6 &           53 &    28 &     4 \\
-\hline
- crc             &            147 &     4.76 &   1.36 &    2 &      7 &           41 &    48 &     5 \\
-\hline
- dijkstra\_small  &            323 &     3.41 &  17.34 &   56 &     11 &           31 &     0 &    40 \\
-\hline
- dijkstra\_large  &            323 &     3.41 &  17.34 &   56 &     11 &           31 &     0 &    40 \\
-\hline
- rawcaudio       &            418 &     6.94 &   0.24 &    1 &     29 &           22 &   171 &    20 \\
-\hline
- rawdaudio       &            418 &     5.5  &   0.24 &    1 &     23 &           22 &   216 &    19 \\
-\hline
- basicmath\_small &            532 &     0    &  33.08 &  176 &      0 &           54 &    16 &    93 \\
-\hline
- tetris          &            629 &    10.33 &   5.25 &   33 &     65 &          103 &     6 &    73 \\
-\hline
- basicmath\_large &            643 &     0    &  34.53 &  222 &      0 &           86 &    16 &   105 \\
-\hline
- sha             &            657 &     8.83 &   0.3  &    2 &     58 &           48 &     0 &    49 \\
-\hline
- bitcnts         &            664 &     1.96 &   0.45 &    3 &     13 &           42 &   269 &     8 \\
-\hline
- fft             &            742 &     3.91 &   0.27 &    2 &     29 &          102 &    36 &    25 \\
-\hline
- 2048            &            749 &    15.49 &   0.53 &    4 &    116 &           40 &     0 &    98 \\
-\hline
- search\_large    &            827 &     0    &   6.65 &   55 &      0 &           28 &   660 &    35 \\
-\hline
- search\_small    &            827 &     0    &   6.65 &   55 &      0 &           28 &   660 &    35 \\
-\hline
- snake           &           1065 &     8.64 &   1.31 &   14 &     92 &          108 &    13 &    67 \\
-\hline
- patricia        &           1087 &     3.86 &   0.18 &    2 &     42 &          138 &   379 &    29 \\
-\hline
- bf              &           3607 &     2.05 &   0.11 &    4 &     74 &          117 &  1489 &    41 \\
-\hline
- rijndael        &           5866 &     1.45 &   0.12 &    7 &     85 &          479 &     0 &    55 \\
-\hline
- say             &           6859 &     8.67 &   0.17 &   12 &    595 &          822 &   389 &   390 \\
-\hline
- susan           &          12656 &     5.39 &   0.09 &   12 &    682 &         1473 &     0 &   301 \\
-\hline
- ispell          &          13545 &    12    &   0.01 &    2 &   1626 &         2645 &   217 &  1072 \\
-\hline
- toast           &          13930 &     6.12 &   0.01 &    1 &    853 &          633 &  3742 &   433 \\
-\hline
- djpeg           &          52708 &     1.02 &   0.13 &   66 &    536 &          706 & 44908 &   479 \\
-\hline
- tiffdither      &          53162 &     2.83 &   0.02 &    8 &   1504 &         1018 & 36757 &   658 \\
-\hline
- tiff2bw         &          53463 &     2.79 &   0.01 &    5 &   1494 &         1213 & 36751 &   663 \\
-\hline
- cjpeg           &          54837 &     0.96 &   0.08 &   43 &    525 &          652 & 47855 &   443 \\
-\hline
- tiffmedian      &          55708 &     2.92 &   0.01 &    6 &   1624 &         1529 & 36757 &   811 \\
-\hline
-\end{tabular}\begin{tabular}{lrrr}
+\end{tabular}
+
+\begin{tabular}{l|r|r|r}
 \hline
  Data improved   &   Average &   Median &   Standard Deviation \\
 \hline
- III\%            &      6.55 &     0.45 &                13.11 \\
- SROHB\%          &     42.42 &    38.1  &                23.68 \\
+ III\%            &      6.61 &     0.45 &                13.16 \\
+ \hline
+ SROHB\%          &     42.08 &    38.1  &                23.56 \\
+ \hline
  OHB\%            &      9.7  &     1.45 &                18.1  \\
- SROHI\%          &      5.18 &     3.91 &                 3.61 \\
- OHI\%            &      4.48 &     0.27 &                 9.16 \\
+ \hline
+ SROHI\%          &      6.56 &     6.8  &                 3.37 \\
+ \hline
+ OHI\%            &      5.5  &     0.44 &                10    \\
 \hline
 \end{tabular}

@@ -24,14 +24,16 @@ DATA_INDEP_INSTR_IN_DATA_OR_ARGUMENT_DEP_LOOP_KEY="ArgumentOrDataDepLoopInstrs";
 
 OH_PROTECTED_INSTR_KEY="numberOfProtectedInstructions"
 SHORT_RANGE_OH_PROTECTED_INSTR_KEY="numberOfShortRangeProtectedInstructions"
+SHORT_RANGE_OH_PROTECTED_DATA_DEP_INSTR_KEY="numberOfShortRangeProtectedDataDepInstructions"
 OH_NON_HAHSBALE_INSTR_KEY="numberOfNonHashableInstructions"
 UNPROTECTED_LOOP_INSTRUCTIONS="numberOfUnprotectedLoopInstructions"
+UNPROTECTED_LOOP_VARINAT_INSTRUCTIONS="numberOfUnprotectedLoopVariantInstructions"
 UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS="numberOfUnprotectedArgumentReachableInstructions"
 UNPROTECTED_GLOBAL_REACHABLE_INSTRUCTIONS="numberOfUnprotectedGlobalReachableInstructions"
 UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS="numberOfDataDependentInstructions"
 OTHER_UNPROTECTED_INSTRUCTIONS="numberOfOtherUnprotectedInstructions"
 UNPROTECTED_INSTRUCTIONS_IN_FILTERED_FUNCTIONS="numberOfInstructionsInFilteredFunctions"
-UNPROTECTED_INSTRUCTIONS_IN_FUNCTIONS_WITH_NO_DG="numberOfInstructionsInFunctionsWithNoDG"
+UNPROTECTED_INSTRUCTIONS_IN_FUNCTIONS_WITH_NO_DG="numberOfUnprotectedInstructionsWithNoDG"
 SENSITIVE_BLOCKS_KEY="numberOfSensitiveBlocks"
 OH_PROTECTED_BLOCKS_KEY="numberOfProtectedBlocks"
 SHORT_RANGE_OH_PROTECTED_BLOCKS_KEY="numberOfShortRangeProtectedBlocks"
@@ -62,8 +64,10 @@ argument_or_data_dep_loop_instr={}
 
 oh_protected_instr={}
 short_range_oh_protected_instr={}
+short_range_oh_protected_data_dep_instr={}
 oh_non_hashable_instr={}
 unprotected_loop_instr={}
+unprotected_loop_variant_instr={}
 unprotected_argument_reachable_instr={}
 unprotected_global_reachable_instr={}
 unprotected_data_dep_instr={}
@@ -98,9 +102,10 @@ def std_deviation(numbers):
 
 def dump_latex_table_for_paper(with_dg = False):
     from tabulate import tabulate
+    tabulate.LATEX_ESCAPE_RULES={}
     input_dep_headers = ["Program", "Inst.", "III%", "DDI+CFDI %", "DII %"]
     oh_block_coverage_headers = ["Program", "Blocks", "SROHB%", "OHB%", "LB", "OH", "SROH", "IAI", "NHB"]
-    oh_instr_coverage_headers = ["Program", "Instructions", "SROHI%", "OHI%", "OH", "SROH", "LI+ARI+GRI", "IAI", "NHI"]
+    oh_instr_coverage_headers = ["Program", "Instructions", "SROHI%", "OHI%", "OH", "SROH", "SROH DDI", "LI+ARI+GRI", "CDF", "IAI", "NHI"]
     improvement_headers = ["Data improved", "Average", "Median", "Standard Deviation"]
 
     input_dep_data = []
@@ -111,6 +116,7 @@ def dump_latex_table_for_paper(with_dg = False):
     sroh_instrs = []
     oh_blocks = []
     oh_instrs = []
+    faulty_runs = open("faulty_runs.txt", 'ab')
     for key in programs:
         program = key[:key.index(".")]
         instrs = instructions[key]
@@ -140,9 +146,6 @@ def dump_latex_table_for_paper(with_dg = False):
             sroh_blocks.append(sroh_prot_block_cov)
         if oh_prot_block_cov > 0:
             oh_blocks.append(oh_prot_block_cov)
-        oh_block_coverage_data.append([program, sensitive_blcks, sroh_prot_block_cov, oh_prot_block_cov, loop_blocks,
-                oh_prot_block, short_oh_prot_block, unprotected_blocks_with_no_dg, non_hashable_block])
-
         unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
         instrs = oh_processed_instrs[key]
         if with_dg:
@@ -152,17 +155,41 @@ def dump_latex_table_for_paper(with_dg = False):
         oh_prot_instr = oh_protected_instr[key]
         oh_prot_instr_cov = round((oh_prot_instr * 100.0) / instrs, 2)
         non_hashable_instr = oh_non_hashable_instr[key]
-        unprot_instr = unprotected_loop_instr[key]
-        + unprotected_argument_reachable_instr[key]
-        + unprotected_global_reachable_instr[key]
-        + unprotected_instr[key]
-        + unprotected_instr_with_no_dg
+        li_ari_gri = (unprotected_loop_instr[key] + unprotected_loop_variant_instr[key] +
+                unprotected_argument_reachable_instr[key] + unprotected_global_reachable_instr[key])
+        unprot_cfd = unprotected_instr[key]
+        sroh_prot_ddi_instr = short_range_oh_protected_data_dep_instr[key]
+        unprot_instr = (unprotected_loop_instr[key] + unprotected_loop_variant_instr[key] +
+                unprotected_argument_reachable_instr[key] + unprotected_global_reachable_instr[key] + unprot_cfd)
+        num = (unprot_instr + oh_prot_instr + sroh_prot_instr + non_hashable_instr + unprotected_instr_with_no_dg -
+                sroh_prot_ddi_instr)
+        if num != data_indep_instr[key]:
+            faulty_runs.write(key + "\n")
+            faulty_runs.write("Number of OH+SROH+LI+GRI+ARI+IAI " + str(num) + "\n")
+            faulty_runs.write("Number of DII " + str(data_indep_instr[key]) + "\n")
+            print(key)
+            print ("Number of OH+SROH+LI+GRI+ARI+IAI " + str(num))
+            print ("Number of DII " + str(data_indep_instr[key]))
+            #print(unprotected_loop_instr[key])
+            #print(unprotected_loop_variant_instr[key])
+            #print(unprotected_argument_reachable_instr[key])
+            #print(unprotected_global_reachable_instr[key])
+            #print(unprotected_instr[key])
+            #print(oh_prot_instr)
+            #print(sroh_prot_instr)
+            #print(non_hashable_instr)
+            #print(unprotected_instr_with_no_dg)
+
         if sroh_prot_instr_cov > 0:
             sroh_instrs.append(sroh_prot_instr_cov)
         if oh_prot_instr_cov > 0:
             oh_instrs.append(oh_prot_instr_cov)
         oh_instr_coverage_data.append([program, instrs, sroh_prot_instr_cov, oh_prot_instr_cov,
-                oh_prot_instr, sroh_prot_instr, unprot_instr, unprotected_instr_with_no_dg, non_hashable_instr])
+                oh_prot_instr, sroh_prot_instr, sroh_prot_ddi_instr, li_ari_gri, unprot_cfd, unprotected_instr_with_no_dg, non_hashable_instr])
+
+        oh_block_coverage_data.append([program, sensitive_blcks, sroh_prot_block_cov, oh_prot_block_cov, loop_blocks,
+                oh_prot_instr, sroh_prot_instr, unprotected_blocks_with_no_dg, non_hashable_block])
+
 
     #if sensitive_blcks != blocks[key]:
     #    print ("sensitive_blcks " + str(sensitive_blcks) + " all blocks " + str(blocks[key]))
@@ -197,6 +224,7 @@ def dump_latex_table_for_paper(with_dg = False):
 
 def dump_latex_table():
     from tabulate import tabulate
+    tabulate.LATEX_ESCAPE_RULES={}
     headers = ["program", "LLVM instrs", "input indep instr", "input indep%", "input dep %", "data indep instr",
     "argument dep. data indep instr", "data indep loop dep instr", "data indep %"]
     oh_block_coverage_headers = ["program", "sensitive blocks", "oh protected blocks", "short oh protected blocks", "oh protected block %",
@@ -280,7 +308,7 @@ def parse_stats(bitcode_name, dir_name):
     file_name = os.path.join(dir_name, STATS)
     stats = json.load(open(file_name))
     #module_name_key = dir_name.replace("dataset_info", "local_dataset")
-    module_name_key = dir_name.replace("dataset_info", "dataset")
+    module_name_key = dir_name.replace("dataset_info", "coverage_dataset")
     input_dep_cov = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_DEP_COVERAGE_KEY][INSTR_COVERAGE_KEY]
     input_dep_coverage[bitcode_name] = input_dep_cov
     input_indep_instr[bitcode_name] = stats[INPUT_DEP_STATS_KEY][module_name_key][INPUT_INDEP_COVERAGE_KEY][INPUT_INDEP_INSTR_KEY]
@@ -300,8 +328,10 @@ def parse_oh_stats(bitcode_name, dir_name):
     stats = json.load(open(file_name))
     oh_protected_instr[bitcode_name] = stats[OH_PROTECTED_INSTR_KEY]
     short_range_oh_protected_instr[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_INSTR_KEY]
+    short_range_oh_protected_data_dep_instr[bitcode_name] = stats[SHORT_RANGE_OH_PROTECTED_DATA_DEP_INSTR_KEY]
     oh_non_hashable_instr[bitcode_name] = stats[OH_NON_HAHSBALE_INSTR_KEY]
     unprotected_loop_instr[bitcode_name] = stats[UNPROTECTED_LOOP_INSTRUCTIONS]
+    unprotected_loop_variant_instr[bitcode_name] = stats[UNPROTECTED_LOOP_VARINAT_INSTRUCTIONS]
     unprotected_argument_reachable_instr[bitcode_name] = stats[UNPROTECTED_ARGUMENT_REACHABLE_INSTRUCTIONS]
     unprotected_global_reachable_instr[bitcode_name] = stats[UNPROTECTED_GLOBAL_REACHABLE_INSTRUCTIONS]
     unprotected_data_dep_instr[bitcode_name] = stats[UNPROTECTED_DATA_DEPENDENT_INSTRUCTIONS]
