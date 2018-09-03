@@ -144,7 +144,7 @@ def dump_coverage_table():
                 sroh_prot_instr_cov, oh_prot_instr, sroh_prot_instr, skipped, sroh_prot_ddi_instr])
 
 
-    table_data.sort(key = lambda x : x[3])
+    table_data.sort(key = lambda x : x[1])
     latex_table = tabulate(table_data,headers=table_headers,tablefmt="latex")
     table_file = os.path.join(TEX_OUT_FOLDER, "coverage_table.tex")
     with open(table_file,'wb') as tablefile:
