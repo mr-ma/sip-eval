@@ -100,6 +100,57 @@ def std_deviation(numbers):
     import numpy as np
     return round(np.std(numbers), 2)
 
+def dump_coverage_table():
+    from tabulate import tabulate
+    tabulate.LATEX_ESCAPE_RULES={}
+    table_headers = ["Program", "Blocks", "LB", "OHB%", "SROHB%", "OHI%", "SROHI%", "OHI", "SROHI", "SkippedI", "SROHDDI"]
+    table_data = []
+    for key in programs:
+        program = key[:key.index(".")]
+        instrs = instructions[key]
+        sensitive_blcks = sensitive_blocks[key]
+        sensitive_blcks +=  unprotected_blocks_in_functions_with_no_dg[key]
+        oh_prot_block_cov = round((oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 2)
+        sroh_prot_block_cov = round((short_range_oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 2)
+
+        data_dep_loop_blocks = unprotected_data_dep_loop_blocks[key]
+        arg_reachable_loop_blocks = unprotected_arg_reachable_loop_blocks[key]
+        global_reachable_loop_blocks = unprotected_global_reachable_loop_blocks[key]
+        loop_blocks = data_dep_loop_blocks + arg_reachable_loop_blocks + global_reachable_loop_blocks
+
+        instrs = oh_processed_instrs[key]
+        instrs += unprotected_instr_in_functions_with_no_dg[key]
+        sroh_prot_instr = short_range_oh_protected_instr[key]
+        sroh_prot_instr_cov = round((sroh_prot_instr * 100.0) / instrs, 2)
+        oh_prot_instr = oh_protected_instr[key]
+        oh_prot_instr_cov = round((oh_prot_instr * 100.0) / instrs, 2)
+        non_hashable_instr = oh_non_hashable_instr[key]
+        li_ari_gri = (unprotected_loop_instr[key] + unprotected_loop_variant_instr[key] +
+                unprotected_argument_reachable_instr[key] + unprotected_global_reachable_instr[key])
+        unprot_cfd = unprotected_instr[key]
+        unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
+        skipped = li_ari_gri + unprot_cfd + non_hashable_instr + unprotected_instr_with_no_dg
+        sroh_prot_ddi_instr = short_range_oh_protected_data_dep_instr[key]
+        num = sroh_prot_instr + oh_prot_instr + skipped - sroh_prot_ddi_instr
+        if  num != data_indep_instr[key]:
+            #faulty_runs.write(key + "\n")
+            #faulty_runs.write("Number of OH+SROH+LI+GRI+ARI+IAI " + str(num) + "\n")
+            #faulty_runs.write("Number of DII " + str(data_indep_instr[key]) + "\n")
+            print(key)
+            print ("Number of OH+SROH+LI+GRI+ARI+IAI " + str(num))
+            print ("Number of DII " + str(data_indep_instr[key]))
+
+        table_data.append([key, sensitive_blcks, loop_blocks, oh_prot_block_cov, sroh_prot_block_cov, oh_prot_instr_cov,
+                sroh_prot_instr_cov, oh_prot_instr, sroh_prot_instr, skipped, sroh_prot_ddi_instr])
+
+
+    table_data.sort(key = lambda x : x[3])
+    latex_table = tabulate(table_data,headers=table_headers,tablefmt="latex")
+    table_file = os.path.join(TEX_OUT_FOLDER, "coverage_table.tex")
+    with open(table_file,'wb') as tablefile:
+        tablefile.write(latex_table)
+
+
 def dump_latex_table_for_paper(with_dg = False):
     from tabulate import tabulate
     tabulate.LATEX_ESCAPE_RULES={}
@@ -379,6 +430,7 @@ def main():
     #print(input_indep_coverage)
     #print(data_indep_coverage)
     #dump_latex_table()
+    dump_coverage_table()
     dump_latex_table_for_paper()
     dump_latex_table_for_paper(True)
 
