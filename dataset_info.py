@@ -3,8 +3,8 @@ import json
 from pprint import pprint
 import numpy as np
 
-INFO_DIR="/home/sip/eval/dataset_info/"
-#INFO_DIR="/home/anahitik/SIP/sip-eval/dataset_info/"
+#INFO_DIR="/home/sip/eval/dataset_info/"
+INFO_DIR="/home/anahitik/SIP/sip-eval/dataset_info/"
 TEX_OUT_FOLDER='tex'
 STATS="stats"
 OH_STATS="oh.stats"
@@ -90,15 +90,15 @@ oh_processed_instrs={}
 
 def average(numbers):
     import numpy as np
-    return round(np.average(numbers), 2)
+    return round(np.average(numbers), 1)
 
 def median(numbers):
     from numpy import median
-    return round(median(numbers), 2)
+    return round(median(numbers), 1)
 
 def std_deviation(numbers):
     import numpy as np
-    return round(np.std(numbers), 2)
+    return round(np.std(numbers), 1)
 
 def dump_coverage_table():
     from tabulate import tabulate
@@ -174,9 +174,6 @@ def dump_latex_table_for_paper():
         data_indep_cov = round(data_indep_coverage[key], 1)
         input_dep_data.append([program, instrs, input_indep_cov, input_dep_cov, data_indep_cov])
 
-        if input_indep_cov > 0:
-            iiis.append(input_indep_cov)
-
         unprotected_blocks_with_no_dg = unprotected_blocks_in_functions_with_no_dg[key]
         sensitive_blcks = sensitive_blocks[key]
         #if with_dg:
@@ -191,10 +188,6 @@ def dump_latex_table_for_paper():
         global_reachable_loop_blocks = unprotected_global_reachable_loop_blocks[key]
         loop_blocks = data_dep_loop_blocks + arg_reachable_loop_blocks + global_reachable_loop_blocks
         data_dep_blocks = unprotected_data_dep_blocks[key]
-        if sroh_prot_block_cov > 0:
-            sroh_blocks.append(sroh_prot_block_cov)
-        if oh_prot_block_cov > 0:
-            oh_blocks.append(oh_prot_block_cov)
         unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
         instrs = oh_processed_instrs[key]
         #if with_dg:
@@ -229,10 +222,12 @@ def dump_latex_table_for_paper():
             #print(non_hashable_instr)
             #print(unprotected_instr_with_no_dg)
 
-        if sroh_prot_instr_cov > 0:
-            sroh_instrs.append(sroh_prot_instr_cov)
-        if oh_prot_instr_cov > 0:
-            oh_instrs.append(oh_prot_instr_cov)
+        iiis.append(input_indep_cov)
+        sroh_blocks.append(sroh_prot_block_cov)
+        oh_blocks.append(oh_prot_block_cov)
+        sroh_instrs.append(sroh_prot_instr_cov)
+        oh_instrs.append(oh_prot_instr_cov)
+
         oh_instr_coverage_data.append([program, instrs, sroh_prot_instr_cov, oh_prot_instr_cov,
                 oh_prot_instr, sroh_prot_instr, sroh_prot_ddi_instr, li_ari_gri, unprot_cfd, unprotected_instr_with_no_dg, non_hashable_instr])
 
