@@ -3,8 +3,8 @@ import json
 from pprint import pprint
 import numpy as np
 
-#INFO_DIR="/home/sip/eval/dataset_info/"
-INFO_DIR="/home/anahitik/SIP/sip-eval/dataset_info/"
+INFO_DIR="/home/sip/eval/dataset_info/"
+#INFO_DIR="/home/anahitik/SIP/sip-eval/dataset_info/"
 TEX_OUT_FOLDER='tex'
 STATS="stats"
 OH_STATS="oh.stats"
@@ -43,6 +43,7 @@ UNPROTECTED_ARGUMENT_REACHABLE_LOOP_BLOCKS_KEY="numberOfUnprotectedArgumentReach
 UNPROTECTED_GLOBAL_REACHABLE_LOOP_BLOCKS_KEY="numberOfUnprotectedGlobalReachableLoopBlocks"
 UNPROTECTED_DATA_DEPENDENT_BLOCKS="numberOfUnprotectedDataDependentBlocks"
 UNPROTECTED_BLOCKS_IN_FUNCTIONS_WITH_NO_DG="numberOfBlocksInFunctionsWithNoDG"
+INSTRUCTIONS_IN_FUNCTIONS_WITH_NO_DG="numberOfInstructionsInFunctionsWithNoDG"
 OH_PROCESSED_INSTR="numberOfOHProcessedInstr"
 
 #OH_PROTECTED_FUNCTION_KEY="numberOfProtectedFunctions"
@@ -74,6 +75,7 @@ unprotected_data_dep_instr={}
 unprotected_instr={}
 unprotected_filtered_instr={}
 unprotected_instr_in_functions_with_no_dg={}
+instr_in_functions_with_no_dg={}
 
 sensitive_blocks={}
 oh_protected_blocks={}
@@ -86,6 +88,7 @@ unprotected_arg_reachable_loop_blocks={}
 unprotected_global_reachable_loop_blocks={}
 unprotected_data_dep_blocks={}
 unprotected_blocks_in_functions_with_no_dg={}
+unprotected_instructions_in_functions_with_no_dg={}
 oh_processed_instrs={}
 
 def average(numbers):
@@ -108,9 +111,8 @@ def dump_coverage_table():
     for key in programs:
         program = key[:key.index(".")]
         sensitive_blcks = sensitive_blocks[key]
-        sensitive_blcks +=  unprotected_blocks_in_functions_with_no_dg[key]
-        oh_prot_block_cov = round((oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 2)
-        sroh_prot_block_cov = round((short_range_oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 2)
+        oh_prot_block_cov = round((oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 1)
+        sroh_prot_block_cov = round((short_range_oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 1)
 
         data_dep_loop_blocks = unprotected_data_dep_loop_blocks[key]
         arg_reachable_loop_blocks = unprotected_arg_reachable_loop_blocks[key]
@@ -149,7 +151,7 @@ def dump_coverage_table():
         tablefile.write(latex_table)
 
 
-def dump_latex_table_for_paper():
+def dump_latex_table_for_paper(with_dg = True):
     from tabulate import tabulate
     tabulate.LATEX_ESCAPE_RULES={}
     input_dep_headers = ["Program", "Inst.", "III%", "DDI+CFDI %", "DII %"]
@@ -176,8 +178,8 @@ def dump_latex_table_for_paper():
 
         unprotected_blocks_with_no_dg = unprotected_blocks_in_functions_with_no_dg[key]
         sensitive_blcks = sensitive_blocks[key]
-        #if with_dg:
-        #    sensitive_blcks +=  unprotected_blocks_with_no_dg
+        if not with_dg:
+            sensitive_blcks -= unprotected_blocks_with_no_dg
         oh_prot_block = oh_protected_blocks[key]
         short_oh_prot_block = short_range_oh_protected_blocks[key]
         oh_prot_block_cov = round((oh_prot_block * 100.0)/ sensitive_blcks, 1)
@@ -189,13 +191,13 @@ def dump_latex_table_for_paper():
         loop_blocks = data_dep_loop_blocks + arg_reachable_loop_blocks + global_reachable_loop_blocks
         data_dep_blocks = unprotected_data_dep_blocks[key]
         unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
-        instrs = oh_processed_instrs[key]
-        #if with_dg:
-        #    instrs += unprotected_instr_with_no_dg
+        sensitive_instrs = oh_processed_instrs[key]
+        if not with_dg:
+            sensitive_instrs -= instr_in_functions_with_no_dg[key]
         sroh_prot_instr = short_range_oh_protected_instr[key]
-        sroh_prot_instr_cov = round((sroh_prot_instr * 100.0) / instrs, 1)
+        sroh_prot_instr_cov = round((sroh_prot_instr * 100.0) / sensitive_instrs, 1)
         oh_prot_instr = oh_protected_instr[key]
-        oh_prot_instr_cov = round((oh_prot_instr * 100.0) / instrs, 1)
+        oh_prot_instr_cov = round((oh_prot_instr * 100.0) / sensitive_instrs, 1)
         non_hashable_instr = oh_non_hashable_instr[key]
         li_ari_gri = (unprotected_loop_instr[key] + unprotected_loop_variant_instr[key] +
                 unprotected_argument_reachable_instr[key] + unprotected_global_reachable_instr[key])
@@ -252,10 +254,10 @@ def dump_latex_table_for_paper():
     oh_instr_latex_table = tabulate(oh_instr_coverage_data, headers=oh_instr_coverage_headers,tablefmt="latex")
     improvements_latex_table = tabulate(improvement_data, headers=improvement_headers, tablefmt="latex")
     table_file_name=""
-    #if with_dg:
-    #    table_file_name = "paper_tables_with_dg.tex"
-    #else:
-    table_file_name = "paper_tables.tex"
+    if with_dg:
+        table_file_name = "paper_tables_with_dg.tex"
+    else:
+        table_file_name = "paper_tables.tex"
 
     #table_file = os.path.join(TEX_OUT_FOLDER,"paper_tables.tex")
     table_file = os.path.join(TEX_OUT_FOLDER, table_file_name)
@@ -398,6 +400,7 @@ def parse_oh_stats(bitcode_name, dir_name):
     unprotected_global_reachable_loop_blocks[bitcode_name] = stats[UNPROTECTED_GLOBAL_REACHABLE_LOOP_BLOCKS_KEY]
     unprotected_data_dep_blocks[bitcode_name] = stats[UNPROTECTED_DATA_DEPENDENT_BLOCKS]
     unprotected_blocks_in_functions_with_no_dg[bitcode_name] = stats[UNPROTECTED_BLOCKS_IN_FUNCTIONS_WITH_NO_DG]
+    instr_in_functions_with_no_dg[bitcode_name] = stats[INSTRUCTIONS_IN_FUNCTIONS_WITH_NO_DG]
 
 def get_bitcode_name_from_path(dir_name):
     return os.path.basename(os.path.normpath(dir_name))
@@ -423,8 +426,9 @@ def main():
     #print(input_indep_coverage)
     #print(data_indep_coverage)
     #dump_latex_table()
-    #dump_coverage_table()
+    dump_coverage_table()
     dump_latex_table_for_paper()
+    dump_latex_table_for_paper(False)
 
 if __name__=="__main__":
     main()
