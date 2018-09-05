@@ -1,0 +1,12 @@
+{
+    "functions": [
+    {
+        "name": "strncmp",
+         "deps": [
+         {
+             "return": [0, 1, 2]
+         }
+         ]
+    }
+    ]
+}

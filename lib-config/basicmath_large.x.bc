@@ -50,6 +50,15 @@
          ]
     },
     {
+        "name": "acos",
+         "deps": [
+         {
+             "return": [0]
+         }
+         ]
+    },
+
+    {
         "name": "write",
          "deps": [
          {
@@ -84,10 +93,26 @@
          ]
     },
     {
+        "name": "atan",
+         "deps": [
+         {
+             "return": [0]
+         }
+         ]
+    },
+    {
         "name": "sqrt",
          "deps": [
          {
              "return": [0]
+         }
+         ]
+    },
+    {
+        "name": "pow",
+         "deps": [
+         {
+             "return": [0, 1]
          }
          ]
     },
