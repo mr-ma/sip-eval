@@ -21,7 +21,6 @@ mkdir -p binaries
 
 
 #prepare runtime lib
-clang-6.0 $rtlib_path -c -emit-llvm -o $binary_path"rtlib.bc"
 if [ $? -eq 0 ]; then
 	echo 'OK Transform'
 else
@@ -30,11 +29,9 @@ else
 fi
 
 
-#TODO hook intercept library for other applications/feed a constant input
-export LD_PRELOAD="/home/sip/self-checksumming/hook/build/libminm.so" 
-
 for bc in $bc_files
 do
+    unset LD_PRELOAD
 	bitcode=$bc
 	echo $bc
 	filename=${bc##*/}
@@ -116,26 +113,6 @@ do
 						echo 'FAIL Transform'
 						exit    
 					fi  
-
-
-					#link RTLIB 
-					llvm-link-6.0 $output_dir/out.bc $binary_path"rtlib.bc" -o $output_dir/out.bc
-					if [ $? -eq 0 ]; then
-						echo 'OK Link'
-					else
-						echo 'FAIL Link RTLib'
-						exit    
-					fi
-					# compiling external libraries to bitcodes
-					clang-6.0 $OH_PATH/assertions/response.c -c -fno-use-cxa-atexit -emit-llvm -o $OH_PATH/assertions/response.bc
-					if [ $? -eq 0 ]; then
-						echo 'OK '
-					else
-						echo 'FAIL Compile external'
-						exit    
-					fi  
-
-
 					echo 'Post patching binary after hash calls'
 					llc-6.0 $output_dir/out.bc -o $output_dir/out.s
 					if [ $? -eq 0 ]; then
@@ -152,17 +129,25 @@ do
 						exit    
 					fi 
 					# Linking with external libraries
+                    rm "librtlib.so"
+                    rm "oh_rtlib.o"
+                    rm "sc_rtlib.o"
 					echo "RESPONSE FILE:" 
 					echo $response_file
+                    LIB_FILES=()
 					if [ "$response_file" = "response.c" ]; then
 						echo 'RUNNING GCC'
 						echo gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
-						gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
+                        gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o oh_rtlib.o
+                        LIB_FILES+=( "${PWD}/oh_rtlib.o" )
 					else
 						echo 'RUNNING G++'
 						echo g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
-						g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
+                        g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o oh_rtlib.o
+                        LIB_FILES+=( "${PWD}/oh_rtlib.o" )
 					fi
+                    gcc -fPIC -g -rdynamic -c "$rtlib_path" -o sc_rtlib.o
+                    LIB_FILES+=( "${PWD}/sc_rtlib.o" )
 					#gcc -g -rdynamic -c rtlib.c -o rtlib.o
 					if [ $? -eq 0 ]; then
 						echo 'OK gcc -g'
@@ -171,9 +156,11 @@ do
 						exit    
 					fi 
 					if [ "$response_file" = "response.c" ]; then
-						gcc -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
+                        gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "librtlib.so" ${LIB_FILES[@]}
+						gcc -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lrtlib $libraries
 					else
-						g++ -std=c++0x -g -rdynamic $output_dir/out.o $output_dir/response.o -o $output_dir/$filename $libraries
+                        g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "librtlib.so" ${LIB_FILES[@]}
+						g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lrtlib $libraries
 					fi
 
 					if [ $? -eq 0 ]; then
@@ -199,6 +186,8 @@ do
 					echo 'Starting GDB patcher, this will wait for input when nothing is provided'
 
 					echo $gdb_script
+                    #TODO hook intercept library for other applications/feed a constant input
+                    export LD_PRELOAD="/home/anahitik/SIP/self-checksumming/hook/build/libminm.so ${PWD}/librtlib.so" 
 					#Patch using GDB
 					echo "python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g $cmd_args -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console"
 					python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
