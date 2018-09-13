@@ -1,5 +1,0 @@
-['gdb', '/home/anahitik/SIP/sip-eval/binaries/search_large.x.bc/25/0/1/search_large.x.bc', '-x', '/home/anahitik/SIP/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/anahitik/SIP/sip-eval/binaries/search_large.x.bc/25/0/1/search_large.x.bctmp  saved as: /home/anahitik/SIP/sip-eval/binaries/search_large.x.bc/25/0/1/search_large.x.bctmp
- oh_path_functions @0x8980   length: 8

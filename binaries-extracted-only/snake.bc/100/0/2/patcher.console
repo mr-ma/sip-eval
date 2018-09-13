@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 144, u'diff': u'NEW', u'name': u'sym.sig_handler', u'outdegree': 5, u'cc': 1, u'indegree': 1, u'dataxrefs': [], u'nargs': 0, u'codexrefs': [{u'type': u'C', u'addr': 4232624, u'at': 4232528}], u'edges': 0, u'difftype': u'new', u'nlocals': 7, u'cost': 46, u'datarefs': [4384623, 4384634], u'callrefs': [{u'type': u'C', u'addr': 4376832, u'at': 4232575}, {u'type': u'C', u'addr': 4376832, u'at': 4232616}, {u'type': u'C', u'addr': 4232640, u'at': 4232624}, {u'type': u'C', u'addr': 4228720, u'at': 4232646}, {u'type': u'C', u'addr': 4228816, u'at': 4232656}], u'offset': 4232528, u'ebbs': 1, u'nbbs': 1, u'type': u'sym', u'size': 144}]
-ERR. Target function sym.sig_handler0 does not match sym.sig_handler
-Failed to patch all expected patches: 141  total patched: 1176

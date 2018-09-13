@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/sip/eval/binaries/bf.x.bc/25/5/3/bf.x.bc', 'e', '/home/sip/eval/cmdline-args/bf_input_small.asc', 'output_small.enc', '1234567890abcdeffedcba0987654321']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/bf.x.bc/25/5/3/bf.x.bctmp  saved as: /home/sip/eval/binaries/bf.x.bc/25/5/3/bf.x.bctmp
- oh_path_functions @-0x1   length: -1
-No functions to NOP

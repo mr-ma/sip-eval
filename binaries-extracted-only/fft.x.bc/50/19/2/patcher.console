@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 247, u'diff': u'NEW', u'name': u'sym.NumberOfBitsNeeded', u'cc': 2, u'indegree': 0, u'nargs': 0, u'difftype': u'new', u'edges': 6, u'outdegree': 6, u'nlocals': 13, u'cost': 77, u'datarefs': [1, 6365472, 4256664], u'callrefs': [{u'type': u'C', u'addr': 4248896, u'at': 4237903}, {u'type': u'C', u'addr': 4248896, u'at': 4237944}, {u'type': u'C', u'addr': 4248896, u'at': 4237985}, {u'type': u'C', u'addr': 4238064, u'at': 4238049}, {u'type': u'C', u'addr': 4224752, u'at': 4238093}, {u'type': u'J', u'addr': 4238024, u'at': 4238009}, {u'type': u'C', u'addr': 4238128, u'at': 4238019}], u'offset': 4237856, u'ebbs': 2, u'nbbs': 6, u'type': u'sym', u'size': 252}]
-ERR. Target function sym.NumberOfBitsNeeded0 does not match sym.NumberOfBitsNeeded
-Failed to patch all expected patches: 63  total patched: 246

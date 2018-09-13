@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/sip/eval/binaries/rijndael.x.bc/10/11/2/rijndael.x.bc', '/home/sip/eval/cmdline-args/rijndael_input_small.asc', 'output_small.enc', 'e', '1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/rijndael.x.bc/10/11/2/rijndael.x.bctmp  saved as: /home/sip/eval/binaries/rijndael.x.bc/10/11/2/rijndael.x.bctmp
- oh_path_functions @0xb2d0   length: 8
-Noping 7 bytes @ 0xb2d0

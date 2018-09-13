@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/sip/eval/binaries/sha.bc/10/14/1/sha.bc', '/home/sip/eval/cmdline-args/sha_input_small.asc']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/sha.bc/10/14/1/sha.bctmp  saved as: /home/sip/eval/binaries/sha.bc/10/14/1/sha.bctmp
- oh_path_functions @0x6ff0   length: 8
-Noping 7 bytes @ 0x6ff0

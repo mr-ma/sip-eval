@@ -1,6 +1,0 @@
-['gdb', '-ex', 'set args  4 4096 > output_small.txt', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '/home/sip/eval/binaries/fft.x.bc/10/11/1/fft.x.bc']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/fft.x.bc/10/11/1/fft.x.bctmp  saved as: /home/sip/eval/binaries/fft.x.bc/10/11/1/fft.x.bctmp
- oh_path_functions @-0x1   length: -1
-No functions to NOP

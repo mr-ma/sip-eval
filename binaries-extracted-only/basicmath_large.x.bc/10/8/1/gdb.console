@@ -1,6 +1,0 @@
-['gdb', '/home/sip/eval/binaries/basicmath_large.x.bc/10/8/1/basicmath_large.x.bc', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/basicmath_large.x.bc/10/8/1/basicmath_large.x.bctmp  saved as: /home/sip/eval/binaries/basicmath_large.x.bc/10/8/1/basicmath_large.x.bctmp
- oh_path_functions @0x76b0   length: 8
-Noping 7 bytes @ 0x76b0

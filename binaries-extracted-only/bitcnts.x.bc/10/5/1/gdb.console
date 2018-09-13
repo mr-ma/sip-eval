@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/sip/eval/binaries/bitcnts.x.bc/10/5/1/bitcnts.x.bc', '100']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/bitcnts.x.bc/10/5/1/bitcnts.x.bctmp  saved as: /home/sip/eval/binaries/bitcnts.x.bc/10/5/1/bitcnts.x.bctmp
- oh_path_functions @-0x1   length: -1
-No functions to NOP

@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 230, u'diff': u'NEW', u'name': u'sym.main', u'outdegree': 8, u'cc': 3, u'indegree': 1, u'dataxrefs': [], u'nargs': 0, u'codexrefs': [{u'type': u'C', u'addr': 4223197, u'at': 4222992}], u'edges': 7, u'difftype': u'new', u'nlocals': 11, u'cost': 73, u'datarefs': [6341424, 2000, 4234496], u'callrefs': [{u'type': u'C', u'addr': 4226784, u'at': 4223037}, {u'type': u'C', u'addr': 4226784, u'at': 4223078}, {u'type': u'C', u'addr': 4226784, u'at': 4223119}, {u'type': u'C', u'addr': 4222448, u'at': 4223174}, {u'type': u'C', u'addr': 4223216, u'at': 4223197}, {u'type': u'C', u'addr': 4222608, u'at': 4223222}, {u'type': u'C', u'addr': 4223248, u'at': 4223155}, {u'type': u'C', u'addr': 4223344, u'at': 4223192}], u'offset': 4222992, u'ebbs': 1, u'nbbs': 6, u'type': u'sym', u'size': 245}]
-ERR. Target function sym.main0 does not match sym.main
-Failed to patch all expected patches: 39  total patched: 78

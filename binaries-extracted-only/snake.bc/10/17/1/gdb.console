@@ -1,6 +1,0 @@
-['gdb', '/home/sip/eval/binaries/snake.bc/10/17/1/snake.bc', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/snake.bc/10/17/1/snake.bctmp  saved as: /home/sip/eval/binaries/snake.bc/10/17/1/snake.bctmp
- oh_path_functions @0x9030   length: 8
-Noping 7 bytes @ 0x9030

@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/anahitik/SIP/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/anahitik/SIP/sip-eval/binaries/patricia.x.bc/25/0/3/patricia.x.bc', '/home/sip/eval/cmdline-args/patricia_small.udp']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/anahitik/SIP/sip-eval/binaries/patricia.x.bc/25/0/3/patricia.x.bctmp  saved as: /home/anahitik/SIP/sip-eval/binaries/patricia.x.bc/25/0/3/patricia.x.bctmp
- oh_path_functions @-0x1   length: -1
-No functions to NOP

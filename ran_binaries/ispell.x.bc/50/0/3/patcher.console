@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 392, u'diff': u'NEW', u'name': u'sym.tinsert', u'cc': 6, u'indegree': 0, u'nargs': 0, u'difftype': u'new', u'edges': 15, u'outdegree': 10, u'nlocals': 13, u'cost': 123, u'datarefs': [7608144, 7608136], u'callrefs': [{u'type': u'C', u'addr': 5407104, u'at': 4514117}, {u'type': u'C', u'addr': 5407104, u'at': 4514158}, {u'type': u'C', u'addr': 4356160, u'at': 4514188}, {u'type': u'C', u'addr': 4516160, u'at': 4514219}, {u'type': u'C', u'addr': 4519264, u'at': 4514367}, {u'type': u'C', u'addr': 4301040, u'at': 4514316}, {u'type': u'C', u'addr': 4519232, u'at': 4514399}, {u'type': u'C', u'addr': 4514496, u'at': 4514433}, {u'type': u'C', u'addr': 4519168, u'at': 4514294}, {u'type': u'C', u'addr': 4516080, u'at': 4514201}], u'offset': 4514064, u'ebbs': 2, u'nbbs': 11, u'type': u'sym', u'size': 392}]
-ERR. Target function sym.treeinsert12 does not match sym.tinsert
-Failed to patch all expected patches: 873  total patched: 7974

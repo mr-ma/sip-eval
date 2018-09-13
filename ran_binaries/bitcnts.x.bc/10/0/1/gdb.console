@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/anahitik/SIP/sip-oblivious-hashing/assertions/gdb_script.txt', '--args', '/home/anahitik/SIP/sip-eval/binaries/bitcnts.x.bc/10/0/1/bitcnts.x.bc', '1000']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/anahitik/SIP/sip-eval/binaries/bitcnts.x.bc/10/0/1/bitcnts.x.bctmp  saved as: /home/anahitik/SIP/sip-eval/binaries/bitcnts.x.bc/10/0/1/bitcnts.x.bctmp
- oh_path_functions @-0x1   length: -1
-No functions to NOP

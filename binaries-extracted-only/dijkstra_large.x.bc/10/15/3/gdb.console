@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/sip/eval/binaries/dijkstra_large.x.bc/10/15/3/dijkstra_large.x.bc', '/home/sip/eval/cmdline-args/dijkstra_input.dat']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/dijkstra_large.x.bc/10/15/3/dijkstra_large.x.bctmp  saved as: /home/sip/eval/binaries/dijkstra_large.x.bc/10/15/3/dijkstra_large.x.bctmp
- oh_path_functions @0x7790   length: 8
-Noping 7 bytes @ 0x7790

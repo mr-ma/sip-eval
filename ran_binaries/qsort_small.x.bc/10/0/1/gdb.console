@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/anahitik/SIP/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/anahitik/SIP/sip-eval/binaries/qsort_small.x.bc/10/0/1/qsort_small.x.bc', '/home/anahitik/SIP/sip-eval/cmdline-args/sort-input.txt']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/anahitik/SIP/sip-eval/binaries/qsort_small.x.bc/10/0/1/qsort_small.x.bctmp  saved as: /home/anahitik/SIP/sip-eval/binaries/qsort_small.x.bc/10/0/1/qsort_small.x.bctmp
- oh_path_functions @-0x1   length: -1
-No functions to NOP

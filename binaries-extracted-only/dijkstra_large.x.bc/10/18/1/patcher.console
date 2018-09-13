@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 196, u'diff': u'NEW', u'name': u'sym.enqueue', u'cc': 3, u'indegree': 0, u'nargs': 0, u'difftype': u'new', u'edges': 10, u'outdegree': 7, u'nlocals': 5, u'cost': 80, u'datarefs': [24, 6340888, 6340864, 4232888], u'callrefs': [{u'type': u'C', u'addr': 4222576, u'at': 4223399}, {u'type': u'C', u'addr': 4223552, u'at': 4223543}, {u'type': u'C', u'addr': 4222768, u'at': 4223567}, {u'type': u'C', u'addr': 4223584, u'at': 4223526}, {u'type': u'C', u'addr': 4223712, u'at': 4223531}, {u'type': u'J', u'addr': 4223496, u'at': 4223476}, {u'type': u'C', u'addr': 4223616, u'at': 4223491}, {u'type': u'C', u'addr': 4223648, u'at': 4223515}, {u'type': u'J', u'addr': 4223531, u'at': 4223520}], u'offset': 4223376, u'ebbs': 2, u'nbbs': 9, u'type': u'sym', u'size': 206}]
-ERR. Target function sym.enqueue0 does not match sym.enqueue
-Failed to patch all expected patches: 6  total patched: 12

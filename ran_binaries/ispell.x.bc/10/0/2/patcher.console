@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 312, u'diff': u'NEW', u'name': u'sym.tinsert', u'cc': 6, u'indegree': 0, u'nargs': 0, u'difftype': u'new', u'edges': 15, u'outdegree': 8, u'nlocals': 7, u'cost': 105, u'datarefs': [6637392, 6637384], u'callrefs': [{u'type': u'C', u'addr': 4285024, u'at': 4312119}, {u'type': u'C', u'addr': 4313632, u'at': 4312150}, {u'type': u'C', u'addr': 4313888, u'at': 4312303}, {u'type': u'C', u'addr': 4266528, u'at': 4312252}, {u'type': u'C', u'addr': 4313856, u'at': 4312335}, {u'type': u'C', u'addr': 4312432, u'at': 4312369}, {u'type': u'C', u'addr': 4313792, u'at': 4312230}, {u'type': u'C', u'addr': 4313552, u'at': 4312132}], u'offset': 4312080, u'ebbs': 2, u'nbbs': 11, u'type': u'sym', u'size': 312}]
-ERR. Target function sym.treeinsert12 does not match sym.tinsert
-Failed to patch all expected patches: 174  total patched: 717

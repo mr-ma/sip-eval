@@ -1,4 +1,0 @@
-['gdb', '/home/anahitik/SIP/sip-eval/binaries/basicmath_small.x.bc/50/0/3/basicmath_small.x.bc', '-x', '/home/anahitik/SIP/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt']
-gdb ran. Parsing results
-['gdb', '/home/anahitik/SIP/sip-eval/binaries/basicmath_small.x.bc/50/0/3/basicmath_small.x.bc', '-x', '/home/anahitik/SIP/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt']
-gdb ran. Parsing results

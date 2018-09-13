@@ -1,6 +1,0 @@
-['gdb', '-ex', 'set args  < /home/sip/eval/cmdline-args/rawdaudio_small.adpcm  > output_small.pcm', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '/home/sip/eval/binaries/rawdaudio.x.bc/10/12/3/rawdaudio.x.bc']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/rawdaudio.x.bc/10/12/3/rawdaudio.x.bctmp  saved as: /home/sip/eval/binaries/rawdaudio.x.bc/10/12/3/rawdaudio.x.bctmp
- oh_path_functions @-0x1   length: -1
-No functions to NOP

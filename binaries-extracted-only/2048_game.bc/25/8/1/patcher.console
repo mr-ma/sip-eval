@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 96, u'diff': u'NEW', u'name': u'sym.fopen_or_die', u'outdegree': 3, u'cc': 1, u'indegree': 2, u'dataxrefs': [], u'nargs': 0, u'codexrefs': [{u'type': u'C', u'addr': 4234734, u'at': 4233296}, {u'type': u'C', u'addr': 4233340, u'at': 4233296}], u'edges': 2, u'difftype': u'new', u'nlocals': 5, u'cost': 36, u'datarefs': [], u'callrefs': [{u'type': u'C', u'addr': 4227024, u'at': 4233312}, {u'type': u'C', u'addr': 4233360, u'at': 4233340}, {u'type': u'C', u'addr': 4226832, u'at': 4233377}], u'offset': 4233296, u'ebbs': 2, u'nbbs': 3, u'type': u'sym', u'size': 96}]
-ERR. Target function sym.fopen_or_die0 does not match sym.fopen_or_die
-Failed to patch all expected patches: 27  total patched: 69

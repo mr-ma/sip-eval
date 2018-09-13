@@ -9,7 +9,7 @@ TEX_OUT_FOLDER='tex'
 def dump_coverage_table(data_file):
     from tabulate import tabulate
     tabulate.LATEX_ESCAPE_RULES={}
-    table_headers = ["Program", "Blocks", "LB", "OHB%", "SROHB%", "Intrs", "OHI%", "SROHI%", "OHI", "SROHI", "LI", "IAI", "GRI", "ARI", "NHI", "CTFI", "SROHDDI", "MURNF"]
+    table_headers = ["Program", "Blocks", "LB", "OHB%", "SROHB%", "Intrs", "OHI%", "SROHI%", "OHI", "SROHI", "LI", "IAI", "GRI", "ARI", "NHI", "CTFI", "SROHDDI"]
     table_data = []
     with open(data_file, 'r') as f:
         data = json.load(f)
@@ -20,10 +20,10 @@ def dump_coverage_table(data_file):
                     program_data["oh_instr_cov"], program_data["sroh_instr_cov"], program_data["oh_instr"],
                     program_data["sroh_instr"], program_data["loop_instr"], program_data["global_reachable_instr"],
                     program_data["arg_reachable_instr"], program_data["no_dg_instr"], program_data["non_hashable_instr"],
-                    program_data["cfd"], program_data["sroh_protected_ddi"], program_data["main_unreachable_functions"]])
+                    program_data["cfd"], program_data["sroh_protected_ddi"]])
     table_data.sort(key = lambda x : x[1])
     latex_table = tabulate(table_data,headers=table_headers,tablefmt="latex")
-    table_file = os.path.join(TEX_OUT_FOLDER, "coverage_table_without_unreachables.tex")
+    table_file = os.path.join(TEX_OUT_FOLDER, "coverage_table.tex")
     with open(table_file,'wb') as tablefile:
         tablefile.write(latex_table)
 
@@ -99,7 +99,7 @@ def dump_improvement_table(data_file, table_file_name):
         srohi_data = improvement_data["srohi"]
         table_data.append(["SROHI%", srohi_data["average"], srohi_data["median"], srohi_data["std"]])
         ohi_data = improvement_data["ohi"]
-        table_data.append(["OHI%", ohb_data["average"], ohb_data["median"], ohb_data["std"]])
+        table_data.append(["OHI%", ohi_data["average"], ohi_data["median"], ohi_data["std"]])
 
     latex_table = tabulate(table_data,headers=table_headers,tablefmt="latex")
     table_file = os.path.join(TEX_OUT_FOLDER, table_file_name)
@@ -107,7 +107,7 @@ def dump_improvement_table(data_file, table_file_name):
         tablefile.write(latex_table)
 
 def dump_paper_tables(data_file):
-    table_file_name = "paper_tables_with_dg_without_unreachables.tex"
+    table_file_name = "paper_tables.tex"
     dump_dataset_info_table(data_file, table_file_name)
     dump_instructions_table(data_file, table_file_name)
     dump_blocks_table(data_file, table_file_name)

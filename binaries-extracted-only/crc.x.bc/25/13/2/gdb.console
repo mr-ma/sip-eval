@@ -1,6 +1,0 @@
-['gdb', '-x', '/home/sip/sip-oblivious-hashing/assertions/gdb_script_for_do_assert.txt', '--args', '/home/sip/eval/binaries/crc.x.bc/25/13/2/crc.x.bc', '/home/sip/eval/cmdline-args/crc_large.pcm']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/sip/eval/binaries/crc.x.bc/25/13/2/crc.x.bctmp  saved as: /home/sip/eval/binaries/crc.x.bc/25/13/2/crc.x.bctmp
- oh_path_functions @0x7110   length: 8
-Noping 7 bytes @ 0x7110

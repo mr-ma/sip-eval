@@ -1,5 +1,0 @@
-['gdb', '/home/anahitik/SIP/sip-eval/binaries/rijndael.x.bc/10/0/2/rijndael.x.bc', '-x', '/home/anahitik/SIP/sip-oblivious-hashing/assertions/gdb_script.txt']
-gdb ran. Parsing results
-patching placeholders
-Patched: 0  in  /home/anahitik/SIP/sip-eval/binaries/rijndael.x.bc/10/0/2/rijndael.x.bctmp  saved as: /home/anahitik/SIP/sip-eval/binaries/rijndael.x.bc/10/0/2/rijndael.x.bctmp
- oh_path_functions @0x5470   length: 8

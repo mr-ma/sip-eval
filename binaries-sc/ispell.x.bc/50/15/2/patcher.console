@@ -1,4 +1,0 @@
-TAKING ME
-[{u'calltype': u'amd64', u'realsz': 344, u'diff': u'NEW', u'name': u'sym.tinsert', u'cc': 6, u'indegree': 0, u'nargs': 0, u'difftype': u'new', u'edges': 15, u'outdegree': 9, u'nlocals': 10, u'cost': 114, u'datarefs': [8, 120, 6510400, 6510392, 4, 16, 24, 16, 8], u'callrefs': [{u'type': u'C', u'addr': 4345072, u'at': 4298021}, {u'type': u'C', u'addr': 4274624, u'at': 4298051}, {u'type': u'C', u'addr': 4299776, u'at': 4298082}, {u'type': u'C', u'addr': 4300032, u'at': 4298223}, {u'type': u'C', u'addr': 4254944, u'at': 4298172}, {u'type': u'C', u'addr': 4300000, u'at': 4298255}, {u'type': u'C', u'addr': 4298352, u'at': 4298289}, {u'type': u'C', u'addr': 4299936, u'at': 4298150}, {u'type': u'C', u'addr': 4299696, u'at': 4298064}], u'offset': 4297968, u'ebbs': 2, u'nbbs': 11, u'type': u'sym', u'size': 344}]
-ERR. Target function sym.treeinsert12 does not match sym.tinsert
-Failed to patch all expected patches: 846  total patched: 1692
