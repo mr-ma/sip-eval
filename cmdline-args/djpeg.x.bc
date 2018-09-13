@@ -1,2 +1,2 @@
--dct int -ppm -outfile output_small_decode.ppm /home/sip/eval/cmdline-args/djpeg_input_small.jpg
+ -dct int -ppm -outfile output_small_decode.ppm /home/sip/eval/cmdline-args/djpeg_input_small.jpg
 
