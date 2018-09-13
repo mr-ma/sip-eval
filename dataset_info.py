@@ -155,9 +155,6 @@ def dump_paper_tables_json(tables_file):
     instructions_data = []
     improvement_data = {}
 
-    input_dep_data = []
-    oh_block_coverage_data = []
-    oh_instr_coverage_data=[]
     iiis = []
     sroh_blocks = []
     sroh_instrs = []
@@ -227,6 +224,168 @@ def dump_paper_tables_json(tables_file):
     with open(tables_file, 'a') as f :
         json.dump(table_data, f)
 
+
+def dump_paper_table_json(tables_file):
+    table_data = {}
+    programs_data = []
+    improvement_data = {}
+
+    all_instructions = []
+    iiis = []
+    ddicfdis = []
+    ddis = []
+    ohis = []
+    srohis = []
+    oh_instrs = []
+    sroh_instrs = []
+    ohsrohis = []
+    skippedis = []
+    srohddis = []
+    blocks = []
+    loop_blocks = []
+    oh_blocks = []
+    sroh_blocks = []
+    ohsrohblocks = []
+    for key in programs:
+        program_info = {}
+        program = key[:key.index(".")]
+        program_info["program"] = program
+        instrs = instructions[key]
+        program_info["Instructions"] = instrs
+        all_instructions.append(instrs)
+        input_indep_cov = round(input_indep_coverage[key], 1)
+        program_info["iii"] = input_indep_cov
+        iiis.append(input_indep_cov)
+        input_dep_cov = round(input_dep_coverage[key], 1)
+        program_info["ddi+cfdi"] = input_dep_cov
+        ddicfdis.append(input_dep_cov)
+        data_indep_cov = round(data_indep_coverage[key], 1)
+        program_info["ddi"] = data_indep_cov
+        ddis.append(data_indep_cov)
+
+        sensitive_instrs = oh_processed_instrs[key]
+        oh_prot_instr = oh_protected_instr[key]
+        program_info["ohi"] = oh_prot_instr
+        ohis.append(oh_prot_instr)
+        sroh_prot_instr = short_range_oh_protected_instr[key]
+        program_info["srohi"] = sroh_prot_instr
+        srohis.append(sroh_prot_instr)
+        oh_prot_instr_cov = round((oh_prot_instr * 100.0) / sensitive_instrs, 1)
+        program_info["ohi%"] = oh_prot_instr_cov
+        oh_instrs.append(oh_prot_instr_cov)
+        sroh_prot_instr_cov = round((sroh_prot_instr * 100.0) / sensitive_instrs, 1)
+        program_info["srohi%"] = sroh_prot_instr_cov
+        sroh_instrs.append(sroh_prot_instr_cov)
+        protected_instr = (oh_prot_instr + sroh_prot_instr)
+        oh_sroh_prot_cov = round((protected_instr * 100.0) / sensitive_instrs, 1)
+        program_info["oh+srohi%"] = oh_sroh_prot_cov
+        ohsrohis.append(oh_sroh_prot_cov)
+        unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
+        non_hashable_instr = oh_non_hashable_instr[key]
+        li_ari_gri = (unprotected_loop_instr[key] + unprotected_loop_variant_instr[key] +
+                unprotected_argument_reachable_instr[key] + unprotected_global_reachable_instr[key])
+        unprot_cfd = unprotected_instr[key]
+        skipped_instrs = unprotected_instr_with_no_dg + non_hashable_instr + li_ari_gri + unprot_cfd
+        program_info["skippedi"] = skipped_instrs
+        skippedis.append(skipped_instrs)
+        sroh_prot_ddi_instr = short_range_oh_protected_data_dep_instr[key]
+        program_info["srohddi"] = sroh_prot_ddi_instr
+        srohddis.append(sroh_prot_ddi_instr)
+
+        sensitive_blcks = sensitive_blocks[key]
+        program_info["blocks"] = sensitive_blcks
+        blocks.append(sensitive_blcks)
+        data_dep_loop_blocks = unprotected_data_dep_loop_blocks[key]
+        arg_reachable_loop_blocks = unprotected_arg_reachable_loop_blocks[key]
+        global_reachable_loop_blocks = unprotected_global_reachable_loop_blocks[key]
+        loop_blcks = data_dep_loop_blocks + arg_reachable_loop_blocks + global_reachable_loop_blocks
+        program_info["loop_blocks"] = loop_blcks
+        loop_blocks.append(loop_blcks)
+        oh_prot_block = oh_protected_blocks[key]
+        oh_prot_block_cov = round((oh_prot_block * 100.0)/ sensitive_blcks, 1)
+        program_info["ohb%"] = oh_prot_block_cov
+        oh_blocks.append(oh_prot_block_cov)
+        short_oh_prot_block = short_range_oh_protected_blocks[key]
+        sroh_prot_block_cov = round((short_oh_prot_block * 100.0)/ sensitive_blcks, 1)
+        program_info["srohb%"] = sroh_prot_block_cov
+        sroh_blocks.append(sroh_prot_block_cov)
+        protected_blocks = oh_prot_block + short_oh_prot_block
+        oh_sroh_prot_block_cov = round ((protected_blocks * 100.0)/ sensitive_blcks, 1)
+        program_info["oh+srohb%"] = oh_sroh_prot_block_cov
+        ohsrohblocks.append(oh_sroh_prot_block_cov)
+
+        programs_data.append(program_info)
+
+    mean = [average(all_instructions), average(iiis), average(ddicfdis), average(ddis), average(ohis), average(srohis),
+    average(oh_instrs), average(sroh_instrs), average(ohsrohis), average(skippedis), average(srohddis), average(blocks),
+    average(loop_blocks), average(oh_blocks), average(sroh_blocks), average(ohsrohblocks)]
+    
+    med = [median(all_instructions), median(iiis), median(ddicfdis), median(ddis), median(ohis), median(srohis),
+    median(oh_instrs), median(sroh_instrs), median(ohsrohis), median(skippedis), median(srohddis), median(blocks),
+    median(loop_blocks), median(oh_blocks), median(sroh_blocks), median(ohsrohblocks)]
+
+    std = [std_deviation(all_instructions), std_deviation(iiis), std_deviation(ddicfdis), std_deviation(ddis), std_deviation(ohis), std_deviation(srohis),
+    std_deviation(oh_instrs), std_deviation(sroh_instrs), std_deviation(ohsrohis), std_deviation(skippedis), std_deviation(srohddis), std_deviation(blocks),
+    std_deviation(loop_blocks), std_deviation(oh_blocks), std_deviation(sroh_blocks), std_deviation(ohsrohblocks)]
+
+    improvement_data = {"mean" : mean, "median": med, "std": std}
+    table_data = {"table_info": programs_data, "improvement_data": improvement_data}
+    with open(tables_file, 'a') as f :
+        json.dump(table_data, f)
+
+
+
+
+
+def dump_coverage_table():
+    from tabulate import tabulate
+    tabulate.LATEX_ESCAPE_RULES={}
+    table_headers = ["Program", "Blocks", "LB", "OHB%", "SROHB%", "Intrs", "OHI%", "SROHI%", "OHI", "SROHI", "LI", "IAI", "GRI", "ARI", "NHI", "CTFI", "SROHDDI", "MURNF"]
+    table_data = []
+    for key in programs:
+        program = key[:key.index(".")]
+        sensitive_blcks = sensitive_blocks[key]
+        oh_prot_block_cov = round((oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 1)
+        sroh_prot_block_cov = round((short_range_oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 1)
+
+        data_dep_loop_blocks = unprotected_data_dep_loop_blocks[key]
+        arg_reachable_loop_blocks = unprotected_arg_reachable_loop_blocks[key]
+        global_reachable_loop_blocks = unprotected_global_reachable_loop_blocks[key]
+        loop_blocks = data_dep_loop_blocks + arg_reachable_loop_blocks + global_reachable_loop_blocks
+
+        instrs = oh_processed_instrs[key]
+        sroh_prot_instr = short_range_oh_protected_instr[key]
+        sroh_prot_instr_cov = round((sroh_prot_instr * 100.0) / instrs, 1)
+        oh_prot_instr = oh_protected_instr[key]
+        oh_prot_instr_cov = round((oh_prot_instr * 100.0) / instrs, 1)
+        non_hashable_instr = oh_non_hashable_instr[key]
+        li = unprotected_loop_instr[key] + unprotected_loop_variant_instr[key]
+        gri = unprotected_global_reachable_instr[key]
+        ari = unprotected_argument_reachable_instr[key]
+        li_ari_gri = (li + ari + gri)
+        unprot_cfd = unprotected_instr[key]
+        unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
+        skipped = li_ari_gri + unprot_cfd + non_hashable_instr + unprotected_instr_with_no_dg
+        sroh_prot_ddi_instr = short_range_oh_protected_data_dep_instr[key]
+        num = sroh_prot_instr + oh_prot_instr + skipped - sroh_prot_ddi_instr
+        if  num != data_indep_instr[key]:
+            #faulty_runs.write(key + "\n")
+            #faulty_runs.write("Number of OH+SROH+LI+GRI+ARI+IAI " + str(num) + "\n")
+            #faulty_runs.write("Number of DII " + str(data_indep_instr[key]) + "\n")
+            print(key)
+            print ("Number of OH+SROH+LI+GRI+ARI+IAI " + str(num))
+            print ("Number of DII " + str(data_indep_instr[key]))
+
+        table_data.append([key, sensitive_blcks, loop_blocks, oh_prot_block_cov, sroh_prot_block_cov, instrs, oh_prot_instr_cov,
+                sroh_prot_instr_cov, oh_prot_instr, sroh_prot_instr, li, gri, ari, unprotected_instr_with_no_dg,
+                non_hashable_instr, unprot_cfd, sroh_prot_ddi_instr])
+
+
+    table_data.sort(key = lambda x : x[1])
+    latex_table = tabulate(table_data,headers=table_headers,tablefmt="latex")
+    table_file = os.path.join(TEX_OUT_FOLDER, "coverage_table_without_unreachables.tex")
+    with open(table_file,'wb') as tablefile:
+        tablefile.write(latex_table)
 
 def verify_instructions_numbers():
     faulty_runs = open("faulty_runs.txt", 'ab')
@@ -325,6 +484,7 @@ def main():
     #verify_instructions_numbers()
     dump_coverage_json("coverage.json")
     dump_paper_tables_json("dataset_info.json")
+    dump_paper_table_json("paper_table.json")
 
 if __name__=="__main__":
     main()

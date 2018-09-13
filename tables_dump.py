@@ -45,6 +45,38 @@ def dump_dataset_info_table(data_file, table_file_name):
         tablefile.write(latex_table)
 
 
+def dump_paper_table(data_file, table_file_name):
+    from tabulate import tabulate
+    tabulate.LATEX_ESCAPE_RULES={}
+    table_headers = ["Program", "Instructions", "III%", "DDI+CFDI%", "DII%", "OHI", "SROHI", "OHI%", "SROHI%",
+    "OHI%+SROHI%", "SI", "SROHDDI", "Blocks", "LB", "OHB%", "SROHB%", "OHB%+SROHB%"]
+    table_data = []
+    improvement_data = []
+
+    with open(data_file, 'r') as f:
+        data = json.load(f)
+        table_info = data["table_info"]
+        for program_data in table_info:
+            table_data.append([program_data["program"], program_data["Instructions"], program_data["iii"],
+                    program_data["ddi+cfdi"], program_data["ddi"], program_data["ohi"], program_data["srohi"],
+                    program_data["ohi%"], program_data["srohi%"], program_data["oh+srohi%"], program_data["skippedi"],
+                    program_data["srohddi"], program_data["blocks"], program_data["loop_blocks"], program_data["ohb%"],
+                    program_data["srohb%"], program_data["oh+srohb%"]])
+        improvement_info = data["improvement_data"]
+        improvement_data.append(["Mean", improvement_info["mean"]])
+        improvement_data.append(["Median", improvement_info["median"]])
+        improvement_data.append(["Std,Dev", improvement_info["std"]])
+
+    table_data.sort(key = lambda x : x[1])
+    latex_table = tabulate(table_data,headers=table_headers,tablefmt="latex")
+    table_file = os.path.join(TEX_OUT_FOLDER, table_file_name)
+    improvement_table = tabulate(improvement_data, tablefmt="latex")
+    with open(table_file,'ab') as tablefile:
+        tablefile.write(latex_table)
+        tablefile.write(improvement_table)
+
+
+
 def dump_instructions_table(data_file, table_file_name):
     from tabulate import tabulate
     tabulate.LATEX_ESCAPE_RULES={}
@@ -107,7 +139,7 @@ def dump_improvement_table(data_file, table_file_name):
         tablefile.write(latex_table)
 
 def dump_paper_tables(data_file):
-    table_file_name = "paper_tables.tex"
+    table_file_name = "dataset_tables.tex"
     dump_dataset_info_table(data_file, table_file_name)
     dump_instructions_table(data_file, table_file_name)
     dump_blocks_table(data_file, table_file_name)
@@ -117,8 +149,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c',action='store', dest='coverage_file', help='Json file containing coverage info',required=False,type=str,default="coverage.json")
     parser.add_argument('-d',action='store', dest='dataset_file',help='Json file containing dataset info',required=False, type=str, default="dataset_info.json")
+    parser.add_argument('-p',action='store', dest='paper_table_file',help='Json file containing paper table info',required=False, type=str, default="paper_table.json")
     results = parser.parse_args()
     dump_coverage_table(results.coverage_file)
+    dump_paper_table(results.paper_table_file, "paper_table.tex")
     dump_paper_tables(results.dataset_file)
 
 if __name__=="__main__":
