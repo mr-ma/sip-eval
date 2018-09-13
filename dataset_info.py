@@ -110,6 +110,7 @@ def dump_coverage_json(coverage_file):
     programs_list = []
     for key in programs:
         program_data = {}
+        program = key[:key.index(".")]
         main_unreachabe_f = main_unreachable_functions[key]
         sensitive_blcks = sensitive_blocks[key]
         oh_prot_block_cov = round((oh_protected_blocks[key] * 100.0)/ sensitive_blcks, 1)
@@ -133,7 +134,7 @@ def dump_coverage_json(coverage_file):
         unprotected_instr_with_no_dg = unprotected_instr_in_functions_with_no_dg[key]
         sroh_prot_ddi_instr = short_range_oh_protected_data_dep_instr[key]
 
-        program_data["program"] = key
+        program_data["program"] = program
         program_data["sensitive_blocks"] = sensitive_blcks
         program_data["loop_blocks"] = loop_blocks
         program_data["oh_block_cov"] = oh_prot_block_cov
@@ -570,7 +571,7 @@ def main():
     #dump_coverage_table()
     #dump_latex_table_for_paper()
     #dump_latex_table_for_paper(False)
-    dump_coverage_json("dataset_info.json")
+    dump_coverage_json("coverage.json")
     dump_paper_tables_json("dataset_info.json")
 
 if __name__=="__main__":
