@@ -16,6 +16,7 @@ args_path=/home/sip/eval/cmdline-args/
 MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE=30
 patcher_scripts_path=/home/sip/eval/patcher-scripts/
 repeat=3
+ROOT=$PWD
 #rm -r binaries
 mkdir -p binaries
 
@@ -27,7 +28,21 @@ else
 	echo 'FAIL compile rtlib'
 	exit    
 fi
+C_LIB_FILES=()
+CPP_LIB_FILES=()
+gcc -fPIC -g -rdynamic -c "$rtlib_path" -o $PWD/sc_rtlib.o
+C_LIB_FILES+=( "$PWD/sc_rtlib.o" )
+CPP_LIB_FILES+=( "$PWD/sc_rtlib.o" )
 
+gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.c -o $PWD/c_oh_rtlib.o
+C_LIB_FILES+=( "$PWD/c_oh_rtlib.o" )
+echo $C_LIB_FILES
+gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libscrtlib.so -o "$PWD/libcrtlib.so" ${C_LIB_FILES[@]}
+
+g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $PWD/cpp_oh_rtlib.o
+CPP_LIB_FILES+=( "${PWD}/cpp_oh_rtlib.o" )
+echo $CPP_LIB_FILES
+g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libscpprtlib.so -o "$PWD/libcpprtlib.so" ${CPP_LIB_FILES[@]}
 
 for bc in $bc_files
 do
@@ -129,39 +144,12 @@ do
 						echo 'FAIL gcc -c'
 						exit    
 					fi 
-					# Linking with external libraries
-                    			#rm "librtlib.so"
-                    			#rm "oh_rtlib.o"
-                    			#rm "sc_rtlib.o"
 					echo "RESPONSE FILE:" 
 					echo $response_file
-                    			LIB_FILES=()
 					if [ "$response_file" = "response.c" ]; then
-						echo 'RUNNING GCC'
-						#echo gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
-                        			gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $output_dir/oh_rtlib.o
-                        			LIB_FILES+=( "$output_dir/oh_rtlib.o" )
+						gcc -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lcrtlib $libraries
 					else
-						echo 'RUNNING G++'
-						#echo g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
-                        			g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $output_dir/oh_rtlib.o
-                       	 			LIB_FILES+=( "${PWD}/oh_rtlib.o" )
-					fi
-                    			gcc -fPIC -g -rdynamic -c "$rtlib_path" -o $output_dir/sc_rtlib.o
-                    			LIB_FILES+=( "$output_dir/sc_rtlib.o" )
-					#gcc -g -rdynamic -c rtlib.c -o rtlib.o
-					if [ $? -eq 0 ]; then
-						echo 'OK gcc -g'
-					else
-						echo 'FAIL gcc -g'
-						exit    
-					fi 
-					if [ "$response_file" = "response.c" ]; then
-                        			gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "$output_dir/librtlib.so" ${LIB_FILES[@]}
-						gcc -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lrtlib $libraries
-					else
-                        			g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "$output_dir/librtlib.so" ${LIB_FILES[@]}
-						g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lrtlib $libraries
+						g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lcpprtlib $libraries
 					fi
 
 					if [ $? -eq 0 ]; then
@@ -187,9 +175,15 @@ do
 					echo 'Starting GDB patcher, this will wait for input when nothing is provided'
 
 					echo $gdb_script
+                    if [ "$response_file" = "response.c" ]; then
+                        export LD_PRELOAD="/home/sip/self-checksumming/hook/build/libminm.so $ROOT/libcrtlib.so" 
+                        echo "export LD_PRELOAD=/home/sip/self-checksumming/hook/build/libminm.so $ROOT/libcrtlib.so" 
+					else
+                        export LD_PRELOAD="/home/sip/self-checksumming/hook/build/libminm.so $ROOT/libcpprtlib.so" 
+                        echo "export LD_PRELOAD=/home/sip/self-checksumming/hook/build/libminm.so $ROOT/libcpprtlib.so" 
+					fi
+
                                         #TODO hook intercept library for other applications/feed a constant input
-                                        export LD_PRELOAD="/home/sip/self-checksumming/hook/build/libminm.so $output_dir/librtlib.so" 
-                                        echo "export LD_PRELOAD=/home/sip/self-checksumming/hook/build/libminm.so $output_dir/librtlib.so" 
                                         echo $output_dir/$filename
 					#Patch using GDB
 					echo "python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g $cmd_args -d True -b $output_dir/$filename -n $output_dir/$filename -s $output_dir/oh.stats >> $output_dir/gdb.console"
