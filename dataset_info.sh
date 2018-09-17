@@ -3,7 +3,7 @@ UTILS_LIB=/home/sip/self-checksumming/build/lib/libUtils.so
 DG_PATH=/usr/local/lib/
 OH_PATH=/home/sip/sip-oblivious-hashing
 OH_LIB=$OH_PATH/build/lib
-FILES=/home/sip/eval/dataset/*.bc
+FILES=/home/sip/eval/coverage_dataset/*.bc
 DATAPATH=/home/sip/eval/dataset_info/
 configs=/home/sip/eval/lib-config
 
