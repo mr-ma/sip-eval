@@ -35,6 +35,7 @@ do
 	bitcode=$bc
 	echo $bc
 	filename=${bc##*/}
+        echo $filename
 	libconfig=$config_path$filename
 	cmd_args=$(<$args_path$filename)
 	combination_dir=$combination_path$filename/*
@@ -129,25 +130,25 @@ do
 						exit    
 					fi 
 					# Linking with external libraries
-                    rm "librtlib.so"
-                    rm "oh_rtlib.o"
-                    rm "sc_rtlib.o"
+                    			#rm "librtlib.so"
+                    			#rm "oh_rtlib.o"
+                    			#rm "sc_rtlib.o"
 					echo "RESPONSE FILE:" 
 					echo $response_file
-                    LIB_FILES=()
+                    			LIB_FILES=()
 					if [ "$response_file" = "response.c" ]; then
 						echo 'RUNNING GCC'
-						echo gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
-                        gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o oh_rtlib.o
-                        LIB_FILES+=( "${PWD}/oh_rtlib.o" )
+						#echo gcc -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
+                        			gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $output_dir/oh_rtlib.o
+                        			LIB_FILES+=( "$output_dir/oh_rtlib.o" )
 					else
 						echo 'RUNNING G++'
-						echo g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
-                        g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o oh_rtlib.o
-                        LIB_FILES+=( "${PWD}/oh_rtlib.o" )
+						#echo g++ -std=c++0x -g -rdynamic -c $OH_PATH/assertions/$response_file -o $output_dir/response.o
+                        			g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $output_dir/oh_rtlib.o
+                       	 			LIB_FILES+=( "${PWD}/oh_rtlib.o" )
 					fi
-                    gcc -fPIC -g -rdynamic -c "$rtlib_path" -o sc_rtlib.o
-                    LIB_FILES+=( "${PWD}/sc_rtlib.o" )
+                    			gcc -fPIC -g -rdynamic -c "$rtlib_path" -o $output_dir/sc_rtlib.o
+                    			LIB_FILES+=( "$output_dir/sc_rtlib.o" )
 					#gcc -g -rdynamic -c rtlib.c -o rtlib.o
 					if [ $? -eq 0 ]; then
 						echo 'OK gcc -g'
@@ -156,10 +157,10 @@ do
 						exit    
 					fi 
 					if [ "$response_file" = "response.c" ]; then
-                        gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "librtlib.so" ${LIB_FILES[@]}
+                        			gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "$output_dir/librtlib.so" ${LIB_FILES[@]}
 						gcc -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lrtlib $libraries
 					else
-                        g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "librtlib.so" ${LIB_FILES[@]}
+                        			g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libsrtlib.so -o "$output_dir/librtlib.so" ${LIB_FILES[@]}
 						g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lrtlib $libraries
 					fi
 
@@ -186,10 +187,12 @@ do
 					echo 'Starting GDB patcher, this will wait for input when nothing is provided'
 
 					echo $gdb_script
-                    #TODO hook intercept library for other applications/feed a constant input
-                    export LD_PRELOAD="/home/anahitik/SIP/self-checksumming/hook/build/libminm.so ${PWD}/librtlib.so" 
+                                        #TODO hook intercept library for other applications/feed a constant input
+                                        export LD_PRELOAD="/home/sip/self-checksumming/hook/build/libminm.so $output_dir/librtlib.so" 
+                                        echo "export LD_PRELOAD=/home/sip/self-checksumming/hook/build/libminm.so $output_dir/librtlib.so" 
+                                        echo $output_dir/$filename
 					#Patch using GDB
-					echo "python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g $cmd_args -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/gdb.console"
+					echo "python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g $cmd_args -d True -b $output_dir/$filename -n $output_dir/$filename -s $output_dir/oh.stats >> $output_dir/gdb.console"
 					python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
 					if [ $? -eq 0 ]; then
 						echo 'OK GDB Patch'
@@ -208,6 +211,7 @@ do
 						echo "trying to recover from Segmentation fault... $recover_attempt" >> $output_dir/segmentationfault.console
 						recover_attempt=$((recover_attempt+1))   
 					fi 
+                                        exit
 
 				done
 			done
