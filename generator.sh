@@ -14,7 +14,7 @@ link_libraries=/home/sip/eval/link-libraries/
 args_path=/home/sip/eval/cmdline-args/
 #SKIP_EXISTING binaries when exactly one argument is passed here regardless of its value
 patcher_scripts_path=/home/sip/eval/patcher-scripts/
-repeat=3
+repeat=1
 ROOT=$PWD
 #rm -r binaries
 mkdir -p binaries
@@ -36,12 +36,12 @@ CPP_LIB_FILES+=( "$PWD/sc_rtlib.o" )
 gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.c -o $PWD/c_oh_rtlib.o
 C_LIB_FILES+=( "$PWD/c_oh_rtlib.o" )
 echo $C_LIB_FILES
-gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libscrtlib.so -o "$PWD/libcrtlib.so" ${C_LIB_FILES[@]}
+gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcrtlib.so -o "$PWD/libcrtlib.so" ${C_LIB_FILES[@]}
 
 g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $PWD/cpp_oh_rtlib.o
 CPP_LIB_FILES+=( "${PWD}/cpp_oh_rtlib.o" )
 echo $CPP_LIB_FILES
-g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libscpprtlib.so -o "$PWD/libcpprtlib.so" ${CPP_LIB_FILES[@]}
+g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcpprtlib.so -o "$PWD/libcpprtlib.so" ${CPP_LIB_FILES[@]}
 
 for bc in $bc_files
 do
@@ -96,11 +96,13 @@ do
 			echo "Handling combination file $coverage"
 			echo "Protect $bc with function combination file $coverage"
 			#repeat protection for random network of protection
-			for i in 1 2 3 
+			i=1
+                        while [ $i -le $repeat ] 
 			do
 				recover_attempt=0
 				while true;
 				do
+                                        echo $i
 					output_dir=$binary_path$filename/$coverage_name/$combination_file/$i
 					mkdir -p $output_dir
 					echo "Protect here $i"
@@ -146,8 +148,10 @@ do
 					echo "RESPONSE FILE:" 
 					echo $response_file
 					if [ "$response_file" = "response.c" ]; then
+						echo "gcc -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lcrtlib $libraries"
 						gcc -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lcrtlib $libraries
 					else
+						echo "g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lcpprtlib $libraries"
 						g++ -std=c++0x -g -rdynamic $output_dir/out.o -o $output_dir/$filename -L. -lcpprtlib $libraries
 					fi
 
@@ -204,9 +208,10 @@ do
 						echo "trying to recover from Segmentation fault... $recover_attempt" >> $output_dir/segmentationfault.console
 						recover_attempt=$((recover_attempt+1))   
 					fi 
-                                        exit
 
 				done
+	
+             		((i++))
 			done
 		done
 	done
