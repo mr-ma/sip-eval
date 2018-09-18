@@ -13,7 +13,6 @@ config_path=/home/sip/eval/lib-config/
 link_libraries=/home/sip/eval/link-libraries/
 args_path=/home/sip/eval/cmdline-args/
 #SKIP_EXISTING binaries when exactly one argument is passed here regardless of its value
-MAXIMUM_INPUT_INDEPENDENT_SC_COVERAGE=30
 patcher_scripts_path=/home/sip/eval/patcher-scripts/
 repeat=3
 ROOT=$PWD
@@ -186,8 +185,8 @@ do
                                         #TODO hook intercept library for other applications/feed a constant input
                                         echo $output_dir/$filename
 					#Patch using GDB
-					echo "python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g $cmd_args -d True -b $output_dir/$filename -n $output_dir/$filename -s $output_dir/oh.stats >> $output_dir/gdb.console"
-					python $OH_PATH/patcher/patchAsserts.py -p $OH_PATH/assertions/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
+					echo "python $OH_PATH/patcher/patchAsserts.py -p $ROOT/gdb_scripts/$gdb_script -g $cmd_args -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/oh.stats >> $output_dir/gdb.console"
+					python $OH_PATH/patcher/patchAsserts.py -p $ROOT/gdb_scripts/$gdb_script -g "$cmd_args" -d True -b $output_dir/$filename -n $output_dir/$filename"tmp" -s $output_dir/"oh.stats" >> $output_dir/"gdb.console" 
 					if [ $? -eq 0 ]; then
 						echo 'OK GDB Patch'
 						rm $output_dir/$filename
