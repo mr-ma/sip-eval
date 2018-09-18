@@ -19,35 +19,10 @@ ROOT=$PWD
 #rm -r binaries
 mkdir -p binaries
 
-
-#prepare runtime lib
-if [ $? -eq 0 ]; then
-	echo 'OK Transform'
-else
-	echo 'FAIL compile rtlib'
-	exit    
-fi
-C_LIB_FILES=()
-CPP_LIB_FILES=()
-gcc -fPIC -g -rdynamic -c "$rtlib_path" -o $PWD/sc_rtlib.o
-C_LIB_FILES+=( "$PWD/sc_rtlib.o" )
-CPP_LIB_FILES+=( "$PWD/sc_rtlib.o" )
-
-gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.c -o $PWD/c_oh_rtlib.o
-C_LIB_FILES+=( "$PWD/c_oh_rtlib.o" )
-echo $C_LIB_FILES
-gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcrtlib.so -o "$PWD/libcrtlib.so" ${C_LIB_FILES[@]}
-
-g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $PWD/cpp_oh_rtlib.o
-CPP_LIB_FILES+=( "${PWD}/cpp_oh_rtlib.o" )
-echo $CPP_LIB_FILES
-g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcpprtlib.so -o "$PWD/libcpprtlib.so" ${CPP_LIB_FILES[@]}
-
-for bc in $bc_files
-do
+run_on_bitcode() {
     unset LD_PRELOAD
-	bitcode=$bc
-	echo $bc
+	bitcode=$1
+	echo $bitcode
 	filename=${bc##*/}
         echo $filename
 	libconfig=$config_path$filename
@@ -215,22 +190,96 @@ do
 			done
 		done
 	done
+}
 
-	#rm -r $filedir
-	#mkdir -p $filedir
-	#for coverage in $func_coverage
-	#do
-	#		output="$filedir$coverage/"
-	#		mkdir -p $output
-	#		echo "handling coverage $coverage"
-	#		echo "Output will be written to $output"
-	#		opt-6.0 -load $EVAL_LIB/libEval.so $bitcode -combinator-func -coverage=$coverage -combinations=$num_combination -out-path=$output
-	#		if [ $? -eq 0 ]; then
-	#			echo 'OK Transform'
-	#		else
-	#			echo 'FAIL Transform'
-	#			exit    
-	#		fi
-	#	done	
+switch_to_old_dg() {
+    echo "Switching to old DG"
+    CURRENT_DIR=$PWD
+    DG="/home/sip/dg"
+    OLD_DG_COMMIT="2705a72c14a134984bea9098982dcfd17fc7a4a7"
+    DG_INCLUDE="/usr/local/include/llvm-dg"
+    cd $DG
+    echo "cd DG $PWD"
+    git checkout $OLD_DG_COMMIT
+    echo "checkout old dg"
+    sudo rm -rf $DG_PATH/libLLVMdg.so
+    sudo rm -rf "$DG_INCLUDE"
+    sudo make install
+    echo "build&install"
+    cd "$OH_PATH/build"
+    make
+    echo "build oh"
+    cd $CURRENT_DIR
+    echo "back to $PWD"
+}
+
+switch_to_new_dg() {
+    echo "Switching back to new DG"
+    CURRENT_DIR=$PWD
+    DG="/home/sip/dg"
+    DG_INCLUDE="/usr/local/include/llvm-dg"
+    cd $DG
+    echo "cd DG $PWD"
+    git checkout master
+    echo "checkout old dg"
+    sudo rm -rf $DG_PATH/libLLVMdg.so
+    sudo rm -rf "$DG_INCLUDE"
+    sudo make install
+    echo "build&install"
+    cd "$OH_PATH/build"
+    make
+    echo "build oh"
+    cd $CURRENT_DIR
+    echo "back to $PWD"
+}
+
+#prepare runtime lib
+if [ $? -eq 0 ]; then
+	echo 'OK Transform'
+else
+	echo 'FAIL compile rtlib'
+	exit    
+fi
+C_LIB_FILES=()
+CPP_LIB_FILES=()
+gcc -fPIC -g -rdynamic -c "$rtlib_path" -o $PWD/sc_rtlib.o
+C_LIB_FILES+=( "$PWD/sc_rtlib.o" )
+CPP_LIB_FILES+=( "$PWD/sc_rtlib.o" )
+
+gcc -fPIC -g -rdynamic -c ${OH_PATH}/assertions/response.c -o $PWD/c_oh_rtlib.o
+C_LIB_FILES+=( "$PWD/c_oh_rtlib.o" )
+echo $C_LIB_FILES
+gcc -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcrtlib.so -o "$PWD/libcrtlib.so" ${C_LIB_FILES[@]}
+
+g++ -fPIC -std=c++11 -g -rdynamic -c ${OH_PATH}/assertions/response.cpp -o $PWD/cpp_oh_rtlib.o
+CPP_LIB_FILES+=( "${PWD}/cpp_oh_rtlib.o" )
+echo $CPP_LIB_FILES
+g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcpprtlib.so -o "$PWD/libcpprtlib.so" ${CPP_LIB_FILES[@]}
+
+# The iteration trough bitcodes
+idx=0
+old_dg_bitcodes=()
+
+for bc in $bc_files
+do
+	filename=${bc##*/}
+    if [ "$filename" == "ispell.x.bc" ] || [ "$filename" == "cjpeg.x.bc" ] || [ "$filename" == "djpeg.x.bc" ]; then
+        echo "Skip $filename"
+        old_dg_bitcodes[$idx]="$bc"
+        idx=$((idx + 1))
+        continue
+    fi
+    run_on_bitcode $bc
 done
+if [ ${#old_dg_bitcodes[@]} -eq 0 ]; then
+    echo "All bitcodes are processed!"
+else
+    echo "Skipped bitcodes ${old_dg_bitcodes[*]}"
+    switch_to_old_dg
+    for bc in "${old_dg_bitcodes[@]}"
+    do
+        run_on_bitcode $bc
+    done
+    switch_to_new_dg
+fi
 echo 'Generator is done!'
