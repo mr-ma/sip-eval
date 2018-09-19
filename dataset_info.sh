@@ -31,7 +31,7 @@ switch_to_old_dg() {
     DG="/home/sip/dg"
     OLD_DG_COMMIT="2705a72c14a134984bea9098982dcfd17fc7a4a7"
     DG_INCLUDE="/usr/local/include/llvm-dg"
-    cd $DG
+    cd $DG/build
     echo "cd DG $PWD"
     git checkout $OLD_DG_COMMIT
     echo "checkout old dg"
@@ -40,8 +40,9 @@ switch_to_old_dg() {
     sudo make install
     echo "make install"
     cd "$OH_PATH/build"
-    make
+    make clean
     echo "make oh"
+    make
     cd $CURRENT_DIR
     echo "go back to $PWD"
 }
@@ -50,7 +51,7 @@ switch_to_new_dg() {
     CURRENT_DIR=$PWD
     DG="/home/sip/dg"
     DG_INCLUDE="/usr/local/include/llvm-dg"
-    cd $DG
+    cd $DG/build
     echo "cd DG $PWD"
     git checkout master
     echo "checkout old dg"
@@ -59,7 +60,9 @@ switch_to_new_dg() {
     sudo make install
     echo "make install"
     cd "$OH_PATH/build"
+    make clean
     echo "make oh"
+    make
     cd $CURRENT_DIR
     echo "go back to $PWD"
 }
