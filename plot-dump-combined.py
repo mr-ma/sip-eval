@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib
 #matplotlib.use("gtk")
-#matplotlib.use('Agg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 plt.rcParams['hatch.color'] = 'b'
 from pprint import pprint

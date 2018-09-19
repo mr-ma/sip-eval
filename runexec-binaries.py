@@ -18,7 +18,7 @@ import re
 import numpy as np
 import sys
 REPEAT_NUMBER=3
-BASE_REPEAT_NUMBER= 10
+BASE_REPEAT_NUMBER= 5 
 RUNSPROCESSED="runs_processed.json"
 CMDLINE_ARGS="cmdline-args"
 def get_immediate_subdirectories(a_dir):
@@ -98,9 +98,9 @@ def measure_overhead(result_directory,program,repeat):
             cmd_file.write(program_path)
             cmd_file.write(cmd_args)
             cmd_file.close()
-            cmd = 'runexec --container -- sh {}'.format(cmd_file.name)
+            cmd = 'runexec -- sh {}'.format(cmd_file.name)
         else:
-            cmd = 'runexec  --container -- {} {}'.format(program_path,cmd_args)
+            cmd = 'runexec  -- {} {}'.format(program_path,cmd_args)
         #call(["sosylib_measure.sh",program_path])
 	#--container throws a suspicious warning, I'm not sure it the measurements are good
         #cmd = 'runexec {} {} --container'.format(program_path,cmd_args)
