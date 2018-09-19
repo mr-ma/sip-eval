@@ -34,7 +34,8 @@ To compute average time it takes to protect bitcodes by OH+SROH and SC run ```me
 Run the whole experiment and dump data by executing:
 sh run-all.sh
 
-
+Run docker container with the following parameters:
+ docker run -v /sys/fs/cgroup:/sys/fs/cgroup:rw --security-opt seccomp=unconfined {IMAGEID/IMAGENAME}
 
 1. Apply clone and extract on programs (in BC format) in the dataset
 2. Create 20 combination (at the most) of 10%, 25%, 50% and 100% of functions
