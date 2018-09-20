@@ -15,9 +15,13 @@ Build a docker image using the provided [DockerFile](https://github.com/tum-i22/
 Run docker container with the following parameters:
 ```docker run -v /sys/fs/cgroup:/sys/fs/cgroup:rw --security-opt seccomp=unconfined {IMAGEID/IMAGENAME}```
 
+***IMPORTANT: All the scripts can be found in the eval directory.***
+
+```cd eval```
+
 Input dependency coverage results
 ----------------------------------
-To get input dependency analysis results as a tex table run ```generate-dataset-coverage-tables.sh``` script which internally runs following scripts
+To get input dependency analysis results as a tex table run ```sh generate-dataset-coverage-tables.sh``` script which internally runs following scripts
 
 	./dataset_info.sh
 	python dataset_info.py
@@ -36,7 +40,7 @@ The coverage table in the paper
 
 Performance overheads
 ---------------------------------------
-To measure the overhead of the protection, all you need to run is ``run-all.sh`` (in the root of the repository).
+To measure the overhead of the protection, all you need to run is ``sh run-all.sh`` (in the root of the repository, i.e. eval directory in the container).
 This script transforms all the programs that are placed in the `protection_dataset` directory. 
 It undertakes a set of steps seqeuentially: 
 - optimize bcs (`coverage-improver.sh`)
@@ -53,9 +57,6 @@ Detailed report of overheads can be found under `binaries/measurements.json` (fo
 OH+SROH+SC time to protect (protection process) 
 --------------------------------------------------
 To compute average time it takes to protect bitcodes by OH+SROH and SC run ```measure-runtime.sh``` script which will run protection and also generate additional information for the time. Running ```measure-runtime.py``` will generate a table ```runtimes.tex``` in tex directory representing protection runtime data for the dataset programs. It also contains table for with mean, median and standard deviation for protection times. 
-
-Run the whole experiment and dump data by executing:
-sh run-all.sh
 
 
 
