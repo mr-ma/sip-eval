@@ -10,7 +10,7 @@ configs=/home/sip/eval/lib-config
 run_coverage() {
 	bitcode=$1
 	echo $f
-	filename=${f##*/}
+	filename=${bitcode`##*/}
 	output_dir=$DATAPATH/$filename
 	libconfig=$configs/$filename
 	mkdir -p $output_dir 
