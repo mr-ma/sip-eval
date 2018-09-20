@@ -1,6 +1,6 @@
 UTILS_LIB=/home/sip/self-checksumming/build/lib/libUtils.so
 INPUT_DEP_PATH=/usr/local/lib/
-DG_PATH=/usr/local/lib/
+DG_PATH=/home/sip/dg/build/lib
 SC_PATH=/home/sip/self-checksumming/build/lib
 OH_PATH=/home/sip/sip-oblivious-hashing
 OH_LIB=$OH_PATH/build/lib
@@ -196,43 +196,42 @@ switch_to_old_dg() {
     echo "Switching to old DG"
     CURRENT_DIR=$PWD
     DG="/home/sip/dg"
-    OLD_DG_COMMIT="2705a72c14a134984bea9098982dcfd17fc7a4a7"
-    DG_INCLUDE="/usr/local/include/llvm-dg"
     cd $DG/build
     echo "cd DG $PWD"
-    git checkout $OLD_DG_COMMIT
+    git checkout HEAD~1
     echo "checkout old dg"
-    sudo rm -rf $DG_PATH/libLLVMdg.so
-    sudo rm -rf "$DG_INCLUDE"
-    sudo make install
-    echo "build&install"
+    rm -rf $DG/build/lib/libLLVMdg.so
+    rm -rf $DG/build/include
+    make clean
+    echo "make install"
+    make install
     cd "$OH_PATH/build"
     make clean
+    echo "make oh"
     make
-    echo "build oh"
     cd $CURRENT_DIR
-    echo "back to $PWD"
+    echo "go back to $PWD"
 }
 
 switch_to_new_dg() {
-    echo "Switching back to new DG"
+    echo "Switching to new DG"
     CURRENT_DIR=$PWD
     DG="/home/sip/dg"
-    DG_INCLUDE="/usr/local/include/llvm-dg"
     cd $DG/build
     echo "cd DG $PWD"
-    git checkout master
-    echo "checkout old dg"
-    sudo rm -rf $DG_PATH/libLLVMdg.so
-    sudo rm -rf "$DG_INCLUDE"
-    sudo make install
-    echo "build&install"
+    git checkout acsac
+    echo "checkout latest dg"
+    rm -rf $DG/build/lib/libLLVMdg.so
+    rm -rf $DG/build/include
+    make clean
+    echo "make install"
+    make install
     cd "$OH_PATH/build"
     make clean
+    echo "make oh"
     make
-    echo "build oh"
     cd $CURRENT_DIR
-    echo "back to $PWD"
+    echo "go back to $PWD"
 }
 
 #prepare runtime lib
@@ -261,6 +260,7 @@ g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcpprtlib.so -o "$
 # The iteration trough bitcodes
 idx=0
 old_dg_bitcodes=()
+switch_to_new_dg
 
 for bc in $bc_files
 do

@@ -1,6 +1,6 @@
 INPUT_DEP_PATH=/usr/local/lib/
 UTILS_LIB=/home/sip/self-checksumming/build/lib/libUtils.so
-DG_PATH=/usr/local/lib/
+DG_PATH=/home/sip/dg/build/lib
 OH_PATH=/home/sip/sip-oblivious-hashing
 OH_LIB=$OH_PATH/build/lib
 FILES=/home/sip/eval/coverage_dataset/*.bc
@@ -9,7 +9,7 @@ configs=/home/sip/eval/lib-config
 
 run_coverage() {
 	bitcode=$1
-	echo $f
+	echo $bitcode
 	filename=${bitcode##*/}
 	output_dir=$DATAPATH/$filename
 	libconfig=$configs/$filename
@@ -29,16 +29,15 @@ run_coverage() {
 switch_to_old_dg() {
     CURRENT_DIR=$PWD
     DG="/home/sip/dg"
-    OLD_DG_COMMIT="2705a72c14a134984bea9098982dcfd17fc7a4a7"
-    DG_INCLUDE="/usr/local/include/llvm-dg"
     cd $DG/build
     echo "cd DG $PWD"
-    git checkout $OLD_DG_COMMIT
+    git checkout HEAD~1
     echo "checkout old dg"
-    sudo rm -rf $DG_PATH/libLLVMdg.so
-    sudo rm -rf "$DG_INCLUDE"
-    sudo make install
+    rm -rf $DG/build/lib/libLLVMdg.so
+    rm -rf $DG/build/include
+    make clean
     echo "make install"
+    make install
     cd "$OH_PATH/build"
     make clean
     echo "make oh"
@@ -50,15 +49,15 @@ switch_to_old_dg() {
 switch_to_new_dg() {
     CURRENT_DIR=$PWD
     DG="/home/sip/dg"
-    DG_INCLUDE="/usr/local/include/llvm-dg"
     cd $DG/build
     echo "cd DG $PWD"
-    git checkout master
-    echo "checkout old dg"
-    sudo rm -rf $DG_PATH/libLLVMdg.so
-    sudo rm -rf "$DG_INCLUDE"
-    sudo make install
+    git checkout acsac
+    echo "checkout latest dg"
+    rm -rf $DG/build/lib/libLLVMdg.so
+    rm -rf $DG/build/include
+    make clean
     echo "make install"
+    make install
     cd "$OH_PATH/build"
     make clean
     echo "make oh"
@@ -69,6 +68,7 @@ switch_to_new_dg() {
 
 idx=0
 old_dg_bitcodes=()
+switch_to_new_dg
 for f in $FILES
 do
 	bitcode=$f
@@ -82,6 +82,7 @@ do
     fi
     run_coverage $bitcode
 done
+echo "${old_dg_bitcodes[*]}"
 if [ ${#old_dg_bitcodes[@]} -eq 0 ]; then
     echo "All bitcodes are processed!"
 else

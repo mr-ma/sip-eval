@@ -63,9 +63,15 @@ def dump_paper_table(data_file, table_file_name):
                     program_data["srohddi"], program_data["blocks"], program_data["loop_blocks"], program_data["ohb%"],
                     program_data["srohb%"], program_data["oh+srohb%"]])
         improvement_info = data["improvement_data"]
-        improvement_data.append(["Mean", improvement_info["mean"]])
-        improvement_data.append(["Median", improvement_info["median"]])
-        improvement_data.append(["Std,Dev", improvement_info["std"]])
+        mean = improvement_info["mean"]
+        improvement_data.append(["Mean", mean[0], mean[1], mean[2], mean[3], mean[4], mean[5], mean[6], mean[7],
+                mean[8], mean[9], mean[10], mean[11], mean[12], mean[13], mean[14], mean[15]])
+        median = improvement_info["median"]
+        improvement_data.append(["Median", median[0], median[1], median[2], median[3], median[4], median[5], median[6], median[7],
+                median[8], median[9], median[10], median[11], median[12], median[13], median[14], median[15]])
+        std = improvement_info["std"]
+        improvement_data.append(["Std,Dev", std[0], std[1], std[2], std[3], std[4], std[5], std[6], std[7],
+                std[8], std[9], std[10], std[11], std[12], std[13], std[14], std[15]])
 
     table_data.sort(key = lambda x : x[1])
     latex_table = tabulate(table_data,headers=table_headers,tablefmt="latex")
