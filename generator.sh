@@ -257,10 +257,11 @@ CPP_LIB_FILES+=( "${PWD}/cpp_oh_rtlib.o" )
 echo $CPP_LIB_FILES
 g++ -std=c++11 -g -rdynamic -Wall -fPIC -shared -Wl,-soname,libcpprtlib.so -o "$PWD/libcpprtlib.so" ${CPP_LIB_FILES[@]}
 
+
+switch_to_new_dg
 # The iteration trough bitcodes
 idx=0
 old_dg_bitcodes=()
-switch_to_new_dg
 
 for bc in $bc_files
 do

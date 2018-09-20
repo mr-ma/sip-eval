@@ -66,9 +66,9 @@ switch_to_new_dg() {
     echo "go back to $PWD"
 }
 
+switch_to_new_dg
 idx=0
 old_dg_bitcodes=()
-switch_to_new_dg
 for f in $FILES
 do
 	bitcode=$f
