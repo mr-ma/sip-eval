@@ -21,7 +21,7 @@ Run docker container with the following parameters:
 
 Input dependency coverage results
 ----------------------------------
-To get input dependency analysis results as a tex table run ```sh generate-dataset-coverage-tables.sh``` script which internally runs following scripts
+To get input dependency analysis results as a tex table run ```./generate-dataset-coverage-tables.sh``` script which internally runs following scripts
 
 	./dataset_info.sh
 	python dataset_info.py
