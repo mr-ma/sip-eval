@@ -49,6 +49,12 @@ It undertakes a set of steps seqeuentially:
 - generate protected binaries (`generator.sh` for OH+SROh+SC and `generator-sc.sh` for SC protection only)
 - run unprotected (baseline) and protected binaries and record elapsed times (`runexec-binaries.sh`) 
 - measure overheads (`measure.py`)
+
+***IMPORTANT: benchexec relies on cgroup read/write permission, if you get an error like the following you would need to set the requested permission on the host machine ***
+
+``Cannot use cgroup hierarchy mounted at /sys/fs/cgroup/cpuset,cpuacct,memory,freezer/docker/18a3f096e2cbef047496896b4746138b20db015da14fc97ed44f4e72fa2f1c7f for subsystem freezer, reason: Permission denied. If permissions are wrong, please run "sudo chmod o+wt '/sys/fs/cgroup/cpuset,cpuacct,memory,freezer/docker/18a3f096e2cbef047496896b4746138b20db015da14fc97ed44f4e72fa2f1c7f'".
+``
+
 - dump the stacked overhead graph (`plot-dump-combined.py`)
 
 The generated graph is stored in the root of the repository as `performance-evaluation-combined-percentage.pdf`.
