@@ -81,5 +81,5 @@ else
 #dump clone and extraction coverage improvement latex table
 #python measure-coverage-improvements.py
 #plot the extracted overhead data and dump protection coverage latex table
-python plot-dump.py -m binaries/measurements.json -p True
+python plot-dump-combined.py -p True
 

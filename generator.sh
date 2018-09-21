@@ -14,7 +14,7 @@ link_libraries=/home/sip/eval/link-libraries/
 args_path=/home/sip/eval/cmdline-args/
 #SKIP_EXISTING binaries when exactly one argument is passed here regardless of its value
 patcher_scripts_path=/home/sip/eval/patcher-scripts/
-repeat=1
+repeat=3
 ROOT=$PWD
 #rm -r binaries
 mkdir -p binaries
